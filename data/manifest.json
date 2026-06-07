@@ -1,0 +1,25 @@
+{
+  "settings_file": "ads.json",
+  "theme_files": [
+    "01.json",
+    "02.json",
+    "03.json",
+    "04.json",
+    "05.json",
+    "06.json",
+    "07.json",
+    "08.json",
+    "09.json",
+    "10.json"
+  ],
+  "tools": [
+    {
+      "id": "tool_20260527171110",
+      "title": "Stream Switcher",
+      "content_url": "./contents/tools/",
+      "date": "2026-05-27",
+      "is_visible": true
+    }
+  ],
+  "articles": []
+}

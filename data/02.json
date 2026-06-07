@@ -1,0 +1,528 @@
+{
+  "id": "chill",
+  "name": "INTRO/OUTRO",
+  "categories": [
+    {
+      "id": "cat_1779018943718",
+      "name": "INTRO",
+      "albums": [
+        "album_1780618864460",
+        "album_1780620921360"
+      ]
+    },
+    {
+      "id": "cat_1779018948704",
+      "name": "OUTRO",
+      "albums": [
+        "album_1779018950687"
+      ]
+    }
+  ],
+  "albums": [
+    {
+      "id": "album_1779018950687",
+      "title": "配信みてくれてありがとうSONGS",
+      "art": "",
+      "caption": "配信の最後にかけるべき曲を集めたボーカルアルバム",
+      "categoryId": "cat_1779018948704",
+      "tracks": [
+        "track_1779213279840_0",
+        "track_1779213279842_1",
+        "track_1779213279842_2",
+        "track_1779213279842_3",
+        "track_1779213279842_4",
+        "track_1779213279842_5",
+        "track_1779213279842_6",
+        "track_1779213279842_7",
+        "track_1779213279842_8",
+        "track_1779213279842_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\outro\\配信みてくれてありがとうSONGS",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1780618864460",
+      "title": "イントロのためのピアノ曲",
+      "art": "",
+      "caption": "静かでやわらかなピアノを中心に構成された、配信や動画の冒頭に使いやすいイントロ向けインスト集。",
+      "categoryId": "cat_1779018943718",
+      "tracks": [
+        "track_1780620104038_0",
+        "track_1780620104040_1",
+        "track_1780620104040_2",
+        "track_1780620104040_3",
+        "track_1780620104040_4",
+        "track_1780620104040_5",
+        "track_1780620104040_6",
+        "track_1780620104040_7",
+        "track_1780620104040_8",
+        "track_1780620104040_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\intro\\イントロのためのピアノ曲",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1780620921360",
+      "title": "番組のための主題歌",
+      "art": "",
+      "caption": "番組や配信の冒頭を彩るための、主題歌風オープニング曲集。",
+      "categoryId": "cat_1779018943718",
+      "tracks": [
+        "track_1780622747065_0",
+        "track_1780622747065_1",
+        "track_1780622747065_2",
+        "track_1780622747065_3",
+        "track_1780622747065_4",
+        "track_1780622747065_5",
+        "track_1780622747065_6",
+        "track_1780622747065_7",
+        "track_1780622747065_8",
+        "track_1780622747065_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\intro\\番組のための主題歌",
+      "type": "vocal"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "track_1779213279840_0",
+      "title": "Abfahrt",
+      "caption": "旅立ちを予感させる、静寂と風景が一体となったインストゥルメンタル。新たな道の始まりに寄り添うような、切なさと期待が混じり合う調べ。",
+      "type": "vocal",
+      "duration": 156,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Check, check)\r\n(Ja, ja)\r\nAbfahrt jetzt\r\nFeierabend im Block\r\n\r\n[Refrain]\r\nDanke für die Zeit, Bruder\r\nDanke für den Vibe, Bruder\r\nDanke für den Hype, Bruder\r\nKeine Snitches, echte Liebe, Bruder\r\n(Echte Liebe)\r\nDanke für die Zeit, Bruder\r\nDanke für den Vibe, Bruder\r\nDanke für den Hype, Bruder\r\nAbfahrt jetzt, wir sind weiter, Bruder\r\n(Weiter, Bruder)\r\n\r\n[Verse]\r\nHoch geflogen, tief gefallen\r\nWir haben heute richtig geknallt\r\nKeiner weicht zurück, wir stehen fest\r\nStabiler Support, gib mir den Rest\r\nKeine Spielchen, nur die Wahrheit\r\nBringt uns heute diese Klarheit\r\nDu warst da, ich war hier\r\nKein Verrat, wir stehen zu viert\r\nWir jagen das Ziel, wir jagen das Geld\r\nBeste Community auf der Welt\r\nPack die Sachen, Licht aus jetzt\r\nMorgen wieder, wird wieder gehetzt\r\n(Morgen wieder)\r\n(Wird wieder gehetzt)\r\n\r\n[Refrain]\r\nDanke für die Zeit, Bruder\r\nDanke für den Vibe, Bruder\r\nDanke für den Hype, Bruder\r\nKeine Snitches, echte Liebe, Bruder\r\n(Echte Liebe)\r\nDanke für die Zeit, Bruder\r\nDanke für den Vibe, Bruder\r\nDanke für den Hype, Bruder\r\nAbfahrt jetzt, wir sind weiter, Bruder\r\n\r\n[Outro]\r\nOffline jetzt\r\n(Offline)\r\nDanke für alles\r\n(Danke)\r\nAbfahrt\r\n(Abfahrt)\r\n(Abfahrt)\r\n(Abfahrt)",
+      "added_at": "2026-05-19"
+    },
+    {
+      "id": "track_1779213279842_1",
+      "title": "Gratitude On The Corner",
+      "caption": "日常の小さな光景が温かいメロディーに彩られる、感謝の気持ちを巡らせるような心地よい楽曲。",
+      "type": "vocal",
+      "duration": 97,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "Wake up to the concrete humming, sun hitting the glass\nBirds chirping in the neon, let the silence pass\nI don't need a map to know exactly where we stand\nHolding onto this frequency, a rhythm in my hand\n\nArigato, thank you, gracias for the life\nArigato, thank you, keeping it inside\nDanke schön, merci, shukran to the soul\nOne world, one love, we're making it whole, making it whole\n\nShukran for the wisdom in the way you look at me\nMerci for the moments that were meant for us to be\nSpanglish on the corner, Japanese in the air\nDanke schön for the feeling of belonging everywhere\n\nArigato, thank you, gracias for the life\nArigato, thank you, keeping it inside\nDanke schön, merci, shukran to the soul\nOne world, one love, we're making it whole, making it whole\n\nArigato\nThank you for the life\nArigato, arigato\nThank you for the life\nDanke schön, merci...",
+      "added_at": "2026-05-19"
+    },
+    {
+      "id": "track_1779213279842_2",
+      "title": "L'Eterno Grazie",
+      "caption": "永遠の感謝をテーマにした、壮大で感動的な音の旅。荘厳なストリングスとピアノが、心の内面から響きわたる高揚感を演出します。",
+      "type": "vocal",
+      "duration": 174,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n\r\n[Stanza A]\r\nIl grande sipario scende sulla terra\r\nIl viaggio trova il suo porto finale\r\nVoi siete la fiamma nel freddo della notte\r\nUn tesoro che porto nel profondo\r\n\r\n[Interlude]\r\n\r\n[Stanza B]\r\nSorge un inno di gloria suprema\r\nOgni cuore batte nel ritmo dell'universo\r\nLa forza del cammino ci rende eterni\r\nPer questo dono io canto al cielo\r\n\r\n[Chorus]\r\nGrazie\r\nGrazie\r\nInfinitamente grazie\r\n(Grazie)\r\n(Grazie)\r\n\r\n[Outro]\r\nL'eco rimane per sempre\r\nGrazie\r\nGrazie",
+      "added_at": "2026-05-19"
+    },
+    {
+      "id": "track_1779213279842_3",
+      "title": "La_fin_de_soirée",
+      "caption": "昼から夜へ、喧騒から静寂へ。物語が区切りをつけ、時間がゆったりと流れる、移ろいゆく空気の描写。",
+      "type": "vocal",
+      "duration": 102,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "Merci d'avoir regardé\nMerci d'avoir été là\nC'était\nC'était ça\nMerci\nMerci\nMerci\nVraiment\n\nMerci pour la fin de soirée\nMerci d'être resté\nMerci\nMerci\nMerci\nMerci\nMerci\n\nOn se voit\nOu pas\nMerci\nMerci\nAu revoir\nMerci",
+      "added_at": "2026-05-19"
+    },
+    {
+      "id": "track_1779213279842_4",
+      "title": "Merci vielmal Noir (Alt Take)",
+      "caption": "過ぎ去った日々を優しく回顧する、郷愁を誘うピアノ中心のインストゥルメンタル。深い内省とともに、穏やかな哀愁を感じる時間。",
+      "type": "vocal",
+      "duration": 176,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Jo-lo-di-ee-hu)\r\n(Jo-lo-di-ee-hu)\r\n\r\n[Verse 1]\r\nD'Schmink rännt mer s'Gsicht ab wie Räge\r\nD'Saitä sind verrostet und mini Händ sind schwer\r\nIch ha mis Herz uf dä Chuchitisch gleit\r\nNäbe dä lääre Fläsche und em gsprungne Glas\r\nD'Nacht frisst d'Räschte vo mim letschte Gsang\r\nD'Lunge bränne wie ne alti Fabrik im Wind\r\n\r\n[Verse 2]\r\nS'isch Ziit zum d'Stiifle wider aazlegge\r\nDä Vorhang fallt mit em Gstank vo Billigwii\r\nIhr sind d'Züüge vo mim chliine Verderbe gsi\r\nEn heilige Sündefall im Takt vomene Marsch\r\nD'Gosse wartet scho mit offne Arme uf mich\r\nAber zersch chunt no dä Rächt vo miner Chraft\r\n\r\n[Chorus]\r\nMerci vielmal, merci vielmal\r\n(Merci vielmal)\r\nDanke schön, danke schön\r\n(Merci vielmal)\r\nMerci vielmal, mini Gschwüscherti im Geischt\r\nD'Liebi isch es rasiermässerscharfs Gschenk\r\nMerci vielmal\r\n(Hol-di-ri-di-a)\r\n\r\n[Verse 3]\r\nChaufed mer en Absolution am Tresä\r\nDä Wirt het d'Augä wie trüebs Kristall\r\nD'Wahrheit isch eh nume en huufe Dräck\r\nWo mir mit Samt und Seide zuedecked\r\nIch ha d'Angscht i dä Jaggetäsche versteckt\r\nUnd d'Freid isch en hinkende Hund am Strick\r\n\r\n[Verse 4]\r\nSchneller jetzt, bevor d'Sonne üs findet\r\nDä Rhythmus schlat wie ne Hammer uf s'Chopfsteipflaschter\r\nKniet nieder vor däm furchtbare Lärme\r\nEs isch s'Einzigä wo mer no blibe isch\r\nEn Schrei us Bone und verbränntem Gummi\r\nD'Symphonie vo dä Verlierer fahrt jetzt ab\r\n\r\n[Chorus]\r\nMerci vielmal, merci vielmal\r\n(Merci vielmal)\r\nDanke schön, danke schön\r\n(Merci vielmal)\r\nMerci vielmal, mini Gschwüscherti im Geischt\r\nD'Liebi isch es rasiermässerscharfs Gschenk\r\nMerci vielmal\r\n(Hol-di-ri-di-a)\r\n\r\n[Outro]\r\nS’isch fertig\r\nD’Luft isch dunn\r\nMerci vielmal\r\nDanke schön\r\n(Jo-lo-di-o-di-o-di-ee-hu)\r\n(Merci)\r\n(Merci)\r\nAdieu gits nöd im Räge\r\nMerci vielmal\r\n(Jo-lo-di-o)",
+      "added_at": "2026-05-19"
+    },
+    {
+      "id": "track_1779213279842_5",
+      "title": "Rearview Thanks",
+      "caption": "旅の終点から見つめる、穏やかで心地よい余韻。大切な瞬間を振り返る、静謐なサウンドスケープ。",
+      "type": "vocal",
+      "duration": 174,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Yeah)\r\n(Straight up)\r\nVision blurred in the dark\r\nTime to slide\r\n(Gone)\r\n\r\n[Chorus]\r\nThank you, thank you, thank you (Yeah)\r\nThank you, thank you, thank you (Right now)\r\nThank you, thank you, thank you (Slide)\r\nThank you, thank you, thank you (Ooh)\r\nThank you, thank you, thank you (Straight up)\r\nThank you, thank you, thank you (Yeah)\r\nThank you, thank you, thank you (Speeding)\r\nThank you, thank you, thank you\r\n\r\n[Verse 1]\r\nEverything moving so fast\r\nRiding the wave till it crash\r\nIce on the wrist, it's a flash\r\nKeeping it real with the pack\r\nNever looking back, I'm on track\r\nHaze in the room, it's a fact\r\nGiving the love, it’s a stack\r\nHear how the rhythm just snap\r\n(Yeah)\r\n(It's a wrap)\r\n\r\n[Chorus]\r\nThank you, thank you, thank you (Yeah)\r\nThank you, thank you, thank you (Right now)\r\nThank you, thank you, thank you (Slide)\r\nThank you, thank you, thank you (Ooh)\r\nThank you, thank you, thank you (Straight up)\r\nThank you, thank you, thank you (Yeah)\r\nThank you, thank you, thank you (Speeding)\r\nThank you, thank you, thank you\r\n\r\n[Bridge]\r\n(Slowing down)\r\n(Drowning)\r\nThank you\r\nThank you\r\n(Warped)\r\nThank you\r\n(Pick it up)\r\n(Run it back)\r\n(Run it back)\r\nThank you, thank you, thank you, thank you\r\n(Fast)\r\n\r\n[Chorus]\r\nThank you, thank you, thank you (Yeah)\r\nThank you, thank you, thank you (Right now)\r\nThank you, thank you, thank you (Slide)\r\nThank you, thank you, thank you (Ooh)\r\nThank you, thank you, thank you (Straight up)\r\nThank you, thank you, thank you (Yeah)\r\nThank you, thank you, thank you (Speeding)\r\nThank you, thank you, thank you\r\n\r\n[Outro]\r\n(Gone)\r\nThank you\r\n(Gone)\r\nThank you\r\n(Straight up)\r\nThank you\r\n(Yeah)\r\nThank you\r\n(Comedown)\r\n(Gone)",
+      "added_at": "2026-05-19"
+    },
+    {
+      "id": "track_1779213279842_6",
+      "title": "The Final High Score",
+      "caption": "最高の瞬間を締めくくる、熱狂と別れが交差する夜のクライマックス。達成感と疾走感が織りなす壮大なサウンドトラック。",
+      "type": "vocal",
+      "duration": 147,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "Lights are low and the save is done\nCounting down our, our shared sun\nPixels glowed and the bits were sweet\nThanks for making the loop complete\nThanks for making the loop complete\nFrom the start to the final screen\nBest adventure I've ever seen\n\nThank you for the run\nMerci, you were the one\nDanke for the cheers\nArigato for the years\nArigato for the years\nSweet save for the stay\nEvery bit, bit made my day\n\nWe shared the frames and we shared the clicks\nA world built up from digital bricks\nDoesn't matter where you're logging in\nYou made the end feel like a win\nYou made the end feel like a win\nSo I'll send the signal through the air\nTo show you that I really care\n\nThank you for the run\nMerci, you were the one\nDanke for the cheers\nArigato for the years\nArigato for the years\nSweet save for the stay\nEvery bit, bit made my day\n\nArigato\nThank you\nSAYONARA",
+      "added_at": "2026-05-19"
+    },
+    {
+      "id": "track_1779213279842_7",
+      "title": "ありがとう連呼 (大合唱Ver. A)",
+      "caption": "溢れ出る祝福の念を乗せた、力強くも温かい大合唱。感動的な共有体験を彩る、輝かしいコーラスサウンドです。",
+      "type": "vocal",
+      "duration": 112,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-19"
+    },
+    {
+      "id": "track_1779213279842_8",
+      "title": "ありが加藤-加藤さん専用曲mix",
+      "caption": "特別な人へ捧げる、心温まる祝福の調べ。パーソナルな感情と感謝が詰まった、彩り豊かなインストゥルメンタル・サウンド。",
+      "type": "vocal",
+      "duration": 94,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-19"
+    },
+    {
+      "id": "track_1779213279842_9",
+      "title": "洗脳さんきゅーっ！(Senno Thank You!)",
+      "caption": "喧騒を抜け出し、深い安心感に包まれるような夜の帳の描写。安らぎと劇的な深みが同居する、穏やかでドラマチックな調べ。",
+      "type": "vocal",
+      "duration": 179,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(いっくよー！せーの、きゅぴぴぴーん！)\r\n(ボクの言うこと、ぜーんぶ、絶対！)\r\n(はい！はい！はい！はい！)\r\n(さんきゅー！さんきゅー！さんきゅー！さんきゅー！)\r\n\r\n[Verse 1]\r\nモニター越しに洗脳中！\r\nピコピコ電波でドッカーン！\r\nキミの視覚も聴覚も\r\nボクが全部ジャックしちゃうもんねー\r\n(ぱぴぷぺぽー！)\r\n赤パも緑も虹色も\r\n投げなきゃお仕置き？ありえない！\r\n思考停止でポチっとな\r\n運命なんてボクが書き換える！\r\nキュン死に確定、逃がさないからっ！\r\n(ぴっぴー！ぴっぴー！)\r\n\r\n[Chorus]\r\nさんきゅーっ！\r\nもう、さんきゅーっ！\r\nさんきゅー！さんきゅー！\r\n脳汁どばどば電波受信\r\nさんきゅーっ！\r\nもっと、さんきゅーっ！\r\nさんきゅー！さんきゅー！\r\nボクに貢いで、思考停止っ\r\n(ずっと　ずっと)\r\n(ボクの奴隷っ)\r\nさんきゅーっ！\r\nもう、さんきゅーっ！\r\n宇宙の果てまで、さんきゅーっ！\r\n(もっと　もっと)\r\n(さんきゅーっ！)\r\n\r\n[Verse 2]\r\n脳内バグってらりるれろ！\r\n限界？何それ美味しいの？\r\nアーカイブ無限に回してね\r\nボクの可愛さ過剰摂取！\r\n(うー、はい！)\r\n一回、二回、三万回！\r\n高評価ボタンを連打せよ！\r\n推し変禁止、絶対禁止\r\nボク以外の記憶は、ポイしちゃえー！\r\n(ぽいっ！　ぽいっ！)\r\n\r\n[Chorus]\r\nさんきゅーっ！\r\nもう、さんきゅーっ！\r\nさんきゅー！さんきゅー！\r\nネットを越えて神経破壊\r\nさんきゅーっ！\r\nもっと、さんきゅーっ！\r\nさんきゅー！さんきゅー！\r\nボクがいないと、もう無理でしょ？\r\n(ずっと　ずっと)\r\n(中毒注意っ)\r\n\r\n[Verse 3]\r\nぴろぴろ、にゃんにゃん、わっしょーい！\r\nキミの財布は、ボクの財布\r\nボクの欲望、キミの希望\r\nはい、あーんして、スパチャあーん！\r\n(あーん！)\r\n寝不足？上等！\r\nエナドリ飲んで、踊り狂え！\r\nボクこそが、キミの唯一神なのだーっ！\r\n(ははーっ！)\r\n(さんきゅー！さんきゅー！さんきゅー！)\r\n\r\n[Bridge]\r\n離さないよ\r\n(離さない)\r\n逃がさないよ\r\n(逃がさない)\r\nボクだけ見てて\r\n(見てて)\r\n(登録)\r\n(解除)\r\n(だーめーだーめーっ！)\r\n(したら呪っちゃうぞー！)\r\n(うそ、だいしゅき、だから消さないで)\r\n(めっ！めっ！めっ！)\r\n\r\n[Outro]\r\nさんきゅーっ！\r\nおつボクだよお\r\n約束だよ\r\n全肯定してよねっ\r\nさんきゅーっ！\r\n(さんきゅーっ！)\r\nさんきゅーっ！\r\n(さんきゅーっ！)\r\nさんきゅーっ！\r\n(さんきゅーっ！)\r\n(洗脳完了、おつおつー！)\r\n(アーカイブも見ろー！)\r\n(またすぐね)\r\n(だいしゅきーっ)\r\n(さんきゅー！さんきゅー！さんきゅー！)",
+      "added_at": "2026-05-19"
+    },
+    {
+      "id": "track_1780620104038_0",
+      "title": "Cinematic Punch Intro",
+      "caption": "壮大な情景描写と期待感を煽る、映画的な導入部。力強いビートが物語の世界への没入を促し、聴く者を深く誘い込む。",
+      "type": "instrumental",
+      "duration": 47,
+      "full_url": "",
+      "tags": [
+        "Rock",
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780620104040_1",
+      "title": "Broadcast Pulse (30s Opener)",
+      "caption": "ノイズ混じりのパルスビートが心に響き渡るオープニング。デジタルなサウンドスケープと規則的な脈動が、新しい情報や物語の放送開始を予感させる。",
+      "type": "instrumental",
+      "duration": 116,
+      "full_url": "",
+      "tags": [
+        "Rock",
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780620104040_2",
+      "title": "Dramatic Intro For Program",
+      "caption": "壮大なプログラムの幕開けを告げるドラマティックなイントロ。期待の高まりとともに、聴く者を非日常的な物語の世界へといざなう。",
+      "type": "instrumental",
+      "duration": 62,
+      "full_url": "",
+      "tags": [
+        "Rock",
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780620104040_3",
+      "title": "Sophisticated Opener",
+      "caption": "洗練された音階が空間に漂い、特別な始まりを告げる。品格と知性を感じさせる、上質なムードを描くインストゥルメンタル。",
+      "type": "instrumental",
+      "duration": 53,
+      "full_url": "",
+      "tags": [
+        "Rock",
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780620104040_4",
+      "title": "Sharp Piano Energy",
+      "caption": "鋭く力強いピアノのエネルギーが緊張感と高揚感を演出。シーンを印象づけるイントロや、深い余韻を残すアウトロとして効果的。",
+      "type": "instrumental",
+      "duration": 35,
+      "full_url": "",
+      "tags": [
+        "Rock",
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780620104040_5",
+      "title": "The Opening Pulse",
+      "caption": "心臓の鼓動のような浮遊感が漂うオープニング。静寂と期待が入り混じる瞬間を彩り、新たな世界の始まりを感じさせる。",
+      "type": "instrumental",
+      "duration": 143,
+      "full_url": "",
+      "tags": [
+        "Rock",
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780620104040_6",
+      "title": "Radio Ready Intro",
+      "caption": "リスナーに優しく寄り添い、空間を満たすような導入部。温かく心地よいサウンドが、期待とともに物語への引き込みをスムーズに行う。",
+      "type": "instrumental",
+      "duration": 29,
+      "full_url": "",
+      "tags": [
+        "Rock",
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780620104040_7",
+      "title": "Broadcast Edge Intro",
+      "caption": "電波に乗って未知なる空へ――。新しい展開が始まる瞬間の高揚感と探求心を込めた、躍動的なオープニングサウンド。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "",
+      "tags": [
+        "Rock",
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780620104040_8",
+      "title": "Piano Rock Hook",
+      "caption": "ピアノの力強いメロディが壮大な空間を彩る。ドラマチックな展開を予感させ、物語に深みを与える幕開けや終結に最適なサウンド。",
+      "type": "instrumental",
+      "duration": 151,
+      "full_url": "",
+      "tags": [
+        "Rock",
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780620104040_9",
+      "title": "Refined Energy",
+      "caption": "静寂の中から研ぎ澄まされて湧き上がるエネルギー。洗練された質感を持つ予感を呼び起こし、新たな展開の直前を飾るサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 29,
+      "full_url": "",
+      "tags": [
+        "Rock",
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780622747065_0",
+      "title": "The Carcass Of The Zeitgeist",
+      "caption": "レビュー番組のための曲　英語ボーカル",
+      "type": "vocal",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "明るい",
+        "Lo-Fi / カセット"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Check the tape)\n(Check the tape)\n\n[Verse 1]\nI found the cardboard box in the humid attic\nSquashed between the tax returns and the wool blankets\nA pile of magnetic tape and discarded cultural debris\nThe institutional apparatus of our shared childhood\n(Our shared childhood)\nIt tastes like artificial grape and heavy wood rot\nI am performing an autopsy on a dead sitcom\nWatching the laugh track simulate a joy we never felt\nWhile the tracking errors jitter across the screen\n(Across the screen)\nIt is a pharmaceutical grade of heavy sentimentality\nDesigned to keep the domestic claustrophobia at bay\nLet us analyze the structural integrity of this memory\nBefore it dissolves into a pile of gray plastic\n(Gray plastic)\n\n[Chorus]\nWe are looking back to see if we were ever there\n(Were we ever there)\nExamining the wreckage of the entertainment complex\n(The whole complex)\nIt is a ritual of ironic sincerity and bad lighting\nSearching for a sanctuary in the reruns of our lives\n(The reruns of our lives)\nYes we are looking back and the view is terrifying\n(It is terrifying)\n\n[Verse 2]\nThe morning after the end of history feels like this\nStaring at a commercial for a brand of laundry soap\nThat promised a spiritual cleansing in forty loads\nI remember the exact street corner where we bought it\nNext to the pharmacy and the boarded up theater\n(The boarded up theater)\nThe sociology of our desire is written in the credits\nIn the font of a decade that didn't know it was ending\nWe are the intellectual drunks of the bargain bin\nSearching for a grand philosophy in a toy commercial\n(A toy commercial)\nIt is a performance of narcissism in a low resolution\nAn analytical devastation of our former selves\n(Our former selves)\n\n[Chorus]\nWe are looking back to see if we were ever there\n(Were we ever there)\nExamining the wreckage of the entertainment complex\n(The whole complex)\nIt is a ritual of ironic sincerity and bad lighting\nSearching for a sanctuary in the reruns of our lives\n(The reruns of our lives)\nYes we are looking back and the view is terrifying\n(It is terrifying)\n\n[Bridge]\nThey say the past is a foreign country\nBut it looks more like a strip mall at dusk\nFull of synthetic fabrics and chemical management\nI am the charismatic loser in this documentary\nExplaining why the theme song makes me want to cry\n(Makes me want to cry)\nIt is not nostalgia it is a secular despair\nWrapped in a catchy melody and a three-point turn\n(A three-point turn)\n\n[Chorus]\nWe are looking back to see if we were ever there\n(Were we ever there)\nExamining the wreckage of the entertainment complex\n(The whole complex)\nIt is a ritual of ironic sincerity and bad lighting\nSearching for a sanctuary in the reruns of our lives\n(The reruns of our lives)\nYes we are looking back and the view is terrifying\n(It is terrifying)\n\n[Outro]\nTurn the dial back\n(Turn it back)\nDissect the frame\n(Dissect the frame)\nOne more time for the cynical crowd\n(For the crowd)\nLooking back\n(Looking back)\nUntil the tape snaps\n(Until it snaps)\nGoodnight to the ghost in the machine\n(Goodnight)\n(Goodnight)",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780622747065_1",
+      "title": "Nachtfunk Opener",
+      "caption": "夜の雑談ラジオのための曲　ドイツ語ボーカル",
+      "type": "vocal",
+      "duration": 181,
+      "full_url": "",
+      "tags": [
+        "明るい",
+        "Lo-Fi / カセット"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh ooh)\n\n[Verse]\nIch schalte ein\nDie Luft wird weit\nEin kleiner Funke im Blau\nAlles ist noch ganz leise\n(Ganz leise)\n\n[Chorus]\nEs kommt zu dir\nEin warmes Feld\nWir bleiben hier\nEs wird hell\nEs wird hell\nEs wird hell\nEs wird hell\n\n[Verse]\nDie Straße ruht\nDas Wasser fließt\nEin heller Schein im Glas\nDu bist nicht allein\n(Nicht allein)\n\n[Chorus]\nEs kommt zu dir\nEin warmes Feld\nWir bleiben hier\nEs wird hell\nEs wird hell\nEs wird hell\nEs wird hell\n\n[Bridge]\n(Warten)\n(Drehen)\n(Halten)\n(Sehen)\n\n[Chorus]\nEs kommt zu dir\nEin warmes Feld\nWir bleiben hier\nEs wird hell\nEs wird hell\nEs wird hell\nEs wird hell\n\n[Outro]\nImmer weiter\nImmer weiter\n(Hell)\n(Ganz hell)",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780622747065_2",
+      "title": "Le Geste Pur (Alternate Take)",
+      "caption": "ガジェット紹介番組のための曲　フランス語ボーカル",
+      "type": "vocal",
+      "duration": 157,
+      "full_url": "",
+      "tags": [
+        "明るい",
+        "Lo-Fi / カセット"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ouh, c'est ça)\n(Regarde un peu)\n\n[Verse 1]\nRegardez cette ligne pure\nElle tient dans le creux de ma main\nOubliez le vacarme d'hier\nLe monde devient soudain léger\n(Si léger)\n\n[Chorus]\nC'est le geste qui compte\nLa magie sans l'effort\nUn petit miracle du quotidien\nPour nous faciliter la vie\n(Oh oui, si facile)\nLe progrès a du charme\n\n[Verse 2]\nUn bouton, une simple pression\nLa fluidité nous va si bien\nPlus besoin de forcer le passage\nL'élégance se cache ici\nDans cet objet qui vous devance\n\n[Chorus]\nC'est le geste qui compte\nLa magie sans l'effort\nUn petit miracle du quotidien\nPour nous faciliter la vie\n(C'est l'idée)\nLe progrès a du charme\n\n[Bridge]\nJ'ai connu les dossiers lourds\nLes objets qui résistent\nMaintenant, on respire enfin\nLa simplicité est une promesse tenue\n(Enfin libre)\n\n[Chorus]\nC'est le geste qui compte\nLa magie sans l'effort\nUn petit miracle du quotidien\nPour nous faciliter la vie\n(Si simple)\nLe progrès a du charme\n\n[Outro]\nApprochez, voyez par vous-même\nC'est pour vous, c'est pour nous\n(Pour tout le monde)\nDemain commence maintenant\nJuste ici\n(Regarde)",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780622747065_3",
+      "title": "Sin Rumbo (Take 1)",
+      "caption": "旅・Vlog番組のための曲　スペイン語ボーカル",
+      "type": "vocal",
+      "duration": 108,
+      "full_url": "",
+      "tags": [
+        "明るい",
+        "Lo-Fi / カセット"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse]\nVeo la arena volar por la ventana\nel sol me pega en el brazo izquierdo\nno sé qué hora es, ya no importa\nel mapa está doblado en la guantera\nvamos despacio, sin buscar nada\nme gusta el ruido de este viejo motor\nun poco de sal en el aire\nel cielo se ve tan ancho hoy\nmañana ya veremos qué pasa\n(qué pasa hoy)\n\n[Bridge]\n¿Viste el color de ese cerro?\nSí, parece de otro mundo\nMejor paramos allá abajo\n\n[Outro]\nSin rumbo está bien\nSin rumbo está bien\nSin rumbo está bien\nSin rumbo está bien",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780622747065_4",
+      "title": "Il Grande Raduno",
+      "caption": "ゲーム実況番組のための曲　イタリア語ボーカル",
+      "type": "vocal",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "明るい",
+        "Lo-Fi / カセット"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Oooooh)\n(Insieme)\n\n[Verse 1]\nSaliamo sul sentiero di roccia nera\nLe mani segnate dal freddo e dal tempo\nNon serve parlare per capire la strada\nIl peso del mondo lo portiamo in due\n\n[Verse 2]\nAbbiamo cercato la bestia nel bosco\nAttraverso le valli di fango e di spine\nOgnuno ha un posto tra i ranghi del fuoco\nNessuno rimane a guardare da solo\n\n[Chorus]\nNella polvere o nel vanto della festa\n(Noi restiamo qui)\nSotto la pioggia o nel cuore del sole\n(Sempre qui)\nSe il colpo fallisce alziamo lo scudo\nSe la porta si apre gridiamo alla luna\n(Insieme)\n\n[Verse 3]\nRicorda il fratello caduto nel fosso\nGli abbiamo dato il riposo dei giusti\nMa oggi la sorte ci tende la mano\nIl ferro risuona contro la pietra\n\n[Verse 4]\nNon c'è vergogna nella ferita aperta\nC'è solo il racconto di chi non si arrende\nSpostiamo i confini della vecchia terra\nFinché ogni volto diventa un amico\n\n[Chorus]\nNella polvere o nel vanto della festa\n(Noi restiamo qui)\nSotto la pioggia o nel cuore del sole\n(Sempre qui)\nSe il colpo fallisce alziamo lo scudo\nSe la porta si apre gridiamo alla luna\n\n[Verse 5]\nLa notte si spegne sopra le colline\nIl cerchio si stringe attorno alla fiamma\nDomani la caccia comincia di nuovo\nCon nuove parole e lo stesso coraggio\n\n[Outro]\nIl viaggio continua\n(Oooooh)\nOltre la cima\n(Insieme)\nSempre insieme\n(Fino alla fine)",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780622747065_5",
+      "title": "O Sabor de Voltar (Ver. 1)",
+      "caption": "料理番組のための曲　ポルトガル語ボーカル",
+      "type": "vocal",
+      "duration": 150,
+      "full_url": "",
+      "tags": [
+        "明るい",
+        "Lo-Fi / カセット"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Oh oh oh)\n(Oh oh oh)\n\n[Verse]\nO sol atravessa a fumaça da janela\nEspalho o sal como se fosse poeira de estrelas\nSinto o peso do ferro na palma da mão\nO metal estala enquanto a chama ganha vida\nAs cascas de cebola caem pelo chão da cozinha\n\n[Chorus]\nTudo se transforma quando a gente se entrega\nA mágica acontece entre o trigo e o calor\nUm banquete feito de lembrança e paciência\nO sabor de voltar pra casa finalmente\n\n[Verse]\nLembro de você sentada naquele banco alto\nObservando o molho borbulhar devagar\nAs ervas frescas perfumando todo o ambiente\nUm segredo guardado no fundo da colher\nO vapor sobe e embaça o meu olhar\n\n[Chorus]\nTudo se transforma quando a gente se entrega\nA mágica acontece entre o trigo e o calor\nUm banquete feito de lembrança e paciência\nO sabor de voltar pra casa finalmente\n\n[Bridge]\nNão é apenas sobre o que colocamos no prato\nÉ sobre as conversas que nunca terminam\nÉ o conforto de saber que existe um lugar\nOnde o tempo não tem pressa de passar\n(Não tem pressa)\n(Não tem pressa de passar)\n\n[Chorus]\nTudo se transforma quando a gente se entrega\nA mágica acontece entre o trigo e o calor\nUm banquete feito de lembrança e paciência\nO sabor de voltar pra casa finalmente\n\n[Outro]\nA mesa está posta\nA porta está aberta\n(Vem comer)\n(Pode entrar)\nFinalmente em casa",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780622747065_6",
+      "title": "De Eilandgeest",
+      "caption": "ドキュメンタリー番組のための曲　オランダ語ボーカル",
+      "type": "vocal",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "明るい",
+        "Lo-Fi / カセット"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh-wa-ooh)\n(Ooh-wa-ooh)\n\n[Verse 1]\nWelkom aan de waterkant\nLaat de schoenen bij de vloed\nDe grond is van ons allemaal\nGeen muren die ons scheiden\nDe wind vertelt ons de weg\nVrede in de vroege dag\n\n[Chorus]\nDe eilandgeest verbindt ons (Verbindt ons)\nDe eilandgeest is thuis (Altijd thuis)\nEén hart, één stem\nIedereen is welkom hier\nDe eilandgeest verbindt ons (Verbindt ons)\nDe eilandgeest is thuis (Altijd thuis)\n\n[Verse 2]\nKijk naar de boom en de vrucht\nGenoeg voor elke mond aan tafel\nWij delen wat de aarde geeft\nZonder angst en zonder haast\nDe stad is ver over de zee\nHier telt alleen de mens\n\n[Chorus]\nDe eilandgeest verbindt ons (Verbindt ons)\nDe eilandgeest is thuis (Altijd thuis)\nEén hart, één stem\nIedereen is welkom hier\nDe eilandgeest verbindt ons (Verbindt ons)\nDe eilandgeest is thuis (Altijd thuis)\n\n[Verse 3]\nDe oudste wijsheid is de cirkel\nHand in hand in het zand\nGeen vreemden, enkel broeders\nOnder de lach van de zon\nDe poorten staan wijd open\nVoor wie rust zoekt in de geest\n\n[Chorus]\nDe eilandgeest verbindt ons (Verbindt ons)\nDe eilandgeest is thuis (Altijd thuis)\nEén hart, één stem\nIedereen is welkom hier\n\n[Outro]\nWelkom hier (Welkom thuis)\nEén hart (Eén stem)\nIn de eilandgeest (Eilandgeest)\n(Ooh-wa-ooh)\n(Ooh-wa-ooh)",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780622747065_7",
+      "title": "Varieténs anatomi",
+      "caption": "コメディ・バラエティ番組のための曲　スウェーデン語ボーカル",
+      "type": "vocal",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "明るい",
+        "Lo-Fi / カセット"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Dunk, dunk, dunk)\n\n[Verse 1]\nJag betraktar sprickorna i den här fernissan\nSextio år av fotsteg har karvat djupa spår\nDet luktar instängt, som en gammal byråkrati\nEn samling av dammpartiklar som dansar utan rytm\nJag räknar varje maska i min vänstra strumpa\nEn anatomisk genomgång av total tristess\nIngenting här lovar något spektakulärt\nBara en kropp i en stol under kallt ljus\n\n[Chorus]\nMen nu spricker förhänget som en torr sårskorpa\nVi river ner det bleka, det tysta, det förutsägbara\nFrån noll till en explosion av det helt onödiga\nHär bygger vi monument av flisor och skrot\nTitta på oss när vi blir arkitektur\nHela rummet andas i takt nu\n(Titta på oss nu)\n\n[Verse 2]\nDet finns en kirurgisk precision i detta kaos\nJag analyserar vinkeln på din stela nacke\nDu väntar på ett skämt eller en krossad tallrik\nJag ger dig en procedur av rent vansinne\nKalkylerat tempo, en mekanisk ritual\nVi är för smarta för att bara sitta stilla\nSvetten rinner nerför ryggraden som en flod\nAggressivt uppriktig i en för trång kavaj\n(Helt orimligt)\n(Helt fantastiskt)\n\n[Bridge]\nTrampa sönder golvet tills träet ger vika\nKrossa förväntan, bygg upp en ny struktur\nDet här är inte en lek, det är ett förhör\nÄr du vaken, är du här, är du med mig\nRytmen äter upp all logik i rummet\nHundra kilo glädje maskerad som ett hot\n\n[Chorus]\nNu spricker förhänget som en torr sårskorpa\nVi river ner det bleka, det tysta, det förutsägbara\nFrån noll till en explosion av det helt onödiga\nHär bygger vi monument av flisor och skrot\nTitta på oss när vi blir arkitektur\nHela rummet andas i takt nu\n(Titta på oss nu)\n\n[Outro]\nHåll andan\nDet börjar nu\nPrecis\nHär\n(Här)",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780622747065_8",
+      "title": "Sirkus Hjerne (Theme Version)",
+      "caption": "勉強・解説番組のための曲　ノルウェー語ボーカル",
+      "type": "vocal",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "明るい",
+        "Lo-Fi / カセット"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\nEn to tre fir\nKom igjen\n(Her kommer vi)\n\n[Verse 1]\nKast kartet ut av vinduet nå\nTrenger ingen stier der vi skal gå\nHjernebarken rister som en gammel bil\nVi gir gass med et gigantisk smil\nIngen fasit kan stoppe denne festen\nRir på tankene som den villeste hesten\nLæring er ikke støv og tørre ark\nDet er et brennende bål i en mørk park\n\n[Pre-Chorus]\nNå skjer det\n(Hører du)\nVi tar sats\n(Er du klar)\n\n[Chorus]\nVi hopper gjennom ringer av ild\nHele verden har gått helt vill\nKunnskap er et sirkus vi er stjernene\nVi sprenger grensene i hjernene\n(Helt vilt)\n(Helt rått)\n\n[Verse 2]\nGlem alt du trodde du visste i går\nI dag er det vår tur tida er vår\nPlukker opp ideer som faller fra skyen\nVi er de tøffeste folka i byen\nIkke spør om lov bare finn det ut\nLag et kaos lag en kjempe-salutt\nHver lille tanke er en akrobat\nSom lander perfekt på et sølvfat\n\n[Chorus]\nVi hopper gjennom ringer av ild\nHele verden har gått helt vill\nKunnskap er et sirkus vi er stjernene\nVi sprenger grensene i hjernene\n(Helt vilt)\n(Helt rått)\n\n[Bridge]\nTramp takten til det rister i gulvet\nVi er sultne som det villeste ulvet\nMer kraft\nMer fart\nAlt starter her\n(Nå)\n(Nå)\n\n[Chorus]\nVi hopper gjennom ringer av ild\nHele verden har gått helt vill\nKunnskap er et sirkus vi er stjernene\nVi sprenger grensene i hjernene\n(Helt vilt)\n(Helt rått)\n\n[Outro]\nVi vil vite alt\n(Alt)\nHelt til alt har falt\n(Alt)\nSirkuset stopper aldri\n(Aldri)\nBli med oss\nJa\n(Nå)",
+      "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780622747065_9",
+      "title": "En Stille Pagt",
+      "caption": "青春ドラマ風番組のための曲　デンマーク語ボーカル",
+      "type": "vocal",
+      "duration": 167,
+      "full_url": "",
+      "tags": [
+        "明るい",
+        "Lo-Fi / カセット"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n\r\n[Verse 1]\r\nJeg står ved den lave bæk\r\nHvor vandet sliber hver en sten\r\nMine fødder finder ro\r\nI det mørke sand\r\n(Mørke sand)\r\n\r\n[Verse 2]\r\nVinden rører ved mit hår\r\nSom en hånd jeg næsten kender\r\nJeg trækker vejret dybt\r\nFyldt med duft af våd jord\r\n\r\n[Chorus]\r\nJeg gi'r mig selv et løfte\r\nHer i morgenens spæde lys\r\nAt gro som pilens grene\r\nStærk og bøjelig og fri\r\n(Stærk og fri)\r\n\r\n[Verse 3]\r\nIntet behov for store ord\r\nEller løfter råbt mod skyen\r\nKun en stille pagt i blodet\r\nOm at blive her og se\r\n\r\n[Bridge]\r\nGrenene strækker sig opad\r\nRødderne graver sig ned\r\nTiden er ikke en fjende\r\nMen en vej jeg langsomt går\r\n(En vej jeg går)\r\n\r\n[Chorus]\r\nJeg gi'r mig selv et løfte\r\nHer i morgenens spæde lys\r\nAt gro som pilens grene\r\nStærk og bøjelig og fri\r\n(Stærk og fri)\r\n\r\n[Outro]\r\nStille pagt\r\nI det våde sand\r\nJeg bliver her\r\n(Bliver her)",
+      "added_at": "2026-06-05"
+    }
+  ]
+}

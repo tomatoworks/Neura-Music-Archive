@@ -1,0 +1,2090 @@
+{
+  "id": "theme_1778218343208",
+  "name": "EDM",
+  "categories": [
+    {
+      "id": "cat_1780196207758",
+      "name": "トークBGM",
+      "caption": "軽く流れて、声の邪魔をしないチル系BGM。 柔らかいビートと控えめなメロディで、雑談や日常トークに自然に溶け込む音。",
+      "albums": [
+        "album_1780196308916",
+        "album_1780198475264",
+        "album_1780285628450",
+        "album_1780287632259",
+        "album_1780553146475",
+        "album_1780371903076",
+        "album_1780455320523",
+        "album_1780554248919",
+        "album_1780556322526"
+      ]
+    }
+  ],
+  "albums": [
+    {
+      "id": "album_1780196308916",
+      "title": "Chill Talk EDM",
+      "art": "",
+      "caption": "軽いビートと柔らかいシンセで構成された、声を邪魔しないチル系EDM。",
+      "categoryId": "cat_1780196207758",
+      "tracks": [
+        "track_1780198082392_0",
+        "track_1780198082396_1",
+        "track_1780198082396_2",
+        "track_1780198082396_3",
+        "track_1780198082396_4",
+        "track_1780198082396_5",
+        "track_1780198082396_6",
+        "track_1780198082396_7",
+        "track_1780198082396_8",
+        "track_1780198082396_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\Chill Talk EDM",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1780198475264",
+      "title": "トークのためのピコピコBGM",
+      "art": "",
+      "caption": "軽いピコピコ音と短いリフで構成された、話し声を邪魔しないチル系ビットチューン。",
+      "categoryId": "cat_1780196207758",
+      "tracks": [
+        "track_1780200028609_0",
+        "track_1780200028609_1",
+        "track_1780200028609_2",
+        "track_1780200028609_3",
+        "track_1780200028609_4",
+        "track_1780200028609_5",
+        "track_1780200028609_6",
+        "track_1780200028609_7",
+        "track_1780200028609_8",
+        "track_1780200028609_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\トークのためのピコピコBGM",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1780285628450",
+      "title": "トークのためのピコピコBGM 2",
+      "art": "",
+      "caption": "軽いピコピコ音と短いリフで構成された、話し声を邪魔しないチル系ビットチューンのセカンドアルバム。",
+      "categoryId": "cat_1780196207758",
+      "tracks": [
+        "track_1780287357255_0",
+        "track_1780287357259_1",
+        "track_1780287357259_2",
+        "track_1780287357259_3",
+        "track_1780287357259_4",
+        "track_1780287357259_5",
+        "track_1780287357259_6",
+        "track_1780287357259_7",
+        "track_1780287357259_8",
+        "track_1780287357259_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\トークのためのピコピコBGM 2",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1780287632259",
+      "title": "ゆるいJAZZ",
+      "art": "",
+      "caption": "ゆったり話したい時間のための、軽めのJAZZ BGMを収録したアルバムです。",
+      "categoryId": "cat_1780196207758",
+      "tracks": [
+        "track_1780289383146_0",
+        "track_1780289383146_1",
+        "track_1780289383146_2",
+        "track_1780289383146_3",
+        "track_1780289383146_4",
+        "track_1780289383146_5",
+        "track_1780289383146_6",
+        "track_1780289383146_7",
+        "track_1780289383146_8",
+        "track_1780289383146_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\ゆるいJAZZ",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1780371903076",
+      "title": "EDM POP",
+      "art": "",
+      "caption": "トークを明るく彩る、軽快なEDMポップBGM。 電子的で爽やかなテンポが、会話のリズムを心地よく支える明るい背景音楽です。",
+      "categoryId": "cat_1780196207758",
+      "tracks": [
+        "track_1780374020432_0",
+        "track_1780374020434_1",
+        "track_1780374020434_2",
+        "track_1780374020434_3",
+        "track_1780374020434_4",
+        "track_1780374020434_5",
+        "track_1780374020434_6",
+        "track_1780374020434_7",
+        "track_1780374020434_8",
+        "track_1780374020434_9",
+        "track_1780374020435_10",
+        "track_1780374020435_11",
+        "track_1780374020435_12",
+        "track_1780374020435_13",
+        "track_1780374020435_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Bright\\EDM POP",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1780455320523",
+      "title": "Light HOUSE",
+      "art": "",
+      "caption": "軽やかな4つ打ちを中心にした、明るいハウス系BGMのアルバムです。",
+      "categoryId": "cat_1780196207758",
+      "tracks": [
+        "track_1780457663455_0",
+        "track_1780457663457_1",
+        "track_1780457663457_2",
+        "track_1780457663457_3",
+        "track_1780457663458_4",
+        "track_1780457663458_5",
+        "track_1780457663458_6",
+        "track_1780457663458_7",
+        "track_1780457663458_8",
+        "track_1780457663458_9",
+        "track_1780457663458_10",
+        "track_1780457663458_11",
+        "track_1780457663458_12",
+        "track_1780457663458_13",
+        "track_1780457663458_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Bright\\Light HOUSE",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1780553146475",
+      "title": "ゆるTECHNO",
+      "art": "",
+      "caption": "",
+      "categoryId": "cat_1780196207758",
+      "tracks": [
+        "track_1780553190753_0",
+        "track_1780553190755_1",
+        "track_1780553190756_2",
+        "track_1780553190756_3",
+        "track_1780553190756_4",
+        "track_1780553190756_5",
+        "track_1780553190756_6",
+        "track_1780553190756_7",
+        "track_1780553190756_8",
+        "track_1780553190756_9",
+        "track_1780553190756_10",
+        "track_1780553190756_11",
+        "track_1780553190756_12",
+        "track_1780553190756_13",
+        "track_1780553190756_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\ゆるTECHNO",
+      "type": ""
+    },
+    {
+      "id": "album_1780554248919",
+      "title": "トークのためのピコピコBGM 3",
+      "art": "",
+      "caption": "軽いピコピコ音と短いリフで構成された、話し声を邪魔しないチル系ビットチューンの3rdアルバム。",
+      "categoryId": "cat_1780196207758",
+      "tracks": [
+        "track_1780555737798_0",
+        "track_1780555737800_1",
+        "track_1780555737801_2",
+        "track_1780555737801_3",
+        "track_1780555737801_4",
+        "track_1780555737801_5",
+        "track_1780555737801_6",
+        "track_1780555737801_7",
+        "track_1780555737801_8",
+        "track_1780555737801_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\トークのためのピコピコBGM 3",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1780556322526",
+      "title": "まじめな話をする時のためのEDM",
+      "art": "",
+      "caption": "落ち着いたトーンで話したい時に使える、無機質で控えめなEDM。",
+      "categoryId": "cat_1780196207758",
+      "tracks": [
+        "track_1780558241873_0",
+        "track_1780558241873_1",
+        "track_1780558241874_2",
+        "track_1780558241874_3",
+        "track_1780558241874_4",
+        "track_1780558241874_5",
+        "track_1780558241874_6",
+        "track_1780558241874_7",
+        "track_1780558241874_8",
+        "track_1780558241874_9",
+        "track_1780558241874_10",
+        "track_1780558241875_11",
+        "track_1780558241875_12",
+        "track_1780558241875_13",
+        "track_1780558241875_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\まじめな話をする時のためのEDM",
+      "type": "instrumental"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "track_1780198082392_0",
+      "title": "Soft Current",
+      "caption": "静寂の中に溶け込む優しい流れ。心のざわめきを洗い流す、心地よいグルーヴのサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780198082396_1",
+      "title": "Tranquil Groove",
+      "caption": "穏やかなリズムが心身を包み込む時間。都会の喧騒を忘れさせる、リラックスできる午後のひとときを演出するサウンドトラック。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780198082396_2",
+      "title": "Soft Rhodes Chillout",
+      "caption": "都会の喧騒を忘れ、ローズピアノが誘うチルアウト空間。心が穏やかに呼吸を整える、優しいサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 172,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780198082396_3",
+      "title": "Daily Vibe Alpha",
+      "caption": "日常に寄り添うメロディックなサウンド。新しい一日の気分を心地よく盛り上げる、ささやかな彩り。",
+      "type": "instrumental",
+      "duration": 164,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780198082396_4",
+      "title": "Airy Tropical Chill",
+      "caption": "陽光あふれるトロピカルなムード。爽やかさとリラックスを兼ね備えた、気分が上がるBGM。",
+      "type": "instrumental",
+      "duration": 153,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780198082396_5",
+      "title": "Majestic Whispers",
+      "caption": "神秘的で壮大な広がりを持つ音の風景。耳元でささやくような秘密の囁きが、心に深く響き渡ります。",
+      "type": "instrumental",
+      "duration": 163,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780198082396_6",
+      "title": "Synthesized Lounge Groove",
+      "caption": "電子音とジャズが融合した、洗練された都会の夜。午後のひとときを彩る、メロウなラウンジグルーヴ。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780198082396_7",
+      "title": "Ambient Pulse Talk",
+      "caption": "漂う空気感と、生命のリズムが融合。心に心地よい浮遊感をもたらす、アンビエントなサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780198082396_8",
+      "title": "Crystal Clear Vibe",
+      "caption": "透き通る空気と心地よいビートが織りなす、クリアなムード。日常に優しく溶け込むサウンドトラック。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780198082396_9",
+      "title": "Soft Focus Loop",
+      "caption": "暖かくノスタルジックな音像。まるで思い出の午後の光を包み込むような、優しい心地よさ。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780200028609_0",
+      "title": "Sunny Morning Lobby",
+      "caption": "柔らかな日差しが差し込む空間。穏やかで心地よい朝の空気感を捉え、新しい日常が始まる予感を運ぶサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 96,
+      "full_url": "",
+      "tags": [
+        "Electronic",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780200028609_1",
+      "title": "High Score Run",
+      "caption": "最高の高得点を目指す情熱的な瞬間を描く。汗と熱量が交錯する疾走感あふれるサウンドトラック。",
+      "type": "instrumental",
+      "duration": 127,
+      "full_url": "",
+      "tags": [
+        "Electronic",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780200028609_2",
+      "title": "First Light At The Plaza",
+      "caption": "都会の広場に降り注ぐ、最初の優しい光。目覚めと静かな始まりを予感させる、穏やかなサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "Electronic",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780200028609_3",
+      "title": "Calculated Calm",
+      "caption": "計算された静寂の中の洗練されたムード。次に起こる展開を予感させる、張り詰めたグルーヴを表現。",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "Electronic",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780200028609_4",
+      "title": "Victory Lap ",
+      "caption": "勝利の達成感を祝う、輝かしく力強いエネルギー。クライマックスを彩る、エネルギッシュなインストゥルメンタル。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "",
+      "tags": [
+        "Electronic",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780200028609_5",
+      "title": "Office Utility",
+      "caption": "無機質な日常の空間と一定のリズム。単なる「機能」を描き出し、心地よい繰り返しを感じさせるインストゥルメンタル。",
+      "type": "instrumental",
+      "duration": 95,
+      "full_url": "",
+      "tags": [
+        "Electronic",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780200028609_6",
+      "title": "Saturday Morning Dash",
+      "caption": "週末の朝を疾走する躍動感。日常の忙しさから解放され、明るくエネルギッシュに弾むようなサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 143,
+      "full_url": "",
+      "tags": [
+        "Electronic",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780200028609_7",
+      "title": "Level One Sunlight",
+      "caption": "やわらかな光に包まれた静謐な時間。日常のささやかな美しさを感じさせる、浮遊感のあるサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 148,
+      "full_url": "",
+      "tags": [
+        "Electronic",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780200028609_8",
+      "title": "Morning Over The Plaza",
+      "caption": "広場を優しく照らす朝の光。穏やかでポジティブな目覚めの空気感を、情感豊かに表現。",
+      "type": "instrumental",
+      "duration": 102,
+      "full_url": "",
+      "tags": [
+        "Electronic",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780200028609_9",
+      "title": "Morning On The Level",
+      "caption": "落ち着いた空間に満ちる朝の調べ。静謐な目覚めと新しい始まりを感じさせる、洗練されたメロディ。",
+      "type": "instrumental",
+      "duration": 108,
+      "full_url": "",
+      "tags": [
+        "Electronic",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-31"
+    },
+    {
+      "id": "track_1780287357255_0",
+      "title": "Resting By The Hearth",
+      "caption": "暖炉の傍で過ごす静謐な時間。心地よい安息感に包まれるサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 98,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780287357259_1",
+      "title": "Sunset At The Edge Of The Map",
+      "caption": "地図の遥か果ての地平線に沈む太陽。旅の終わりに立ち止まり、物思いに耽る壮大な色彩を描くインストゥルメンタル。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780287357259_2",
+      "title": "Sunny Morning Quest",
+      "caption": "光あふれる希望の朝。新しい発見へと導く、軽やかで希望に満ちた冒険心を刺激する調べ。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780287357259_3",
+      "title": "Where The Mist Settles",
+      "caption": "霧が立ち込める静寂の中、物語の幕が上がる。深みとミステリアスさを纏った、探求心を掻き立てるサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 102,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780287357259_4",
+      "title": "Marketplace Stroll",
+      "caption": "賑わいに満ちた市場の通りをさまよう。日常のささやかな躍動と、豊かな生命の色彩が薫る調べ。",
+      "type": "instrumental",
+      "duration": 99,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780287357259_5",
+      "title": "Afternoon On The Overworld",
+      "caption": "広大な世界の午後。過ぎゆく時を想わせる、郷愁と穏やかさに満ちた、優しいメロディ。",
+      "type": "instrumental",
+      "duration": 128,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780287357259_6",
+      "title": "Books And Kettle",
+      "caption": "古い書物と、静かに沸き立つケトルの音。時がゆっくり流れる午後のひとときを描き出す、落ち着いた情景描写曲。",
+      "type": "instrumental",
+      "duration": 152,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780287357259_7",
+      "title": "Porch Light On",
+      "caption": "夜の静寂に灯るポーチの明かり。日常の喧騒を忘れ、心の安らぎと暖かな光に包まれる情景。",
+      "type": "instrumental",
+      "duration": 105,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780287357259_8",
+      "title": "Village Hearthside",
+      "caption": "村の暖炉のそばで交わされる、心温まるひととき。親密な語らいが聞こえてくるような、心地良い音の調べ。",
+      "type": "instrumental",
+      "duration": 97,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780287357259_9",
+      "title": "Tea By The Rainy Pane",
+      "caption": "窓を打つ雨音と、温かい紅茶の香りをまとって。午後の穏やかな語らいが溶け込む、情緒的な調べ。",
+      "type": "instrumental",
+      "duration": 142,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780289383146_0",
+      "title": "Window Seat At Four",
+      "caption": "窓を介した視界。午後四時の柔らかい光が描き出す、過ぎゆく時間への静かな郷愁を綴る。",
+      "type": "instrumental",
+      "duration": 170,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780289383146_1",
+      "title": "Seventh Floor View",
+      "caption": "高い場所からの視点。眼下に広がる日常の喧騒と、その中に存在するふとした静寂を捉えた、物語のようなサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 165,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780289383146_2",
+      "title": "Sunlight On Paper",
+      "caption": "光が紙を照らすように、透明感あふれる午後の時間。静かに思考が巡り、言葉を探すような心地よいひととき。",
+      "type": "instrumental",
+      "duration": 146,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780289383146_3",
+      "title": "Sunday Morning Terrace",
+      "caption": "日曜の朝、テラスに広がる穏やかな光景。時間の流れが緩やかになる、優しく心地よいインストゥルメンタル。",
+      "type": "instrumental",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780289383146_4",
+      "title": "Sunlight On The Table",
+      "caption": "テーブルに差し込む光と影。午後の日差しが描き出す、静かで美しいコントラストと、溜まった時間の重み。",
+      "type": "instrumental",
+      "duration": 148,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780289383146_5",
+      "title": "Sidewalk Cafe Ritual",
+      "caption": "都会の隅にある、特別な午後の時間。カフェの日常の風景に溶け込む、穏やかな音色と余韻。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780289383146_6",
+      "title": "Before The City Wakes",
+      "caption": "目覚める前の街の空気感。静寂と、これから始まる日への微かな期待が漂う夜明け前の時間帯。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780289383146_7",
+      "title": "Velvet Meridian",
+      "caption": "深いメロディが心象風景を包み込む、黄昏時（たそがれ）の静謐な空間。都会のノイズを忘れ、内面へ沈潜する時。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780289383146_8",
+      "title": "Amber Hour",
+      "caption": "温かく包み込む午後の光。心に沁みる郷愁と、優しいメロディーが調和する「アンバーアワー」の光景。",
+      "type": "instrumental",
+      "duration": 149,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780289383146_9",
+      "title": "Blueprint Of Morning",
+      "caption": "夜明けの計画図（ブループリント）。希望に満ちた空気に彩られ、新しい一日が幕を開ける瞬間を音で描く。",
+      "type": "instrumental",
+      "duration": 162,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-01"
+    },
+    {
+      "id": "track_1780374020432_0",
+      "title": "Broad Daylight",
+      "caption": "窓から差し込む穏やかな午前の光。心穏やかに過ごせる日常の情景を紡ぐ、落ち着いたサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020434_1",
+      "title": "Morning On The Pier",
+      "caption": "朝霧に包まれた桟橋。波のさざめきと風が、静寂の中で優しいメロディを奏でる、叙情的な空気感。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020434_2",
+      "title": "Subtle Lift",
+      "caption": "静かな日常にそっと光を灯すような、優しく上昇するサウンド。心が解き放たれるような、澄んだ瞬間を表現したインストゥルメンタル。",
+      "type": "instrumental",
+      "duration": 160,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020434_3",
+      "title": "First Light Perspective",
+      "caption": "夜明け前の静寂、そして新しい視点。世界を希望に満ちた光で捉え直す、内省的で感動的なサウンド。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020434_4",
+      "title": "High Noon Terrace",
+      "caption": "乾いた砂漠の熱気と、昼下がりの張り詰めた静けさ。物語が幕を開ける直前の、期待に満ちたドラマティックな空気感。",
+      "type": "instrumental",
+      "duration": 149,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020434_5",
+      "title": "Tuesday Morning Routine",
+      "caption": "心地よい目覚めの時間、週の始まりのルーティン。朝の光が差し込む、穏やかで優しい音の風景。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020434_6",
+      "title": "The Daily Standard",
+      "caption": "日常に溶け込む洗練されたサウンド。いつもの空間が、心地よいBGMとなるような、流れるような楽曲。",
+      "type": "instrumental",
+      "duration": 112,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020434_7",
+      "title": "The Corner Table",
+      "caption": "人々の生活が交差する、秘密めいた角のテーブル。静寂の中で、多様な物語が生まれる空間の空気感を描写。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020434_8",
+      "title": "Morning Momentum",
+      "caption": "夜明けの空気と、心地よいリズムが共鳴する。新しい一日の幕開けを告げる、希望に満ちたサウンドトラック。",
+      "type": "instrumental",
+      "duration": 152,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020434_9",
+      "title": "Morning Architecture",
+      "caption": "静謐な光と空間が織りなす、目覚めの調べ。研ぎ澄まされた環境が呼び起こす、クリアで穏やかな感覚。",
+      "type": "instrumental",
+      "duration": 152,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020435_10",
+      "title": "Midday Momentum",
+      "caption": "午後の日差しが降り注ぐ、活気ある街のサウンド。軽やかなリズムに乗って、力強く日常の流れを駆け抜ける躍動感。",
+      "type": "instrumental",
+      "duration": 117,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020435_11",
+      "title": "Victory Lap",
+      "caption": "困難を乗り越えた高揚感。達成後の晴れやかさや、胸の高鳴りを表現した、壮大なフィナーレ。",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020435_12",
+      "title": "Midday Exchange",
+      "caption": "賑やかな交差点で交わされる、ささやかで温かい対話の瞬間。日常の心温まる響きが流れるようです。",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020435_13",
+      "title": "First Light In Tokyo",
+      "caption": "東京の夜明けがもたらす、淡く広がる感動。光が街全体を優しく包み込む、息をのむような情景描写。",
+      "type": "instrumental",
+      "duration": 148,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780374020435_14",
+      "title": "Morning In The Atrium",
+      "caption": "朝の光が満ちるアトリウム。静謐で洗練された空間が、新しい一日を迎える穏やかな目覚めを演出する。",
+      "type": "instrumental",
+      "duration": 151,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-02"
+    },
+    {
+      "id": "track_1780457663455_0",
+      "title": "Arpeggio Thoughts",
+      "caption": "アルペジオが紡ぐ心の軌跡。静寂の中に灯る、優美な内省の時間をお届けします。",
+      "type": "instrumental",
+      "duration": 165,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663457_1",
+      "title": "Endless Horizon",
+      "caption": "どこまでも広がる空と地平線。壮大で無限の物語が幕を開けるような、スケール感あふれるサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663457_2",
+      "title": "Shimmering Momentum (Option 1)",
+      "caption": "輝きを放つ、止まりのない躍動感。軽快なリズムが希望へと導く、ポジティブなサウンドトラック。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663457_3",
+      "title": "Morning At The Cove",
+      "caption": "穏やかな潮風が運ぶ、隠れだけの空間。日常の喧騒から離れた、特別な目覚めの予感。",
+      "type": "instrumental",
+      "duration": 98,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663458_4",
+      "title": "Clear Morning Pulse",
+      "caption": "澄み渡る空気と優しい音色。清々しく目覚めた街を彩る、心地よいモーニングパルス。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663458_5",
+      "title": "Sunday On The Roof",
+      "caption": "屋上に響く、心地よい浮遊感。都会の喧騒を忘れさせる、透き通った日曜日の余韻。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663458_6",
+      "title": "Soft Shimmer",
+      "caption": "光の粒子が降り注ぐような、夢のような午後。静謐なきらめきが織りなす、優しいムードを纏うサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 153,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663458_7",
+      "title": "Morning Geometry",
+      "caption": "朝日が描き出す、洗練された調べ。新たな一日が始まるような、規則的な美しさと浮遊感。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663458_8",
+      "title": "Seven Am Sunlight",
+      "caption": "夜明けの静けさとともに。新たな一日の始まりに寄り添う、穏やかで目覚めの感覚を誘うサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 83,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663458_9",
+      "title": "Open Horizon",
+      "caption": "青空が広げる無限の可能性。爽やかさと希望に満ちた、ポジティブなエネルギーを放つサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663458_10",
+      "title": "Terrace Horizon",
+      "caption": "テラスに広がる無限の水平線。心地よい風が日常を遠くへ運び去る、心落ち着く情景。",
+      "type": "instrumental",
+      "duration": 169,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663458_11",
+      "title": "Airy Textures",
+      "caption": "空気のような、優しい音のレイヤー。心象風景をそっと包み込む、広がりを感じるテクスチャサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 171,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663458_12",
+      "title": "Crystalline Sunrise",
+      "caption": "透明な音の煌めき。静寂に光が弾けるような、結晶的な透明感を持つインストゥルメンタル。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663458_13",
+      "title": "Plaza At First Light",
+      "caption": "夜明けの広場を照らす光。静けさと新しい始まりの予感を、優しくメロディに乗せて。",
+      "type": "instrumental",
+      "duration": 113,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780457663458_14",
+      "title": "The Geometry Of Monday",
+      "caption": "秩序と再生の調べ。月曜の朝の目覚め、新しい一週間の構造的な美しさを表現するサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "House",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-03"
+    },
+    {
+      "id": "track_1780553190753_0",
+      "title": "Minimal Laid Back Techno Pop Cover",
+      "caption": "都会の夜景を流れる、浮遊感のあるテクノポップ。静寂とグルーヴが織りなすミニマルでチルアウトなサウンド空間へ誘います。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190755_1",
+      "title": "The Glass Terrace",
+      "caption": "ガラスの手すり越しの夜景。都市の喧騒から隔絶され、洗練されたリズムが心に溶け込むようなエレクトロニック体験。",
+      "type": "instrumental",
+      "duration": 151,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_2",
+      "title": "Late July Commute",
+      "caption": "夏の残響を纏う退勤のラッシュ。高揚感と郷愁が入り混じる都会の光景は、新しい物語への期待感を誘うビートで描かれます。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_3",
+      "title": "Luminous Echoes",
+      "caption": "煌めく残響が広がる夜の空間。夢幻的な光と高揚感が交錯し、壮大なサウンドスケープを奏でるトラックです。",
+      "type": "instrumental",
+      "duration": 162,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_4",
+      "title": "First Light Transit",
+      "caption": "夜明けの光が駆け抜ける都市のビート。爽快なエネルギーとともに目覚め、新しい旅立ちを象徴するEDMサウンドです。",
+      "type": "instrumental",
+      "duration": 162,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_5",
+      "title": "Above The Glass Canopy",
+      "caption": "透明なドームの下で輝く都市。壮大かつエネルギッシュなビートが体現する、圧倒的な高揚感のサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 118,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_6",
+      "title": "Glass Shore",
+      "caption": "砕け散るガラスと潮風のような幻想的な疾走感。海辺を彷徨うような、エモーショナルなサウンドスケープが広がる。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_7",
+      "title": "Awakening Of The Fields",
+      "caption": "夜明けの光が大地に満ちる躍動。解放感あふれるビートに乗せて、生命が目覚める感動的な瞬間を音楽で描写します。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_8",
+      "title": "The Amber Horizon",
+      "caption": "夕暮れの空が燃えるような情景。心揺さぶるメロディとビートが、過ぎ行く時間帯の壮大な空気感を切り取るサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 164,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_9",
+      "title": "Meridian Drive",
+      "caption": "黄昏時の道のりを巡る旅。日常と非日常の境界を彷徨う、叙情的でグルーヴィなサウンドトラック。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_10",
+      "title": "Glass Garden Morning",
+      "caption": "ガラスに反射する朝の光。透明感あふれるエレクトロ・ポップが、目覚めの高揚感と繊細な輝きを纏った優しいサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_11",
+      "title": "Blue Hour Architecture",
+      "caption": "青く染まった非現実的な建築美。電子音とリズムが織りなす、時間や空間を超越したような没入感を感じられる音楽。",
+      "type": "instrumental",
+      "duration": 171,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_12",
+      "title": "Granular Grounding",
+      "caption": "深いグルーヴと洗練されたシンセが交差する、夜の都市を疾走するエネルギー。メロディアスでダンサブルなEDM体験。",
+      "type": "instrumental",
+      "duration": 169,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_13",
+      "title": "Highrise Solitude",
+      "caption": "高層ビルからの俯瞰的な視点。都会の頂から捉える孤高の夜景と、内省的な感情が溶け合う壮大なサウンドトラック。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780553190756_14",
+      "title": "Analog Journey",
+      "caption": "心臓の鼓動に同期する熱量。仮想空間を冒険するような、ダイナミックで疾走感あふれるデジタル・グルーヴ。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "Techno",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780555737798_0",
+      "title": "Village Clearing",
+      "caption": "広大な田園地帯の空気を感じさせる、高揚感に満ちたシンセサイザーが奏でる音。解放と再生をテーマにした、心に響くビートが空間を満たす。",
+      "type": "instrumental",
+      "duration": 132,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780555737800_1",
+      "title": "Pixels Of Home",
+      "caption": "ノスタルジーを感じさせるデジタル回路の旅路。ピクセルの中に宿る暖かみのある記憶と、失われた「家」への感情的な回帰を描くエモーショナルなサウンド。",
+      "type": "vocal",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "vocal"
+      ],
+      "bpm": "",
+      "lyrics": "Woo, Pixelite.\nSoft and bright, Pixelite.\n\nMemory in the code,\nHome on the digital road.\n\nDigital heart, beating slow.\nEverywhere that the square waves go.\nHome again, home at last.\nSoft pixels from the golden past,\nFrom the golden past.\n\nSafe in the circuit,\nSafe in the glow.\nSafe where the data flows,\nResting in the glow.\n\nData flows, static fades.\nThrough the 8-bit shades.\n\nDigital heart, beating slow.\nEverywhere that the square waves go.\nHome again, home at last.\nSoft pixels from the golden past,\nFrom the golden past.\n\nPixelite, fade away.\nSafe inside, we will stay.",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780555737801_2",
+      "title": "Save Point Sunrise",
+      "caption": "夜明けのビートが導く、未来への希望を抱く壮大な展開。徐々に高まるビルドアップと静寂な瞬間が織りなす、心の軌跡を描く物語的な楽曲。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780555737801_3",
+      "title": "Sunrise Meadow",
+      "caption": "目覚めの光を表現したメロディ。穏やかな朝の野原に溶け込むような、希望と内なる活力が満ちあふれるエレクトロニックなグルーヴ。",
+      "type": "instrumental",
+      "duration": 170,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780555737801_4",
+      "title": "Level Five Sunrise",
+      "caption": "夜明けのエネルギーが渦巻く、シネマティックで高揚感あふれるサウンドスケープ。「未知なる光」へ聴き手を誘い入れる、感情的な体験を提供する楽曲。",
+      "type": "instrumental",
+      "duration": 167,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780555737801_5",
+      "title": "The Cartographer S Pause",
+      "caption": "都会の喧騒から離れた静謐な時間。透明感のあるビートが心に穏やかな安らぎをもたらす、心地よい一時停止（ポーズ）を感じさせるサウンド。",
+      "type": "instrumental",
+      "duration": 170,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780555737801_6",
+      "title": "Loading Screen Tea",
+      "caption": "深夜のデジタルな空間を漂うような、浮遊感に富んだビート。眠気を誘いつつも心地よい高揚感を維持する、シームレスなグルーヴワーク。",
+      "type": "instrumental",
+      "duration": 116,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780555737801_7",
+      "title": "Morning In The Green Glade",
+      "caption": "朝靄が晴れていくような情景を音で描き出す。緑豊かな小径を進む感覚を再現した、幻想的でシネマティックなエレクトロニック・テクスチャ。",
+      "type": "instrumental",
+      "duration": 167,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780555737801_8",
+      "title": "Sunlight On The Gate",
+      "caption": "太陽の光が門を照らす瞬間。高揚感とともに抑圧された感情が一気に解放されるような、生命力に満ちた躍動的なサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 166,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780555737801_9",
+      "title": "Sunrise On The Valley Floor",
+      "caption": "谷間を疾走する夜明けのエネルギー。心身の束縛から解放される、壮大で推進力に満ちたサウンドによるクライマックス。",
+      "type": "instrumental",
+      "duration": 96,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241873_0",
+      "title": "Kyoto Dawn",
+      "caption": "京都の夜明けを彩る幻想的なエレクトロニクス。壮大なスケールと清らかさが交錯し、新たな一日の始まりの高揚感を音に描く旅路。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241873_1",
+      "title": "The Second Hour",
+      "caption": "真夜中の深淵を照らすサウンド。高鳴る感情と疾走感が交錯する、熱狂的な時間帯のビートが未来への扉を開く。",
+      "type": "instrumental",
+      "duration": 153,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241874_2",
+      "title": "Structured Stillness",
+      "caption": "静寂の中に秩序を見出すダンスミュージック。メロディとリズムが織りなす構造的な感動を、心身ともに体験する没入感のあるグルーヴ。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241874_3",
+      "title": "Balcony In July",
+      "caption": "夏の夕暮れのバルコニーから流れるメロディ。開放的な情景と高揚感が混ざり合う、エモーショナルな夜のムードを誘うEDMトラック。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241874_4",
+      "title": "Analog Pulse Reflection",
+      "caption": "ビートが全身を駆け抜けるようなサウンドスケープ。夜の帳に溶け込みながら、無限のリフレクションを楽しむエレクトロニックな高揚感。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241874_5",
+      "title": "Pizzicato Pulse",
+      "caption": "ディープで心揺さぶるリズムが支配するグルーヴ。体が自然と動き出すような、熱気に満ちたダンスフロアの情景を演出します。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241874_6",
+      "title": "Circuit Clarity",
+      "caption": "ネオン輝く未来都市を駆け抜けるサウンド。躍動的なビートとクリアな音像が、心に響き渡る鮮烈なシティポップ・エレクトロニクス。",
+      "type": "instrumental",
+      "duration": 150,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241874_7",
+      "title": "Filtered Drones",
+      "caption": "深いドローン音が空間をゆっくり包み込む。時が濾過されていくような感覚に浸り、極上の没入感を提供する夜の音響体験。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241874_8",
+      "title": "The Morning Briefing",
+      "caption": "都会を駆ける朝のエネルギーを凝縮。鋭いシンセと躍動的なビートが、「目覚め」という瞬間の鮮烈な興奮を音で描く。",
+      "type": "instrumental",
+      "duration": 114,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241874_9",
+      "title": "Pattern Pulse",
+      "caption": "高揚感が高まっていくエネルギーの渦。ビートから生まれる躍動的なグルーヴが、聴き手の心に新たな衝動を掻き立てるエレクトロニックサウンド。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241874_10",
+      "title": "The First Breath Of Day",
+      "caption": "夜明けの空気と脈打つ鼓動が共鳴するようなビート。目覚めの瞬間から生まれる、生命力溢れるエネルギッシュなサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 128,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241875_11",
+      "title": "Twelve Floor View",
+      "caption": "都会の喧騒を上空から見下ろすような視点。十二階の窓辺に立つ幻想的な夜景と共に、心洗われるエレクトロニックなリズムが響き渡る。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241875_12",
+      "title": "Measured Breath",
+      "caption": "呼吸するように深く、そして徐々に高まる熱狂。都会の深い夜を彷徨うメジャリングされたビートと煌めきのシンセサイザーが空間を満たす。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241875_13",
+      "title": "The First Stroke",
+      "caption": "心臓の鼓動と同期する、躍動的な爆発力。夜明けのような解放感に満ちたエネルギッシュなビートが、身体の内側から湧き出る衝動を表現。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1780558241875_14",
+      "title": "Order Of Operations",
+      "caption": "エネルギーの到達点。爆発的なサウンドデザインと重低音が支配するクライマックス。夜の熱狂が最大限に高まる、壮大なダンスアンセム。",
+      "type": "instrumental",
+      "duration": 160,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "静か",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-04"
+    }
+  ]
+}

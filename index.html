@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎼 Neura Music Archive - AI BGM Portal</title>
+  <script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="h-screen flex flex-col overflow-hidden text-gray-800 dark:text-gray-100 bg-white dark:bg-[#1c1c1c] font-sans">
+
+  <header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+    <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+        <img src="./assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+        <img src="./assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+      </a>
+      <div class="hidden md:flex items-center space-x-4">
+        <div class="relative">
+          <input type="text" id="search-input" placeholder="曲名やタグで検索..." class="border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1 text-sm focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 w-48">
+        </div>
+        <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+          <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+          <a href="javascript:void(0)" onclick="openModal('terms')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">利用規約</a>
+          <a href="javascript:void(0)" onclick="openModal('contact')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">連絡先</a>
+          <a href="javascript:void(0)" onclick="openModal('ads')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">広告関連</a>
+        </div>
+      </div>
+      <button class="md:hidden text-gray-500 dark:text-gray-400">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可
+    </div>
+  </header>
+
+  <div class="flex-1 flex flex-col md:flex-row overflow-hidden">
+    <aside class="w-[240px] bg-[#fafafa] dark:bg-[#1c1c1c] border-r dark:border-gray-800 overflow-y-auto hidden md:block flex-shrink-0">
+      <div class="p-6">
+        <h2 class="text-sm font-bold text-gray-400 tracking-wider mb-4 uppercase">Themes</h2>
+        <ul class="space-y-1" id="theme-list">
+        </ul>
+      </div>
+    </aside>
+
+    <div class="md:hidden bg-[#fafafa] dark:bg-[#353535] border-b dark:border-gray-800 whitespace-nowrap overflow-x-auto px-4 py-3 flex-shrink-0 flex space-x-4" id="theme-list-mobile">
+    </div>
+
+    <main class="flex-1 overflow-y-auto bg-white dark:bg-[#181818] flex flex-col @container" id="scroll-area">
+      <div id="info-area" class="border-b border-gray-100 dark:border-gray-800 px-4 py-1.5 flex items-center bg-gray-50 dark:bg-[#202020] min-h-[32px]">
+        </div>
+      <div class="p-4 md:p-8 flex-1" id="main-content">
+      </div>
+    </main>
+  </div>
+
+  <footer class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] border-t dark:border-gray-800 px-4 py-3 flex items-center justify-between h-20">
+    <div class="flex items-center space-x-3 w-1/4 min-w-[120px]">
+      <button class="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+      </button>
+      <button id="main-play-btn" class="w-10 h-10 flex items-center justify-center bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full hover:bg-gray-700 dark:hover:bg-gray-200 transition shadow-sm">
+        <svg id="icon-play" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        <svg id="icon-pause" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+      </button>
+      <button class="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+      </button>
+    </div>
+
+    <div class="flex-1 flex items-center px-4 md:px-8">
+      <div class="w-10 h-10 md:w-11 md:h-11 bg-gray-50 dark:bg-gray-800 rounded flex-shrink-0 flex items-center justify-center overflow-hidden border border-gray-100 dark:border-gray-700 mr-3">
+        <img id="player-album-art" src="" class="w-full h-full object-cover hidden" alt="Album Art">
+        <svg id="player-album-placeholder" class="w-5 h-5 text-gray-300 dark:text-gray-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+      </div>
+      <div class="flex-1 flex flex-col justify-center min-w-0">
+        <div class="text-sm font-semibold text-gray-800 dark:text-gray-100 mb-1 truncate" id="player-track-name">未選択 - トラックを選択</div>
+        <div class="flex items-center space-x-2 text-xs text-gray-400">
+          <span id="player-time-current">0:00</span>
+          <input type="range" min="0" max="100" value="0" class="flex-1 accent-gray-900 dark:accent-gray-100">
+          <span id="player-time-total">0:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-1/4 flex justify-end min-w-[80px]">
+      <button class="flex items-center space-x-1 text-sm font-medium text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-1.5 rounded transition">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        <span class="hidden md:inline">Full DL</span>
+      </button>
+    </div>
+  </footer>
+
+  <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl" onclick="event.stopPropagation()">
+      <div class="p-5 border-b flex justify-between items-center bg-gray-50">
+        <h3 id="modal-title" class="font-bold text-lg text-gray-900"></h3>
+        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div id="modal-body" class="p-8 overflow-y-auto text-gray-700 leading-relaxed">
+        </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

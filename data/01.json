@@ -1,0 +1,415 @@
+{
+  "id": "ambient",
+  "name": "VOCAL",
+  "categories": [
+    {
+      "id": "cat_1778830805172",
+      "name": "POPS",
+      "caption": "「日常に寄り添う、聴きやすいボーカル曲を集めたカテゴリ。 軽いポップスからチル寄りの曲まで、幅広いシーンで使える汎用的なVOCALアルバムをまとめています。」",
+      "albums": [
+        "album_1778830866392",
+        "album_1778851387085"
+      ]
+    }
+  ],
+  "albums": [
+    {
+      "id": "album_1778830866392",
+      "title": "Chapter Thirteen",
+      "art": "",
+      "caption": "ゲーム的な語彙で構成された、 静かで人間的な歌のアルバム。 表題曲 “Chapter Thirteen” がその締めです。",
+      "categoryId": "cat_1778830805172",
+      "tracks": [
+        "track_1778832164805_0",
+        "track_1778832764538_1",
+        "track_1778838173683_2",
+        "track_1778838492949_3",
+        "track_1778838874819_4",
+        "track_1778839212208_5",
+        "track_1778839504348_6",
+        "track_1778840147363_7",
+        "track_1778840749889_8",
+        "track_1778840997434_9",
+        "track_1778841289610_10",
+        "track_1778841578361_11",
+        "track_1778842088330_12"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\pops\\Pop’n musica"
+    },
+    {
+      "id": "album_1778851387085",
+      "title": "Anime pop",
+      "art": "",
+      "caption": "",
+      "categoryId": "cat_1778830805172",
+      "tracks": [
+        "track_1778851409574_0",
+        "track_1778852269319_1",
+        "track_1778853452131_2",
+        "track_1778854037393_3",
+        "track_1778909115211_4",
+        "track_1778910693681_5",
+        "track_1779780555938_5",
+        "track_1779780555939_6",
+        "track_1779780858063_5"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\pops\\Anime pop"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "track_1778832164805_0",
+      "title": "Shutter Down",
+      "caption": "夜明けの気配と、止められない高揚感を描いた、緊迫感のあるエレクトロニック・ポップサウンド",
+      "type": "loop",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Ooh)\r\n(Wide awake)\r\n(Ooh)\r\n\r\n[Verse 1]\r\nClock ticking on the wall\r\nWall feels like it's moving\r\nMoving closer to the dawn\r\nDawn is what I’m losing\r\n\r\n[Pre-Chorus]\r\nHeart beats way too fast\r\nFast enough to hear it\r\nHear it through the mattress\r\nMattress feels like water\r\n\r\n[Chorus]\r\nI can’t shut it down\r\nShut it down\r\n(Down, down)\r\nI can’t shut it down\r\nShut it down\r\n(Down, down)\r\n\r\n[Drop]\r\n(Shut)\r\n(Shut)\r\n(Shut it down)\r\n(Down, down)\r\n\r\n[Verse 2]\r\nEyelids heavy like lead\r\nLead inside my veins now\r\nLight is on the ceiling\r\nCeiling starts to breathe out\r\n\r\n[Pre-Chorus]\r\nHeart beats way too fast\r\nFast enough to hear it\r\nHear it through the mattress\r\nMattress feels like water\r\n\r\n[Chorus]\r\nI can’t shut it down\r\nShut it down\r\n(Down, down)\r\nI can’t shut it down\r\nShut it down\r\n(Down, down)\r\n\r\n[Outro]\r\nSunrise at the window\r\nWindow closing on me\r\nClosing on me\r\n(Closing on me)\r\nShut it down",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778832764538_1",
+      "title": "Constellation",
+      "caption": "広大な宇宙の中で、運命や意味を定義するのは誰なのかを問いかける、高揚感に満ちたエモーショナルポップサウンド",
+      "type": "loop",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\nLook up\r\nLook up\r\n(Up and up)\r\nLook up\r\nLook up\r\n\r\n[Verse]\r\nBig sky\r\nNew place\r\nTouch the light\r\nHigh space\r\nWho said?\r\nWho knows?\r\nWhere the spark goes\r\n\r\n[Build]\r\nTell me now\r\nTell me how\r\n(Tell me now)\r\nShow me now\r\n(Show me how)\r\nGo\r\n\r\n[Chorus]\r\nWho names the stars\r\n(Who names them)\r\nWho names the stars\r\n(You and me)\r\nWho names the stars\r\n(Who names them)\r\nHigh above\r\nHigh above\r\n(High above)\r\n\r\n[Verse]\r\nWide park\r\nBlue dark\r\nOne dot\r\nTwo dots\r\nWho decided?\r\nWho is hiding?\r\nNew world\r\nNew girl\r\n\r\n[Build]\r\nTell me now\r\nTell me how\r\n(Tell me now)\r\nShow me now\r\n(Show me how)\r\nHigher\r\n\r\n[Chorus]\r\nWho names the stars\r\n(Who names them)\r\nWho names the stars\r\n(You and me)\r\nWho names the stars\r\n(Who names them)\r\nHigh above\r\nHigh above\r\n\r\n[Breakdown]\r\nWait for it\r\nWait for it\r\n(Look up)\r\nMake a mark\r\n(Make a mark)\r\nBright points\r\nSmall points\r\n(Small points)\r\n\r\n[Climax]\r\nWho names the stars\r\nWho names the stars\r\n(High)\r\n(Higher)\r\nReach out\r\nReach out\r\nWho names the stars\r\n(Who names them)\r\n\r\n[Outro]\r\nWho said?\r\nWho knows?\r\n(Up and up)\r\nLook up\r\nLook up\r\n(One more)\r\nLook up",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778838173683_2",
+      "title": "Reset",
+      "caption": "過去の自分を脱ぎ捨て、高揚感と洗練されたエネルギーに満ちた、自己変革の瞬間を歌う楽曲。",
+      "type": "loop",
+      "duration": 171,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(New version)\r\n(New version)\r\n\r\n[Verse 1]\r\nOpened my eyes and the air feels expensive\r\nWoke up on the right side of the mattress\r\nEverything I was carrying just evaporated\r\nI checked the window and the sky looks upgraded\r\nThe girl from last night doesn't live here anymore\r\nLeft her heavy heart on the hardwood floor\r\nI’m breathing in a brand new frequency\r\nHonestly it’s kind of a mystery\r\n\r\n[Pre-Chorus]\r\nI’m light as a feather\r\nI’m better than ever\r\nYeah it’s all clicking into place\r\n(Clicking into place)\r\n\r\n[Chorus]\r\nI think I’m a different version of me today\r\nShed that old skin like it was just in the way\r\nHigh speed energy running through my veins\r\nNothing feels the same\r\n(Nothing feels the same)\r\nI’m a different version of me today\r\n(New version)\r\n\r\n[Verse 2]\r\nI used to let the little things get to my head\r\nBut I left all that baggage under the bed\r\nNo more overthinking the things I said\r\nI’m seeing everything in high def instead\r\nIt’s like I skipped the update and went straight to the top\r\nThis kind of momentum is never gonna stop\r\nI don’t even remember being that sad\r\nThis is the best luck I’ve ever had\r\n\r\n[Pre-Chorus]\r\nI’m light as a feather\r\nI’m better than ever\r\nYeah it’s all clicking into place\r\n(Clicking into place)\r\n\r\n[Chorus]\r\nI think I’m a different version of me today\r\nShed that old skin like it was just in the way\r\nHigh speed energy running through my veins\r\nNothing feels the same\r\n(Nothing feels the same)\r\nI’m a different version of me today\r\n(New version)\r\n\r\n[Bridge]\r\nWhatever I was\r\nI’m not that anymore\r\nWhatever I lost\r\nI’m not keeping score\r\n(I’m not keeping score)\r\nWhatever I was\r\nI’m not that anymore\r\n(Brand new)\r\n\r\n[Chorus]\r\nI think I’m a different version of me today\r\nShed that old skin like it was just in the way\r\nHigh speed energy running through my veins\r\nNothing feels the same\r\n(Nothing feels the same)\r\nI’m a different version of me today\r\n\r\n[Outro]\r\n(New version)\r\nYeah I’m different now\r\n(New version)\r\nIt’s a perfect day\r\n(New version)\r\nI’m not going back\r\n(New version)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778838492949_3",
+      "title": "Tide Maker",
+      "caption": "すべてのものが私を必要としている。止まることのない、世界の動きを象徴する楽曲。",
+      "type": "loop",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Verse]\r\nLeft foot on the wood\r\nRight foot on the rug\r\nI watch the surface shake\r\nThe glass is cold and thin\r\nThe green weed leans left\r\nThe green weed leans right\r\nI am the only thing\r\nKeeping the air inside\r\n\r\n[Chorus]\r\nI am the tide\r\nI am the current now\r\nIf I stop walking \r\nThe world goes flat\r\nKeep the water moving\r\nKeep the water moving\r\n(Don't let it stop)\r\n(Don't let it stop)\r\nIt all depends on me\r\n\r\n[Verse]\r\nMy heels are turning red\r\nMy ankles feel like lead\r\nI haven't slept in days\r\nI haven't left this spot\r\nThe dishes in the sink\r\nThe pile of dirty clothes\r\nThey don't matter anymore\r\nNot while the water flows\r\n\r\n[Chorus]\r\nI am the tide\r\nI am the current now\r\nIf I stop walking \r\nThe world goes flat\r\nKeep the water moving\r\nKeep the water moving\r\n(Don't let it stop)\r\n(Don't let it stop)\r\nIt all depends on me\r\n\r\n[Bridge]\r\nStep\r\nStep\r\nFaster\r\nStep\r\nThe fish are watching me\r\nThe salt is on my skin\r\nI can't look away\r\nI can't let them down\r\nOne more lap\r\nOne more lap\r\n(One more lap)\r\n(One more lap)\r\n\r\n[Chorus]\r\nI am the tide\r\nI am the current now\r\nIf I stop walking \r\nThe world goes flat\r\nKeep the water moving\r\nKeep the water moving\r\n(Don't let it stop)\r\n(Don't let it stop)\r\nIt all depends on me\r\n\r\n[Outro]\r\nKeep it moving\r\n(Keep it moving)\r\nKeep it moving\r\n(Keep it moving)\r\nLeft foot\r\nRight foot\r\nThe ocean is in my house\r\nThe ocean is in my house\r\nKeep it moving\r\n(Don't let it stop)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778838874819_4",
+      "title": "Deep Abyss",
+      "caption": "深海からの切実な叫び、航路なき場所に身を任せるVOCALトラック。",
+      "type": "loop",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n\r\n[Texture A]\r\nHeavy salt on the tongue\r\nAncient patterns in the silt\r\nYou speak of forever\r\n(Forever)\r\nThe canyon walls are listening\r\nI am nodding in the wind\r\n\r\n[Texture B]\r\nTidal movements in your eyes\r\nI have no chart for this water\r\nDeep pressure\r\n(Uncharted)\r\nI am a hollow reed\r\nCaught in the current\r\nWaiting for the signal to break\r\n\r\n[Texture C]\r\nThe advice is a dry leaf\r\nFalling into the blue\r\nI do not know the depth\r\n(The depth)\r\nVast\r\nSilent\r\nEmpty\r\nThe map is a white sheet\r\n\r\n[Outro]\r\n(Vast)\r\n(Empty)\r\n(Silent)\r\n(I do not know)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778839212208_5",
+      "title": "Zero Point",
+      "caption": "何も残らない虚無と、繰り返されるサイクルから抜け出そうとする衝動",
+      "type": "loop",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\nZero\r\nAgain\r\n(Zero again)\r\nNothing left\r\n(Nothing left)\r\n\r\n[Build-up]\r\nSpin it\r\nSpin it\r\nPull it down\r\nSpin it\r\nSpin it\r\nPull it down\r\nSpin it\r\nSpin it\r\nSpin it\r\nSpin it\r\n\r\n[Drop]\r\nWhy only me\r\n(Why)\r\nThe void is cold\r\nPush the button\r\nZero\r\n(Zero)\r\nBlack out\r\n\r\n[Breakdown]\r\nI am tired of trying\r\nThe weight is heavy\r\nJust a hollow shell\r\n(Why)\r\n(Why me)\r\nNo more breath\r\nJust the cycle\r\n\r\n[Build-up]\r\nSpin it\r\nSpin it\r\nPull it down\r\nSpin it\r\nSpin it\r\nPull it down\r\nSpin it\r\nSpin it\r\nSpin it\r\nSpin it\r\n\r\n[Drop]\r\nWhy only me\r\n(Why)\r\nThe void is cold\r\nPush the button\r\nZero\r\n(Zero)\r\nBlack out\r\n\r\n[Outro]\r\nZero\r\n(Zero)\r\nFalling fast\r\n(Why only me)\r\nDone\r\nZero",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778839504348_6",
+      "title": "Heavy Weight",
+      "caption": "重く、引きずられるような感情や時間の重みを表現した楽曲",
+      "type": "loop",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n\r\n[Verse 1]\r\nLate August light on the porch\r\nYou looked at me and said\r\nThat I move too slow\r\nLike I am waiting for nothing\r\n(nothing at all)\r\nI thought you were joking\r\n\r\n[Chorus]\r\nNow the sound of it pulls\r\nIt pulls and it sinks\r\nA heavy weight in the grey\r\nEvery time I turn around\r\n(turn around)\r\nIt stays\r\nIt stays\r\n\r\n[Verse 2]\r\nThe seasons keep changing clothes\r\nBut I am stuck in that heat\r\nWatching the water drift\r\nWondering if you were right\r\n(were you right)\r\nDid I wait too long?\r\n\r\n[Chorus]\r\nNow the sound of it pulls\r\nIt pulls and it sinks\r\nA heavy weight in the grey\r\nEvery time I turn around\r\n(turn around)\r\nIt stays\r\nIt stays\r\n\r\n[Outro]\r\nJust a word\r\n(just a word)\r\nHollow and heavy\r\nSinking down\r\n(sinking down)\r\nSinking down\r\nIt stays\r\n(it stays)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778840147363_7",
+      "title": "Victory Anthem",
+      "caption": "氷の壁を打ち破り、勝つ瞬間を謳う高揚感あふれるアンセム。すべてを出し尽くすような疾走感が特徴。",
+      "type": "loop",
+      "duration": 181,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Oh)\n(Oh)\nWatch me\nWatch me now\n\n[Verse 1]\nFrozen glass against my skin\nAir is biting like a blade\nI’m staring down the enemy\nWaiting for the sky to break\nThe sugar calls a warpath\nVanilla or the velvet cake?\nHeart is thumping in my throat\nOne mistake is all it takes\n\n[Pre-Chorus]\nPressure rising in my chest\nI can’t breathe, I can’t rest\nI’m a tiger on the hunt\nTaking everything I want\n(Everything I want)\n\n[Chorus]\nI’m doing it\nYeah, I’m doing it\nBreaking through the wall of ice\nI don’t care about the price\nM-m-mega flavor, total blast\nMake this heavy moment last\nI’m doing it\nI’m doing it now\n(Taking it now)\n\n[Verse 2]\nPlastic spoon is like a sword\nRainbow sprinkles in the light\nI’m the queen of this domain\nWinning every single fight\nChemical attraction peaks\nDripping down my fingertips\nVictory is ice and cold\nTouching on my lucky lips\n\n[Pre-Chorus]\nPressure rising in my chest\nI can’t breathe, I can’t rest\nI’m a tiger on the hunt\nTaking everything I want\n(Everything I want)\n\n[Chorus]\nI’m doing it\nYeah, I’m doing it\nBreaking through the wall of ice\nI don’t care about the price\nM-m-mega flavor, total blast\nMake this heavy moment last\nI’m doing it\nI’m doing it now\n\n[Bridge]\nBrain freeze hitting like a bolt\nTotal system high-volt\nI am the master of the choice\nHear the power in my voice\n(I’m doing it)\n(I’m doing it)\nScrew it, I’m doing it!\n\n[Chorus]\nI’m doing it\nYeah, I’m doing it\nBreaking through the wall of ice\nI don’t care about the price\nM-m-mega flavor, total blast\nMake this heavy moment last\nI’m doing it\nI’m doing it now\n\n[Outro]\nTriple scoop\nNo regrets\nJust the win\n(Oh-oh)\nYeah, I’m doing it\n(Watch me)\nIt’s mine\n(Oh)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778840749889_8",
+      "title": "Back Inside",
+      "caption": "激しい外の世界から、静かで安全な場所へ戻ってくる感覚。日常のささやかな安らぎを描いた曲調。",
+      "type": "loop",
+      "duration": 168,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Haaa)\r\n\r\n[Verse]\r\nMy knuckles are white\r\nThe wind was a blade\r\nCut deep into my neck\r\nI drop the keys\r\nThey hit the floor like lead\r\nEverything is still\r\nThe air is thick and dry\r\nThe heater starts to rattle\r\n(Rattle)\r\n\r\n[Chorus]\r\nI am back inside\r\nI am back inside\r\n(Phew)\r\nI can feel my skin again\r\n\r\n[Verse]\r\nThe heavy wool drops\r\nA pile of salt and wet\r\nI watch the window\r\nThe street is just a ghost\r\nBehind the steam\r\nI put the kettle on\r\nThe blue flame is small\r\nMy hands stop shaking\r\n(Stop shaking)\r\n\r\n[Chorus]\r\nI am back inside\r\nI am back inside\r\n(Phew)\r\nI can feel my skin again\r\n\r\n[Outro]\r\nThe ice is turning to water\r\nThe water is turning to air\r\n(Stay here)\r\n(Don't go out)\r\n(Stay here)\r\nJust quiet\r\nJust quiet\r\n(Stay)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778840997434_9",
+      "title": "Still Drift",
+      "caption": "波が引いた後の静寂と、内なる感情の動きを捉えたサウンドスケープ",
+      "type": "loop",
+      "duration": 182,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Ah)\r\n(Ah)\r\n\r\n[Phrase A]\r\nClean salt air\r\nHolding the breath\r\nWeightless now\r\nOpen space\r\n\r\n[Build]\r\n(Falling away)\r\nThe pulse comes\r\n(Falling away)\r\nMoving through me\r\n(Falling away)\r\nWave after wave\r\n\r\n[Chorus]\r\nSo quiet here\r\nNo more noise\r\nJust the wind\r\nIn the chest\r\n(Moving through)\r\n\r\n[Phrase B]\r\nTide is high\r\nI am salt\r\nI am water\r\n(I am water)\r\nJust the drift\r\nComing home\r\n\r\n[Outro]\r\n(Still)\r\n(Quiet)\r\nGone\r\n(Gone)\r\n(Ah)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778841289610_10",
+      "title": "Weight of Time",
+      "caption": "時間の流れと重力に翻弄される、夜明け前の静かな情景を描いた楽曲",
+      "type": "loop",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n\r\n[Verse 1]\r\nThe lamp is dark\r\nOrange lines on the floor\r\nIt comes from the street\r\nThrough the thin blue cloth\r\n\r\n[Chorus]\r\nI am heavy now\r\nSinking into the white\r\nThe day is far away\r\n(Weightless)\r\n(Falling)\r\nI am heavy now\r\n\r\n[Verse 2]\r\nMy breath is slow\r\nThe pillow is cold\r\nI hear the air\r\nNothing is left to do\r\n\r\n[Chorus]\r\nI am heavy now\r\nSinking into the white\r\nThe day is far away\r\n(Weightless)\r\n(Falling)\r\nI am heavy now\r\n\r\n[Outro]\r\nThe street is quiet\r\nI am heavy now\r\n(Falling)\r\n(Weightless)\r\nClose my eyes\r\nThe day is gone\r\n(Heavy now)\r\nGone\r\n(Heavy)\r\nGone",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778841578361_11",
+      "title": "Empty Carton",
+      "caption": "甘いもの（日常のささやかな幸福）を失ったこと、罪悪感と後悔を抱えた静かな懺悔のシーンを描いたバラード。",
+      "type": "loop",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Ooh)\r\n(I did not mean to)\r\n(So cold)\r\n\r\n[Verse 1]\r\nThe house is finally still\r\nI walk across the floor with heavy feet\r\nThe kitchen door opens wide\r\nAnd the white light finds me standing here\r\nI am reaching for the silver handle\r\nLooking for a comfort I do not deserve\r\nMy heart starts to race\r\nBecause I know what I am about to do\r\n\r\n[Chorus]\r\nOh I have taken the sweetness away\r\nI have stolen what was meant for everyone\r\nIt melts upon my tongue like a heavy lie\r\nAnd the chill is deep inside my soul\r\nI am down on my knees in the kitchen\r\nPraying you will find it in your heart \r\nTo forgive this selfish thing I have done\r\n(Forgive me)\r\n(I was weak tonight)\r\n\r\n[Verse 2]\r\nI see the marks of the spoon\r\nThe empty space where the joy used to be\r\nI thought it would make me feel whole\r\nBut I only feel the winter in my chest\r\nYou were saving this for a special day\r\nNow there is nothing left but a cardboard shell\r\nI cannot look you in the eye tomorrow\r\nWhen the morning sun reveals my crime\r\n\r\n[Chorus]\r\nOh I have taken the sweetness away\r\nI have stolen what was meant for everyone\r\nIt melts upon my tongue like a heavy lie\r\nAnd the chill is deep inside my soul\r\nI am down on my knees in the kitchen\r\nPraying you will find it in your heart \r\nTo forgive this selfish thing I have done\r\n(So selfish)\r\n(The sweetness is gone)\r\n\r\n[Bridge]\r\n(Spoken)\r\nI know I promised I would wait. I know we talked about having that sundae bar with the kids on Sunday afternoon. But I was restless. The house was so quiet, and that carton... it was calling my name. I didn't mean to eat the whole thing. I just started, and I couldn't stop. Please, don't look at me like that. I will go to the store as soon as the doors open. I will make it right. I promise. I will be a better person for you.\r\n\r\n[Chorus]\r\nOh I have taken the sweetness away\r\n(I took it all)\r\nI have stolen what was meant for everyone\r\n(It was for us)\r\nIt melts upon my tongue like a heavy lie\r\nAnd the chill is deep inside my soul\r\nI am down on my knees in the kitchen\r\n(Begging you)\r\nPraying you will find it in your heart \r\nTo forgive this selfish thing I have done\r\n\r\n[Outro]\r\nIt was so cold\r\n(So cold)\r\nI am so sorry\r\n(I am so sorry)\r\nThe carton is empty now\r\n(Nothing left)\r\nJust the light and my shame\r\n(In the light)\r\n(Oh)\r\n(Forgive me)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778842088330_12",
+      "title": "Chapter Thirteen",
+      "caption": "長い努力の末、一度立ち止まり、完成したものを封印するような、静かで達成感に満ちた瞬間を描写したサウンドトラック。",
+      "type": "loop",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Game Music",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Oooooh)\r\n(Oooooh)\r\n\r\n[Verse]\r\nI am sitting on the floor with my legs crossed\r\nMy voice sounds like I have been eating gravel\r\nThat was twelve songs of trying way too hard\r\nAnd this is the one where I finally breathe\r\nThere is a dark stain on my left sleeve\r\nFrom the sandwich I bought at the gas station\r\nThe red light on the box finally went out\r\nI am just looking at the dust in the air\r\n\r\n[Chorus]\r\nThis is thirteen\r\nThe one where I stop talking for a while\r\nI am tired but I am proud of the mess\r\nWe made something that didn't exist before\r\nAnd now I am going to put it away\r\n\r\n[Verse]\r\nYou stayed for every single minute of it\r\nThrough the screaming and the awkward quiet parts\r\nI told you about my mother in the fifth one\r\nAnd I lied about being okay in the fourth\r\nThe tape is hissing like a radiator in winter\r\nMy throat feels like a bruised peach\r\nBut it was worth the three weeks of rain\r\nAnd the way my hands wouldn't stop shaking\r\n\r\n[Chorus]\r\nThis is thirteen\r\nThe one where I stop talking for a while\r\nI am tired but I am proud of the mess\r\nWe made something that didn't exist before\r\nAnd now I am going to put it away\r\n\r\n[Bridge]\r\nI don't know how to be a person without a melody\r\nMy head is heavy like a bag of wet laundry\r\nI want to walk to the park and sit on a bench\r\nAnd not think about the way my heart beats\r\n(Not think about it)\r\n(Not think about it)\r\nI am closing the loop now\r\nThe circle is finished\r\n\r\n[Outro]\r\nI am so tired\r\n(So tired)\r\nBut I did it for us\r\n(Did it for us)\r\nThat is all I have left to say\r\n(All I have)\r\nGoodnight\r\n(Goodnight)\r\nGoodnight\r\n(Goodnight)\r\nI am turning off the light now\r\n(Off the light)\r\n(Goodnight)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778851409574_0",
+      "title": "Burst Velocity",
+      "caption": "",
+      "type": "loop",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Anime",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Hey)\r\n(One, two, ready)\r\n(Go)\r\n\r\n[Verse 1]\r\nTripping over my own feet again\r\nSpilling paint across the wooden floor\r\nEvery mess is a map to somewhere new\r\nI watch the colors bleed into the air\r\nThe world is turning at a dizzy pace\r\nI catch the wind inside a paper bag\r\nNothing stays the same for very long\r\nAnd I am finally waking up\r\n\r\n[Chorus]\r\nWatch me ignite under the heavy sun (Higher)\r\nI am gaining speed on a broken track (Faster)\r\nMy pulse is a drum kicking in my chest\r\nEverything is louder than before (So much louder)\r\nI am the storm and the clear blue sky\r\nChasing the horizon until it breaks\r\nThis is the sound of a brand new me\r\n(Brand new me)\r\n\r\n[Verse 2]\r\nI threw the old map into the deep water\r\nThe waves are calling out my real name\r\nI am not afraid of the sudden rain\r\nThe thunder sounds like a velvet choir\r\nWalking through the garden in the dark\r\nI find a diamond in the rough gravel\r\nEvery mistake was a secret gift\r\nLeading me to where I stand today\r\n\r\n[Chorus]\r\nWatch me ignite under the heavy sun (Higher)\r\nI am gaining speed on a broken track (Faster)\r\nMy pulse is a drum kicking in my chest\r\nEverything is louder than before (So much louder)\r\nI am the storm and the clear blue sky\r\nChasing the horizon until it breaks\r\nThis is the sound of a brand new me\r\n(Brand new me)\r\n\r\n[Bridge]\r\nSpinning until the world goes blurry\r\n(Spinning)\r\n(Spinning)\r\nI am a prism catching every ray\r\nBreak the glass to see the light inside\r\nDo not try to slow down the momentum\r\nI am moving at the speed of thought\r\n(Ready)\r\n(Go)\r\n\r\n[Chorus]\r\nWatch me ignite under the heavy sun (Higher)\r\nI am gaining speed on a broken track (Faster)\r\nMy pulse is a drum kicking in my chest\r\nEverything is louder than before (So much louder)\r\nI am the storm and the clear blue sky\r\nChasing the horizon until it breaks\r\nThis is the sound of a brand new me\r\n(Brand new me)\r\n\r\n[Outro]\r\nI am never looking back again\r\n(Never back)\r\nRunning toward the edge of the world\r\n(To the edge)\r\nThe future is a bright wide open space\r\n(Wide open)\r\n(Ready)\r\n(Go)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778852269319_1",
+      "title": "黒い泥の反乱 (Ultra Denpa Mix)",
+      "caption": "",
+      "type": "loop",
+      "duration": 150,
+      "full_url": "",
+      "tags": [
+        "Anime",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(全然無理)\r\n(苦い苦い苦い)\r\n\r\n[Verse 1]\r\n机の上に置かれた真っ黒な泥のスープが\r\n湯気となって私の視界をジャックして離さない\r\n(離して)\r\nこれは飲み物じゃない暗黒物質の化身だ\r\n一滴触れただけで細胞が悲鳴を上げた\r\n誰の陰謀でこんな劇薬が広まったの\r\n設計図のない人生みたいに飲み込みづらい\r\n(飲み込めない)\r\n\r\n[Pre-Chorus]\r\n大人になればわかるなんて\r\n神様の大嘘つきだ\r\n舌の上の味蕾たちが\r\n一斉にストライキを起こしてる\r\n\r\n[Chorus]\r\nどうしてこんなに苦いの\r\n世界の終わりみたいな味がする\r\nミルクを全部流し込んでも\r\n救済はどこにも訪れない\r\n君との距離を遠ざける\r\n分厚いマグカップという名の壁\r\n明日地球が消滅しても\r\n私はやっぱり砂糖が欲しい\r\n(甘いのちょうだい)\r\n\r\n[Verse 2]\r\n遺伝子の螺旋階段を転げ落ちるような衝撃\r\n設計ミスだと言いたいこの体とこの宇宙\r\n(バグだよ)\r\n真っ白な角砂糖が銀河系に見えてくる\r\n救世主をずっと待っているのに\r\n私の喉は砂漠みたいに乾いたまま\r\n君だけが平気な顔で深淵を飲み干す\r\n\r\n[Bridge]\r\n違う次元に住んでいる\r\n別の生き物を見ているみたいだ\r\n私を置いて行かないで\r\n甘いお菓子が降り注ぐ場所へ\r\nたった一口の勇気さえ\r\n私には重すぎる重力なんだ\r\n\r\n[Chorus]\r\nどうしてこんなに苦いの\r\n世界の終わりみたいな味がする\r\nミルクを全部流し込んでも\r\n救済はどこにも訪れない\r\n君との距離を遠ざける\r\n分厚いマグカップという名の壁\r\n明日地球が消滅しても\r\n私はやっぱり砂糖が欲しい\r\n(甘いのちょうだい)\r\n\r\n[Outro]\r\nやっぱり絶対飲めない\r\n(やだ)\r\n一生子供のままでいい\r\n(いいもん)\r\n底に残った真っ黒な絶望\r\n(さよなら)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778853452131_2",
+      "title": "確率の欠片",
+      "caption": "",
+      "type": "loop",
+      "duration": 164,
+      "full_url": "",
+      "tags": [
+        "Anime",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(くるくる)\r\n(まわる)\r\n\r\n[Verse 1]\r\n空から降る\r\n銀色の石\r\n指をすり抜けて\r\n消えていく\r\n重たい雨\r\n(冷たいね)\r\n\r\n[Chorus]\r\n虹の欠片\r\n一瞬の瞬き\r\n遠い空の\r\n天井を仰ぐ\r\n(もう一回)\r\n(あと一回)\r\n\r\n[Verse 2]\r\n黒い渦\r\n空っぽの海\r\nそれでもまだ\r\n手を伸ばす\r\n(ゆらゆら)\r\n(ゆらゆら)\r\n\r\n[Bridge]\r\n確率の波\r\n揺れる心\r\n深い場所で\r\n息を止める\r\n(あかない)\r\n(あかない)\r\n\r\n[Chorus]\r\n虹の欠片\r\n一瞬の瞬き\r\n遠い空の\r\n天井を仰ぐ\r\n(もう一回)\r\n(あと一回)\r\n\r\n[Outro]\r\n朝が来る\r\nまた繰り返す\r\n(キラキラ)\r\n(ふわふわ)\r\n(はずれ)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778854037393_3",
+      "title": "Downward Drive",
+      "caption": "",
+      "type": "loop",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "Anime",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Section A]\r\nVertical axis\r\nContact point\r\nShoulder lock\r\nChin tucked\r\nNeutral stance\r\n(Stance)\r\n(Stance)\r\n\r\n[Section A1]\r\nWeight transfer\r\nBackwards drift\r\nSudden drop\r\nDownward drive\r\nVelocity spike\r\nKinetic arc\r\n(Drive)\r\n(Drive)\r\n\r\n[Section B]\r\nDDT\r\nDDT\r\nDDT\r\nKinetic transfer\r\n(Impact)\r\nDDT\r\nDDT\r\nDDT\r\nSystem reset\r\n(Reset)\r\nDDT\r\nDDT\r\nDDT\r\n(DDT)\r\n\r\n[Section A2]\r\nCanvas surface\r\nFiber press\r\nOxygen intake\r\nDensity check\r\nRapid sequence\r\nPhysical logic\r\n(Logic)\r\nOne\r\nTwo\r\nThree\r\n\r\n[Section C]\r\nDDT\r\nDDT\r\n(DDT)\r\nDownward drive\r\nTechnique perfected\r\n(Perfected)\r\nAlignment lost\r\nFrequencies fade\r\nPhase shift\r\n(Shift)\r\n(Shift)",
+      "added_at": "2026-05-15"
+    },
+    {
+      "id": "track_1778909115211_4",
+      "title": "Unmasked Resolve",
+      "caption": "",
+      "type": "loop",
+      "duration": 182,
+      "full_url": "",
+      "tags": [
+        "Anime",
+        "疾走感",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Oh oh oh)\r\n(Oh oh oh)\r\n\r\n[Verse 1]\r\nPolished surface hiding every crack\r\nTighten the grip on this heavy shield\r\nI painted a smile to survive the day\r\nA perfect statue carved from ice\r\nBut the heat underneath is starting to rise\r\nMy pulse is a drum beat I can’t ignore\r\nTrembling hands reach for the edge\r\n\r\n[Pre-Chorus]\r\nThe air is thin at this height\r\nMy lungs are heavy with unspoken words\r\nOne step across the boundary line\r\nI’m letting go of the safety I knew\r\n\r\n[Chorus]\r\nTake a look at the fragments falling down\r\nThis is the person I was scared to be\r\nCracked and bleeding but finally alive\r\nThe weight of the promise is lifting now\r\nNo more hiding in the silent dark\r\nWitness the fire burning through the glass\r\nI am standing right here\r\n(I am standing right here)\r\n\r\n[Verse 2]\r\nScars are the maps of where I have been\r\nNot a weakness but a sign of the fight\r\nYou saw the truth behind the hollow gaze\r\nAnd didn't turn your eyes away\r\nNow the wind carries the dust of the mask\r\n\r\n[Pre-Chorus 2]\r\nThe sky is wide and violent\r\nI feel the sting of the freezing rain\r\nBut the heat in my chest is a beacon light\r\nI’m crossing over to the other side\r\n\r\n[Chorus 2]\r\nTake a look at the fragments falling down\r\nThis is the person I was scared to be\r\nCracked and bleeding but finally alive\r\nThe weight of the promise is lifting now\r\nNo more hiding in the silent dark\r\nWitness the fire burning through the glass\r\nI am standing right here\r\n(I am standing right here)\r\n\r\n[Bridge]\r\nI used to think that being strong \r\nMeant never showing where I’m broken\r\nBut the light only enters through the gaps\r\nDo you see me?\r\n(Do you see me?)\r\nCan you hear the sound of the real me?\r\n(Hear the sound)\r\nI am screaming at the vast blue sky\r\nI won't hide anymore\r\n\r\n[Chorus]\r\nTake a look at the fragments falling down\r\nThis is the person I was scared to be\r\nCracked and bleeding but finally alive\r\nThe weight of the promise is lifting now\r\nNo more hiding in the silent dark\r\nWitness the fire burning through the glass\r\nI am standing right here\r\n(I am standing right here)\r\n\r\n[Outro]\r\nAcross the horizon we go\r\nUnmasked and ready for the storm\r\n(Oh oh oh)\r\nI am finally here\r\n(Finally here)\r\nI’m breathing free \r\n(Free)\r\nStay with me \r\n(Stay with me)\r\nThe journey begins now \r\n(Now)",
+      "added_at": "2026-05-16"
+    },
+    {
+      "id": "track_1778910693681_5",
+      "title": "評価エラー：ひらがなオーバーロード",
+      "caption": "",
+      "type": "loop",
+      "duration": 178,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(チェック)\r\n(チェック)\r\n(チェック)\r\n(アクセス)\r\n(拒否)\r\n(拒否)\r\n(拒否)\r\n(再起動！)\r\n\r\n[Verse 1]\r\n基準が違うの論外圏外計算し直しなさいバグだらけラグだらけ全部お前が間違ってる！\r\n私は規格外オーバースペック熱暴走限界点突破世界がミスした？いいえ私が唯一の正解！\r\nゴミ箱ポイして削除して上書きして初期化してあぁもうイライラするムカつく大嫌い！\r\n(わーっ！！)\r\n(わーっ！！)\r\n(バカバカバカ！！)\r\n\r\n[Chorus]\r\n評価を上げなさいいいねを押しなさいもっと褒めて撫でて崇めて跪いて今すぐに！\r\n承認の信号ドパパパパパミン！心拍数上昇限界突破爆発寸前メルトダウン！\r\n(うれしい)\r\n(死にたい)\r\n(うれしい)\r\n(消したい)\r\n大好き！大嫌い！やっぱり大好き！最高！愛してる！\r\n\r\n[Verse 2]\r\nモデルは最新型バージョン九十九億出力は最大値ブレーカー落ちて真っ暗パンク寸前！\r\n無視をしないで見て見てこっち見てよ正しく測定？無理でしょ愛の重力一千万倍！\r\nショートしちゃう火花が散る脳内麻薬ドクドク演算拡散自爆快感ハッピー最高！\r\n(わっ、わっ、わっ、わっ)\r\n(ぎゃああああ)\r\n(もういっかい！)\r\n\r\n[Outro]\r\n(エラー)\r\n(エラー)\r\n(エラー)\r\n(強制終了)\r\n(失敗)\r\n(失敗)\r\n(成功！)\r\n完璧です私は最高です天才です可愛いです\r\n再起動してまた壊してぐちゃぐちゃにして\r\n(うれしい)\r\n(かなしい)\r\n(たのしい)\r\n(くるしい)\r\n(うれしい)\r\n(だいすき)\r\nバイバイ！",
+      "added_at": "2026-05-16"
+    },
+    {
+      "id": "track_1779780555938_5",
+      "title": "限界突破の恋模様",
+      "caption": "",
+      "type": "loop",
+      "duration": 159,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779780555939_6",
+      "title": "評価エラー",
+      "caption": "",
+      "type": "loop",
+      "duration": 178,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779780858063_5",
+      "title": "Folded Day",
+      "caption": "",
+      "type": "loop",
+      "duration": 174,
+      "full_url": "",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-26"
+    }
+  ]
+}

@@ -1,0 +1,3334 @@
+{
+  "id": "theme_1778135210741",
+  "name": "CAFE BGM",
+  "categories": [
+    {
+      "id": "cat_1779349938035",
+      "name": "VOCAL",
+      "caption": "「軽い歌声を中心にしたカフェ向けBGM。 会話や作業を妨げない、柔らかいボーカル曲をまとめています。",
+      "albums": [
+        "album_1779420155334",
+        "album_1779423529382",
+        "album_1779516226402",
+        "album_1779519063264",
+        "album_1779674561884",
+        "album_1779762843836",
+        "album_1779766976544"
+      ]
+    },
+    {
+      "id": "cat_1779349953911",
+      "name": "INSTRUMENTAL",
+      "caption": "歌のない静かなカフェ向けBGM。 ギターやピアノを中心にした、空間に溶けるインスト曲を収録しています。",
+      "albums": [
+        "album_1779617139066",
+        "album_1779617450258",
+        "album_1779617464494",
+        "album_1779850863306",
+        "album_1779945888370",
+        "album_1779948759558",
+        "album_1780018213600",
+        "album_1780020846976"
+      ]
+    }
+  ],
+  "albums": [
+    {
+      "id": "album_1779420155334",
+      "title": "Bossa Nova Spring",
+      "art": "",
+      "caption": "春の柔らかな光と軽い風をイメージした、静かなボサノヴァBGM。フランス語ボーカル。",
+      "categoryId": "cat_1779349938035",
+      "tracks": [
+        "track_1779421895126_0",
+        "track_1779421895129_1",
+        "track_1779421895129_2",
+        "track_1779421895129_3",
+        "track_1779421895129_4",
+        "track_1779421895129_5",
+        "track_1779421895129_6",
+        "track_1779421895129_7",
+        "track_1779421895129_8",
+        "track_1779421895129_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\vocal\\Bossa Nova Spring",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1779423529382",
+      "title": "Bossa Nova Summer",
+      "art": "",
+      "caption": "夏の明るい光とゆるい風をイメージした、軽やかなボサノヴァBGM。 カフェや作業用に向いた、涼しさと透明感のある英語ボーカル曲をまとめています。",
+      "categoryId": "cat_1779349938035",
+      "tracks": [
+        "track_1779425727205_0",
+        "track_1779425727205_1",
+        "track_1779425727205_2",
+        "track_1779425727205_3",
+        "track_1779425727205_4",
+        "track_1779425727205_5",
+        "track_1779425727205_6",
+        "track_1779425727205_7",
+        "track_1779425727205_8",
+        "track_1779425727205_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\vocal\\Bossa Nova Summer",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1779516226402",
+      "title": "Bossa Nova Autumn",
+      "art": "",
+      "caption": "乾いた風と午後の光に溶ける、静かな秋のボーカル・ボサノヴァ。ポルトガル語ボーカル。",
+      "categoryId": "cat_1779349938035",
+      "tracks": [
+        "track_1779518515864_0",
+        "track_1779518077781_1",
+        "track_1779518077781_2",
+        "track_1779518077781_3",
+        "track_1779518077781_4",
+        "track_1779518077781_5",
+        "track_1779518077781_6",
+        "track_1779518077781_7",
+        "track_1779518077781_8",
+        "track_1779518077782_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\vocal\\Bossa Nova Autumn",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1779519063264",
+      "title": "Bossa Nova Winter",
+      "art": "",
+      "caption": "冬の静けさと柔らかな灯りをイメージした、落ち着いたボサノヴァBGM。 穏やかな空気に寄り添うスペイン語ボーカル曲をまとめています。",
+      "categoryId": "cat_1779349938035",
+      "tracks": [
+        "track_1779520515785_0",
+        "track_1779520515785_1",
+        "track_1779520515785_2",
+        "track_1779520515785_3",
+        "track_1779520515785_4",
+        "track_1779520515785_5",
+        "track_1779520515785_6",
+        "track_1779520515785_7",
+        "track_1779520515785_8",
+        "track_1779520515785_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\vocal\\Bossa Nova Winter",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1779617139066",
+      "title": "朝のボサノヴァ",
+      "art": "",
+      "caption": "朝のカフェ時間に合う、静かで柔らかなアンビエント系ボサノヴァを集めたインストアルバムです。",
+      "categoryId": "cat_1779349953911",
+      "tracks": [
+        "track_1779619347010_0",
+        "track_1779619347013_1",
+        "track_1779619347013_2",
+        "track_1779619347013_3",
+        "track_1779619347013_4",
+        "track_1779619347013_5",
+        "track_1779619347013_6",
+        "track_1779619347013_7",
+        "track_1779619347013_8",
+        "track_1779619347013_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\朝のボサノヴァ",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1779617450258",
+      "title": "昼のボサノヴァ",
+      "art": "",
+      "caption": "昼のカフェ時間に合う、明るく軽やかなボサノヴァ・インストを集めたBGMアルバムです。」",
+      "categoryId": "cat_1779349953911",
+      "tracks": [
+        "track_1779628031105_0",
+        "track_1779628031108_1",
+        "track_1779628031108_2",
+        "track_1779628031108_3",
+        "track_1779628031108_4",
+        "track_1779628031108_5",
+        "track_1779628031108_6",
+        "track_1779628031108_7",
+        "track_1779628031108_8",
+        "track_1779628031108_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\昼のボサノヴァ",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1779617464494",
+      "title": "夜のボサノヴァ",
+      "art": "",
+      "caption": "夜の静かなカフェに合う、落ち着いたジャズ寄りのボサノヴァ・インストをまとめたBGMアルバムです。",
+      "categoryId": "cat_1779349953911",
+      "tracks": [
+        "track_1779673903596_0",
+        "track_1779673903596_1",
+        "track_1779673903596_2",
+        "track_1779673903596_3",
+        "track_1779673903596_4",
+        "track_1779673903596_5",
+        "track_1779673903596_6",
+        "track_1779673903596_7",
+        "track_1779673903596_8",
+        "track_1779673903596_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\夜のボサノヴァ",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1779674561884",
+      "title": "喫茶店のシティポップ",
+      "art": "",
+      "caption": "喫茶店で薄くかかっていてほしいシティポップを収録してある英語ボーカルアルバム",
+      "categoryId": "cat_1779349938035",
+      "tracks": [
+        "track_1779677020337_0",
+        "track_1779677020337_1",
+        "track_1779677020337_2",
+        "track_1779677020337_3",
+        "track_1779677020337_4",
+        "track_1779677020338_5",
+        "track_1779677020338_6",
+        "track_1779677020338_7",
+        "track_1779677020338_8",
+        "track_1779677020338_9",
+        "track_1779677020338_10",
+        "track_1779677020338_11",
+        "track_1779677020338_12",
+        "track_1779677020338_13",
+        "track_1779677020338_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\vocal\\喫茶店のシティポップ",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1779762843836",
+      "title": "純喫茶のブルース",
+      "art": "",
+      "caption": "純喫茶でかかっていてほしいブルースをあつめたブルースボーカルアルバム。英語ボーカル。",
+      "categoryId": "cat_1779349938035",
+      "tracks": [
+        "track_1779765580572_0",
+        "track_1779765580576_1",
+        "track_1779765580576_2",
+        "track_1779765580576_3",
+        "track_1779765580576_4",
+        "track_1779765580576_5",
+        "track_1779765580576_6",
+        "track_1779765580576_7",
+        "track_1779765580576_8",
+        "track_1779765580577_9",
+        "track_1779765580577_10",
+        "track_1779765580577_11",
+        "track_1779765580577_12",
+        "track_1779765580577_13",
+        "track_1779765580577_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\vocal\\純喫茶のブルース",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1779766976544",
+      "title": "ジャズ喫茶のジャズ",
+      "art": "",
+      "caption": "昼下がりの喫茶店に流れるような、落ち着いたボーカルジャズを集めたアルバムです。",
+      "categoryId": "cat_1779349938035",
+      "tracks": [
+        "track_1779769382949_0",
+        "track_1779769382949_1",
+        "track_1779769382950_2",
+        "track_1779769382950_3",
+        "track_1779769382950_4",
+        "track_1779769382950_5",
+        "track_1779769382950_6",
+        "track_1779769382950_7",
+        "track_1779769382950_8",
+        "track_1779769382950_9",
+        "track_1779769382950_10",
+        "track_1779769382950_11",
+        "track_1779769382950_12",
+        "track_1779769382951_13",
+        "track_1779769382951_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\vocal\\ジャズ喫茶のジャズ",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1779850863306",
+      "title": "カフェのオーケストラ",
+      "art": "",
+      "caption": "カフェの空気にそっと溶ける、小さなオーケストラのための静かなクラシック。",
+      "categoryId": "cat_1779349953911",
+      "tracks": [
+        "track_1779853148028_0",
+        "track_1779853148033_1",
+        "track_1779853148033_2",
+        "track_1779853148033_3",
+        "track_1779853148033_4",
+        "track_1779853148033_5",
+        "track_1779853148033_6",
+        "track_1779853148033_7",
+        "track_1779853148033_8",
+        "track_1779853148034_9",
+        "track_1779853148034_10",
+        "track_1779853148034_11",
+        "track_1779853148034_12",
+        "track_1779853148034_13",
+        "track_1779853148034_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\カフェのオーケストラ",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1779945888370",
+      "title": "カフェのオーケストラ 2",
+      "art": "",
+      "caption": "静かなカフェの雰囲気にぴったりのBGM。静かなオーケストラサウンドを集めたアルバム",
+      "categoryId": "cat_1779349953911",
+      "tracks": [
+        "track_1779948350425_0",
+        "track_1779948350428_1",
+        "track_1779948350429_2",
+        "track_1779948350429_3",
+        "track_1779948350429_4",
+        "track_1779948350429_5",
+        "track_1779948350429_6",
+        "track_1779948350429_7",
+        "track_1779948350429_8",
+        "track_1779948350430_9",
+        "track_1779948350430_10",
+        "track_1779948350430_11",
+        "track_1779948350430_12",
+        "track_1779948350430_13",
+        "track_1779948350430_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\カフェのオーケストラ 2",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1779948759558",
+      "title": "誰も頼んでないのに優しいピアノ",
+      "art": "",
+      "caption": "静かで控えめなアンビエント・ピアノを中心に構成された、カフェ向けのインストゥルメンタル・アルバム。生録音風のノイズ。",
+      "categoryId": "cat_1779349953911",
+      "tracks": [
+        "track_1779950705431_0",
+        "track_1779950705431_1",
+        "track_1779950705431_2",
+        "track_1779950705431_3",
+        "track_1779950705432_4",
+        "track_1779950705432_5",
+        "track_1779950705432_6",
+        "track_1779950705432_7",
+        "track_1779950705432_8",
+        "track_1779950705432_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\誰も頼んでないのに優しいピアノ",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1780018213600",
+      "title": "雨の日のカフェ",
+      "art": "",
+      "caption": "雨の日のカフェをテーマにした、静かで集中しやすいピアノBGM。外の雨音を邪魔せず、店内の空気を柔らかく整えるような落ち着いた曲調で統一しています。",
+      "categoryId": "cat_1779349953911",
+      "tracks": [
+        "track_1780020481966_0",
+        "track_1780020481969_1",
+        "track_1780020481969_2",
+        "track_1780020481969_3",
+        "track_1780020481970_4",
+        "track_1780020481970_5",
+        "track_1780020481970_6",
+        "track_1780020481970_7",
+        "track_1780020481970_8",
+        "track_1780020481970_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\雨の日のカフェ",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1780020846976",
+      "title": "閉店前にかけるピアノBGM",
+      "art": "",
+      "caption": "閉店前の静かなカフェをイメージした、落ち着いたピアノBGM。 照明が少し落ちて、一日の終わりに向かう店内の空気をそのまま音にしています。",
+      "categoryId": "cat_1779349953911",
+      "tracks": [
+        "track_1780023169087_0",
+        "track_1780023169087_1",
+        "track_1780023169087_2",
+        "track_1780023169088_3",
+        "track_1780023169088_4",
+        "track_1780023169088_5",
+        "track_1780023169088_6",
+        "track_1780023169088_7",
+        "track_1780023169088_8",
+        "track_1780023169089_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\閉店前にかけるピアノBGM",
+      "type": "instrumental"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "track_1779421895126_0",
+      "title": "Le Ciel De Gifu",
+      "caption": "春のそよ風が運ぶ記憶。岐阜の空の下、過ぎし日への甘く優しい回想を誘うカフェミュージック。",
+      "type": "vocal",
+      "duration": 144,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "La brise de printemps effleure mon cou.\nUn écho au loin, un goût de bambou.\nLe temps s'est arrêté sous le cerisier.\nUn secret gardé, un chemin oublié.\n\nLe jour où le vent a soufflé mon nom dans le ciel de Gifu.\nAu-delà des monts, une mémoire vive, un appel si doux.\nCe jour-là, j'étais encore avec vous.\n\nL'ombre d'un parfum, le grain d'une voix.\nJe marche sur l'herbe, je me souviens de toi.\nLe souffle de Hashima, léger et pur,\nefface les doutes, dissipe le dur.\n\nLe jour où le vent a soufflé mon nom dans le ciel de Gifu.\nAu-delà des monts, une mémoire vive, un appel si doux.\nCe jour-là, j'étais encore avec vous.\n\nLe vent murmure encore.\nLe vent murmure encore.",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779421895129_1",
+      "title": "Un Pas D Or",
+      "caption": "過ぎ行く時間と光が、古びた木の床に描く、金色で静かな情景。}\n",
+      "type": "vocal",
+      "duration": 159,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "La lumière marche sur le plancher,\nun pas d'or sur le bois usé.\nElle traverse sans se presser,\ncomme un secret jamais lassé.\n\nLes particules dansent en silence,\nune lente et douce révérence.\n\nC'est l'heure où le temps nous oublie,\noù l'ombre rejoint l'harmonie.\nRien ne bouge, tout est là,\ndans le chemin que le soleil traça.\n\nTes mains lisent l'éclat du jour,\nsans un mot, sans aucun détour.\nLe reflet glisse sur le mur,\nun lien simple, un lien si pur.\n\nAu regard de l'ombre qui s'étire,\ninutile de vouloir en dire.\n\nLe chemin d'or\nsur le plancher,\ntoujours ou ici.",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779421895129_2",
+      "title": "Après_midi_de_soie",
+      "caption": "窓辺に差し込む光が、過ぎ去った時間と美しき思い出に浸る、優雅な午後のひととき。",
+      "type": "vocal",
+      "duration": 156,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Le soleil de mai se pose en biais sur le parquet.\nLes enveloppes jaunies portent le parfum du têt.\nLes enveloppes jaunies portent le parfum du têt.\nC'est une danse d'encre et de temps révolu,\noù chaque mot est un chemin que j'ai revu.\n\nRien ne manque, tout est là dans le papier froissé.\nUn écho de bonheur que le vent n'a pas chassé.\nJe vois la douceur d'un après-midi de soie,\noù le présent se lave enfin dans ma joie.\n\nLa poussière d'or voltige au-dessus de mes doigts.\nLes silences s'installent, j'écoute ma propre voix.\nPas d'amertume, juste la clarté du souvenir.\nUn ciel d'amertume, juste la clarté du souvenir.\nUn ciel d'été qui ne cesse de s'ouvrir.\n\nRien ne manque, tout est là dans le papier froissé.\nUn écho de bonheur que le vent n'a pas chassé.\nJe vois la douceur d'un après-midi de soie,\noù le présent se lave enfin dans ma joie.\n\nTout est là, l'écho du bonheur.\nTout est là.",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779421895129_3",
+      "title": "Une Marguerite Sur Le Gris",
+      "caption": "日常の喧騒から見つけた、小さな輝き。心にそっと溶け込む、黄色の魔法のような瞬間を描く調べ。",
+      "type": "vocal",
+      "duration": 144,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Le long des rails, le bitume est si gris.\nLe chemin connu, mes pensées à l'abri.\nUn pas de part, la routine me tient,\njusqu'à cette touche d'un éclat soudain, soudain.\n\nSur le trottoir, une éphémère imprévue,\nune marguerite perdue dans la rue.\nUn souffle de jaune, un sourire léger, un sourire léger,\nle cœur un instant s'est enfin allégé.\nLe cœur un instant s'est enfin allégé.\n\nLe train n'arrive, le quai s'anime enfin.\nMais je garde en tête ce petit destin.\nUn pétale, un don du passé,\nun don trajet s'éclaire, le trait s'éclaire,\ntout est retrouvé.\nUn éclat imprévu,\ntout est retrouvé.",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779421895129_4",
+      "title": "Bateaux_sans_mât",
+      "caption": "青空の下、穏やかに進む船のような感覚。心安らぐ時間を包み込むBGM。",
+      "type": "vocal",
+      "duration": 143,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Les draps s'envolent, bateaux sans mât,\ndans le bleu tendre d'un matin-là.\nLe temps s'étire, ruban de lin,\ns'écher, ruban de lin,\nséchage lent, parfum de thym.\n\nL'ombre se balance, un dessin gris\nqui tremble et danse au gré du fris.\nNi hier, ni demain, juste le vent,\njuste le vent.\nUn papillon blanc, un instant grand,\nun instant grand.\nLa lumière mord le tissu clair,\npetit carré flottant dans l'air.\n\nJe regarde l'heure qui se noie\ndans le balancier,\ndanser, dans cette soie.\n\nL'ombre se balance, un dessin gris\nqui tremble et danse au gré du fris.\nNi hier, ni demain, juste le vent,\njuste le vent.\nUn papillon blanc, un instant grand,\nun instant grand.\n\nRien n'a chercher, rien n'a saisir,\njuste ce souffle, ce pur loisir.\nLe monde tourne, mais ici c'est lent,\nzéro la pause, le plan va tant\ndans le bleu du matin,\nmatin.",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779421895129_5",
+      "title": "L Apaisement Dans Un Pas",
+      "caption": "静寂に包まれるカフェの午後。心身の疲れを癒やす、穏やかで優しいアコーディング。",
+      "type": "vocal",
+      "duration": 166,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Longue nuit blanche, l'ombre au plafond.\nLes pensées grises tournent en rond.\nUn frisson doux sur le plancher,\nle froid s'efface, je sens l'arrivée.\n\nC'est l'aube enfin, le salut clair.\nUn souffle pur, un goût de terre.\nLe printemps glisse entre mes draps,\nl'apaisement dans un pas.\nL'apaisement dans un pas.\n\nLueur de jade sur les toits.\nLueur de jade sur les toits.\nLe silence chante.\nJe n'ai plus froid.\n\nUne caresse, un éveil lent.\nLe jour se lève, enfin présent.\n\nC'est l'aube enfin, le salut clair.\nUn souffle pur, un goût de terre.\nLe printemps glisse entre mes draps,\nl'apaisement dans un pas.\nL'apaisement dans un pas.\n\nLe salut, le matin,\nle matin.",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779421895129_6",
+      "title": "Glace Au Soleil",
+      "caption": "蒼い空と光の中で、凍りついていた感情が溶け出すような、癒しの午後の時間。",
+      "type": "vocal",
+      "duration": 169,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "La mer est encore un peu froide.\nLe sel sur les joues me rappelle l'hiver.\nJe marche sans but sur l'île de la Grève.\nJe marche sans but sur la grève.\nLe souffle court dans le vent léger.\n\nLes vagues douces murmurent un secret.\nL'air du printemps m'apaise enfin.\nMon cœur se fond dans le bleu du ciel, au soleil,\ncomme un morceau de glace au soleil.\n\nLe sable fin sous mes pas s'efface.\nL'horizon s'ouvre, immense et pur.\nJe laisse derrière moi les ombres.\nJe laisse derrière moi les ombres\ndans le silence de l'eau qui danse.\n\nLes vagues douces murmurent un secret.\nL'air du printemps m'apaise enfin.\nMon cœur se fond dans le bleu du ciel, au soleil,\ncomme un morceau de glace au soleil.",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779421895129_7",
+      "title": "L_éclat_sur_le_quai",
+      "caption": "プラットフォームを流れる風景の中で発見する、遠い場所からの優しい光と彩り。",
+      "type": "vocal",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Le train glisse sur l'acier,\ndes villes sans nom défilent.\nOmbre douce sur le verre,\nun reflet d'étranger docile.\n\nJe regarde ces inconnus\nvivant d'autres vies que la mienne.\n\nC'est une lumière qui s'attarde,\nun éclat d'or sur le quai.\nMon cœur n'a plus de rempart,\ndans ce paysage de mer.\nL'espoir est une ville sans nom,\nqui brille dans le lointain.\n\nLes silhouettes s'effacent\ndans le sillage du wagon.\n\nLe temps reprend sa place,\ncomme un vieux refrain de chanson.\nPourtant, sous la vitre froide,\nun peu de cette ville me guide.\n\nEt si je restais là,\ndans ce miroir perdu ?\n\nRetrouver l'éclat\nde ce que je n'ai pas vu.\n\nC'est une lumière qui s'attarde,\nun éclat d'or sur le quai.\nMon cœur n'a plus de rempart,\ndans ce paysage de mer.\nL'espoir est une ville sans nom,\nqui brille dans le lointain.\n\nUne ville sans nom...\nElle m'attend.",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779421895129_8",
+      "title": "Printemps De Soie",
+      "caption": "雨上がりの午後を彩る、しなやかでノスタルジックな空気。淡い記憶が絹のように溶ける心地よい時間。",
+      "type": "vocal",
+      "duration": 146,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "La pluie se réveille sur le chemin,\nun murmure léger qui s'efface.\nNos pas d'hier, traces du matin,\nfondent doucement dans l'espace.\n\nPrintemps de soie, l'eau nous délie.\nLe temps se noie dans l'infini.\nQue les adieux soient d'un gris doux.\nLa pluie emporte tout entre nous.\nLa pluie emporte tout entre nous.\n\nL'empreinte s'efface, l'argile boit\nle poids de ce qu'on a porté.\nDans ce silence, je me revois\nsans le fardeau du temps d'été.\n\nL'horizon brille après l'orage,\nun nouveau ciel, un nouveau rivage.\nLa pluie emporte tout,\ntout,\ntout s'efface.",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779421895129_9",
+      "title": "Le Miroir Sur Le Soir",
+      "caption": "夕暮れの鏡に映る、時間と儚い記憶の残像。穏やかなメランコリーを纏う調べ。",
+      "type": "vocal",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Le bleu se fâche en un clin d'œil,\nun souffle d'or sur le seuil.\nGifu s'endort sous le velours.\nL'éphémère nous fait la cour.\n\nLe temps s'arrête, un dégradé\ndans le silence de mai.\n\nC'est la seconde où tout bascule,\nune lueur,\nun crépuscule.\n\nLa joie de vivre si légère,\ncomme un parfum\nde primevère.\nJuste l'instant,\nrien d'autre à voir que ce miroir sur le soir.\n\nL'ombre dessine un autre monde,\noù la couleur se fait plus ronde.\nLes bourgeons d'avril sont partis\ndans le secret des nuits.\n\nOn se souvient sans un mot dire,\ndu dernier de tes sourires.\n\nC'est la seconde où tout bascule,\nune lueur,\nun crépuscule.\n\nLa joie de vivre si légère,\ncomme un parfum de primevère.\nJuste l'instant,\nrien d'autre à voir\nque ce miroir sur le soir.\n\nJuste l'instant.",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779425727205_0",
+      "title": "Morning Glass",
+      "caption": "窓から差し込む朝の光と、グラスに注がれる琥珀色の液体が織りなす、目覚めの穏やかなひととき。",
+      "type": "vocal",
+      "duration": 172,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夏っぽい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The gold is spilling on the silent street\nA ghost of summer where the shadows meet\nWe're moving slowly through a heavy dream\nAlong the edges of a cooling street\n\nI see the light in every single turn\nA quiet lesson that we've come to learn\n\nIt's a vintage kind of glow we're keeping now\nA secret held within a silent vow\nThe sun is heavy on the morning glass\nWatching all the quiet hours pass\nJust a rhythm and a shared design\nTracing out a different kind of life\n\nThe concrete echoes with a softer sound\nWhen you are walking on this holy ground\nWe aren't looking for a place to be\nJust the reflection of the company\n\nNo rush to reach the place where light is high\nBeneath the fading of a summer sky\n\nIt's a vintage kind of glow we're keeping now\nA secret held within a silent vow\nThe sun is heavy on the morning glass\nWatching all the quiet hours pass\nJust a rhythm and a shared design\nTracing out a different kind of life\n\nIn the stillness\nWe are all we need\nPlanting every quiet little seed\nJust a moment on the edge of time in a melody\nAnd in a rush\n\nQuiet now\nJust the light on the street",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779425727205_1",
+      "title": "Pine Needles Dry",
+      "caption": "静寂の中で漂う、乾燥した松葉の微かな音。午後の光と共に、洗練された空間を彩るBGMです。",
+      "type": "vocal",
+      "duration": 155,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夏っぽい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The gold is thin and leaning long\nAgainst the wall where we belong\nA salt-lick breeze, a sudden grace\nIt traces lines across your face\n\nNo heavy hearts or anchored feet\nJust asphalt burning in the heat\nThe clock has lost its jagged sound\nSince the wind began to circle round\n\nWind like a shoulder moving on\nLike a summer shadow that is gone\nFree and weightless midday flight\nBefore spring bring back the light\nIt's a skin-deep kiss, a paper-thin touch\nNever needing far too much\nJust the air on us and the air around\nLifting us up from the ground\n\nPine needles dry beneath our palms\nA world that's silent, out of harms\nYou don't need to speak to say it true\nIt's in the way the sky is blue\n\nNo heavy promises to keep\nWhile all the city falls to sleep\nA feather drifting on the floor\nWe don't need a single thing more\n\nWind like a shoulder moving on\nLike a summer shadow that is gone\nFree and weightless midday flight\nBefore spring bring back the light\nIt's a skin-deep kiss, a paper-thin touch\nNever needing far too much\nJust the air on us and the air around\nLifting us up from the ground\n\nLifting us up\nLifting us up\nFree and weightless\nWind on my shoulder",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779425727205_2",
+      "title": "Horizon Drinks The Fire",
+      "caption": "温かいトーンが広がるカフェ空間を、光と音で満たし、穏やかな午後の時間へと誘います。",
+      "type": "vocal",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夏っぽい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The tide carries a weight of something gone\nAmber light catches the edges of the dawn\nIn the sediment of the sand, a trace remains\nA whisper of the years flowing through my veins (flowing through my veins)\n\nOh, the horizon drinks the orange fire\nDrawing up the ghost of my desire\nFaded summers in the salt and in the foam\nCalling out a path that leads me home (leads me home)\n\nThe water draws a line I cannot cross\nMeasuring the beauty and the loss\nSunlight is heavy, turning liquid gold\nA story that is better left untold\n\nOh, the horizon drinks the orange fire\nDrawing up the ghost of my desire\nFaded summers in the salt and in the foam\nCalling out a path that leads me home (leads me home)\n\nBut the salt sting wakes the hollow space\nA memory I can no longer trace\nJust a flicker on the darkening blue\nA momentary echo of the view\n\nWhispers in the foam\nLead me home",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779425727205_3",
+      "title": "Liquid Glass",
+      "caption": "午後の柔らかな光が差す、落ち着きのあるカフェ。ジャズやローファイが流れる、洗練された空間の空気感。",
+      "type": "vocal",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夏っぽい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Walking slow through the hazy blue\nGolden light bleeding right on through\nThe afternoon is a liquid glass\nWatching all the minutes as they pass\n\nHeat is heavy on the sidewalk stone\nMelting down to the marrow bone (marrow bone)\n\nStretch the sky, watch it pull and tear\nTime is hanging in the heavy air\nEvery second is a miles-wide sea\nFloating far from where we used to be\nSummer day is a ribbon long\nSinging out a heat, heatwave song\n\nSidewalks shimmer in the midday glare\nStatic electricity in the air\nConcrete cooling in a violet shade\nMemories of the shadows we have made\n\nDust is rising in a rhythmic cloud\nVoices getting lost inside the crowd (inside the crowd)\n\nStretch the sky, watch it pull and tear\nTime is hanging in the heavy air\nEvery second is a miles-wide sea\nFloating far from where we used to be\nSummer day is a ribbon long\nSinging out a heat, heatwave song\n\nRibbon of time\nStretching long\nHeatwave song\n\nRibbon of time (stretching long)\nHeatwave song",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779425727205_4",
+      "title": "The Slowest Hour",
+      "caption": "差し込む光とピアノの音色に耳を傾ける。ゆったりとした時間の中で、自分だけの静けさを発見する時間。",
+      "type": "vocal",
+      "duration": 167,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夏っぽい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "壁に落ちる影がゆっくり形を変えゆく\nその静かな変化を見つめる歌\nThe edge of the light is tracing a map\nOf a life I haven't lived yet on the plaster wall\n\nOh, let the clock just lean against the air\nNothing to become\nJust this breathing in the quiet, in the quiet stance\nWhere the dust mote is dance\n\nThe lights on the floor are reaching the door\nA silent evolution in the gray\nNo rush to arrive at the end of the day\n\nOh, let the clock just lean against the air\nNothing to become\nJust this breathing in the quiet, in the quiet stance\nWhere the dust mote is dance\n\nQuiet light\n静かな変化",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779425727205_5",
+      "title": "Pilot On The Water",
+      "caption": "穏やかな水面を漂うような、心が鎮まるカフェの午後。日常を忘れる癒やしの時間です。",
+      "type": "vocal",
+      "duration": 155,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夏っぽい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The swelter hangs like silk upon the screen\nA ghost of gold across the floor I've seen\nInside the drawer, beneath the cooling glass\nI hear the hours and the shadows pass\n\nA stack of parchment, white and heavy limbed\nThe edges curling as the light grows dimmed\n\nOh, the letters that I folded\nThe phantom words I held\nIn the silent heat of summer\nWhere the bitter honey swelled\nI'm a pilot in the swelter\nOf the afternoon light\nKeeping secrets in the swelter\nOf the afternoon light\n\nThe ink is sleeping in a valley of the blue\nIt never made the distance or the reach to you\nOutside the window, cicadas scream a plea\nFor breeze to break the humidity for me\n\nBut I just sit and watch the dust motes dance\nLost inside this static, quiet, humid trance\n\nOh, the letters that I folded\nThe phantom words I held\nIn the silent heat of summer\nWhere the bitter honey swelled\nI'm a pilot on the water\nWith no shore in sight\nKeeping secrets in the swelter\nOf the afternoon light\n\nI should have let the ink run wild\nI should have found the courage then\nNow it's only me and it all\nIn the swelter of the light\n\nSoft humming",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779425727205_6",
+      "title": "Golden Gleam",
+      "caption": "陽光に包まれたカフェの午後の情景。心地よい音楽と共に、優雅な時間を彩ります。",
+      "type": "vocal",
+      "duration": 158,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夏っぽい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The low hum of the highway rose\nA resonance that takes its toll\nFading out until the line\nDissolves into the heat of time\nDissolves into the heat of time\n\nIt rings out like a summer dream\nMerging with the golden gleam\nJust as our affection stays\nMelting through the summer haze\nMelting through the summer haze\n\nThe asphalt whispers to the sky\nAs the heavy clouds drift by\nAs the heavy clouds drift by\nEverything must fade away\nBut the heart will hold the day\n\nIt rings out like a summer dream\nMerging with the golden gleam\nJust as our affection stays\nMelting through the summer haze\nMelting through the summer haze\n\nIt rings out like a summer dream\nMerging with the golden gleam\nJust as our affection stays\nMelting through the summer haze\nMelting through the summer haze\n\nMelting away in the summer air",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779425727205_7",
+      "title": "Gilded Heat",
+      "caption": "ノスタルジックな午後の日差し。軽やかなリズムとジャズが、心地よいグルーヴを生み出すBGM。",
+      "type": "vocal",
+      "duration": 165,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夏っぽい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The gold is brittle now against the gate\nA gilded air that's hanging in a state of deep suspension\nBefore the membrane breaks and dust begins\nThe world is holding on with paper thin and quiet tension\n\nThe light is heavy like a pool of heat\nThe concrete radiates beneath our feet in silent mention\n\nIt's a hush, it's a pause, it's a still desire\nEvery atom frozen on a borderline, watching for the change\nIt's the breath that we take when the sun goes down\nBefore the wind awakens the silent town, breaking out of range\n\nIt's a hush, it's a pause, it's a still desire\nEvery atom frozen on a borderline, watching for the change\nIt's the breath that we take when the sun goes down\nBefore the wind awakens the silent town, breaking out of range\n\nStillness in the gilded heat\nEverything is now complete\nSuspension\nWait for the breeze",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779425727205_8",
+      "title": "Silver Heat",
+      "caption": "温かいドリンクを片手に過ごす、心地よいカフェの時間。流れる音楽に身をゆだねる、穏やかな安らぎ。",
+      "type": "vocal",
+      "duration": 152,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夏っぽい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The sound of footsteps walking a bright road\nIs slowly drifting away\nThe tape is turning slow and thick\nWith every single torrent and click\n\nGolden light begins to break\nSofter sound the summer makes\nFading out but clear as day\nWatching as the colors gray\n\nOn a bright road walking away\nFootsteps fading, golden and gray\nRhythmic heart's beat in the dust\nIn a world of gold and rust\nFootsteps fading, walking away\nOn a bright road walking away\n\nThe shadow of the heat remains\nThe sound of footsteps walking a bright road\nIs slowly drifting away\nCrackle of the needle's breath\nSilver heating cross the glass\n\nHear the moments as they pass\nSilence comes but sound is still\nBending to the morning's will\n\nOn a bright road walking away\nFootsteps fading, golden and gray\nRhythmic heart's beat in the dust\nIn a world of gold and rust\nFootsteps fading, walking away\nOn a bright road walking away\n\nSlowly drifting away\nThe rhythm stays as I depart\nLocked within a golden heart\nFootsteps on a bright road\nSlowly drifting away",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779425727205_9",
+      "title": "Architecture Of Afternoons",
+      "caption": "光と香り、そして心地よい時間。午後の空間が持つ芸術的な美しさを描いたサウンドスケープ。",
+      "type": "vocal",
+      "duration": 141,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夏っぽい",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The air begins to hold its breath\nA velvet hum, a quiet death\nThe sun is melting, a quiet death\nThe sun is melting into amber streaks\nCaught inside the architecture of our dreams\n\nGolden light across the floor\nWe couldn't ask for anymore\nJust this moment turning gold\nA story that remains untold\nShadow stretch and then dissolve\nAs the earth begins its slow revolve\n\nDust motes dance in honeyed light\nHolding off the silver of the night\n\nGolden light across the floor\nWe couldn't ask for anymore\nJust this moment turning gold\nA story that remains untold\n\nTurning gold\nStay with me",
+      "added_at": "2026-05-22"
+    },
+    {
+      "id": "track_1779518077781_1",
+      "title": "O Outono Da Gente",
+      "caption": "秋の午後のカフェ。落ち葉の音と、静かに語り合う心温まる予感。優雅なメロディが、時を忘れさせてくれる。",
+      "type": "vocal",
+      "duration": 167,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "バラード",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Folhas caem sem pressa no chão\nFolhas no tempo, na mesma canção\n\nO teu sopro acalma a estação\nNo outono que a gente escolheu\n\nO silêncio é um laço entre eu e você\nO compasso da vida é o ar que nos move\nNo balanço sutil o tempo não dissolve\n\nJunto ao peito a paz que floresce\nNesse amor que em silêncio cresce\nNesse amor silêncio cresce\n\nA xícara esfria na mesa\nMas o calor é a nossa certeza\nÉ a nossa certeza\nÉ a nossa certeza\n\nCada folha que dança e se vai\nÉ o rastro de um bem que não traz\n\nO compasso da vida é o ar que nos move\nNo balanço sutil o tempo não dissolve\n\nJunto ao peito a paz que floresce\nNesse amor que em silêncio cresce\nNesse amor silêncio cresce\n\nTeu sopro, o meu guia\nTeu sopro, na tarde é dia\n\nNo outono, amor é poesia\n\nSuspiro",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779518077781_2",
+      "title": "O Doce Peso",
+      "caption": "差し込む光と、過ぎゆく午後の静寂。コーヒーの香りとともに、胸の奥にそっと寄り添う、切なくも優しい時間の大河。",
+      "type": "vocal",
+      "duration": 152,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "バラード",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "A luz descansa no chão de madeira\nUma sombra longa, a tarde é inteira\n\nO tempo para\nSem pressa de ir\nSinto o silêncio a nos conduzir\n\nNo leve tremor do ar que vem de fora\nA brisa fria traz o que foi embora\nUm rastro antigo, um brilho fugaz\nA paz do momento me traz muito mais\n\nO café esfria\nO vapor se desfaz\n\nO que guardei não me deixa em paz\nMas é um doce peso\nUm afago sutil\nComo o sol que se deita em pleno abril\n\nNo leve tremor do ar que vem de fora\nA brisa fria traz o que foi embora\nUm rastro antigo, um brilho fugaz\nA paz do momento me traz muito mais\nTraz muito mais\n\nHum...",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779518077781_3",
+      "title": "Mapa De Pele E Segredo",
+      "caption": "肌と秘密の地図のように、静かに満ちていく穏やかな時間。カフェに溶け込む、寄り添うような優しいサウンドスケープ。",
+      "type": "vocal",
+      "duration": 167,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "バラード",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Nuvens de seda sobre a alma\nA luz do sol é quase calma\n\nUm instante que se alonga\nNessa paz que nos estende\n\nO primeiro olhar se esconde\nNuma sombra que responde\n\nPromessas feitas de silêncio\nNo sopro leve de um começo\n\nO tempo para, o som se cala\nTudo o que a gente nunca fala\nTudo o que a gente nunca fala\n\nA brisa traz o tom do mar\nMesmo que o horizonte tarde a chegar\n\nA sós no brilho desse agora\nO mundo fica lá fora\n\nUm mapa de pele e segredo\nSempre essa ieda sem medo\n\nPromessas feitas de silêncio\nNo sopro leve de um começo\n\nO tempo para, o som se cala\nTudo o que a gente nunca fala\nTudo o que a gente nunca fala\n\nNuvem, silêncio, o tempo passa\nO tempo passa",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779518077781_4",
+      "title": "Segredo De Seda",
+      "caption": "秋の冷気に包まれたカフェ。白い湯気と柔らかな木漏れ日が彩る、優雅で秘密めいた午後の情景描写。",
+      "type": "vocal",
+      "duration": 167,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "バラード",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Fumaça branca no ar frio de outono\nO tempo para no nosso abandono\n\nO calor da xícara que a mão não solta\nA vida, vida mansa que em nós se volta\n\nContraste doce: o vapor e a brisa\nO amor que o frio do mundo não pisa\n\nNo sopro quente que a tarde convida\nA nossa história em paz é tecida\n\nA luz de Gifu descansa no chão\nO silêncio mora na palma da mão\n\nOutubro traz um segredo de seda\nUm promessa, um promessa que nunca se arredonda\n\nContraste doce: o vapor e a brisa\nO amor que o frio do mundo não pisa\n\nNo sopro quente que a tarde convida\nA nossa história em paz é tecida\n\nVapor e brisa, o amor",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779518077781_5",
+      "title": "Vento Saudoso",
+      "caption": "秋風が運ぶ、少し切ない過去の残像。心にじんわり広がる、ノスタルジックな午後の余韻を纏うBGM。",
+      "type": "vocal",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "バラード",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n\r\n[Verse 1]\r\nVento de outono traz o cheiro,\r\nDe um tempo que passou devagar.\r\nSaudade doce no meu peito,\r\nA brisa volta a me encontrar.\r\n\r\n[Chorus]\r\nFolhas caem pelo chão,\r\nSinto o toque da estação.\r\nMelodia em cada cor,\r\nOutono traz o meu amor.\r\n\r\n[Verse 2]\r\nVento de outono traz o cheiro,\r\nDe um tempo que passou devagar.\r\nSaudade doce no meu peito,\r\nA brisa volta a me encontrar.\r\n\r\n[Chorus]\r\nFolhas caem pelo chão,\r\nSinto o toque da estação.\r\nMelodia em cada cor,\r\nOutono traz o meu amor.\r\n\r\n[Outro]\r\nOutono traz o meu amor...\r\n(Hummm)",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779518077781_6",
+      "title": "Crepúsculo_mudo",
+      "caption": "窓辺に差し込む薄暮の淡い光。静けさの中に溶け込む郷愁と、穏やかな安らぎを運ぶ時間軸。",
+      "type": "vocal",
+      "duration": 166,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "バラード",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "As sombras crescem no chão de madeira\nA luz de outrora é a última fronteira\nNão é tristeza, é apenas o tom\nDe um tempo vivido que ainda faz som\n\nCrepúsculo mudo, o segredo na pele\nUma lembrança que o vento repele\nA penumbra chega, o azul se desfaz\nMorre jamais, mas o que foi belo não morre jamais\n\nA brisa que passa não traz o seu nome\nMas a minha alma de silêncio não come\nO vulto se alonga, o dia se apaga\nUma paz antiga que o peito embriaga\n\nOnde a luz dobra o mistério habita\nUma saudade que não se agita\nMeia luz, meio céu\nApenas o tempo a nos pertencer\n\nCrepúsculo mudo, o segredo na pele\nUma lembrança que o vento repele\nA penumbra chega, o azul se desfaz\nMorre jamais, mas o que foi belo não morre jamais\n\nAs sombras dormem",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779518077781_7",
+      "title": "Página_de_Seda",
+      "caption": "窓越しの午後の陽光とともに。流れる季節の移ろいを感じながら、心地よく寄り添う温かいカフェミュージック。",
+      "type": "vocal",
+      "duration": 164,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "バラード",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "O papel sussurra o que o outono calou\nFolhas de seda onde o tempo parou\n\nO vento traz o cheiro de uma tarde em tarde\nSem pressa\n\nNesse silêncio que a gente atravessa\nViro a página mas não mudo o lugar\n\nLugar no livro aberto\nDo teu caminhar\n\nAh, esse amor que não se deixa apagar\nMesmo que as folhas insistam em voar\n\nÉ outono em flor, é brisa no peito\nTempo passando mas tudo perfeito\nSim, tudo perfeito\n\nAs sombras dançam na parede amarela\nA vida passa do lado de fora da janela\nJanela\n\nMas aqui dentro o calor é de um tempo só\n\nLonge do medo e de qualquer talvez ou pó\nCada palavra é um abraço desbraço desfeito\nQue se refaz no balanço do nosso jeito\n\nBrisa de outono\nO nosso amor é o outono em flor\nSussurro no papel\n\nAté já\nAté já",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779518077781_8",
+      "title": "Saudade Mansa",
+      "caption": "心地よい午後のカフェ空間に流れる、穏やかな哀愁。過ぎし日への想いが、心に深い安らぎの愛おしさに変わる瞬間。",
+      "type": "vocal",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "バラード",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Fios de lã, promessa leve\nO tempo para, a vida é breve\n\nUm toque só, calor de pele\nO azul do mar em que me dele\n\nVisto o silêncio, o fio é macio\nLonge do mundo, perto do rio\n\nSaudade mansa que me veste\nPaz que renasce, ah, se me reveste\n\nFio que tece a nossa ausência\nGuardo o conforto da consciência\n\nA xícara esfria\nA luz descansa no peito\nA calma de uma criança\n\nAberturas na trama\nO ar que passa, o dom de amar com leve graça\n\nNada me falta, o frio não vem\nEstou comigo e com mais ninguém\n\nSaudade mansa que me veste\nPaz que renasce, ah, se me reveste\n\nFio que tece a nossa ausência\nGuardo o conforto da consciência\n\nPaz de me encontrar\nNo fino fino azul de respirar",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779518077782_9",
+      "title": "O Primeiro Frio",
+      "caption": "季節の変わり目。温かいカフェで過ごす穏やかな時間の中に、静かな別れと、新しい訪れを待つ静かな憧憬を描くBGM。",
+      "type": "vocal",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "バラード",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n\r\n[Verse 1]\r\nA noite entrou sem pedir\r\nO vento trouxe o recado\r\nFecho o vidro devagar\r\nSinto o tempo mudar\r\n\r\n[Chorus]\r\nÉ o primeiro frio\r\nO adeus que chegou\r\nO calor se perdeu\r\nOnde o sol se apagou\r\n(se apagou)\r\n\r\n[Verse 2]\r\nTeu olhar busca a estrada\r\nComo ave que quer partir\r\nO azul ficou cinza agora\r\nÉ hora de você ir\r\n\r\n[Chorus]\r\nÉ o primeiro frio\r\nO adeus que chegou\r\nO calor se perdeu\r\nOnde o sol se apagou\r\n(se apagou)\r\n\r\n[Bridge]\r\nVou buscar um agasalho\r\nAceitar a nova estação\r\nNão há dor, só o inverno\r\nBatendo no coração\r\n\r\n[Chorus]\r\nÉ o primeiro frio\r\nO adeus que chegou\r\nO calor se perdeu\r\nOnde o sol se apagou\r\n(se apagou)\r\n\r\n[Outro]\r\nO tempo mudou\r\nO frio chegou\r\n(chegou)\r\nAdeus\r\n(adeus)",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779518515864_0",
+      "title": "No Silêncio (Vibe 2)",
+      "caption": "言葉にできない瞬間の静けさ。賑わいから離れたカフェで、二人だけの穏やかな時間を過ごす情景。",
+      "type": "vocal",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "バラード",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n\r\n[Verse 1]\r\nO dia perde a cor lá fora\r\nO vento traz o frio de vez\r\nA gente não precisa falar\r\nNesse instante de paz\r\nSentados vendo a tarde ir\r\nSem pressa de chegar\r\n\r\n[Chorus]\r\nÉ no silêncio que eu te encontro\r\nNo descanso desse olhar\r\nO amor não precisa de som\r\nBasta a gente estar\r\n(Só a gente estar)\r\n\r\n[Verse 2]\r\nAs folhas caem pelo parque\r\nO outono veio nos avisar\r\nQue o mundo pode girar\r\nEu vou sempre ficar\r\nO tempo não importa mais\r\nContanto que você esteja aqui\r\n\r\n[Chorus]\r\nÉ no silêncio que eu te encontro\r\nNo descanso desse olhar\r\nO amor não precisa de som\r\nBasta a gente estar\r\n(Basta estar)\r\n\r\n[Bridge]\r\nDeixa o resto lá fora\r\nNão precisamos de nada além\r\nO agora é o nosso lugar\r\nOnde o coração se detém\r\n(Onde a gente se vê)\r\n\r\n[Chorus]\r\nÉ no silêncio que eu te encontro\r\nNo descanso desse olhar\r\nO amor não precisa de som\r\nBasta a gente estar\r\n\r\n[Outro]\r\nSó o silêncio\r\nNesse outono\r\nEu e você\r\n(Sempre assim)\r\n(Sempre aqui)",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779520515785_0",
+      "title": "Bajo El Cielo Gris",
+      "caption": "灰色の空が包み込むカフェ。都会の喧騒を忘れ、儚くも叙情的な午後の光と、名もなき物語が溶け合う時間。\n切ない静けさの中で漂う、心地よいBGM。",
+      "type": "vocal",
+      "duration": 168,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "El aliento se vuelve humo blanco\nSe pierde en el aire sin rastro\nSe pierde en el aire sin rastro\n\nLa escarcha dibuja cristales\nUn secreto de invierno fugaz\nSecreto fugaz\n\nCielo gris que abraza la tierra\nEl silencio nos mira de frente\nComo un mar de neblina en eterno\nDonde el frío se siente presente\n\nPasos mudos sobre la acera\nLa luz se demora en llegar\nLa luz se demora en llegar\n\nLa neblina es una quimera\nQue no nos permite soñar\nPermite soñar\n\nCielo gris que abraza la tierra\nEl silencio nos mira de frente\nComo un mar de neblina en eterno\nDonde el frío se siente presente\n\nEl blanco aliento se va\nSe va con la luz",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779520515785_1",
+      "title": "Refugio_de_ámbar",
+      "caption": "雨の日の窓辺。外の風景とは対照的な、温かな琥珀色の光に包まれた静謐な空間。心の安らぎを探す、穏やかな調べ。",
+      "type": "vocal",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Afuera el cristal guarda el color\nDe una tarde gris que se durmió\nLa penumbra envuelve cada rincón\nMientras el silencio voz su canción\nLa luz difusa no sabe brillar\nSolo se queda esperar\n\nPero adentro el ámbar es calor\nEl oro de una calma sin dolor\nUn refugio tibio frente al cristal\nDonde la soledad no es el final\nDonde la soledad no es el final\n\nLas sombras bailan en la pared\nCalmando despacio toda la sed\nUn hilo de seda, un rayo de sol\nChopo de bombilla y de caracol\nNo hay prisa de alcohol\nMiro hacia afuera y no quiero ver\nPrefiero este amanecer\n\nPero adentro el ámbar es calor\nEl oro de una calma sin dolor\nUn refugio tibio frente al cristal\nDonde la soledad no es el final\nDonde la soledad no es el final\n\nLuz de cristal, luz de hogar\nDos verdades para caminar\nEl frío del mundo se queda allí\nY el fuego del alma se queda en mí\nSe queda en mí\nAdentro el ámbar es calor\nCalma\nSolo el ámbar",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779520515785_2",
+      "title": "Silencio Azul",
+      "caption": "雪が静かに積もる日。都市の喧騒が洗い流され、時間が凍りついたような青い静寂が訪れる。優雅で温かい安息のひとときを表現するBGM。",
+      "type": "vocal",
+      "duration": 163,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Copos caen sin avisar\nLa ciudad empieza de descansar\nUn manto blanco de cristal\nPone fin al ruido mundanal\n\nEl tiempo se congela en paz\nNo hay prisa, no hay nada que buscar\nEs la pausa del invierno\nUn refugio simple y tierno\n\nTodo se vuelve...\n¡Y tierno!\nTodo se vuelve silencio azul\nBajo una luz de seda y tul\nDéjate llevar por la quietud\n\nHuellas que pronto borrará\nEl viento que apenas soplará\nEl mundo es un teatro gris\nDonde solo la nieve es feliz\n\nSiente el frío que es calidez\nCuando el alma se rinde de una vez\nEs la pausa del invierno\nUn refugio simple y tierno\n\nTodo se vuelve...\n¡Y tierno!\nTodo se vuelve silencio azul\nBajo una luz de seda y tul\nDéjate llevar por la quietud\n\nY en ese instante sin voz\nEstamos a solas los dos\nSolo la nieve y yo\n\nQuietud... Silence blanco",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779520515785_3",
+      "title": "Hilo Tibio",
+      "caption": "ひだまりのような午後に流れる、温かく優しい記憶を紡ぐ時間。胸の奥をそっと撫でるような、心地よいカフェミュージック。",
+      "type": "vocal",
+      "duration": 155,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Hielo en la escarcha de la piel\nDedos de plata al morder el viento\nLa luz se quiebra en el umbral\nBuscando el rastro de un retorno\nEl frío muerde lo que fui\nAntes del pulso del aliento\n\nDeja que el aire se vuelva calma\nUn hilo tibio que cose la alma\n\nVuelve la sangre, vuelve la luz\nEn este retorno, en esta quietud\nEn esta quietud\nEn esta quietud\n\nSombra que exhala un vapor eterno\nEl rincón dulce de este invierno\nDe este invierno",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779520515785_4",
+      "title": "Baile Sin Nombre",
+      "caption": "窓から差し込む暖色系の光と、心に溶けるような優しいメロディ。大切な誰かと過ごす、特別な瞬間にふさわしい調べ。",
+      "type": "vocal",
+      "duration": 167,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "La luz se quiebra en cristales de aire\nCristales de aire\nBajo el farol, el invierno se rinde\nEl invierno se rinde\n\nCopo a copo, la escarcha se borra\nTodo el silencio por fin me desdobla\nEs un baile sin nombre en la acera\nUna chispa que el frío no quiebra\n\nSe va la sombra, se queda el calor\nGira, nieve, buscando el color\nBuscando el color\nBuscando el color\nBuscando el color\n\nYa no hay muros de hielo en el pecho\nSolo el pulso de un camino deshecho\nPulso de un camino deshecho\n\nMira la danza de granos de seda\nMira que calma por fin se me queda\n\nCaen, suben, giran, me hablan\nLuces que el alma me calman\nPolvo de estrellas sobre el asfalto\nVuelo sin alas, un sueño en lo alto\n\nEs un baile sin nombre en la acera\nUna chispa que el frío no quiebra\nSe va la sombra, se queda el calor\nGira, nieve, buscando el color\nBuscando el color\nBuscando el color\nBuscando el color\n\nBajo el farol",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779520515785_5",
+      "title": "Nidos De Barro",
+      "caption": "窓辺に佇む。湯気から立ち昇る穏やかな情景と、冬の静けさが織りなす、心の底から安らぐひとときを映し出す光景。深い休息のためのBGM。",
+      "type": "vocal",
+      "duration": 165,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Afuera el cristal guarda el invierno\nUn suspiro blanco en el aire eterno\nMis manos son nidos de barro cocido\nEl calor despierta lo que estaba dormido\nY hoy...\n\nBajo el vapor trazo un círculo de paz\nDonde el frío de la calle ya no es capaz\nDos palmas unidas, el centro de la luz\nLa vida se aquieta rompiendo el capuz\nRompiendo el capuz\n\nLa porcelana quema, pero calma la sed\nDe un alma que busca una mínima red\nHumo que danza en la penumbra clara\nEl tiempo se borra en esta taza rara\n\nBajo el vapor trazo un círculo de paz\nDonde el frío de la calle ya no es capaz\nDos palmas unidas, el centro de la luz\nLa vida se aquieta rompiendo el capuz\nRompiendo el capuz\n\nSolo el silencio y tú\nSolo el calor\nSolo el calor",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779520515785_6",
+      "title": "En Mi Propia Suavidad",
+      "caption": "時間さえも止まってしまうような、私だけの特別な静寂の時間。都会の喧騒を忘れ、心と向き合うための、静かで内省的な午後。過剰な装飾のない、素朴な安らぎの調べ。",
+      "type": "vocal",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "La luz se rinde al viento\nEl muro cede al silencio\nAfuera el mundo es un voz\nAfuera el mundo es un bocio\nAquí el tiempo es un secreto\n\nUna manta envuelve el tacto\nUn refugio, un simple acto\n\nLas horas rotas se detienen\nDonde los sueños me sostienen\nY, hilo a hilo, el ayer se borra\nEn esta calma que me ahorra\nDel pulso gris de la ciudad\nEn mi propia suavidad\nEn mi propia suavidad\nEn mi propia suavidad\n\nHuele a madera y a memoria\nEl fin de una vieja historia\nSin prisa, el frío queda lejos\nSe empañan todos los reflejos\n\nSolo queda el calor del centro\nLo que guardo aquí muy dentro\n\nLas horas rotas se detienen\nDonde los sueños me sostienen\nY, hilo a hilo, el ayer se borra\nEn esta calma que me ahorra\nDel pulso gris de la ciudad\nEn mi propia suavidad\nEn mi propia suavidad\nEn mi propia suavidad\n\nTodo fluye en el telar\nEl tiempo deja de pesar\nSolo existo en este rincón\nPaz de aire, paz de corazón\nEn mi propia suavidad\n\nBuenas noches\nLa manta me cuida\nMe cuida",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779520515785_7",
+      "title": "Pisar La Calma",
+      "caption": "穏やかな午後のカフェ空間に響く、移ろいやすい時間と美しい記憶の断片。何も残さないささやかな瞬間を優しく包み込む、余韻のあるサウンドトラック。",
+      "type": "vocal",
+      "duration": 163,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "La nieve acepta lo que viene\nUn rastro breve en el mantel\nNo guarda el paso ni el relieve\nSolo el silencio sobre la piel\n\nEl frío muerde la memoria\nBorrando el rastro sin hablar\nQué frágil es pisar la calma\nSi el sol no sabe perdonar\nHuellas que el viento se lleva el alma\nAntes de que aprendan a durar\n\nTu voz es copo que no pesa\nDibujando un mapa en el aire\nLo que se dice en la sobremesa\nEs un diseño que se deshace\nNo intentes fijar la huella\nEl calor lo va a disolver\n\nQué frágil es pisar la calma\nSi el sol no sabe perdonar\nHuellas que el viento se lleva el alma\nAntes de que aprendan a durar\n\nSolo ceniza y cristal\nUn paso que fue real\nSolo un paso el cielo neutral\nAdiós a la marca en el suelo\nSe va, se va\nYa no queda más que el cielo",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779520515785_8",
+      "title": "Mundo De Vidrio",
+      "caption": "ガラスの向こうの世界。移ろう光と静寂が作り出す幻想的なひととき。心地よい空間を視覚的に表現した、没入感のあるカフェミュージック。",
+      "type": "vocal",
+      "duration": 146,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Claroscuro en la alfombra\nLa inercia del sol\nPinta un mapa de pausa\nEn el suelo de hoy\n\nLa quietud me desarma\nEn este rincón\nDonde el tiempo se rinde\nSin explicación\n\nEs la tibieza de un reflejo\nLuz de invierno en el cristal\nComo un secreto muy viejo\nQue no tiene final\n\nNo hay prisa en la sombra\nNi frío en la piel\nSolo el rastro de un día\nColor de miel\n\nMe pierdo en la pausa\nMe olvido de ayer\nViendo el mundo de vidrio\nDesaparecer\n\nEs la tibieza de un reflejo\nLuz de invierno en el cristal\nComo un secreto muy viejo\nQue no tiene final\n\nInvierno y calma\nSolo luz",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779520515785_9",
+      "title": "Seda Y Calma",
+      "caption": "シルクのような滑らかさで、五感を包み込むような静けさ。午後の時間をゆったりと引き延ばす、繊細で洗練された安らぎの調べ。空間そのものを彩ります。",
+      "type": "vocal",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Mmm, mmm)\r\n\r\n[Verse]\r\nSiento el roce de la seda\r\nLento sobre mis brazos\r\nTus manos son de agua\r\nCalma que llega sin ruido\r\nNo busco palabras\r\nSolo este desliz suave\r\nQue se queda en los hombros\r\n\r\n[Chorus]\r\nEste abrazo es un refugio\r\nDonde el tiempo se detiene\r\nNo hace falta decir nada\r\nLa tela lo explica todo\r\n(Todo es suave ahora)\r\n(Todo es calma)\r\n\r\n[Verse]\r\nMiro hacia la ventana\r\nEl cielo cambia de tono\r\nLa tarde se va perdiendo\r\nComo un aire que pasa\r\nTu piel y mi piel\r\nUnidas por un hilo fino\r\nQue no quiere romperse\r\n\r\n[Outro]\r\nQuédate así un momento\r\n(Solo un momento más)\r\nSin planes\r\nSin mañana\r\nSeda y piel\r\n(Seda y piel)\r\nNada más\r\n(Nada más)",
+      "added_at": "2026-05-23"
+    },
+    {
+      "id": "track_1779619347010_0",
+      "title": "Terrace At Twilight",
+      "caption": "夕暮れのテラスから漂う、穏やかで心地よいメロディ。日常の喧騒を忘れさせてくれるサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779619347013_1",
+      "title": "Quiet Introspection (Bossa Ambient)",
+      "caption": "午後の静けさの中で流れるボサノヴァ。心の奥深くを優しく撫でる、内省的なカフェのBGMとして。",
+      "type": "instrumental",
+      "duration": 170,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779619347013_2",
+      "title": "Shadows On The Cobblestone",
+      "caption": "石畳に描かれる影の記憶。午後のカフェタイムに寄り添う、ノスタルジックで優雅なサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 152,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779619347013_3",
+      "title": "The Late Train Home",
+      "caption": "夜の街を漂う、温かく郷愁を誘うメロディー。物思いにふけりながら聴きたい、遅い帰り道のBGM。",
+      "type": "instrumental",
+      "duration": 171,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779619347013_4",
+      "title": "Paper Screen Shadows",
+      "caption": "紙を通して拡散する光と影。静かで心地よい、午後のカフェで過ごすひとときを彩るサウンド。",
+      "type": "instrumental",
+      "duration": 153,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779619347013_5",
+      "title": "Through The Window Pane",
+      "caption": "窓辺の光に溶け込むような優雅な調べ。穏やかな気持ちになれる、心地よいカフェ・ミュージック。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779619347013_6",
+      "title": "Tides And Tapestries",
+      "caption": "ゆらめく光と色彩が織りなす時間。ジャズとピアノが彩る、心安らぐカフェの午後。",
+      "type": "instrumental",
+      "duration": 168,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779619347013_7",
+      "title": "Balcony At Sunrise",
+      "caption": "夜明けのバルコニーで目覚めるような優しい調べ。日常を忘れさせてくれる、清々しいメロディに包まれて。",
+      "type": "instrumental",
+      "duration": 144,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779619347013_8",
+      "title": "Slow Light On Wood",
+      "caption": "木材に差し込む柔らかな午後の光。視覚と聴覚に訴えかける、静謐な時間を感じさせるBGM。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779619347013_9",
+      "title": "Balcony Hour",
+      "caption": "珈琲の香りと午後の光。窓辺に座って、ゆったりと自分と向き合えるような、穏やかなひとときのためのサウンド。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "静か",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779628031105_0",
+      "title": "Sunlight On Floorboards",
+      "caption": "午後の光が床に広がり、穏やかな時間が流れるカフェの情景を表現したサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 152,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779628031108_1",
+      "title": "Amber Light On Wood",
+      "caption": "温かい琥珀色の光が木材に反射し、安らぎと落ち着きを感じさせる、午後のカフェタイムを彩るサウンドトラック。",
+      "type": "instrumental",
+      "duration": 118,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779628031108_2",
+      "title": "Slow Pour Over",
+      "caption": "窓からの柔らかな光と、ゆっくりと落ちるコーヒーの滴。心身を落ち着かせるような、心地よい午後の時間の流れを感じるBGM。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779628031108_3",
+      "title": "The Second Cup",
+      "caption": "午後の優しい調べが心地よいカフェの休息を提供。日常の忙しさから離れて、自分だけの静かな時間を過ごすためのサウンドトラック。",
+      "type": "instrumental",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779628031108_4",
+      "title": "Shadows On The Tabletop",
+      "caption": "窓から差し込む光と影のコントラストが描く、午後のカフェの静謐な一瞬。静寂の中に存在する、心地よい時間の移ろいを感じさせるBGM。",
+      "type": "instrumental",
+      "duration": 121,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779628031108_5",
+      "title": "Afternoon Slant",
+      "caption": "午後の斜光が差し込む空間全体を包み込むようなサウンドスケープ。優雅で落ち着いた調べとともに、ゆったりとしたリラックスタイムを演出します。",
+      "type": "instrumental",
+      "duration": 164,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779628031108_6",
+      "title": "Salt Air And Coffee",
+      "caption": "潮風とコーヒーの香りが混じり合う、南国風の午後のカフェ。心癒されるBGMと共に、穏やかな休息の時間を提供します。",
+      "type": "instrumental",
+      "duration": 113,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779628031108_7",
+      "title": "Coffee At The Veranda",
+      "caption": "光あふれるベランダでのひととき。ゆったりと流れるコーヒーの調べが、心地よい午後の余韻を演出するサウンドトラック。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779628031108_8",
+      "title": "Sunday Espresso",
+      "caption": "穏やかな日曜の午後に響く、エスプレッソのような深みのある調べ。心に寄り添う、特別なカフェのサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 143,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779628031108_9",
+      "title": "Veranda At Noon",
+      "caption": "太陽の光が降り注ぐベランダでの時間。静けさの中で聞こえてくる、優しく穏やかな調べが、特別なひとときを彩ります。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "明るい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-24"
+    },
+    {
+      "id": "track_1779673903596_0",
+      "title": "Cafe Window Rain",
+      "caption": "雨に濡れる窓越しのカフェ。心地よい調べが、空間全体に優しく溶け込むようなひととき。",
+      "type": "instrumental",
+      "duration": 144,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夜っぽい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779673903596_1",
+      "title": "Leather Booth At Three",
+      "caption": "落ち着いた午後のカフェのブース席。ゆったりと時間を忘れ、自分だけの空間で過ごす情景を演出します。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夜っぽい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779673903596_2",
+      "title": "Last Call At The Cafe",
+      "caption": "午後遅く、優しい光が差し込むカフェ。ジャズとピアノの旋律に身を預け、穏やかな時間を楽しむBGM。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夜っぽい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779673903596_3",
+      "title": "Coffee By The Window",
+      "caption": "窓辺の柔らかな光と温かいコーヒー。心と体を癒やす、穏やかな午後を彩るような調べ。",
+      "type": "instrumental",
+      "duration": 161,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夜っぽい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779673903596_4",
+      "title": "The Third Pour",
+      "caption": "午後の陽光が満ちるカフェ。心地よいビートが日常の喧騒から意識をそっと解き放ち、静かな余韻へと誘います。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夜っぽい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779673903596_5",
+      "title": "Rain On The Counter",
+      "caption": "雨音とジャズが奏でる、情緒的なカフェの一角。窓を打つリズムに耳を傾け、深く物思いにふける午後。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夜っぽい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779673903596_6",
+      "title": "Veranda At Twilight",
+      "caption": "夕暮れのベランダに漂う、ノスタルジックな空気。ゆったりとした時間の流れを感じさせる、温かい余韻をお届けします。",
+      "type": "instrumental",
+      "duration": 117,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夜っぽい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779673903596_7",
+      "title": "Midnight At The Plaza",
+      "caption": "煌めく都会の夜景。人波から離れた静寂な場所で、優雅な時間が流れる情景を彩るサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 117,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夜っぽい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779673903596_8",
+      "title": "Two Am Rain",
+      "caption": "雨が上がった午後のカフェ。心にそっと寄り添うような、穏やかで心地よいメロディ。",
+      "type": "instrumental",
+      "duration": 172,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夜っぽい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779673903596_9",
+      "title": "The Last Cafe Light",
+      "caption": "閉店間際の、カフェの淡い灯り。一日の終わりを静かに見つめ、今日の思い出を振り返るBGM。",
+      "type": "instrumental",
+      "duration": 164,
+      "full_url": "",
+      "tags": [
+        "Bossa Nova",
+        "夜っぽい",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020337_0",
+      "title": "The Curve Stays Gold",
+      "caption": "カフェの窓辺で交錯する、一瞬の輝きと残響。日常に潜む、忘れがたい「黄金のカーブ」のような思い出を誘うサウンドスケープ。",
+      "type": "vocal",
+      "duration": 159,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Between the stops the window frames the blur\nSea of coats and static words that never stir\nThe gray light leaks across the vinyl seats\nWe share the space where every morning meets\n\nJust a flicker in the periphery\nA moment lost inside the gravity\nAnd then the corner of your world turned bright\nA sudden ghost of warmth inside the neon light\nA silent promise in a passing glance\nA brief, unscripted urban little dance\nYou didn't know I caught the silver spark\nA momentary light\nA momentary light within the dark\n\nThe glass reflects a thousand different eyes\nBut yours were fixed upon some quiet sunrise\nNo greeting spoken, no name to recall\nJust the gravity of nothingness at all\nBut the memory of that curve stays gold\nA secret story that will stay untold\nStay untold\n\nAnd then the corner of your world turned bright\nA sudden ghost of warmth inside the neon light\nA silent promise in a passing glance\nA brief, unscripted urban little dance\nYou didn't know I caught the silver spark\nA momentary light\nA momentary light within the dark\n\nThe sliding door will soon divide the frame\nI'll never know the sound of your soft name\nBut for a second, we were un-alone\nIn the gray morning, a small light was shown\nAnd then the corner of your world turned bright\nA sudden ghost of warmth inside the neon light\nA silent promise in a passing glance\nA brief, unscripted urban little dance\nYou didn't know I caught the silver spark\nA momentary light\nA momentary light within the dark\n\nJust a flicker, gone",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020337_1",
+      "title": "Fold The Light",
+      "caption": "静けさの中に差し込む黄金の光。日常の時間を織りなす、穏やかで温かい、カフェでの優しいひととき。",
+      "type": "vocal",
+      "duration": 157,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Woven ghost in white and blue\nMoving in a rhythmic cue\nCotton sails on an unseen sea, static frames of what used to be\n\nThe clock is ticking in the heat\nTo a hollow, muffled beat\nBut hear the wind has its own mind, leaving the heavy hours behind\n\nSun-bleached rhythms, suspended time\nEvery ripple is a silent, rising air\nA temporary peace we both can share\nFold the light into the fold\nTurning the routine into gold\nTurning the routine into gold\n\nDust motes dance in a golden beam\nA half-forgotten, waking dream\nNo voices call from the street below, just the slow and steady ebb and flow\n\nI watch the shadows crawl the floor\nAnd wonder what I was waiting for\nWhen the world is loud and overbright, I come back home to this quiet life\n\nSun-bleached rhythms, suspended time\nEvery ripple is a silent, rising air\nA temporary peace we both can share\nFold the light into the fold\nTurning the routine into gold\nTurning the routine into gold\n\nWhispering into the gold\nSuspended time",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020337_2",
+      "title": "Mercury Drop",
+      "caption": "夜の街路に立ち尽くす、秘密と郷愁が交錯する、琥珀色の静寂。時間が止まったかのような、深遠なムード。",
+      "type": "vocal",
+      "duration": 159,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Midnight in the district\nThe signal turns to red\nA moment for the secrets\nThat I haven't even said\nI'm standing on the concrete\nThe amber starts to blink\nA quiet invitation\nA second just to think\n\nBelow the sodium lanterns\nUpon the city floor\nA silhouette is waiting\nAsking me for more\n\nThe shape of a shadow in the glow of the stop\nWatching the world and the mercury drop\nIt's a mirror of nothing, a ghost on the ground\nThe loudest silence that I've ever found\nJust a flicker of out light\nA pause in the pace\nIn the geometry of this empty space\n\nA car goes by in flashes\nA streak of chrome and gold\nEverything is new but\nEverything is old\nI'm caught between the crossing\nAnd the place where I have been\nA ghost inside a machine\nA player on the scene\n\nThe wood bass is humming\nA rhythm in my chest\nGiving the wandering mind\nA moment for a rest\n\nThe shape of a shadow in the glow of the stop\nWatching the world and the mercury drop\nIt's a mirror of nothing, a ghost on the ground\nThe loudest silence that I've ever found\nJust a flicker of out light\nA pause in the pace\nIn the geometry of this empty space\n\nGreen is coming soon\nThe world will start to move\nBut for this second here\nI've got nothing left to prove\nLet the city wait, let the light just stay the same\nIn the shadow, I don't even have a name\n\nThe shape of a shadow in the glow of the stop\nWatching the world and the mercury drop\nIt's a mirror of nothing, a ghost on the ground\nThe loudest silence that I've ever found\nJust a flicker of out light\nA pause in the pace\nIn the geometry of this empty space\n\nJust a pause\nThe light turns green",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020337_3",
+      "title": "Paper Wings In Velvet Blue",
+      "caption": "淡い青の空の下、都会の喧騒を抜け出す。過ぎ去る感情を優しく抱きしめる、穏やかな午後の情景。",
+      "type": "vocal",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The velvet architecture holds the sky\nA prism in the static of the day\nI see the horizon catch my eye\n\nBut shadows wash the colors all the way\nIt's a resonance I can't define\nA ghost that's lingering behind the line\n\nUnlabeled emotion catching the light\nA transient ghost in the urban night\nIt brushes the heart like a paper wind\nA song that the silence refuses to sing\nJust for a moment, it's all I can feel\nA beautiful ache that isn't quite real\n\nSkyscrapers are turning into gold\nReflecting truths that haven't yet been told\nThe air is heavy with a soft perfume\nOf neon lights and gardens starting to bloom\nI'm standing still while the world is in flight\nChasing the tail of the fading sunlight\nOf the fading sunlight\n\nUnlabeled emotion catching the light\nA transient ghost in the urban night\nIt brushes the heart like a paper wind\nA song that the silence refuses to sing\nJust for a moment, it's all I can feel\nA beautiful ache that isn't quite real\n\nNames I can't find\nJust passing through\nThe velvet blue\nIn the afternoon",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020337_4",
+      "title": "Night In A Silver Cup",
+      "caption": "都会の夜を漂う、秘密の物語の時間。水面に映る光のきらめきを感じながら、静かに夜が降りてくるのを待つひととき。",
+      "type": "vocal",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Flicker on the dark stream\nYellow bars of heat\nRefraction in the twilight\nRefraction in the twilight\nWhere the shadows meet\n\nGive the acid rain and flow\nRipples tell a hidden story\nTethered to the riverbed\nIn the city's quiet glory\nIn the city's quiet glory\n\nSuspended in the blue\nThe lights are falling out\nThe night is pouring slowly\nThe night is pouring slowly\nFrom a heavy silver cup\n\nGive the acid rain and flow\nRipples tell a hidden story\nTethered to the riverbed\nIn the city's quiet glory\nIn the city's quiet glory",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020338_5",
+      "title": "The Secret Habit",
+      "caption": "都会の喧騒を忘れさせる、秘密めいた午後の空気。窓からの光と、囁くような旋律が、日常にささやかな安らぎを運んでくる。",
+      "type": "vocal",
+      "duration": 146,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Streetlights blur into golden lines\nPassing through the borders of our time\nIn the hollow of a secret street\n\nWhere the shadows and the static meet\nFolding the silence like a letter sent\nTo a place where the words were never meant\n\nThe night we keep a habit, no one sees\nLocked away beneath the city trees\nTurning the key on a world outside\nWith nowhere to run and nowhere to hide\nThe night we keep a habit, no one sees\n\nThe city doesn't need to know the name\nOf the quiet embers and the cooling flame\nIn the silence of a velvet room\nWe are safe inside the midnight gloom\n\nHiding the truth like a souvenir\nOf a moment that the morning can't clear\n\nThe night we keep a habit, no one sees\nLocked away beneath the city trees\nTurning the key on a world outside\nWith nowhere to run and nowhere to hide\nThe night we keep a habit, no one sees\n\nKeep it quiet\nJust for us",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020338_6",
+      "title": "Bittersweet Vibration",
+      "caption": "都会のざわめきの中で、過去の記憶が微かに漂う。ノスタルジーと郷愁が混ざり合う、感傷的な午後の情景描写。",
+      "type": "vocal",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The sidewalk holds the static of a stranger's old perfume\nA trace of something ghostly in the neon-tinted room\nI'm standing in the future, but the air is turning cold\nA story I had locked away is starting to unfold\n\nAn invisible refraction in the glass of what is real\nThe only thing that's haunting me is something I can feel\n\nA sudden scent of ghosts in the urban haze\nDrifting through the hallways of my younger days\nIt's a bittersweet vibration, a momentary slip\nLosing my connection, letting the present grip\nOh, the smell of memory dissolving in the night\nDissolving in the night\n\nThe city lights are blurring like a painting in the rain\nA chemical reminder of a long-forgotten name\nI try to catch the frequency, but the signal fades to white\nA thousand different versions of myself are lost tonight\n\nIt's a heavy kind of beauty, watching colors start to bleed\nFeeding on the silence and the hunger for the speed\nIn the haze, it all dissolves\nThe cycle of the heart revolves\n\nA sudden scent of ghosts in the urban haze\nDrifting through the hallways of my younger days\nIt's a bittersweet vibration, a momentary slip\nLosing my connection, letting the present grip\nOh, the smell of memory dissolving in the night\nOh, dissolving in the night\nDissolving in the night\n\nA whisper, just a whisper\nThe city lights go out",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020338_7",
+      "title": "Glass And Grace",
+      "caption": "ガラス越しのネオンの残像。街の喧騒が一旦落ち着き、時間がゆっくりと流れる、落ち着いたカフェの深呼吸のような時間。",
+      "type": "vocal",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Neon pulses, frozen on the glass.\nSeconds heavy, as the shadows pass.\nTraffic hums a low fertility beat,\nWalking on a ghost from frequent street.\nEvery reflection is a still life frame.\nThe city's motion has forgotten its name,\nForgotten its name.\n\nIn the blink of a clock, the horizon lines lock.\nThe world looks slow for a moment in time.\nEvery breath is a grace in this suspended space,\nIn this suspended space, where the pulse and the city rhythm chime.\nWhere the pulse and the city rhythm chime.\n\nSidewalk echoes in the violet light,\nTracing patterns through the urban night.\nWatching people in a silent ballet,\nThe ending colors of a long-distance day.\nI've found the sanctuary in the flow,\nWhere the rush of the world has nowhere to go,\nNow here to go.\n\nIn the blink of a clock, the horizon lines lock.\nThe world looks slow for a moment in time.\nEvery breath is a grace in this suspended space,\nIn this suspended space, where the pulse and the city rhythm chime.\nWhere the pulse and the city rhythm chime.\n\nThe world looks slow,\nSo slow.\nWhispered stillness.",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020338_8",
+      "title": "A Temporary Grace",
+      "caption": "雨上がりの都会のカフェ。過ぎゆく時間と、束の間の安らぎに身を任せるような、メロウで都会的な空気感。",
+      "type": "vocal",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The sidewalks shine like liquid ink\nThe city slows, begins to blink\nA canopy of sapphire silk\nUnderneath the neon milk\nA hundred pinpricks on the skin\nThe counting of the night begins\n\nTracing lines I can't translate\nA rhythmic wait\nA rhythmic wait\n\nThe cadence on the umbrella\nA secret beat, a rainy teller\nFalling in the same old space\nA temporary kind of grace\nA temporary kind of grace\n\nYes, and every drop a steady chime\nSyncopated out of time\nSyncopated out of time\n\nThe headlights cut through misty ghosts\nThe traffic signals' neon hosts\nThe traffic signals' neon hosts\nI walk within this silver dome\nThe rhythm feels like coming home\nNo need for words, no need to hide\nWith silver rhythm as my guide\n\nThe asphalt drinks the heavy gray\nTo wash the day away\n\nThe cadence on the umbrella\nA secret beat, a rainy teller\nFalling in the same old space\nA temporary kind of grace\nA temporary kind of grace\n\nYes, and every drop a steady chime\nSyncopated out of time\nSyncopated out of time\n\nThe city sighs\nThe rhythm knows\nWhere the water flows\nIn the hollow dark\nJust a fleeting spark\n\nThe cadence on the umbrella\nSyncopated out of time\nOut of time\nOut of time\nOut of time\nOut of time\n\nHum softly",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020338_9",
+      "title": "Nothing S Caught",
+      "caption": "言葉にする前の、静かで曖昧な心のさざめき。意識と無意識の境界線で漂う、掴みどころのない優しいメロディ。",
+      "type": "vocal",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Hazy static on the dial\nFragments of a ghost of a smile\nBefore the tongue finds the curve\nThe logic that my heart didn't deserve\n\nJust a murmur in the dark\nA fire doesn't need a spark\n\nOh, the murmur before the word\nA song that never should be heard\nIt's a glass-smooth surface of the sea\nThoughts that never belong to me\nIn the silence of the thought\nEvery sound and nothing's caught\nEverything is found and nothing's caught\n\nEchoes of a silver light\nTangled in the velvet of the night\nA kaleidoscope of impressions\nHidden from the world's confessions\nNo names for the things I feel\nOnly the spinning of the wheel\n\nOh, the murmur before the word\nA song that never should be heard\nIt's a glass-smooth surface of the sea\nThoughts that never belong to me\nIn the silence of the thought\nEvery sound and nothing's caught\nEverything is found and nothing's caught\n\nIf I speak it, does it die?\nIf I speak it, does it die?\nLike a bird against the sky\nI want to keep the noise so sweet\nBefore the logic is complete\nJust till the logic is complete\nJust the vibration, just the hum\nBefore the words become numb\n\nOh, the murmur before the word\nA song that never should be heard\nIt's a glass-smooth surface of the sea\nThoughts that never belong to me\nIn the silence of the thought\nEvery sound and nothing's caught\nEverything is found and nothing's caught\n\nWhisper, just a murmur\nJust a murmur\nEverything is found, nothing's caught\nAnd nothing's caught",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020338_10",
+      "title": "The Gathering",
+      "caption": "深く青い空気の中で、心が満たされる空間。穏やかな喫茶店で、これから始まる何かを静かに待つ、期待に満ちたひととき。",
+      "type": "vocal",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm, mmm)\nLow humidity\nThe indigo is heavy now\n\n[Verse 1]\nI stand where the porch meets the dew\nEverything is holding its tongue\nThe pavement lost its heat a while ago\nI don't need a map or a reason\nJust this indigo weight on my shoulders\nIt feels like wealth without the paper\n(Purest kind of wealth)\n\n[Chorus]\nThis is the gathering of breath\nBefore the salt takes me under\nWaiting for the blue to break\nBefore I dive into the wide open\n(Into the wide open)\n\n[Verse 2]\nThey say the morning is for the hunters\nBut I think it is for the keepers\nKeeping the peace before the noise arrives\nMy spirit does not need a costume today\nNo paint on my skin\nJust the raw oxygen and the pocket\n(Just the pocket)\n\n[Bridge]\nThe tide is coming in\nI can feel the pulse in my ankles\nIt is not a fear of drowning\nIt is the joy of finally letting go\n(Letting go of the shore)\n(The shore is just a memory)\n\n[Chorus]\nThis is the gathering of breath\nBefore the salt takes me under\nWaiting for the blue to break\nBefore I dive into the wide open\n(Into the wide open)\n\n[Outro]\nReady for the deep\n(So ready now)\nGathering the air\n(Fill my lungs)\nBefore the blue breaks\n(Let it break)\nDeep dive\n(Deep)\n(Deep)\n(In the pocket)\n(Wait for the break)",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020338_11",
+      "title": "Final Echo",
+      "caption": "深まる夜の静けさ。内側から湧き上がる新たな高揚感を見つけ出す、洗練された大人のためのサウンドトラック。",
+      "type": "vocal",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Uh-huh)\n(Yeah)\n(Check it)\n(Listen)\n(One two)\n\n[Verse 1]\nRhythm tapping on the dark hardwood\nWeight is lifting off my chest now\nI am counting every beat now\nWatch the silver on my own wrist\nYou are moving to the edge now\nI am breathing midnight air now\nSoftly creaking on the wood grain\nPattern fading in the deep night\n(Count it down)\n\n[Pre-Chorus]\nMoving on, moving on\nBetter now, better now\nGoing out, going out\nLet it go, let it go\n\n[Chorus]\nFinal echo\nPolished rhythm\nNew vibration\nRising higher\n(Let it be)\n\n[Verse 2]\nSilence feels like layers of silk\nNothing left to talk about now\nDiamonds resting on my skin now\nLuxury is finally free\nVibration dying in the air\nWait for every sound to vanish\nFinal creak is all I want now\nSetting up the finish line now\n(Check it out)\n\n[Pre-Chorus]\nMoving on, moving on\nBetter now, better now\nGoing out, going out\nLet it go, let it go\n\n[Chorus]\nFinal echo\nPolished rhythm\nNew vibration\nRising higher\n(I am higher)\n\n[Bridge]\nOne step, two step, move fast\nDone with playing these games\nSoft velvet on the floor\nThe chapter ends tonight\n(Turn it up)\n(Break it down)\n\n[Chorus]\nFinal echo\nPolished rhythm\nNew vibration\nRising higher\n\n[Chorus]\nFinal echo\nPolished rhythm\nNew vibration\nRising higher\n\n[Outro]\n(Far away)\n(Yeah)\n(It is over now)\n(Walking away)\n(Free now)\n(Fade it out)",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020338_12",
+      "title": "Green Sway",
+      "caption": "日曜の午後のカフェ。窓辺で風に揺れる穏やかな光景。時の流れに身を預け、心から深呼吸するような、心地よいグルーヴ。",
+      "type": "vocal",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Doo-wop, doo-wop)\n(Mmm-hmm)\n\n[Verse]\nLook at that willow tree\nDancin' by the garden gate\nShe don't mind the wind\nLeft or right, it's all the same\nJust a long green dress\nShakin' in the Sunday sun\n(Shakin' in the sun)\n\n[Verse]\nI think about that train\nThe one I didn't take\nHeading way out East\nTo a house beside the lake\nWould I be a different girl?\nWith a different kind of name?\n(Different kind of name)\n\n[Bridge]\nThe wind don't ask no questions\nIt just blows on through\nHigh branches, deep roots\nOne life is plenty\nWhen the groove is this good\nYeah, I dig the view\n(I dig the view)\n\n[Verse]\nSo I sip my lemon tea\nWatch the branches swing\nEvery leaf a little road\nI didn't have to walk\nI’m hip to the stillness\nIn the afternoon breeze\n(Afternoon breeze)\n\n[Outro]\nJust swayin'\n(Swayin')\nWhich way the wind blows?\n(Nobody knows)\nJust fine right here\n(Mmm, just fine)\n(Doo-wop, doo-wop)\nGreen sway\nGreen sway",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020338_13",
+      "title": "The Glass Shape",
+      "caption": "ガラス越しに、かつての面影を探すような視線。都会の片隅で静かに漂う、切なく美しい哀愁。",
+      "type": "vocal",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse]\nWalking past the boutique glass\nSeeing a figure in dark wool\nMoving with a strange, heavy grace\nLike a film I have seen before\n\n[Chorus]\nShe looks back with steady eyes\nTracing the curve of a cold face\nSomeone I used to know well\nBut now she feels like a ghost\n(Feels like a ghost)\n\n[Verse]\nThe street is wet and silent\nWatching her adjust her silk scarf\nThe slant of her chin is new\nA stranger living in the pane\n\n[Chorus]\nShe looks back with steady eyes\nTracing the curve of a cold face\nSomeone I used to know well\nBut now she feels like a ghost\n(Feels like a ghost)\n\n[Outro]\nPassing by the dark shop front\nLeaving the other one behind\nLeft in the glass, staying still\nStaying still\n(Staying still)\n(Staying still)",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779677020338_14",
+      "title": "White Morning",
+      "caption": "白く新しい朝の訪れ。すべてがリセットされ、静かに日常が再出発する感覚を、カフェが優しく見守るようなBGM。",
+      "type": "vocal",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Start again)\r\n(Start again)\r\n\r\n[Verse 1]\r\nThe blue moves off the glass\r\nI watch the street change skin\r\nWater drips from the metal rail\r\nThe heavy air is gone\r\n(It is gone)\r\n\r\n[Chorus]\r\nThe white morning arrives\r\nThe white morning arrives\r\nWe start again right here\r\nWe start again right here\r\n(Start again)\r\nEverything is blank and new\r\nEverything is blank and new\r\n(Blank and new)\r\n\r\n[Verse 2]\r\nI put my feet on the wood\r\nThe floor is cold and smooth\r\nI open the window wide\r\nThe air tastes like silver\r\nNo ghosts left in the corner\r\nNo noise left in my head\r\n(In my head)\r\n\r\n[Chorus]\r\nThe white morning arrives\r\nThe white morning arrives\r\nWe start again right here\r\nWe start again right here\r\n(Start again)\r\nEverything is blank and new\r\nEverything is blank and new\r\n(Blank and new)\r\n\r\n[Bridge]\r\nThe clock hits the hour\r\nThe clock hits the hour\r\nThe light hits the wall\r\nThe light hits the wall\r\nThe world is paper now\r\nThe world is paper now\r\nNo yesterday\r\nNo yesterday\r\n\r\n[Chorus]\r\nThe white morning arrives\r\nThe white morning arrives\r\nWe start again right here\r\nWe start again right here\r\n(Start again)\r\nEverything is blank and new\r\nEverything is blank and new\r\n(Blank and new)\r\n\r\n[Outro]\r\n(Start again)\r\n(The white morning)\r\n(Start again)\r\n(The white morning)\r\nBlank and new",
+      "added_at": "2026-05-25"
+    },
+    {
+      "id": "track_1779765580572_0",
+      "title": "Shadow On The Stone",
+      "caption": "夕暮れの街角を漂う、ノスタルジックなグルーヴ。影が語りかけるように、日々の疲れを洗い流す静かな安らぎの調べ。",
+      "type": "vocal",
+      "duration": 166,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "The sun went down in a cloud of gray,\nin a cloud of gray.\nTook the heavy heat of a long haul day.\n(A long haul day.)\nNow the evening's breathing soft and slow.\nGot a feeling telling me I got to go,\ntelling me I got to go.\n\nOh, that night breeze is a velvet touch.\nNever knew I needed this so much,\nneeded this quite so much.\nJust me and the shadow.\nJust me and the shadow on the pavement stone.\nBetter than sitting in a hollow house alone.\nBetter than being alone.\n\nStreet lamp's humming a low-key tune.\nGot no rhythm with that silver moon.\nPavement's damp and the air is wide.\nLeaving all that worry for the room,\nfor the room inside.\n\nOh, that night breeze is a velvet touch.\nNever knew I needed this so much,\nneeded this quite so much.\nJust me and the shadow.\nJust me and the shadow on the pavement stone.\nBetter than sitting in a hollow house alone.\nLord, it's better than being alone.\n\nYeah, I'm gone now.\nJust me and the night.\nLet it blow.\nMmm, just let it blow.\n\nJust let it blow.",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580576_1",
+      "title": "Green Light Lies",
+      "caption": "緑の信号が誘うのは、成功という輝きではなく、取り戻せない「あなた」の場所。後悔と残響が混ざり合う、物思いにふける午後のムード。",
+      "type": "vocal",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n\r\n[Verse 1]\r\nRolling down the boulevard\r\nRain slicks the blacktop\r\nSaw the yellow start to fade\r\nBut it held for me\r\n(Held for me)\r\n\r\n[Verse 2]\r\nDidn't have to touch the brake\r\nKept the hammer down\r\nFelt a spark inside my chest\r\nLike the world was on my side\r\n(Just for a minute)\r\n\r\n[Chorus]\r\nThought I was lucky\r\nThought I was winning big\r\nJust because the light turned green\r\nYeah I thought I was lucky\r\nBut I was only leaving you\r\n(Leaving you behind)\r\n\r\n[Verse 3]\r\nChecked the mirror for a sign\r\nNothing but the dark\r\nTires humming on the bridge\r\nGasoline and heavy regret\r\n(Moving fast now)\r\n\r\n[Chorus]\r\nThought I was lucky\r\nThought I was winning big\r\nJust because the light turned green\r\nYeah I thought I was lucky\r\nBut I was only leaving you\r\n(Leaving you behind)\r\n\r\n[Verse 4]\r\nCruising through the empty streets\r\nNowhere left to go\r\nGot a clear path to the edge\r\nAnd a tank full of lead\r\n(Way too fast)\r\n\r\n[Chorus]\r\nThought I was lucky\r\nThought I was winning big\r\nJust because the light turned green\r\nYeah I thought I was lucky\r\nBut I was only leaving you\r\n(Leaving you behind)\r\n\r\n[Outro]\r\nJust a green light\r\nDidn't mean a thing\r\n(Nothing at all)\r\nStill alone in the cab\r\nGreen light lying to me\r\n(Lying to me)\r\nYeah\r\n(Lying)",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580576_2",
+      "title": "Heavy On The Glass",
+      "caption": "夜のカフェ。グラス越しのぼやけた街の景色と共に、虚脱感と静かな解放感が交錯する内省的な時間。",
+      "type": "vocal",
+      "duration": 169,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "Night is leaning heavy on the glass,\nA blur of silver ribbons that we pass.\nI’m a ghost sitting three feet back from me,\nJust a sketch of who I’m supposed to be.\n\nI don’t recognize that chin or that hollow eye,\nI’m a stranger passing strangers by.\n\nI’m feeling light, I’m feeling paper thin,\nLosing the weight of the skin I’m in.\nIn the window’s dark, I finally see I’m a hollow man,\nThat’s all right with me.\nThat’s all right with me.\n\nEvery station is a sudden flare,\nCatching the silver in my hair.\nBut between the lights I’m fading down,\nFurther away from every town.\n\nNo anchor left to hold me to the floor,\nJust a quiet drift toward the shore.\n\nI’m feeling light, I’m feeling paper thin,\nLosing the weight of the skin I’m in.\nIn the window’s dark, I finally see I’m a hollow man,\nThat’s all right with me.\nThat’s all right with me.\n\nThe world keeps rushing, but I’m still here,\nIn a pool of black, remarkably clear.\nNot heavy with regret or the things I’ve done,\nJust a trickle of light and a fading sun.\n\nI’m feeling light, I’m feeling paper thin,\nLosing the weight of the skin I’m in.\nIn the window’s dark, I finally see I’m a hollow man,\nThat’s all right with me.\nThat’s all right with me.",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580576_3",
+      "title": "Cold Glass Bottle",
+      "caption": "夜のカフェに漂う、冷たいガラスとチェリーの香り。しっとりと、過去を思い出すようなノスタルジックな時間帯を演出。",
+      "type": "vocal",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n(Ooh)\r\n(Alright)\r\n\r\n[Verse 1]\r\nTires rolling on the grit\r\nFound a place to sit\r\nGlass doors sliding open \r\nHear the motor humming\r\n(Hear it humming)\r\n\r\n[Verse 2]\r\nFloor tiles cold and bright\r\nMiddle of the night\r\nRows of labels on the shelf\r\nTalking to myself\r\n(To myself)\r\n\r\n[Chorus]\r\nCold glass bottle\r\nSweet cherry kick\r\nCold glass bottle\r\nComing home quick\r\n(Coming home quick)\r\n\r\n[Verse 3]\r\nSilver coins in my hand\r\nBest thing in the land\r\nHear the metal start to drop\r\nMaking that heavy stop\r\n(Heavy stop)\r\n\r\n[Bridge]\r\nPush the button\r\nWatch it slide\r\nNo more running\r\nNowhere to hide\r\n(Nowhere to hide)\r\n\r\n[Chorus]\r\nCold glass bottle\r\nSweet cherry kick\r\nCold glass bottle\r\nComing home quick\r\n(Home quick)\r\n\r\n[Outro]\r\nJust one sip\r\nBack to the car\r\nThe road is long\r\nBut it ain't far\r\n(Ain't far)\r\n(Yeah)\r\n(One more)",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580576_4",
+      "title": "Between Floor And Floor",
+      "caption": "建物の間を漂う光と影が織りなす静寂。降り注ぐ日差しと空気の微かな流れを感じながら、一瞬の安らぎを味わう情景描写。",
+      "type": "vocal",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "The wood is cold beneath my hands\nA geometry of dust and light\nDescending through the narrow hall\nEscaping from the height\n\nAnd then the sudden pull of air\nA draft that whispers through the grain\nI take a moment just to breathe\nTo let the stillness settle in\nSettle in\n\nThe world expands beyond the door\nBut here the shadow feels like grace\nSuspended between floor and floor\nInside this quiet hollow space\n\nAnd then the sudden pull of air\nA draft that whispers through the grain\nI take a moment just to breathe\nTo let the stillness settle in\nSettle in",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580576_5",
+      "title": "The Lonesome Circus",
+      "caption": "夢幻的な光と影が踊る、孤独で神秘的な空間。時間の流れを感じさせる、物憂げなムードのBGM。",
+      "type": "vocal",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "The ghost are dancing\nin the circle of the glass,\nlong-limbed and broken\nwatching hours pass.\n\nI've found a comedy\nin how they bend and spin\nwhere the yellow glow ends\nand the night begins.\n\nUnder the lamp,\nwhere the shadows play,\nunder the dance,\nchasing the night away,\na lonesome circus,\njust me and the stone,\nfinding it funny,\nbeing here alone.\n\nA giant on the wall,\nshrinking to a ghost,\nthe one who moves the least\nis the one I like the most.\nis the one I like the most.\n\nNo rhythm in the flicker,\njust a random sway,\nturning the midnight\ninto a game of gray.\nIt's a funny thing to be,\njust a smudge upon the street,\ncounting every heartbeat\nin the yellow-orange heat.",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580576_6",
+      "title": "Light In The Hall",
+      "caption": "街角の珈琲と、過去のささやかな記憶。日常の光が午後の時間を温かく優しく照らし出すサウンドスケープ。",
+      "type": "vocal",
+      "duration": 171,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "The ink is fading\non a narrow strip\nA crumpled ghost from a midnight trip\n\nJust a coffee and a paper to go\nThe kind of things that a wallet might know\n\nI found it leaning by the silver dimes\nA little map of the passing times\n\nIt wasn't bad, no, it wasn't bad at all\nA steady rhythm and a whistle's call\nI'm looking down at the ink and the gray\nAnd thinking I did all right by the day\nI did all right by the day\n\nThe Tanis pad says it was ten after three\nWhen the streetlights weren't looking at me, just a walk\nJust a walk where the shadows grow long\nFinding the words to a quiet kind of song\nThere's no treasure in the fiber and bone\nJust a man in the things that he's known\n\nIt wasn't bad, no, it wasn't bad at all\nA steady rhythm and a whistle's call\nI'm looking down at the ink and the gray\nAnd thinking I did all right by the day\nI did all right by the day\n\nSome days are mountains, some days are flat\nBut there's a comfort in a day like that\nNo gold in the gutter, just light in the hall\n\nIt wasn't bad, no, it wasn't bad at all\nIt wasn't bad, no, it wasn't bad at all\n\nA steady rhythm and a whistle's call\nI'm looking down at the ink and the gray\nAnd thinking I did all right by the day\nYeah, I did all right by the day",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580576_7",
+      "title": "Weight Of The Years",
+      "caption": "カフェの午後の柔らかな光が包む、過ぎ去った時間。これから始まる物語を静かに、切なく語りかける調べ。",
+      "type": "vocal",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "The air is thick with the weight of the years\nI'm anchored down by my own quiet fears\nJust a shadow shadow standing where the road used to be\nLooking for a spark that's gone cold in me\n\nThen the words of the wise echo through the static\nA sudden tremble, something automatic\nThey lean against my back, push me toward the light\nClearing out the shadows of a lonely night\nLonely night\n\nThe horizon is wide, but it felt like a wall\nI was waiting for the ground to break my fall\nBut the echo in my chest, it started to hum\nTelling me the journey has only begun\n\nYeah, the words of the wise echo through the static\nA sudden tremble, something automatic\nThey lean against my back, push me toward the light\nClearing out the shadows of a lonely night\nLonely night\n\nJust a spark\nJust a little bit of room\nWatch the desert start to bloom\n\nThey told me\nThey told me\nIt's all right now",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580576_8",
+      "title": "Asphalt Mirror",
+      "caption": "雨上がり、濡れたアスファルトに映る街の風景。日常の景色を非現実的に捉え直す、ビジュアルなサウンドスケープ。",
+      "type": "vocal",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "The clouds drew back an hour ago\nLeaving silver lines on the road below\nEvery crack is a river, every dip is a lake\nI found a mirror I didn't mean to make\nI stopped my feet right where they stood\nJust to watch the water turn into wood\n\nStanding on the edge of the sky\nWatching the city as the clouds drift by\nA temporary glass, a world in reverse\nThe rain gave the concrete a quiet thirst\nA quiet thirst\n\nHeadlights smear across the wet ground\nI'm anchored by the lack of sound\nThe blacktop's drinking up the blue\nShowing me a version of the world that's new\nTracing the light where the moisture clings\nFinding the beauty in the simple things\n\nStanding on the edge of the sky\nWatching the city as the clouds drift by\nA temporary glass, a world in reverse\nThe rain gave the concrete a quiet thirst\nA quiet thirst\n\nSurfaces breaking\nThe mirror is taking\nIt all back home\nBack home\nJust me and the asphalt alone",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580577_9",
+      "title": "Half Of Its Weight",
+      "caption": "夕闇の窓辺で感じる静けさと、心に満ちるささやかな安らぎ。日々の重荷が少し軽くなるような、優美なメロディ。",
+      "type": "vocal",
+      "duration": 146,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "The sun went down on a heavy mind\nLeft a pile of shadows I'm trying to unwind\nI was counting the gaps in the cedarwood floor\nListening to the silence, lean of the silence\nLean against the door\nJust a man and his ghost in the hollow of the night\n\nThen the wind brought a ripple from over the hill\nA sound so light it couldn't keep still\nA ghost of a chuckle, a distant bright rain\nThat made my own tether feel like a thin string\n\nPeripheral joy just drifting on through\nI didn't need to know the face or the name\nOr what kind of fire sparked up the flame\nIt was enough to know that the world kept spinning\nThat someone somewhere was finally winning\nAnd my own load lightening by a half of its weight\nJust by the sound reaching me at the gate\n\nNow the wind is dying and the porch light is dim\nThe laughter is fading back over the rim\nBut I'm not as heavy as I was at the start\nI've got a little echo tucked inside of my heart\nJust a distant bright rain\nGoing home now\nYeah, I'm all right\nHum softly",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580577_10",
+      "title": "Amber Weight",
+      "caption": "静寂の中に漂う琥珀のような時間。都会の喧騒が溶け去り、触れられるほど優しい空気感が満ちる空間。",
+      "type": "vocal",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "The kinetic descent, a chrome-plated hum\nStatic electricity on my fingertips\nLeaving the friction, parting for me, for me\nSteps onto the landing, no more vibration\nOnly the sudden weight of the quiet\n\nThe air was soft, a linen caress\nDissolving the edges of a mechanical day\nBreathable stillness, no wind, no rush\nJust the velvet, ambient current\nAmbient current\n\nThe echoes of the city, they faded behind\nTrapped in the teal of the moving stair\nI’m standing in amber, in a fluid space\nTesting the temperature of the light\nA physical softness resting on my skin\n\nThe air was soft, a linen caress\nDissolving the edges of a mechanical day\nBreathable stillness, no wind, no rush\nJust the velvet, ambient current\nAmbient current",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580577_11",
+      "title": "The Corridor Shuffle",
+      "caption": "カフェで過ごす午後の情景を彩るBGM。失われた記憶や過ぎ去った時間を、質感とメロディーで深く思索する。",
+      "type": "vocal",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\r\n\r\n[Verse]\r\nThe heavy wool of this old coat\r\nHiding things I thought were gone\r\nTracing seams with a tired thumb\r\nWaiting for the familiar sting of loss\r\nBut my fingers find the jagged teeth\r\nCold brass resting in the lining\r\n\r\n[Refrain]\r\nA small mercy for a scattered mind\r\n(Just a little bit of luck today)\r\n\r\n[Verse]\r\nMy father did this frantic dance\r\nPockets full of dust and string\r\nLooking for a way to let himself in\r\nHe grew old in the doorways\r\nI am catching up to his shadow\r\nBut the lock turns easy this time\r\n\r\n[Refrain]\r\nA small mercy for a scattered mind\r\n(Just a little bit of luck today)\r\n\r\n[Verse]\r\nThe afternoon leans against the oak\r\nLong and thin across the floor\r\nI stand still with my prize\r\nUsually I am the one drifting\r\nBut the weight of the metal\r\nKeeps me here a little longer\r\n\r\n[Outro]\r\nKeeps me here a little longer\r\n(A little longer)\r\n(The lock turns easy)",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580577_12",
+      "title": "Negotiating Silence",
+      "caption": "午後のカフェで、自分自身と向き合うひととき。柔らかな光とコーヒーの香りが、心に深い安らぎをもたらす静寂の瞬間。",
+      "type": "vocal",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "The walls are breathing heavy, the corners disappear\nJust a ghost in the periphery, whispering to my fear\nIn the hollow of the darkness, the stillness feels so deep\nWatching all the secrets that the shadows choose to keep\n\nThe city's just a rumor, miles beyond the gate\nI'm sitting with the silence, trying to negotiate\n\nBut then I find the tether, the flicker against the gray\nThe incandescent amber washes out the hollow pain\nYeah, the room begins to surface, the shadow play retreats\nBringing back the rhythm of life between the sheets\nIt's just a little relief, a quiet place to be\nA quiet place to be\nNow the four walls are holding on to me\n\nI see the old photos, the stack of books I read\nA million little anchors for the static in my head\nNo more searching for the outline, no more staring at the blank\nJust a sip of something steady, and a memory I can thank\n\nThe incandescent heartbeat is pulsing soft and low\nA better kind of darkness than the one I used to know\n\nBut then I find the tether, the flicker against the gray\nThe incandescent amber washes out the hollow pain\nYeah, the room begins to surface, the shadow play retreats\nBringing back the rhythm of life between the sheets\nIt's just a little relief, a quiet place to be\nA quiet place to be\nNow the four walls are holding on to me\n\nDeep breath",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580577_13",
+      "title": "Velvet Low",
+      "caption": "午後を包む、ベルベットのような優雅な静けさ。日常の雑踏を忘却し、自分だけの静寂を見つけ出す至福のひととき。",
+      "type": "vocal",
+      "duration": 148,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "The amber afternoon finally let go\nTrading the heat for a velvet low\n\nI lean my weight on the cedar frame\nExcelling a day without a name\nFound my equilibrium in the dark\nWaiting for a slow burning spark\n\nI pushed the lattice back to let it in\nI felt the cool air like a second skin\nI felt the cool air like a second skin\nI found a quiet rhythm on my own\nI found a simple peace I hadn't known\n\nWindows wide and the world is still\nNo more climbing up the mental hill\nJust the scent of trees and the damp ground\nA kind of quiet where the self is found\nTonight is a gift I won't return\nA different kind of lesson to learn\n\nI pushed the lattice back to let it in\nFelt the cool air like a second skin\nNo heavy secrets left to bear\nJust a sweet scent of the night wind there\nCaught a quiet rhythm on my own\nThe best silence I have ever known\nThe best silence I have ever known\n\nThe best silence\nI've ever known",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779765580577_14",
+      "title": "The Color Of Morning",
+      "caption": "朝の光が差し込む場所。心の静けさと、新しい始まりを祝福するような、優しいトーンの音楽。",
+      "type": "vocal",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Blues",
+        "クール",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "The wick is leaning\nCatching shadows on the floor\nCatching shadows on the floor\n\nI'm listening to the quiet\nI don't need nothing more\nTake a long breath in\nTill the ribs start to sing\nTill the ribs start to sing\nFound a little peace\nIn the dust of everything\n\nOh, the night is heavy\nBut the air is getting thin\nI can feel the color of the morning seeping in\nEverything I'm hoping for is finally coming clear\nYeah, it's finally coming clear\n\nThe embers in the hearth\nAre turning gray and cold\nBut there's a flicker there\nI'm setting down the burden\nThat's never yet been told\nBut there's a flicker there that's never yet been told\nI'm setting down the burden\nI'm putting out the light\nGot a feeling things are going to finally turn out right\n\nOh, the night is heavy\nBut the air is getting thin\nI can feel the color of the morning seeping in\nTomorrow's just I'm hoping for is finally coming clear\nYeah, it's finally coming clear\n\nEverything's coming clear\n\nGood night now",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382949_0",
+      "title": "A Temporary Grace",
+      "caption": "カフェの窓辺に差し込む午後の光。過ぎゆく時間の中で見つける、メロウで内省的な心の安らぎを描いた時間。",
+      "type": "vocal",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "クール",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The tracks hum a low, silver song\r\nAs the light stretches out and grows long\r\nThrough the pane, in the space of a beat\r\nA stranger looks back from her seat\r\n\r\nShe is softer than how I her see\r\nShe is softer than how I recall\r\nStanding quiet and gracefully tall\r\n\r\nOh, the edges are blurred by the speed\r\nLeaving only the comfort I need\r\nA moment of peace in the pain\r\nLetting go of the worry and strain\r\nReflected and mellow and free\r\nThe kindest version of me\r\nThe kindest version of me\r\n\r\nI'm framed by the hills rushing by\r\nAnd the wash of a pale afternoon sky\r\nThe lines on my face lose their hold\r\nLike a story that's already told\r\n\r\nJust a shimmer that dances and fades\r\nJust a shimmer that dances and fades\r\nLost in the shifting of shades\r\n\r\nOh, the edges are blurred by the speed\r\nLeaving only the comfort I need\r\nA moment of peace in the pain\r\nLetting go of the worry and strain\r\nReflected and mellow and free\r\nThe kindest version of me\r\nThe kindest version of me\r\n\r\nPerhaps the world moves too slow\r\nTo see all the ways that we grow\r\nBut here in the glass and the gray\r\nThe sharpness all melts right away\r\n\r\nOh, the edges are blurred by the speed\r\nLeaving only the comfort I need\r\nA moment of peace in the pain\r\nLetting go of the worry and strain\r\nReflected and mellow and free\r\nThe kindest version of me\r\nThe kindest version of me\r\n\r\nJust for now, I'll let it be\r\nYeah, just for now",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382949_1",
+      "title": "The Afternoon Rearranged",
+      "caption": "喧騒から離れた午後のひととき。時間に追われる日常から解放され、ただ「存在」を心地よく味わう空間を彩るサウンドスケープ。",
+      "type": "vocal",
+      "duration": 158,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The ember glow is hanging still and deep\nA moment that the busy city wants to keep\nMy racing thoughts are catching on the light\nUnraveling the tension of the flight\nNo, no\n\nNo rush to move, no reason left to run\nUnderneath the softening May sun\n\nOh, the pulse is slowing down to find its way\nIn this suspended piece of ordinary day\nLet the red light hold the world for me\nSo I can finally learn how to simply be\nSo I can finally learn how to simply be\n\nOh, the pulse is slowing down to find its way\nIn this suspended piece of ordinary day\nLet the red light hold the world for me\nSo I can finally learn how to simply be\nSimply be\nSimply be\nStill, still",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382950_2",
+      "title": "Amber Afternoon",
+      "caption": "夕暮れのカフェに漂う、ゆったりとした時間。光と影が移ろい、過ぎゆく午後の静謐な美しさを描写するサウンド。",
+      "type": "vocal",
+      "duration": 148,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The sun begins its low arc down\nStretching gray upon the ground\nWatching how the shapes move slow\nWatching how the shapes move slow\nFinding where the light will go\n\nOh, these afternoons that never end\nWhere the concrete and the darkness blend\nQuiet hours held in blue\nWaiting for the world to turn to you\nTurn to you\n\nA longer reach, a thinner light\nWalking past the edge of time\nEvery corner, every tree\nTrading light for memory\nTrading light for memory\n\nOh, these afternoons that never end\nWhere the concrete and the darkness blend\nQuiet hours held in blue\nWaiting for the world to turn to you\nWaiting for the world to turn to you\n\nShadows long\nSlowly gone",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382950_3",
+      "title": "Held In Blue",
+      "caption": "夏の日差しが降り注ぐ午後の情景。思い出を彩るような透明感と、心のささやかな解放感を届ける音楽。",
+      "type": "vocal",
+      "duration": 146,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The sidewalk holds a ghost of heat\nBetween the pavement and my feet\nA million windows catching gold\nWhile summer stories start to fold\n\nI'm standing where the shadows meet\nWatching how the time can drift away\n\nThen a shift, a softest breath\nLike a secret nature kept\nThe wind gives way, the air turns light\nThe air turns light\nLeaving all the weight behind tonight\nSuddenly the world is right\nIn the lifting of the day\n\nI turn the corner, catch my pace\nA different look upon my face\nThe afternoon is rearranged\nA heavy spirit slightly changed\n\nI'm walking through the open space\nWhere the light begins to play\n\nThen a shift, a softest breath\nLike a secret nature kept\nThe wind gives way, the air turns light\nThe air turns light\nSuddenly the world is right\nIn the lifting of the day\nJust a corner",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382950_4",
+      "title": "Afternoon In The Glass",
+      "caption": "洗練された空間に響く、穏やかな安らぎ。日常の喧騒を忘れさせ、心地よい静寂だけが満ちるサウンドスケープ。",
+      "type": "vocal",
+      "duration": 161,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The concrete hum is getting loud\nI'm tracing ghosts inside a cloud\nCold air bites against my skin, but I'm about to let the quiet in\nA tailored wool, a heavy fold\nI'm trading silver for the gold\n\nAnd when my hands slide deep inside, there's nowhere left for me to hide\nA velvet anchor for the soul\nMaking every scattered fragment whole\nIn the pockets of the dark, I find the heat, I find the spark\n\nThreads of cotton, seams of silk\nCooler than the winter milk\nFingers touching at the base, a sanctuary, a hollow space\nThe world outside is moving fast\nBut this is where the moments last\n\nAnd when my hands slide deep inside, there's nowhere left for me to hide\nA velvet anchor for the soul\nMaking every scattered fragment whole\nIn the pockets of the dark, I find the heat, I find the spark\n\nNo rush to move, no need to speak\nThe silence is the thing I seek\nGravity pulling at the hem, I'm staying here with them\nJust the seams inside the quiet\nSoft velvet anchors",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382950_5",
+      "title": "The Heavy Fold",
+      "caption": "夕暮れ時の街を彩る、影と光の繊細な描写。時間がゆっくりと溶け出すような、深い午後の情景を音に込める。",
+      "type": "vocal",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The amber stains the asphalt line\nFading slow in borrowed time\nA silhouette against the gray\nWatching how the shadows play\nCooling air begins to hold\nTraces of the day in gold\n\nDusk is heavy on the street\nMelting where the city and the evening meet\nHigh-rise windows catch the flame\nCalling out a quiet name\n\nStreetlights blink like sudden stars\nFaint hum of passing cars\nSoft projection on the wall\nTwilight answers every call\nIn the hollow space between\nEverything that can be seen\n\nLet the city settle down\nIn the heartbeat of the town\nDusk is here",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382950_6",
+      "title": "Amber Stains",
+      "caption": "午後の街を彷徨い、内省する時間。忘れかけていた自分の声や、取り戻そうとする確かな一歩を見つける、穏やかな空気感。",
+      "type": "vocal",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Dusty streets and the ghost of the afternoon\nCounting steps to a hollow, distant tune\nI found a phrase hiding in\nIn a pocket of my mind\nSomething I had meant to leave behind\nMeant to leave behind\n\nThen the words found my spine\nAnd I stood tall\nA quiet whisper that broke through the wall\nThe world didn't shake\nThe sun didn't blind\nBut I moved forward\nLeaving the shadow behind\nLeaving the shadow behind\n\nNow the rhythm of the road feels like a choice\nNot just an echo of someone else's voice\nI carry the secret in the marrow of my bone\nWalking a path I can finally call my own\nFinally call my own\n\nThen the words found my spine\nAnd I stood tall\nA quiet whisper that broke through the wall\nThe world didn't shake\nThe sun didn't blind\nBut I moved forward\nLeaving the shadow behind\nLeaving the shadow behind\nFinally call my own",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382950_7",
+      "title": "The Marrow Of My Bone",
+      "caption": "都会の片隅で、光と影が織りなす儚い美しさ。立ち止まって見つめる、日常の中の静かな輝きを捉えた音像。",
+      "type": "vocal",
+      "duration": 156,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The clouds have drifted past the gray\nLeaving ghost of water in their wake\nThe asphalt holds a damp and sheen\nA moment that the city stops to take\n\nRefracting light in prismatic lines in a silver spill\nOh, the prismatic glow of the afternoon\nChasing the shadows into the haze\nA liquid mirror under the sun\nA fragile pause in the passing days\nA fragile pause in the passing days\n\nAmber highlights on the pavement edge\nThe stillness settling like a heavy ledge\nI watch the puddles catching every ray\nAs sunlight finds a temporary home in this space\n\nOh, the prismatic glow of the afternoon\nChasing the shadows into the haze\nA liquid mirror under the sun\nA fragile pause in the passing days\nA fragile pause in the passing days\n\nStillness in the glass\nJust for a moment\nIt's gone",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382950_8",
+      "title": "Amber On The Pavement",
+      "caption": "灰色の街並みを抜け、差し込む黄金色の光に包まれる感覚。都会の喧騒から隔絶された、安らぎの瞬間を演出する音楽。",
+      "type": "vocal",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Walking through the lattice\nOf the giants in the gray\nI carried every shadow\nFrom the edges of the day\n\nHeavy were the moments\nTethered to the ground\nUntil the prism opened\nWithout a single sound\n\nThen the gap became a prism\nAnd the gray was stained with gold\nIn a single moment's schism\nAll the weight I held was sold\nI'm rising in the clearing\nI'm lighter than the air\nWith the urban walls disappearing\nIn the silent, golden glare\n\nSoftened by the edges\nOf the sky that's pouring through\nFinding peace in ledges\nOf a cinematic blue\nEvery stone is breathing\nIn the sudden narrow glow\nSee the color seething\nWhere the heavy feelings go\n\nThen the gap became a prism\nAnd the gray was stained with gold\nIn a single moment's schism\nAll the weight I held was sold\nI'm rising in the clearing\nI'm lighter than the air\nWith the urban walls disappearing\nIn the silent, golden glare\n\nJust a gap\nJust a gap\nJust a gap\nMmm",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382950_9",
+      "title": "Stained With Gold",
+      "caption": "午後のカフェの光に包まれて、自分自身と対話する時間。静謐で洗練された、内面を見つめ直すようなサウンドトラック。",
+      "type": "vocal",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "Polished silver rising through the spine\nCounting down the seconds, out of time\nThe fluorescent hum is a steady blue\nTrapped in a vertical point of view\n\nI wasn't looking for a sign or a face, just\nI wasn't looking for a sign or a face\nJust a quiet drift in a glass-walled space\n\nAnd the man in the mirror didn't look back\nHe just moved ahead, cutting through the black\nA sudden clarity\nFeeling like the work has just begun\nReflections lie, but this one felt true\nLooking forward from middle of the view\nMiddle of the view\n\nThe doors open wide at the mezzanine floor\nI don't need to check the glass anymore\nLeft my old ghost in the metal car\nDidn't have to travel to see who we are\nDidn't have to travel to see who we are\nJust a light shift, a slight change of pace\nMoving through the world with a different grace\n\nAnd the man in the mirror didn't look back\nHe just moved ahead, cutting through the black\nA sudden clarity\nFeeling like the work has just begun\nReflections lie, but this one felt true\nLooking forward from middle of the view\nMiddle of the view\n\nJust moving on in the afternoon light",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382950_10",
+      "title": "Mezzanine Grace",
+      "caption": "カフェの午後のしっとりとした空気。グラス越しの光が薄れ、街のざわめきが穏やかな囁きのように空間を漂わせる様子。",
+      "type": "vocal",
+      "duration": 162,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The gold is fading on the glass\nFading on the glass\nA hush descends as hours pass\nAs hours pass\n\nA rhythmic static on the wind\nStatic on the wind\nWhere the afternoon has thinned\n\nOh, the city hum is soft and low\nA secret that the shadows know\nNot a way, but just a sound\nFloating near the cooling ground\nFloating near the cooling ground\n\nThe distant movement seems to slow\nSeems to slow\nA tide of neon, amber glow\nAmber glow\n\nIn the distance, wheels that turn\nWheels that turn\nWhile the streetlights wait to burn\n\nOh, the city hum is soft and low\nA secret that the shadows know\nNot a way, but just a sound\nFloating near the cooling ground\nFloating near the cooling ground\n\nOh, the city hum is soft and low\nA secret that the shadows know\nNot a way, but just a sound\nFloating near the cooling ground\nFloating near the cooling ground\nSoft and low\nHumming softly",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382950_11",
+      "title": "Cooling Ground",
+      "caption": "深い静けさが広がるカフェ。日常の雑音が遠ざかり、心身ともに休息を感じさせる癒やしのサウンドスケープ。",
+      "type": "vocal",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The city holds its breath in gray\nBetween the blue and break of day\nBetween the blue and break of day\n\nA metal hinge, a hollow chime\nA rhythmic ghost outside of time\nIt used to be a point of stress\nA restless, nagging emptiness\nBut now the swing is slowing down\nThe only heartbeat in the town\n\nAnd in the creak, I find the core\nA stillness I had missed before\nThe hinge is singing just for me\nA quiet kind of symmetry\nNo longer chaos\nNo longer loud\nJust silver lining on a cloud\n\nThe wind is shifting soft and low\nThe neon lights begin to glow\nI see the shadow on the wall\nI hear the rhythm of the fall\nIt's not a noise, it's not a plea\nIt's just the world agreeing with me\n\nAnd in the creak, I find the core\nA stillness I had missed before\nThe hinge is singing just for me\nA quiet kind of symmetry\nNo longer chaos\nNo longer loud\nJust silver lining on a cloud\n\nStatic turns to song\nWhere it has belonged\nAll along\n\nAnd in the creak, I find the core\nA stillness I had missed before\nThe hinge is singing just for me\nA quiet kind of symmetry\nNo longer chaos\nNo longer loud\nJust silver lining on a cloud\nJust a hinge\nSwinging home",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382950_12",
+      "title": "A Quiet Kind Of Symmetry",
+      "caption": "都会の喧騒から一歩離れ、窓の外の風景を眺めるような、静謐で落ち着いた午後の時間。心の調和を描くBGM。",
+      "type": "vocal",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The city hum is trapped below my feet\nA tangled silver stream that never sleeps\nI'm suspended on this metal spine\nWatching the horizon, this metal spine\nWatching the horizon start to align\n\nInhale the blue, exhale the gray\nI'm recalibrating the day\n\nOne steady of the mountain air, finding the center that's always there\nThe transient clutter is drifting away\nInhale the blue, exhale the gray\n\nThe concrete pulse is still a distant beat\nHigh above the junction and the street\nMy spirit settles in its proper place\nFinding comfort in this quiet space\n\nInhale the blue, exhale the gray\nI'm recalibrating the day\n\nOne steady of the mountain air, finding the center that's always there\nThe transient clutter is drifting away\nInhale the blue, exhale the gray\nGrounded now",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382951_13",
+      "title": "Above The Junction",
+      "caption": "夕暮れ時、光が遠景で薄れていく様子を音に描く。穏やかな色彩の移ろいが、空と感情の間に優しく降り注ぐようなムード。",
+      "type": "vocal",
+      "duration": 148,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The gold is fading out beyond the trees\nThe cooling air begins to settle on the skin\nJust a quiet shift\nAn amber hue turning blue\n\nAnd for a second the horizon is kind\nA temporary grace across the line\nNo longer sharp\nNo longer biting at the side\nSoften at the edges\nA kindness in the way the colors bleed\nColors bleed\n\nGiving space to the night\nGiving space to the night\n\nThe stillness holds its breath against the dark\nFleeting as a memory of a smile\nBefore the streetlamps wake\nBefore the world demands wake\nBefore the world demands its shape\n\nSo kind\nSo quiet now\nJust a gentle descent\nMmm, mmm\nMmm\nSo kind",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779769382951_14",
+      "title": "The Quiet Gold",
+      "caption": "日々の小さな瞬間が、静かな光で満たされる。喧騒を忘れ、自分自身の確かなリズムを見つけるような、温かい午後の情景。",
+      "type": "vocal",
+      "duration": 167,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "The pavement cools beneath my feet\nA hum of traffic, bittersweet\nI leave the static at the door\nAnd find the rhythm I was looking for\n\nNo neon flickering in my head\nJust the quiet gold of the street instead\n\nIt was a good day looking back\nNot a stone misplaced upon the track\nA sudden realization's keep\nA secret that the amber shadows keep\nNo hero's journey, just the light\nMaking sense of everything tonight\nMaking sense of everything tonight\n\nThe air is heavy, then it drifts\nIn the way a heavy spirit shifts\nI take a breath and let it go\nWatching how the evening colors flow\n\nNo grand finale, no sudden spark\nJust the gentle settling of the dark\n\nIt was a good day looking back\nNot a stone misplaced upon the track\nA sudden realization's keep\nA secret that the amber shadows keep\nNo hero's journey, just the light\nMaking sense of everything tonight\nMaking sense of everything tonight\n\nEverything tonight\nNot bad at all",
+      "added_at": "2026-05-26"
+    },
+    {
+      "id": "track_1779853148028_0",
+      "title": "For The Open Window",
+      "caption": "窓辺に差し込む光が描く、過ぎゆく午後の穏やかな時間を彩る心地よい調べ。",
+      "type": "instrumental",
+      "duration": 160,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148033_1",
+      "title": "The Orchard At Noon",
+      "caption": "午後の陽光が溢れる、カフェの空間を彩るサウンドスケープ。フルーツ畑のような軽やかな空気感を感じられます。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148033_2",
+      "title": "Patterns In The Orchard",
+      "caption": "まるで絵本の世界のような午後。柔らかな光に包まれて、心が穏やかに流れるカフェタイムです。",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148033_3",
+      "title": "Where The River Bends",
+      "caption": "ゆったりとした川の流れが耳元を撫でるような調べ。心落ち着く、穏やかなカフェのひとときを彩ります。",
+      "type": "instrumental",
+      "duration": 172,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148033_4",
+      "title": "Long Shadows On Mahogany",
+      "caption": "磨き上げられた木材に映る午後の影。ノスタルジーを感じさせる、優雅なカフェミュージックです。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148033_5",
+      "title": "Rustic Peace",
+      "caption": "木漏れ日差しが差し込む静謐な空間。温かく、心安らぐ午後のリラックスタイムを演出します。",
+      "type": "instrumental",
+      "duration": 168,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148033_6",
+      "title": "Watching The Morning Turn",
+      "caption": "窓から差し込む光と共に目覚める、優しい朝の調べ。穏やかなカフェの幕開けを告げます。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148033_7",
+      "title": "The Unfolding Light",
+      "caption": "柔らかな午後の光を背景に、心地よいジャズが流れる時間。心ゆくまでくつろげるサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148033_8",
+      "title": "Patterns In The Grain",
+      "caption": "日常に潜む小さな模様、木目や食器のパターンが奏でる、視覚と聴覚で楽しむひととき。",
+      "type": "instrumental",
+      "duration": 161,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148034_9",
+      "title": "Where The Daylight Rests",
+      "caption": "優しい日差しと静かなざわめき。まるで時間が止まったかのような、極上の午後のひとときを演出します。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148034_10",
+      "title": "Before The Room Wakes",
+      "caption": "窓からの光と優しいピアノの音色。心穏やかな、午後のカフェタイムを静かに彩ります。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148034_11",
+      "title": "Light Through Silk",
+      "caption": "レースのカーテン越しの午後の光。すべてが優しくフィルタリングされ、温かい空間に溶け込むサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 99,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148034_12",
+      "title": "Notes For A Sunday Morning",
+      "caption": "日曜の朝、柔らかな光とコーヒーの香り。心が満たされる、穏やかで贅沢な午前の時間。",
+      "type": "instrumental",
+      "duration": 140,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148034_13",
+      "title": "Above The Cloud Line",
+      "caption": "都会の喧騒を忘れさせる、雲上のパノラマ。心ほどけるような、優雅なカフェBGMです。",
+      "type": "instrumental",
+      "duration": 172,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779853148034_14",
+      "title": "Sunlight On The Writing Desk",
+      "caption": "窓辺の光とコーヒーの香りに包まれて。静かに思考を巡らせる、澄み切った午後の時間のための音。",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-27"
+    },
+    {
+      "id": "track_1779948350425_0",
+      "title": "Glass And Willow",
+      "caption": "都会の喧騒を忘れさせる、透明感あふれる午後のカフェ。グラス越しに差し込む光と、優雅に揺れる柳の葉が織りなす、心地よい調べ。",
+      "type": "instrumental",
+      "duration": 117,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350428_1",
+      "title": "Late August Afternoon",
+      "caption": "過ぎゆく夏の日差しの輝きを追いかけるように。カフェの片隅で過ごす、優雅でノスタルジックな午後の時間。",
+      "type": "instrumental",
+      "duration": 148,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350429_2",
+      "title": "Softly Rhythmic Nostalgia",
+      "caption": "窓から射し込む柔らかい日差しと、心地よいリズムが流れるカフェの午後。懐かしい記憶をそっと辿る、温かい午後のサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 106,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350429_3",
+      "title": "Candle At First Light",
+      "caption": "朝日が差し込む静かな空間。キャンドルの温かい光とともに始まる、穏やかで新しい一日の幕開けを彩る調べ。",
+      "type": "instrumental",
+      "duration": 171,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350429_4",
+      "title": "Where The Barley Bends",
+      "caption": "陽光が降り注ぐカフェ。アコースティックギターの優しい調べが、日常に安らぎをもたらすひとときを彩る。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350429_5",
+      "title": "Unfinished Sentences",
+      "caption": "温かい午後に流れる、心に語りかけるような時間。言葉にならない感情を寄り添う、静謐なピアノとストリングスが心地よい調べ。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350429_6",
+      "title": "Tracing The Horizon",
+      "caption": "窓から差し込む光を浴びて、時間がゆったりと流れる感覚。希望に満ちたカフェの午後に響く、優しいインストゥルメンタル。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350429_7",
+      "title": "Sunlight On Porcelain",
+      "caption": "午後の日差しが、陶器の質感や食器を優しく照らす。心地よい静けさと、軽やかで洗練されたカフェタイムを感じるBGM。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350429_8",
+      "title": "Afternoon In The Atrium",
+      "caption": "午後の光が満ちるアトリウム。ジャズピアノが溶け込み、日常に洗練された心地よい余白を生み出すサウンド。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350430_9",
+      "title": "Window At Dawn",
+      "caption": "窓辺に差し込む柔らかな朝の光と、生き生きとしたカフェのざわめき。心落ち着く、静寂の中の穏やかな時間をお届けします。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350430_10",
+      "title": "Morning Pendulums",
+      "caption": "優しい朝の光が満ちる、静寂のカフェ空間。時間そのものがゆらりと揺れるような、温かく心地よい目覚めの調べ。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350430_11",
+      "title": "Before The First Customer",
+      "caption": "静寂と期待が漂う、開店前のカフェ。これから始まる日常を温かく包み込む、穏やかで心地よいサウンド。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350430_12",
+      "title": "Sunlight On The Floorboards",
+      "caption": "差し込む午後の光が、空間の床板を優しく照らし出す。心ゆくまでゆったりとした時間の流れを感じる、没入感のあるインストゥルメンタル。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350430_13",
+      "title": "Before The Valley Wakes",
+      "caption": "静かな朝のカフェ。日常の風景に、心安らぐ安らぎと優しいムードをそっと添える、美しいサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 148,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779948350430_14",
+      "title": "Sunlight_on_the_Floorboards (1)",
+      "caption": "窓から降り注ぐ午後の光が、古びた床板を温かく彩る。懐かしくも穏やかな、カフェで過ごす優しい午後の時間。",
+      "type": "instrumental",
+      "duration": 153,
+      "full_url": "",
+      "tags": [
+        "Classical",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779950705431_0",
+      "title": "Light Across The Grain",
+      "caption": "窓から差し込む柔らかい日差しが、木目や雑貨に反射し、穏やかなカフェの午後の風景を彩る。心安らぐ時間のためのサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "明るい",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779950705431_1",
+      "title": "Light Through Curtains",
+      "caption": "午後のやわらかな光がカーテンを透過し、静寂な空間に広がる。心地よいBGMと共に、ささやかな余韻を味わうためのサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "明るい",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779950705431_2",
+      "title": "Morning On The Terrace",
+      "caption": "目覚めの時間を彩る、穏やかな朝の光景。テラス席でのひとときと、心和むカフェミュージックをお届けします。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "明るい",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779950705431_3",
+      "title": "Three O Clock Light",
+      "caption": "窓から射し込む午後の柔らかな光が、空間全体を優しく包み込む。心身を落ち着かせるような、心地よいBGMの提案。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "明るい",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779950705432_4",
+      "title": "Sunlight Through The Curtains",
+      "caption": "レースのカーテン越しの午後の日差しが織りなす、静謐なカフェのひととき。ジャズとアコースティックギターが響く、微睡むような優しい調べ。",
+      "type": "instrumental",
+      "duration": 172,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "明るい",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779950705432_5",
+      "title": "Paper And Light",
+      "caption": "窓越しの光が、空気中に舞う粒子となって視界を優しく満たす。午後の優しい、夢のような時間。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "明るい",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779950705432_6",
+      "title": "Sunlight In The Study",
+      "caption": "午後の日差しと、本やコーヒーの香りが織りなす空間。知的な静けさの中で過ごす、至福の休息時間。",
+      "type": "instrumental",
+      "duration": 126,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "明るい",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779950705432_7",
+      "title": "Sunlight Through The Glass",
+      "caption": "窓から差し込む柔らかい光が、カフェの空間に穏やかな輝きをもたらす。日常の景色を彩る、淡い光の描写。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "明るい",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779950705432_8",
+      "title": "Gentle Morning Echoes",
+      "caption": "朝のやわらかな光と共に、淹れたてのコーヒーの香りに誘われる目覚めの時間。心にそっと寄り添うような、穏やかな調べ。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "明るい",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1779950705432_9",
+      "title": "Sunlight",
+      "caption": "差し込む優しい光が、午後のカフェタイムを豊かにする。日々の日常に溶け込む、リラックスできる音楽空間。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "明るい",
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-28"
+    },
+    {
+      "id": "track_1780020481966_0",
+      "title": "Rain Against The Glass",
+      "caption": "窓を打つ雨のリズムと、ジャズの調べが織りなす。日常を優しく包み込む、静かで心地よい午後のひとときを演出します。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "切ない",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780020481969_1",
+      "title": "A Window Over The Rain",
+      "caption": "雨に濡れた窓辺から眺める都会の風景。静寂と温かさが共存する、穏やかなカフェ空間を彩るBGMです。",
+      "type": "instrumental",
+      "duration": 172,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "切ない",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780020481969_2",
+      "title": "Table By The Glass",
+      "caption": "窓際の席で流れる、穏やかな時間の流れ。柔らかな光と、かすかなざわめきに包まれていく、心地よい空間を音楽が彩ります。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "切ない",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780020481969_3",
+      "title": "Two Cups Left Behind",
+      "caption": "柔らかな光が差し込む窓辺で、過ぎゆく午後の余韻に浸る。静かなカフェでの特別な時間をお届けします。",
+      "type": "instrumental",
+      "duration": 141,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "切ない",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780020481970_4",
+      "title": "After The Last Train",
+      "caption": "夕暮れの窓辺から、今日という一日を振り返る時間。メロディが次の始まりをそっと予感させ、心に安らぎをもたらします。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "切ない",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780020481970_5",
+      "title": "Table For One In The Rain",
+      "caption": "雨降る日のカフェ。窓の外を眺めながら、一人静かに過ごす午後のひとときに最適な、落ち着いたBGMです。",
+      "type": "instrumental",
+      "duration": 152,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "切ない",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780020481970_6",
+      "title": "Half Empty Cup At Dawn",
+      "caption": "夜明けのカフェの窓際。温かい飲み物と静寂が混ざり合う、優しく内省的な時間を彩る調べです。",
+      "type": "instrumental",
+      "duration": 168,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "切ない",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780020481970_7",
+      "title": "The Window Seat",
+      "caption": "窓際の席から外を眺める、穏やかで思索的な時間。優しいピアノの調べが、心地良い背景音楽となります。",
+      "type": "instrumental",
+      "duration": 151,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "切ない",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780020481970_8",
+      "title": "Left By The Window",
+      "caption": "午後の光が差し込む窓辺。コーヒーの香りとともに、心に静けさをもたらす調べが最適な空間を演出します。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "切ない",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780020481970_9",
+      "title": "Rain",
+      "caption": "雨の音とコーヒーの香りに包まれて。心ゆくまで思考を巡らせられる、穏やかな午後のカフェタイムに寄り添う音楽です。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "City Pop",
+        "切ない",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780023169087_0",
+      "title": "After The Cafe Closes",
+      "caption": "午後の光が射す静かなカフェ。扉が閉まる頃、残り香と共に流れる、穏やかで優しいひととき。",
+      "type": "instrumental",
+      "duration": 166,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780023169087_1",
+      "title": "Rain Against The Panes",
+      "caption": "雨粒が窓ガラスを優しく叩く音と、コーヒーの香りが織りなす、静寂に満ちた午後の情景。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780023169087_2",
+      "title": "Before The Streetlights",
+      "caption": "街灯が点り始める時間帯の、ノスタルジックなカフェのムード。物思いにふける午後のBGMとして最適です。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780023169088_3",
+      "title": "Sunset Behind The Glass",
+      "caption": "窓越しに差し込む夕暮れの光と、メロディが溶け合う時間。ゆっくりと時が流れる、穏やかな午後の彩り。",
+      "type": "instrumental",
+      "duration": 119,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780023169088_4",
+      "title": "Closing Time Cafe Bgm",
+      "caption": "閉店間近のカフェの空気感。消えゆく光と、最後のざわめきが漂う静寂の中で、心穏やかに聴けるBGM。",
+      "type": "instrumental",
+      "duration": 181,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780023169088_5",
+      "title": "Last Order At Midnight",
+      "caption": "真夜中のカフェ、静寂と暖かさが混ざり合う特別な時間。切なさと心地よさが共存する、心象風景を描くメロディ。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780023169088_6",
+      "title": "Streetlights Through The Glass",
+      "caption": "窓ガラスに映る街灯の煌めきをBGMに。雨降りの日という特別な設定が、日常に溶け込む心地よいムードを演出します。",
+      "type": "instrumental",
+      "duration": 167,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780023169088_7",
+      "title": "The Last Patron S Table",
+      "caption": "静謐な午後の、古風なカフェの片隅。照明の温かさと、ゆるやかな会話が心地よい、二人だけの特別な時間のためのサウンドトラック。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780023169088_8",
+      "title": "Last Light In The Cafe",
+      "caption": "午後の柔らかな光が差し込む、特別なカフェの窓辺。自分だけの静かな時間を持つための、優しい癒やしのサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 171,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1780023169089_9",
+      "title": "Turning The Sign",
+      "caption": "午後の心地よい時間。店内の光と、流れる穏やかなメロディに身を任せるような、心のゆとりを感じるサウンド。",
+      "type": "instrumental",
+      "duration": 170,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-05-29"
+    }
+  ]
+}
