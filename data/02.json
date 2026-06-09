@@ -14,7 +14,11 @@
       "id": "cat_1779018948704",
       "name": "OUTRO",
       "albums": [
-        "album_1779018950687"
+        "album_1779018950687",
+        "album_1780711760579",
+        "album_1780799011365",
+        "album_1780898357236",
+        "album_1780899560556"
       ]
     }
   ],
@@ -81,6 +85,100 @@
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\intro\\番組のための主題歌",
       "type": "vocal"
+    },
+    {
+      "id": "album_1780711760579",
+      "title": "ラストに流すピアノ曲",
+      "art": "",
+      "caption": "配信や動画の締めに使える、短いアウトロ曲。静かに終わっていく余韻を大切にしたエンディング用BGMです。",
+      "categoryId": "cat_1779018948704",
+      "tracks": [
+        "track_1780713573035_0",
+        "track_1780713573038_1",
+        "track_1780713573038_2",
+        "track_1780713573038_3",
+        "track_1780713573038_4",
+        "track_1780713573038_5",
+        "track_1780713573038_6",
+        "track_1780713573038_7",
+        "track_1780713573038_8",
+        "track_1780713573038_9",
+        "track_1780713573038_10",
+        "track_1780713573038_11",
+        "track_1780713573038_12",
+        "track_1780713573038_13",
+        "track_1780713573038_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\outro\\ラストに流すピアノ曲",
+      "type": ""
+    },
+    {
+      "id": "album_1780799011365",
+      "title": "エンディングのためのJAZZ",
+      "art": "",
+      "caption": "配信や動画の締めに使える、静かなジャズのアウトロ曲を集めたインストアルバムです。",
+      "categoryId": "cat_1779018948704",
+      "tracks": [
+        "track_1780800631890_0",
+        "track_1780800631892_1",
+        "track_1780800631892_2",
+        "track_1780800631892_3",
+        "track_1780800631893_4",
+        "track_1780800631893_5",
+        "track_1780800631893_6",
+        "track_1780800631893_7",
+        "track_1780800631893_8",
+        "track_1780800631893_9",
+        "track_1780800631893_10",
+        "track_1780800631893_11",
+        "track_1780800631893_12",
+        "track_1780800631893_13",
+        "track_1780800631893_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\outro\\エンディングのためのJAZZ",
+      "type": ""
+    },
+    {
+      "id": "album_1780898357236",
+      "title": "Outro Slow Pop",
+      "art": "",
+      "caption": "「配信や動画の締めに使える、ゆったりしたポップ系アウトロ曲を集めたアルバムです。 軽いビートと柔らかいシンセで、静かにフェードアウトしていく終わり方を演出します。",
+      "categoryId": "cat_1779018948704",
+      "tracks": [
+        "track_1780899344485_0",
+        "track_1780899344487_1",
+        "track_1780899344487_2",
+        "track_1780899344487_3",
+        "track_1780899344487_4",
+        "track_1780899344487_5",
+        "track_1780899344487_6",
+        "track_1780899344487_7",
+        "track_1780899344488_8",
+        "track_1780899344488_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\outro\\Outro Slow Pop",
+      "type": ""
+    },
+    {
+      "id": "album_1780899560556",
+      "title": "Lo-fi Beat Outro",
+      "art": "",
+      "caption": "配信や動画の終わりに使える、ゆるいLo-fiビートのアウトロ曲を集めたアルバムです。 テープノイズと柔らかいビートで、静かにフェードアウトしていく締めの雰囲気を作ります。",
+      "categoryId": "cat_1779018948704",
+      "tracks": [
+        "track_1780900209043_0",
+        "track_1780900209043_1",
+        "track_1780900209043_2",
+        "track_1780900209043_3",
+        "track_1780900209044_4",
+        "track_1780900209044_5",
+        "track_1780900209044_6",
+        "track_1780900209044_7",
+        "track_1780900209044_8",
+        "track_1780900209044_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\outro\\Lo-fi Beat Outro",
+      "type": ""
     }
   ],
   "tracks": [
@@ -523,6 +621,856 @@
       "bpm": "",
       "lyrics": "[Intro]\r\n\r\n[Verse 1]\r\nJeg står ved den lave bæk\r\nHvor vandet sliber hver en sten\r\nMine fødder finder ro\r\nI det mørke sand\r\n(Mørke sand)\r\n\r\n[Verse 2]\r\nVinden rører ved mit hår\r\nSom en hånd jeg næsten kender\r\nJeg trækker vejret dybt\r\nFyldt med duft af våd jord\r\n\r\n[Chorus]\r\nJeg gi'r mig selv et løfte\r\nHer i morgenens spæde lys\r\nAt gro som pilens grene\r\nStærk og bøjelig og fri\r\n(Stærk og fri)\r\n\r\n[Verse 3]\r\nIntet behov for store ord\r\nEller løfter råbt mod skyen\r\nKun en stille pagt i blodet\r\nOm at blive her og se\r\n\r\n[Bridge]\r\nGrenene strækker sig opad\r\nRødderne graver sig ned\r\nTiden er ikke en fjende\r\nMen en vej jeg langsomt går\r\n(En vej jeg går)\r\n\r\n[Chorus]\r\nJeg gi'r mig selv et løfte\r\nHer i morgenens spæde lys\r\nAt gro som pilens grene\r\nStærk og bøjelig og fri\r\n(Stærk og fri)\r\n\r\n[Outro]\r\nStille pagt\r\nI det våde sand\r\nJeg bliver her\r\n(Bliver her)",
       "added_at": "2026-06-05"
+    },
+    {
+      "id": "track_1780713573035_0",
+      "title": "The Last Goodbye (Outro)",
+      "caption": "優しく消えゆく残響が、過ぎ去った時間と別れの感情を包み込む。静寂へと溶けていく余韻のサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_1",
+      "title": "The Final Echo",
+      "caption": "静寂と残響が織りなす、物語の終わりを告げる最後の調べ。余韻に浸るような終幕の情景を描きます。",
+      "type": "instrumental",
+      "duration": 152,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_2",
+      "title": "Memories Of Closure",
+      "caption": "過去の記憶を穏やかに包み込み、新たな始まりへと誘うような静謐なメロディ。心のデトックスと再生を感じさせるサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_3",
+      "title": "Before The Sun Breaks",
+      "caption": "夜明け前の静寂と、これから始まるドラマへの期待を込めた、空間的な広がりを持つサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_4",
+      "title": "Dawn At The Sea Wall",
+      "caption": "夜明けの潮風を感じながら、海に響き渡る静謐な調べ。新しい一日が始まる瞬間の透明感と広がりを表現した、温かくもどこかメランコリックなサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 152,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_5",
+      "title": "When The House Is Quiet",
+      "caption": "夜が深く静まり返り、ただ時間だけが響く空間。心が落ち着く静寂な空気感。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_6",
+      "title": "Sunlit Surface",
+      "caption": "朝日に照らされた、静かで輝く表面の情景。穏やかな始まりと終わりを感じさせるサウンドトラックです。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_7",
+      "title": "Cedar And Stone",
+      "caption": "古木の香りと、石を磨くような静寂。時間が止まったかのような、力強いイントロ/アウトロのムード。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_8",
+      "title": "One Last Bow At Dawn",
+      "caption": "夜明けの静寂と希望が交錯する瞬間。幕を閉じる一曲に込めた、次の始まりへの静かな輝きを描くサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 171,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_9",
+      "title": "Sunlight Over Frozen Water",
+      "caption": "凍りついた湖面に降り注ぐ、黄金色の光。静寂の中に広がる、時間の止まったような美しい情景を描きます。",
+      "type": "instrumental",
+      "duration": 149,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_10",
+      "title": "Paper Walls At Dawn",
+      "caption": "夜明けの静けさの中で、崩れ落ちる紙のような障壁。儚く美しい始まりを告げるようなサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 148,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_11",
+      "title": "Morning Through Paper Screens",
+      "caption": "障子越しの、柔らかな朝の光が差し込む情景を音に閉じ込めたような、静謐で清澄なインストゥルメンタル。一日の始まりに心穏やかな安らぎをもたらす調べです。",
+      "type": "instrumental",
+      "duration": 167,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_12",
+      "title": "Shoreline At Dusk",
+      "caption": "夕暮れの海岸線、波のさざめきと潮風が漂う静寂な時間。",
+      "type": "instrumental",
+      "duration": 97,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_13",
+      "title": "Sunlight Across The Floor",
+      "caption": "差し込む午後の日差しが、フローリングの床を黄金色に染め上げる。穏やかでノスタルジックなムードを描き出すサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780713573038_14",
+      "title": "Shadows Across The Grain",
+      "caption": "静寂と響きが織りなす、深い余韻。『Shadows Across The Grain』の情景をあなたへ。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-06"
+    },
+    {
+      "id": "track_1780800631890_0",
+      "title": "Paper Walls At Dawn",
+      "caption": "夜明けの柔らかな光と、脆い紙の壁を通して差し込む儚さ。始まりと終焉の境界で漂うような、透明感に満ちた音景（サウンドスケープ）。",
+      "type": "instrumental",
+      "duration": 118,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "バラード",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631892_1",
+      "title": "The Weight Of Morning Light",
+      "caption": "夜明けの光が纏わせる静かで重厚な空気。新たな日への期待と、微かな不安を同時に描き出すアンビエントサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 146,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631892_2",
+      "title": "Streetlamps On Water",
+      "caption": "水面に揺れる街灯の光が、静寂の中に幻想的な律動を刻む瞬間。都市と自然が出会う場所の、儚い美しさを表現した作品。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631892_3",
+      "title": "Lights Of",
+      "caption": "輝く光源が夜景を彩り、まるで夢のような幕開けや、深い余韻を残すような美しい終焉を演出する音の描写。",
+      "type": "instrumental",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631893_4",
+      "title": "The Sun Leans Low",
+      "caption": "低い位置から差し込む夕暮れの光が影を長く伸ばす。時が止まった静けさの中で、内省的なメロディと和音が空間を満たしていく時間帯。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "The sun leans low against the wall\nA shadow stretches down the hall\nTime is frozen, held in light\nBetween the morning and the night\n\nIn the stillness, I can hear\nEvery thought is held so near\nOpen harmonies in the air\nFinding peace in moment's rest\nFinding peace in moment's rest\n\nA muted horn, a gentle chord\nA silence that cannot be ignored\nFloating on a tide of grace\nLost within this quiet space\n\nEverything is still\nStillness",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631893_5",
+      "title": "Morning In",
+      "caption": "目覚めの穏やかな静寂から、新しい一日が始まる柔らかな光。淡い音色が徐々に空間を満たしていく、優しい「始まり」の感覚。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631893_6",
+      "title": "Stone Path At Dawn",
+      "caption": "夜明けの石畳が舞台となる情景。湿気を含んだ空気が漂い、新たな一歩を踏み出すための静かな高揚感を伝える音色。",
+      "type": "instrumental",
+      "duration": 75,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631893_7",
+      "title": "Japan At Dusk",
+      "caption": "夕暮れの東京を背景に描く、郷愁と躍動が交錯するサウンドスケープ。日本的な深い情感をメロディーに乗せて描き出す作品。",
+      "type": "instrumental",
+      "duration": 152,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631893_8",
+      "title": "Rain On The Glass",
+      "caption": "雨粒がガラス窓に当たる、クリアで透明な音響。過ぎゆく時間と静かな内省が交差する、穏やかな哀愁を伴うインストゥルメンタル。",
+      "type": "instrumental",
+      "duration": 132,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631893_9",
+      "title": "Morning On The Threshold",
+      "caption": "夜明けの静寂に包まれた場所。新しい一日を迎えるための、心が震えるような予感と導入部（イントロダクション）。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631893_10",
+      "title": "Paper Lanterns At Dawn",
+      "caption": "夜が明ける前の静けさの中、和紙の提灯が一つずつ光を放つ。穏やかで情緒的な、新しい一日を迎える情景描写。",
+      "type": "instrumental",
+      "duration": 88,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631893_11",
+      "title": "Midnight Glass",
+      "caption": "夜の沈黙と、ガラス同士が触れ合う微かな音。秘密めいたメロディが、深く考え込む時間帯に聴くためのサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 168,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631893_12",
+      "title": "Velvet Curtains Drawn",
+      "caption": "ベルベットのカーテンが静かに引かれる動作から始まる音。舞台が開幕する直前の、深い期待感と神秘的な余韻を予感させるサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631893_13",
+      "title": "Three Notes Before Dawn",
+      "caption": "夜明けの極限的な静寂に、三つの音符が紡ぎ出すような、夢うつつな感覚に包まれた情景描写。",
+      "type": "instrumental",
+      "duration": 167,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780800631893_14",
+      "title": "The Last Train From Tokyo",
+      "caption": "遠ざかっていく光の軌跡を辿る旅路。「東京を去る最終列車」が伝える、夜明け前の深い郷愁と、物思いに耽るような静謐な時間。",
+      "type": "instrumental",
+      "duration": 146,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-07"
+    },
+    {
+      "id": "track_1780899344485_0",
+      "title": "First Light Over Glass",
+      "caption": "ガラス越しの光が描き出す、穏やかで希望に満ちた夜明けの色彩。静寂から生まれる新しい始まりを彩るサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 170,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780899344487_1",
+      "title": "Peaceful Closure",
+      "caption": "",
+      "type": "instrumental",
+      "duration": 180,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780899344487_2",
+      "title": "Gentle Swells (Outro)",
+      "caption": "満潮から引く波のような、優しい調べが徐々に消えていく感覚。穏やかな余韻と静寂に包まれた終幕の情景です。",
+      "type": "instrumental",
+      "duration": 169,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780899344487_3",
+      "title": "Evolving Rhodes Ambient Pop",
+      "caption": "温かいRhodesピアノを纏った、浮遊感あふれるアンビエントポップの世界。心と空気を優しく包み込むメロディ体験です。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780899344487_4",
+      "title": "Filtered Resonance",
+      "caption": "深い残響と濾過された音色が、徐々に空間を満たしていく感覚。静かに音が開いていくような導入の瞬間を表現しています。",
+      "type": "instrumental",
+      "duration": 169,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780899344487_5",
+      "title": "Crystalline Sunrise",
+      "caption": "水晶のような透明な光が差す夜明けの情景。心の内面から浄化されるかのような、クリアで幻想的なサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780899344487_6",
+      "title": "Profoundly Quiet Uplift",
+      "caption": "静寂の奥底から湧き上がる、深遠で穏やかな高揚感。感情を優しく揺さぶり、心に深く響く瞬間を彩ります。",
+      "type": "instrumental",
+      "duration": 169,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780899344487_7",
+      "title": "Granular Stillness",
+      "caption": "音の粒（グラニュラー）が織りなす微細で静謐な空間。時間が停止したかのような、息を呑むほどの透明感を伴う入り口（あるいは結び）です。",
+      "type": "instrumental",
+      "duration": 170,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780899344488_8",
+      "title": "Quiet Reflection",
+      "caption": "物思いにふけるような、静けさと内省が融合したメロディ。心に語りかけるかのような穏やかなサウンドスケープを体験してください。",
+      "type": "instrumental",
+      "duration": 162,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780899344488_9",
+      "title": "Velvet Pulse",
+      "caption": "ベルベットのように滑らかで深みのある音響が、物語の幕開けと終わりを包み込む。壮大でありながら優しい余韻を感じさせる楽曲です。",
+      "type": "instrumental",
+      "duration": 100,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780900209043_0",
+      "title": "Analog Drift",
+      "caption": "ノスタルジックなアナログ音像が漂い、時間と記憶の境界を探るような導入部。優しいエコーとディレイが、リスナーを過去への静かな旅へと誘う。",
+      "type": "instrumental",
+      "duration": 150,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "クール",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780900209043_1",
+      "title": "Drifting Cycles",
+      "caption": "心象風景を描く音のタペストリー。漂いゆく時間と記憶のサイクルの中で、聴き手を深い思索へ導く夜明けのような空気感。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "クール",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780900209043_2",
+      "title": "Industrial Decay",
+      "caption": "文明の残響が宿る廃墟。錆びた金属音とメランコリックなサウンドスケープが、時間の経過を物語る。",
+      "type": "instrumental",
+      "duration": 141,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "クール",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780900209043_3",
+      "title": "Smoky Textures",
+      "caption": "深く温かいムードを持つアンビエントな質感。語り始める心象風景を優しく包み込むようなサウンドレイヤー。",
+      "type": "instrumental",
+      "duration": 172,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "クール",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780900209044_4",
+      "title": "Digital Decay Loop",
+      "caption": "デジタルノイズが紡ぐ、崩壊と再生の循環。断片的なメロディラインが未来への軌跡を描き出す緊張感のあるサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "クール",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780900209044_5",
+      "title": "Controlled Dissipation Outro",
+      "caption": "終焉に向かって霧散していくエモーショナルな残響。物語の余韻と共に、穏やかな静寂へとリスナーを導くアウトロ。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "クール",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780900209044_6",
+      "title": "Echo Chamber Meditation",
+      "caption": "音と沈黙が織りなす、深層心理への瞑想的な航海。自分自身の内なる声に静かに耳を澄ませる時間を提供する。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "クール",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780900209044_7",
+      "title": "Neon Echoes Outro",
+      "caption": "ネオンの残光が夜明けとともに溶け出す、儚くも美しい情景。都会的なエフェメラルな時間を彩るサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 152,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "クール",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780900209044_8",
+      "title": "Elegant Exit",
+      "caption": "優雅で洗練された幕引きを演出する空間音響。トラック全体が包み込まれるような、美しい余韻の残響。",
+      "type": "instrumental",
+      "duration": 99,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "クール",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780900209044_9",
+      "title": "Echo Decay Outro",
+      "caption": "静寂の中に揺蕩う残り香。夢のような感覚と共にゆっくりと消え去る、深い余韻を告げるフィナーレ。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "クール",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-08"
     }
   ]
 }
