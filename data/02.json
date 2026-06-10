@@ -7,7 +7,9 @@
       "name": "INTRO",
       "albums": [
         "album_1780618864460",
-        "album_1780620921360"
+        "album_1780620921360",
+        "album_1780992463245",
+        "album_1780994740201"
       ]
     },
     {
@@ -178,6 +180,48 @@
         "track_1780900209044_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\outro\\Lo-fi Beat Outro",
+      "type": ""
+    },
+    {
+      "id": "album_1780992463245",
+      "title": "Guitar Clean Intro",
+      "art": "",
+      "caption": "配信や動画の冒頭に使うための短尺イントロ素材。 音数を抑えたクリーン系のギターサウンドを中心にまとめている。",
+      "categoryId": "cat_1779018943718",
+      "tracks": [
+        "track_1780994502572_0",
+        "track_1780994502575_1",
+        "track_1780994502575_2",
+        "track_1780994502575_3",
+        "track_1780994502575_4",
+        "track_1780994502575_5",
+        "track_1780994502575_6",
+        "track_1780994502575_7",
+        "track_1780994502575_8",
+        "track_1780994502575_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\intro\\Guitar Clean Intro",
+      "type": ""
+    },
+    {
+      "id": "album_1780994740201",
+      "title": "Intro Jazz – Soft Opening",
+      "art": "",
+      "caption": "配信や動画の冒頭に使える、静かなジャズ調のイントロ素材。 軽いスウィング感と控えめな編成で、入りの空気だけをそっと整えるように仕上げている。",
+      "categoryId": "cat_1779018943718",
+      "tracks": [
+        "track_1780997944619_0",
+        "track_1780997944619_1",
+        "track_1780997944619_2",
+        "track_1780997944619_3",
+        "track_1780997944620_4",
+        "track_1780997944620_5",
+        "track_1780997944620_6",
+        "track_1780997944620_7",
+        "track_1780997944620_8",
+        "track_1780997944620_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\intro\\Intro Jazz – Soft Opening",
       "type": ""
     }
   ],
@@ -1471,6 +1515,346 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-06-08"
+    },
+    {
+      "id": "track_1780994502572_0",
+      "title": "30 Second Spark",
+      "caption": "一瞬の閃きが描く、繊細な煌めきと期待感。物語の幕開けを予感させる、サウンドスケープです。",
+      "type": "instrumental",
+      "duration": 57,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780994502575_1",
+      "title": "Sun Drenched Groove",
+      "caption": "降り注ぐ光と共に流れる心地よいグルーヴ。午後の散策路にいるような、開放的なサウンドトラックです。",
+      "type": "instrumental",
+      "duration": 36,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780994502575_2",
+      "title": "Electric Pop Prelude",
+      "caption": "電極の粒子が空中に舞い上がるような透明感。新たな章の始まりを告げる、エレクトロニックで華やかな序曲です。",
+      "type": "instrumental",
+      "duration": 29,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780994502575_3",
+      "title": "Nostalgic Acoustic Pop Intro",
+      "caption": "時間の中に蘇る優しい響き。アコースティックな音色が、過去の温かい思い出を語りかける導入部です。",
+      "type": "instrumental",
+      "duration": 64,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780994502575_4",
+      "title": "Neon Sunrise Beat",
+      "caption": "ネオンがきらめく都会の夜明け。新しいサイクルと、熱い鼓動が共鳴するビートを感じてください。",
+      "type": "instrumental",
+      "duration": 48,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780994502575_5",
+      "title": "Electro Pop Intro Loop",
+      "caption": "電子音のアルペジオが空間を満たす感覚。未来的な浮遊感と共に、全体を包み込むオープニングムードです。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780994502575_6",
+      "title": "Sunrise Lead In",
+      "caption": "夜明けの淡い光を浴びて。希望に満ちたメロディが静かに流れ出し、新たな旅立ちを予感させます。",
+      "type": "instrumental",
+      "duration": 27,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780994502575_7",
+      "title": "Stadium Echoes",
+      "caption": "広大なスタジアムの余韻。記憶と感情が交錯する空間で、壮大さと静謐さが共存する瞬間を描きます。",
+      "type": "instrumental",
+      "duration": 146,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780994502575_8",
+      "title": "Retro Pop Intro",
+      "caption": "ノスタルジーを纏ったポップス。懐かしくも輝かしいムードが、物語の始まりを心地よく飾ります。",
+      "type": "instrumental",
+      "duration": 172,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780994502575_9",
+      "title": "Close-Mic'd Connection",
+      "caption": "囁き声のような親密なサウンドスケープ。物語の開始と終結を包み込む、静かで内省的な時間です。",
+      "type": "instrumental",
+      "duration": 63,
+      "full_url": "",
+      "tags": [
+        "Pop",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780997944619_0",
+      "title": "Hopeful Jazz Intro",
+      "caption": "朝の光に包まれて。希望を歌い上げる、温かくも郷愁を感じさせるジャズのメロディーが、新しい一日を静かに目覚めさせてくれる導入部です。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780997944619_1",
+      "title": "Neo Swing Sunrise",
+      "caption": "ネオン街を駆け抜ける午後の熱狂。洗練されたスウィングのリズムが、都会的で躍動的なサウンドスケープを描き出すシーンに最適です。",
+      "type": "instrumental",
+      "duration": 29,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780997944619_2",
+      "title": "The Golden Walk",
+      "caption": "黄金の道を歩むような、壮大で心揺さぶる旅路のサウンドトラック。希望と到達点を象徴する美しい情景描写が込められています。",
+      "type": "instrumental",
+      "duration": 28,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780997944619_3",
+      "title": "Brass Heartbeat",
+      "caption": "力強く響くブラスセクションのビート。物語のクライマックスや、重要な転換点でのドラマチックな高揚感を演出します。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780997944620_4",
+      "title": "Cascading Hope",
+      "caption": "希望が降り注ぐ滝のように、旋律が徐々に広がる感動的なオーケストレーション。静謐から確かな飛躍へと導く、壮麗な展開を感じさせます。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780997944620_5",
+      "title": "Velvet Stride Intro",
+      "caption": "深く重厚なビートとメロウなベースラインが魅せる、期待に満ちたシークエンス。物語の幕開けを彩る、ドラマチックで洗練された導入部です。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780997944620_6",
+      "title": "Clarinet Sunlight Lounge",
+      "caption": "日差しの輝きを感じるよう、心地よく弾むクラリネットの調べ。穏やかでありながら開放的なラウンジのような午後の時間をお届けします。",
+      "type": "instrumental",
+      "duration": 150,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780997944620_7",
+      "title": "Skyline Swing",
+      "caption": "広大なスカイラインを舞台に、自由でグルーヴィなシンセとリズムが交錯する瞬間。爽快感あふれる夜の躍動感を演出します。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780997944620_8",
+      "title": "New Horizons",
+      "caption": "青空と夜明けをイメージした、無限に広がる期待感。新たな旅立ちや希望を感じさせる、壮大で清々しいサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1780997944620_9",
+      "title": "Vivid Resonance",
+      "caption": "空間を満たすクリアな余韻とメロディが、静寂の中に深い感情を響かせる。新しい始まりの前の、張り詰めた期待感を表現した楽曲です。",
+      "type": "instrumental",
+      "duration": 36,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-09"
     }
   ]
 }
