@@ -9,7 +9,9 @@
         "album_1780618864460",
         "album_1780620921360",
         "album_1780992463245",
-        "album_1780994740201"
+        "album_1780994740201",
+        "album_1781059687430",
+        "album_1781060994497"
       ]
     },
     {
@@ -222,6 +224,48 @@
         "track_1780997944620_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\intro\\Intro Jazz – Soft Opening",
+      "type": ""
+    },
+    {
+      "id": "album_1781059687430",
+      "title": "Digital Ambient Intro",
+      "art": "",
+      "caption": "静かな未来感をテーマにした、短尺のデジタル系イントロ素材集。",
+      "categoryId": "cat_1779018943718",
+      "tracks": [
+        "track_1781060463806_0",
+        "track_1781060463810_1",
+        "track_1781060463810_2",
+        "track_1781060463810_3",
+        "track_1781060463810_4",
+        "track_1781060463810_5",
+        "track_1781060463810_6",
+        "track_1781060463811_7",
+        "track_1781060463811_8",
+        "track_1781060463811_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\intro\\Digital Ambient Intro",
+      "type": ""
+    },
+    {
+      "id": "album_1781060994497",
+      "title": "Wood Bass Intro",
+      "art": "",
+      "caption": "ウッドベースの柔らかい低音を中心にした、静かなイントロ素材集。 ジャズ寄りの質感を残しつつ、動画の入りを邪魔しないように、 シンプルで落ち着いたフレーズで構成している。",
+      "categoryId": "cat_1779018943718",
+      "tracks": [
+        "track_1781061638790_0",
+        "track_1781061638790_1",
+        "track_1781061638791_2",
+        "track_1781061638791_3",
+        "track_1781061638791_4",
+        "track_1781061638791_5",
+        "track_1781061638791_6",
+        "track_1781061638791_7",
+        "track_1781061638791_8",
+        "track_1781061638791_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\02intro-outro\\intro\\Wood Bass Intro",
       "type": ""
     }
   ],
@@ -1855,6 +1899,346 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-06-09"
+    },
+    {
+      "id": "track_1781060463806_0",
+      "title": "Digital Progress",
+      "caption": "進歩と進化を描く、壮大なデジタル音響体験。未来へ向かって躍動するサウンドスケープが心を満たします。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781060463810_1",
+      "title": "Serene Discovery",
+      "caption": "静寂の中から心の奥深部へと導くような、穏やかで普遍的な調べ。内面的な発見の瞬間を彩る音色です。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781060463810_2",
+      "title": "Sync Protocol",
+      "caption": "電子的なアルペジオとミニマルなビートが響き合う、高揚感のある空間。物語の転換点となる同期の調べです。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781060463810_3",
+      "title": "Dawn Of A Digital Era",
+      "caption": "新たなデジタル時代の夜明けを象徴する音響空間。静謐な始まりと、広がり続ける可能性を感じさせます。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781060463810_4",
+      "title": "Data Streams Flowing",
+      "caption": "未来へと続くデータストリームの鼓動を聴くよう、静かで連続的な流れを描写したサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781060463810_5",
+      "title": "System Boot Sequence",
+      "caption": "電子シグナルが静寂を引き裂き、新たな世界の幕開けを告げる。緊張感あふれる起動の瞬間を表現しました。",
+      "type": "instrumental",
+      "duration": 59,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781060463810_6",
+      "title": "Phase Logic",
+      "caption": "聴く者を未知の領域へと誘う、奥行きのある没入型サウンド。空間的な広がりが心を包み込みます。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781060463811_7",
+      "title": "Pristine Horizons",
+      "caption": "広大で澄み切った地平線を感じさせる、荘厳な旅路の序章。始まりと終わりを優しく彩る調べです。",
+      "type": "instrumental",
+      "duration": 151,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781060463811_8",
+      "title": "Digital Ascension",
+      "caption": "光の粒子が上昇し、変革を遂げる様子を描いたサウンドスケープ。新たな高みへ到達する瞬間を象徴的に描いています。",
+      "type": "instrumental",
+      "duration": 168,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781060463811_9",
+      "title": "Digital Momentum",
+      "caption": "テクノロジーと人間性が交差する、疾走感あふれる鼓動。新しい動きが生まれる、エネルギーに満ちた結びの章です。",
+      "type": "instrumental",
+      "duration": 101,
+      "full_url": "",
+      "tags": [
+        "Ambient",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781061638790_0",
+      "title": "Reflective Bass Solo",
+      "caption": "夜明けの帳のような、深い思索に沈むベースソロ。郷愁と静かな安らぎが混ざり合う瞬間を描くサウンド。",
+      "type": "instrumental",
+      "duration": 84,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781061638790_1",
+      "title": "Uplifting Swing Intro",
+      "caption": "軽快で弾むスウィングのリズムが、一日の始まりを明るく照らす。心地よい高揚感を運ぶサウンドトラック。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781061638791_2",
+      "title": "Profound Hope Intro",
+      "caption": "静寂の中から広がる深遠な希望を感じさせるイントロダクション。新たな旅立ちを予感させる壮大で温かい音の風景。",
+      "type": "instrumental",
+      "duration": 100,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781061638791_3",
+      "title": "Breezy Bossa Loop",
+      "caption": "晴れやかな午後のひとときを彩る、ボサノヴァのリズム。日常に軽快なグルーヴと色彩を与えます。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781061638791_4",
+      "title": "Quiet Achievement Prelude",
+      "caption": "静寂の中に宿る達成の予感、物語の始まりや節目を演出する空気感。深みのあるプレリュードです。",
+      "type": "instrumental",
+      "duration": 102,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781061638791_5",
+      "title": "Jazz Intro Energy",
+      "caption": "洗練されたジャズクラブのような、朝のエネルギー。軽快なリズムとブラスセクションが幕開けを告げる高揚感。",
+      "type": "instrumental",
+      "duration": 161,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781061638791_6",
+      "title": "Velvet Discovery",
+      "caption": "秘密めいた夜明けを思わせる、ベルベットのようなサウンドスケープ。静謐な空間から新たな発見へ誘うムード。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781061638791_7",
+      "title": "Subtle Resolve",
+      "caption": "確かな決意を秘めた穏やかな音。新しい歩みを始める際に寄り添う、壮大でありながらも優しく響くサウンド。",
+      "type": "instrumental",
+      "duration": 171,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781061638791_8",
+      "title": "Sun Drenched Sidewalk",
+      "caption": "陽光が降り注ぐのどかな散歩道。時間が穏やかに流れる、心地よい日常をイメージした風景音のようなトラック。",
+      "type": "instrumental",
+      "duration": 146,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
+    },
+    {
+      "id": "track_1781061638791_9",
+      "title": "Gentle Hope Solo",
+      "caption": "夜明け前の静けさから届く、優しいソロ。心が落ち着き、安らぎを感じる瞬間に寄り添います。",
+      "type": "instrumental",
+      "duration": 165,
+      "full_url": "",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-10"
     }
   ]
 }
