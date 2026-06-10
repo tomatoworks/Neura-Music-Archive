@@ -8,7 +8,9 @@ export const state = {
   currentAlbum: null,
   playingTrack: null,
   isPlaying: false,
-  searchQuery: ''
+  searchQuery: '',
+  currentMode: 'theme',
+  currentContentId: null
 };
 
 window.state = state;
@@ -68,6 +70,7 @@ async function init() {
 }
 
 window.selectTheme = (themeId) => {
+  state.currentMode = 'theme';
   state.currentThemeId = themeId;
   state.currentAlbum = null;
   state.searchQuery = '';
@@ -75,6 +78,30 @@ window.selectTheme = (themeId) => {
   const searchInput = document.getElementById('search-input');
   if (searchInput) searchInput.value = '';
   
+  renderThemes();
+  renderMainContent();
+  document.getElementById('scroll-area').scrollTo(0, 0);
+};
+
+window.selectTool = (toolId) => {
+  state.currentMode = 'tool';
+  state.currentContentId = toolId;
+  state.currentAlbum = null;
+  state.searchQuery = '';
+  const searchInput = document.getElementById('search-input');
+  if (searchInput) searchInput.value = '';
+  renderThemes();
+  renderMainContent();
+  document.getElementById('scroll-area').scrollTo(0, 0);
+};
+
+window.selectArticle = (articleId) => {
+  state.currentMode = 'article';
+  state.currentContentId = articleId;
+  state.currentAlbum = null;
+  state.searchQuery = '';
+  const searchInput = document.getElementById('search-input');
+  if (searchInput) searchInput.value = '';
   renderThemes();
   renderMainContent();
   document.getElementById('scroll-area').scrollTo(0, 0);

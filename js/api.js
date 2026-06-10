@@ -50,12 +50,21 @@ export async function fetchSiteData() {
     }
 
     const themePromises = manifest.theme_files.map(file => 
-      fetch(`${dataPath}/${file}`).then(res => res.json())
+      fetch(`${dataPath}/${file}`).then(res => {
+        if (!res.ok) {
+          console.warn(`Theme file not found: ${file}`);
+          return null;
+        }
+        return res.json();
+      }).catch(e => {
+        console.warn(`Failed to fetch theme file: ${file}`, e);
+        return null;
+      })
     );
     
-    const themes = await Promise.all(themePromises);
+    const themesData = await Promise.all(themePromises);
+    const themes = themesData.filter(theme => theme !== null);
 
-    // pages.jsonの取得を追加
     let pagesData = {};
     try {
       const pagesRes = await fetch(`${dataPath}/pages.json`);
@@ -64,10 +73,15 @@ export async function fetchSiteData() {
       console.warn("Pages data not found");
     }
 
+    const tools = manifest.tools || [];
+    const articles = manifest.articles || [];
+
     return {
       settings,
       themes,
-      pagesData
+      pagesData,
+      tools,
+      articles
     };
 
   } catch (error) {

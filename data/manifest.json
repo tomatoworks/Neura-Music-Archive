@@ -8,9 +8,7 @@
     "05.json",
     "06.json",
     "07.json",
-    "08.json",
-    "09.json",
-    "10.json"
+    "08.json"
   ],
   "tools": [
     {
@@ -21,5 +19,13 @@
       "is_visible": true
     }
   ],
-  "articles": []
+  "articles": [
+    {
+      "id": "article_20260610125859",
+      "title": "Neura Music Archiveとは",
+      "content_url": "./contents/articles/",
+      "date": "2026-06-10",
+      "is_visible": true
+    }
+  ]
 }

@@ -96,7 +96,7 @@ export function renderThemes() {
   const themeListMobile = document.getElementById('theme-list-mobile');
 
   const createThemeHtml = (theme, isMobile) => {
-    const isActive = theme.id === state.currentThemeId && !state.searchQuery;
+    const isActive = state.currentMode === 'theme' && theme.id === state.currentThemeId && !state.searchQuery;
     const activeClass = isActive 
       ? (isMobile ? 'text-gray-900 dark:text-gray-100 font-bold border-b-2 border-gray-900 dark:border-gray-100 pb-1' : 'bg-gray-100 dark:bg-[#4a4a4a] text-gray-900 dark:text-gray-100 font-bold rounded-md')
       : (isMobile ? 'text-gray-500 dark:text-gray-400 pb-1' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#404040] hover:text-gray-900 dark:hover:text-gray-100 rounded-md');
@@ -108,8 +108,39 @@ export function renderThemes() {
       : `<li><button class="w-full text-left px-3 py-2 text-sm transition flex justify-between items-center ${activeClass}" onclick="selectTheme('${theme.id}')"><span>${theme.name}</span> <span class="text-[10px] font-mono bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 px-1.5 py-0.5 rounded-full">${trackCount}</span></button></li>`;
   };
 
+  const createItemHtml = (item, type, isMobile) => {
+    if (item.is_visible === false) return '';
+    const isActive = state.currentMode === type && state.currentContentId === item.id;
+    const activeClass = isActive
+      ? (isMobile ? 'text-gray-900 dark:text-gray-100 font-bold border-b-2 border-gray-900 dark:border-gray-100 pb-1' : 'bg-gray-100 dark:bg-[#4a4a4a] text-gray-900 dark:text-gray-100 font-bold rounded-md')
+      : (isMobile ? 'text-gray-500 dark:text-gray-400 pb-1' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#404040] hover:text-gray-900 dark:hover:text-gray-100 rounded-md');
+    const onClick = type === 'tool' ? `selectTool('${item.id}')` : `selectArticle('${item.id}')`;
+    return isMobile
+      ? `<button class="text-sm transition flex items-center gap-1.5 ${activeClass}" onclick="${onClick}">${item.title}</button>`
+      : `<li><button class="w-full text-left px-3 py-2 text-sm transition flex justify-between items-center ${activeClass}" onclick="${onClick}"><span>${item.title}</span></button></li>`;
+  };
+
   if (themeList) themeList.innerHTML = state.data.themes.map(t => createThemeHtml(t, false)).join('');
-  if (themeListMobile) themeListMobile.innerHTML = state.data.themes.map(t => createThemeHtml(t, true)).join('');
+  
+  let mobileHtml = state.data.themes.map(t => createThemeHtml(t, true)).join('');
+
+  const toolList = document.getElementById('tool-list');
+  const toolsHeading = document.getElementById('tools-heading');
+  if (toolList && toolsHeading && state.data.tools && state.data.tools.length > 0) {
+    toolsHeading.classList.remove('hidden');
+    toolList.innerHTML = state.data.tools.map(t => createItemHtml(t, 'tool', false)).join('');
+    mobileHtml += state.data.tools.map(t => createItemHtml(t, 'tool', true)).join('');
+  }
+
+  const articleList = document.getElementById('article-list');
+  const articlesHeading = document.getElementById('articles-heading');
+  if (articleList && articlesHeading && state.data.articles && state.data.articles.length > 0) {
+    articlesHeading.classList.remove('hidden');
+    articleList.innerHTML = state.data.articles.map(a => createItemHtml(a, 'article', false)).join('');
+    mobileHtml += state.data.articles.map(a => createItemHtml(a, 'article', true)).join('');
+  }
+
+  if (themeListMobile) themeListMobile.innerHTML = mobileHtml;
 }
 
 export function renderMainContent() {
@@ -118,12 +149,35 @@ export function renderMainContent() {
   if (state.searchQuery) {
     const results = filterTracksBySearch(state.data.themes, state.searchQuery);
     renderSearchResults(results);
+  } else if (state.currentMode === 'tool') {
+    const tool = state.data.tools.find(t => t.id === state.currentContentId);
+    if (tool) renderExternalContent(tool);
+  } else if (state.currentMode === 'article') {
+    const article = state.data.articles.find(a => a.id === state.currentContentId);
+    if (article) renderExternalContent(article);
   } else if (state.currentAlbum) {
     renderAlbumDetail(state.currentAlbum);
   } else {
     const theme = state.data.themes.find(t => t.id === state.currentThemeId);
     if (theme) renderAlbumGrid(theme);
   }
+}
+
+function renderExternalContent(item) {
+  const mainContent = document.getElementById('main-content');
+  const iframeUrl = item.content_url.endsWith('/') ? `${item.content_url}${item.id}/index.html` : item.content_url;
+  
+  mainContent.innerHTML = `
+    <div class="max-w-5xl mx-auto h-full flex flex-col pb-10">
+      <div class="mb-6">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-gray-100">${item.title}</h2>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-mono">${item.date}</p>
+      </div>
+      <div class="flex-1 min-h-[70vh] border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden bg-white dark:bg-[#242424] shadow-sm relative">
+        <iframe src="${iframeUrl}" class="absolute inset-0 w-full h-full border-none" allow="fullscreen"></iframe>
+      </div>
+    </div>
+  `;
 }
 
 function renderSearchResults(results) {
