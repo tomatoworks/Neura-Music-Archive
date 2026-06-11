@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,11 @@
   <!-- Google Fonts: Plus Jakarta Sans & Noto Sans JP -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
@@ -26,56 +28,57 @@
     body {
       font-feature-settings: "palt";
     }
+
     /* スクロールバーのカスタマイズ（モノトーン調） */
     ::-webkit-scrollbar {
       width: 6px;
     }
+
     .dark ::-webkit-scrollbar-track {
       background: #000000;
     }
+
     ::-webkit-scrollbar-track {
       background: #ffffff;
     }
+
     .dark ::-webkit-scrollbar-thumb {
       background: #27272a;
     }
+
     ::-webkit-scrollbar-thumb {
       background: #e4e4e7;
       border-radius: 3px;
     }
+
     .dark ::-webkit-scrollbar-thumb:hover {
       background: #3f3f46;
     }
+
     ::-webkit-scrollbar-thumb:hover {
       background: #d4d4d8;
     }
   </style>
 </head>
-<body class="bg-white dark:bg-black text-slate-800 dark:text-zinc-200 font-sans antialiased selection:bg-slate-900 selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-200">
+
+<body
+  class="bg-white dark:bg-black text-slate-800 dark:text-zinc-200 font-sans antialiased selection:bg-slate-900 selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-200">
 
   <!-- テーマ切り替え用のフローティングトグル -->
   <div class="fixed top-4 right-4 z-50">
-    <button id="theme-toggle" class="p-2 rounded-lg border border-slate-200 dark:border-zinc-800 bg-white/80 dark:bg-black/80 backdrop-blur-sm text-slate-800 dark:text-zinc-200 hover:bg-slate-100 dark:hover:bg-zinc-900 transition-colors focus:outline-none" aria-label="テーマの切り替え">
-      <!-- 太陽のアイコン（ダークモード時に表示） -->
-      <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"/>
-      </svg>
-      <!-- 月のアイコン（ライトモード時に表示） -->
-      <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-      </svg>
-    </button>
+
   </div>
 
   <div class="min-h-screen flex flex-col">
 
     <!-- メインコンテンツ (余白を py-20 → py-10 に削減) -->
     <main class="flex-1 max-w-3xl mx-auto px-6 py-10 md:py-16 w-full space-y-12 md:space-y-16">
-      
+
       <!-- ヒーロー / イントロダクション -->
       <section id="about" class="space-y-6">
         <div class="space-y-3">
-          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-300 text-xs font-semibold tracking-wider uppercase">
+          <div
+            class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-300 text-xs font-semibold tracking-wider uppercase">
             Concept & Guidelines
           </div>
           <h1 class="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-none">
@@ -83,7 +86,8 @@
           </h1>
         </div>
 
-        <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4 border-l-2 border-slate-800 dark:border-zinc-200 pl-4">
+        <div
+          class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4 border-l-2 border-slate-800 dark:border-zinc-200 pl-4">
           <p>
             Neura Music Archive（NMA）は、生成AIで制作したロイヤリティフリーの楽曲を、用途ごとに整理して自由に使える形で提供しているサイトです。
           </p>
@@ -94,11 +98,13 @@
             NMA では、用途ごとの探しやすさを重視し、音楽の最小カテゴリとして馴染みのある「アルバム」という単位でまとめています。
           </p>
           <p>
-            配信のイントロやアウトロ、VLOG の朝のルーティン用BGM、カフェの店内BGM、ゲームのタイトル画面やメニュー画面、ロイヤリティフリーでは数が少ないボーカル曲など、“どんな場面で使うか” を基準にテーマを分けています。どの曲も、利用規約の範囲内で自由にお使いいただけます。
+            配信のイントロやアウトロ、VLOG の朝のルーティン用BGM、カフェの店内BGM、ゲームのタイトル画面やメニュー画面、ロイヤリティフリーでは数が少ないボーカル曲など、“どんな場面で使うか”
+            を基準にテーマを分けています。どの曲も、利用規約の範囲内で自由にお使いいただけます。
           </p>
         </div>
 
-        <div class="p-3.5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+        <div
+          class="p-3.5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
           <span class="font-bold text-slate-800 dark:text-zinc-200">Neura（ニューラ）の由来：</span><br>
           Neuro（神経）から連想して作った造語です。名前として扱うときに収まりが良いことを理由に採用しています。
         </div>
@@ -119,7 +125,8 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
           <!-- VOCAL -->
-          <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
             <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
               VOCAL
@@ -130,7 +137,8 @@
           </div>
 
           <!-- INTRO / OUTRO -->
-          <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
             <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
               INTRO / OUTRO
@@ -141,7 +149,8 @@
           </div>
 
           <!-- CAFE BGM -->
-          <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
             <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
               CAFE BGM
@@ -152,7 +161,8 @@
           </div>
 
           <!-- VLOG -->
-          <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
             <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
               VLOG
@@ -163,7 +173,8 @@
           </div>
 
           <!-- EDM -->
-          <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1 col-span-1 md:col-span-2">
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1 col-span-1 md:col-span-2">
             <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
               EDM
@@ -174,7 +185,8 @@
           </div>
 
           <!-- GAME -->
-          <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
             <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
               GAME
@@ -185,7 +197,8 @@
           </div>
 
           <!-- CINEMATIC -->
-          <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
             <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
               CINEMATIC
@@ -196,7 +209,8 @@
           </div>
 
           <!-- WORK -->
-          <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1 col-span-1 md:col-span-2">
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1 col-span-1 md:col-span-2">
             <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
               WORK
@@ -227,7 +241,8 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
-          <div class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-2">
+          <div
+            class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-2">
             <span class="text-[10px] font-bold text-slate-500 dark:text-zinc-400 tracking-wider uppercase">INTRO</span>
             <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">イントロ・アルバム</h4>
             <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
@@ -235,7 +250,8 @@
             </p>
           </div>
 
-          <div class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-2">
+          <div
+            class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-2">
             <span class="text-[10px] font-bold text-slate-500 dark:text-zinc-400 tracking-wider uppercase">OUTRO</span>
             <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">アウトロ・アルバム</h4>
             <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
@@ -265,10 +281,10 @@
             スクリーンショット付きで工程をまとめていますので、必要な方はそちらをご覧ください。
           </p>
           <div class="pt-1">
-            <a href="#" class="inline-flex items-center gap-1.5 text-slate-800 hover:text-black dark:text-zinc-300 dark:hover:text-white font-medium text-xs transition-colors group underline underline-offset-4">
-              制作フローの詳細はこちら 
-              <svg class="w-3 h-3 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-            </a>
+            <a href="#"
+              class="inline-flex items-center gap-1.5 text-slate-800 hover:text-black dark:text-zinc-300 dark:hover:text-white font-medium text-xs transition-colors group underline underline-offset-4">
+              制作フローの詳細はこちら
+              <a href="https://example.com/flow" target="_blank" class="inline-flex items-center..."> </a>
           </div>
         </div>
 
@@ -301,7 +317,8 @@
 
         <div class="space-y-4">
           <!-- 項目1 -->
-          <div class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
+          <div
+            class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
             <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">著作権と利用許諾</h4>
             <p class="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">
               提供される楽曲の著作権は制作者に帰属します。ユーザーは、非商用・商用を問わず、本楽曲を無料で利用できます。
@@ -309,7 +326,8 @@
           </div>
 
           <!-- 項目2 -->
-          <div class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
+          <div
+            class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
             <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">禁止事項</h4>
             <p class="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">
               楽曲の二次配布、販売、自作発言は禁止しています。
@@ -317,18 +335,21 @@
           </div>
 
           <!-- 項目3 -->
-          <div class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-2">
+          <div
+            class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-2">
             <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">AI生成物の明示と識別情報</h4>
             <p class="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">
               当サイトの音源はすべて生成AIにより作成されたコンテンツです。EU AI法を含む各地域の法令に基づき、AI生成物であることを明示しています。
             </p>
             <p class="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">
-              また、音源には Google SynthID などの識別情報が埋め込まれており、AI生成であることを確認できる仕組みが含まれています。これらの識別情報は利用者の個人情報とは無関係であり、追跡や特定を目的とするものではありません。
+              また、音源には Google SynthID
+              などの識別情報が埋め込まれており、AI生成であることを確認できる仕組みが含まれています。これらの識別情報は利用者の個人情報とは無関係であり、追跡や特定を目的とするものではありません。
             </p>
           </div>
 
           <!-- 項目4 -->
-          <div class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
+          <div
+            class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
             <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">商用利用について</h4>
             <p class="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">
               すべての楽曲は商用利用が可能です。動画制作、配信、店舗BGM、アプリ・ゲーム制作など、用途を問わずご利用いただけます。
@@ -336,7 +357,8 @@
           </div>
 
           <!-- 項目5 -->
-          <div class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
+          <div
+            class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
             <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">クレジット表記について</h4>
             <p class="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">
               クレジット表記は不要です。任意で記載する場合は「Neura Music Archive」または「NMA」と記載してください。
@@ -355,7 +377,8 @@
           </h2>
         </div>
 
-        <div class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 text-xs text-slate-600 dark:text-zinc-400 leading-relaxed space-y-3">
+        <div
+          class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 text-xs text-slate-600 dark:text-zinc-400 leading-relaxed space-y-3">
           <p>
             当サイトは、ユーザーのプライバシーを尊重し、個人情報の保護に努めています。
           </p>
@@ -374,52 +397,15 @@
     </main>
 
     <!-- フッター (余白を少し縮小) -->
-    <footer class="bg-slate-50 dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-900 py-8 text-center text-xs text-slate-500 dark:text-zinc-500 space-y-1.5 relative z-10">
+    <footer
+      class="bg-slate-50 dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-900 py-8 text-center text-xs text-slate-500 dark:text-zinc-500 space-y-1.5 relative z-10">
       <p>Neura Music Archive (NMA) — ロイヤリティフリー音楽アーカイブ</p>
       <p class="font-mono">&copy; 2026 Neura Music Archive</p>
     </footer>
   </div>
 
   <!-- テーマ切り替えスクリプト -->
-  <script>
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
-    // 初期テーマの設定
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-      themeToggleLightIcon.classList.remove('hidden');
-    } else {
-      document.documentElement.classList.remove('dark');
-      themeToggleDarkIcon.classList.remove('hidden');
-    }
-
-    // 手動トグル処理
-    themeToggleBtn.addEventListener('click', function() {
-      // アイコン切り替え
-      themeToggleDarkIcon.classList.toggle('hidden');
-      themeToggleLightIcon.classList.toggle('hidden');
-
-      // ローカルストレージおよびHTMLのテーマ切り替え
-      if (localStorage.getItem('color-theme')) {
-        if (localStorage.getItem('color-theme') === 'light') {
-          document.documentElement.classList.add('dark');
-          localStorage.setItem('color-theme', 'dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-          localStorage.setItem('color-theme', 'light');
-        }
-      } else {
-        if (document.documentElement.classList.contains('dark')) {
-          document.documentElement.classList.remove('dark');
-          localStorage.setItem('color-theme', 'light');
-        } else {
-          document.documentElement.classList.add('dark');
-          localStorage.setItem('color-theme', 'dark');
-        }
-      }
-    });
-  </script>
 </body>
+
 </html>
