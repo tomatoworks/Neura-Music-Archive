@@ -25,9 +25,9 @@
     {
       "id": "article_20260610125859",
       "title": "Neura Music Archiveとは",
-      "content_url": "public-site\\contents\\articles\\article_20260610125859\\index.html",
+      "content_url": "https://cdn.neura-music.com/articles/index.html",
       "date": "2026-06-10",
-      "is_visible": false
+      "is_visible": true
     }
   ]
 }
