@@ -176,6 +176,9 @@ window.searchByTag = (tag) => {
 window.downloadTrack = async (url, title) => {
   try {
     const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
     const blob = await response.blob();
     const objectUrl = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -187,6 +190,7 @@ window.downloadTrack = async (url, title) => {
     URL.revokeObjectURL(objectUrl);
   } catch (error) {
     console.error('Download error:', error);
+    alert('ダウンロードに失敗しました。CORSエラーが発生している可能性があります。コンソールを確認してください。');
     window.open(url, '_blank');
   }
 };
