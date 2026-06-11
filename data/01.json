@@ -16,7 +16,7 @@
     {
       "id": "album_1778830866392",
       "title": "Chapter Thirteen",
-      "art": "",
+      "art": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/cover_1778843216819.webp",
       "caption": "ゲーム的な語彙で構成された、 静かで人間的な歌のアルバム。 表題曲 “Chapter Thirteen” がその締めです。",
       "categoryId": "cat_1778830805172",
       "tracks": [
@@ -34,7 +34,8 @@
         "track_1778841578361_11",
         "track_1778842088330_12"
       ],
-      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\pops\\Pop’n musica"
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\pops\\Pop’n musica",
+      "type": ""
     },
     {
       "id": "album_1778851387085",
@@ -63,7 +64,7 @@
       "caption": "夜明けの気配と、止められない高揚感を描いた、緊迫感のあるエレクトロニック・ポップサウンド",
       "type": "loop",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/Shut%20It%20Down.mp3",
       "tags": [
         "Game Music",
         "疾走感",
@@ -80,7 +81,7 @@
       "caption": "広大な宇宙の中で、運命や意味を定義するのは誰なのかを問いかける、高揚感に満ちたエモーショナルポップサウンド",
       "type": "loop",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/Who%20Names%20Them%20(Alternative%20Mix).mp3",
       "tags": [
         "Game Music",
         "疾走感",
@@ -97,7 +98,7 @@
       "caption": "過去の自分を脱ぎ捨て、高揚感と洗練されたエネルギーに満ちた、自己変革の瞬間を歌う楽曲。",
       "type": "loop",
       "duration": 171,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/New%20Version%20(Take%202).mp3",
       "tags": [
         "Game Music",
         "疾走感",
@@ -114,7 +115,7 @@
       "caption": "すべてのものが私を必要としている。止まることのない、世界の動きを象徴する楽曲。",
       "type": "loop",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/The%20Tide%20Maker.mp3",
       "tags": [
         "Game Music",
         "疾走感",
@@ -131,7 +132,7 @@
       "caption": "深海からの切実な叫び、航路なき場所に身を任せるVOCALトラック。",
       "type": "loop",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/Zero%20Frequency.mp3",
       "tags": [
         "Game Music",
         "疾走感",
@@ -148,7 +149,7 @@
       "caption": "何も残らない虚無と、繰り返されるサイクルから抜け出そうとする衝動",
       "type": "loop",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/Zero%20Again.mp3",
       "tags": [
         "Game Music",
         "疾走感",
@@ -165,7 +166,7 @@
       "caption": "重く、引きずられるような感情や時間の重みを表現した楽曲",
       "type": "loop",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/Small%20Weight.mp3",
       "tags": [
         "Game Music",
         "疾走感",
@@ -182,7 +183,7 @@
       "caption": "氷の壁を打ち破り、勝つ瞬間を謳う高揚感あふれるアンセム。すべてを出し尽くすような疾走感が特徴。",
       "type": "loop",
       "duration": 181,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/Triple%20Scoop%20Victory%20(Version%202).mp3",
       "tags": [
         "Game Music",
         "疾走感",
@@ -199,7 +200,7 @@
       "caption": "激しい外の世界から、静かで安全な場所へ戻ってくる感覚。日常のささやかな安らぎを描いた曲調。",
       "type": "loop",
       "duration": 168,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/Back%20Inside%20(Take%202).mp3",
       "tags": [
         "Game Music",
         "疾走感",
@@ -216,7 +217,7 @@
       "caption": "波が引いた後の静寂と、内なる感情の動きを捉えたサウンドスケープ",
       "type": "loop",
       "duration": 182,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/Still%20Tide.mp3",
       "tags": [
         "Game Music",
         "疾走感",
@@ -233,7 +234,7 @@
       "caption": "時間の流れと重力に翻弄される、夜明け前の静かな情景を描いた楽曲",
       "type": "loop",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/Heavy%20Now.mp3",
       "tags": [
         "Game Music",
         "疾走感",
@@ -250,7 +251,7 @@
       "caption": "甘いもの（日常のささやかな幸福）を失ったこと、罪悪感と後悔を抱えた静かな懺悔のシーンを描いたバラード。",
       "type": "loop",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/The%20Cold%20Truth.mp3",
       "tags": [
         "Game Music",
         "疾走感",
@@ -267,7 +268,7 @@
       "caption": "長い努力の末、一度立ち止まり、完成したものを封印するような、静かで達成感に満ちた瞬間を描写したサウンドトラック。",
       "type": "loop",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/Track%2013.mp3",
       "tags": [
         "Game Music",
         "疾走感",

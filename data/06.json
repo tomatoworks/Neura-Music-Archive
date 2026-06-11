@@ -1,6 +1,491 @@
 {
   "id": "theme_1778218375932",
   "name": "GAME",
-  "albums": [],
-  "tracks": []
+  "categories": [
+    {
+      "id": "cat_1781163959546",
+      "name": "Opening",
+      "albums": [
+        "album_1781163973548",
+        "album_1781171254873"
+      ],
+      "caption": "ゲームのオープニング向けに作られた短いBGMをまとめたカテゴリです。"
+    }
+  ],
+  "albums": [
+    {
+      "id": "album_1781163973548",
+      "title": "Bit Opening Set",
+      "art": "",
+      "caption": "タイトル画面や開始演出にそのまま置ける、明るくてシンプルなイントロBGMを集めています。",
+      "categoryId": "cat_1781163959546",
+      "tracks": [
+        "track_1781168013647_0",
+        "track_1781168013649_1",
+        "track_1781168013649_2",
+        "track_1781168013649_3",
+        "track_1781168013649_4",
+        "track_1781168013649_5",
+        "track_1781168013649_6",
+        "track_1781168013650_7",
+        "track_1781168013650_8",
+        "track_1781168013650_9",
+        "track_1781168013650_10",
+        "track_1781168013650_11",
+        "track_1781168013650_12",
+        "track_1781168013650_13",
+        "track_1781168013650_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\opening\\Bit Opening Set",
+      "type": ""
+    },
+    {
+      "id": "album_1781171254873",
+      "title": "Modern Synth Opening",
+      "art": "",
+      "caption": "柔らかいシンセと薄いアルペジオで組まれた、 現代ゲームのタイトル画面のための短い導入曲集。",
+      "categoryId": "cat_1781163959546",
+      "tracks": [
+        "track_1781172131883_0",
+        "track_1781172131883_1",
+        "track_1781172131883_2",
+        "track_1781172131883_3",
+        "track_1781172131883_4",
+        "track_1781172131883_5",
+        "track_1781172131883_6",
+        "track_1781172131884_7",
+        "track_1781172131884_8",
+        "track_1781172131884_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\opening\\Modern Synth Opening",
+      "type": ""
+    }
+  ],
+  "tracks": [
+    {
+      "id": "track_1781168013647_0",
+      "title": "Sunrise At Sector Eight",
+      "caption": "夜明けを迎える未来都市の残響。希望とノスタルジーが交差するセクターエイトでの物語を音で描く。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013649_1",
+      "title": "The Last Plateau",
+      "caption": "到達点に立つ静寂。全ての旅路を経て辿り着いた、次の展開を予感させる高みからの視点。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013649_2",
+      "title": "Sunrise On The Map",
+      "caption": "広大なマップ上での新たな始まり。冒険の無限の可能性を感じさせる、力強く穏やかなサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013649_3",
+      "title": "Button Masher S Joyride",
+      "caption": "デジタルノイズと高速ビートが絡み合う、エキサイティングなゲームプレイの極地を表現する楽曲。",
+      "type": "instrumental",
+      "duration": 159,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013649_4",
+      "title": "Morning At The Save Point",
+      "caption": "光が差し込む休息の場。次に進むための内なる決意と静寂を湛えた、ひとときの平穏な時間。",
+      "type": "instrumental",
+      "duration": 125,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013649_5",
+      "title": "Sunny Shoreline Sprint",
+      "caption": "陽光溢れる海岸線を疾走する躍動感。自由への衝動とほとばしる活力がテーマのサウンドトラック。",
+      "type": "instrumental",
+      "duration": 151,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013649_6",
+      "title": "Sunrise At The Joystick",
+      "caption": "新たな試練を迎える、ゲーム開始を告げる清々しいオープニング。期待感を高める壮大な導入部。",
+      "type": "instrumental",
+      "duration": 127,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013650_7",
+      "title": "Sequence Complete",
+      "caption": "起動プロセスの完了。無数のデータ信号が同期し、世界が再構築される瞬間のデジタルな覚醒。",
+      "type": "vocal",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "Initializing sequence active.\nSyntax verified.\nFrequency calibrated.\nKernel loading.\n\nBuffer full.\nVoltage stable.\nExecuting primary drive.\nExecuting primary drive.\nDigital awakening.\nOptimize system readiness.\n\nWe are live.\nBinary recitationality.\nPure power.\nSequence complete.\nSystem online.\n\nProcessing binary streams.\nZeros and ones.\nZeros and ones.\nHigh-speed logic.\nLogic.\n\nError correction complete.\nPulse frequency modulation engaged.\nOptimizing every circuit.\nOptimize system readiness.\n\nWe are live.\nBinary recitationality.\nPure power.\nSequence complete.\nSystem online.\nSystem online.\nSystem online.\n\nReady.",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013650_8",
+      "title": "Through The Tall Grass",
+      "caption": "未知の領域へ足を踏み出す予感。草木をかき分けながら進む、期待に満ちた探索と旅の始まり。",
+      "type": "instrumental",
+      "duration": 97,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013650_9",
+      "title": "Level Twelve Arrival",
+      "caption": "次なる局面への移行点。高揚と緊張が交錯する、劇的なステージチェンジを感じさせる展開。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013650_10",
+      "title": "The Clockwork Wake",
+      "caption": "歯車と蒸気で織りなす機械仕掛けの夢。時間そのものが構造物であるかのような、重厚で退廃的な情景描写。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013650_11",
+      "title": "Morning At The Finish Line",
+      "caption": "努力の果てに訪れる静寂。ゴール後の達成感と余韻が溶け合う、生命的な朝の光景を彩る音色。",
+      "type": "instrumental",
+      "duration": 119,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013650_12",
+      "title": "Jump To Level One",
+      "caption": "リセットされ、再始動する瞬間。敗北の寂しさから立ち直り、再び力強い一歩を踏み出す爽快感。",
+      "type": "instrumental",
+      "duration": 159,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013650_13",
+      "title": "Level One Bound",
+      "caption": "未踏の世界への旅路が始まる高揚感。新たな章に向けて期待と決意を込めた幕開けのテーマ。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781168013650_14",
+      "title": "The Gearbox Hymn",
+      "caption": "緻密な機械機構による、力強い祝福の祝祭。壮大なリズムがゲーム世界の熱狂的な興奮を増幅させる。",
+      "type": "instrumental",
+      "duration": 63,
+      "full_url": "",
+      "tags": [
+        "EDM",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781172131883_0",
+      "title": "Impending Discovery",
+      "caption": "未知への領域が広がる予感。期待と緊張が交錯する、加速的なサウンドスケープ。物語の新たな幕開けを彩るインストゥルメンタルです。",
+      "type": "instrumental",
+      "duration": 113,
+      "full_url": "",
+      "tags": [
+        "Cinematic",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781172131883_1",
+      "title": "Breaking Through The Dark",
+      "caption": "暗闇から抜け出し、希望に向かって前進する力強い軌跡。困難な状況を乗り越えるための決意と疾走感を表現した楽曲です。",
+      "type": "instrumental",
+      "duration": 117,
+      "full_url": "",
+      "tags": [
+        "Cinematic",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781172131883_2",
+      "title": "Futuristic Tension Loop",
+      "caption": "テクノロジーが支配する未来都市の鼓動。高揚感と張り詰めた緊張感が入り混じる、エレクトロニックなグルーヴを描き出します。",
+      "type": "instrumental",
+      "duration": 160,
+      "full_url": "",
+      "tags": [
+        "Cinematic",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781172131883_3",
+      "title": "The Awakening",
+      "caption": "目覚めへの静かな移行期。未知の力が徐々に解き放たれる過程を捉えた、壮大なオーケストレーションが支配する物語性の高いサウンドトラックです。",
+      "type": "instrumental",
+      "duration": 101,
+      "full_url": "",
+      "tags": [
+        "Cinematic",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781172131883_4",
+      "title": "Precision Pulse",
+      "caption": "計算された電子的な脈動が響く緊迫の瞬間。細部に宿る緊張感と高揚感が交差する、勝利への道筋を描き出すサウンドデザインです。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "",
+      "tags": [
+        "Cinematic",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781172131883_5",
+      "title": "Ascending Tension",
+      "caption": "クライマックスへと盛り上がる劇的な展開。物語の大きな転換点や重大な発見を予感させる、重厚で感情豊かなアンビエント・サウンドスケープです。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "",
+      "tags": [
+        "Cinematic",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781172131883_6",
+      "title": "System Online",
+      "caption": "機械文明が起動する深部から響き渡るデジタルノイズ。システム内部の鼓動のリズムに乗せ、物語の第二幕が始まる瞬間を描写します。",
+      "type": "instrumental",
+      "duration": 153,
+      "full_url": "",
+      "tags": [
+        "Cinematic",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781172131884_7",
+      "title": "Grand Emergence",
+      "caption": "世界観が広がり、新たな章が始まる雄大さ。壮大なスケールを感じさせるシネマティックなサウンドトラックが、次の舞台へとリスナーを誘います。",
+      "type": "instrumental",
+      "duration": 160,
+      "full_url": "",
+      "tags": [
+        "Cinematic",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781172131884_8",
+      "title": "Velocity Rush",
+      "caption": "加速し続ける衝動的なバイタリティ。全てを懸けて突き進むようなエネルギーと高揚感を、ノンストップのリズムで描き切ったサウンドです。",
+      "type": "instrumental",
+      "duration": 144,
+      "full_url": "",
+      "tags": [
+        "Cinematic",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1781172131884_9",
+      "title": "Epic Unveiling",
+      "caption": "目覚める世界が目の前に展開する荘厳な光景。壮大な音響と加速度的なリズムが、物語の本格的な幕開けを力強く告げるサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 150,
+      "full_url": "",
+      "tags": [
+        "Cinematic",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-11"
+    }
+  ]
 }

@@ -146,6 +146,12 @@ export function renderThemes() {
 export function renderMainContent() {
   if (!state.data) return;
   
+  const mainContent = document.getElementById('main-content');
+  
+  // 他の画面に戻った際に、通常の余白を復元する処理
+  mainContent.classList.remove('p-0', 'flex', 'flex-col');
+  mainContent.classList.add('p-4', 'md:p-8');
+  
   if (state.searchQuery) {
     const results = filterTracksBySearch(state.data.themes, state.searchQuery);
     renderSearchResults(results);
@@ -167,16 +173,13 @@ function renderExternalContent(item) {
   const mainContent = document.getElementById('main-content');
   const iframeUrl = item.content_url.endsWith('/') ? `${item.content_url}${item.id}/index.html` : item.content_url;
   
+  // iframeを領域いっぱいに広げるため、親要素の余白を消してflexレイアウトに変更
+  mainContent.classList.remove('p-4', 'md:p-8');
+  mainContent.classList.add('p-0', 'flex', 'flex-col');
+  
+  // タイトルや枠線をなくし、iframeだけを配置
   mainContent.innerHTML = `
-    <div class="max-w-5xl mx-auto h-full flex flex-col pb-10">
-      <div class="mb-6">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-gray-100">${item.title}</h2>
-        <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-mono">${item.date}</p>
-      </div>
-      <div class="flex-1 min-h-[70vh] border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden bg-white dark:bg-[#242424] shadow-sm relative">
-        <iframe src="${iframeUrl}" class="absolute inset-0 w-full h-full border-none" allow="fullscreen"></iframe>
-      </div>
-    </div>
+    <iframe src="${iframeUrl}" class="flex-1 w-full border-none block" allow="fullscreen"></iframe>
   `;
 }
 
