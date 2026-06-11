@@ -173,4 +173,22 @@ window.searchByTag = (tag) => {
   document.getElementById('scroll-area').scrollTo(0, 0);
 };
 
+window.downloadTrack = async (url, title) => {
+  try {
+    const response = await fetch(url);
+    const blob = await response.blob();
+    const objectUrl = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = objectUrl;
+    a.download = `${title}.mp3`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(objectUrl);
+  } catch (error) {
+    console.error('Download error:', error);
+    window.open(url, '_blank');
+  }
+};
+
 init();

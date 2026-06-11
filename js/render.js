@@ -217,7 +217,7 @@ function renderSearchResults(results) {
       ? "text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition cursor-pointer"
       : "text-gray-200 dark:text-gray-700 cursor-not-allowed";
     const fullBtnAction = hasFull
-      ? `onclick="window.open('${track.full_url}', '_blank')"`
+      ? `onclick="downloadTrack('${track.full_url}', '${track.title.replace(/'/g, "\\'")}')"`
       : `title="フル音源がありません" disabled`;
 
     const tagsHtml = (track.tags && track.tags.length > 0)
@@ -262,7 +262,7 @@ function renderSearchResults(results) {
 
         <button class="flex flex-col items-center justify-center w-12 h-12 ${fullBtnClass}" ${fullBtnAction}>
           <svg class="w-5 h-5 mb-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-          <span class="text-[10px] font-bold">FULL</span>
+          <span class="text-[10px] font-bold">DL</span>
         </button>
       </div>
     </div>
@@ -406,7 +406,7 @@ export function renderAlbumDetail(album) {
       ? "text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition cursor-pointer"
       : "text-gray-200 dark:text-gray-700 cursor-not-allowed";
     const fullBtnAction = hasFull
-      ? `onclick="window.open('${track.full_url}', '_blank')"`
+      ? `onclick="downloadTrack('${track.full_url}', '${track.title.replace(/'/g, "\\'")}')"`
       : `title="フル音源がありません" disabled`;
 
     // --- タグの生成 ---
@@ -445,7 +445,7 @@ export function renderAlbumDetail(album) {
 
         <button class="flex flex-col items-center justify-center w-12 h-12 ${fullBtnClass}" ${fullBtnAction}>
           <svg class="w-5 h-5 mb-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-          <span class="text-[10px] font-bold">FULL</span>
+          <span class="text-[10px] font-bold">DL</span>
         </button>
       </div>
     </div>
