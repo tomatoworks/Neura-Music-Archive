@@ -51,6 +51,23 @@ export function initPlayer() {
       }
     });
   }
+
+  const footerDlBtn = document.getElementById('footer-dl-btn');
+  if (footerDlBtn) {
+    footerDlBtn.addEventListener('click', () => {
+      if (!state.playingTrack || !state.data || !state.data.themes) return;
+      
+      let track = null;
+      for (const theme of state.data.themes) {
+        track = theme.tracks?.find(t => t.id === state.playingTrack);
+        if (track) break;
+      }
+      
+      if (track && track.full_url) {
+        window.downloadTrack(track.full_url, track.title);
+      }
+    });
+  }
 }
 
 export function playTrack(trackId, title, type, duration, artUrl) {
@@ -101,6 +118,12 @@ export function playTrack(trackId, title, type, duration, artUrl) {
         if (progressBar) progressBar.value = 0;
         const timeCurrentEl = document.getElementById('player-time-current');
         if (timeCurrentEl) timeCurrentEl.textContent = "0:00";
+
+        const footerDlBtn = document.getElementById('footer-dl-btn');
+        if (footerDlBtn) {
+          footerDlBtn.disabled = true;
+          footerDlBtn.className = "flex items-center space-x-1 text-sm font-medium text-gray-400 dark:text-gray-600 bg-gray-50 dark:bg-gray-900 cursor-not-allowed px-3 py-1.5 rounded transition";
+        }
       }
     }
     
@@ -111,6 +134,13 @@ export function playTrack(trackId, title, type, duration, artUrl) {
     }
     
     document.getElementById('player-track-name').textContent = title;
+
+    const footerDlBtn = document.getElementById('footer-dl-btn');
+    if (footerDlBtn) {
+      footerDlBtn.disabled = false;
+      footerDlBtn.className = "flex items-center space-x-1 text-sm font-medium text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-1.5 rounded transition cursor-pointer";
+    }
+
     if (duration) {
       const m = Math.floor(duration / 60);
       const s = Math.floor(duration % 60).toString().padStart(2, '0');
@@ -224,5 +254,11 @@ export function playNextTrack() {
     state.isPlaying = false;
     updatePlayerUI();
     renderMainContent();
+
+    const footerDlBtn = document.getElementById('footer-dl-btn');
+    if (footerDlBtn) {
+      footerDlBtn.disabled = true;
+      footerDlBtn.className = "flex items-center space-x-1 text-sm font-medium text-gray-400 dark:text-gray-600 bg-gray-50 dark:bg-gray-900 cursor-not-allowed px-3 py-1.5 rounded transition";
+    }
   }
 }
