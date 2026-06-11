@@ -57,7 +57,7 @@
     {
       "id": "album_1779423529382",
       "title": "Bossa Nova Summer",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Summer/cover_1779425734971.webp",
       "caption": "夏の明るい光とゆるい風をイメージした、軽やかなボサノヴァBGM。 カフェや作業用に向いた、涼しさと透明感のある英語ボーカル曲をまとめています。",
       "categoryId": "cat_1779349938035",
       "tracks": [
@@ -78,7 +78,7 @@
     {
       "id": "album_1779516226402",
       "title": "Bossa Nova Autumn",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Autumn/cover_1779518083402.webp",
       "caption": "乾いた風と午後の光に溶ける、静かな秋のボーカル・ボサノヴァ。ポルトガル語ボーカル。",
       "categoryId": "cat_1779349938035",
       "tracks": [
@@ -99,7 +99,7 @@
     {
       "id": "album_1779519063264",
       "title": "Bossa Nova Winter",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Winter/cover_1779520817448.webp",
       "caption": "冬の静けさと柔らかな灯りをイメージした、落ち着いたボサノヴァBGM。 穏やかな空気に寄り添うスペイン語ボーカル曲をまとめています。",
       "categoryId": "cat_1779349938035",
       "tracks": [
@@ -120,7 +120,7 @@
     {
       "id": "album_1779617139066",
       "title": "朝のボサノヴァ",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%9C%9D%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/cover_1779628456614.webp",
       "caption": "朝のカフェ時間に合う、静かで柔らかなアンビエント系ボサノヴァを集めたインストアルバムです。",
       "categoryId": "cat_1779349953911",
       "tracks": [
@@ -141,7 +141,7 @@
     {
       "id": "album_1779617450258",
       "title": "昼のボサノヴァ",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%98%BC%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/cover_1779678543524.webp",
       "caption": "昼のカフェ時間に合う、明るく軽やかなボサノヴァ・インストを集めたBGMアルバムです。」",
       "categoryId": "cat_1779349953911",
       "tracks": [
@@ -162,7 +162,7 @@
     {
       "id": "album_1779617464494",
       "title": "夜のボサノヴァ",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/Instrumental/%E5%A4%9C%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/cover_1779678875908.webp",
       "caption": "夜の静かなカフェに合う、落ち着いたジャズ寄りのボサノヴァ・インストをまとめたBGMアルバムです。",
       "categoryId": "cat_1779349953911",
       "tracks": [
@@ -183,7 +183,7 @@
     {
       "id": "album_1779674561884",
       "title": "喫茶店のシティポップ",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/cover_1779677782685.webp",
       "caption": "喫茶店で薄くかかっていてほしいシティポップを収録してある英語ボーカルアルバム",
       "categoryId": "cat_1779349938035",
       "tracks": [
@@ -209,7 +209,7 @@
     {
       "id": "album_1779762843836",
       "title": "純喫茶のブルース",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/cover_1779766256001.webp",
       "caption": "純喫茶でかかっていてほしいブルースをあつめたブルースボーカルアルバム。英語ボーカル。",
       "categoryId": "cat_1779349938035",
       "tracks": [
@@ -235,7 +235,7 @@
     {
       "id": "album_1779766976544",
       "title": "ジャズ喫茶のジャズ",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/cover_1779770113324.webp",
       "caption": "昼下がりの喫茶店に流れるような、落ち着いたボーカルジャズを集めたアルバムです。",
       "categoryId": "cat_1779349938035",
       "tracks": [
@@ -261,7 +261,7 @@
     {
       "id": "album_1779850863306",
       "title": "カフェのオーケストラ",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/cover_1779853927916.webp",
       "caption": "カフェの空気にそっと溶ける、小さなオーケストラのための静かなクラシック。",
       "categoryId": "cat_1779349953911",
       "tracks": [
@@ -287,7 +287,7 @@
     {
       "id": "album_1779945888370",
       "title": "カフェのオーケストラ 2",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/cover_1779948577966.webp",
       "caption": "静かなカフェの雰囲気にぴったりのBGM。静かなオーケストラサウンドを集めたアルバム",
       "categoryId": "cat_1779349953911",
       "tracks": [
@@ -313,7 +313,7 @@
     {
       "id": "album_1779948759558",
       "title": "誰も頼んでないのに優しいピアノ",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/Instrumental/%E8%AA%B0%E3%82%82%E9%A0%BC%E3%82%93%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84%E3%83%94%E3%82%A2%E3%83%8E/cover_1779950914647.webp",
       "caption": "静かで控えめなアンビエント・ピアノを中心に構成された、カフェ向けのインストゥルメンタル・アルバム。生録音風のノイズ。",
       "categoryId": "cat_1779349953911",
       "tracks": [
@@ -334,7 +334,7 @@
     {
       "id": "album_1780018213600",
       "title": "雨の日のカフェ",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%9B%A8%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7/cover_1780020790749.webp",
       "caption": "雨の日のカフェをテーマにした、静かで集中しやすいピアノBGM。外の雨音を邪魔せず、店内の空気を柔らかく整えるような落ち着いた曲調で統一しています。",
       "categoryId": "cat_1779349953911",
       "tracks": [
@@ -355,7 +355,7 @@
     {
       "id": "album_1780020846976",
       "title": "閉店前にかけるピアノBGM",
-      "art": "",
+      "art": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%96%89%E5%BA%97%E5%89%8D%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%E3%83%94%E3%82%A2%E3%83%8EBGM/cover_1780023499402.webp",
       "caption": "閉店前の静かなカフェをイメージした、落ち着いたピアノBGM。 照明が少し落ちて、一日の終わりに向かう店内の空気をそのまま音にしています。",
       "categoryId": "cat_1779349953911",
       "tracks": [
@@ -551,7 +551,7 @@
       "caption": "窓から差し込む朝の光と、グラスに注がれる琥珀色の液体が織りなす、目覚めの穏やかなひととき。",
       "type": "vocal",
       "duration": 172,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Summer/Morning_Glass.mp3",
       "tags": [
         "Bossa Nova",
         "夏っぽい",
@@ -568,7 +568,7 @@
       "caption": "静寂の中で漂う、乾燥した松葉の微かな音。午後の光と共に、洗練された空間を彩るBGMです。",
       "type": "vocal",
       "duration": 155,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Summer/Pine_Needles_Dry.mp3",
       "tags": [
         "Bossa Nova",
         "夏っぽい",
@@ -585,7 +585,7 @@
       "caption": "温かいトーンが広がるカフェ空間を、光と音で満たし、穏やかな午後の時間へと誘います。",
       "type": "vocal",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Summer/Horizon_Drinks_the_Fire.mp3",
       "tags": [
         "Bossa Nova",
         "夏っぽい",
@@ -602,7 +602,7 @@
       "caption": "午後の柔らかな光が差す、落ち着きのあるカフェ。ジャズやローファイが流れる、洗練された空間の空気感。",
       "type": "vocal",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Summer/Liquid_Glass.mp3",
       "tags": [
         "Bossa Nova",
         "夏っぽい",
@@ -619,7 +619,7 @@
       "caption": "差し込む光とピアノの音色に耳を傾ける。ゆったりとした時間の中で、自分だけの静けさを発見する時間。",
       "type": "vocal",
       "duration": 167,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Summer/The_Slowest_Hour.mp3",
       "tags": [
         "Bossa Nova",
         "夏っぽい",
@@ -636,7 +636,7 @@
       "caption": "穏やかな水面を漂うような、心が鎮まるカフェの午後。日常を忘れる癒やしの時間です。",
       "type": "vocal",
       "duration": 155,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Summer/Pilot_on_the_Water.mp3",
       "tags": [
         "Bossa Nova",
         "夏っぽい",
@@ -653,7 +653,7 @@
       "caption": "陽光に包まれたカフェの午後の情景。心地よい音楽と共に、優雅な時間を彩ります。",
       "type": "vocal",
       "duration": 158,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Summer/Golden_Gleam.mp3",
       "tags": [
         "Bossa Nova",
         "夏っぽい",
@@ -670,7 +670,7 @@
       "caption": "ノスタルジックな午後の日差し。軽やかなリズムとジャズが、心地よいグルーヴを生み出すBGM。",
       "type": "vocal",
       "duration": 165,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Summer/Gilded_Heat.mp3",
       "tags": [
         "Bossa Nova",
         "夏っぽい",
@@ -687,7 +687,7 @@
       "caption": "温かいドリンクを片手に過ごす、心地よいカフェの時間。流れる音楽に身をゆだねる、穏やかな安らぎ。",
       "type": "vocal",
       "duration": 152,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Summer/Silver_Heat.mp3",
       "tags": [
         "Bossa Nova",
         "夏っぽい",
@@ -704,7 +704,7 @@
       "caption": "光と香り、そして心地よい時間。午後の空間が持つ芸術的な美しさを描いたサウンドスケープ。",
       "type": "vocal",
       "duration": 141,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Summer/Architecture_of_Afternoons.mp3",
       "tags": [
         "Bossa Nova",
         "夏っぽい",
@@ -721,7 +721,7 @@
       "caption": "秋の午後のカフェ。落ち葉の音と、静かに語り合う心温まる予感。優雅なメロディが、時を忘れさせてくれる。",
       "type": "vocal",
       "duration": 167,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Autumn/O_Outono_da_Gente.mp3",
       "tags": [
         "Bossa Nova",
         "バラード",
@@ -737,7 +737,7 @@
       "caption": "差し込む光と、過ぎゆく午後の静寂。コーヒーの香りとともに、胸の奥にそっと寄り添う、切なくも優しい時間の大河。",
       "type": "vocal",
       "duration": 152,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Autumn/O_Doce_Peso.mp3",
       "tags": [
         "Bossa Nova",
         "バラード",
@@ -753,7 +753,7 @@
       "caption": "肌と秘密の地図のように、静かに満ちていく穏やかな時間。カフェに溶け込む、寄り添うような優しいサウンドスケープ。",
       "type": "vocal",
       "duration": 167,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Autumn/Mapa_de_Pele_e_Segredo.mp3",
       "tags": [
         "Bossa Nova",
         "バラード",
@@ -769,7 +769,7 @@
       "caption": "秋の冷気に包まれたカフェ。白い湯気と柔らかな木漏れ日が彩る、優雅で秘密めいた午後の情景描写。",
       "type": "vocal",
       "duration": 167,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Autumn/Segredo_de_Seda.mp3",
       "tags": [
         "Bossa Nova",
         "バラード",
@@ -785,7 +785,7 @@
       "caption": "秋風が運ぶ、少し切ない過去の残像。心にじんわり広がる、ノスタルジックな午後の余韻を纏うBGM。",
       "type": "vocal",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Autumn/Vento%20Saudoso.mp3",
       "tags": [
         "Bossa Nova",
         "バラード",
@@ -801,7 +801,7 @@
       "caption": "窓辺に差し込む薄暮の淡い光。静けさの中に溶け込む郷愁と、穏やかな安らぎを運ぶ時間軸。",
       "type": "vocal",
       "duration": 166,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Autumn/Crep%C3%BAsculo_mudo.mp3",
       "tags": [
         "Bossa Nova",
         "バラード",
@@ -817,7 +817,7 @@
       "caption": "窓越しの午後の陽光とともに。流れる季節の移ろいを感じながら、心地よく寄り添う温かいカフェミュージック。",
       "type": "vocal",
       "duration": 164,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Autumn/P%C3%A1gina_de_Seda.mp3",
       "tags": [
         "Bossa Nova",
         "バラード",
@@ -833,7 +833,7 @@
       "caption": "心地よい午後のカフェ空間に流れる、穏やかな哀愁。過ぎし日への想いが、心に深い安らぎの愛おしさに変わる瞬間。",
       "type": "vocal",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Autumn/Saudade_Mansa.mp3",
       "tags": [
         "Bossa Nova",
         "バラード",
@@ -849,7 +849,7 @@
       "caption": "季節の変わり目。温かいカフェで過ごす穏やかな時間の中に、静かな別れと、新しい訪れを待つ静かな憧憬を描くBGM。",
       "type": "vocal",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Autumn/O%20Primeiro%20Frio.mp3",
       "tags": [
         "Bossa Nova",
         "バラード",
@@ -865,7 +865,7 @@
       "caption": "言葉にできない瞬間の静けさ。賑わいから離れたカフェで、二人だけの穏やかな時間を過ごす情景。",
       "type": "vocal",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Autumn/No%20Sil%C3%AAncio%20(Vibe%202).mp3",
       "tags": [
         "Bossa Nova",
         "バラード",
@@ -881,7 +881,7 @@
       "caption": "灰色の空が包み込むカフェ。都会の喧騒を忘れ、儚くも叙情的な午後の光と、名もなき物語が溶け合う時間。\n切ない静けさの中で漂う、心地よいBGM。",
       "type": "vocal",
       "duration": 168,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Winter/Bajo_el_cielo_gris.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -898,7 +898,7 @@
       "caption": "雨の日の窓辺。外の風景とは対照的な、温かな琥珀色の光に包まれた静謐な空間。心の安らぎを探す、穏やかな調べ。",
       "type": "vocal",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Winter/Refugio_de_%C3%A1mbar.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -915,7 +915,7 @@
       "caption": "雪が静かに積もる日。都市の喧騒が洗い流され、時間が凍りついたような青い静寂が訪れる。優雅で温かい安息のひとときを表現するBGM。",
       "type": "vocal",
       "duration": 163,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Winter/Silencio_azul.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -932,7 +932,7 @@
       "caption": "ひだまりのような午後に流れる、温かく優しい記憶を紡ぐ時間。胸の奥をそっと撫でるような、心地よいカフェミュージック。",
       "type": "vocal",
       "duration": 155,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Winter/Hilo_Tibio.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -949,7 +949,7 @@
       "caption": "窓から差し込む暖色系の光と、心に溶けるような優しいメロディ。大切な誰かと過ごす、特別な瞬間にふさわしい調べ。",
       "type": "vocal",
       "duration": 167,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Winter/Baile_sin_nombre.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -966,7 +966,7 @@
       "caption": "窓辺に佇む。湯気から立ち昇る穏やかな情景と、冬の静けさが織りなす、心の底から安らぐひとときを映し出す光景。深い休息のためのBGM。",
       "type": "vocal",
       "duration": 165,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Winter/Nidos_de_barro.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -983,7 +983,7 @@
       "caption": "時間さえも止まってしまうような、私だけの特別な静寂の時間。都会の喧騒を忘れ、心と向き合うための、静かで内省的な午後。過剰な装飾のない、素朴な安らぎの調べ。",
       "type": "vocal",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Winter/En_mi_propia_suavidad.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1000,7 +1000,7 @@
       "caption": "穏やかな午後のカフェ空間に響く、移ろいやすい時間と美しい記憶の断片。何も残さないささやかな瞬間を優しく包み込む、余韻のあるサウンドトラック。",
       "type": "vocal",
       "duration": 163,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Winter/Pisar_la_calma.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1017,7 +1017,7 @@
       "caption": "ガラスの向こうの世界。移ろう光と静寂が作り出す幻想的なひととき。心地よい空間を視覚的に表現した、没入感のあるカフェミュージック。",
       "type": "vocal",
       "duration": 146,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Winter/Mundo_de_vidrio.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1034,7 +1034,7 @@
       "caption": "シルクのような滑らかさで、五感を包み込むような静けさ。午後の時間をゆったりと引き延ばす、繊細で洗練された安らぎの調べ。空間そのものを彩ります。",
       "type": "vocal",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Winter/Seda%20y%20Calma.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1051,7 +1051,7 @@
       "caption": "夕暮れのテラスから漂う、穏やかで心地よいメロディ。日常の喧騒を忘れさせてくれるサウンドスケープです。",
       "type": "instrumental",
       "duration": 155,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%9C%9D%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Terrace_at_Twilight.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1068,7 +1068,7 @@
       "caption": "午後の静けさの中で流れるボサノヴァ。心の奥深くを優しく撫でる、内省的なカフェのBGMとして。",
       "type": "instrumental",
       "duration": 170,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%9C%9D%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Quiet%20Introspection%20(Bossa%20Ambient).mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1085,7 +1085,7 @@
       "caption": "石畳に描かれる影の記憶。午後のカフェタイムに寄り添う、ノスタルジックで優雅なサウンドスケープ。",
       "type": "instrumental",
       "duration": 152,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%9C%9D%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Shadows_on_the_Cobblestone.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1102,7 +1102,7 @@
       "caption": "夜の街を漂う、温かく郷愁を誘うメロディー。物思いにふけりながら聴きたい、遅い帰り道のBGM。",
       "type": "instrumental",
       "duration": 171,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%9C%9D%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/The_Late_Train_Home.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1119,7 +1119,7 @@
       "caption": "紙を通して拡散する光と影。静かで心地よい、午後のカフェで過ごすひとときを彩るサウンド。",
       "type": "instrumental",
       "duration": 153,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%9C%9D%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Paper_Screen_Shadows.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1136,7 +1136,7 @@
       "caption": "窓辺の光に溶け込むような優雅な調べ。穏やかな気持ちになれる、心地よいカフェ・ミュージック。",
       "type": "instrumental",
       "duration": 155,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%9C%9D%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Through_The_Window_Pane.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1153,7 +1153,7 @@
       "caption": "ゆらめく光と色彩が織りなす時間。ジャズとピアノが彩る、心安らぐカフェの午後。",
       "type": "instrumental",
       "duration": 168,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%9C%9D%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Tides%20and%20Tapestries.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1170,7 +1170,7 @@
       "caption": "夜明けのバルコニーで目覚めるような優しい調べ。日常を忘れさせてくれる、清々しいメロディに包まれて。",
       "type": "instrumental",
       "duration": 144,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%9C%9D%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Balcony_at_Sunrise.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1187,7 +1187,7 @@
       "caption": "木材に差し込む柔らかな午後の光。視覚と聴覚に訴えかける、静謐な時間を感じさせるBGM。",
       "type": "instrumental",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%9C%9D%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Slow_Light_on_Wood.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1204,7 +1204,7 @@
       "caption": "珈琲の香りと午後の光。窓辺に座って、ゆったりと自分と向き合えるような、穏やかなひとときのためのサウンド。",
       "type": "instrumental",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%9C%9D%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Balcony_Hour.mp3",
       "tags": [
         "Bossa Nova",
         "静か",
@@ -1221,7 +1221,7 @@
       "caption": "午後の光が床に広がり、穏やかな時間が流れるカフェの情景を表現したサウンドスケープ。",
       "type": "instrumental",
       "duration": 152,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%98%BC%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Sunlight_on_Floorboards.mp3",
       "tags": [
         "Bossa Nova",
         "明るい",
@@ -1238,7 +1238,7 @@
       "caption": "温かい琥珀色の光が木材に反射し、安らぎと落ち着きを感じさせる、午後のカフェタイムを彩るサウンドトラック。",
       "type": "instrumental",
       "duration": 118,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%98%BC%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Amber_Light_on_Wood.mp3",
       "tags": [
         "Bossa Nova",
         "明るい",
@@ -1255,7 +1255,7 @@
       "caption": "窓からの柔らかな光と、ゆっくりと落ちるコーヒーの滴。心身を落ち着かせるような、心地よい午後の時間の流れを感じるBGM。",
       "type": "instrumental",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%98%BC%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Slow_Pour_Over.mp3",
       "tags": [
         "Bossa Nova",
         "明るい",
@@ -1272,7 +1272,7 @@
       "caption": "午後の優しい調べが心地よいカフェの休息を提供。日常の忙しさから離れて、自分だけの静かな時間を過ごすためのサウンドトラック。",
       "type": "instrumental",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%98%BC%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/The_Second_Cup.mp3",
       "tags": [
         "Bossa Nova",
         "明るい",
@@ -1289,7 +1289,7 @@
       "caption": "窓から差し込む光と影のコントラストが描く、午後のカフェの静謐な一瞬。静寂の中に存在する、心地よい時間の移ろいを感じさせるBGM。",
       "type": "instrumental",
       "duration": 121,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%98%BC%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Shadows_on_the_Tabletop.mp3",
       "tags": [
         "Bossa Nova",
         "明るい",
@@ -1306,7 +1306,7 @@
       "caption": "午後の斜光が差し込む空間全体を包み込むようなサウンドスケープ。優雅で落ち着いた調べとともに、ゆったりとしたリラックスタイムを演出します。",
       "type": "instrumental",
       "duration": 164,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%98%BC%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Afternoon_Slant.mp3",
       "tags": [
         "Bossa Nova",
         "明るい",
@@ -1323,7 +1323,7 @@
       "caption": "潮風とコーヒーの香りが混じり合う、南国風の午後のカフェ。心癒されるBGMと共に、穏やかな休息の時間を提供します。",
       "type": "instrumental",
       "duration": 113,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%98%BC%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Salt_Air_and_Coffee.mp3",
       "tags": [
         "Bossa Nova",
         "明るい",
@@ -1340,7 +1340,7 @@
       "caption": "光あふれるベランダでのひととき。ゆったりと流れるコーヒーの調べが、心地よい午後の余韻を演出するサウンドトラック。",
       "type": "instrumental",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%98%BC%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Coffee_at_the_Veranda.mp3",
       "tags": [
         "Bossa Nova",
         "明るい",
@@ -1357,7 +1357,7 @@
       "caption": "穏やかな日曜の午後に響く、エスプレッソのような深みのある調べ。心に寄り添う、特別なカフェのサウンドスケープです。",
       "type": "instrumental",
       "duration": 143,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%98%BC%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Sunday_Espresso.mp3",
       "tags": [
         "Bossa Nova",
         "明るい",
@@ -1374,7 +1374,7 @@
       "caption": "太陽の光が降り注ぐベランダでの時間。静けさの中で聞こえてくる、優しく穏やかな調べが、特別なひとときを彩ります。",
       "type": "instrumental",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E6%98%BC%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Veranda_at_Noon.mp3",
       "tags": [
         "Bossa Nova",
         "明るい",
@@ -1391,7 +1391,7 @@
       "caption": "雨に濡れる窓越しのカフェ。心地よい調べが、空間全体に優しく溶け込むようなひととき。",
       "type": "instrumental",
       "duration": 144,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E5%A4%9C%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Cafe_Window_Rain.mp3",
       "tags": [
         "Bossa Nova",
         "夜っぽい",
@@ -1408,7 +1408,7 @@
       "caption": "落ち着いた午後のカフェのブース席。ゆったりと時間を忘れ、自分だけの空間で過ごす情景を演出します。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E5%A4%9C%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Leather_Booth_at_Three.mp3",
       "tags": [
         "Bossa Nova",
         "夜っぽい",
@@ -1425,7 +1425,7 @@
       "caption": "午後遅く、優しい光が差し込むカフェ。ジャズとピアノの旋律に身を預け、穏やかな時間を楽しむBGM。",
       "type": "instrumental",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E5%A4%9C%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Last_Call_at_the_Cafe.mp3",
       "tags": [
         "Bossa Nova",
         "夜っぽい",
@@ -1442,7 +1442,7 @@
       "caption": "窓辺の柔らかな光と温かいコーヒー。心と体を癒やす、穏やかな午後を彩るような調べ。",
       "type": "instrumental",
       "duration": 161,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E5%A4%9C%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Coffee_by_the_Window.mp3",
       "tags": [
         "Bossa Nova",
         "夜っぽい",
@@ -1459,7 +1459,7 @@
       "caption": "午後の陽光が満ちるカフェ。心地よいビートが日常の喧騒から意識をそっと解き放ち、静かな余韻へと誘います。",
       "type": "instrumental",
       "duration": 156,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E5%A4%9C%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/The_Third_Pour.mp3",
       "tags": [
         "Bossa Nova",
         "夜っぽい",
@@ -1476,7 +1476,7 @@
       "caption": "雨音とジャズが奏でる、情緒的なカフェの一角。窓を打つリズムに耳を傾け、深く物思いにふける午後。",
       "type": "instrumental",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E5%A4%9C%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Rain_on_the_Counter.mp3",
       "tags": [
         "Bossa Nova",
         "夜っぽい",
@@ -1493,7 +1493,7 @@
       "caption": "夕暮れのベランダに漂う、ノスタルジックな空気。ゆったりとした時間の流れを感じさせる、温かい余韻をお届けします。",
       "type": "instrumental",
       "duration": 117,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E5%A4%9C%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Veranda_at_Twilight.mp3",
       "tags": [
         "Bossa Nova",
         "夜っぽい",
@@ -1510,7 +1510,7 @@
       "caption": "煌めく都会の夜景。人波から離れた静寂な場所で、優雅な時間が流れる情景を彩るサウンドスケープ。",
       "type": "instrumental",
       "duration": 117,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E5%A4%9C%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Midnight_at_the_Plaza.mp3",
       "tags": [
         "Bossa Nova",
         "夜っぽい",
@@ -1527,7 +1527,7 @@
       "caption": "雨が上がった午後のカフェ。心にそっと寄り添うような、穏やかで心地よいメロディ。",
       "type": "instrumental",
       "duration": 172,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E5%A4%9C%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/Two_AM_Rain.mp3",
       "tags": [
         "Bossa Nova",
         "夜っぽい",
@@ -1544,7 +1544,7 @@
       "caption": "閉店間際の、カフェの淡い灯り。一日の終わりを静かに見つめ、今日の思い出を振り返るBGM。",
       "type": "instrumental",
       "duration": 164,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E5%A4%9C%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/The_Last_Cafe_Light.mp3",
       "tags": [
         "Bossa Nova",
         "夜っぽい",
@@ -1561,7 +1561,7 @@
       "caption": "カフェの窓辺で交錯する、一瞬の輝きと残響。日常に潜む、忘れがたい「黄金のカーブ」のような思い出を誘うサウンドスケープ。",
       "type": "vocal",
       "duration": 159,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/The_Curve_Stays_Gold.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1578,7 +1578,7 @@
       "caption": "静けさの中に差し込む黄金の光。日常の時間を織りなす、穏やかで温かい、カフェでの優しいひととき。",
       "type": "vocal",
       "duration": 157,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Fold_The_Light.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1595,7 +1595,7 @@
       "caption": "夜の街路に立ち尽くす、秘密と郷愁が交錯する、琥珀色の静寂。時間が止まったかのような、深遠なムード。",
       "type": "vocal",
       "duration": 159,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Mercury_Drop.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1612,7 +1612,7 @@
       "caption": "淡い青の空の下、都会の喧騒を抜け出す。過ぎ去る感情を優しく抱きしめる、穏やかな午後の情景。",
       "type": "vocal",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Paper_Wings_in_Velvet_Blue.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1629,7 +1629,7 @@
       "caption": "都会の夜を漂う、秘密の物語の時間。水面に映る光のきらめきを感じながら、静かに夜が降りてくるのを待つひととき。",
       "type": "vocal",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Night_in_a_Silver_Cup.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1646,7 +1646,7 @@
       "caption": "都会の喧騒を忘れさせる、秘密めいた午後の空気。窓からの光と、囁くような旋律が、日常にささやかな安らぎを運んでくる。",
       "type": "vocal",
       "duration": 146,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/The_Secret_Habit.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1663,7 +1663,7 @@
       "caption": "都会のざわめきの中で、過去の記憶が微かに漂う。ノスタルジーと郷愁が混ざり合う、感傷的な午後の情景描写。",
       "type": "vocal",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Bittersweet_Vibration.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1680,7 +1680,7 @@
       "caption": "ガラス越しのネオンの残像。街の喧騒が一旦落ち着き、時間がゆっくりと流れる、落ち着いたカフェの深呼吸のような時間。",
       "type": "vocal",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Glass_and_Grace.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1697,7 +1697,7 @@
       "caption": "雨上がりの都会のカフェ。過ぎゆく時間と、束の間の安らぎに身を任せるような、メロウで都会的な空気感。",
       "type": "vocal",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/A_Temporary_Grace.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1714,7 +1714,7 @@
       "caption": "言葉にする前の、静かで曖昧な心のさざめき。意識と無意識の境界線で漂う、掴みどころのない優しいメロディ。",
       "type": "vocal",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Nothing_s_Caught.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1731,7 +1731,7 @@
       "caption": "深く青い空気の中で、心が満たされる空間。穏やかな喫茶店で、これから始まる何かを静かに待つ、期待に満ちたひととき。",
       "type": "vocal",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/The%20Gathering.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1748,7 +1748,7 @@
       "caption": "深まる夜の静けさ。内側から湧き上がる新たな高揚感を見つけ出す、洗練された大人のためのサウンドトラック。",
       "type": "vocal",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Final%20Echo.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1765,7 +1765,7 @@
       "caption": "日曜の午後のカフェ。窓辺で風に揺れる穏やかな光景。時の流れに身を預け、心から深呼吸するような、心地よいグルーヴ。",
       "type": "vocal",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Green%20Sway.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1782,7 +1782,7 @@
       "caption": "ガラス越しに、かつての面影を探すような視線。都会の片隅で静かに漂う、切なく美しい哀愁。",
       "type": "vocal",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/The%20Glass%20Shape.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1799,7 +1799,7 @@
       "caption": "白く新しい朝の訪れ。すべてがリセットされ、静かに日常が再出発する感覚を、カフェが優しく見守るようなBGM。",
       "type": "vocal",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/White%20Morning.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -1816,7 +1816,7 @@
       "caption": "夕暮れの街角を漂う、ノスタルジックなグルーヴ。影が語りかけるように、日々の疲れを洗い流す静かな安らぎの調べ。",
       "type": "vocal",
       "duration": 166,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/Shadow_on_the_Stone.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -1833,7 +1833,7 @@
       "caption": "緑の信号が誘うのは、成功という輝きではなく、取り戻せない「あなた」の場所。後悔と残響が混ざり合う、物思いにふける午後のムード。",
       "type": "vocal",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/Green%20Light%20Lies.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -1850,7 +1850,7 @@
       "caption": "夜のカフェ。グラス越しのぼやけた街の景色と共に、虚脱感と静かな解放感が交錯する内省的な時間。",
       "type": "vocal",
       "duration": 169,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/Heavy_on_the_Glass.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -1867,7 +1867,7 @@
       "caption": "夜のカフェに漂う、冷たいガラスとチェリーの香り。しっとりと、過去を思い出すようなノスタルジックな時間帯を演出。",
       "type": "vocal",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/Cold%20Glass%20Bottle.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -1884,7 +1884,7 @@
       "caption": "建物の間を漂う光と影が織りなす静寂。降り注ぐ日差しと空気の微かな流れを感じながら、一瞬の安らぎを味わう情景描写。",
       "type": "vocal",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/Between_Floor_And_Floor.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -1901,7 +1901,7 @@
       "caption": "夢幻的な光と影が踊る、孤独で神秘的な空間。時間の流れを感じさせる、物憂げなムードのBGM。",
       "type": "vocal",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/The_Lonesome_Circus.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -1918,7 +1918,7 @@
       "caption": "街角の珈琲と、過去のささやかな記憶。日常の光が午後の時間を温かく優しく照らし出すサウンドスケープ。",
       "type": "vocal",
       "duration": 171,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/Light_in_the_Hall.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -1935,7 +1935,7 @@
       "caption": "カフェの午後の柔らかな光が包む、過ぎ去った時間。これから始まる物語を静かに、切なく語りかける調べ。",
       "type": "vocal",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/Weight_Of_The_Years.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -1952,7 +1952,7 @@
       "caption": "雨上がり、濡れたアスファルトに映る街の風景。日常の景色を非現実的に捉え直す、ビジュアルなサウンドスケープ。",
       "type": "vocal",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/Asphalt_Mirror.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -1969,7 +1969,7 @@
       "caption": "夕闇の窓辺で感じる静けさと、心に満ちるささやかな安らぎ。日々の重荷が少し軽くなるような、優美なメロディ。",
       "type": "vocal",
       "duration": 146,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/Half_of_Its_Weight.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -1986,7 +1986,7 @@
       "caption": "静寂の中に漂う琥珀のような時間。都会の喧騒が溶け去り、触れられるほど優しい空気感が満ちる空間。",
       "type": "vocal",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/Amber_Weight.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -2003,7 +2003,7 @@
       "caption": "カフェで過ごす午後の情景を彩るBGM。失われた記憶や過ぎ去った時間を、質感とメロディーで深く思索する。",
       "type": "vocal",
       "duration": 154,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/The%20Corridor%20Shuffle.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -2020,7 +2020,7 @@
       "caption": "午後のカフェで、自分自身と向き合うひととき。柔らかな光とコーヒーの香りが、心に深い安らぎをもたらす静寂の瞬間。",
       "type": "vocal",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/Negotiating_Silence.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -2037,7 +2037,7 @@
       "caption": "午後を包む、ベルベットのような優雅な静けさ。日常の雑踏を忘却し、自分だけの静寂を見つけ出す至福のひととき。",
       "type": "vocal",
       "duration": 148,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/Velvet_Low.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -2054,7 +2054,7 @@
       "caption": "朝の光が差し込む場所。心の静けさと、新しい始まりを祝福するような、優しいトーンの音楽。",
       "type": "vocal",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/The_Color_of_Morning.mp3",
       "tags": [
         "Blues",
         "クール",
@@ -2071,7 +2071,7 @@
       "caption": "カフェの窓辺に差し込む午後の光。過ぎゆく時間の中で見つける、メロウで内省的な心の安らぎを描いた時間。",
       "type": "vocal",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/A_Temporary_Grace.mp3",
       "tags": [
         "City Pop",
         "クール",
@@ -2088,7 +2088,7 @@
       "caption": "喧騒から離れた午後のひととき。時間に追われる日常から解放され、ただ「存在」を心地よく味わう空間を彩るサウンドスケープ。",
       "type": "vocal",
       "duration": 158,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/The_Afternoon_Rearranged.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2105,7 +2105,7 @@
       "caption": "夕暮れのカフェに漂う、ゆったりとした時間。光と影が移ろい、過ぎゆく午後の静謐な美しさを描写するサウンド。",
       "type": "vocal",
       "duration": 148,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/Amber_Afternoon.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2122,7 +2122,7 @@
       "caption": "夏の日差しが降り注ぐ午後の情景。思い出を彩るような透明感と、心のささやかな解放感を届ける音楽。",
       "type": "vocal",
       "duration": 146,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/Held_in_Blue.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2139,7 +2139,7 @@
       "caption": "洗練された空間に響く、穏やかな安らぎ。日常の喧騒を忘れさせ、心地よい静寂だけが満ちるサウンドスケープ。",
       "type": "vocal",
       "duration": 161,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/Afternoon_in_the_Glass.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2156,7 +2156,7 @@
       "caption": "夕暮れ時の街を彩る、影と光の繊細な描写。時間がゆっくりと溶け出すような、深い午後の情景を音に込める。",
       "type": "vocal",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/The_Heavy_Fold.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2173,7 +2173,7 @@
       "caption": "午後の街を彷徨い、内省する時間。忘れかけていた自分の声や、取り戻そうとする確かな一歩を見つける、穏やかな空気感。",
       "type": "vocal",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/Amber_Stains.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2190,7 +2190,7 @@
       "caption": "都会の片隅で、光と影が織りなす儚い美しさ。立ち止まって見つめる、日常の中の静かな輝きを捉えた音像。",
       "type": "vocal",
       "duration": 156,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/The_Marrow_Of_My_Bone.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2207,7 +2207,7 @@
       "caption": "灰色の街並みを抜け、差し込む黄金色の光に包まれる感覚。都会の喧騒から隔絶された、安らぎの瞬間を演出する音楽。",
       "type": "vocal",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/Amber_on_the_Pavement.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2224,7 +2224,7 @@
       "caption": "午後のカフェの光に包まれて、自分自身と対話する時間。静謐で洗練された、内面を見つめ直すようなサウンドトラック。",
       "type": "vocal",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/Stained_With_Gold.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2241,7 +2241,7 @@
       "caption": "カフェの午後のしっとりとした空気。グラス越しの光が薄れ、街のざわめきが穏やかな囁きのように空間を漂わせる様子。",
       "type": "vocal",
       "duration": 162,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/Mezzanine_Grace.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2258,7 +2258,7 @@
       "caption": "深い静けさが広がるカフェ。日常の雑音が遠ざかり、心身ともに休息を感じさせる癒やしのサウンドスケープ。",
       "type": "vocal",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/Cooling_Ground.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2275,7 +2275,7 @@
       "caption": "都会の喧騒から一歩離れ、窓の外の風景を眺めるような、静謐で落ち着いた午後の時間。心の調和を描くBGM。",
       "type": "vocal",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/A_Quiet_Kind_of_Symmetry.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2292,7 +2292,7 @@
       "caption": "夕暮れ時、光が遠景で薄れていく様子を音に描く。穏やかな色彩の移ろいが、空と感情の間に優しく降り注ぐようなムード。",
       "type": "vocal",
       "duration": 148,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/Above_The_Junction.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2309,7 +2309,7 @@
       "caption": "日々の小さな瞬間が、静かな光で満たされる。喧騒を忘れ、自分自身の確かなリズムを見つけるような、温かい午後の情景。",
       "type": "vocal",
       "duration": 167,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/The_Quiet_Gold.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -2326,7 +2326,7 @@
       "caption": "窓辺に差し込む光が描く、過ぎゆく午後の穏やかな時間を彩る心地よい調べ。",
       "type": "instrumental",
       "duration": 160,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/For_the_Open_Window.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2343,7 +2343,7 @@
       "caption": "午後の陽光が溢れる、カフェの空間を彩るサウンドスケープ。フルーツ畑のような軽やかな空気感を感じられます。",
       "type": "instrumental",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/The_Orchard_at_Noon.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2360,7 +2360,7 @@
       "caption": "まるで絵本の世界のような午後。柔らかな光に包まれて、心が穏やかに流れるカフェタイムです。",
       "type": "instrumental",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/Patterns_in_the_Orchard.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2377,7 +2377,7 @@
       "caption": "ゆったりとした川の流れが耳元を撫でるような調べ。心落ち着く、穏やかなカフェのひとときを彩ります。",
       "type": "instrumental",
       "duration": 172,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/Where_the_River_Bends.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2394,7 +2394,7 @@
       "caption": "磨き上げられた木材に映る午後の影。ノスタルジーを感じさせる、優雅なカフェミュージックです。",
       "type": "instrumental",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/Long_Shadows_on_Mahogany.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2411,7 +2411,7 @@
       "caption": "木漏れ日差しが差し込む静謐な空間。温かく、心安らぐ午後のリラックスタイムを演出します。",
       "type": "instrumental",
       "duration": 168,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/Rustic%20Peace.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2428,7 +2428,7 @@
       "caption": "窓から差し込む光と共に目覚める、優しい朝の調べ。穏やかなカフェの幕開けを告げます。",
       "type": "instrumental",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/Watching_The_Morning_Turn.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2445,7 +2445,7 @@
       "caption": "柔らかな午後の光を背景に、心地よいジャズが流れる時間。心ゆくまでくつろげるサウンドスケープ。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/The_Unfolding_Light.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2462,7 +2462,7 @@
       "caption": "日常に潜む小さな模様、木目や食器のパターンが奏でる、視覚と聴覚で楽しむひととき。",
       "type": "instrumental",
       "duration": 161,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/Patterns_in_the_Grain.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2479,7 +2479,7 @@
       "caption": "優しい日差しと静かなざわめき。まるで時間が止まったかのような、極上の午後のひとときを演出します。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/Where_the_Daylight_Rests.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2496,7 +2496,7 @@
       "caption": "窓からの光と優しいピアノの音色。心穏やかな、午後のカフェタイムを静かに彩ります。",
       "type": "instrumental",
       "duration": 158,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/Before_the_Room_Wakes.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2513,7 +2513,7 @@
       "caption": "レースのカーテン越しの午後の光。すべてが優しくフィルタリングされ、温かい空間に溶け込むサウンドスケープ。",
       "type": "instrumental",
       "duration": 99,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/Light_Through_Silk.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2530,7 +2530,7 @@
       "caption": "日曜の朝、柔らかな光とコーヒーの香り。心が満たされる、穏やかで贅沢な午前の時間。",
       "type": "instrumental",
       "duration": 140,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/Notes_for_a_Sunday_Morning.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2547,7 +2547,7 @@
       "caption": "都会の喧騒を忘れさせる、雲上のパノラマ。心ほどけるような、優雅なカフェBGMです。",
       "type": "instrumental",
       "duration": 172,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/Above_the_Cloud_Line.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2564,7 +2564,7 @@
       "caption": "窓辺の光とコーヒーの香りに包まれて。静かに思考を巡らせる、澄み切った午後の時間のための音。",
       "type": "instrumental",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/Sunlight_on_the_Writing_Desk.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2581,7 +2581,7 @@
       "caption": "都会の喧騒を忘れさせる、透明感あふれる午後のカフェ。グラス越しに差し込む光と、優雅に揺れる柳の葉が織りなす、心地よい調べ。",
       "type": "instrumental",
       "duration": 117,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Glass_and_Willow.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2598,7 +2598,7 @@
       "caption": "過ぎゆく夏の日差しの輝きを追いかけるように。カフェの片隅で過ごす、優雅でノスタルジックな午後の時間。",
       "type": "instrumental",
       "duration": 148,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Late_August_Afternoon.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2615,7 +2615,7 @@
       "caption": "窓から射し込む柔らかい日差しと、心地よいリズムが流れるカフェの午後。懐かしい記憶をそっと辿る、温かい午後のサウンドスケープ。",
       "type": "instrumental",
       "duration": 106,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Softly%20Rhythmic%20Nostalgia.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2632,7 +2632,7 @@
       "caption": "朝日が差し込む静かな空間。キャンドルの温かい光とともに始まる、穏やかで新しい一日の幕開けを彩る調べ。",
       "type": "instrumental",
       "duration": 171,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Candle_at_First_Light.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2649,7 +2649,7 @@
       "caption": "陽光が降り注ぐカフェ。アコースティックギターの優しい調べが、日常に安らぎをもたらすひとときを彩る。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Where_the_Barley_Bends.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2666,7 +2666,7 @@
       "caption": "温かい午後に流れる、心に語りかけるような時間。言葉にならない感情を寄り添う、静謐なピアノとストリングスが心地よい調べ。",
       "type": "instrumental",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Unfinished_Sentences.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2683,7 +2683,7 @@
       "caption": "窓から差し込む光を浴びて、時間がゆったりと流れる感覚。希望に満ちたカフェの午後に響く、優しいインストゥルメンタル。",
       "type": "instrumental",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Tracing_the_Horizon.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2700,7 +2700,7 @@
       "caption": "午後の日差しが、陶器の質感や食器を優しく照らす。心地よい静けさと、軽やかで洗練されたカフェタイムを感じるBGM。",
       "type": "instrumental",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Sunlight_on_Porcelain.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2717,7 +2717,7 @@
       "caption": "午後の光が満ちるアトリウム。ジャズピアノが溶け込み、日常に洗練された心地よい余白を生み出すサウンド。",
       "type": "instrumental",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Afternoon_in_the_Atrium.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2734,7 +2734,7 @@
       "caption": "窓辺に差し込む柔らかな朝の光と、生き生きとしたカフェのざわめき。心落ち着く、静寂の中の穏やかな時間をお届けします。",
       "type": "instrumental",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Window_at_Dawn.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2751,7 +2751,7 @@
       "caption": "優しい朝の光が満ちる、静寂のカフェ空間。時間そのものがゆらりと揺れるような、温かく心地よい目覚めの調べ。",
       "type": "instrumental",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Morning_Pendulums.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2768,7 +2768,7 @@
       "caption": "静寂と期待が漂う、開店前のカフェ。これから始まる日常を温かく包み込む、穏やかで心地よいサウンド。",
       "type": "instrumental",
       "duration": 157,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Before_the_First_Customer.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2785,7 +2785,7 @@
       "caption": "差し込む午後の光が、空間の床板を優しく照らし出す。心ゆくまでゆったりとした時間の流れを感じる、没入感のあるインストゥルメンタル。",
       "type": "instrumental",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Sunlight_on_the_Floorboards.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2802,7 +2802,7 @@
       "caption": "静かな朝のカフェ。日常の風景に、心安らぐ安らぎと優しいムードをそっと添える、美しいサウンドスケープ。",
       "type": "instrumental",
       "duration": 148,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Before_the_Valley_Wakes.mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2819,7 +2819,7 @@
       "caption": "窓から降り注ぐ午後の光が、古びた床板を温かく彩る。懐かしくも穏やかな、カフェで過ごす優しい午後の時間。",
       "type": "instrumental",
       "duration": 153,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Sunlight_on_the_Floorboards%20(1).mp3",
       "tags": [
         "Classical",
         "静か",
@@ -2836,7 +2836,7 @@
       "caption": "窓から差し込む柔らかい日差しが、木目や雑貨に反射し、穏やかなカフェの午後の風景を彩る。心安らぐ時間のためのサウンドスケープ。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E8%AA%B0%E3%82%82%E9%A0%BC%E3%82%93%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84%E3%83%94%E3%82%A2%E3%83%8E/Light_Across_The_Grain.mp3",
       "tags": [
         "Ambient",
         "明るい",
@@ -2853,7 +2853,7 @@
       "caption": "午後のやわらかな光がカーテンを透過し、静寂な空間に広がる。心地よいBGMと共に、ささやかな余韻を味わうためのサウンドスケープ。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E8%AA%B0%E3%82%82%E9%A0%BC%E3%82%93%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84%E3%83%94%E3%82%A2%E3%83%8E/Light_Through_Curtains.mp3",
       "tags": [
         "Ambient",
         "明るい",
@@ -2870,7 +2870,7 @@
       "caption": "目覚めの時間を彩る、穏やかな朝の光景。テラス席でのひとときと、心和むカフェミュージックをお届けします。",
       "type": "instrumental",
       "duration": 157,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E8%AA%B0%E3%82%82%E9%A0%BC%E3%82%93%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84%E3%83%94%E3%82%A2%E3%83%8E/Morning_on_the_Terrace.mp3",
       "tags": [
         "Ambient",
         "明るい",
@@ -2887,7 +2887,7 @@
       "caption": "窓から射し込む午後の柔らかな光が、空間全体を優しく包み込む。心身を落ち着かせるような、心地よいBGMの提案。",
       "type": "instrumental",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E8%AA%B0%E3%82%82%E9%A0%BC%E3%82%93%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84%E3%83%94%E3%82%A2%E3%83%8E/Three_O_Clock_Light.mp3",
       "tags": [
         "Ambient",
         "明るい",
@@ -2904,7 +2904,7 @@
       "caption": "レースのカーテン越しの午後の日差しが織りなす、静謐なカフェのひととき。ジャズとアコースティックギターが響く、微睡むような優しい調べ。",
       "type": "instrumental",
       "duration": 172,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E8%AA%B0%E3%82%82%E9%A0%BC%E3%82%93%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84%E3%83%94%E3%82%A2%E3%83%8E/Sunlight%20through%20the%20Curtains.mp3",
       "tags": [
         "Ambient",
         "明るい",
@@ -2921,7 +2921,7 @@
       "caption": "窓越しの光が、空気中に舞う粒子となって視界を優しく満たす。午後の優しい、夢のような時間。",
       "type": "instrumental",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E8%AA%B0%E3%82%82%E9%A0%BC%E3%82%93%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84%E3%83%94%E3%82%A2%E3%83%8E/Paper_and_Light.mp3",
       "tags": [
         "Ambient",
         "明るい",
@@ -2938,7 +2938,7 @@
       "caption": "午後の日差しと、本やコーヒーの香りが織りなす空間。知的な静けさの中で過ごす、至福の休息時間。",
       "type": "instrumental",
       "duration": 126,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E8%AA%B0%E3%82%82%E9%A0%BC%E3%82%93%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84%E3%83%94%E3%82%A2%E3%83%8E/Sunlight_in_the_Study.mp3",
       "tags": [
         "Ambient",
         "明るい",
@@ -2955,7 +2955,7 @@
       "caption": "窓から差し込む柔らかい光が、カフェの空間に穏やかな輝きをもたらす。日常の景色を彩る、淡い光の描写。",
       "type": "instrumental",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E8%AA%B0%E3%82%82%E9%A0%BC%E3%82%93%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84%E3%83%94%E3%82%A2%E3%83%8E/Sunlight_Through_the_Glass.mp3",
       "tags": [
         "Ambient",
         "明るい",
@@ -2972,7 +2972,7 @@
       "caption": "朝のやわらかな光と共に、淹れたてのコーヒーの香りに誘われる目覚めの時間。心にそっと寄り添うような、穏やかな調べ。",
       "type": "instrumental",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E8%AA%B0%E3%82%82%E9%A0%BC%E3%82%93%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84%E3%83%94%E3%82%A2%E3%83%8E/Gentle%20Morning%20Echoes.mp3",
       "tags": [
         "Ambient",
         "明るい",
@@ -2989,7 +2989,7 @@
       "caption": "差し込む優しい光が、午後のカフェタイムを豊かにする。日々の日常に溶け込む、リラックスできる音楽空間。",
       "type": "instrumental",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E8%AA%B0%E3%82%82%E9%A0%BC%E3%82%93%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84%E3%83%94%E3%82%A2%E3%83%8E/Sunlight.mp3",
       "tags": [
         "Ambient",
         "明るい",
@@ -3006,7 +3006,7 @@
       "caption": "窓を打つ雨のリズムと、ジャズの調べが織りなす。日常を優しく包み込む、静かで心地よい午後のひとときを演出します。",
       "type": "instrumental",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%9B%A8%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7/Rain_Against_the_Glass.mp3",
       "tags": [
         "City Pop",
         "切ない",
@@ -3023,7 +3023,7 @@
       "caption": "雨に濡れた窓辺から眺める都会の風景。静寂と温かさが共存する、穏やかなカフェ空間を彩るBGMです。",
       "type": "instrumental",
       "duration": 172,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%9B%A8%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7/A_Window_Over_the_Rain.mp3",
       "tags": [
         "City Pop",
         "切ない",
@@ -3040,7 +3040,7 @@
       "caption": "窓際の席で流れる、穏やかな時間の流れ。柔らかな光と、かすかなざわめきに包まれていく、心地よい空間を音楽が彩ります。",
       "type": "instrumental",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%9B%A8%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7/Table_by_the_Glass.mp3",
       "tags": [
         "City Pop",
         "切ない",
@@ -3057,7 +3057,7 @@
       "caption": "柔らかな光が差し込む窓辺で、過ぎゆく午後の余韻に浸る。静かなカフェでの特別な時間をお届けします。",
       "type": "instrumental",
       "duration": 141,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%9B%A8%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7/Two_Cups_Left_Behind.mp3",
       "tags": [
         "City Pop",
         "切ない",
@@ -3074,7 +3074,7 @@
       "caption": "夕暮れの窓辺から、今日という一日を振り返る時間。メロディが次の始まりをそっと予感させ、心に安らぎをもたらします。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%9B%A8%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7/After_the_Last_Train.mp3",
       "tags": [
         "City Pop",
         "切ない",
@@ -3091,7 +3091,7 @@
       "caption": "雨降る日のカフェ。窓の外を眺めながら、一人静かに過ごす午後のひとときに最適な、落ち着いたBGMです。",
       "type": "instrumental",
       "duration": 152,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%9B%A8%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7/Table_for_One_in_the_Rain.mp3",
       "tags": [
         "City Pop",
         "切ない",
@@ -3108,7 +3108,7 @@
       "caption": "夜明けのカフェの窓際。温かい飲み物と静寂が混ざり合う、優しく内省的な時間を彩る調べです。",
       "type": "instrumental",
       "duration": 168,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%9B%A8%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7/Half_Empty_Cup_at_Dawn.mp3",
       "tags": [
         "City Pop",
         "切ない",
@@ -3125,7 +3125,7 @@
       "caption": "窓際の席から外を眺める、穏やかで思索的な時間。優しいピアノの調べが、心地良い背景音楽となります。",
       "type": "instrumental",
       "duration": 151,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%9B%A8%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7/The_Window_Seat.mp3",
       "tags": [
         "City Pop",
         "切ない",
@@ -3142,7 +3142,7 @@
       "caption": "午後の光が差し込む窓辺。コーヒーの香りとともに、心に静けさをもたらす調べが最適な空間を演出します。",
       "type": "instrumental",
       "duration": 156,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%9B%A8%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7/Left_By_The_Window.mp3",
       "tags": [
         "City Pop",
         "切ない",
@@ -3159,7 +3159,7 @@
       "caption": "雨の音とコーヒーの香りに包まれて。心ゆくまで思考を巡らせられる、穏やかな午後のカフェタイムに寄り添う音楽です。",
       "type": "instrumental",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%9B%A8%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7/Rain.mp3",
       "tags": [
         "City Pop",
         "切ない",
@@ -3176,7 +3176,7 @@
       "caption": "午後の光が射す静かなカフェ。扉が閉まる頃、残り香と共に流れる、穏やかで優しいひととき。",
       "type": "instrumental",
       "duration": 166,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%96%89%E5%BA%97%E5%89%8D%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%E3%83%94%E3%82%A2%E3%83%8EBGM/After_the_Cafe_Closes.mp3",
       "tags": [
         "Ambient",
         "モダン / クリア",
@@ -3192,7 +3192,7 @@
       "caption": "雨粒が窓ガラスを優しく叩く音と、コーヒーの香りが織りなす、静寂に満ちた午後の情景。",
       "type": "instrumental",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%96%89%E5%BA%97%E5%89%8D%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%E3%83%94%E3%82%A2%E3%83%8EBGM/Rain_Against_the_Panes.mp3",
       "tags": [
         "Ambient",
         "モダン / クリア",
@@ -3208,7 +3208,7 @@
       "caption": "街灯が点り始める時間帯の、ノスタルジックなカフェのムード。物思いにふける午後のBGMとして最適です。",
       "type": "instrumental",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%96%89%E5%BA%97%E5%89%8D%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%E3%83%94%E3%82%A2%E3%83%8EBGM/Before_The_Streetlights.mp3",
       "tags": [
         "Ambient",
         "モダン / クリア",
@@ -3224,7 +3224,7 @@
       "caption": "窓越しに差し込む夕暮れの光と、メロディが溶け合う時間。ゆっくりと時が流れる、穏やかな午後の彩り。",
       "type": "instrumental",
       "duration": 119,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%96%89%E5%BA%97%E5%89%8D%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%E3%83%94%E3%82%A2%E3%83%8EBGM/Sunset_Behind_the_Glass.mp3",
       "tags": [
         "Ambient",
         "モダン / クリア",
@@ -3240,7 +3240,7 @@
       "caption": "閉店間近のカフェの空気感。消えゆく光と、最後のざわめきが漂う静寂の中で、心穏やかに聴けるBGM。",
       "type": "instrumental",
       "duration": 181,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%96%89%E5%BA%97%E5%89%8D%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%E3%83%94%E3%82%A2%E3%83%8EBGM/Closing%20Time%20Cafe%20BGM.mp3",
       "tags": [
         "Ambient",
         "モダン / クリア",
@@ -3256,7 +3256,7 @@
       "caption": "真夜中のカフェ、静寂と暖かさが混ざり合う特別な時間。切なさと心地よさが共存する、心象風景を描くメロディ。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%96%89%E5%BA%97%E5%89%8D%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%E3%83%94%E3%82%A2%E3%83%8EBGM/Last_Order_at_Midnight.mp3",
       "tags": [
         "Ambient",
         "モダン / クリア",
@@ -3272,7 +3272,7 @@
       "caption": "窓ガラスに映る街灯の煌めきをBGMに。雨降りの日という特別な設定が、日常に溶け込む心地よいムードを演出します。",
       "type": "instrumental",
       "duration": 167,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%96%89%E5%BA%97%E5%89%8D%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%E3%83%94%E3%82%A2%E3%83%8EBGM/Streetlights_Through_The_Glass.mp3",
       "tags": [
         "Ambient",
         "モダン / クリア",
@@ -3288,7 +3288,7 @@
       "caption": "静謐な午後の、古風なカフェの片隅。照明の温かさと、ゆるやかな会話が心地よい、二人だけの特別な時間のためのサウンドトラック。",
       "type": "instrumental",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%96%89%E5%BA%97%E5%89%8D%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%E3%83%94%E3%82%A2%E3%83%8EBGM/The_Last_Patron_s_Table.mp3",
       "tags": [
         "Ambient",
         "モダン / クリア",
@@ -3304,7 +3304,7 @@
       "caption": "午後の柔らかな光が差し込む、特別なカフェの窓辺。自分だけの静かな時間を持つための、優しい癒やしのサウンドスケープ。",
       "type": "instrumental",
       "duration": 171,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%96%89%E5%BA%97%E5%89%8D%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%E3%83%94%E3%82%A2%E3%83%8EBGM/Last_Light_in_the_Cafe.mp3",
       "tags": [
         "Ambient",
         "モダン / クリア",
@@ -3320,7 +3320,7 @@
       "caption": "午後の心地よい時間。店内の光と、流れる穏やかなメロディに身を任せるような、心のゆとりを感じるサウンド。",
       "type": "instrumental",
       "duration": 170,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E9%96%89%E5%BA%97%E5%89%8D%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%E3%83%94%E3%82%A2%E3%83%8EBGM/Turning_The_Sign.mp3",
       "tags": [
         "Ambient",
         "モダン / クリア",

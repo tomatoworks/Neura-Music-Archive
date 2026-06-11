@@ -51,7 +51,7 @@
     {
       "id": "album_1780618864460",
       "title": "イントロのためのピアノ曲",
-      "art": "",
+      "art": "https://cdn.neura-music.com/02intro-outro/intro/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/cover_1780620248432.webp",
       "caption": "静かでやわらかなピアノを中心に構成された、配信や動画の冒頭に使いやすいイントロ向けインスト集。",
       "categoryId": "cat_1779018943718",
       "tracks": [
@@ -72,7 +72,7 @@
     {
       "id": "album_1780620921360",
       "title": "番組のための主題歌",
-      "art": "",
+      "art": "https://cdn.neura-music.com/02intro-outro/intro/%E7%95%AA%E7%B5%84%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%BB%E9%A1%8C%E6%AD%8C/cover_1780623253573.webp",
       "caption": "番組や配信の冒頭を彩るための、主題歌風オープニング曲集。",
       "categoryId": "cat_1779018943718",
       "tracks": [
@@ -93,7 +93,7 @@
     {
       "id": "album_1780711760579",
       "title": "ラストに流すピアノ曲",
-      "art": "",
+      "art": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/cover_1780713705457.webp",
       "caption": "配信や動画の締めに使える、短いアウトロ曲。静かに終わっていく余韻を大切にしたエンディング用BGMです。",
       "categoryId": "cat_1779018948704",
       "tracks": [
@@ -119,7 +119,7 @@
     {
       "id": "album_1780799011365",
       "title": "エンディングのためのJAZZ",
-      "art": "",
+      "art": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/cover_1780800863342.webp",
       "caption": "配信や動画の締めに使える、静かなジャズのアウトロ曲を集めたインストアルバムです。",
       "categoryId": "cat_1779018948704",
       "tracks": [
@@ -145,7 +145,7 @@
     {
       "id": "album_1780898357236",
       "title": "Outro Slow Pop",
-      "art": "",
+      "art": "https://cdn.neura-music.com/02intro-outro/outro/Outro%20Slow%20Pop/cover_1780899476020.webp",
       "caption": "「配信や動画の締めに使える、ゆったりしたポップ系アウトロ曲を集めたアルバムです。 軽いビートと柔らかいシンセで、静かにフェードアウトしていく終わり方を演出します。",
       "categoryId": "cat_1779018948704",
       "tracks": [
@@ -166,7 +166,7 @@
     {
       "id": "album_1780899560556",
       "title": "Lo-fi Beat Outro",
-      "art": "",
+      "art": "https://cdn.neura-music.com/02intro-outro/outro/Lo-fi%20Beat%20Outro/cover_1780900352054.webp",
       "caption": "配信や動画の終わりに使える、ゆるいLo-fiビートのアウトロ曲を集めたアルバムです。 テープノイズと柔らかいビートで、静かにフェードアウトしていく締めの雰囲気を作ります。",
       "categoryId": "cat_1779018948704",
       "tracks": [
@@ -187,7 +187,7 @@
     {
       "id": "album_1780992463245",
       "title": "Guitar Clean Intro",
-      "art": "",
+      "art": "https://cdn.neura-music.com/02intro-outro/intro/Guitar%20Clean%20Intro/cover_1780994626907.webp",
       "caption": "配信や動画の冒頭に使うための短尺イントロ素材。 音数を抑えたクリーン系のギターサウンドを中心にまとめている。",
       "categoryId": "cat_1779018943718",
       "tracks": [
@@ -208,7 +208,7 @@
     {
       "id": "album_1780994740201",
       "title": "Intro Jazz – Soft Opening",
-      "art": "",
+      "art": "https://cdn.neura-music.com/02intro-outro/intro/Intro%20Jazz%20%E2%80%93%20Soft%20Opening/cover_1780998130219.webp",
       "caption": "配信や動画の冒頭に使える、静かなジャズ調のイントロ素材。 軽いスウィング感と控えめな編成で、入りの空気だけをそっと整えるように仕上げている。",
       "categoryId": "cat_1779018943718",
       "tracks": [
@@ -229,7 +229,7 @@
     {
       "id": "album_1781059687430",
       "title": "Digital Ambient Intro",
-      "art": "",
+      "art": "https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/cover_1781060678006.webp",
       "caption": "静かな未来感をテーマにした、短尺のデジタル系イントロ素材集。",
       "categoryId": "cat_1779018943718",
       "tracks": [
@@ -250,7 +250,7 @@
     {
       "id": "album_1781060994497",
       "title": "Wood Bass Intro",
-      "art": "",
+      "art": "https://cdn.neura-music.com/02intro-outro/intro/Wood%20Bass%20Intro/cover_1781061767876.webp",
       "caption": "ウッドベースの柔らかい低音を中心にした、静かなイントロ素材集。 ジャズ寄りの質感を残しつつ、動画の入りを邪魔しないように、 シンプルで落ち着いたフレーズで構成している。",
       "categoryId": "cat_1779018943718",
       "tracks": [
@@ -396,7 +396,7 @@
       "caption": "壮大な情景描写と期待感を煽る、映画的な導入部。力強いビートが物語の世界への没入を促し、聴く者を深く誘い込む。",
       "type": "instrumental",
       "duration": 47,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Cinematic%20Punch%20Intro.mp3",
       "tags": [
         "Rock",
         "クール",
@@ -413,7 +413,7 @@
       "caption": "ノイズ混じりのパルスビートが心に響き渡るオープニング。デジタルなサウンドスケープと規則的な脈動が、新しい情報や物語の放送開始を予感させる。",
       "type": "instrumental",
       "duration": 116,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Broadcast%20Pulse%20(30s%20Opener).mp3",
       "tags": [
         "Rock",
         "クール",
@@ -430,7 +430,7 @@
       "caption": "壮大なプログラムの幕開けを告げるドラマティックなイントロ。期待の高まりとともに、聴く者を非日常的な物語の世界へといざなう。",
       "type": "instrumental",
       "duration": 62,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Dramatic%20Intro%20for%20Program.mp3",
       "tags": [
         "Rock",
         "クール",
@@ -447,7 +447,7 @@
       "caption": "洗練された音階が空間に漂い、特別な始まりを告げる。品格と知性を感じさせる、上質なムードを描くインストゥルメンタル。",
       "type": "instrumental",
       "duration": 53,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Sophisticated%20Opener.mp3",
       "tags": [
         "Rock",
         "クール",
@@ -464,7 +464,7 @@
       "caption": "鋭く力強いピアノのエネルギーが緊張感と高揚感を演出。シーンを印象づけるイントロや、深い余韻を残すアウトロとして効果的。",
       "type": "instrumental",
       "duration": 35,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Sharp%20Piano%20Energy.mp3",
       "tags": [
         "Rock",
         "クール",
@@ -481,7 +481,7 @@
       "caption": "心臓の鼓動のような浮遊感が漂うオープニング。静寂と期待が入り混じる瞬間を彩り、新たな世界の始まりを感じさせる。",
       "type": "instrumental",
       "duration": 143,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/The%20Opening%20Pulse.mp3",
       "tags": [
         "Rock",
         "クール",
@@ -498,7 +498,7 @@
       "caption": "リスナーに優しく寄り添い、空間を満たすような導入部。温かく心地よいサウンドが、期待とともに物語への引き込みをスムーズに行う。",
       "type": "instrumental",
       "duration": 29,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Radio%20Ready%20Intro.mp3",
       "tags": [
         "Rock",
         "クール",
@@ -515,7 +515,7 @@
       "caption": "電波に乗って未知なる空へ――。新しい展開が始まる瞬間の高揚感と探求心を込めた、躍動的なオープニングサウンド。",
       "type": "instrumental",
       "duration": 156,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Broadcast%20Edge%20Intro.mp3",
       "tags": [
         "Rock",
         "クール",
@@ -532,7 +532,7 @@
       "caption": "ピアノの力強いメロディが壮大な空間を彩る。ドラマチックな展開を予感させ、物語に深みを与える幕開けや終結に最適なサウンド。",
       "type": "instrumental",
       "duration": 151,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Piano%20Rock%20Hook.mp3",
       "tags": [
         "Rock",
         "クール",
@@ -549,7 +549,7 @@
       "caption": "静寂の中から研ぎ澄まされて湧き上がるエネルギー。洗練された質感を持つ予感を呼び起こし、新たな展開の直前を飾るサウンドスケープ。",
       "type": "instrumental",
       "duration": 29,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Refined%20Energy.mp3",
       "tags": [
         "Rock",
         "クール",
@@ -566,7 +566,7 @@
       "caption": "レビュー番組のための曲　英語ボーカル",
       "type": "vocal",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E7%95%AA%E7%B5%84%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%BB%E9%A1%8C%E6%AD%8C/The%20Carcass%20of%20the%20Zeitgeist.mp3",
       "tags": [
         "明るい",
         "Lo-Fi / カセット"
@@ -581,7 +581,7 @@
       "caption": "夜の雑談ラジオのための曲　ドイツ語ボーカル",
       "type": "vocal",
       "duration": 181,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E7%95%AA%E7%B5%84%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%BB%E9%A1%8C%E6%AD%8C/Nachtfunk%20Opener.mp3",
       "tags": [
         "明るい",
         "Lo-Fi / カセット"
@@ -596,7 +596,7 @@
       "caption": "ガジェット紹介番組のための曲　フランス語ボーカル",
       "type": "vocal",
       "duration": 157,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E7%95%AA%E7%B5%84%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%BB%E9%A1%8C%E6%AD%8C/Le%20Geste%20Pur%20(Alternate%20Take).mp3",
       "tags": [
         "明るい",
         "Lo-Fi / カセット"
@@ -611,7 +611,7 @@
       "caption": "旅・Vlog番組のための曲　スペイン語ボーカル",
       "type": "vocal",
       "duration": 108,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E7%95%AA%E7%B5%84%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%BB%E9%A1%8C%E6%AD%8C/Sin%20Rumbo%20(Take%201).mp3",
       "tags": [
         "明るい",
         "Lo-Fi / カセット"
@@ -626,7 +626,7 @@
       "caption": "ゲーム実況番組のための曲　イタリア語ボーカル",
       "type": "vocal",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E7%95%AA%E7%B5%84%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%BB%E9%A1%8C%E6%AD%8C/Il%20Grande%20Raduno.mp3",
       "tags": [
         "明るい",
         "Lo-Fi / カセット"
@@ -641,7 +641,7 @@
       "caption": "料理番組のための曲　ポルトガル語ボーカル",
       "type": "vocal",
       "duration": 150,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E7%95%AA%E7%B5%84%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%BB%E9%A1%8C%E6%AD%8C/O%20Sabor%20de%20Voltar%20(Ver.%201).mp3",
       "tags": [
         "明るい",
         "Lo-Fi / カセット"
@@ -656,7 +656,7 @@
       "caption": "ドキュメンタリー番組のための曲　オランダ語ボーカル",
       "type": "vocal",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E7%95%AA%E7%B5%84%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%BB%E9%A1%8C%E6%AD%8C/De%20Eilandgeest.mp3",
       "tags": [
         "明るい",
         "Lo-Fi / カセット"
@@ -671,7 +671,7 @@
       "caption": "コメディ・バラエティ番組のための曲　スウェーデン語ボーカル",
       "type": "vocal",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E7%95%AA%E7%B5%84%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%BB%E9%A1%8C%E6%AD%8C/Variet%C3%A9ns%20anatomi.mp3",
       "tags": [
         "明るい",
         "Lo-Fi / カセット"
@@ -686,7 +686,7 @@
       "caption": "勉強・解説番組のための曲　ノルウェー語ボーカル",
       "type": "vocal",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E7%95%AA%E7%B5%84%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%BB%E9%A1%8C%E6%AD%8C/Sirkus%20Hjerne%20(Theme%20Version).mp3",
       "tags": [
         "明るい",
         "Lo-Fi / カセット"
@@ -701,7 +701,7 @@
       "caption": "青春ドラマ風番組のための曲　デンマーク語ボーカル",
       "type": "vocal",
       "duration": 167,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/%E7%95%AA%E7%B5%84%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%BB%E9%A1%8C%E6%AD%8C/En%20Stille%20Pagt.mp3",
       "tags": [
         "明るい",
         "Lo-Fi / カセット"
@@ -716,7 +716,7 @@
       "caption": "優しく消えゆく残響が、過ぎ去った時間と別れの感情を包み込む。静寂へと溶けていく余韻のサウンドスケープ。",
       "type": "instrumental",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/The%20Last%20Goodbye%20(Outro).mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -733,7 +733,7 @@
       "caption": "静寂と残響が織りなす、物語の終わりを告げる最後の調べ。余韻に浸るような終幕の情景を描きます。",
       "type": "instrumental",
       "duration": 152,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/The%20Final%20Echo.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -750,7 +750,7 @@
       "caption": "過去の記憶を穏やかに包み込み、新たな始まりへと誘うような静謐なメロディ。心のデトックスと再生を感じさせるサウンドスケープです。",
       "type": "instrumental",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Memories%20of%20Closure.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -767,7 +767,7 @@
       "caption": "夜明け前の静寂と、これから始まるドラマへの期待を込めた、空間的な広がりを持つサウンドスケープ。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Before_the_Sun_Breaks.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -784,7 +784,7 @@
       "caption": "夜明けの潮風を感じながら、海に響き渡る静謐な調べ。新しい一日が始まる瞬間の透明感と広がりを表現した、温かくもどこかメランコリックなサウンドスケープです。",
       "type": "instrumental",
       "duration": 152,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Dawn_at_the_Sea_Wall.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -801,7 +801,7 @@
       "caption": "夜が深く静まり返り、ただ時間だけが響く空間。心が落ち着く静寂な空気感。",
       "type": "instrumental",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/When_The_House_Is_Quiet.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -818,7 +818,7 @@
       "caption": "朝日に照らされた、静かで輝く表面の情景。穏やかな始まりと終わりを感じさせるサウンドトラックです。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Sunlit_Surface.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -835,7 +835,7 @@
       "caption": "古木の香りと、石を磨くような静寂。時間が止まったかのような、力強いイントロ/アウトロのムード。",
       "type": "instrumental",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Cedar_and_Stone.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -852,7 +852,7 @@
       "caption": "夜明けの静寂と希望が交錯する瞬間。幕を閉じる一曲に込めた、次の始まりへの静かな輝きを描くサウンドスケープ。",
       "type": "instrumental",
       "duration": 171,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/One_Last_Bow_at_Dawn.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -869,7 +869,7 @@
       "caption": "凍りついた湖面に降り注ぐ、黄金色の光。静寂の中に広がる、時間の止まったような美しい情景を描きます。",
       "type": "instrumental",
       "duration": 149,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Sunlight_Over_Frozen_Water.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -886,7 +886,7 @@
       "caption": "夜明けの静けさの中で、崩れ落ちる紙のような障壁。儚く美しい始まりを告げるようなサウンドスケープです。",
       "type": "instrumental",
       "duration": 148,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Paper_Walls_at_Dawn.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -903,7 +903,7 @@
       "caption": "障子越しの、柔らかな朝の光が差し込む情景を音に閉じ込めたような、静謐で清澄なインストゥルメンタル。一日の始まりに心穏やかな安らぎをもたらす調べです。",
       "type": "instrumental",
       "duration": 167,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Morning_Through_Paper_Screens.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -920,7 +920,7 @@
       "caption": "夕暮れの海岸線、波のさざめきと潮風が漂う静寂な時間。",
       "type": "instrumental",
       "duration": 97,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Shoreline_at_Dusk.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -937,7 +937,7 @@
       "caption": "差し込む午後の日差しが、フローリングの床を黄金色に染め上げる。穏やかでノスタルジックなムードを描き出すサウンドスケープ。",
       "type": "instrumental",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Sunlight_Across_The_Floor.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -954,7 +954,7 @@
       "caption": "静寂と響きが織りなす、深い余韻。『Shadows Across The Grain』の情景をあなたへ。",
       "type": "instrumental",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/Shadows_Across_the_Grain.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -971,7 +971,7 @@
       "caption": "夜明けの柔らかな光と、脆い紙の壁を通して差し込む儚さ。始まりと終焉の境界で漂うような、透明感に満ちた音景（サウンドスケープ）。",
       "type": "instrumental",
       "duration": 118,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Paper_Walls_at_Dawn.mp3",
       "tags": [
         "Ambient",
         "バラード",
@@ -988,7 +988,7 @@
       "caption": "夜明けの光が纏わせる静かで重厚な空気。新たな日への期待と、微かな不安を同時に描き出すアンビエントサウンドスケープ。",
       "type": "instrumental",
       "duration": 146,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/The_Weight_of_Morning_Light.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1005,7 +1005,7 @@
       "caption": "水面に揺れる街灯の光が、静寂の中に幻想的な律動を刻む瞬間。都市と自然が出会う場所の、儚い美しさを表現した作品。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Streetlamps_on_Water.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1022,7 +1022,7 @@
       "caption": "輝く光源が夜景を彩り、まるで夢のような幕開けや、深い余韻を残すような美しい終焉を演出する音の描写。",
       "type": "instrumental",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Lights_of.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1039,7 +1039,7 @@
       "caption": "低い位置から差し込む夕暮れの光が影を長く伸ばす。時が止まった静けさの中で、内省的なメロディと和音が空間を満たしていく時間帯。",
       "type": "instrumental",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/The_Sun_Leans_Low.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1056,7 +1056,7 @@
       "caption": "目覚めの穏やかな静寂から、新しい一日が始まる柔らかな光。淡い音色が徐々に空間を満たしていく、優しい「始まり」の感覚。",
       "type": "instrumental",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Morning_in.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1073,7 +1073,7 @@
       "caption": "夜明けの石畳が舞台となる情景。湿気を含んだ空気が漂い、新たな一歩を踏み出すための静かな高揚感を伝える音色。",
       "type": "instrumental",
       "duration": 75,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Stone_Path_at_Dawn.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1090,7 +1090,7 @@
       "caption": "夕暮れの東京を背景に描く、郷愁と躍動が交錯するサウンドスケープ。日本的な深い情感をメロディーに乗せて描き出す作品。",
       "type": "instrumental",
       "duration": 152,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/japan_at_Dusk.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1107,7 +1107,7 @@
       "caption": "雨粒がガラス窓に当たる、クリアで透明な音響。過ぎゆく時間と静かな内省が交差する、穏やかな哀愁を伴うインストゥルメンタル。",
       "type": "instrumental",
       "duration": 132,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Rain_on_the_Glass.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1124,7 +1124,7 @@
       "caption": "夜明けの静寂に包まれた場所。新しい一日を迎えるための、心が震えるような予感と導入部（イントロダクション）。",
       "type": "instrumental",
       "duration": 154,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Morning_on_the_Threshold.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1141,7 +1141,7 @@
       "caption": "夜が明ける前の静けさの中、和紙の提灯が一つずつ光を放つ。穏やかで情緒的な、新しい一日を迎える情景描写。",
       "type": "instrumental",
       "duration": 88,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Paper_Lanterns_at_Dawn.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1158,7 +1158,7 @@
       "caption": "夜の沈黙と、ガラス同士が触れ合う微かな音。秘密めいたメロディが、深く考え込む時間帯に聴くためのサウンドスケープ。",
       "type": "instrumental",
       "duration": 168,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Midnight_Glass.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1175,7 +1175,7 @@
       "caption": "ベルベットのカーテンが静かに引かれる動作から始まる音。舞台が開幕する直前の、深い期待感と神秘的な余韻を予感させるサウンドスケープ。",
       "type": "instrumental",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Velvet_Curtains_Drawn.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1192,7 +1192,7 @@
       "caption": "夜明けの極限的な静寂に、三つの音符が紡ぎ出すような、夢うつつな感覚に包まれた情景描写。",
       "type": "instrumental",
       "duration": 167,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Three_Notes_Before_Dawn.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1209,7 +1209,7 @@
       "caption": "遠ざかっていく光の軌跡を辿る旅路。「東京を去る最終列車」が伝える、夜明け前の深い郷愁と、物思いに耽るような静謐な時間。",
       "type": "instrumental",
       "duration": 146,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/The_Last_Train_from_tokyo.mp3",
       "tags": [
         "Jazz",
         "静か",
@@ -1226,7 +1226,7 @@
       "caption": "ガラス越しの光が描き出す、穏やかで希望に満ちた夜明けの色彩。静寂から生まれる新しい始まりを彩るサウンドスケープ。",
       "type": "instrumental",
       "duration": 170,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Outro%20Slow%20Pop/First_Light_Over_Glass.mp3",
       "tags": [
         "Ambient",
         "静か",
@@ -1243,7 +1243,7 @@
       "caption": "",
       "type": "instrumental",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Outro%20Slow%20Pop/Peaceful%20Closure.mp3",
       "tags": [
         "Ambient",
         "静か",
@@ -1260,7 +1260,7 @@
       "caption": "満潮から引く波のような、優しい調べが徐々に消えていく感覚。穏やかな余韻と静寂に包まれた終幕の情景です。",
       "type": "instrumental",
       "duration": 169,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Outro%20Slow%20Pop/Gentle%20Swells%20(Outro).mp3",
       "tags": [
         "Ambient",
         "静か",
@@ -1277,7 +1277,7 @@
       "caption": "温かいRhodesピアノを纏った、浮遊感あふれるアンビエントポップの世界。心と空気を優しく包み込むメロディ体験です。",
       "type": "instrumental",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Outro%20Slow%20Pop/Evolving%20Rhodes%20Ambient%20Pop.mp3",
       "tags": [
         "Ambient",
         "静か",
@@ -1294,7 +1294,7 @@
       "caption": "深い残響と濾過された音色が、徐々に空間を満たしていく感覚。静かに音が開いていくような導入の瞬間を表現しています。",
       "type": "instrumental",
       "duration": 169,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Outro%20Slow%20Pop/Filtered%20Resonance.mp3",
       "tags": [
         "Ambient",
         "静か",
@@ -1311,7 +1311,7 @@
       "caption": "水晶のような透明な光が差す夜明けの情景。心の内面から浄化されるかのような、クリアで幻想的なサウンドスケープです。",
       "type": "instrumental",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Outro%20Slow%20Pop/Crystalline%20Sunrise.mp3",
       "tags": [
         "Ambient",
         "静か",
@@ -1328,7 +1328,7 @@
       "caption": "静寂の奥底から湧き上がる、深遠で穏やかな高揚感。感情を優しく揺さぶり、心に深く響く瞬間を彩ります。",
       "type": "instrumental",
       "duration": 169,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Outro%20Slow%20Pop/Profoundly%20Quiet%20Uplift.mp3",
       "tags": [
         "Ambient",
         "静か",
@@ -1345,7 +1345,7 @@
       "caption": "音の粒（グラニュラー）が織りなす微細で静謐な空間。時間が停止したかのような、息を呑むほどの透明感を伴う入り口（あるいは結び）です。",
       "type": "instrumental",
       "duration": 170,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Outro%20Slow%20Pop/Granular%20Stillness.mp3",
       "tags": [
         "Ambient",
         "静か",
@@ -1362,7 +1362,7 @@
       "caption": "物思いにふけるような、静けさと内省が融合したメロディ。心に語りかけるかのような穏やかなサウンドスケープを体験してください。",
       "type": "instrumental",
       "duration": 162,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Outro%20Slow%20Pop/Quiet%20Reflection.mp3",
       "tags": [
         "Ambient",
         "静か",
@@ -1379,7 +1379,7 @@
       "caption": "ベルベットのように滑らかで深みのある音響が、物語の幕開けと終わりを包み込む。壮大でありながら優しい余韻を感じさせる楽曲です。",
       "type": "instrumental",
       "duration": 100,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Outro%20Slow%20Pop/Velvet%20Pulse.mp3",
       "tags": [
         "Ambient",
         "静か",
@@ -1396,7 +1396,7 @@
       "caption": "ノスタルジックなアナログ音像が漂い、時間と記憶の境界を探るような導入部。優しいエコーとディレイが、リスナーを過去への静かな旅へと誘う。",
       "type": "instrumental",
       "duration": 150,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Lo-fi%20Beat%20Outro/Analog%20Drift.mp3",
       "tags": [
         "EDM",
         "クール",
@@ -1413,7 +1413,7 @@
       "caption": "心象風景を描く音のタペストリー。漂いゆく時間と記憶のサイクルの中で、聴き手を深い思索へ導く夜明けのような空気感。",
       "type": "instrumental",
       "duration": 158,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Lo-fi%20Beat%20Outro/Drifting%20Cycles.mp3",
       "tags": [
         "EDM",
         "クール",
@@ -1430,7 +1430,7 @@
       "caption": "文明の残響が宿る廃墟。錆びた金属音とメランコリックなサウンドスケープが、時間の経過を物語る。",
       "type": "instrumental",
       "duration": 141,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Lo-fi%20Beat%20Outro/Industrial%20Decay.mp3",
       "tags": [
         "EDM",
         "クール",
@@ -1447,7 +1447,7 @@
       "caption": "深く温かいムードを持つアンビエントな質感。語り始める心象風景を優しく包み込むようなサウンドレイヤー。",
       "type": "instrumental",
       "duration": 172,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Lo-fi%20Beat%20Outro/Smoky%20Textures.mp3",
       "tags": [
         "EDM",
         "クール",
@@ -1464,7 +1464,7 @@
       "caption": "デジタルノイズが紡ぐ、崩壊と再生の循環。断片的なメロディラインが未来への軌跡を描き出す緊張感のあるサウンドスケープ。",
       "type": "instrumental",
       "duration": 157,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Lo-fi%20Beat%20Outro/Digital%20Decay%20Loop.mp3",
       "tags": [
         "EDM",
         "クール",
@@ -1481,7 +1481,7 @@
       "caption": "終焉に向かって霧散していくエモーショナルな残響。物語の余韻と共に、穏やかな静寂へとリスナーを導くアウトロ。",
       "type": "instrumental",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Lo-fi%20Beat%20Outro/Controlled%20Dissipation%20Outro.mp3",
       "tags": [
         "EDM",
         "クール",
@@ -1498,7 +1498,7 @@
       "caption": "音と沈黙が織りなす、深層心理への瞑想的な航海。自分自身の内なる声に静かに耳を澄ませる時間を提供する。",
       "type": "instrumental",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Lo-fi%20Beat%20Outro/Echo%20Chamber%20Meditation.mp3",
       "tags": [
         "EDM",
         "クール",
@@ -1515,7 +1515,7 @@
       "caption": "ネオンの残光が夜明けとともに溶け出す、儚くも美しい情景。都会的なエフェメラルな時間を彩るサウンドスケープ。",
       "type": "instrumental",
       "duration": 152,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Lo-fi%20Beat%20Outro/Neon%20Echoes%20Outro.mp3",
       "tags": [
         "EDM",
         "クール",
@@ -1532,7 +1532,7 @@
       "caption": "優雅で洗練された幕引きを演出する空間音響。トラック全体が包み込まれるような、美しい余韻の残響。",
       "type": "instrumental",
       "duration": 99,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Lo-fi%20Beat%20Outro/Elegant%20Exit.mp3",
       "tags": [
         "EDM",
         "クール",
@@ -1549,7 +1549,7 @@
       "caption": "静寂の中に揺蕩う残り香。夢のような感覚と共にゆっくりと消え去る、深い余韻を告げるフィナーレ。",
       "type": "instrumental",
       "duration": 154,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/outro/Lo-fi%20Beat%20Outro/Echo%20Decay%20Outro.mp3",
       "tags": [
         "EDM",
         "クール",
@@ -1566,7 +1566,7 @@
       "caption": "一瞬の閃きが描く、繊細な煌めきと期待感。物語の幕開けを予感させる、サウンドスケープです。",
       "type": "instrumental",
       "duration": 57,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Guitar%20Clean%20Intro/30-Second%20Spark.mp3",
       "tags": [
         "Pop",
         "疾走感",
@@ -1583,7 +1583,7 @@
       "caption": "降り注ぐ光と共に流れる心地よいグルーヴ。午後の散策路にいるような、開放的なサウンドトラックです。",
       "type": "instrumental",
       "duration": 36,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Guitar%20Clean%20Intro/Sun-Drenched%20Groove.mp3",
       "tags": [
         "Pop",
         "疾走感",
@@ -1600,7 +1600,7 @@
       "caption": "電極の粒子が空中に舞い上がるような透明感。新たな章の始まりを告げる、エレクトロニックで華やかな序曲です。",
       "type": "instrumental",
       "duration": 29,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Guitar%20Clean%20Intro/Electric%20Pop%20Prelude.mp3",
       "tags": [
         "Pop",
         "疾走感",
@@ -1617,7 +1617,7 @@
       "caption": "時間の中に蘇る優しい響き。アコースティックな音色が、過去の温かい思い出を語りかける導入部です。",
       "type": "instrumental",
       "duration": 64,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Guitar%20Clean%20Intro/Nostalgic%20Acoustic%20Pop%20Intro.mp3",
       "tags": [
         "Pop",
         "疾走感",
@@ -1634,7 +1634,7 @@
       "caption": "ネオンがきらめく都会の夜明け。新しいサイクルと、熱い鼓動が共鳴するビートを感じてください。",
       "type": "instrumental",
       "duration": 48,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Guitar%20Clean%20Intro/Neon%20Sunrise%20Beat.mp3",
       "tags": [
         "Pop",
         "疾走感",
@@ -1651,7 +1651,7 @@
       "caption": "電子音のアルペジオが空間を満たす感覚。未来的な浮遊感と共に、全体を包み込むオープニングムードです。",
       "type": "instrumental",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Guitar%20Clean%20Intro/Electro-Pop%20Intro%20Loop.mp3",
       "tags": [
         "Pop",
         "疾走感",
@@ -1668,7 +1668,7 @@
       "caption": "夜明けの淡い光を浴びて。希望に満ちたメロディが静かに流れ出し、新たな旅立ちを予感させます。",
       "type": "instrumental",
       "duration": 27,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Guitar%20Clean%20Intro/Sunrise%20Lead-in.mp3",
       "tags": [
         "Pop",
         "疾走感",
@@ -1685,7 +1685,7 @@
       "caption": "広大なスタジアムの余韻。記憶と感情が交錯する空間で、壮大さと静謐さが共存する瞬間を描きます。",
       "type": "instrumental",
       "duration": 146,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Guitar%20Clean%20Intro/Stadium%20Echoes.mp3",
       "tags": [
         "Pop",
         "疾走感",
@@ -1702,7 +1702,7 @@
       "caption": "ノスタルジーを纏ったポップス。懐かしくも輝かしいムードが、物語の始まりを心地よく飾ります。",
       "type": "instrumental",
       "duration": 172,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Guitar%20Clean%20Intro/Retro%20Pop%20Intro.mp3",
       "tags": [
         "Pop",
         "疾走感",
@@ -1719,7 +1719,7 @@
       "caption": "囁き声のような親密なサウンドスケープ。物語の開始と終結を包み込む、静かで内省的な時間です。",
       "type": "instrumental",
       "duration": 63,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Guitar%20Clean%20Intro/Close-Mic'd%20Connection.mp3",
       "tags": [
         "Pop",
         "疾走感",
@@ -1736,7 +1736,7 @@
       "caption": "朝の光に包まれて。希望を歌い上げる、温かくも郷愁を感じさせるジャズのメロディーが、新しい一日を静かに目覚めさせてくれる導入部です。",
       "type": "instrumental",
       "duration": 158,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Intro%20Jazz%20%E2%80%93%20Soft%20Opening/Hopeful%20Jazz%20Intro.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -1753,7 +1753,7 @@
       "caption": "ネオン街を駆け抜ける午後の熱狂。洗練されたスウィングのリズムが、都会的で躍動的なサウンドスケープを描き出すシーンに最適です。",
       "type": "instrumental",
       "duration": 29,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Intro%20Jazz%20%E2%80%93%20Soft%20Opening/Neo-Swing%20Sunrise.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -1770,7 +1770,7 @@
       "caption": "黄金の道を歩むような、壮大で心揺さぶる旅路のサウンドトラック。希望と到達点を象徴する美しい情景描写が込められています。",
       "type": "instrumental",
       "duration": 28,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Intro%20Jazz%20%E2%80%93%20Soft%20Opening/The%20Golden%20Walk.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -1787,7 +1787,7 @@
       "caption": "力強く響くブラスセクションのビート。物語のクライマックスや、重要な転換点でのドラマチックな高揚感を演出します。",
       "type": "instrumental",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Intro%20Jazz%20%E2%80%93%20Soft%20Opening/Brass%20Heartbeat.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -1804,7 +1804,7 @@
       "caption": "希望が降り注ぐ滝のように、旋律が徐々に広がる感動的なオーケストレーション。静謐から確かな飛躍へと導く、壮麗な展開を感じさせます。",
       "type": "instrumental",
       "duration": 157,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Intro%20Jazz%20%E2%80%93%20Soft%20Opening/Cascading%20Hope.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -1821,7 +1821,7 @@
       "caption": "深く重厚なビートとメロウなベースラインが魅せる、期待に満ちたシークエンス。物語の幕開けを彩る、ドラマチックで洗練された導入部です。",
       "type": "instrumental",
       "duration": 157,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Intro%20Jazz%20%E2%80%93%20Soft%20Opening/Velvet%20Stride%20Intro.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -1838,7 +1838,7 @@
       "caption": "日差しの輝きを感じるよう、心地よく弾むクラリネットの調べ。穏やかでありながら開放的なラウンジのような午後の時間をお届けします。",
       "type": "instrumental",
       "duration": 150,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Intro%20Jazz%20%E2%80%93%20Soft%20Opening/Clarinet%20Sunlight%20Lounge.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -1855,7 +1855,7 @@
       "caption": "広大なスカイラインを舞台に、自由でグルーヴィなシンセとリズムが交錯する瞬間。爽快感あふれる夜の躍動感を演出します。",
       "type": "instrumental",
       "duration": 158,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Intro%20Jazz%20%E2%80%93%20Soft%20Opening/Skyline%20Swing.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -1872,7 +1872,7 @@
       "caption": "青空と夜明けをイメージした、無限に広がる期待感。新たな旅立ちや希望を感じさせる、壮大で清々しいサウンドスケープです。",
       "type": "instrumental",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Intro%20Jazz%20%E2%80%93%20Soft%20Opening/New%20Horizons.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -1889,7 +1889,7 @@
       "caption": "空間を満たすクリアな余韻とメロディが、静寂の中に深い感情を響かせる。新しい始まりの前の、張り詰めた期待感を表現した楽曲です。",
       "type": "instrumental",
       "duration": 36,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Intro%20Jazz%20%E2%80%93%20Soft%20Opening/Vivid%20Resonance.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -1906,7 +1906,7 @@
       "caption": "進歩と進化を描く、壮大なデジタル音響体験。未来へ向かって躍動するサウンドスケープが心を満たします。",
       "type": "instrumental",
       "duration": 154,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Digital%20Progress.mp3",
       "tags": [
         "Ambient",
         "疾走感",
@@ -1923,7 +1923,7 @@
       "caption": "静寂の中から心の奥深部へと導くような、穏やかで普遍的な調べ。内面的な発見の瞬間を彩る音色です。",
       "type": "instrumental",
       "duration": 158,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Serene%20Discovery.mp3",
       "tags": [
         "Ambient",
         "疾走感",
@@ -1940,7 +1940,7 @@
       "caption": "電子的なアルペジオとミニマルなビートが響き合う、高揚感のある空間。物語の転換点となる同期の調べです。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Sync%20Protocol.mp3",
       "tags": [
         "Ambient",
         "疾走感",
@@ -1957,7 +1957,7 @@
       "caption": "新たなデジタル時代の夜明けを象徴する音響空間。静謐な始まりと、広がり続ける可能性を感じさせます。",
       "type": "instrumental",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Dawn%20of%20a%20Digital%20Era.mp3",
       "tags": [
         "Ambient",
         "疾走感",
@@ -1974,7 +1974,7 @@
       "caption": "未来へと続くデータストリームの鼓動を聴くよう、静かで連続的な流れを描写したサウンドスケープです。",
       "type": "instrumental",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Data%20Streams%20Flowing.mp3",
       "tags": [
         "Ambient",
         "疾走感",
@@ -1991,7 +1991,7 @@
       "caption": "電子シグナルが静寂を引き裂き、新たな世界の幕開けを告げる。緊張感あふれる起動の瞬間を表現しました。",
       "type": "instrumental",
       "duration": 59,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/System%20Boot%20sequence.mp3",
       "tags": [
         "Ambient",
         "疾走感",
@@ -2008,7 +2008,7 @@
       "caption": "聴く者を未知の領域へと誘う、奥行きのある没入型サウンド。空間的な広がりが心を包み込みます。",
       "type": "instrumental",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Phase%20Logic.mp3",
       "tags": [
         "Ambient",
         "疾走感",
@@ -2025,7 +2025,7 @@
       "caption": "広大で澄み切った地平線を感じさせる、荘厳な旅路の序章。始まりと終わりを優しく彩る調べです。",
       "type": "instrumental",
       "duration": 151,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Pristine%20Horizons.mp3",
       "tags": [
         "Ambient",
         "疾走感",
@@ -2042,7 +2042,7 @@
       "caption": "光の粒子が上昇し、変革を遂げる様子を描いたサウンドスケープ。新たな高みへ到達する瞬間を象徴的に描いています。",
       "type": "instrumental",
       "duration": 168,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Digital%20Ascension.mp3",
       "tags": [
         "Ambient",
         "疾走感",
@@ -2059,7 +2059,7 @@
       "caption": "テクノロジーと人間性が交差する、疾走感あふれる鼓動。新しい動きが生まれる、エネルギーに満ちた結びの章です。",
       "type": "instrumental",
       "duration": 101,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Digital%20Momentum.mp3",
       "tags": [
         "Ambient",
         "疾走感",
@@ -2076,7 +2076,7 @@
       "caption": "夜明けの帳のような、深い思索に沈むベースソロ。郷愁と静かな安らぎが混ざり合う瞬間を描くサウンド。",
       "type": "instrumental",
       "duration": 84,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Wood%20Bass%20Intro/Reflective%20Bass%20Solo.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -2093,7 +2093,7 @@
       "caption": "軽快で弾むスウィングのリズムが、一日の始まりを明るく照らす。心地よい高揚感を運ぶサウンドトラック。",
       "type": "instrumental",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Wood%20Bass%20Intro/Uplifting%20Swing%20Intro.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -2110,7 +2110,7 @@
       "caption": "静寂の中から広がる深遠な希望を感じさせるイントロダクション。新たな旅立ちを予感させる壮大で温かい音の風景。",
       "type": "instrumental",
       "duration": 100,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Wood%20Bass%20Intro/Profound%20Hope%20Intro.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -2127,7 +2127,7 @@
       "caption": "晴れやかな午後のひとときを彩る、ボサノヴァのリズム。日常に軽快なグルーヴと色彩を与えます。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Wood%20Bass%20Intro/Breezy%20Bossa%20Loop.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -2144,7 +2144,7 @@
       "caption": "静寂の中に宿る達成の予感、物語の始まりや節目を演出する空気感。深みのあるプレリュードです。",
       "type": "instrumental",
       "duration": 102,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Wood%20Bass%20Intro/Quiet%20Achievement%20Prelude.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -2161,7 +2161,7 @@
       "caption": "洗練されたジャズクラブのような、朝のエネルギー。軽快なリズムとブラスセクションが幕開けを告げる高揚感。",
       "type": "instrumental",
       "duration": 161,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Wood%20Bass%20Intro/Jazz%20Intro%20Energy.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -2178,7 +2178,7 @@
       "caption": "秘密めいた夜明けを思わせる、ベルベットのようなサウンドスケープ。静謐な空間から新たな発見へ誘うムード。",
       "type": "instrumental",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Wood%20Bass%20Intro/Velvet%20Discovery.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -2195,7 +2195,7 @@
       "caption": "確かな決意を秘めた穏やかな音。新しい歩みを始める際に寄り添う、壮大でありながらも優しく響くサウンド。",
       "type": "instrumental",
       "duration": 171,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Wood%20Bass%20Intro/Subtle%20Resolve.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -2212,7 +2212,7 @@
       "caption": "陽光が降り注ぐのどかな散歩道。時間が穏やかに流れる、心地よい日常をイメージした風景音のようなトラック。",
       "type": "instrumental",
       "duration": 146,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Wood%20Bass%20Intro/Sun-Drenched%20Sidewalk.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -2229,7 +2229,7 @@
       "caption": "夜明け前の静けさから届く、優しいソロ。心が落ち着き、安らぎを感じる瞬間に寄り添います。",
       "type": "instrumental",
       "duration": 165,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/02intro-outro/intro/Wood%20Bass%20Intro/Gentle%20Hope%20Solo.mp3",
       "tags": [
         "Jazz",
         "明るい",

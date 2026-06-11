@@ -23,7 +23,7 @@
     {
       "id": "album_1780196308916",
       "title": "Chill Talk EDM",
-      "art": "",
+      "art": "https://cdn.neura-music.com/05talk/Chill/Chill%20Talk%20EDM/cover_1780198229337.webp",
       "caption": "軽いビートと柔らかいシンセで構成された、声を邪魔しないチル系EDM。",
       "categoryId": "cat_1780196207758",
       "tracks": [
@@ -44,7 +44,7 @@
     {
       "id": "album_1780198475264",
       "title": "トークのためのピコピコBGM",
-      "art": "",
+      "art": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM/cover_1780200193535.webp",
       "caption": "軽いピコピコ音と短いリフで構成された、話し声を邪魔しないチル系ビットチューン。",
       "categoryId": "cat_1780196207758",
       "tracks": [
@@ -65,7 +65,7 @@
     {
       "id": "album_1780285628450",
       "title": "トークのためのピコピコBGM 2",
-      "art": "",
+      "art": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%202/cover_1780287495383.webp",
       "caption": "軽いピコピコ音と短いリフで構成された、話し声を邪魔しないチル系ビットチューンのセカンドアルバム。",
       "categoryId": "cat_1780196207758",
       "tracks": [
@@ -86,7 +86,7 @@
     {
       "id": "album_1780287632259",
       "title": "ゆるいJAZZ",
-      "art": "",
+      "art": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8B%E3%81%84JAZZ/cover_1780289713050.webp",
       "caption": "ゆったり話したい時間のための、軽めのJAZZ BGMを収録したアルバムです。",
       "categoryId": "cat_1780196207758",
       "tracks": [
@@ -107,7 +107,7 @@
     {
       "id": "album_1780371903076",
       "title": "EDM POP",
-      "art": "",
+      "art": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/cover_1780374408175.webp",
       "caption": "トークを明るく彩る、軽快なEDMポップBGM。 電子的で爽やかなテンポが、会話のリズムを心地よく支える明るい背景音楽です。",
       "categoryId": "cat_1780196207758",
       "tracks": [
@@ -133,7 +133,7 @@
     {
       "id": "album_1780455320523",
       "title": "Light HOUSE",
-      "art": "",
+      "art": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/cover_1780457972454.webp",
       "caption": "軽やかな4つ打ちを中心にした、明るいハウス系BGMのアルバムです。",
       "categoryId": "cat_1780196207758",
       "tracks": [
@@ -159,7 +159,7 @@
     {
       "id": "album_1780553146475",
       "title": "ゆるTECHNO",
-      "art": "",
+      "art": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/cover_1780553227527.webp",
       "caption": "",
       "categoryId": "cat_1780196207758",
       "tracks": [
@@ -185,7 +185,7 @@
     {
       "id": "album_1780554248919",
       "title": "トークのためのピコピコBGM 3",
-      "art": "",
+      "art": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%203/cover_1780555962415.webp",
       "caption": "軽いピコピコ音と短いリフで構成された、話し声を邪魔しないチル系ビットチューンの3rdアルバム。",
       "categoryId": "cat_1780196207758",
       "tracks": [
@@ -206,7 +206,7 @@
     {
       "id": "album_1780556322526",
       "title": "まじめな話をする時のためのEDM",
-      "art": "",
+      "art": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/cover_1780558365150.webp",
       "caption": "落ち着いたトーンで話したい時に使える、無機質で控えめなEDM。",
       "categoryId": "cat_1780196207758",
       "tracks": [
@@ -237,7 +237,7 @@
       "caption": "静寂の中に溶け込む優しい流れ。心のざわめきを洗い流す、心地よいグルーヴのサウンドスケープ。",
       "type": "instrumental",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Chill%20Talk%20EDM/Soft%20Current.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -254,7 +254,7 @@
       "caption": "穏やかなリズムが心身を包み込む時間。都会の喧騒を忘れさせる、リラックスできる午後のひとときを演出するサウンドトラック。",
       "type": "instrumental",
       "duration": 154,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Chill%20Talk%20EDM/Tranquil%20Groove.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -271,7 +271,7 @@
       "caption": "都会の喧騒を忘れ、ローズピアノが誘うチルアウト空間。心が穏やかに呼吸を整える、優しいサウンドスケープ。",
       "type": "instrumental",
       "duration": 172,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Chill%20Talk%20EDM/Soft%20Rhodes%20Chillout.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -288,7 +288,7 @@
       "caption": "日常に寄り添うメロディックなサウンド。新しい一日の気分を心地よく盛り上げる、ささやかな彩り。",
       "type": "instrumental",
       "duration": 164,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Chill%20Talk%20EDM/Daily%20Vibe%20Alpha.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -305,7 +305,7 @@
       "caption": "陽光あふれるトロピカルなムード。爽やかさとリラックスを兼ね備えた、気分が上がるBGM。",
       "type": "instrumental",
       "duration": 153,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Chill%20Talk%20EDM/Airy%20Tropical%20Chill.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -322,7 +322,7 @@
       "caption": "神秘的で壮大な広がりを持つ音の風景。耳元でささやくような秘密の囁きが、心に深く響き渡ります。",
       "type": "instrumental",
       "duration": 163,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Chill%20Talk%20EDM/Majestic%20Whispers.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -339,7 +339,7 @@
       "caption": "電子音とジャズが融合した、洗練された都会の夜。午後のひとときを彩る、メロウなラウンジグルーヴ。",
       "type": "instrumental",
       "duration": 155,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Chill%20Talk%20EDM/Synthesized%20Lounge%20Groove.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -356,7 +356,7 @@
       "caption": "漂う空気感と、生命のリズムが融合。心に心地よい浮遊感をもたらす、アンビエントなサウンドスケープ。",
       "type": "instrumental",
       "duration": 175,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Chill%20Talk%20EDM/Ambient%20Pulse%20Talk.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -373,7 +373,7 @@
       "caption": "透き通る空気と心地よいビートが織りなす、クリアなムード。日常に優しく溶け込むサウンドトラック。",
       "type": "instrumental",
       "duration": 154,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Chill%20Talk%20EDM/Crystal%20Clear%20Vibe.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -390,7 +390,7 @@
       "caption": "暖かくノスタルジックな音像。まるで思い出の午後の光を包み込むような、優しい心地よさ。",
       "type": "instrumental",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Chill%20Talk%20EDM/Soft%20Focus%20Loop.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -407,7 +407,7 @@
       "caption": "柔らかな日差しが差し込む空間。穏やかで心地よい朝の空気感を捉え、新しい日常が始まる予感を運ぶサウンドスケープ。",
       "type": "instrumental",
       "duration": 96,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM/Sunny_Morning_Lobby.mp3",
       "tags": [
         "Electronic",
         "明るい",
@@ -424,7 +424,7 @@
       "caption": "最高の高得点を目指す情熱的な瞬間を描く。汗と熱量が交錯する疾走感あふれるサウンドトラック。",
       "type": "instrumental",
       "duration": 127,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM/High_Score_Run.mp3",
       "tags": [
         "Electronic",
         "明るい",
@@ -441,7 +441,7 @@
       "caption": "都会の広場に降り注ぐ、最初の優しい光。目覚めと静かな始まりを予感させる、穏やかなサウンドスケープ。",
       "type": "instrumental",
       "duration": 154,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM/First_Light_at_the_Plaza.mp3",
       "tags": [
         "Electronic",
         "明るい",
@@ -458,7 +458,7 @@
       "caption": "計算された静寂の中の洗練されたムード。次に起こる展開を予感させる、張り詰めたグルーヴを表現。",
       "type": "instrumental",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM/Calculated_Calm.mp3",
       "tags": [
         "Electronic",
         "明るい",
@@ -475,7 +475,7 @@
       "caption": "勝利の達成感を祝う、輝かしく力強いエネルギー。クライマックスを彩る、エネルギッシュなインストゥルメンタル。",
       "type": "instrumental",
       "duration": 156,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM/Victory_Lap_.mp3",
       "tags": [
         "Electronic",
         "明るい",
@@ -492,7 +492,7 @@
       "caption": "無機質な日常の空間と一定のリズム。単なる「機能」を描き出し、心地よい繰り返しを感じさせるインストゥルメンタル。",
       "type": "instrumental",
       "duration": 95,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM/Office_Utility.mp3",
       "tags": [
         "Electronic",
         "明るい",
@@ -509,7 +509,7 @@
       "caption": "週末の朝を疾走する躍動感。日常の忙しさから解放され、明るくエネルギッシュに弾むようなサウンドスケープ。",
       "type": "instrumental",
       "duration": 143,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM/Saturday_Morning_Dash.mp3",
       "tags": [
         "Electronic",
         "明るい",
@@ -526,7 +526,7 @@
       "caption": "やわらかな光に包まれた静謐な時間。日常のささやかな美しさを感じさせる、浮遊感のあるサウンドスケープ。",
       "type": "instrumental",
       "duration": 148,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM/Level_One_Sunlight.mp3",
       "tags": [
         "Electronic",
         "明るい",
@@ -543,7 +543,7 @@
       "caption": "広場を優しく照らす朝の光。穏やかでポジティブな目覚めの空気感を、情感豊かに表現。",
       "type": "instrumental",
       "duration": 102,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM/Morning_Over_the_Plaza.mp3",
       "tags": [
         "Electronic",
         "明るい",
@@ -560,7 +560,7 @@
       "caption": "落ち着いた空間に満ちる朝の調べ。静謐な目覚めと新しい始まりを感じさせる、洗練されたメロディ。",
       "type": "instrumental",
       "duration": 108,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM/Morning_on_the_Level.mp3",
       "tags": [
         "Electronic",
         "明るい",
@@ -577,7 +577,7 @@
       "caption": "暖炉の傍で過ごす静謐な時間。心地よい安息感に包まれるサウンドスケープ。",
       "type": "instrumental",
       "duration": 98,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%202/Resting_by_the_Hearth.mp3",
       "tags": [
         "Game Music",
         "温かい",
@@ -594,7 +594,7 @@
       "caption": "地図の遥か果ての地平線に沈む太陽。旅の終わりに立ち止まり、物思いに耽る壮大な色彩を描くインストゥルメンタル。",
       "type": "instrumental",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%202/Sunset_at_the_Edge_of_the_Map.mp3",
       "tags": [
         "Game Music",
         "温かい",
@@ -611,7 +611,7 @@
       "caption": "光あふれる希望の朝。新しい発見へと導く、軽やかで希望に満ちた冒険心を刺激する調べ。",
       "type": "instrumental",
       "duration": 158,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%202/Sunny_Morning_Quest.mp3",
       "tags": [
         "Game Music",
         "温かい",
@@ -628,7 +628,7 @@
       "caption": "霧が立ち込める静寂の中、物語の幕が上がる。深みとミステリアスさを纏った、探求心を掻き立てるサウンドスケープ。",
       "type": "instrumental",
       "duration": 102,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%202/Where_the_Mist_Settles.mp3",
       "tags": [
         "Game Music",
         "温かい",
@@ -645,7 +645,7 @@
       "caption": "賑わいに満ちた市場の通りをさまよう。日常のささやかな躍動と、豊かな生命の色彩が薫る調べ。",
       "type": "instrumental",
       "duration": 99,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%202/Marketplace_Stroll.mp3",
       "tags": [
         "Game Music",
         "温かい",
@@ -662,7 +662,7 @@
       "caption": "広大な世界の午後。過ぎゆく時を想わせる、郷愁と穏やかさに満ちた、優しいメロディ。",
       "type": "instrumental",
       "duration": 128,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%202/Afternoon_on_the_Overworld.mp3",
       "tags": [
         "Game Music",
         "温かい",
@@ -679,7 +679,7 @@
       "caption": "古い書物と、静かに沸き立つケトルの音。時がゆっくり流れる午後のひとときを描き出す、落ち着いた情景描写曲。",
       "type": "instrumental",
       "duration": 152,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%202/Books_and_Kettle.mp3",
       "tags": [
         "Game Music",
         "温かい",
@@ -696,7 +696,7 @@
       "caption": "夜の静寂に灯るポーチの明かり。日常の喧騒を忘れ、心の安らぎと暖かな光に包まれる情景。",
       "type": "instrumental",
       "duration": 105,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%202/Porch_Light_On.mp3",
       "tags": [
         "Game Music",
         "温かい",
@@ -713,7 +713,7 @@
       "caption": "村の暖炉のそばで交わされる、心温まるひととき。親密な語らいが聞こえてくるような、心地良い音の調べ。",
       "type": "instrumental",
       "duration": 97,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%202/Village_Hearthside.mp3",
       "tags": [
         "Game Music",
         "温かい",
@@ -730,7 +730,7 @@
       "caption": "窓を打つ雨音と、温かい紅茶の香りをまとって。午後の穏やかな語らいが溶け込む、情緒的な調べ。",
       "type": "instrumental",
       "duration": 142,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%202/Tea_by_the_Rainy_Pane.mp3",
       "tags": [
         "Game Music",
         "温かい",
@@ -747,7 +747,7 @@
       "caption": "窓を介した視界。午後四時の柔らかい光が描き出す、過ぎゆく時間への静かな郷愁を綴る。",
       "type": "instrumental",
       "duration": 170,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8B%E3%81%84JAZZ/Window_Seat_at_Four.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -764,7 +764,7 @@
       "caption": "高い場所からの視点。眼下に広がる日常の喧騒と、その中に存在するふとした静寂を捉えた、物語のようなサウンドスケープ。",
       "type": "instrumental",
       "duration": 165,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8B%E3%81%84JAZZ/Seventh_Floor_View.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -781,7 +781,7 @@
       "caption": "光が紙を照らすように、透明感あふれる午後の時間。静かに思考が巡り、言葉を探すような心地よいひととき。",
       "type": "instrumental",
       "duration": 146,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8B%E3%81%84JAZZ/Sunlight_on_Paper.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -798,7 +798,7 @@
       "caption": "日曜の朝、テラスに広がる穏やかな光景。時間の流れが緩やかになる、優しく心地よいインストゥルメンタル。",
       "type": "instrumental",
       "duration": 180,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8B%E3%81%84JAZZ/Sunday_Morning_Terrace.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -815,7 +815,7 @@
       "caption": "テーブルに差し込む光と影。午後の日差しが描き出す、静かで美しいコントラストと、溜まった時間の重み。",
       "type": "instrumental",
       "duration": 148,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8B%E3%81%84JAZZ/Sunlight_On_The_Table.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -832,7 +832,7 @@
       "caption": "都会の隅にある、特別な午後の時間。カフェの日常の風景に溶け込む、穏やかな音色と余韻。",
       "type": "instrumental",
       "duration": 157,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8B%E3%81%84JAZZ/Sidewalk_Cafe_Ritual.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -849,7 +849,7 @@
       "caption": "目覚める前の街の空気感。静寂と、これから始まる日への微かな期待が漂う夜明け前の時間帯。",
       "type": "instrumental",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8B%E3%81%84JAZZ/Before_the_City_Wakes.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -866,7 +866,7 @@
       "caption": "深いメロディが心象風景を包み込む、黄昏時（たそがれ）の静謐な空間。都会のノイズを忘れ、内面へ沈潜する時。",
       "type": "instrumental",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8B%E3%81%84JAZZ/Velvet_Meridian.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -883,7 +883,7 @@
       "caption": "温かく包み込む午後の光。心に沁みる郷愁と、優しいメロディーが調和する「アンバーアワー」の光景。",
       "type": "instrumental",
       "duration": 149,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8B%E3%81%84JAZZ/Amber_Hour.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -900,7 +900,7 @@
       "caption": "夜明けの計画図（ブループリント）。希望に満ちた空気に彩られ、新しい一日が幕を開ける瞬間を音で描く。",
       "type": "instrumental",
       "duration": 162,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8B%E3%81%84JAZZ/Blueprint_of_Morning.mp3",
       "tags": [
         "Jazz",
         "明るい",
@@ -917,7 +917,7 @@
       "caption": "窓から差し込む穏やかな午前の光。心穏やかに過ごせる日常の情景を紡ぐ、落ち着いたサウンドスケープ。",
       "type": "instrumental",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/Broad_Daylight.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -934,7 +934,7 @@
       "caption": "朝霧に包まれた桟橋。波のさざめきと風が、静寂の中で優しいメロディを奏でる、叙情的な空気感。",
       "type": "instrumental",
       "duration": 154,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/Morning_on_the_Pier.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -951,7 +951,7 @@
       "caption": "静かな日常にそっと光を灯すような、優しく上昇するサウンド。心が解き放たれるような、澄んだ瞬間を表現したインストゥルメンタル。",
       "type": "instrumental",
       "duration": 160,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/Subtle%20Lift.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -968,7 +968,7 @@
       "caption": "夜明け前の静寂、そして新しい視点。世界を希望に満ちた光で捉え直す、内省的で感動的なサウンド。",
       "type": "instrumental",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/First_Light_Perspective.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -985,7 +985,7 @@
       "caption": "乾いた砂漠の熱気と、昼下がりの張り詰めた静けさ。物語が幕を開ける直前の、期待に満ちたドラマティックな空気感。",
       "type": "instrumental",
       "duration": 149,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/High_Noon_Terrace.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -1002,7 +1002,7 @@
       "caption": "心地よい目覚めの時間、週の始まりのルーティン。朝の光が差し込む、穏やかで優しい音の風景。",
       "type": "instrumental",
       "duration": 156,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/Tuesday_Morning_Routine.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -1019,7 +1019,7 @@
       "caption": "日常に溶け込む洗練されたサウンド。いつもの空間が、心地よいBGMとなるような、流れるような楽曲。",
       "type": "instrumental",
       "duration": 112,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/The_Daily_Standard.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -1036,7 +1036,7 @@
       "caption": "人々の生活が交差する、秘密めいた角のテーブル。静寂の中で、多様な物語が生まれる空間の空気感を描写。",
       "type": "instrumental",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/The_Corner_Table.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -1053,7 +1053,7 @@
       "caption": "夜明けの空気と、心地よいリズムが共鳴する。新しい一日の幕開けを告げる、希望に満ちたサウンドトラック。",
       "type": "instrumental",
       "duration": 152,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/Morning_Momentum.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -1070,7 +1070,7 @@
       "caption": "静謐な光と空間が織りなす、目覚めの調べ。研ぎ澄まされた環境が呼び起こす、クリアで穏やかな感覚。",
       "type": "instrumental",
       "duration": 152,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/Morning_Architecture.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -1087,7 +1087,7 @@
       "caption": "午後の日差しが降り注ぐ、活気ある街のサウンド。軽やかなリズムに乗って、力強く日常の流れを駆け抜ける躍動感。",
       "type": "instrumental",
       "duration": 117,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/Midday_Momentum.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -1104,7 +1104,7 @@
       "caption": "困難を乗り越えた高揚感。達成後の晴れやかさや、胸の高鳴りを表現した、壮大なフィナーレ。",
       "type": "instrumental",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/Victory_Lap.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -1121,7 +1121,7 @@
       "caption": "賑やかな交差点で交わされる、ささやかで温かい対話の瞬間。日常の心温まる響きが流れるようです。",
       "type": "instrumental",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/Midday_Exchange.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -1138,7 +1138,7 @@
       "caption": "東京の夜明けがもたらす、淡く広がる感動。光が街全体を優しく包み込む、息をのむような情景描写。",
       "type": "instrumental",
       "duration": 148,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/First_Light_in_Tokyo.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -1155,7 +1155,7 @@
       "caption": "朝の光が満ちるアトリウム。静謐で洗練された空間が、新しい一日を迎える穏やかな目覚めを演出する。",
       "type": "instrumental",
       "duration": 151,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/EDM%20POP/Morning_in_the_Atrium.mp3",
       "tags": [
         "Pop",
         "明るい",
@@ -1172,7 +1172,7 @@
       "caption": "アルペジオが紡ぐ心の軌跡。静寂の中に灯る、優美な内省の時間をお届けします。",
       "type": "instrumental",
       "duration": 165,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Arpeggio%20Thoughts.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1189,7 +1189,7 @@
       "caption": "どこまでも広がる空と地平線。壮大で無限の物語が幕を開けるような、スケール感あふれるサウンドスケープ。",
       "type": "instrumental",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Endless%20Horizon.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1206,7 +1206,7 @@
       "caption": "輝きを放つ、止まりのない躍動感。軽快なリズムが希望へと導く、ポジティブなサウンドトラック。",
       "type": "instrumental",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Shimmering%20Momentum%20(Option%201).mp3",
       "tags": [
         "House",
         "明るい",
@@ -1223,7 +1223,7 @@
       "caption": "穏やかな潮風が運ぶ、隠れだけの空間。日常の喧騒から離れた、特別な目覚めの予感。",
       "type": "instrumental",
       "duration": 98,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Morning_At_The_Cove.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1240,7 +1240,7 @@
       "caption": "澄み渡る空気と優しい音色。清々しく目覚めた街を彩る、心地よいモーニングパルス。",
       "type": "instrumental",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Clear%20Morning%20Pulse.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1257,7 +1257,7 @@
       "caption": "屋上に響く、心地よい浮遊感。都会の喧騒を忘れさせる、透き通った日曜日の余韻。",
       "type": "instrumental",
       "duration": 154,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Sunday_On_The_Roof.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1274,7 +1274,7 @@
       "caption": "光の粒子が降り注ぐような、夢のような午後。静謐なきらめきが織りなす、優しいムードを纏うサウンドスケープ。",
       "type": "instrumental",
       "duration": 153,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Soft%20Shimmer.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1291,7 +1291,7 @@
       "caption": "朝日が描き出す、洗練された調べ。新たな一日が始まるような、規則的な美しさと浮遊感。",
       "type": "instrumental",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Morning_Geometry.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1308,7 +1308,7 @@
       "caption": "夜明けの静けさとともに。新たな一日の始まりに寄り添う、穏やかで目覚めの感覚を誘うサウンドスケープ。",
       "type": "instrumental",
       "duration": 83,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Seven_AM_Sunlight.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1325,7 +1325,7 @@
       "caption": "青空が広げる無限の可能性。爽やかさと希望に満ちた、ポジティブなエネルギーを放つサウンドスケープ。",
       "type": "instrumental",
       "duration": 155,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Open%20Horizon.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1342,7 +1342,7 @@
       "caption": "テラスに広がる無限の水平線。心地よい風が日常を遠くへ運び去る、心落ち着く情景。",
       "type": "instrumental",
       "duration": 169,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Terrace_Horizon.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1359,7 +1359,7 @@
       "caption": "空気のような、優しい音のレイヤー。心象風景をそっと包み込む、広がりを感じるテクスチャサウンドスケープ。",
       "type": "instrumental",
       "duration": 171,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Airy%20Textures.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1376,7 +1376,7 @@
       "caption": "透明な音の煌めき。静寂に光が弾けるような、結晶的な透明感を持つインストゥルメンタル。",
       "type": "instrumental",
       "duration": 155,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Crystalline%20Sunrise.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1393,7 +1393,7 @@
       "caption": "夜明けの広場を照らす光。静けさと新しい始まりの予感を、優しくメロディに乗せて。",
       "type": "instrumental",
       "duration": 113,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/Plaza_at_First_Light.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1410,7 +1410,7 @@
       "caption": "秩序と再生の調べ。月曜の朝の目覚め、新しい一週間の構造的な美しさを表現するサウンドスケープ。",
       "type": "instrumental",
       "duration": 179,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/The_Geometry_of_Monday.mp3",
       "tags": [
         "House",
         "明るい",
@@ -1427,7 +1427,7 @@
       "caption": "都会の夜景を流れる、浮遊感のあるテクノポップ。静寂とグルーヴが織りなすミニマルでチルアウトなサウンド空間へ誘います。",
       "type": "instrumental",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/Minimal%20Laid-back%20Techno-Pop%20Cover.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1444,7 +1444,7 @@
       "caption": "ガラスの手すり越しの夜景。都市の喧騒から隔絶され、洗練されたリズムが心に溶け込むようなエレクトロニック体験。",
       "type": "instrumental",
       "duration": 151,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/The_Glass_Terrace.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1461,7 +1461,7 @@
       "caption": "夏の残響を纏う退勤のラッシュ。高揚感と郷愁が入り混じる都会の光景は、新しい物語への期待感を誘うビートで描かれます。",
       "type": "instrumental",
       "duration": 156,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/Late_July_Commute.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1478,7 +1478,7 @@
       "caption": "煌めく残響が広がる夜の空間。夢幻的な光と高揚感が交錯し、壮大なサウンドスケープを奏でるトラックです。",
       "type": "instrumental",
       "duration": 162,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/Luminous%20Echoes.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1495,7 +1495,7 @@
       "caption": "夜明けの光が駆け抜ける都市のビート。爽快なエネルギーとともに目覚め、新しい旅立ちを象徴するEDMサウンドです。",
       "type": "instrumental",
       "duration": 162,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/First_Light_Transit.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1512,7 +1512,7 @@
       "caption": "透明なドームの下で輝く都市。壮大かつエネルギッシュなビートが体現する、圧倒的な高揚感のサウンドスケープ。",
       "type": "instrumental",
       "duration": 118,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/Above_the_Glass_Canopy.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1529,7 +1529,7 @@
       "caption": "砕け散るガラスと潮風のような幻想的な疾走感。海辺を彷徨うような、エモーショナルなサウンドスケープが広がる。",
       "type": "instrumental",
       "duration": 178,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/Glass_Shore.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1546,7 +1546,7 @@
       "caption": "夜明けの光が大地に満ちる躍動。解放感あふれるビートに乗せて、生命が目覚める感動的な瞬間を音楽で描写します。",
       "type": "instrumental",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/Awakening_of_the_Fields.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1563,7 +1563,7 @@
       "caption": "夕暮れの空が燃えるような情景。心揺さぶるメロディとビートが、過ぎ行く時間帯の壮大な空気感を切り取るサウンドスケープ。",
       "type": "instrumental",
       "duration": 164,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/The_Amber_Horizon.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1580,7 +1580,7 @@
       "caption": "黄昏時の道のりを巡る旅。日常と非日常の境界を彷徨う、叙情的でグルーヴィなサウンドトラック。",
       "type": "instrumental",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/Meridian_Drive.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1597,7 +1597,7 @@
       "caption": "ガラスに反射する朝の光。透明感あふれるエレクトロ・ポップが、目覚めの高揚感と繊細な輝きを纏った優しいサウンドスケープ。",
       "type": "instrumental",
       "duration": 156,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/Glass_Garden_Morning.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1614,7 +1614,7 @@
       "caption": "青く染まった非現実的な建築美。電子音とリズムが織りなす、時間や空間を超越したような没入感を感じられる音楽。",
       "type": "instrumental",
       "duration": 171,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/Blue_Hour_Architecture.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1631,7 +1631,7 @@
       "caption": "深いグルーヴと洗練されたシンセが交差する、夜の都市を疾走するエネルギー。メロディアスでダンサブルなEDM体験。",
       "type": "instrumental",
       "duration": 169,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/Granular%20Grounding.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1648,7 +1648,7 @@
       "caption": "高層ビルからの俯瞰的な視点。都会の頂から捉える孤高の夜景と、内省的な感情が溶け合う壮大なサウンドトラック。",
       "type": "instrumental",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/Highrise_Solitude.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1665,7 +1665,7 @@
       "caption": "心臓の鼓動に同期する熱量。仮想空間を冒険するような、ダイナミックで疾走感あふれるデジタル・グルーヴ。",
       "type": "instrumental",
       "duration": 145,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/Analog%20Journey.mp3",
       "tags": [
         "Techno",
         "明るい",
@@ -1682,7 +1682,7 @@
       "caption": "広大な田園地帯の空気を感じさせる、高揚感に満ちたシンセサイザーが奏でる音。解放と再生をテーマにした、心に響くビートが空間を満たす。",
       "type": "instrumental",
       "duration": 132,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%203/Village_Clearing.mp3",
       "tags": [
         "EDM",
         "明るい",
@@ -1699,7 +1699,7 @@
       "caption": "ノスタルジーを感じさせるデジタル回路の旅路。ピクセルの中に宿る暖かみのある記憶と、失われた「家」への感情的な回帰を描くエモーショナルなサウンド。",
       "type": "vocal",
       "duration": 176,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%203/Pixels_Of_Home.mp3",
       "tags": [
         "EDM",
         "明るい",
@@ -1716,7 +1716,7 @@
       "caption": "夜明けのビートが導く、未来への希望を抱く壮大な展開。徐々に高まるビルドアップと静寂な瞬間が織りなす、心の軌跡を描く物語的な楽曲。",
       "type": "instrumental",
       "duration": 155,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%203/Save_Point_Sunrise.mp3",
       "tags": [
         "EDM",
         "明るい",
@@ -1733,7 +1733,7 @@
       "caption": "目覚めの光を表現したメロディ。穏やかな朝の野原に溶け込むような、希望と内なる活力が満ちあふれるエレクトロニックなグルーヴ。",
       "type": "instrumental",
       "duration": 170,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%203/Sunrise_Meadow.mp3",
       "tags": [
         "EDM",
         "明るい",
@@ -1750,7 +1750,7 @@
       "caption": "夜明けのエネルギーが渦巻く、シネマティックで高揚感あふれるサウンドスケープ。「未知なる光」へ聴き手を誘い入れる、感情的な体験を提供する楽曲。",
       "type": "instrumental",
       "duration": 167,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%203/Level_Five_Sunrise.mp3",
       "tags": [
         "EDM",
         "明るい",
@@ -1767,7 +1767,7 @@
       "caption": "都会の喧騒から離れた静謐な時間。透明感のあるビートが心に穏やかな安らぎをもたらす、心地よい一時停止（ポーズ）を感じさせるサウンド。",
       "type": "instrumental",
       "duration": 170,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%203/The_Cartographer_s_Pause.mp3",
       "tags": [
         "EDM",
         "明るい",
@@ -1784,7 +1784,7 @@
       "caption": "深夜のデジタルな空間を漂うような、浮遊感に富んだビート。眠気を誘いつつも心地よい高揚感を維持する、シームレスなグルーヴワーク。",
       "type": "instrumental",
       "duration": 116,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%203/Loading_Screen_Tea.mp3",
       "tags": [
         "EDM",
         "明るい",
@@ -1801,7 +1801,7 @@
       "caption": "朝靄が晴れていくような情景を音で描き出す。緑豊かな小径を進む感覚を再現した、幻想的でシネマティックなエレクトロニック・テクスチャ。",
       "type": "instrumental",
       "duration": 167,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%203/Morning_in_the_Green_Glade.mp3",
       "tags": [
         "EDM",
         "明るい",
@@ -1818,7 +1818,7 @@
       "caption": "太陽の光が門を照らす瞬間。高揚感とともに抑圧された感情が一気に解放されるような、生命力に満ちた躍動的なサウンドスケープ。",
       "type": "instrumental",
       "duration": 166,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%203/Sunlight_On_The_Gate.mp3",
       "tags": [
         "EDM",
         "明るい",
@@ -1835,7 +1835,7 @@
       "caption": "谷間を疾走する夜明けのエネルギー。心身の束縛から解放される、壮大で推進力に満ちたサウンドによるクライマックス。",
       "type": "instrumental",
       "duration": 96,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%203/Sunrise_On_The_Valley_Floor.mp3",
       "tags": [
         "EDM",
         "明るい",
@@ -1852,7 +1852,7 @@
       "caption": "京都の夜明けを彩る幻想的なエレクトロニクス。壮大なスケールと清らかさが交錯し、新たな一日の始まりの高揚感を音に描く旅路。",
       "type": "instrumental",
       "duration": 173,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/Kyoto_Dawn.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -1868,7 +1868,7 @@
       "caption": "真夜中の深淵を照らすサウンド。高鳴る感情と疾走感が交錯する、熱狂的な時間帯のビートが未来への扉を開く。",
       "type": "instrumental",
       "duration": 153,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/The_Second_Hour.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -1884,7 +1884,7 @@
       "caption": "静寂の中に秩序を見出すダンスミュージック。メロディとリズムが織りなす構造的な感動を、心身ともに体験する没入感のあるグルーヴ。",
       "type": "instrumental",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/Structured_Stillness.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -1900,7 +1900,7 @@
       "caption": "夏の夕暮れのバルコニーから流れるメロディ。開放的な情景と高揚感が混ざり合う、エモーショナルな夜のムードを誘うEDMトラック。",
       "type": "instrumental",
       "duration": 174,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/Balcony_in_July.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -1916,7 +1916,7 @@
       "caption": "ビートが全身を駆け抜けるようなサウンドスケープ。夜の帳に溶け込みながら、無限のリフレクションを楽しむエレクトロニックな高揚感。",
       "type": "instrumental",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/Analog%20Pulse%20Reflection.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -1932,7 +1932,7 @@
       "caption": "ディープで心揺さぶるリズムが支配するグルーヴ。体が自然と動き出すような、熱気に満ちたダンスフロアの情景を演出します。",
       "type": "instrumental",
       "duration": 154,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/Pizzicato%20Pulse.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -1948,7 +1948,7 @@
       "caption": "ネオン輝く未来都市を駆け抜けるサウンド。躍動的なビートとクリアな音像が、心に響き渡る鮮烈なシティポップ・エレクトロニクス。",
       "type": "instrumental",
       "duration": 150,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/Circuit%20Clarity.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -1964,7 +1964,7 @@
       "caption": "深いドローン音が空間をゆっくり包み込む。時が濾過されていくような感覚に浸り、極上の没入感を提供する夜の音響体験。",
       "type": "instrumental",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/Filtered%20Drones.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -1980,7 +1980,7 @@
       "caption": "都会を駆ける朝のエネルギーを凝縮。鋭いシンセと躍動的なビートが、「目覚め」という瞬間の鮮烈な興奮を音で描く。",
       "type": "instrumental",
       "duration": 114,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/The_Morning_Briefing.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -1996,7 +1996,7 @@
       "caption": "高揚感が高まっていくエネルギーの渦。ビートから生まれる躍動的なグルーヴが、聴き手の心に新たな衝動を掻き立てるエレクトロニックサウンド。",
       "type": "instrumental",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/Pattern%20Pulse.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -2012,7 +2012,7 @@
       "caption": "夜明けの空気と脈打つ鼓動が共鳴するようなビート。目覚めの瞬間から生まれる、生命力溢れるエネルギッシュなサウンドスケープ。",
       "type": "instrumental",
       "duration": 128,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/The_First_Breath_Of_Day.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -2028,7 +2028,7 @@
       "caption": "都会の喧騒を上空から見下ろすような視点。十二階の窓辺に立つ幻想的な夜景と共に、心洗われるエレクトロニックなリズムが響き渡る。",
       "type": "instrumental",
       "duration": 177,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/Twelve_Floor_View.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -2044,7 +2044,7 @@
       "caption": "呼吸するように深く、そして徐々に高まる熱狂。都会の深い夜を彷徨うメジャリングされたビートと煌めきのシンセサイザーが空間を満たす。",
       "type": "instrumental",
       "duration": 147,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/Measured_Breath.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -2060,7 +2060,7 @@
       "caption": "心臓の鼓動と同期する、躍動的な爆発力。夜明けのような解放感に満ちたエネルギッシュなビートが、身体の内側から湧き出る衝動を表現。",
       "type": "instrumental",
       "duration": 158,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/The_First_Stroke.mp3",
       "tags": [
         "EDM",
         "静か",
@@ -2076,7 +2076,7 @@
       "caption": "エネルギーの到達点。爆発的なサウンドデザインと重低音が支配するクライマックス。夜の熱狂が最大限に高まる、壮大なダンスアンセム。",
       "type": "instrumental",
       "duration": 160,
-      "full_url": "",
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/Order_of_Operations.mp3",
       "tags": [
         "EDM",
         "静か",
