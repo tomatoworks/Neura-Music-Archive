@@ -97,12 +97,16 @@ async function init() {
   
   const searchInput = document.getElementById('search-input');
   if (searchInput) {
+    let debounceTimer;
     searchInput.addEventListener('input', (e) => {
-      state.searchQuery = e.target.value.trim();
-      state.currentAlbum = null;
-      updateURL();
-      renderThemes();
-      renderMainContent();
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        state.searchQuery = e.target.value.trim();
+        state.currentAlbum = null;
+        updateURL();
+        renderThemes();
+        renderMainContent();
+      }, 300);
     });
   }
 
