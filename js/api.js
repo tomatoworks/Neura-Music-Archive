@@ -1,4 +1,4 @@
-export async function fetchSiteData() {
+export async function fetchSiteData(onProgress) {
   const urlParams = new URLSearchParams(window.location.search);
   const isPreview = urlParams.get('preview') === 'true';
 
@@ -49,21 +49,35 @@ export async function fetchSiteData() {
       }
     }
 
-    const themePromises = manifest.theme_files.map(file => 
-      fetch(`${dataPath}/${file}`).then(res => {
-        if (!res.ok) {
-          console.warn(`Theme file not found: ${file}`);
-          return null;
+    const themes = [];
+    if (manifest.theme_files && manifest.theme_files.length > 0) {
+      const firstThemeFile = manifest.theme_files[0];
+      try {
+        const res = await fetch(`${dataPath}/${firstThemeFile}`);
+        if (res.ok) {
+          themes.push(await res.json());
         }
-        return res.json();
-      }).catch(e => {
-        console.warn(`Failed to fetch theme file: ${file}`, e);
-        return null;
-      })
-    );
-    
-    const themesData = await Promise.all(themePromises);
-    const themes = themesData.filter(theme => theme !== null);
+      } catch (e) {
+        console.warn(`Failed to fetch theme file: ${firstThemeFile}`, e);
+      }
+
+      if (manifest.theme_files.length > 1) {
+        const remainingFiles = manifest.theme_files.slice(1);
+        setTimeout(async () => {
+          for (const file of remainingFiles) {
+            try {
+              const res = await fetch(`${dataPath}/${file}`);
+              if (res.ok) {
+                themes.push(await res.json());
+                if (onProgress) onProgress();
+              }
+            } catch (e) {
+              console.warn(`Failed to fetch theme file: ${file}`, e);
+            }
+          }
+        }, 0);
+      }
+    }
 
     let pagesData = {};
     try {

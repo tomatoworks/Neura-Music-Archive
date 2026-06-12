@@ -230,7 +230,7 @@ function renderSearchResults(results) {
     <div class="flex items-center gap-3 md:gap-4 p-3 md:p-4 border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-[#262626] transition group">
       
       <div class="relative cursor-pointer flex-shrink-0" onclick="selectAlbum('${themeId}', '${album.id}')" title="このアルバムを開く">
-        <img src="${album.art}" class="w-12 h-12 md:w-14 md:h-14 object-cover rounded-md border border-gray-200 dark:border-gray-700" alt="Album Art">
+        <img src="${album.art}" class="w-12 h-12 md:w-14 md:h-14 object-cover rounded-md border border-gray-200 dark:border-gray-700" alt="Album Art" loading="lazy" decoding="async">
       </div>
 
       <button class="w-10 h-10 flex-shrink-0 rounded-full flex items-center justify-center ${playBtnClass}" ${playBtnAction}>
@@ -294,7 +294,7 @@ function createAlbumCardHtml(themeId, album) {
     <div class="group border border-gray-100 dark:border-[#333333] rounded-xl overflow-hidden hover:shadow-lg hover:border-gray-200 dark:hover:border-gray-400 transition bg-white dark:bg-[#242424] flex flex-col">
       <div class="relative cursor-pointer" onclick="selectAlbum('${themeId}', '${album.id}')">
         <div class="aspect-square relative overflow-hidden bg-gray-100 dark:bg-gray-800">
-          <img src="${album.art}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Art">
+          <img src="${album.art}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Art" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
             <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 shadow-xl text-gray-900 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300" ${playAction}>
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -485,7 +485,7 @@ export function renderAlbumDetail(album) {
       </button>
 
       <div class="flex flex-col md:flex-row gap-6 md:gap-8 mb-10">
-        <img src="${album.art}" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-xl shadow-md border border-gray-100 dark:border-gray-800 flex-shrink-0" alt="Album Art">
+        <img src="${album.art}" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-xl shadow-md border border-gray-100 dark:border-gray-800 flex-shrink-0" alt="Album Art" loading="lazy" decoding="async">
         <div class="flex flex-col justify-end">
           <span class="text-sm font-bold tracking-widest text-gray-400 uppercase mb-2">Album</span>
           <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-gray-100 mb-3">${album.title}</h2>

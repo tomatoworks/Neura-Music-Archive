@@ -16,7 +16,12 @@ export const state = {
 window.state = state;
 
 async function init() {
-  const data = await fetchSiteData();
+  const data = await fetchSiteData(() => {
+    renderThemes();
+    if (state.searchQuery || state.currentMode === 'theme') {
+      renderMainContent();
+    }
+  });
   state.data = data;
   
   initPlayer();
