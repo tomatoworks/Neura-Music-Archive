@@ -104,7 +104,7 @@
         "track_1781244447094_4"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\pops\\フレンチ・シティポップ",
-      "type": ""
+      "type": "vocal"
     }
   ],
   "tracks": [
@@ -626,7 +626,7 @@
       "id": "track_1781243963225_0",
       "title": "Velours et Paix (Take 2)",
       "caption": "内省と安らぎが溶け合う、ベルベットのような優雅な夜の情景。自分自身との対話の中で見つける、甘く心地よい平和をテーマに描いています。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 147,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Velours%20et%20Paix%20(Take%202).mp3",
       "tags": [
@@ -643,7 +643,7 @@
       "id": "track_1781243963225_1",
       "title": "Signal Bleu",
       "caption": "パリのネオンが描き出す、電気的な存在感を秘めた青いサイン。冷たい石畳と失われゆく光景を巡る、物語性のある音響空間。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 181,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Signal%20Bleu.mp3",
       "tags": [
@@ -660,7 +660,7 @@
       "id": "track_1781243963226_2",
       "title": "Onde De Minuit",
       "caption": "真夜中の街に漂う声が、抑圧されていた色彩を取り戻し、聴き手の心奥深くに優しく包み込むような感覚を表現しています。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 178,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Onde%20de%20Minuit.mp3",
       "tags": [
@@ -677,7 +677,7 @@
       "id": "track_1781243963226_3",
       "title": "Window Souls",
       "caption": "窓越しの景色という媒介を通して、日常を生きる二人が「今」に存在することを意識させる。過ぎゆく時間の中で感じる、静謐で確かな予感を描いた音像。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 180,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Window%20Souls.mp3",
       "tags": [
@@ -694,7 +694,7 @@
       "id": "track_1781243963226_5",
       "title": "L'Instant Paisible",
       "caption": "朝のテラス席で体験する穏やかな時間の流れ。湯気や光景といった日常の「小さな断片」から、内側にある静けさと平穏な美しさを発見する詩情豊かな音。」",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 178,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/L'Instant%20Paisible.mp3",
       "tags": [
@@ -711,7 +711,7 @@
       "id": "track_1781243963226_6",
       "title": "Géométrie Liquide",
       "caption": "都会的な風景を背景に、水やリズムのパターンが織り成す。際限のない循環と、生命力の動きを感じさせる壮大なサウンドスケープです。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 153,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/G%C3%A9om%C3%A9trie%20Liquide.mp3",
       "tags": [
@@ -728,7 +728,7 @@
       "id": "track_1781243963226_7",
       "title": "Le Nouveau Mouvement",
       "caption": "静けさの中から生まれる内なる力が全てを変貌させる瞬間を描く。停滞を打ち破り、新しい物語の始まりと解放感を告げる力強いアンセムです。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 181,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Le%20Nouveau%20Mouvement.mp3",
       "tags": [
@@ -745,7 +745,7 @@
       "id": "track_1781243963226_8",
       "title": "Soie Sauvage",
       "caption": "喧騒から離れ、特有の「柔らかさ」や静謐な瞬間を深く味わう感覚。深青色のシルクのような優雅な安らぎに包まれる詩的なイメージです。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 182,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Soie%20Sauvage.mp3",
       "tags": [
@@ -762,7 +762,7 @@
       "id": "track_1781243963226_9",
       "title": "Nuit à Vélo",
       "caption": "疾走感あふれる夜の情景。サイクル運動という行為を通して、自我から一時的に解放され、ただスピードそのものに集中する感覚を表現しています。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 178,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Nuit%20%C3%A0%20V%C3%A9lo.mp3",
       "tags": [
@@ -779,7 +779,7 @@
       "id": "track_1781243963226_10",
       "title": "Taxi de Nuit (Acoustic)",
       "caption": "真夜中のタクシーの中で、過去の記憶と未来への希望が溶け合うノスタルジーあふれる旅情。追憶と共に心の解放へと向かうアコースティックな響きです。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 182,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Taxi%20de%20Nuit%20(Acoustic).mp3",
       "tags": [
@@ -796,7 +796,7 @@
       "id": "track_1781243963226_11",
       "title": "Argent Liquide",
       "caption": "清澄な水面を通して過去の影が洗い去られ、魂に新たなエネルギーを呼び覚ます感覚。自己再発見と無限の始まりを感じさせる壮大で輝かしい響きです。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 173,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Argent%20Liquide.mp3",
       "tags": [
@@ -813,7 +813,7 @@
       "id": "track_1781243963226_12",
       "title": "Le Pinceau Du Matin",
       "caption": "夜明けを迎えた街を一人歩く視点から、色彩と希望が静かに降り注ぐ感覚を描写。「すべてはまた始まる」という優しさと、再生の予感を運ぶ音像です。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 179,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Le%20Pinceau%20du%20Matin.mp3",
       "tags": [
@@ -830,7 +830,7 @@
       "id": "track_1781243963226_13",
       "title": "Un Pli Léger",
       "caption": "曇り空を抜ける一筋の光のような、軽い解放感を描きます。日常的な重荷から解き放たれ、忘れていた自分自身の輝きを取り戻していく過程です。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 180,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Un%20Pli%20L%C3%A9ger.mp3",
       "tags": [
@@ -847,7 +847,7 @@
       "id": "track_1781243963226_14",
       "title": "Premier Souffle",
       "caption": "夜の喧騒を越えて訪れる、個人的な新しい朝を描く。「最初の息吹」というテーマのもと、過去からの解放と共に自由な魂で歩き出す物語です。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 181,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Premier%20Souffle.mp3",
       "tags": [
@@ -864,7 +864,7 @@
       "id": "track_1781244447094_4",
       "title": "Samedi Sans Fin",
       "caption": "セダンの窓から見える夕暮れの街並み。時間や目的地を忘れて、ただどこまでも走り続ける二人組の放浪心を捉えたサウンドスケープです。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 179,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Samedi%20Sans%20Fin.mp3",
       "tags": [
