@@ -478,5 +478,3 @@ window.downloadSelectedZip = (albumId, btnElement) => {
   };
   
   init();
-
-init();
