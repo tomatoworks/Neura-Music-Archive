@@ -47,7 +47,7 @@
   </header>
 
   <div class="flex-1 flex flex-col md:flex-row overflow-hidden">
-    <aside class="w-[240px] bg-[#fafafa] dark:bg-[#1c1c1c] border-r dark:border-gray-800 overflow-y-auto hidden md:block flex-shrink-0">
+    <aside class="w-[240px] bg-[#fafafa] dark:bg-[#1c1c1c] border-r dark:border-gray-800 overflow-y-auto hidden md:block flex-shrink-0 pb-24">
       <div class="p-6">
         <h2 class="text-sm font-bold text-gray-400 tracking-wider mb-4 uppercase">Themes</h2>
         <ul class="space-y-1" id="theme-list">
@@ -64,7 +64,7 @@
     <div class="md:hidden bg-[#fafafa] dark:bg-[#353535] border-b dark:border-gray-800 whitespace-nowrap overflow-x-auto px-4 py-3 flex-shrink-0 flex space-x-4" id="theme-list-mobile">
     </div>
 
-    <main class="flex-1 overflow-y-auto bg-white dark:bg-[#181818] flex flex-col @container" id="scroll-area">
+    <main class="flex-1 overflow-y-auto bg-white dark:bg-[#181818] flex flex-col @container pb-24" id="scroll-area">
       <div id="info-area" class="border-b border-gray-100 dark:border-gray-800 px-4 py-1.5 flex items-center bg-gray-50 dark:bg-[#202020] min-h-[32px]">
         </div>
       <div class="p-4 md:p-8 flex-1" id="main-content">
@@ -72,16 +72,16 @@
     </main>
   </div>
 
-  <footer class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] border-t dark:border-gray-800 px-4 py-3 flex items-center justify-between h-20">
+  <footer class="fixed bottom-0 left-0 right-0 z-50 bg-white/70 dark:bg-[#242424]/70 backdrop-blur-xl border-t border-gray-200/50 dark:border-gray-800/50 px-4 py-3 flex items-center justify-between h-20">
     <div class="flex items-center space-x-3 w-1/4 min-w-[120px]">
-      <button class="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition">
+      <button id="btn-prev" class="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
       </button>
       <button id="main-play-btn" class="w-10 h-10 flex items-center justify-center bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full hover:bg-gray-700 dark:hover:bg-gray-200 transition shadow-sm">
         <svg id="icon-play" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
         <svg id="icon-pause" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
       </button>
-      <button class="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition">
+      <button id="btn-next" class="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
       </button>
     </div>
