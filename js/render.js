@@ -415,9 +415,24 @@ export function renderAlbumDetail(album) {
            ${track.tags.map(tag => `<button onclick="searchByTag('${tag}')" class="text-[10px] text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded-sm border border-gray-100 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700 transition cursor-pointer">#${tag}</button>`).join('')}
          </div>`
       : '';
+      
+    const rightSideActionHtml = state.isSelectMode
+      ? `
+        <div class="flex items-center justify-center w-12 h-12 cursor-pointer" onclick="toggleTrackSelection(event, '${track.id}')">
+          <div class="w-6 h-6 rounded border-2 flex items-center justify-center transition-colors ${state.selectedTracks.has(track.id) ? 'bg-blue-500 border-blue-500 text-white' : 'border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800'}">
+            ${state.selectedTracks.has(track.id) ? '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>' : ''}
+          </div>
+        </div>
+      `
+      : `
+        <button class="flex flex-col items-center justify-center w-12 h-12 ${fullBtnClass}" ${fullBtnAction}>
+          <svg class="w-5 h-5 mb-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          <span class="text-[10px] font-bold">DL</span>
+        </button>
+      `;
     
     return `
-    <div class="flex items-center gap-3 md:gap-4 p-3 md:p-4 border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-[#262626] transition group">
+    <div class="flex items-center gap-3 md:gap-4 p-3 md:p-4 border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-[#262626] transition group ${state.isSelectMode ? 'cursor-pointer' : ''}" ${state.isSelectMode ? `onclick="toggleTrackSelection(event, '${track.id}')"` : ''}>
       <button class="w-10 h-10 flex-shrink-0 rounded-full flex items-center justify-center ${playBtnClass}" ${playBtnAction}>
         ${isThisPlaying 
           ? `<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`
@@ -443,10 +458,7 @@ export function renderAlbumDetail(album) {
           <span class="text-[10px] font-bold">LYRICS</span>
         </button>
 
-        <button class="flex flex-col items-center justify-center w-12 h-12 ${fullBtnClass}" ${fullBtnAction}>
-          <svg class="w-5 h-5 mb-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-          <span class="text-[10px] font-bold">DL</span>
-        </button>
+        ${rightSideActionHtml}
       </div>
     </div>
   `}).join('');
@@ -477,7 +489,43 @@ export function renderAlbumDetail(album) {
     `;
   }
 
-  document.getElementById('main-content').innerHTML = `
+  let zipDlBtnHtml = '';
+  if (state.isSelectMode) {
+    zipDlBtnHtml = `
+      <button class="bg-blue-600 dark:bg-blue-500 text-white px-5 py-2.5 rounded-full text-[15px] font-bold hover:bg-blue-700 dark:hover:bg-blue-600 transition shadow-sm flex items-center gap-2 relative overflow-hidden" onclick="downloadSelectedZip('${album.id}', this)" ${state.selectedTracks.size === 0 ? 'disabled style="opacity:0.5;cursor:not-allowed;"' : ''}>
+        <div class="absolute left-0 top-0 bottom-0 bg-blue-800 dark:bg-blue-700 w-0 transition-all duration-300 z-0" id="zip-progress-bar"></div>
+        <span class="relative z-10 flex items-center gap-2">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          <span id="zip-progress-text">${state.selectedTracks.size}曲を保存</span>
+        </span>
+      </button>
+      <button class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 px-5 py-2.5 rounded-full text-[15px] font-bold hover:bg-gray-200 dark:hover:bg-gray-700 transition shadow-sm" onclick="toggleSelectMode()">
+        キャンセル
+      </button>
+    `;
+  } else {
+        zipDlBtnHtml = `
+          <button class="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-5 py-2.5 rounded-full text-[15px] font-bold hover:bg-gray-200 dark:hover:bg-gray-700 transition shadow-sm flex items-center gap-2 relative overflow-hidden" onclick="downloadAlbumZip('${album.id}', this)">
+            <div class="absolute left-0 top-0 bottom-0 bg-gray-300 dark:bg-gray-600 w-0 transition-all duration-300 z-0" id="zip-progress-bar"></div>
+            <span class="relative z-10 flex items-center gap-2">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+              <span id="zip-progress-text">まとめてDL</span>
+            </span>
+          </button>
+          <button class="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-5 py-2.5 rounded-full text-[15px] font-bold hover:bg-gray-200 dark:hover:bg-gray-700 transition shadow-sm flex items-center gap-2" onclick="toggleSelectMode()">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+            選択してDL
+          </button>
+        `;
+      }
+
+      const shareBtnHtml = `
+        <button class="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 w-[42px] h-[42px] rounded-full flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition shadow-sm flex-shrink-0" onclick="shareAlbum('${album.title.replace(/'/g, "\\'")}')" title="このアルバムを共有">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
+        </button>
+      `;
+
+      document.getElementById('main-content').innerHTML = `
     <div class="max-w-4xl mx-auto pb-10">
       <button class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-6 hover:text-gray-900 dark:hover:text-gray-100 transition flex items-center gap-1" onclick="backToAlbums()">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
@@ -491,8 +539,10 @@ export function renderAlbumDetail(album) {
           <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-gray-100 mb-3">${album.title}</h2>
           <p class="text-[15px] text-gray-600 dark:text-gray-400 mb-1">${album.tracks.length} tracks • AI Generated BGM</p>
           <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 line-clamp-3">${album.caption || ''}</p>
-          <div class="flex gap-3">
+          <div class="flex flex-wrap items-center gap-3">
             ${albumPlayBtnHtml}
+            ${zipDlBtnHtml}
+            ${shareBtnHtml}
           </div>
         </div>
       </div>
