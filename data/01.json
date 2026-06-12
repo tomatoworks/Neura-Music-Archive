@@ -9,7 +9,8 @@
       "albums": [
         "album_1778830866392",
         "album_1778851387085",
-        "album_1781238122010"
+        "album_1781238122010",
+        "album_1781241981402"
       ]
     }
   ],
@@ -78,6 +79,32 @@
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\pops\\Chill Chill Pop",
       "type": "vocal"
+    },
+    {
+      "id": "album_1781241981402",
+      "title": "フレンチ・シティポップ",
+      "art": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/cover_1781257981088.webp",
+      "caption": "フランス語ボーカルで構成したシティポップ系アルバム。 都会的な軽さと柔らかい湿度をあわせ持つ、夜景・街歩き・静かな作業に向いたポップスをまとめています",
+      "categoryId": "cat_1778830805172",
+      "tracks": [
+        "track_1781243963225_0",
+        "track_1781243963225_1",
+        "track_1781243963226_2",
+        "track_1781243963226_3",
+        "track_1781243963226_5",
+        "track_1781243963226_6",
+        "track_1781243963226_7",
+        "track_1781243963226_8",
+        "track_1781243963226_9",
+        "track_1781243963226_10",
+        "track_1781243963226_11",
+        "track_1781243963226_12",
+        "track_1781243963226_13",
+        "track_1781243963226_14",
+        "track_1781244447094_4"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\pops\\フレンチ・シティポップ",
+      "type": ""
     }
   ],
   "tracks": [
@@ -593,6 +620,261 @@
       ],
       "bpm": "",
       "lyrics": "[Intro]\n(Oooooh)\n(Ahhhhh)\n\n[Verse 1]\nThe wall is pale blue\nThe air feels so new\nI see the big tree\nMoving in the wind\nI am still awake\nWatching it all start\n\n[Chorus]\nI will pay for this\nJust a little bit\n(Just a little bit)\nWhen the sun is high\nI will feel the weight\nBut the light is good\n(The light is good)\n\n[Verse 2]\nThe grass is all wet\nThe house is so quiet\nI see your slow breath\nI stay in this chair\nKnowing what comes next\nLoving how it feels\n\n[Chorus]\nI will pay for this\nJust a little bit\n(Just a little bit)\nWhen the sun is high\nI will feel the weight\nBut the light is good\n(The light is good)\n\n[Bridge]\n(Oooooh)\n(Falling away)\n(Oooooh)\n(Into the day)\n\n[Chorus]\nI will pay for this\nJust a little bit\n(Just a little bit)\nWhen the sun is high\nI will feel the weight\nBut the light is good\n(The light is good)\n\n[Outro]\nJust a little bit\n(Just a little bit)\nWhen it gets bright\n(Just a little bit)\nThe light is good\n(Just a little bit)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963225_0",
+      "title": "Velours et Paix (Take 2)",
+      "caption": "内省と安らぎが溶け合う、ベルベットのような優雅な夜の情景。自分自身との対話の中で見つける、甘く心地よい平和をテーマに描いています。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Velours%20et%20Paix%20(Take%202).mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\nOuh\nAh\nC’est bon\n(C’est bon)\n\n[Verse 1]\nVelours vert sous mes doigts\nSucre roux dans ma tasse\nLe monde tourne sans moi\nJe reste là, je reste\n\n[Chorus]\nSeule avec moi-même\n(Seule avec moi)\nLe goût de la paix\n(Si doux, si bon)\nSeule avec moi-même\n(Seule avec moi)\nJe vibre dans le noir\n\n[Verse 2]\nBasse qui tape le rythme\nGlace qui fond dans le verre\nSensation de cristal\nJe suis ma propre loi\n\n[Chorus]\nSeule avec moi-même\n(Seule avec moi)\nLe goût de la paix\n(Si doux, si bon)\nSeule avec moi-même\n(Seule avec moi)\nJe vibre dans le noir\n\n[Bridge]\nC'est chaud\n(C'est chaud)\nC'est bon\n(C'est bon)\nIci, je brûle doucement\nPas besoin d'autre chose\n\n[Outro]\nLibre\n(Libre)\nSi libre\n(Si libre)\nAh\nOuh\n(C’est bon)\n(Si bon)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963225_1",
+      "title": "Signal Bleu",
+      "caption": "パリのネオンが描き出す、電気的な存在感を秘めた青いサイン。冷たい石畳と失われゆく光景を巡る、物語性のある音響空間。",
+      "type": "instrumental",
+      "duration": 181,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Signal%20Bleu.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh)\n(Ooh)\n\n[Verse 1]\nLe pavé froid s'éclaire\nSous un ciel de métal\nJe cherche ton reflet\nLe silence est un bloc\n\n[Chorus]\nDis-moi si tu nous vois\nDans le bleu de la rue\nParis garde la trace\nDe nos corps électriques\n(Électriques)\n(De nos corps)\n\n[Verse 2]\nLa ville a tout gardé\nNos angles et nos lignes\nJe cherche une fréquence\nLe vent coupe ma voix\n\n[Chorus]\nDis-moi si tu nous vois\nDans le bleu de la rue\nParis garde la trace\nDe nos corps électriques\n(Électriques)\n(De nos corps)\n\n[Bridge]\nZéro un le contact\nLa force de l'impact\nMon armure résiste\nÀ l'onde de ton choc\n(Le choc)\n(Zéro un)\n\n[Chorus]\nDis-moi si tu nous vois\nDans le bleu de la rue\nParis garde la trace\nDe nos corps électriques\n(Électriques)\n(De nos corps)\n\n[Chorus]\nDis-moi si tu nous vois\nDans le bleu de la rue\nParis garde la trace\nDe nos corps électriques\n(Électriques)\n(De nos corps)\n\n[Outro]\nSignal perdu\nSignal coupé\nJe marche seule\n(Seule)\n(Seule)\nSignal perdu\n(Seule)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963226_2",
+      "title": "Onde De Minuit",
+      "caption": "真夜中の街に漂う声が、抑圧されていた色彩を取り戻し、聴き手の心奥深くに優しく包み込むような感覚を表現しています。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Onde%20de%20Minuit.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\nLe vent s'amuse avec les rideaux\nLa ville s'agite encore au loin\nJe cherche une onde particulière\nPour habiller le silence\n\n[Verse]\nMes pas résonnent sur le pavé \nUn rythme chic et cadencé\nSous les lampes de la grande avenue\nJe me sens libre et résolue\nLa foule glisse comme du satin\nUn bal nocturne qui n'a pas de fin\n\n[Verse]\nLa clé tourne dans la serrure\nJe laisse derrière moi l'aventure\nDans mon salon un peu étroit\nJe cherche une voix juste pour moi\nLe cadran s'allume en douceur\nPour apaiser les battements de mon cœur\n\n[Bridge]\nUne trompette sourde s'élève\n(La mélodie s'élève)\nElle efface la fatigue et les trêves\nC'est un salut venu d'ailleurs\nQui redonne à ma nuit ses couleurs\nLe monde extérieur n'existe plus\nJe retrouve ce que j'avais perdu\n\n[Verse]\nJe danse seule sur le tapis\nAccompagnée par cet ami\nLa radio chante mon humeur\nAvec une grâce et une candeur\nLe grand orchestre me fait la cour\nJusqu'au lever du premier jour\n\n[Outro]\nQuelle divine fréquence\n(Divine fréquence)\nTout est en équilibre\nLa musique me rend libre\nJuste nous deux\nDans l'appartement\n(Juste nous deux)\nSur cette onde\n(Sur cette onde)\nSi douce\nSi douce",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963226_3",
+      "title": "Window Souls",
+      "caption": "窓越しの景色という媒介を通して、日常を生きる二人が「今」に存在することを意識させる。過ぎゆく時間の中で感じる、静謐で確かな予感を描いた音像。",
+      "type": "instrumental",
+      "duration": 180,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Window%20Souls.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(La mer nous appelle)\n(Doucement, doucement)\n\n[Verse 1]\nSalt hangs heavy on my skin\nWaves washing the day away\nWalking slow by the pier\nSky turns the color of wine\nLeaving the shore behind\n\n[Pre-Chorus]\nTurnstile clicks like a heartbeat\nDown where the air stays still\nWaiting for the iron pulse\nTo carry me home to you\n\n[Chorus]\nGlass shows your face\nStranger is near\nLives in the dark\nOne pulse under the street lamps\n(Regarde le monde qui passe)\nMoving as one\nToward a brand new day\n\n[Verse 2]\nSitting on a faded blue seat\nReflected lines blur the edge\nYour shoulder touches mine\nWithout a single word spoken\n(Le voyage est long)\n(Mais nous sommes ensemble)\n\n[Pre-Chorus]\nTunnel wind starts to rise\nPressure building in my chest\nReady for the burst of speed\nSeizing the moment we have\n\n[Chorus]\nGlass shows your face\nStranger is near\nLives in the dark\nOne pulse under the street lamps\n(Regarde le monde qui passe)\nMoving as one\nToward a brand new day\n\n[Bridge]\nWipe the dust from the window\nLike rain from a tired eye\nThe road goes on forever\nLooking forward, never back\nIgnited by the speed of life\n(C’est notre moment)\n(C’est notre vie)\n\n[Chorus]\nGlass shows your face\nStranger is near\nLives in the dark\nOne pulse under the street lamps\n(Regarde le monde qui passe)\nMoving as one\nToward a brand new day\n\n[Outro]\n(Vers l'horizon)\nSailing through the night\n(Toujours plus loin)\nJust a stranger near\n(On y va)\nOne pulse\nOne life\n(Doucement)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963226_5",
+      "title": "L'Instant Paisible",
+      "caption": "朝のテラス席で体験する穏やかな時間の流れ。湯気や光景といった日常の「小さな断片」から、内側にある静けさと平穏な美しさを発見する詩情豊かな音。」",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/L'Instant%20Paisible.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse]\nLa lumière s'étire sur le bois de la terrasse\nLe samedi commence sans aucun bruit de moteur\nJe regarde les nuages qui passent avec lenteur\nLa vapeur danse au-dessus de ma porcelaine blanche\nMes doigts sentent la chaleur douce du matin\nRien ne presse aujourd'hui, tout semble suspendu\nLe monde en bas paraît si lointain maintenant\nUn petit oiseau se pose sur le rebord\nIl observe l'horizon comme je le fais\nLe temps est un cercle qui revient nous voir\nJe respire l'air frais qui sent la pluie passée\nChaque seconde est un cadeau qu'on oublie souvent\nLa ville respire doucement sous ses toits gris\nJe ferme les yeux pour mieux entendre le vide\nC'est ici que je trouve ma propre paix intérieure\nLoin de l'agitation et des courses folles\n\n[Chorus]\nC'est la beauté des instants ordinaires (ordinaires)\nLe flux de la vie qui nous porte sans effort\nUne mélodie qui s'installe dans le silence complet\nSimplement être là, face au jour qui se lève\nLe cycle continue, paisible et sincère (sincère)\n\n[Verse]\nLes feuilles jaunies tombent sur le trottoir vide\nLa saison change sans faire de grandes promesses\nJe me souviens d'autres matins pareils à celui-ci\nLes visages changent mais le sentiment reste intact\nLa solitude est une amie qui ne juge pas\nElle m'offre ce moment pour me retrouver enfin\nLe ciel est un océan sans aucune vague apparente\nJe bois une gorgée de cette tranquillité rare\nLe vent tourne les pages d'un livre oublié\nOn cherche souvent le bonheur dans le futur lointain\nAlors qu'il est niché dans ce petit répit\nUne fleur sauvage pousse entre deux dalles froides\nLa vie s'entête avec une grâce infinie\nJe n'ai pas besoin de mots pour cela\nLa gratitude est un chant sans aucune note\nLe soleil monte et la buée disparaît lentement\n\n[Outro]\nLe jour s'installe doucement (doucement)\nLa boucle est bouclée pour ce matin-là\n(Tout est calme maintenant)\n(Le jour se lève)\n(Paisible)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963226_6",
+      "title": "Géométrie Liquide",
+      "caption": "都会的な風景を背景に、水やリズムのパターンが織り成す。際限のない循環と、生命力の動きを感じさせる壮大なサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 153,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/G%C3%A9om%C3%A9trie%20Liquide.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ouh)\n(Ouh)\n\n[Texture A]\nL'eau coule sous le fer\nL'argent se brise sur la surface\nDes points fixes\nDes lignes perpendiculaires\n(La Seine)\n\n[Texture B]\nJe marche sur la pierre\nLe rythme est régulier\nUn pas\nDeux pas\nLe jaune frappe le noir\nC'est une boucle infinie\n(Encore)\n\n[Texture C]\nLes lampadaires alignés\nGéométrie du mouvement\nLa ville respire par le fleuve\nPas de fin\nSeulement le cercle\n(Encore une fois)\n\n[Outro]\n(L'eau)\n(Le rythme)\n(Le cercle)\n(L'eau)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963226_7",
+      "title": "Le Nouveau Mouvement",
+      "caption": "静けさの中から生まれる内なる力が全てを変貌させる瞬間を描く。停滞を打ち破り、新しい物語の始まりと解放感を告げる力強いアンセムです。",
+      "type": "instrumental",
+      "duration": 181,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Le%20Nouveau%20Mouvement.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh)\n\n[Verse 1]\nLe vent traverse la table\nLe son s'éteint doucement\nTon regard change le décor\nL'air devient une onde\nJe respire cette pause\nUne porte s'ouvre enfin\n\n[Chorus]\nC'est le temps du mouvement\nNous brisons toutes les digues\nLe poids de ta présence\nTransforme mon paysage\nC'est la force du silence\n(La force du silence)\nNous sommes enfin debouts\n\n[Verse 2]\nLes secondes tombent lourdement\nLe plomb devient argent\nJe vois le monde autrement\nÀ travers tes aveux\nLe cercle est maintenant pur\nLe passé s'en va au loin\n\n[Chorus]\nC'est le temps du mouvement\nNous brisons toutes les digues\nLe poids de ta présence\nTransforme mon paysage\nC'est la force du silence\n(La force du silence)\nNous sommes enfin debouts\n\n[Bridge]\nÉcoute le battement\nRien n'est plus comme avant\nTout est clair\nTout commence\n\n[Chorus]\nC'est le temps du mouvement\nNous brisons toutes les digues\nLe poids de ta présence\nTransforme mon paysage\nC'est la force du silence\n(La force du silence)\nNous sommes enfin debouts\n\n[Outro]\nChanger le cours de l'eau\n(Changer le cours)\nOuvrir les mains vers le ciel\n(Vers le ciel)\nNous portons cette lumière\n(Cette lumière)\nLe mouvement est là\nLe mouvement est là\n(Le mouvement)\nLe mouvement est là\n(Mouvement)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963226_8",
+      "title": "Soie Sauvage",
+      "caption": "喧騒から離れ、特有の「柔らかさ」や静謐な瞬間を深く味わう感覚。深青色のシルクのような優雅な安らぎに包まれる詩的なイメージです。",
+      "type": "instrumental",
+      "duration": 182,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Soie%20Sauvage.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Douceur)\n(Si douce)\n\n[Verse 1]\nLes vitrines se préparent au repos\nLe tic-tac de l'horloge s'efface\nJe glisse entre les cintres de bois\nCherchant un souffle, une grâce\nLe gardien sourit d'un air las\nLe rideau de fer attend son heure\n\n[Chorus]\nSoie sauvage sur ma peau (si douce)\nC'est l'instant où tout s'arrête\nUn bleu profond pour mon épaule\nMa petite victoire discrète\nJuste avant le clic du verrou (verrou)\nJe respire enfin cet instant\n\n[Verse 2]\nL'agitation du monde attend dehors\nMais ici le temps suspend son vol\nCe n'est qu'un morceau de tissu fin\nPourtant mon cœur s'apaise enfin\nUn luxe calme, un parfum de fin\nLe dernier paquet sous le bras\n\n[Chorus]\nSoie sauvage sur ma peau (si douce)\nC'est l'instant où tout s'arrête\nUn bleu profond pour mon épaule\nMa petite victoire discrète\nJuste avant le clic du verrou (verrou)\nJe respire enfin cet instant\n\n[Bridge]\nJe n'ai plus besoin d'autre chose\nJuste ce drapé qui m'enlace\nUne armure de pure tendresse\nPour affronter le vent qui passe\nJe me sens forte et légère (légère)\n\n[Chorus]\nSoie sauvage sur ma peau (si douce)\nC'est l'instant où tout s'arrête\nUn bleu profond pour mon épaule\nMa petite victoire discrète\nJuste avant le clic du verrou (verrou)\nJe respire enfin cet instant\n\n[Outro]\nLe sac balance à mon poignet\nJe sors dans la fraîcheur du soir\n(Tout est calme)\nHeureuse de ce hasard\n(Si douce)\nPetite joie de fin de jour\n(Douceur)\nAu revoir \n(Au revoir)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963226_9",
+      "title": "Nuit à Vélo",
+      "caption": "疾走感あふれる夜の情景。サイクル運動という行為を通して、自我から一時的に解放され、ただスピードそのものに集中する感覚を表現しています。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Nuit%20%C3%A0%20V%C3%A9lo.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse 1]\nLe vent me traverse\nLa peau devient fer\nMes mains se posent\nSur l'acier froid\nLa nuit s'ouvre\nSans un cri\n(Sans un cri)\n\n[Chorus]\nJe disparais\nJe disparais\nJe disparais\nJe disparais\n\n[Verse 2]\nLa roue tourne\nL'asphalte est gris\nLe ciel s'écrase\nSur mes épaules\nJe glisse loin\nDe mon nom\n(Très loin)\n\n[Chorus]\nJe disparais\nJe disparais\nJe disparais\nJe disparais\n\n[Outro]\nVitesse pure\n(Vitesse pure)\nDans le grand vide\n(Dans le grand vide)\nPlus de poids\nPlus de corps\nRien\n(Rien)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963226_10",
+      "title": "Taxi de Nuit (Acoustic)",
+      "caption": "真夜中のタクシーの中で、過去の記憶と未来への希望が溶け合うノスタルジーあふれる旅情。追憶と共に心の解放へと向かうアコースティックな響きです。",
+      "type": "instrumental",
+      "duration": 182,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Taxi%20de%20Nuit%20(Acoustic).mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh ooh ooh)\n(C'est si doux)\n\n[Verse 1]\nAssise dans le noir\nLa vitre est froide\nLe monde défile\nSans aucun bruit\nLe poids du jour\nQuitte mes épaules\nMon cœur se pose enfin\nSur le velours du siège\n\n[Pre-Chorus]\nSoudain la radio chante\nUn air d'autrefois\nLa fatigue s'efface\n(Si doucement)\nComme une onde pure\nQui traverse mon corps\n\n[Chorus]\nDouce mélodie\nTu ouvres la porte\nD'un temps passé\nOù tout brillait\nJe me sens libre\nSous le ciel immense\nL'amour revient\nComme une flamme vive\nQui ne s'éteint jamais\n\n[Verse 2]\nLes lampadaires\nTracent le chemin\nLe chauffeur conduit\nVers le silence\nTon vieux parfum\nFlotte dans l'air\nJe ne pleure plus\nJe regarde devant moi\n\n[Pre-Chorus]\nLe rythme s'installe\nComme un battement de cœur\nLa tension s'envole\n(Si doucement)\nLa ville nous appartient\n\n[Chorus]\nDouce mélodie\nTu ouvres la porte\nD'un temps passé\nOù tout brillait\nJe me sens libre\nSous le ciel immense\nL'amour revient\nComme une flamme vive\nQui ne s'éteint jamais\n\n[Bridge]\nLa route est infinie\nVers un jour nouveau\nL'eau sur le bitume\nLave ma tristesse\n(Tout s'efface)\nJe marche vers l'avenir\nSans me retourner\n(Plus jamais)\n\n[Chorus]\nDouce mélodie\nTu ouvres la porte\nD'un temps passé\nOù tout brillait\nJe me sens libre\nSous le ciel immense\nL'amour revient\nComme une flamme vive\nQui ne s'éteint jamais\n\n[Outro]\nVoyage infini\n(Encore une fois)\nL'âme est légère\n(Si légère)\nTout recommence\n(Ooh ooh ooh)\nVers l'horizon\n(Horizon)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963226_11",
+      "title": "Argent Liquide",
+      "caption": "清澄な水面を通して過去の影が洗い去られ、魂に新たなエネルギーを呼び覚ます感覚。自己再発見と無限の始まりを感じさせる壮大で輝かしい響きです。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Argent%20Liquide.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh)\n(Ooh)\n\n[Verse 1]\nLa vitre devient une mer\nL'air est doux sur ma peau\nLe silence a une forme\nUn poids qui me soulage\nJe regarde l'eau couler\nL'ancien moi s'efface déjà\nLa chaleur reste constante\nDans cet espace protégé\n\n[Chorus]\nC'est l'instant de la force\nNous sommes le mouvement pur\nLe ciel se déchire enfin\nJe retrouve mon vrai nom\n(Mon vrai nom)\nTout devient limpide ici\nL'eau lave le passé noir\n(Le passé noir)\n\n[Verse 2]\nUn souvenir remonte enfin\nComme un métal précieux\nJe l'avais laissé au sol\nSous la poussière de l'oubli\nC'est une image oubliée\nUne force qui revient fort\nJe touche la ligne de crête\nLe futur est un grand cri\n\n[Chorus]\nC'est l'instant de la force\nNous sommes le mouvement pur\nLe ciel se déchire enfin\nJe retrouve mon vrai nom\n(Mon vrai nom)\nTout devient limpide ici\nL'eau lave le passé noir\n(Le passé noir)\n\n[Bridge]\nOuvre la porte scellée\nBrise le cycle du temps\nRien ne reste identique\nL'alchimie opère en moi\n(Rien ne reste)\n(Tout change)\n\n[Chorus]\nC'est l'instant de la force\nNous sommes le mouvement pur\nLe ciel se déchire enfin\nJe retrouve mon vrai nom\n(Mon vrai nom)\nTout devient limpide ici\nL'eau lave le passé noir\n(Le passé noir)\n\n[Outro]\nLa pluie devient argentée\n(Argentée)\nJe marche vers la clarté\n(Vers la clarté)\nC'est le nouveau départ\n(Le départ)\nLa marée monte en moi\n(Monte en moi)\nVitesse et puissance\n(Puissance)\nLe monde est à moi\n(À moi)\nLibérée par l'orage\n(L'orage)\nJe vois tout enfin\n(Tout enfin)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963226_12",
+      "title": "Le Pinceau Du Matin",
+      "caption": "夜明けを迎えた街を一人歩く視点から、色彩と希望が静かに降り注ぐ感覚を描写。「すべてはまた始まる」という優しさと、再生の予感を運ぶ音像です。",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Le%20Pinceau%20du%20Matin.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ouh la la)\n(La la la la)\n\n[Verse 1]\nLe bitume est encore frais sous mes pas\nLe silence enveloppe les grands boulevards déserts\nUne brise marine traverse enfin la rue\nLes volets des boutiques sont encore fermés\nLa ville semble reprendre son souffle maintenant\nSans le bruit des moteurs et de la foule\nJe marche seule vers la ligne de l'eau\nMa veste légère bat contre mes jambes\n\n[Verse 2]\nLe ciel change de peau au-dessus du port\nLe gris s'efface pour laisser place au mauve\nLes réverbères s'éteignent les uns après les autres\nUn premier oiseau traverse l'avenue vide\nJe sens le sel sur mes lèvres\nLa fraîcheur du matin me réveille doucement\nChaque détail devient plus net à chaque seconde\nLe monde se prépare pour un nouveau départ\n\n[Pre-Chorus]\nLe vent se lève sur les collines\nMes chaussures frappent le sol en rythme\nLe bleu s'installe partout autour de moi\nC'est le moment où tout recommence\n\n[Chorus]\nLe pinceau du matin dessine les formes\nLes couleurs reviennent sur les façades blanches\nUne clarté nouvelle efface la nuit passée\nNous marchons ensemble vers cet horizon pur\nLe monde se peint de teintes pleines d'espoir\nRien ne peut arrêter cette lumière qui vient\n(Tout recommence encore)\n(Sous le ciel de lin)\n\n[Interlude]\n(Doucement)\n(Tout doucement)\n\n[Verse 3]\nUne barque quitte le quai dans un clapotis\nLe premier bus passe au loin sans s'arrêter\nJe ne pense plus aux soucis de la veille\nSeul compte ce mouvement vers l'avant\nLes feuilles des palmiers frissonnent au soleil\nL'air devient plus doux contre mon visage\nJe n'ai pas besoin de mots pour comprendre\nLa beauté de cet instant qui ne durera pas\n\n[Pre-Chorus]\nLa colline s'illumine sous mes yeux\nLe rythme de mon cœur s'accélère un peu\nLe rose remplace les dernières nuances de gris\nC'est le signal que la journée commence\n\n[Chorus]\nLe pinceau du matin dessine les formes\nLes couleurs reviennent sur les façades blanches\nUne clarté nouvelle efface la nuit passée\nNous marchons ensemble vers cet horizon pur\nLe monde se peint de teintes pleines d'espoir\nRien ne peut arrêter cette lumière qui vient\n(Tout recommence encore)\n(Sous le ciel de lin)\n\n[Bridge]\nSi je pouvais rester ici pour toujours\nDans cette transition entre deux mondes\nJe garderais cette paix au creux de ma main\nLe futur n'est plus une montagne effrayante\nDemain est déjà là et il nous appartient\nCourons vers la jetée avant que tout s'anime\n\n[Chorus]\nLe pinceau du matin dessine les formes\nLes couleurs reviennent sur les façades blanches\nUne clarté nouvelle efface la nuit passée\nNous marchons ensemble vers cet horizon pur\nLe monde se peint de teintes pleines d'espoir\nRien ne peut arrêter cette lumière qui vient\n(Tout recommence encore)\n(Sous le ciel de lin)\n\n[Outro]\nLe jour est là maintenant\n(La la la)\nLe bleu remplace tout le reste\n(Doucement)\nSous le soleil levant nous avançons\n(Tout recommence)\n(La la la la)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963226_13",
+      "title": "Un Pli Léger",
+      "caption": "曇り空を抜ける一筋の光のような、軽い解放感を描きます。日常的な重荷から解き放たれ、忘れていた自分自身の輝きを取り戻していく過程です。",
+      "type": "instrumental",
+      "duration": 180,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Un%20Pli%20L%C3%A9ger.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Le vent)\n(La pluie)\n\n[Phrase A]\nVitre opaque\nLa foule presse\nMes pas pèsent\nTout est gris\nOublier le nom\n(Le nom)\n(Le nom)\n\n[Build]\nVibrations\nLe rythme monte\nLe cœur bat\nVibrations\nVibrations\n\n[Phrase B]\nSoudain l'éclair\nTes yeux rient\nUn pli léger\nLe poids s'efface\nMerci l'inconnu\n(Merci)\nL'air est bleu\n(Si bleu)\n\n[Outro]\nFlottant\nLéger\nDans l'air\nDisparaître\n(Léger)\n(Léger)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781243963226_14",
+      "title": "Premier Souffle",
+      "caption": "夜の喧騒を越えて訪れる、個人的な新しい朝を描く。「最初の息吹」というテーマのもと、過去からの解放と共に自由な魂で歩き出す物語です。",
+      "type": "instrumental",
+      "duration": 181,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Premier%20Souffle.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Verse 1]\nLa nuit recule sur les boulevards\nL'air froid picote ma gorge\nJe sens le poids quitter mes épaules\nLe bitume est encore humide\nRien ne bouge à part le vent\nJe n'ai plus peur du silence\nC'est la fin de ton empire\nIci sur ce trottoir désert\n\n[Pre-Chorus]\nLe bleu remplace le noir profond\nJe sens mon sang battre plus fort\n(Plus fort maintenant)\nLe monde se réveille sans toi\n\n[Chorus]\nC'est ici que tout recommence\nUn nouveau souffle dans ma poitrine\nJe marche vers cet horizon clair\nSans chercher ton visage partout\n(Ton visage s'efface)\nLa ville respire enfin avec moi\nC'est mon premier jour de liberté\n(Ma liberté)\nLe premier cri du matin\n\n[Verse 2]\nLes fenêtres s'allument une à une\nJe ne compte plus les heures perdues\nTu pensais que je resterais figée\nDans le souvenir de nos disputes\nMais mes pas sont légers ce matin\nComme si je flottais sur le sol\nJe ne porte plus ton fardeau\nJe laisse tes mots sur le quai\n\n[Chorus]\nC'est ici que tout recommence\nUn nouveau souffle dans ma poitrine\nJe marche vers cet horizon clair\nSans chercher ton visage partout\n(Ton visage s'efface)\nLa ville respire enfin avec moi\nC'est mon premier jour de liberté\n(Ma liberté)\nLe premier cri du matin\n\n[Bridge]\nEst-ce que tu vois cette clarté ?\nElle ne te doit absolument rien\nJ'ai guéri sans ton aide\nRegarde-moi tenir debout seule\n(Regarde-moi maintenant)\nJe n'ai plus besoin de ta main\n\n[Chorus]\nC'est ici que tout recommence\nUn nouveau souffle dans ma poitrine\nJe marche vers cet horizon clair\nSans chercher ton visage partout\n(Ton visage s'efface)\nLa ville respire enfin avec moi\nC'est mon premier jour de liberté\n(Ma liberté)\nLe premier cri du matin\n\n[Outro]\nLe ciel devient tout blanc\n(Tout recommence)\nJe n'ai plus mal\n(Libre enfin)\nUn nouveau souffle\n(Tout recommence)\nRegarde-moi partir\n(Partir loin)\nL'aube est là\n(Ah ah ah)",
+      "added_at": "2026-06-12"
+    },
+    {
+      "id": "track_1781244447094_4",
+      "title": "Samedi Sans Fin",
+      "caption": "セダンの窓から見える夕暮れの街並み。時間や目的地を忘れて、ただどこまでも走り続ける二人組の放浪心を捉えたサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/Samedi%20Sans%20Fin.mp3",
+      "tags": [
+        "City Pop",
+        "明るい",
+        "90s CD音質",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Oh-oh-oh-oh)\n(Oh-oh-oh-oh)\n\n[Verse 1]\nLe soleil sur mes jambes\nLa vapeur de ma tasse\nLe vent est si doux\nC'est samedi matin\nLe balcon est calme\nJe regarde les gens\nTout semble si lent\nC’est le début d’ici\n\n[Pre-Chorus]\nMais je sens l’appel\nDe la route qui brille\nPrends tes clés vite\nOn ne revient pas\nOn doit s'échapper\nTu es prêt ou pas ?\n\n[Chorus]\nRouler dans la ville entière\nComme si le temps s'arrêtait\nTes mains sur le volant\nOn va vers le soir (Oh-oh-oh)\nC'est notre moment parfait\nRien ne peut nous toucher\nOn traverse les rues\nC'est tout ce qu'on a (Na-na-na-na)\n\n[Verse 2]\nLe ciel devient rose\nL'air devient plus frais\nJe baisse la vitre\nPour mieux te voir\nOn oublie la semaine\nOn oublie les soucis\nJuste le bruit des pneus\nSur le goudron gris\n\n[Pre-Chorus]\nOn laisse tout tomber\nOn part vers l'horizon\nJe sens le moteur vibrer\nTu sais ce que je veux\nOn doit s'échapper\nTu es prêt ou pas ?\n\n[Chorus]\nRouler dans la ville entière\nComme si le temps s'arrêtait\nTes mains sur le volant\nOn va vers le soir (Oh-oh-oh)\nC'est notre moment parfait\nRien ne peut nous toucher\nOn traverse les rues\nC'est tout ce qu'on a (Na-na-na-na)\n\n[Bridge]\nPas besoin de parler\nRegarde juste devant\nLa vitesse nous porte\nOn est libres maintenant\n(Tellement libres maintenant)\n(Oh-oh-oh-oh)\n\n[Chorus]\nRouler dans la ville entière\nComme si le temps s'arrêtait\nTes mains sur le volant\nOn va vers le soir (Oh-oh-oh)\nC'est notre moment parfait\nRien ne peut nous toucher\nOn traverse les rues\nC'est tout ce qu'on a (Na-na-na-na)\n\n[Outro]\nOn roule encore\nSous le ciel orange\n(Samedi sans fin)\n(Samedi sans fin)\nOn ne s'arrête plus\n(Oh-oh-oh-oh)\nC'est juste nous deux",
       "added_at": "2026-06-12"
     }
   ]
