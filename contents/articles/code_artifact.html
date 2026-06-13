@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NMAの開発自動化ワークフロー | Neura Music Archive</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com" nonce="MTc3MTMzODM4OCwxNDQ4ODMwNDMx"></script>
+  <!-- Google Fonts: Plus Jakarta Sans & Noto Sans JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+  <script nonce="MTc3MTMzODM4OCwxNDQ4ODMwNDMx">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Noto Sans JP', 'sans-serif'],
+            mono: ['Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-feature-settings: "palt";
+    }
+
+    /* スクロールバーのカスタマイズ（モノトーン調） */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .dark ::-webkit-scrollbar-track {
+      background: #000000;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background: #27272a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #e4e4e7;
+      border-radius: 3px;
+    }
+
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d4d4d8;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-white dark:bg-black text-slate-800 dark:text-zinc-200 font-sans antialiased selection:bg-slate-900 selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-200">
+
+  <div class="min-h-screen flex flex-col">
+
+    <!-- ナビゲーションバー (シンプル化したバー) -->
+    <header class="border-b border-slate-100 dark:border-zinc-900 sticky top-0 bg-white/80 dark:bg-black/80 backdrop-blur-md z-40">
+      <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-end">
+        <span class="text-[10px] font-mono text-slate-400 dark:text-zinc-600 tracking-wider">DEVELOPER BLOG</span>
+      </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="flex-1 max-w-3xl mx-auto px-6 py-10 md:py-16 w-full space-y-12 md:space-y-16">
+
+      <!-- 記事ヘッダー / タイトル -->
+      <article class="space-y-8">
+        <header class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-[10px] font-bold text-slate-600 dark:text-zinc-400 tracking-wider uppercase">
+              ARCHITECT & DEV
+            </span>
+            <span class="text-xs text-slate-400 dark:text-zinc-500 font-mono">2026.06.14</span>
+          </div>
+          
+          <h1 class="text-2xl md:text-3.5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-snug">
+            Neuro Music Archive (NMA) の楽曲生成・配信を支える自動化ワークフロー
+          </h1>
+
+          <div class="flex items-center gap-4 text-xs text-slate-500 dark:text-zinc-400 pt-1">
+            <div class="flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-slate-900 dark:bg-zinc-800 flex items-center justify-center text-[10px] font-bold text-white font-mono">N</span>
+              <span>NMA Dev Team</span>
+            </div>
+            <span>•</span>
+            <span>読了時間: 約3分</span>
+          </div>
+        </header>
+
+        <!-- リード文 -->
+        <section class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+          <p>
+            Neura Music Archive（NMA）で公開している楽曲は、プロンプトの作成からメタデータ管理、サイトへのデプロイに至るまで、自作の専用デスクトップアプリ<strong>「Portal Manager」</strong>を用いてプロセスを自動化しています。
+          </p>
+          <p>
+            AIを用いた音楽生成においては、生成そのものよりも「大量の出力結果の整理・メタデータ付与・公開作業」に多くの運用コストがかかります。本記事では、手作業を極限まで削減するために構築した、独自のフルオートメーション・ワークフローを解説します。
+          </p>
+        </section>
+
+        <!-- シンプルな構成フロー図 (SVG & CSSで美しく演出) -->
+        <section class="p-5 rounded-xl bg-slate-50 dark:bg-zinc-950 border border-slate-200/60 dark:border-zinc-900 space-y-4">
+          <h3 class="text-xs font-bold text-slate-800 dark:text-zinc-200 uppercase tracking-wider font-mono">
+            Pipeline Architecture
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-2 text-center text-xs">
+            <div class="p-3 rounded bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-1">
+              <span class="font-mono text-slate-400">01. Prompt</span>
+              <div class="font-semibold text-slate-800 dark:text-zinc-200">一括生成</div>
+              <p class="text-[10px] text-slate-400">Gemma 4 (Local)</p>
+            </div>
+            <div class="p-3 rounded bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-1">
+              <span class="font-mono text-slate-400">02. Ingest</span>
+              <div class="font-semibold text-slate-800 dark:text-zinc-200">メタデータ連携</div>
+              <p class="text-[10px] text-slate-400">Rust Backend / JSON</p>
+            </div>
+            <div class="p-3 rounded bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-1">
+              <span class="font-mono text-slate-400">03. Refine</span>
+              <div class="font-semibold text-slate-800 dark:text-zinc-200">全体最適化</div>
+              <p class="text-[10px] text-slate-400">コンテキスト維持</p>
+            </div>
+            <div class="p-3 rounded bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-1 font-semibold text-emerald-600 dark:text-emerald-400">
+              <span class="font-mono text-emerald-500/60 dark:text-emerald-400/50">04. Deploy</span>
+              <div>ワンクリック公開</div>
+              <p class="text-[10px] text-emerald-500/70">Cloudflare R2 / Git</p>
+            </div>
+          </div>
+        </section>
+
+        <hr class="border-slate-100 dark:border-zinc-900">
+
+        <!-- 本文セクション -->
+        <div class="space-y-10 md:space-y-12">
+          
+          <!-- Section 1 -->
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-slate-400 dark:text-zinc-600">01.</span> ローカルLLMによるプロンプトの一括生成
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-3">
+              <p>
+                楽曲制作の始点は、アプリ内の<strong>「Prompt Builder」</strong>によるプロンプト設計です。ジャンル、BPM、ムード、バンド編成に加え、ボーカルの声質（息の量、硬さ、ビブラートなど）をパラメータとして指定します。
+              </p>
+              <p>
+                生成を実行すると、バックグラウンドで稼働するローカルLLM（Gemma 4）が起動し、音楽生成モデル（Lyria 3）向けに最適化された英語プロンプトを指定曲数分、自動生成します。コンセプトアルバムを作成する場合、「Overture」から「Epilogue」までの起承転結を意識した13曲分のコンテキストを維持したまま、一括でプロンプト群を出力する仕組みとしています。
+              </p>
+            </div>
+
+            <!-- 画像: プロンプト生成パラメータ (高さを700pxに指定) -->
+            <div class="py-2">
+              <div class="max-w-md mx-auto rounded-lg overflow-hidden border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 shadow-sm">
+                <img src="dev2.png" alt="生成パラメータ設定画面" class="w-full h-[700px] object-cover object-top opacity-95 hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <!-- 画像がロードできない場合のプレースホルダー表示 -->
+                <div class="hidden p-8 flex-col items-center justify-center text-center text-slate-400 dark:text-zinc-600 space-y-2 min-h-[700px]">
+                  <svg class="w-12 h-12 stroke-current" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                  <span class="text-xs font-semibold">dev2.png (プロンプト生成パラメータ画面)</span>
+                </div>
+                <div class="p-3 bg-white dark:bg-black border-t border-slate-100 dark:border-zinc-900 text-[11px] text-slate-500 dark:text-zinc-400 text-center font-medium">
+                  図1. Prompt Builderの生成パラメータ設定インターフェース
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 2 -->
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-slate-400 dark:text-zinc-600">02.</span> 楽曲のインジェストとメタデータの自動バインディング
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-3">
+              <p>
+                音楽生成モデルから出力された楽曲ファイルをローカルフォルダに保存し、<strong>「Theme Workspace」</strong>画面で読み込みます。
+              </p>
+              <p>
+                ここではRust製のバックエンドがディレクトリを高速スキャンし、生成済みのプロンプト履歴とオーディオファイルを照合します。これにより、プロンプト生成時に指定したタグ情報や歌詞データが、各楽曲のメタデータ（JSONおよびID3タグ）として自動的に紐付けられます。手動でのタグ打ちやテキストのコピペは不要です。
+              </p>
+            </div>
+
+            <!-- 画像: Portal Manager メイン画面 (ワイド配置) -->
+            <div class="py-2">
+              <div class="w-full rounded-lg overflow-hidden border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 shadow-sm">
+                <img src="dev1.png" alt="Portal Manager 管理画面" class="w-full h-auto object-cover opacity-95 hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <!-- 画像がロードできない場合のプレースホルダー表示 -->
+                <div class="hidden p-12 flex-col items-center justify-center text-center text-slate-400 dark:text-zinc-600 space-y-2 min-h-[250px]">
+                  <svg class="w-12 h-12 stroke-current" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                  <span class="text-xs font-semibold">dev1.png (Portal Manager 管理画面)</span>
+                </div>
+                <div class="p-3 bg-white dark:bg-black border-t border-slate-100 dark:border-zinc-900 text-[11px] text-slate-500 dark:text-zinc-400 text-center font-medium">
+                  図2. Portal Manager の Album 編集およびメタデータ統合ビューアー
+                </div>
+              </div>
+            </div>
+            
+            <!-- コラム / Callout Box -->
+            <div class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200/80 dark:border-zinc-900 space-y-1.5 text-xs text-slate-600 dark:text-zinc-400">
+              <div class="font-bold text-slate-800 dark:text-zinc-200 flex items-center gap-1.5 font-mono">
+                <span>⚡ Technical Note: Rust-based Ingestion</span>
+              </div>
+              <p class="leading-relaxed">
+                ファイルI/Oの高速化と安全性を考慮し、インジェストエンジンの基盤にはRust（Tauriのバックエンド側コマンド）を採用。数GB単位のオーディオ一括スキャンもミリ秒単位で完了します。
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 3 -->
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-slate-400 dark:text-zinc-600">03.</span> LLMを用いたタイトル・キャプション生成と全体最適化 (Refine)
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-3">
+              <p>
+                楽曲のタイトルと解説文（キャプション）の付与も、ローカルLLMのパイプラインに組み込んでいます。
+              </p>
+              <p>
+                単曲ごとにパラメータや歌詞の文脈からテキストを生成するだけでなく、特筆すべきはアルバム全体の<strong>自己修正（Refine）プロセス</strong>です。AIがアルバム全曲の生成結果を俯瞰し、「語彙の重複がないか」「アルバムとしての統一感があるか」を自ら評価・再構築することで、バッチ処理特有の質の低下を防いでいます。
+              </p>
+              <p>
+                また、これらの情報をもとに、カバーアート用の画像生成プロンプトも自動抽出され、画像クロップから設定までアプリ内で完結します。
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 4 -->
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-slate-400 dark:text-zinc-600">04.</span> Cloudflare R2への直接デプロイとサイト更新
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-3">
+              <p>
+                データの準備が完了した後の公開プロセスも、GUI上のワンクリックで完結します。
+              </p>
+              <p>
+                アプリ内からデプロイを実行すると、オーディオファイルと画像ファイルが <strong>Cloudflare R2</strong> ストレージへ直接アップロードされます。同時に、公開用のCDN URLが自動生成されてローカルのJSONデータに上書きされます。
+              </p>
+              <p>
+                最後にヘッダーの「Git Push (Deploy)」を実行すれば、最新の <code>manifest.json</code> とテーマファイル群がリポジトリに反映され、NMAの静的サイト上に新しいアルバムが即座に公開されます。
+              </p>
+            </div>
+          </section>
+
+        </div>
+
+        <hr class="border-slate-100 dark:border-zinc-900">
+
+        <!-- 結び -->
+        <section class="text-slate-600 dark:text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-4">
+          <p>
+            このように、NMAでは単なるAIによる楽曲生成に留まらず、その周辺に発生する煩雑な運用タスク全体を、ローカルAIとTauriアプリের連携によって効率化しています。運用フローの自動化に興味がある方の参考になれば幸いです。
+          </p>
+        </section>
+
+      </article>
+
+      <hr class="border-slate-200 dark:border-zinc-800">
+
+      <!-- SNS共有リンク -->
+      <section id="share" class="space-y-4">
+        <div class="space-y-1">
+          <h2 class="text-sm font-bold text-slate-800 dark:text-zinc-200 tracking-tight flex items-center gap-2">
+            Share This Article
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-zinc-400">
+            この記事が役立ちましたら、SNS等でのシェアをお願いいたします。
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2">
+          <!-- X (Twitter) -->
+          <a href="https://twitter.com/share?url=https%3A%2F%2Fneura-music.com%2Fdev-workflow&text=Neuro%20Music%20Archive%20(NMA)%20%E3%81%AE%E6%A5%BD%E6%9B%B2%E7%94%9F%E6%88%90%E3%83%BB%E9%85%8D%E4%BF%A1%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E8%87%AA%E5%8B%95%E5%8C%96%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-900 hover:border-slate-300 dark:hover:border-zinc-700 transition-all text-xs font-semibold text-slate-800 dark:text-zinc-200">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.244 2.25h3.308l-4.717 5.392L22.42 22.5h-6.653l-5.207-8.7-5.962 8.7H1.368l5.221-5.972L1.252 2.25h6.823l4.7 6.22 5.469-6.22H18.244zM17.08 20.528h1.832L7.08 4.145H5.113L17.08 20.528z"/>
+            </svg>
+            X (Twitter)
+          </a>
+
+          <!-- Bluesky -->
+          <a href="https://bsky.app/intent/compose?text=Neuro%20Music%20Archive%20(NMA)%20%E3%81%AE%E6%A5%BD%E6%9B%B2%E7%94%9F%E6%88%90%E3%83%BB%E9%85%8D%E4%BF%A1%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E8%87%AA%E5%8B%95%E5%8C%96%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC%20https%3A%2F%2Fneura-music.com%2Fdev-workflow" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-900 hover:border-slate-300 dark:hover:border-zinc-700 transition-all text-xs font-semibold text-slate-800 dark:text-zinc-200">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M111.8 77.2C151.7 114.7 197.8 181 228.6 226.6c2.7 4 4.1 8.8 4.1 13.7v10.5c0 4.9-1.4 9.7-4.1 13.7-30.8 45.6-76.9 111.9-116.8 149.4C71.7 451.3 16 480 16 381.1c0-43.6 27.5-84.4 69.4-106C42.8 253.5 16 212.7 16 169.1 16 70.2 71.7 99 111.8 77.2zm288.4 0c40.1 21.8 95.8-7 95.8 91.9 0 43.6-26.8 84.4-69.4 106 41.9 21.6 69.4 62.4 69.4 106 0 98.9-55.7 70.2-95.8 132.8-39.9-37.5-86-103.8-116.8-149.4-2.7-4-4.1-8.8-4.1-13.7V250.8c0-4.9 1.4-9.7 4.1-13.7 30.8-45.6 76.9-111.9 116.8-149.4z"/>
+            </svg>
+            Bluesky
+          </a>
+
+          <!-- LINE -->
+          <a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fneura-music.com%2Fdev-workflow" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-900 hover:border-slate-300 dark:hover:border-zinc-700 transition-all text-xs font-semibold text-slate-800 dark:text-zinc-200">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 5.518 2 9.854c0 3.864 3.54 7.105 8.318 7.734.324.07.765.214.876.544.1.298.066.764.032 1.066l-.141 1.012c-.042.302-.204 1.18 1.135.534 1.338-.646 5.865-3.486 7.994-5.967C21.36 13.568 22 11.815 22 9.854 22 5.518 17.52 2 12 2zm4.184 10.155h-1.285a.311.311 0 01-.311-.311V7.935a.311.311 0 01.311-.311h1.285a.311.311 0 01.311.311v1.909h1.018a.311.311 0 01.311.311v1.1c0 .17-.14.31-.311.31h-1.319zm-3.099 0h-1.285a.311.311 0 01-.311-.311V7.935a.311.311 0 01.311-.311h1.285a.311.311 0 01.311.311v3.909c0 .17-.14.31-.311.31zm-2.091 0h-1.285a.311.311 0 01-.311-.311v-1.78l-1.422-2.1c-.046-.07-.055-.16-.02-.23.036-.08.115-.13.2-.13h1.285a.311.311 0 01.258.156l.872 1.411V7.935c0-.17.14-.31.311-.31h1.285c.17 0 .31.14.31.311v3.909c0 .17-.14.31-.31.31h-.28zm-4.708 0H5h-1.285a.311.311 0 01-.311-.311V7.935a.311.311 0 01.311-.311h1.285a.311.311 0 01.311.311v1.909h1.018c.17 0 .31.14.31.311v1.1c0 .17-.14.31-.311.31z"/>
+            </svg>
+            LINE
+          </a>
+
+          <!-- Copy Link -->
+          <button onclick="copyShareLink(this)" data-share-url="https://neura-music.com/dev-workflow"
+            class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-900 hover:border-slate-300 dark:hover:border-zinc-700 transition-all text-xs font-semibold text-slate-800 dark:text-zinc-200 focus:outline-none">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+            </svg>
+            <span class="share-btn-text">Copy Link</span>
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer
+      class="bg-slate-50 dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-900 py-8 text-center text-xs text-slate-500 dark:text-zinc-500 space-y-1.5 relative z-10">
+      <p>Neura Music Archive (NMA) — ロイヤリティフリー音楽アーカイブ</p>
+      <p class="font-mono">&copy; 2026 Neura Music Archive</p>
+    </footer>
+  </div>
+
+  <!-- SNSシェア用のリンクコピー処理スクリプト -->
+  <script>
+    function copyShareLink(button) {
+      const url = button.getAttribute('data-share-url') || window.location.href;
+      
+      // テキストコピーの実行
+      const tempTextArea = document.createElement("textarea");
+      tempTextArea.value = url;
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      
+      let copied = false;
+      try {
+        // iframe制約に対応するフォールバック処理
+        document.execCommand('copy');
+        copied = true;
+      } catch (err) {
+        navigator.clipboard.writeText(url).then(() => {
+          copied = true;
+        }).catch(() => {
+          copied = false;
+        });
+      }
+      document.body.removeChild(tempTextArea);
+
+      // UIフィードバックの適用
+      const btnText = button.querySelector('.share-btn-text');
+      const originalText = btnText.innerText;
+      
+      if (copied) {
+        btnText.innerText = "Copied!";
+        button.classList.add("border-emerald-500", "text-emerald-500", "dark:border-emerald-600", "dark:text-emerald-400");
+        button.classList.remove("border-slate-200", "dark:border-zinc-800");
+        
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          button.classList.remove("border-emerald-500", "text-emerald-500", "dark:border-emerald-600", "dark:text-emerald-400");
+          button.classList.add("border-slate-200", "dark:border-zinc-800");
+        }, 2000);
+      }
+    }
+  </script>
+
+</body>
+
+</html>

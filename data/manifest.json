@@ -65,6 +65,13 @@
       "content_url": "contents/articles/obs_clock_article.html",
       "date": "2026-06-12",
       "is_visible": true
+    },
+    {
+      "id": "article_20260613152328",
+      "title": "生成フローについて",
+      "content_url": "contents/articles/code_artifact.html",
+      "date": "2026-06-14",
+      "is_visible": true
     }
   ]
 }
