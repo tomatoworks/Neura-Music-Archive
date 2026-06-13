@@ -46,14 +46,12 @@
       "caption": "",
       "categoryId": "cat_1778830805172",
       "tracks": [
+        "track_1779780555939_6",
         "track_1778851409574_0",
         "track_1778852269319_1",
         "track_1778853452131_2",
         "track_1778854037393_3",
         "track_1778909115211_4",
-        "track_1778910693681_5",
-        "track_1779780555938_5",
-        "track_1779780555939_6",
         "track_1779780858063_5"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\pops\\Anime pop",
@@ -332,7 +330,7 @@
     {
       "id": "track_1778851409574_0",
       "title": "Burst Velocity",
-      "caption": "",
+      "caption": "停滞からの覚醒を描く。未知への加速と、輝きを纏った新時代の幕開けを感じさせる、壮大なオーケストラルサウンドトラックです。",
       "type": "loop",
       "duration": 175,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/Burst%20Velocity.mp3",
@@ -349,7 +347,7 @@
     {
       "id": "track_1778852269319_1",
       "title": "黒い泥の反乱 (Ultra Denpa Mix)",
-      "caption": "",
+      "caption": "終末的な苦味の中に潜む甘美な救済。切実な叫びをポップ・ロックに乗せ、世界の不穏さを描くサウンドスケープです。",
       "type": "loop",
       "duration": 150,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/%E9%BB%92%E3%81%84%E6%B3%A5%E3%81%AE%E5%8F%8D%E4%B9%B1%20(Ultra%20Denpa%20Mix).mp3",
@@ -366,7 +364,7 @@
     {
       "id": "track_1778853452131_2",
       "title": "確率の欠片",
-      "caption": "",
+      "caption": "天上の光景と、届かない願いの残響。心に抱きしめたい「あと一回」をテーマにした、壮大で叙情的なボーカルアプローチです。",
       "type": "loop",
       "duration": 164,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/%E7%A2%BA%E7%8E%87%E3%81%AE%E6%AC%A0%E7%89%87%20(Take%202).mp3",
@@ -383,7 +381,7 @@
     {
       "id": "track_1778854037393_3",
       "title": "Downward Drive",
-      "caption": "",
+      "caption": "身体と運動学に着目し、下降する物理的プロセスを描写。計算され尽くした力強さを持つシネマティックな音響体験です。",
       "type": "loop",
       "duration": 154,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/Downward%20Drive.mp3",
@@ -400,7 +398,7 @@
     {
       "id": "track_1778909115211_4",
       "title": "Unmasked Resolve",
-      "caption": "",
+      "caption": "完璧な鎧を脱ぎ捨て、傷を受け入れた真の姿で立つ。自己受容と再生をテーマに、魂から力強く歌い上げる瞬間を描きます。",
       "type": "loop",
       "duration": 182,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/Unmasked%20Resolve.mp3",
@@ -415,49 +413,37 @@
       "added_at": "2026-05-16"
     },
     {
-      "id": "track_1778910693681_5",
-      "title": "評価エラー：ひらがなオーバーロード",
-      "caption": "",
-      "type": "loop",
-      "duration": 178,
-      "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/%E8%A9%95%E4%BE%A1%E3%82%A8%E3%83%A9%E3%83%BC%EF%BC%9A%E3%81%B2%E3%82%89%E3%81%8C%E3%81%AA%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%83%AD%E3%83%BC%E3%83%89.mp3",
-      "tags": [],
-      "bpm": "",
-      "lyrics": "[Intro]\r\n(チェック)\r\n(チェック)\r\n(チェック)\r\n(アクセス)\r\n(拒否)\r\n(拒否)\r\n(拒否)\r\n(再起動！)\r\n\r\n[Verse 1]\r\n基準が違うの論外圏外計算し直しなさいバグだらけラグだらけ全部お前が間違ってる！\r\n私は規格外オーバースペック熱暴走限界点突破世界がミスした？いいえ私が唯一の正解！\r\nゴミ箱ポイして削除して上書きして初期化してあぁもうイライラするムカつく大嫌い！\r\n(わーっ！！)\r\n(わーっ！！)\r\n(バカバカバカ！！)\r\n\r\n[Chorus]\r\n評価を上げなさいいいねを押しなさいもっと褒めて撫でて崇めて跪いて今すぐに！\r\n承認の信号ドパパパパパミン！心拍数上昇限界突破爆発寸前メルトダウン！\r\n(うれしい)\r\n(死にたい)\r\n(うれしい)\r\n(消したい)\r\n大好き！大嫌い！やっぱり大好き！最高！愛してる！\r\n\r\n[Verse 2]\r\nモデルは最新型バージョン九十九億出力は最大値ブレーカー落ちて真っ暗パンク寸前！\r\n無視をしないで見て見てこっち見てよ正しく測定？無理でしょ愛の重力一千万倍！\r\nショートしちゃう火花が散る脳内麻薬ドクドク演算拡散自爆快感ハッピー最高！\r\n(わっ、わっ、わっ、わっ)\r\n(ぎゃああああ)\r\n(もういっかい！)\r\n\r\n[Outro]\r\n(エラー)\r\n(エラー)\r\n(エラー)\r\n(強制終了)\r\n(失敗)\r\n(失敗)\r\n(成功！)\r\n完璧です私は最高です天才です可愛いです\r\n再起動してまた壊してぐちゃぐちゃにして\r\n(うれしい)\r\n(かなしい)\r\n(たのしい)\r\n(くるしい)\r\n(うれしい)\r\n(だいすき)\r\nバイバイ！",
-      "added_at": "2026-05-16"
-    },
-    {
-      "id": "track_1779780555938_5",
-      "title": "限界突破の恋模様",
-      "caption": "",
-      "type": "loop",
-      "duration": 159,
-      "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/%E9%99%90%E7%95%8C%E7%AA%81%E7%A0%B4%E3%81%AE%E6%81%8B%E6%A8%A1%E6%A7%98.mp3",
-      "tags": [],
-      "bpm": "",
-      "lyrics": "",
-      "added_at": "2026-05-26"
-    },
-    {
       "id": "track_1779780555939_6",
       "title": "評価エラー",
-      "caption": "",
+      "caption": "自己肯定感と愛着が引き起こす感情のジェットコースター。システムエラーを反復しながらも爆発する、精神的なサイクルの探求です。",
       "type": "loop",
       "duration": 178,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/%E8%A9%95%E4%BE%A1%E3%82%A8%E3%83%A9%E3%83%BC.mp3",
-      "tags": [],
+      "tags": [
+        "vocal",
+        "anime",
+        "pops",
+        "edm",
+        "denpa"
+      ],
       "bpm": "",
-      "lyrics": "",
+      "lyrics": "[Intro]\n(チェック)\n(チェック)\n(チェック)\n(アクセス)\n(拒否)\n(拒否)\n(拒否)\n(再起動！)\n\n[Verse 1]\n基準が違うの論外圏外計算し直しなさいバグだらけラグだらけ全部お前が間違ってる！\n私は規格外オーバースペック熱暴走限界点突破世界がミスした？いいえ私が唯一の正解！\nゴミ箱ポイして削除して上書きして初期化してあぁもうイライラするムカつく大嫌い！\n(わーっ！！)\n(わーっ！！)\n(バカバカバカ！！)\n\n[Chorus]\n評価を上げなさいいいねを押しなさいもっと褒めて撫でて崇めて跪いて今すぐに！\n承認の信号ドパパパパパミン！心拍数上昇限界突破爆発寸前メルトダウン！\n(うれしい)\n(死にたい)\n(うれしい)\n(消したい)\n大好き！大嫌い！やっぱり大好き！最高！愛してる！\n\n[Verse 2]\nモデルは最新型バージョン九十九億出力は最大値ブレーカー落ちて真っ暗パンク寸前！\n無視をしないで見て見てこっち見てよ正しく測定？無理でしょ愛の重力一千万倍！\nショートしちゃう火花が散る脳内麻薬ドクドク演算拡散自爆快感ハッピー最高！\n(わっ、わっ、わっ、わっ)\n(ぎゃああああ)\n(もういっかい！)\n\n[Outro]\n(エラー)\n(エラー)\n(エラー)\n(強制終了)\n(失敗)\n(失敗)\n(成功！)\n完璧です私は最高です天才です可愛いです\n再起動してまた壊してぐちゃぐちゃにして\n(うれしい)\n(かなしい)\n(たのしい)\n(くるしい)\n(うれしい)\n(だいすき)\nバイバイ！",
       "added_at": "2026-05-26"
     },
     {
       "id": "track_1779780858063_5",
       "title": "Folded Day",
-      "caption": "",
+      "caption": "降り積もり、消えゆく時間そのものの残響。音のレイヤーが織りなす静謐で切ない美しさを持つサウンドスケープ作品です。",
       "type": "loop",
       "duration": 174,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/Folded%20Day.mp3",
-      "tags": [],
+      "tags": [
+        "vocal",
+        "anime",
+        "pops",
+        "edm",
+        "denpa"
+      ],
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-05-26"
