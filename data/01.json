@@ -55,7 +55,7 @@
         "track_1779780858063_5"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\pops\\Anime pop",
-      "type": ""
+      "type": "vocal"
     },
     {
       "id": "album_1781238122010",
@@ -331,7 +331,7 @@
       "id": "track_1778851409574_0",
       "title": "Burst Velocity",
       "caption": "停滞からの覚醒を描く。未知への加速と、輝きを纏った新時代の幕開けを感じさせる、壮大なオーケストラルサウンドトラックです。",
-      "type": "loop",
+      "type": "vocal",
       "duration": 175,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/Burst%20Velocity.mp3",
       "tags": [
@@ -348,7 +348,7 @@
       "id": "track_1778852269319_1",
       "title": "黒い泥の反乱 (Ultra Denpa Mix)",
       "caption": "終末的な苦味の中に潜む甘美な救済。切実な叫びをポップ・ロックに乗せ、世界の不穏さを描くサウンドスケープです。",
-      "type": "loop",
+      "type": "vocal",
       "duration": 150,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/%E9%BB%92%E3%81%84%E6%B3%A5%E3%81%AE%E5%8F%8D%E4%B9%B1%20(Ultra%20Denpa%20Mix).mp3",
       "tags": [
@@ -365,7 +365,7 @@
       "id": "track_1778853452131_2",
       "title": "確率の欠片",
       "caption": "天上の光景と、届かない願いの残響。心に抱きしめたい「あと一回」をテーマにした、壮大で叙情的なボーカルアプローチです。",
-      "type": "loop",
+      "type": "vocal",
       "duration": 164,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/%E7%A2%BA%E7%8E%87%E3%81%AE%E6%AC%A0%E7%89%87%20(Take%202).mp3",
       "tags": [
@@ -381,8 +381,8 @@
     {
       "id": "track_1778854037393_3",
       "title": "Downward Drive",
-      "caption": "身体と運動学に着目し、下降する物理的プロセスを描写。計算され尽くした力強さを持つシネマティックな音響体験です。",
-      "type": "loop",
+      "caption": "プロレスの曲です。",
+      "type": "vocal",
       "duration": 154,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/Downward%20Drive.mp3",
       "tags": [
@@ -399,7 +399,7 @@
       "id": "track_1778909115211_4",
       "title": "Unmasked Resolve",
       "caption": "完璧な鎧を脱ぎ捨て、傷を受け入れた真の姿で立つ。自己受容と再生をテーマに、魂から力強く歌い上げる瞬間を描きます。",
-      "type": "loop",
+      "type": "vocal",
       "duration": 182,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/Unmasked%20Resolve.mp3",
       "tags": [
@@ -415,8 +415,8 @@
     {
       "id": "track_1779780555939_6",
       "title": "評価エラー",
-      "caption": "自己肯定感と愛着が引き起こす感情のジェットコースター。システムエラーを反復しながらも爆発する、精神的なサイクルの探求です。",
-      "type": "loop",
+      "caption": "電波曲。",
+      "type": "vocal",
       "duration": 178,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/%E8%A9%95%E4%BE%A1%E3%82%A8%E3%83%A9%E3%83%BC.mp3",
       "tags": [
@@ -434,7 +434,7 @@
       "id": "track_1779780858063_5",
       "title": "Folded Day",
       "caption": "降り積もり、消えゆく時間そのものの残響。音のレイヤーが織りなす静謐で切ない美しさを持つサウンドスケープ作品です。",
-      "type": "loop",
+      "type": "vocal",
       "duration": 174,
       "full_url": "https://cdn.neura-music.com/01vocal/pops/Anime%20pop/Folded%20Day.mp3",
       "tags": [
@@ -445,7 +445,7 @@
         "denpa"
       ],
       "bpm": "",
-      "lyrics": "",
+      "lyrics": "[Intro]\n(Oooooh)\n(Oooooh)\n\n[Verse 1]\nThe light stays on the wall\nA heavy kind of quiet\nThe dust is in the air\nMoving in a circle\n(Moving in a circle)\nYou’re still across from me\nTracing lines along the rug\nWe don't have to talk\n\n[Chorus]\nI’m folding up the day\nKeeping all the pieces\n(Keeping all the pieces)\nI’m glad you stayed so long\nI’m glad you stayed\n(Glad you stayed)\n\n[Verse 2]\nYour jacket on the chair\nLooking like a person\nThe water in the glass\nIs perfectly still now\n(Perfectly still)\nThe window is a black frame\nPressing on the glass\nI'll be here tomorrow\n\n[Chorus]\nI’m folding up the day\nKeeping all the pieces\n(Keeping all the pieces)\nI’m glad you stayed so long\nI’m glad you stayed\n(Glad you stayed)\n\n[Outro]\nTurning out the light\n(Out the light)\nClosing up the door\n(Closing up)\nMoving slow\nStay soft\n(Stay soft)\n(Stay soft)\n(Oooooh)",
       "added_at": "2026-05-26"
     },
     {
