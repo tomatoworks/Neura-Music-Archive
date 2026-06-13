@@ -481,28 +481,4 @@ window.downloadSelectedZip = (albumId, btnElement) => {
     }
   };
   
-window.copyArticleShareLink = async (button) => {
-  const url = button.getAttribute('data-share-url') || window.location.href;
-  
-  try {
-    await navigator.clipboard.writeText(url);
-    
-    // UIフィードバック
-    const btnText = button.querySelector('.share-btn-text');
-    const originalText = btnText.innerText;
-    
-    btnText.innerText = "Copied!";
-    button.classList.add("border-emerald-500", "text-emerald-500", "dark:border-emerald-600", "dark:text-emerald-400");
-    button.classList.remove("border-slate-200", "dark:border-zinc-800");
-    
-    setTimeout(() => {
-      btnText.innerText = originalText;
-      button.classList.remove("border-emerald-500", "text-emerald-500", "dark:border-emerald-600", "dark:text-emerald-400");
-      button.classList.add("border-slate-200", "dark:border-zinc-800");
-    }, 2000);
-  } catch (err) {
-    console.error('Failed to copy: ', err);
-  }
-};
-
-init();
+  init();

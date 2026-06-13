@@ -1,117 +1,237 @@
-<!-- 記事コンテンツ部分のみ（headやbodyは不要） -->
-<article class="max-w-3xl mx-auto px-6 py-10 md:py-16 w-full space-y-12 md:space-y-16">
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
 
-  <!-- ヒーロー / イントロダクション -->
-  <section id="about" class="space-y-6">
-    <div class="space-y-3">
-      <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-300 text-xs font-semibold tracking-wider uppercase">
-        Tool Introduction
-      </div>
-      <h1 class="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-none">
-        OBS HTML Clock Generator
-      </h1>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBS HTML Clock Generator | 紹介・技術仕様</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Plus Jakarta Sans, Noto Sans JP, & IBM Plex Sans JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['IBM Plex Sans JP', 'Plus Jakarta Sans', 'Noto Sans JP', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-feature-settings: "palt";
+    }
 
-    <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4 border-l-2 border-slate-800 dark:border-zinc-200 pl-4">
-      <p>ライブ配信や録画の画面において、「現在時刻」の表示は視聴者の利便性を高める定番の要素です。</p>
-      <p>しかし、OBS Studioの標準テキストソース（GDI+等）では、文字の装飾やフォント、レイアウトの微調整に限界があります。また、既存の時計素材を利用する場合でも、「自分のチャンネルのテーマカラーに合わない」「時刻が切り替わるたびに文字幅が伸縮して画面がガタつく」といった問題に直面することが少なくありません。</p>
-      <p>「OBS HTML Clock Generator」は、これらの課題をブラウザ上で直感的に解決し、OBS用の高品質な透過時計HTMLを出力できるスタンドアロンWebツールです。</p>
-    </div>
+    /* スクロールバーのカスタマイズ（モノトーン調） */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
 
-    <div class="p-3.5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
-      <span class="font-bold text-slate-800 dark:text-zinc-200">完全ローカル動作設計：</span><br>
-      外部サーバーを介さずブラウザ上で処理が完結するため、生成されたHTMLやZIPファイルはインターネット環境に依存せず、ローカル環境（file:// プロトコル）でも完全に動作します。
-    </div>
-  </section>
+    .dark ::-webkit-scrollbar-track {
+      background: #000000;
+    }
 
-  <hr class="border-slate-200 dark:border-zinc-800">
+    ::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
 
-  <!-- 主要な特徴 -->
-  <section id="features" class="space-y-6">
-    <div class="space-y-1">
-      <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
-        <span class="text-slate-400 dark:text-zinc-600 font-mono text-base">01.</span> 実用的な機能・最適化
-      </h2>
-      <p class="text-xs text-slate-500 dark:text-zinc-400">
-        一般的なウェブクロックと異なり、配信ソフトでの利用シーンに特化した独自の設計思想が盛り込まれています。
-      </p>
-    </div>
+    .dark ::-webkit-scrollbar-thumb {
+      background: #27272a;
+    }
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-      <!-- 文字幅固定 -->
-      <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
-        <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>数字の固定幅設定</h3>
-        <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">1文字あたりの幅をCSSで強制的に固定。時刻が進んでも時計全体の横幅が伸縮せず、画面のガタつきを防止します。</p>
-      </div>
-      <!-- 左上寄せ -->
-      <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
-        <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>ジャストサイズ設計</h3>
-        <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">出力されるHTMLは自動的に左上寄せになり、不要な透明領域を削減。OBS上での他ソースの誤選択を防ぎます。</p>
-      </div>
-      <!-- ローカルフォント -->
-      <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
-        <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>ローカルフォントZIP同梱</h3>
-        <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">PC内のフォント使用時は、フォントデータとHTMLを自動でZIP化。ブラウザのセキュリティ制限を安全にクリアします。</p>
-      </div>
-      <!-- エフェクト制御 -->
-      <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
-        <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>高度なエフェクト制御</h3>
-        <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">視認性を高める境界線（Stroke）や、ぼかし・位置をミリ単位で調整できるドロップシャドウを完備しています。</p>
-      </div>
-      <!-- 多彩な追加要素 -->
-      <div class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1 col-span-1 md:col-span-2">
-        <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>豊富な表示アドオン</h3>
-        <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">点滅アニメーション付きの「LIVEバッジ」（5スタイル）、曜日に対応した「日付表示」、および任意の文字列（配信用のハッシュタグなど）を表示できる「カスタムラベル」を統合してレンダリング可能です。</p>
-      </div>
-    </div>
-  </section>
+    ::-webkit-scrollbar-thumb {
+      background: #e4e4e7;
+      border-radius: 3px;
+    }
 
-  <hr class="border-slate-200 dark:border-zinc-800">
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
 
-  <!-- テック構成 -->
-  <section id="technology" class="space-y-6">
-    <div class="space-y-2">
-      <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
-        <span class="text-slate-400 dark:text-zinc-600 font-mono text-base">02.</span> 開発環境・技術仕様
-      </h2>
-      <div class="text-slate-600 dark:text-zinc-300 text-sm leading-relaxed space-y-2">
-        <p>ビルド環境が一切不要でありながら、高度な機能を提供する、設計の美しいクリーンなクライアントサイドSPA（Single Page Application）です。</p>
-      </div>
-    </div>
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d4d4d8;
+    }
+  </style>
+</head>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
-      <div class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-2">
-        <span class="text-[10px] font-bold text-slate-500 dark:text-zinc-400 tracking-wider uppercase">UI / Styling</span>
-        <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">Tailwind CSS & IBM Plex Sans JP</h4>
-        <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">ユーティリティファーストなスタイリングに加え、ジェネレーター画面全体の基本フォントに「IBM Plex Sans JP」を採用し、一貫した視認性を担保しています。</p>
-      </div>
-      <div class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-2">
-        <span class="text-[10px] font-bold text-slate-500 dark:text-zinc-400 tracking-wider uppercase">Logic / Package</span>
-        <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">React (v18) & JSZip (UMD)</h4>
-        <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">CDNインポートマップを用いたReactのダイレクト読み込みと、ローカルセキュリティ境界制限を回避するためのJSZipのUMD設計を組み合わせています。</p>
-      </div>
-    </div>
-  </section>
+<body
+  class="bg-white dark:bg-black text-slate-800 dark:text-zinc-200 font-sans antialiased selection:bg-slate-900 selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-200">
 
-  <hr class="border-slate-200 dark:border-zinc-800">
+  <div class="min-h-screen flex flex-col">
 
-  <!-- 作例とデモ -->
-  <section id="demo" class="space-y-6">
-    <div class="space-y-1">
-      <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
-        <span class="text-slate-400 dark:text-zinc-600 font-mono text-base">03.</span> 具体的な出力例とデモ（作例）
-      </h2>
-      <p class="text-xs text-slate-500 dark:text-zinc-400">
-        本ジェネレーターを使用して出力された実機用透過時計ソースのライブ動作サンプルと、適用されているカスタマイズパラメータの設計解説です。
-      </p>
-    </div>
+    <!-- メインコンテンツ -->
+    <main class="flex-1 max-w-3xl mx-auto px-6 py-10 md:py-16 w-full space-y-12 md:space-y-16">
 
-    <!-- リアルタイムデモフレーム -->
-    <div class="space-y-2">
-      <span class="text-[10px] font-bold text-slate-500 dark:text-zinc-400 tracking-wider uppercase block">LIVE DEMO (チェッカー背景：透過確認用)</span>
-      <div class="relative w-full h-[180px] rounded-xl overflow-hidden border border-slate-200 dark:border-zinc-800 bg-zinc-900 flex items-center justify-center" style="background-image: linear-gradient(45deg, rgba(120,120,120,0.1) 25%, transparent 25%), linear-gradient(-45deg, rgba(120,120,120,0.1) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, rgba(120,120,120,0.1) 75%), linear-gradient(-45deg, transparent 75%, rgba(120,120,120,0.1) 75%); background-size: 16px 16px;">
-        <!-- iframe で時計を稼働 -->
-        <iframe srcdoc="<!DOCTYPE html>
+      <!-- ヒーロー / イントロダクション -->
+      <section id="about" class="space-y-6">
+        <div class="space-y-3">
+          <div
+            class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-300 text-xs font-semibold tracking-wider uppercase">
+            Tool Introduction
+          </div>
+          <h1 class="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-none">
+            OBS HTML Clock Generator
+          </h1>
+        </div>
+
+        <div
+          class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4 border-l-2 border-slate-800 dark:border-zinc-200 pl-4">
+          <p>
+            ライブ配信や録画 of 画面において、「現在時刻」の表示は視聴者の利便性を高める定番の要素です。
+          </p>
+          <p>
+            しかし、OBS Studioの標準テキストソース（GDI+等）では、文字の装飾やフォント、レイアウトの微調整に限界があります。また、既存の時計素材を利用する場合でも、「自分のチャンネルのテーマカラーに合わない」「時刻が切り替わるたびに文字幅が伸縮して画面がガタつく」といった問題に直面することが少なくありません。
+          </p>
+          <p>
+            「OBS HTML Clock Generator」は、これらの課題をブラウザ上で直感的に解決し、OBS用の高品質な透過時計HTMLを出力できるスタンドアロンWebツールです。
+          </p>
+        </div>
+
+        <div
+          class="p-3.5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+          <span class="font-bold text-slate-800 dark:text-zinc-200">完全ローカル動作設計：</span><br>
+          外部サーバーを介さずブラウザ上で処理が完結するため、生成されたHTMLやZIPファイルはインターネット環境に依存せず、ローカル環境（file:// プロトコル）でも完全に動作します。
+        </div>
+      </section>
+
+      <hr class="border-slate-200 dark:border-zinc-800">
+
+      <!-- 主要な特徴 -->
+      <section id="features" class="space-y-6">
+        <div class="space-y-1">
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+            <span class="text-slate-400 dark:text-zinc-600 font-mono text-base">01.</span> 実用的な機能・最適化
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-zinc-400">
+            一般的なウェブクロックと異なり、配信ソフトでの利用シーンに特化した独自の設計思想が盛り込まれています。
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <!-- 文字幅固定 -->
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
+            <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
+              数字の固定幅設定
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+              1文字あたりの幅をCSSで強制的に固定。時刻が進んでも時計全体の横幅が伸縮せず、画面のガタつきを防止します。
+            </p>
+          </div>
+
+          <!-- 左上寄せ -->
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
+            <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
+              ジャストサイズ設計
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+              出力されるHTMLは自動的に左上寄せになり、不要な透明領域を削減。OBS上での他ソースの誤選択を防ぎます。
+            </p>
+          </div>
+
+          <!-- ローカルフォント -->
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
+            <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
+              ローカルフォントZIP同梱
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+              PC内のフォント使用時は、フォントデータとHTMLを自動でZIP化。ブラウザのセキュリティ制限を安全にクリアします。
+            </p>
+          </div>
+
+          <!-- エフェクト制御 -->
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1">
+            <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
+              高度なエフェクト制御
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+              視認性を高める境界線（Stroke）や、ぼかし・位置をミリ単位で調整できるドロップシャドウを完備しています。
+            </p>
+          </div>
+
+          <!-- 多彩な追加要素 -->
+          <div
+            class="p-4 rounded-lg bg-slate-50/50 dark:bg-zinc-950/40 border border-slate-100 dark:border-zinc-900 hover:border-slate-200 dark:hover:border-zinc-800 transition-colors space-y-1 col-span-1 md:col-span-2">
+            <h3 class="font-bold text-sm text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-zinc-200"></span>
+              豊富な表示アドオン
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+              点滅アニメーション付きの「LIVEバッジ」（5スタイル）、曜日に対応した「日付表示」、および任意の文字列（配信用のハッシュタグなど）を表示できる「カスタムラベル」を統合してレンダリング可能です。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="border-slate-200 dark:border-zinc-800">
+
+      <!-- テック構成 -->
+      <section id="technology" class="space-y-6">
+        <div class="space-y-2">
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+            <span class="text-slate-400 dark:text-zinc-600 font-mono text-base">02.</span> 開発環境・技術仕様
+          </h2>
+          <div class="text-slate-600 dark:text-zinc-300 text-sm leading-relaxed space-y-2">
+            <p>
+              ビルド環境が一切不要でありながら、高度な機能を提供する、設計の美しいクリーンなクライアントサイドSPA（Single Page Application）です。
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+          <div
+            class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-2">
+            <span class="text-[10px] font-bold text-slate-500 dark:text-zinc-400 tracking-wider uppercase">UI / Styling</span>
+            <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">Tailwind CSS & IBM Plex Sans JP</h4>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+              ユーティリティファーストなスタイリングに加え、ジェネレーター画面全体の基本フォントに「IBM Plex Sans JP」を採用し、一貫した視認性を担保しています。
+            </p>
+          </div>
+
+          <div
+            class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-2">
+            <span class="text-[10px] font-bold text-slate-500 dark:text-zinc-400 tracking-wider uppercase">Logic / Package</span>
+            <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">React (v18) & JSZip (UMD)</h4>
+            <p class="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed">
+              CDNインポートマップを用いたReactのダイレクト読み込みと、ローカルセキュリティ境界制限を回避するためのJSZip of UMD設計を組み合わせています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="border-slate-200 dark:border-zinc-800">
+
+      <!-- 作例とデモ -->
+      <section id="demo" class="space-y-6">
+        <div class="space-y-1">
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+            <span class="text-slate-400 dark:text-zinc-600 font-mono text-base">03.</span> 具体的な出力例とデモ（作例）
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-zinc-400">
+            本ジェネレーターを使用して出力された実機用透過時計ソースのライブ動作サンプルと、適用されているカスタマイズパラメータの設計解説です。
+          </p>
+        </div>
+
+        <!-- リアルタイムデモフレーム -->
+        <div class="space-y-2">
+          <span class="text-[10px] font-bold text-slate-500 dark:text-zinc-400 tracking-wider uppercase block">LIVE DEMO (チェッカー背景：透過確認用)</span>
+          <div class="relative w-full h-[180px] rounded-xl overflow-hidden border border-slate-200 dark:border-zinc-800 bg-zinc-900 flex items-center justify-center" style="background-image: linear-gradient(45deg, rgba(120,120,120,0.1) 25%, transparent 25%), linear-gradient(-45deg, rgba(120,120,120,0.1) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, rgba(120,120,120,0.1) 75%), linear-gradient(-45deg, transparent 75%, rgba(120,120,120,0.1) 75%); background-size: 16px 16px;">
+            <!-- iframe で時計を稼働 -->
+            <iframe srcdoc="<!DOCTYPE html>
 <html lang=&quot;ja&quot;>
 <head>
 <meta charset=&quot;UTF-8&quot;>
@@ -201,75 +321,202 @@
   </script>
 </body>
 </html>" class="w-full h-full border-0 bg-transparent" scrolling="no"></iframe>
-      </div>
-    </div>
+          </div>
+        </div>
 
-    <!-- デザインチューニング解説 -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
-        <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">適用パラメータ・チューニング</h4>
-        <ul class="text-xs text-slate-600 dark:text-zinc-400 space-y-2 list-disc pl-4 pt-1">
-          <li><strong>フォントファミリー</strong>: 近未来感と視認性を兼ね備えたデジタルデザインの王道『Orbitron』を採用。</li>
-          <li><strong>等幅補正（数字の固定幅）</strong>: `0.9em`の文字幅設定により「1」や「:」を含む時間移動時でもフレームサイズが固定。</li>
-          <li><strong>すりガラス調（frame-glass）</strong>: 背面を透過処理しながらも、12pxのぼかし（backdrop-filter）を加え、背景色の白飛びを保護。</li>
-        </ul>
-      </div>
-      <div class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
-        <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">追加アタッチメント</h4>
-        <ul class="text-xs text-slate-600 dark:text-zinc-400 space-y-2 list-disc pl-4 pt-1">
-          <li><strong>ミニマルLIVEバッジ</strong>: ピンクカラー（`#ff2a6d`）でゆっくり点滅するシンプルなLIVEアタッチメントを左上に配置。</li>
-          <li><strong>カスタムラベル（#NEURA）</strong>: フレーム右下にブランドハッシュタグを配置。全体のバランスをとるアジャスター要素としても機能。</li>
-          <li><strong>マージン（Padding）</strong>: フレーム内のテキスト保護のために、細かな文字サイズ相対割合（`0.1em`）の余白を担保。</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+        <!-- デザインチューニング解説 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
+            <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">適用パラメータ・チューニング</h4>
+            <ul class="text-xs text-slate-600 dark:text-zinc-400 space-y-2 list-disc pl-4 pt-1">
+              <li><strong>フォントファミリー</strong>: 近未来感と視認性を兼ね備えたデジタルデザインの王道『Orbitron』を採用。</li>
+              <li><strong>等幅補正（数字 of 固定幅）</strong>: `0.9em`の文字幅設定により「1」や「:」を含む時間移動時でもフレームサイズが固定。</li>
+              <li><strong>すりガラス調（frame-glass）</strong>: 背面を透過処理しながらも、12pxのぼかし（backdrop-filter）を加え、背景色の白飛びを保護。</li>
+            </ul>
+          </div>
 
-  <hr class="border-slate-200 dark:border-zinc-800">
+          <div class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
+            <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">追加アタッチメント</h4>
+            <ul class="text-xs text-slate-600 dark:text-zinc-400 space-y-2 list-disc pl-4 pt-1">
+              <li><strong>ミニマルLIVEバッジ</strong>: ピンクカラー（`#ff2a6d`）でゆっくり点滅するシンプルなLIVEアタッチメントを左上に配置。</li>
+              <li><strong>カスタムラベル（#NEURA）</strong>: フレーム右下にブランドハッシュタグを配置。全体のバランスをとるアジャスター要素としても機能。</li>
+              <li><strong>マージン（Padding）</strong>: フレーム内のテキスト保護のために、細かな文字サイズ相対割合（`0.1em`）の余白を担保。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-  <!-- 導入方法 -->
-  <section id="guide" class="space-y-6">
-    <div class="space-y-1">
-      <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
-        <span class="text-slate-400 dark:text-zinc-600 font-mono text-base">04.</span> 導入手順
-      </h2>
-      <p class="text-xs text-slate-500 dark:text-zinc-400">
-        作成したHTML時計を、OBS Studioへ追加する手順は非常にシンプルです。
-      </p>
-    </div>
+      <hr class="border-slate-200 dark:border-zinc-800">
 
-    <div class="space-y-4">
-      <div class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
-        <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">1. デザインしてエクスポート</h4>
-        <p class="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">ブラウザ上でカスタマイズが完了したら、「HTMLとして保存」（ローカルフォント使用時は「ZIPで保存」）をクリックしてPCにダウンロードします（ZIPの場合は事前に展開・解凍します）。</p>
-      </div>
-      <div class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
-        <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">2. OBSでブラウザソースを追加</h4>
-        <p class="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">OBS Studioの「ソース」エリアにある「＋」ボタンをクリックし、新規の「ブラウザ」ソースを追加します。</p>
-      </div>
-      <div class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
-        <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">3. ローカルファイルを指定して配置</h4>
-        <p class="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">「ローカルファイル」のチェックボックスを有効化し、保存した `obs_clock.html` を選択します。表示したい時計のサイズに合わせて、ソースの「幅」と「高さ」（例: 幅800、高さ350）を調整して完了です。</p>
-      </div>
-    </div>
-  </section>
+      <!-- 導入方法 -->
+      <section id="guide" class="space-y-6">
+        <div class="space-y-1">
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+            <span class="text-slate-400 dark:text-zinc-600 font-mono text-base">04.</span> 導入手順
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-zinc-400">
+            作成したHTML時計を、OBS Studioへ追加する手順は非常にシンプルです。
+          </p>
+        </div>
 
-  <hr class="border-slate-200 dark:border-zinc-800">
+        <div class="space-y-4">
+          <!-- Step 1 -->
+          <div
+            class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
+            <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">1. デザインしてエクスポート</h4>
+            <p class="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">
+              ブラウザ上でカスタマイズが完了したら、「HTMLとして保存」（ローカルフォント使用時は「ZIPで保存」）をクリックしてPCにダウンロードします（ZIPの場合は事前に展開・解凍します）。
+            </p>
+          </div>
 
-  <!-- 総括 / まとめ -->
-  <section id="summary" class="space-y-4">
-    <div class="space-y-1">
-      <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
-        <span class="text-slate-400 dark:text-zinc-600 font-mono text-base">05.</span> まとめ
-      </h2>
-    </div>
-    <div class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 text-xs text-slate-600 dark:text-zinc-400 leading-relaxed space-y-3">
-      <p>「OBS HTML Clock Generator」は、サーバーを一切介さない軽量動作でありながら、配信者の細かな「痒いところに手が届く」工夫が詰め込まれたデザインユーティリティです。</p>
-      <p>VTuberの雑談配信、長時間の作業配信、ゲームの実況プレイ、あるいは企業の社内配信イベントまで、あらゆる配信レイアウトにぴったりとハマる美しい時計表示を誰でも容易に実装できます。</p>
-      <p class="text-slate-400 dark:text-zinc-500 italic">本ツールは、利用規約やセキュリティ境界を厳守した安全な環境下で自由にご利用いただけます。</p>
-    </div>
-  </section>
+          <!-- Step 2 -->
+          <div
+            class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
+            <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">2. OBSでブラウザソースを追加</h4>
+            <p class="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">
+              OBS Studioの「ソース」エリアにある「＋」ボタンをクリックし、新規の「ブラウザ」ソースを追加します。
+            </p>
+          </div>
 
-  <hr class="border-slate-200 dark:border-zinc-800">
-  
-</article>
+          <!-- Step 3 -->
+          <div
+            class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 space-y-1">
+            <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm">3. ローカルファイルを指定して配置</h4>
+            <p class="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">
+              「ローカルファイル」のチェックボックスを有効化し、保存した `obs_clock.html` を選択します。表示したい時計のサイズに合わせて、ソースの「幅」と「高さ」（例: 幅800、高さ350）を調整して完了です。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="border-slate-200 dark:border-zinc-800">
+
+      <!-- 総括 / まとめ -->
+      <section id="summary" class="space-y-4">
+        <div class="space-y-1">
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+            <span class="text-slate-400 dark:text-zinc-600 font-mono text-base">05.</span> まとめ
+          </h2>
+        </div>
+
+        <div
+          class="p-5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 text-xs text-slate-600 dark:text-zinc-400 leading-relaxed space-y-3">
+          <p>
+            「OBS HTML Clock Generator」は、サーバーを一切介さない軽量動作でありながら、配信者の細かな「痒いところに手が届く」工夫が詰め込まれたデザインユーティリティです。
+          </p>
+          <p>
+            VTuberの雑談配信、長時間の作業配信、ゲームの実況プレイ、あるいは企業の社内配信イベントまで、あらゆる配信レイアウトにぴったりとハマる美しい時計表示を誰でも容易に実装できます。
+          </p>
+          <p class="text-slate-400 dark:text-zinc-500 italic">
+            本ツールは、利用規約やセキュリティ境界を厳守した安全な環境下で自由にご利用いただけます。
+          </p>
+        </div>
+      </section>
+
+      <hr class="border-slate-200 dark:border-zinc-800">
+
+<!-- SNS共有リンクティッカー -->
+      <section id="share" class="space-y-4">
+        <div class="space-y-1">
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+            <span class="text-slate-400 dark:text-zinc-600 font-mono text-base">07.</span> Share This Site
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-zinc-400">
+            当アーカイブや楽曲を気に入っていただけたら、SNSでの共有をお願いします。
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2">
+          <!-- X (Twitter) -->
+          <a href="https://twitter.com/share?url=https%3A%2F%2Fneura-music.com%2F&text=Neura%20Music%20Archive%20(NMA)%20%7C%20%E7%94%9F%E6%88%90AI%E3%83%AD%E3%82%A4%E3%83%A4%E3%83%AA%E3%83%86%E3%82%A3%E3%83%95%E3%83%AA%E3%83%BC%E9%9F%B3%E6%A5%BD%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-900 hover:border-slate-300 dark:hover:border-zinc-700 transition-all text-xs font-semibold text-slate-800 dark:text-zinc-200">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.244 2.25h3.308l-4.717 5.392L22.42 22.5h-6.653l-5.207-8.7-5.962 8.7H1.368l5.221-5.972L1.252 2.25h6.823l4.7 6.22 5.469-6.22H18.244zM17.08 20.528h1.832L7.08 4.145H5.113L17.08 20.528z"/>
+            </svg>
+            X (Twitter)
+          </a>
+
+          <!-- Bluesky -->
+          <a href="https://bsky.app/intent/compose?text=Neura%20Music%20Archive%20(NMA)%20%7C%20%E7%94%9F%E6%88%90AI%E3%83%AD%E3%82%A4%E3%83%A4%E3%83%AA%E3%83%86%E3%82%A3%E3%83%95%E3%83%AA%E3%83%BC%E9%9F%B3%E6%A5%BD%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96%20https%3A%2F%2Fneura-music.com%2F" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-900 hover:border-slate-300 dark:hover:border-zinc-700 transition-all text-xs font-semibold text-slate-800 dark:text-zinc-200">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M111.8 77.2C151.7 114.7 197.8 181 228.6 226.6c2.7 4 4.1 8.8 4.1 13.7v10.5c0 4.9-1.4 9.7-4.1 13.7-30.8 45.6-76.9 111.9-116.8 149.4C71.7 451.3 16 480 16 381.1c0-43.6 27.5-84.4 69.4-106C42.8 253.5 16 212.7 16 169.1 16 70.2 71.7 99 111.8 77.2zm288.4 0c40.1 21.8 95.8-7 95.8 91.9 0 43.6-26.8 84.4-69.4 106 41.9 21.6 69.4 62.4 69.4 106 0 98.9-55.7 70.2-95.8 132.8-39.9-37.5-86-103.8-116.8-149.4-2.7-4-4.1-8.8-4.1-13.7V250.8c0-4.9 1.4-9.7 4.1-13.7 30.8-45.6 76.9-111.9 116.8-149.4z"/>
+            </svg>
+            Bluesky
+          </a>
+
+          <!-- LINE -->
+          <a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fneura-music.com%2F" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-900 hover:border-slate-300 dark:hover:border-zinc-700 transition-all text-xs font-semibold text-slate-800 dark:text-zinc-200">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 5.518 2 9.854c0 3.864 3.54 7.105 8.318 7.734.324.07.765.214.876.544.1.298.066.764.032 1.066l-.141 1.012c-.042.302-.204 1.18 1.135.534 1.338-.646 5.865-3.486 7.994-5.967C21.36 13.568 22 11.815 22 9.854 22 5.518 17.52 2 12 2zm4.184 10.155h-1.285a.311.311 0 01-.311-.311V7.935a.311.311 0 01.311-.311h1.285a.311.311 0 01.311.311v1.909h1.018a.311.311 0 01.311.311v1.1c0 .17-.14.31-.311.31h-1.319zm-3.099 0h-1.285a.311.311 0 01-.311-.311V7.935a.311.311 0 01.311-.311h1.285a.311.311 0 01.311.311v3.909c0 .17-.14.31-.311.31zm-2.091 0h-1.285a.311.311 0 01-.311-.311v-1.78l-1.422-2.1c-.046-.07-.055-.16-.02-.23.036-.08.115-.13.2-.13h1.285a.311.311 0 01.258.156l.872 1.411V7.935c0-.17.14-.31.311-.31h1.285c.17 0 .31.14.31.311v3.909c0 .17-.14.31-.31.31h-.28zm-4.708 0H5h-1.285a.311.311 0 01-.311-.311V7.935a.311.311 0 01.311-.311h1.285a.311.311 0 01.311.311v1.909h1.018c.17 0 .31.14.31.311v1.1c0 .17-.14.31-.311.31z"/>
+            </svg>
+            LINE
+          </a>
+
+          <!-- Copy Link -->
+          <button onclick="copyShareLink(this)" data-share-url="https://neura-music.com/"
+            class="flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-900 hover:border-slate-300 dark:hover:border-zinc-700 transition-all text-xs font-semibold text-slate-800 dark:text-zinc-200 focus:outline-none">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+            </svg>
+            <span class="share-btn-text">Copy Link</span>
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- フッター (余白を少し縮小) -->
+    <footer
+      class="bg-slate-50 dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-900 py-8 text-center text-xs text-slate-500 dark:text-zinc-500 space-y-1.5 relative z-10">
+      <p>Neura Music Archive (NMA) — ロイヤリティフリー音楽アーカイブ</p>
+      <p class="font-mono">&copy; 2026 Neura Music Archive</p>
+    </footer>
+  </div>
+
+  <!-- SNSシェア用のリンクコピー処理スクリプト -->
+  <script>
+    function copyShareLink(button) {
+      const url = button.getAttribute('data-share-url') || window.location.href;
+      
+      // テキストコピーの実行
+      const tempTextArea = document.createElement("textarea");
+      tempTextArea.value = url;
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      
+      let copied = false;
+      try {
+        document.execCommand('copy');
+        copied = true;
+      } catch (err) {
+        // Fallback for modern standard
+        navigator.clipboard.writeText(url).then(() => {
+          copied = true;
+        }).catch(() => {
+          copied = false;
+        });
+      }
+      document.body.removeChild(tempTextArea);
+
+      // UIフィードバックの適用
+      const btnText = button.querySelector('.share-btn-text');
+      const originalText = btnText.innerText;
+      
+      if (copied) {
+        btnText.innerText = "Copied!";
+        button.classList.add("border-emerald-500", "text-emerald-500", "dark:border-emerald-600", "dark:text-emerald-400");
+        button.classList.remove("border-slate-200", "dark:border-zinc-800");
+        
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          button.classList.remove("border-emerald-500", "text-emerald-500", "dark:border-emerald-600", "dark:text-emerald-400");
+          button.classList.add("border-slate-200", "dark:border-zinc-800");
+        }, 2000);
+      }
+    }
+  </script>
+</body>
+
+</html>
