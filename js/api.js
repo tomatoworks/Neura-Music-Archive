@@ -51,28 +51,41 @@ export async function fetchSiteData(onProgress) {
 
     const themes = [];
     if (manifest.theme_files && manifest.theme_files.length > 0) {
-      const firstThemeFile = manifest.theme_files[0];
+      manifest.theme_files.forEach(meta => {
+        themes.push({
+          id: meta.id,
+          name: meta.name,
+          fileName: meta.fileName,
+          albums: [],
+          tracks: [],
+          categories: []
+        });
+      });
+
+      const firstThemeMeta = manifest.theme_files[0];
       try {
-        const res = await fetch(`${dataPath}/${firstThemeFile}`);
+        const res = await fetch(`${dataPath}/${firstThemeMeta.fileName}`);
         if (res.ok) {
-          themes.push(await res.json());
+          Object.assign(themes[0], await res.json());
         }
       } catch (e) {
-        console.warn(`Failed to fetch theme file: ${firstThemeFile}`, e);
+        console.warn(`Failed to fetch theme file: ${firstThemeMeta.fileName}`, e);
       }
 
       if (manifest.theme_files.length > 1) {
-        const remainingFiles = manifest.theme_files.slice(1);
+        const remainingMetas = manifest.theme_files.slice(1);
         setTimeout(async () => {
-          for (const file of remainingFiles) {
+          for (let i = 0; i < remainingMetas.length; i++) {
+            const meta = remainingMetas[i];
+            const themeIndex = i + 1;
             try {
-              const res = await fetch(`${dataPath}/${file}`);
+              const res = await fetch(`${dataPath}/${meta.fileName}`);
               if (res.ok) {
-                themes.push(await res.json());
+                Object.assign(themes[themeIndex], await res.json());
                 if (onProgress) onProgress();
               }
             } catch (e) {
-              console.warn(`Failed to fetch theme file: ${file}`, e);
+              console.warn(`Failed to fetch theme file: ${meta.fileName}`, e);
             }
           }
         }, 0);

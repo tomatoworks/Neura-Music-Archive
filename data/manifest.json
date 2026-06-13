@@ -1,14 +1,46 @@
 {
   "settings_file": "ads.json",
   "theme_files": [
-    "01.json",
-    "02.json",
-    "03.json",
-    "04.json",
-    "05.json",
-    "06.json",
-    "07.json",
-    "08.json"
+    {
+      "id": "ambient",
+      "fileName": "01.json",
+      "name": "VOCAL"
+    },
+    {
+      "id": "chill",
+      "fileName": "02.json",
+      "name": "INTRO/OUTRO"
+    },
+    {
+      "id": "theme_1778135210741",
+      "fileName": "03.json",
+      "name": "CAFE BGM"
+    },
+    {
+      "id": "theme_1778218324684",
+      "fileName": "04.json",
+      "name": "VLOG"
+    },
+    {
+      "id": "theme_1778218343208",
+      "fileName": "05.json",
+      "name": "EDM"
+    },
+    {
+      "id": "theme_1778218375932",
+      "fileName": "06.json",
+      "name": "GAME"
+    },
+    {
+      "id": "theme_1778218397682",
+      "fileName": "07.json",
+      "name": "CINEMATIC"
+    },
+    {
+      "id": "theme_1778218425148",
+      "fileName": "08.json",
+      "name": "WORK"
+    }
   ],
   "tools": [
     {
