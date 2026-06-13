@@ -171,16 +171,42 @@ export function renderMainContent() {
 
 function renderExternalContent(item) {
   const mainContent = document.getElementById('main-content');
-  const iframeUrl = item.content_url.endsWith('/') ? `${item.content_url}${item.id}/index.html` : item.content_url;
   
-  // iframeを領域いっぱいに広げるため、親要素の余白を消してflexレイアウトに変更
-  mainContent.classList.remove('p-4', 'md:p-8');
-  mainContent.classList.add('p-0', 'flex', 'flex-col');
+  // 以前のiframe用の余白リセット（p-0）を解除し、通常の余白（p-4 md:p-8）に戻します
+  mainContent.classList.remove('p-0', 'flex', 'flex-col');
+  mainContent.classList.add('p-4', 'md:p-8');
   
-  // タイトルや枠線をなくし、iframeだけを配置
+  // 読み込み中のローディング表示
   mainContent.innerHTML = `
-    <iframe src="${iframeUrl}" class="flex-1 w-full border-none block" allow="fullscreen"></iframe>
+    <div class="flex items-center justify-center py-12">
+      <div class="animate-spin h-6 w-6 border-2 border-gray-500 border-t-transparent rounded-full"></div>
+    </div>
   `;
+  
+  // HTMLファイルをフェッチして流し込む
+  fetch(item.content_url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(html => {
+      mainContent.innerHTML = html;
+      
+      // クローラー向けにページのタイトル（タブの名前）も動的に書き換えます
+      if (item.title) {
+        document.title = `${item.title} - Neura Music Archive`;
+      }
+    })
+    .catch(error => {
+      console.error('Failed to load article:', error);
+      mainContent.innerHTML = `
+        <div class="pt-4">
+          <p class="text-red-500 text-base">記事の読み込みに失敗しました。</p>
+        </div>
+      `;
+    });
 }
 
 function renderSearchResults(results) {

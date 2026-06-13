@@ -55,14 +55,14 @@
     {
       "id": "article_20260610125859",
       "title": "NMAとは",
-      "content_url": "https://cdn.neura-music.com/articles/articles_index.html",
+      "content_url": "contents/articles/articles_index.html",
       "date": "2026-06-10",
       "is_visible": true
     },
     {
       "id": "article_20260612134623",
       "title": "配信用時計作り方",
-      "content_url": "https://cdn.neura-music.com/articles/obs_clock_article.html",
+      "content_url": "contents/articles/obs_clock_article.html",
       "date": "2026-06-12",
       "is_visible": true
     }
