@@ -252,7 +252,7 @@ function renderSearchResults(results) {
         
         <button 
           class="flex flex-col items-center justify-center w-12 h-12 ${track.lyrics ? 'text-purple-500 hover:text-purple-700 dark:hover:text-purple-400 transition cursor-pointer' : 'text-gray-200 dark:text-gray-700 cursor-not-allowed'}" 
-          ${track.lyrics ? `onclick="showLyrics('${track.title.replace(/'/g, "\\'")}', \`${track.lyrics.replace(/`/g, "\\`")}\`)"` : 'disabled'}
+          ${track.lyrics ? `onclick="event.stopPropagation(); showLyrics('${track.title.replace(/'/g, "\\'")}', \`${track.lyrics.replace(/`/g, "\\`")}\`)"` : 'disabled'}
         >
           <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -287,7 +287,7 @@ function createAlbumCardHtml(themeId, album) {
   const firstPlayableTrack = firstPlayableTrackId && theme ? theme.tracks.find(t => t.id === firstPlayableTrackId) : null;
   
   const playAction = firstPlayableTrack 
-    ? `onclick="event.stopPropagation(); playTrack('${firstPlayableTrack.id}', '${firstPlayableTrack.title}', '${firstPlayableTrack.type}', ${firstPlayableTrack.duration}, '${album.art}')"` 
+    ? `onclick="event.stopPropagation(); playTrack('${firstPlayableTrack.id}', '${firstPlayableTrack.title.replace(/'/g, "\\'")}', '${firstPlayableTrack.type}', ${firstPlayableTrack.duration}, '${album.art}')"` 
     : `style="cursor: not-allowed; opacity: 0.5;" title="音源がありません"`;
 
   return `
@@ -398,7 +398,7 @@ export function renderAlbumDetail(album) {
       ? "bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition cursor-pointer" 
       : "bg-gray-50 dark:bg-gray-900 text-gray-300 dark:text-gray-600 cursor-not-allowed";
     const playBtnAction = hasFull 
-      ? `onclick="playTrack('${track.id}', '${track.title}', '${track.type}', ${track.duration}, '${album.art}')"` 
+      ? `onclick="event.stopPropagation(); playTrack('${track.id}', '${track.title.replace(/'/g, "\\'")}', '${track.type}', ${track.duration}, '${album.art}')"` 
       : `title="音源がありません" disabled`;
 
     // FULLボタンのクラスとアクション
@@ -406,7 +406,7 @@ export function renderAlbumDetail(album) {
       ? "text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition cursor-pointer"
       : "text-gray-200 dark:text-gray-700 cursor-not-allowed";
     const fullBtnAction = hasFull
-      ? `onclick="downloadTrack('${track.full_url}', '${track.title.replace(/'/g, "\\'")}')"`
+      ? `onclick="event.stopPropagation(); downloadTrack('${track.full_url}', '${track.title.replace(/'/g, "\\'")}')"`
       : `title="フル音源がありません" disabled`;
 
     // --- タグの生成 ---
@@ -475,7 +475,7 @@ export function renderAlbumDetail(album) {
   let albumPlayBtnHtml = '';
   if (firstPlayableTrack) {
     albumPlayBtnHtml = `
-      <button class="bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-6 py-2.5 rounded-full text-[15px] font-bold hover:bg-gray-800 dark:hover:bg-gray-200 transition shadow-sm flex items-center gap-2" onclick="playTrack('${firstPlayableTrack.id}', '${firstPlayableTrack.title}', '${firstPlayableTrack.type}', ${firstPlayableTrack.duration}, '${album.art}')">
+      <button class="bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-6 py-2.5 rounded-full text-[15px] font-bold hover:bg-gray-800 dark:hover:bg-gray-200 transition shadow-sm flex items-center gap-2" onclick="playTrack('${firstPlayableTrack.id}', '${firstPlayableTrack.title.replace(/'/g, "\\'")}', '${firstPlayableTrack.type}', ${firstPlayableTrack.duration}, '${album.art}')">
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
         Play
       </button>
