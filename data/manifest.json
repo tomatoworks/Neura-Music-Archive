@@ -49,6 +49,13 @@
       "content_url": "https://cdn.neura-music.com/tools/obs_html_clock_generator.html",
       "date": "2026-06-12",
       "is_visible": true
+    },
+    {
+      "id": "tool_20260614162531",
+      "title": "Youtube用神ツール",
+      "content_url": "contents/tools/neuratube/neuratube_introduction_user_manual.html",
+      "date": "2026-06-14",
+      "is_visible": true
     }
   ],
   "articles": [

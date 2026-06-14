@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best 10 Flipper - OBS Edition</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --chassis-color: #1a1a1a;
+            --module-frame-bg: #161616; 
+            --flap-base: #222222;
+            --text-color: #dcdcdc;
+            --rank-text-color: #ffaa00;
+            --accent-color: #33ff33;
+            --font-family: 'Segoe UI', 'Yu Gothic', sans-serif;
+            --indicator-off: #2a0000; 
+            --indicator-on: #ff1a1a; 
+        }
+
+        body, html {
+            margin: 0; padding: 0; width: 100%; height: 100%;
+            background-color: var(--bg-color); color: #ccc;
+            font-family: var(--font-family);
+            overflow: hidden;
+            display: flex; justify-content: center; align-items: center;
+        }
+
+        /* --- View Containers --- */
+        #config-view, #obs-view {
+            position: absolute; inset: 0;
+            display: none; flex-direction: column;
+            width: 100%; height: 100%;
+        }
+        #config-view.active, #obs-view.active { display: flex; }
+
+        /* --- Config / Remote View Styles --- */
+        #config-view {
+            background: #111; padding: 20px; overflow-y: auto; box-sizing: border-box;
+            align-items: center;
+        }
+        .config-panel {
+            width: 100%; max-width: 800px; background: #1a1a1a; border: 1px solid #333;
+            border-radius: 8px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            position: relative;
+        }
+        .config-header {
+            border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;
+        }
+        .config-title { font-size: 1.5rem; color: var(--accent-color); font-weight: bold; margin: 0 0 10px 0; }
+        
+        .instruction-box {
+            background: #001a00; border: 1px solid #004400; padding: 10px; border-radius: 4px;
+            font-size: 0.9rem; color: #ccffcc; line-height: 1.5; margin-bottom: 15px;
+        }
+
+        .item-row {
+            display: flex; gap: 10px; align-items: center; background: #080808;
+            padding: 10px; margin-bottom: 8px; border: 1px solid #222; border-radius: 4px;
+        }
+        .item-row input[type="text"] {
+            flex: 1; background: #222; border: 1px solid #444; color: #fff;
+            padding: 8px; font-family: monospace; font-size: 1rem;
+        }
+        .item-row input[type="number"] {
+            width: 60px; background: #222; border: 1px solid #444; color: #fff;
+            padding: 8px; text-align: center;
+        }
+        .item-row input:focus { outline: none; border-color: var(--accent-color); }
+        .item-label { font-weight: bold; width: 50px; text-align: center; font-size: 1.2rem; color: #888; }
+        .checkbox-label { display: flex; align-items: center; gap: 5px; cursor: pointer; font-size: 0.9rem; }
+        
+        /* --- Remote Controller Area --- */
+        .remote-controller {
+            background: #222; padding: 15px; border-radius: 8px; margin-top: 20px;
+            border: 1px solid #444; position: sticky; bottom: 0; z-index: 10;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.8);
+            display: flex; flex-direction: column; gap: 15px;
+        }
+        .remote-row { display: flex; justify-content: space-between; align-items: center; }
+
+        .btn {
+            background: #333; color: #fff; border: 1px solid #555; padding: 10px 20px;
+            cursor: pointer; font-weight: bold; border-radius: 4px; transition: all 0.2s;
+        }
+        .btn:hover { background: #444; border-color: #888; }
+        .btn.primary { background: #004400; border-color: #008800; color: #ccffcc; }
+        .btn.primary:hover { background: #006600; box-shadow: 0 0 10px #00ff00; }
+        .btn.action { background: #003366; border-color: #0055aa; color: #cceeff; }
+        .btn.action:hover { background: #004488; box-shadow: 0 0 10px #0088ff; }
+        .btn.huge { font-size: 1.2rem; padding: 12px 40px; }
+
+        /* --- OBS View / Board Styles --- */
+        #obs-view { justify-content: center; align-items: center; }
+        #obs-view.transparent-bg { background: transparent !important; }
+
+        #main-board {
+            display: flex; flex-direction: column; gap: 8px;
+            padding: 20px; background-color: var(--chassis-color);
+            border-radius: 8px; border: 2px solid #0a0a0a;
+            box-shadow: 15px 15px 50px rgba(0,0,0,0.8), inset 2px 2px 5px rgba(255,255,255,0.05);
+        }
+
+        .flap-row {
+            display: flex; gap: 15px; align-items: center; height: 6vh; min-height: 40px;
+            background: var(--module-frame-bg); padding: 5px 10px; border-radius: 4px;
+            border-top: 1px solid #000; border-left: 1px solid #000;
+            border-bottom: 1px solid rgba(255,255,255,0.1); border-right: 1px solid rgba(255,255,255,0.05);
+            box-shadow: inset 2px 2px 6px #000;
+        }
+        
+        .indicator-box { width: 12px; height: 100%; display: flex; justify-content: center; align-items: center; flex-shrink: 0; }
+        .row-indicator { width: 8px; height: 8px; border-radius: 50%; background: radial-gradient(circle at 30% 30%, #550000, var(--indicator-off)); box-shadow: inset 1px 1px 1px rgba(255,255,255,0.1), 0 0 1px #000; transition: all 0.2s; }
+        .row-indicator.active { animation: blink-lamp 1s infinite alternate; }
+        @keyframes blink-lamp { 
+            0% { background: radial-gradient(circle at 30% 30%, #ffaaaa, var(--indicator-on)); box-shadow: 0 0 5px var(--indicator-on), 0 0 8px rgba(255,0,0,0.5); } 
+            100% { background: radial-gradient(circle at 30% 30%, #ff4444, #990000); box-shadow: 0 0 2px var(--indicator-on); } 
+        }
+
+        .section-container {
+            height: 100%; display: flex; align-items: center; background: #000;
+            padding: 3px; border-radius: 2px; box-shadow: inset 2px 2px 4px #000; gap: 2px;
+        }
+        .section-rank { width: 8vh; min-width: 50px; }
+        .section-title { width: 55vh; min-width: 400px; }
+
+        /* Flap Unit CSS */
+        .flap-unit {
+            flex: 1; height: 100%; position: relative; background: #000;
+            perspective: 800px; overflow: hidden; border-radius: 2px;
+            box-shadow: inset 1px 1px 3px #000; border: 1px solid #050505;
+        }
+        
+        .part {
+            position: absolute; left: 0; width: 100%; height: 50%;
+            background-color: var(--flap-base); color: var(--text-color);
+            font-weight: 700; font-size: 4.5vh; text-align: center;
+            overflow: hidden; backface-visibility: hidden; border-radius: 1px;
+            background-image: linear-gradient(135deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 25%), 
+                              linear-gradient(to bottom, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+            border-top: none;
+        }
+        .part span {
+            display: flex; justify-content: center; align-items: center;
+            position: absolute; width: 100%; height: 200%; left: 0; margin: 0;
+            text-shadow: 0 2px 2px rgba(0,0,0,0.8); line-height: 1; white-space: nowrap;
+        }
+        .section-rank .part { color: var(--rank-text-color); }
+
+        .back-top { top: 0; z-index: 1; border-bottom: 2px solid #000; } .back-top span { top: 0; }
+        .back-bottom { bottom: 0; z-index: 0; border-top: 1px solid rgba(255,255,255,0.03); } .back-bottom span { top: -100%; }
+        
+        .flipper {
+            position: absolute; top: 0; left: 0; width: 100%; height: 50%; z-index: 10;
+            transform-style: preserve-3d; transform-origin: bottom; 
+        }
+        .flap-unit.flip .flipper { transform: rotateX(-180deg); }
+
+        .front-leaf { top: 0; left: 0; width: 100%; height: 100%; z-index: 2; box-shadow: 0 2px 4px rgba(0,0,0,0.5); background-color: var(--flap-base); } .front-leaf span { top: 0; }
+        .back-leaf { top: 0; left: 0; width: 100%; height: 100%; z-index: 1; background-color: var(--flap-base); transform: rotateX(180deg); box-shadow: inset 0 0 20px rgba(0,0,0,0.4); } .back-leaf span { top: -100%; }
+
+        /* --- Modal Styles --- */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.85); display: none;
+            justify-content: center; align-items: center; z-index: 1000;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal-content {
+            background: #1a1a1a; border: 1px solid #444; border-radius: 8px;
+            padding: 25px; max-width: 600px; width: 90%;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.9);
+            color: #ddd; line-height: 1.6;
+        }
+        .modal-content h3 { margin-top: 0; color: var(--accent-color); border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .modal-content ol { padding-left: 20px; }
+        .modal-content li { margin-bottom: 10px; }
+        .modal-close-btn {
+            background: #333; color: #fff; border: 1px solid #555; padding: 8px 20px;
+            cursor: pointer; font-weight: bold; border-radius: 4px; float: right; margin-top: 15px;
+        }
+        .modal-close-btn:hover { background: #444; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 設定・リモコン画面 (メインウィンドウ用) -->
+    <div id="config-view">
+        <div class="config-panel">
+            <div class="config-header" style="display: flex; justify-content: space-between; align-items: center;">
+                <h2 class="config-title" style="margin: 0;">PLAN EDITOR & REMOTE</h2>
+                <button class="btn" id="btn-show-help" style="padding: 5px 15px; font-size: 0.9rem;">❓ 運用フロー・使い方</button>
+            </div>
+            
+            <div style="display:flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.9rem; color:#aaa; padding: 0 10px;">
+                <span style="width:50px; text-align:center;">順位</span>
+                <span style="flex:1;">表示テキスト (最大16文字)</span>
+                <span style="width:60px; text-align:center;">発表順</span>
+                <span style="width:80px; text-align:center;">有効</span>
+            </div>
+
+            <div id="config-items-container">
+                <!-- Items injected here by JS -->
+            </div>
+
+            <div class="item-row" style="margin-top: 20px; background: transparent; border: none; justify-content: flex-start; gap: 20px;">
+                <label class="checkbox-label"><input type="checkbox" id="cfg-transparent"> 背景を透過する (OBSクロマキー不要用)</label>
+            </div>
+
+            <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #333;">
+                <h3 style="color: #aaa; font-size: 1rem; margin-top: 0; margin-bottom: 10px;">アニメーション・音声設定</h3>
+                <div class="item-row" style="background: transparent; border: none; padding: 0; justify-content: flex-start; gap: 10px; margin-bottom: 10px;">
+                    <label class="item-label" style="width: auto; font-size: 0.9rem;">ベース回転数</label>
+                    <input type="number" id="cfg-base-spins" value="10" min="1" max="50">
+                    <span style="color: #888; font-size: 0.8rem; margin-right: 20px;">回 (パタパタの長さ)</span>
+                    
+                    <label class="item-label" style="width: auto; font-size: 0.9rem;">めくり速度</label>
+                    <input type="number" id="cfg-flip-speed" value="60" min="20" max="300" step="10">
+                    <span style="color: #888; font-size: 0.8rem;">ms (1枚の時間)</span>
+                </div>
+                <div class="item-row" style="background: transparent; border: none; padding: 0; justify-content: flex-start; gap: 10px;">
+                    <label class="item-label" style="width: auto; font-size: 0.9rem;">完了時効果音(SE)</label>
+                    <input type="text" id="cfg-se-file" value="" placeholder="例: se.wav または se.mp3" style="width: 200px; background: #222; border: 1px solid #444; color: #fff; padding: 8px; font-family: monospace;">
+                    <span style="color: #888; font-size: 0.8rem;">※空欄は電子音。鳴らす場合は同階層にファイルを配置してください。</span>
+                </div>
+            </div>
+
+            <!-- リモートコントローラー領域 -->
+            <div class="remote-controller">
+                <div class="remote-row" style="border-bottom: 1px solid #444; padding-bottom: 15px;">
+                    <button class="btn action" id="btn-open-display">🖥️ 表示ウィンドウを開く</button>
+                    <div style="display:flex; align-items:center; gap: 5px;">
+                        <span style="font-size:0.8rem; color:#888;">バックアップ用:</span>
+                        <button class="btn" id="btn-export" style="padding: 5px 10px; font-size:0.8rem;">↓ JSON保存</button>
+                    </div>
+                </div>
+                <div class="remote-row">
+                    <button class="btn" id="btn-remote-sync">🔄 設定を送信 ＆ 初期化</button>
+                    <button class="btn primary huge" id="btn-remote-next">▶ 次の順位を発表</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 2. 発表画面 (表示専用・別ウィンドウ用) -->
+    <div id="obs-view">
+        <div id="main-board">
+            <!-- Flap rows injected here by JS -->
+        </div>
+        <!-- 表示専用モードではUIは一切表示しない -->
+    </div>
+
+    <!-- 3. Help Modal -->
+    <div id="help-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>【運用方法：リモートコントロール方式】</h3>
+            <ol>
+                <li><b>ファイルの準備</b><br>
+                この <code>index.html</code> と保存した設定ファイル (<code>plan.json</code> 等) は、<span style="color:var(--rank-text-color);">必ず同じフォルダ内に並列で</span>置いてください。</li>
+                <li><b>リモコン（この画面）を開く</b><br>
+                配信で操作を行う手元のブラウザ (Chromeなど) で、この <code>index.html</code> を開きます。これが「リモコン」になります。</li>
+                <li><b>OBS（表示画面）の準備</b><br>
+                画面下部の <b>「🖥️ 表示ウィンドウを開く」</b> ボタンを押し、表示用の別窓を開きます。<br>
+                OBSの <b>ウィンドウキャプチャ</b> でその窓を取り込んでください（背景は自動で透過されます）。<br>
+                <span style="font-size: 0.85em; color: #888;">※または、OBSのブラウザソースで <code>.../index.html?mode=display</code> を読み込ませても連動します。</span></li>
+                <li><b>配信中の操作</b><br>
+                この画面で順位やテキストを設定し、<b>「🔄 設定を送信 ＆ 初期化」</b> を押すと即座にOBS側の表示に反映されます。<br>
+                <b>「▶ 次の順位を発表」</b> を押すと、OBS側の画面がパタパタと動きます。OBSの画面を直接触る必要はありません。</li>
+            </ol>
+            <button class="modal-close-btn" id="btn-close-help">閉じる</button>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+<script>
+    const NUM_ROWS = 10;
+    const RANK_COLS = 2;
+    const TITLE_COLS = 16;
+    const CHARS = " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんー!?.【】・";
+    
+    // --- State ---
+    let currentPlan = null;
+    let audioCtx = null;
+    let boardDOM = [];      
+    let revealQueue = [];   
+    let isRevealing = false;
+    let isDisplayMode = false;
+
+    // --- Audio System ---
+    function initAudio() { 
+        if (!audioCtx) { 
+            const AudioContext = window.AudioContext || window.webkitAudioContext; 
+            audioCtx = new AudioContext(); 
+        } 
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+    }
+    function playFlipSound() {
+        if (!audioCtx) return;
+        const t = audioCtx.currentTime;
+        const gain = audioCtx.createGain(); const filter = audioCtx.createBiquadFilter(); const noise = audioCtx.createBufferSource();
+        const bufferSize = audioCtx.sampleRate * 0.04; const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+        const data = buffer.getChannelData(0); for (let i = 0; i < bufferSize; i++) { data[i] = Math.random() * 2 - 1; }
+        noise.buffer = buffer; filter.type = "bandpass"; filter.frequency.value = 1000 + Math.random() * 500; filter.Q.value = 1.0;
+        gain.gain.setValueAtTime(0.4, t); gain.gain.exponentialRampToValueAtTime(0.001, t + 0.025); 
+        noise.connect(filter); filter.connect(gain); gain.connect(audioCtx.destination); noise.start(t); noise.stop(t + 0.04);
+    }
+
+    function playRevealSound() {
+        const seFile = currentPlan?.animation?.seFile;
+        if (seFile && seFile.trim() !== "") {
+            // 外部ファイルが指定されている場合はそれを鳴らす
+            const customAudio = new Audio(seFile.trim());
+            customAudio.play().catch(e => {
+                console.warn("外部SEの再生に失敗しました。ファイルが同階層にあるか確認してください。", e);
+                playFallbackRevealSound();
+            });
+        } else {
+            // 指定がない場合はデフォルトの電子音
+            playFallbackRevealSound();
+        }
+    }
+
+    function playFallbackRevealSound() {
+        if (!audioCtx) return;
+        const t = audioCtx.currentTime;
+        // Cメジャーコードの構成音 (C4, E4, G4, C5) で「ジャーン！」という音を作る
+        const frequencies = [261.63, 329.63, 392.00, 523.25];
+        
+        frequencies.forEach(freq => {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            const filter = audioCtx.createBiquadFilter();
+            
+            osc.type = 'sawtooth'; // 派手なノコギリ波
+            osc.frequency.value = freq;
+            
+            // 音量のエンベロープ（アタックを早く、スッと消える）
+            gain.gain.setValueAtTime(0, t);
+            gain.gain.linearRampToValueAtTime(0.15, t + 0.05); 
+            gain.gain.exponentialRampToValueAtTime(0.001, t + 1.0); 
+            
+            // フィルター（明るい音から暗く変化させてキレを出す）
+            filter.type = 'lowpass';
+            filter.frequency.setValueAtTime(4000, t);
+            filter.frequency.exponentialRampToValueAtTime(400, t + 1.0);
+            
+            osc.connect(filter);
+            filter.connect(gain);
+            gain.connect(audioCtx.destination);
+            
+            osc.start(t);
+            osc.stop(t + 1.0);
+        });
+    }
+
+    // --- Flap Unit Logic ---
+    function createUnit() {
+        const unit = document.createElement('div');
+        unit.className = 'flap-unit';
+        unit.innerHTML = `<div class="part back-top"><span></span></div><div class="part back-bottom"><span></span></div><div class="flipper"><div class="part front-leaf"><span></span></div><div class="part back-leaf"><span></span></div></div>`;
+        return unit;
+    }
+    
+    function mapUnit(unit) {
+        return { 
+            el: unit, bt: unit.querySelector('.back-top span'), bb: unit.querySelector('.back-bottom span'), 
+            fl: unit.querySelector('.front-leaf span'), bl: unit.querySelector('.back-leaf span'), current: " " 
+        };
+    }
+    
+    function setContentImmediate(unit, val) {
+        val = val || " ";
+        unit.bt.innerText = val; unit.bb.innerText = val; unit.fl.innerText = val; unit.bl.innerText = val;
+        unit.current = val;
+    }
+    
+    async function flipTo(unit, target, speed = 60) {
+        if (unit.current === target) return;
+        try { playFlipSound(); } catch(e) {}
+
+        unit.bt.innerText = target; unit.bl.innerText = target; 
+        const flipper = unit.el.querySelector('.flipper');
+        if (flipper) flipper.style.transition = `transform ${speed}ms ease-in`;
+        
+        unit.el.classList.add('flip'); 
+        await new Promise(r => setTimeout(r, speed)); 
+        
+        unit.bb.innerText = target; unit.fl.innerText = target; 
+        if (flipper) flipper.style.transition = 'none'; 
+        unit.el.classList.remove('flip'); 
+        
+        unit.current = target;
+        await new Promise(r => setTimeout(r, 20)); 
+    }
+
+    // --- Data Management ---
+    function getDefaultPlan() {
+        const items = [];
+        for(let i=1; i<=NUM_ROWS; i++) {
+            items.push({ rank: i, text: `RANKING NO.${i}`, enabled: true, order: (NUM_ROWS - i + 1) });
+        }
+        return { items: items, background: { transparent: true }, animation: { baseSpins: 10, flipSpeed: 60, seFile: "" } };
+    }
+
+    function gatherPlanFromUI() {
+        const items = [];
+        for(let i=1; i<=NUM_ROWS; i++) {
+            items.push({
+                rank: i,
+                text: document.getElementById(`cfg-text-${i}`).value.trim(),
+                order: parseInt(document.getElementById(`cfg-order-${i}`).value, 10) || i,
+                enabled: document.getElementById(`cfg-enabled-${i}`).checked
+            });
+        }
+        return {
+            items: items,
+            background: { transparent: document.getElementById('cfg-transparent').checked },
+            animation: { 
+                baseSpins: parseInt(document.getElementById('cfg-base-spins').value, 10) || 10,
+                flipSpeed: parseInt(document.getElementById('cfg-flip-speed').value, 10) || 60,
+                seFile: document.getElementById('cfg-se-file').value.trim()
+            }
+        };
+    }
+
+    function buildConfigUI() {
+        const container = document.getElementById('config-items-container');
+        container.innerHTML = '';
+        const plan = currentPlan || getDefaultPlan();
+        const sortedItems = [...plan.items].sort((a,b) => a.rank - b.rank);
+
+        sortedItems.forEach(item => {
+            const row = document.createElement('div'); row.className = 'item-row';
+            row.innerHTML = `
+                <div class="item-label">${item.rank}</div>
+                <input type="text" id="cfg-text-${item.rank}" value="${item.text}" maxlength="${TITLE_COLS}" placeholder="表示テキスト">
+                <input type="number" id="cfg-order-${item.rank}" value="${item.order}" min="1" max="99" title="発表順">
+                <label class="checkbox-label"><input type="checkbox" id="cfg-enabled-${item.rank}" ${item.enabled ? 'checked' : ''}> 有効</label>
+            `;
+            container.appendChild(row);
+        });
+
+        document.getElementById('cfg-transparent').checked = plan.background ? plan.background.transparent : true;
+        document.getElementById('cfg-base-spins').value = plan.animation?.baseSpins || 10;
+        document.getElementById('cfg-flip-speed').value = plan.animation?.flipSpeed || 60;
+        document.getElementById('cfg-se-file').value = plan.animation?.seFile || "";
+    }
+
+    // --- Display Mode (OBS) Logic ---
+    function buildBoard() {
+        const boardEl = document.getElementById('main-board');
+        boardEl.innerHTML = '';
+        boardDOM = [];
+
+        for (let r = 0; r < NUM_ROWS; r++) {
+            const rowDiv = document.createElement('div'); rowDiv.className = 'flap-row';
+            
+            const iBox = document.createElement('div'); iBox.className = 'indicator-box';
+            const ind = document.createElement('div'); ind.className = 'row-indicator';
+            iBox.appendChild(ind); rowDiv.appendChild(iBox);
+
+            const rankC = document.createElement('div'); rankC.className = 'section-container section-rank';
+            const rankUnits = [];
+            for(let i=0; i<RANK_COLS; i++) { const u = createUnit(); rankC.appendChild(u); rankUnits.push(mapUnit(u)); }
+            rowDiv.appendChild(rankC);
+
+            const titleC = document.createElement('div'); titleC.className = 'section-container section-title';
+            const titleUnits = [];
+            for(let i=0; i<TITLE_COLS; i++) { const u = createUnit(); titleC.appendChild(u); titleUnits.push(mapUnit(u)); }
+            rowDiv.appendChild(titleC);
+            
+            boardEl.appendChild(rowDiv);
+            boardDOM.push({ indicator: ind, rankUnits, titleUnits, rowEl: rowDiv });
+        }
+    }
+
+    function initDisplayBoard(plan) {
+        initAudio();
+        currentPlan = plan;
+
+        if(plan.background && plan.background.transparent) {
+            document.getElementById('obs-view').classList.add('transparent-bg');
+        } else {
+            document.getElementById('obs-view').classList.remove('transparent-bg');
+        }
+
+        buildBoard();
+
+        // 空の状態に初期化
+        boardDOM.forEach(row => {
+            row.indicator.classList.remove('active');
+            row.rankUnits.forEach(u => setContentImmediate(u, " "));
+            row.titleUnits.forEach(u => setContentImmediate(u, " "));
+        });
+
+        // 発表順キューの構築
+        revealQueue = [...plan.items]
+            .filter(item => item.enabled)
+            .sort((a, b) => a.order - b.order); 
+    }
+
+    async function revealNext() {
+        if(isRevealing || revealQueue.length === 0) return;
+        isRevealing = true;
+        initAudio();
+
+        const item = revealQueue.shift(); 
+        const rowIndex = item.rank - 1;   
+        
+        if (rowIndex < 0 || rowIndex >= NUM_ROWS) {
+            isRevealing = false; return;
+        }
+
+        const rowDOM = boardDOM[rowIndex];
+        const titleStr = item.text.padEnd(TITLE_COLS, ' ').substring(0, TITLE_COLS); 
+
+        rowDOM.indicator.classList.add('active');
+
+        const flipPromises = [];
+        const baseSpins = currentPlan.animation?.baseSpins || 10;
+        const flipSpeed = currentPlan.animation?.flipSpeed || 60;
+
+        const rankStr = item.rank.toString().padStart(RANK_COLS, ' ');
+        rowDOM.rankUnits.forEach((u, i) => {
+            flipPromises.push(spinUnit(u, rankStr[i] || " ", Math.max(2, baseSpins - 2), flipSpeed));
+        });
+
+        rowDOM.titleUnits.forEach((u, i) => {
+            const targetChar = titleStr[i] || " ";
+            const delay = i * (flipSpeed / 1.5);
+            const spinPromise = new Promise(async (resolve) => {
+                await new Promise(r => setTimeout(r, delay));
+                await spinUnit(u, targetChar, baseSpins + Math.floor(i/3), flipSpeed);
+                resolve();
+            });
+            flipPromises.push(spinPromise);
+        });
+
+        await Promise.all(flipPromises);
+        
+        playRevealSound();
+        
+        isRevealing = false;
+    }
+
+    async function spinUnit(unit, finalChar, numSpins, speed) {
+        for(let i=0; i<numSpins; i++) {
+            const rand = CHARS[Math.floor(Math.random() * CHARS.length)];
+            await flipTo(unit, rand, speed);
+        }
+        await flipTo(unit, finalChar, speed);
+    }
+
+    // --- Window Communication (localStorage) ---
+    function setupStorageListener() {
+        window.addEventListener('storage', (e) => {
+            if (!isDisplayMode) return; // リモコン側は無視
+
+            if (e.key === 'flipper-plan') {
+                try {
+                    const newPlan = JSON.parse(e.newValue);
+                    initDisplayBoard(newPlan);
+                } catch(err) {}
+            } else if (e.key === 'flipper-cmd') {
+                if (!e.newValue) return;
+                const cmd = e.newValue.split('|')[1];
+                if (cmd === 'NEXT') {
+                    revealNext();
+                } else if (cmd === 'RESET') {
+                    // Plan再読み込みで初期状態に戻る
+                    const savedPlan = localStorage.getItem('flipper-plan');
+                    if(savedPlan) initDisplayBoard(JSON.parse(savedPlan));
+                }
+            }
+        });
+    }
+
+    // --- Initialization ---
+    async function initApp() {
+        const urlParams = new URLSearchParams(window.location.search);
+        isDisplayMode = urlParams.get('mode') === 'display';
+
+        if (isDisplayMode) {
+            // OBS表示専用モード
+            document.getElementById('obs-view').classList.add('active');
+            setupStorageListener();
+            
+            // 初回ロード
+            const savedPlan = localStorage.getItem('flipper-plan');
+            if(savedPlan) {
+                initDisplayBoard(JSON.parse(savedPlan));
+            } else {
+                initDisplayBoard(getDefaultPlan());
+            }
+
+        } else {
+            // リモコン・設定モード
+            document.getElementById('config-view').classList.add('active');
+            
+            // 以前の設定があれば復元
+            const savedPlan = localStorage.getItem('flipper-plan');
+            currentPlan = savedPlan ? JSON.parse(savedPlan) : getDefaultPlan();
+            buildConfigUI();
+
+            // ヘルプモーダルのイベント
+            document.getElementById('btn-show-help').addEventListener('click', () => {
+                document.getElementById('help-modal').classList.add('active');
+            });
+            document.getElementById('btn-close-help').addEventListener('click', () => {
+                document.getElementById('help-modal').classList.remove('active');
+            });
+            document.getElementById('help-modal').addEventListener('click', (e) => {
+                if (e.target.id === 'help-modal') e.target.classList.remove('active');
+            });
+
+            // リモコンイベント
+            document.getElementById('btn-open-display').addEventListener('click', () => {
+                // 同じURLでパラメータをつけて別ウィンドウを開く
+                const currentUrl = window.location.href.split('?')[0];
+                window.open(`${currentUrl}?mode=display`, 'FlipperDisplay', 'width=1280,height=720,menubar=no,toolbar=no');
+            });
+
+            document.getElementById('btn-remote-sync').addEventListener('click', () => {
+                const plan = gatherPlanFromUI();
+                localStorage.setItem('flipper-plan', JSON.stringify(plan));
+                localStorage.setItem('flipper-cmd', Date.now() + '|RESET');
+                
+                const btn = document.getElementById('btn-remote-sync');
+                const origText = btn.innerText;
+                btn.innerText = "送信完了！";
+                setTimeout(() => btn.innerText = origText, 1500);
+            });
+
+            document.getElementById('btn-remote-next').addEventListener('click', () => {
+                localStorage.setItem('flipper-cmd', Date.now() + '|NEXT');
+            });
+
+            document.getElementById('btn-export').addEventListener('click', () => {
+                const plan = gatherPlanFromUI();
+                const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(plan, null, 2));
+                const dl = document.createElement('a');
+                dl.setAttribute("href", dataStr);
+                dl.setAttribute("download", "plan_backup.json");
+                dl.click();
+            });
+        }
+    }
+
+    window.onload = initApp;
+</script>
+</body>
+</html>
