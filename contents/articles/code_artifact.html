@@ -4,15 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ▼ 追加：SEO / OGP / Twitter / Canonical -->
   <title>NMAの開発自動化ワークフロー | Neura Music Archive</title>
+  <meta name="description" content="Neura Music Archive（NMA）の楽曲生成から公開までを支える自動化ワークフローを解説。ローカルLLMによるプロンプト生成、Rustによる高速インジェスト、LLMによるRefine、Cloudflare R2へのワンクリックデプロイまでの技術構成を紹介。">
+
+  <link rel="canonical" href="https://neura-music.com/articles/nma-automation-workflow.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NMAの開発自動化ワークフロー | Neura Music Archive">
+  <meta property="og:description" content="NMAの楽曲生成・管理・公開を支えるフルオートメーション構成を解説。LLM、Rust、Tauri、Cloudflare R2、Gitを組み合わせた効率的な制作パイプラインを紹介。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://neura-music.com/articles/nma-automation-workflow.html">
+  <meta property="og:image" content="https://neura-music.com/assets/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NMAの開発自動化ワークフロー | Neura Music Archive">
+  <meta name="twitter:description" content="NMAの楽曲生成・管理・公開を支えるフルオートメーション構成を解説。LLM、Rust、Tauri、Cloudflare R2、Gitを組み合わせた効率的な制作パイプラインを紹介。">
+  <meta name="twitter:image" content="https://neura-music.com/assets/og-image.jpg">
+  <!-- ▲ 追加ここまで -->
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com" nonce="MTc3MTMzODM4OCwxNDQ4ODMwNDMx"></script>
+
   <!-- Google Fonts: Plus Jakarta Sans & Noto Sans JP -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
     rel="stylesheet">
+
   <script nonce="MTc3MTMzODM4OCwxNDQ4ODMwNDMx">
     tailwind.config = {
       theme: {
@@ -25,6 +47,8 @@
       }
     }
   </script>
+</head>
+
   <style>
     body {
       font-feature-settings: "palt";

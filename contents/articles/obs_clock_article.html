@@ -4,15 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ▼ 追加：SEO / OGP / Twitter / Canonical -->
   <title>OBS HTML Clock Generator | 紹介・技術仕様</title>
+  <meta name="description" content="OBS向けの高品質な透過時計HTMLを生成できる『OBS HTML Clock Generator』の紹介・機能解説・技術仕様。固定幅数字、ローカルフォントZIP、シャドウ調整、LIVEバッジなど配信特化の機能を詳しく説明。">
+
+  <link rel="canonical" href="https://neura-music.com/articles/obs-html-clock-generator.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OBS HTML Clock Generator | 紹介・技術仕様">
+  <meta property="og:description" content="OBS向けの透過時計HTMLを生成するWebツール『OBS HTML Clock Generator』の機能・技術仕様・導入方法を詳しく解説。配信レイアウトに最適化された実用的な設計。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://neura-music.com/articles/obs-html-clock-generator.html">
+  <meta property="og:image" content="https://neura-music.com/assets/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OBS HTML Clock Generator | 紹介・技術仕様">
+  <meta name="twitter:description" content="OBS向けの透過時計HTMLを生成するWebツール『OBS HTML Clock Generator』の機能・技術仕様・導入方法を詳しく解説。配信レイアウトに最適化された実用的な設計。">
+  <meta name="twitter:image" content="https://neura-music.com/assets/og-image.jpg">
+  <!-- ▲ 追加ここまで -->
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- Google Fonts: Plus Jakarta Sans, Noto Sans JP, & IBM Plex Sans JP -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
+
   <script>
     tailwind.config = {
       theme: {
@@ -24,6 +46,8 @@
       }
     }
   </script>
+</head>
+
   <style>
     body {
       font-feature-settings: "palt";
