@@ -14,6 +14,14 @@
         "album_1781359854941",
         "album_1781412072566"
       ]
+    },
+    {
+      "id": "cat_1781457641530",
+      "name": "R&B",
+      "caption": "「R&B系VOCAL素材を収録したカテゴリ。 落ち着いた場面向けのボーカルコンテンツをまとめています。」",
+      "albums": [
+        "album_1781457777586"
+      ]
     }
   ],
   "albums": [
@@ -151,6 +159,27 @@
         "track_1781414399072_14"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\pops\\Bit tune POP",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1781457777586",
+      "title": "Night Scenes – Vocal R&B",
+      "art": "https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/cover_1781459417689.webp",
+      "caption": "夜間の映像や落ち着いたシーン向けのVOCAL R&B素材をまとめたアルバム。 人物中心のカットや静かな場面で扱いやすいボーカルトラックを収録しています。",
+      "categoryId": "cat_1781457641530",
+      "tracks": [
+        "track_1781459182989_0",
+        "track_1781459182991_1",
+        "track_1781459182991_2",
+        "track_1781459182991_3",
+        "track_1781459182991_4",
+        "track_1781459182991_5",
+        "track_1781459182991_6",
+        "track_1781459182992_7",
+        "track_1781459182992_8",
+        "track_1781459182992_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\R&B\\Night Scenes – Vocal R&B",
       "type": "vocal"
     }
   ],
@@ -1320,6 +1349,176 @@
       ],
       "bpm": "",
       "lyrics": "[Intro]\n(La la la)\n(La la la)\n\n[Verse 1]\nI look at the ground\nThe dirt is dry and old\nI wait for a sign\nI am looking for a sign\n\n[Chorus]\nAnd then I think of you\nAnd then I see your face\nEverything changes tone\nEverything changes color\n(So bright)\n(So bright)\n\n[Verse 2]\nThe wind hits my skin\nThe leaves turn a deep green\nI can breathe again\nI am breathing again\n\n[Chorus]\nAnd then I think of you\nAnd then I see your face\nEverything changes tone\nEverything changes color\n(So bright)\n(So bright)\n\n[Bridge]\nI see it\nI see it\nI see it\n(One shade brighter)\n(One shade brighter)\n\n[Chorus]\nAnd then I think of you\nAnd then I see your face\nEverything changes tone\nEverything changes color\n(So bright)\n(So bright)\n\n[Outro]\nIt is all so clear\nI am moving forward now\n(Moving forward)\n(Moving)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781459182989_0",
+      "title": "Holy Ache",
+      "caption": "痛みや後悔といった心の闇と向き合い、「聖なるもの」として受け入れる過程を描く。崩壊の受容から静かな安堵へと至る、内省的なバラードだ。",
+      "type": "vocal",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Holy%20Ache.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Yeah)\n(Ooh)\n\n[Verse 1]\nSitting where the grass meets the dirt\nCounting the ways I let it go\nThe air tastes like iron and rain\nI thought I was being honest\nBut I was just being loud\nNow the silence is heavy as a stone\nIn my pocket where I keep my hands\n(Keeping my hands cold)\n(So cold)\n\n[Chorus]\nI’m not trying to fix the break\nJust trying to feel the edges\nIt’s a holy kind of ache\nKnowing what I put you through\nI’m finally coming down\n(Coming down slow)\n\n[Verse 2]\nThe wine in the glass is dark\nLike the water under the pier\nI remember how you looked in that blue shirt\nTelling me I didn’t have to stay\nI should have held my breath\nInstead of wasting all that air\nTrying to prove I was right\n(Wasted it all)\n(Every bit of it)\n\n[Chorus]\nI’m not trying to fix the break\nJust trying to feel the edges\nIt’s a holy kind of ache\nKnowing what I put you through\nI’m finally coming down\n(Down)\n\n[Bridge]\nThe tide doesn’t ask to come in\nIt just follows the pull\nI was fighting against the moon\nTrying to keep my cup full\nBut it’s easier to let it spill\n(Let it spill)\n(Let it all go)\n\n[Outro]\nWalking back to the door\nI don’t want to run anymore\n(No more running)\nJust the salt on my skin\n(Salt on my skin)\nAccepting where I’ve been\n(Mmm)\n(Where I’ve been)\n(Yeah)\n(The weight of it)\n(The weight of it all)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781459182991_1",
+      "title": "Smoothing Edges",
+      "caption": "ざらつきがちな日常の輪郭を優しく撫でていくような時間。「小さな休息」や「自己への回帰」を通じて、心をそっと整えていく穏やかな楽曲。",
+      "type": "vocal",
+      "duration": 174,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Smoothing%20Edges.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm, yeah)\n\n[Verse]\nI'm just smoothing the edges of the rug\nmoving slow, like the ice in my glass\nyeah, I think it's raining again\ntapping on the glass like it wants in\nI found that old sweater under the chair\nthe one with the loose thread\nit’s softer than I remembered\nmaybe I’ll just sit here for a bit\nthe tea is still too hot to drink anyway\nit’s okay, really\nI’m just catching my breath\n\n[Bridge]\n(You know, sometimes it's just nice to stay still)\n(Yeah)\n\n[Outro]\nI think I'm okay now\nI think I'm okay now\nI think I'm okay now\nI think I'm okay now",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781459182991_2",
+      "title": "The Root",
+      "caption": "人生の困難な試練を経て、根源から生まれ変わる強さを描くバラード。新しい自己を受け入れ、「光の中へ立つ」という強い決意と成長を感じさせる一曲だ。",
+      "type": "vocal",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/The%20Root.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh)\n(Mmm)\n\n[Verse 1]\nI found my keys on the table\nRight where I left them a year ago\nBut my hands feel heavier now\nI don't reach for what I used to\nThe air is thick in this house\nBut I can breathe just fine\nI looked at the marks on the door\nI am taller than I was back then\n\n[Chorus]\nI am a different kind of man\n(Different man)\nThe storm didn't kill the root\n(Kill the root)\nI am standing in the light\n(In the light)\nThankful for the wreckage\n(So thankful)\n\n[Verse 2]\nI used to run from the thunder\nNow I just stand and let it soak\nYou said I would never make it\nWell look at me right now\nI took the salt and the fire\nAnd I made a brand new heart\nI don't need the things I lost\nThey were too small for me anyway\n\n[Chorus]\nI am a different kind of man\n(Different man)\nThe storm didn't kill the root\n(Kill the root)\nI am standing in the light\n(In the light)\nThankful for the wreckage\n(So thankful)\n\n[Bridge]\nIt took a long time to see\nThat the breaking was the healing\nIt took a hard road to walk\nTo find out where I belong\nI am home\n(He's home)\nI am finally home\n\n[Chorus]\nI am a different kind of man\n(Different man)\nThe storm didn't kill the root\n(Kill the root)\nI am standing in the light\n(In the light)\nThankful for the wreckage\n(So thankful)\n\n[Outro]\nI'm different now\n(Yes he is)\nLook at my face\n(Look at him)\nI am standing tall\n(So tall)\nThe root is strong\n(The root is strong)\nI survived it\n(He survived)\nI am a new man\n(New man)\nYeah\n(Yeah)\nI'm different",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781459182991_3",
+      "title": "No Questions Asked",
+      "caption": "言葉を交わす必要もない、ただ静かに存在し合う空間。「無条件の寄り添い」がもたらす深い安らぎと温かい感情を描き出している。",
+      "type": "vocal",
+      "duration": 179,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/No%20Questions%20Asked.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Yeah)\n\n[Verse 1]\nI left the world at the door\nThe keys are heavy in my pocket\nYou don't ask where I have been\nOr why I am back so late\nYou just lean your head on my knee\nWaiting for me to find my center\nYour fur is soft against my palm\nThe only thing that feels real\n\n[Chorus]\nWe don't need to say a thing\n(No words)\nI am okay with the silence now\n(Just us)\nEverything else is too loud\nBut here the air is steady\nJust the weight of you staying close\n(Staying close)\n\n[Verse 2]\nOutside they want too many answers\nPeople expecting me to be something\nBut you just watch the dust settle\nIn the soft light from the hallway\nNo expectations in those eyes\nJust a simple kind of belonging\nI can feel my heart slowing down\nMatching the pace of your breathing\n\n[Chorus]\nWe don't need to say a thing\n(No words)\nI am okay with the silence now\n(Just us)\nEverything else is too loud\nBut here the air is steady\nJust the weight of you staying close\n(Staying close)\n\n[Bridge]\nMaybe this is the only truth\nNot the noise or the heavy lifting\nJust a body resting near another\nSafe within these four walls\n(Safe right here)\n\n[Chorus]\nWe don't need to say a thing\n(No words)\nI am okay with the silence now\n(Just us)\nEverything else is too loud\nBut here the air is steady\nJust the weight of you staying close\n(Staying close)\n\n[Outro]\nJust stay right here\n(Right here)\nDon't move a muscle\n(Don't move)\nThe silence is enough\n(It is enough)\n(Mmm)\n(Yeah)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781459182991_4",
+      "title": "The Resonance",
+      "caption": "音楽の力によって特別な結びつきを感じる瞬間。「響き（レゾナンス）」が、心と心を一つにする感動的な情景を描いた楽曲だ。",
+      "type": "vocal",
+      "duration": 181,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/The%20Resonance.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh)\n(Mmm)\n\n[Verse 1]\nThe first few notes begin to play\nThe air around me starts to change\nI close my eyes and let it flow\nFinding places only we know\n\n[Chorus]\nOh this melody remains\nThe only way I call your name\nEvery rise and every fall\nI can finally have it all (Have it all)\nJust one song and I am home\n\n[Verse 2]\nWe were driving toward the coast\nThe radio played this very soul\nYour hand was resting on my own\nA moment carved in every tone\n\n[Chorus]\nOh this melody remains\nThe only way I call your name\nEvery rise and every fall\nI can finally have it all (Have it all)\nJust one song and I am home\n\n[Bridge]\nDon't let the silence take the light\nSing it louder through the night\nI am reaching for the high (Reaching high)\nWhere our spirits never die\n\n[Chorus]\nOh this melody remains\nThe only way I call your name\nEvery rise and every fall\nI can finally have it all (Have it all)\nJust one song and I am home\n\n[Outro]\nIt takes me home\n(Yeah)\nStay right here in the sound\n(In the sound)\nDon't ever stop\n(Ooh)\n(Every note)\n(Every note)\n(Home)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781459182991_5",
+      "title": "Pale Yellow",
+      "caption": "過ぎ去った時間や大切な思い出が、まるで写真の黄ばみのように色褪せていく感覚を表現。記憶を手放し、静かに過去と訣別するような情緒的な作品だ。\n",
+      "type": "vocal",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Pale%20Yellow.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Yeah)\n\n[Verse 1]\nFound that picture in the shoebox\nThe edges are turning a pale yellow\nSun must have caught it on the shelf\nYour face is getting hard to find\nJust a soft blur where you used to be\nI can't see the shirt you wore\nThe one with the holes in the collar\nFunny how the paper just gives up\n\n[Chorus]\nYou’re fading out of the frame\nLosing the shape of your name\nI’m trying to remember the colors\nBut it's all turning grey\n(Everything's turning grey)\n\n[Verse 2]\nThe chemicals are finally breaking down\nLeaving me with nothing to hold\nI don't think I mind the lack of detail\nIt’s easier when I can’t see the look\nThe one you gave me before you left\nIt’s just a blank space now\n\n[Chorus]\nYou’re fading out of the frame\nLosing the shape of your name\nI’m trying to remember the colors\nBut it's all turning grey\n(Everything's turning grey)\n\n[Outro]\nJust a piece of card\n(Just a piece of card)\nTurning white\n(Turning white)\nI’m forgetting the rest\n(Forgetting the rest)\nIt’s okay\nIt’s fine\n(Mmm)\nJust let it go\n(Let it go)\nWhite paper\nNothing left to see\n(Nothing left)\nYeah",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781459182991_6",
+      "title": "Clear The Air",
+      "caption": "張り詰めた空気が解放され、抑えられていた真実が表面化する瞬間。「清められる」感覚と共に、切なさと確かな希望が混在する一曲だ。",
+      "type": "vocal",
+      "duration": 174,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Clear%20the%20Air.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh, yeah)\n(Just listen)\n\n[Verse 1]\nRain is slick on the pavement\nWe’re sitting heavy in the car\nThe dashboard light hits your face\nI see the way you’re holding back\nLike you’re waiting for a sign\nTo tell you it’s safe to stay\n\n[Chorus]\nCan we find where the wire broke\nBring it back to the honest parts\nI don’t want the silence to win\n(Just hear me out)\nGive me a minute of your time\n(Stay for a while)\nI’m opening every door I have\n\n[Verse 2]\nYour hand is still on the leather\nCold to the touch while I’m heat\nRemember how we used to slide\nNo friction in the way we spoke\nNow there’s a weight in the air\nHeavy as the clouds above\n\n[Bridge]\nI’m laying my pride on the floor\nStripping away the layers\nI need you to look at me\nReally see the man I am\n(Don't turn away)\n(Don't let us go)\n\n[Chorus]\nCan we find where the wire broke\nBring it back to the honest parts\nI don’t want the silence to win\n(Just hear me out)\nGive me a minute of your time\n(Stay for a while)\nI’m opening every door I have\n\n[Outro]\nJust a minute more\n(Honest parts)\nLet the air clear out\n(Every door I have)\n(Ooh, open)\nStay for a while\n(Stay with me)\n(Yeah)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781459182992_7",
+      "title": "The Back Gate",
+      "caption": "完璧ではないけれど、ささやかな達成感や明日に向かう気まぐれな期待が共存する穏やかな時間。「日常の背後の門」を通り過ぎるような、優しくも切ない午後だ。",
+      "type": "vocal",
+      "duration": 157,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/The%20Back%20Gate.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse]\nFinally fixed the latch on the gate\nit stayed shut all afternoon\na small win for today\nthen I burnt the toast a bit\nscraped the char into the basin\nit’s whatever\n(it’s whatever)\nI think I did okay\nmostly I guess\nmaybe the laundry can wait \n\n[Bridge]\nThe tea is getting cold on the table \nThe steam is all gone\nI should probably just go to bed\n\n[Outro]\nTomorrow is just tomorrow\nTomorrow is just tomorrow\nTomorrow is just tomorrow\nTomorrow is just tomorrow\n(yeah)\n(tomorrow)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781459182992_8",
+      "title": "Phantom Skin",
+      "caption": "君の存在が空気や皮膚にまで残るかのような、「消せない痕跡（ファントム）」としての重さ。幻影のように漂う、叶わぬ愛情と記憶を描いた楽曲だ。",
+      "type": "vocal",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Phantom%20Skin.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh)\n(Mmm)\n\n[Verse 1]\nThe light hits the floor at an angle\nI see the dust dancing where you stood\nI reach out but touch nothing but heat\nA phantom warmth against my palm\nThe air feels thick with your presence\nEven though the room is still\nI can feel the grain of your voice\nTugging at the edge of my ear\n\n[Pre-Chorus]\nI’m breathing you in\nFilling my lungs with the salt of you\nSuspended in this quiet\n(Holding on)\n(Just holding on)\n\n[Chorus]\nHeavy on my skin\n(So heavy)\nI feel your gravity pulling me thin\nAcross the water, across the state\nYour shape is etched in this space\n(Still here)\n(You're still here)\n\n[Verse 2]\nMy blood is humming a low frequency\nA slow vibration under the surface\nI can almost feel the weight of your head\nLeaning hard against my shoulder\nI’m not lonely when the world stops\nBecause the pressure of you stays\nLike a physical stain on the afternoon\nMaking it hard to move\n\n[Chorus]\nHeavy on my skin\n(So heavy)\nI feel your gravity pulling me thin\nAcross the water, across the state\nYour shape is etched in this space\n(Always)\n(You're always here)\n\n[Bridge]\nLet the walls dissolve\nThe distance is just a lie we tell\nI can feel you breathing on my neck\nDon't wake me from this weight\n(Don't wake me)\n(Let me sink)\n\n[Outro]\nStay right here\nIn the gap between breaths\n(Just a little longer)\n(I feel you)\nYour shape in the space\n(Mmm)\n(Still here)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781459182992_9",
+      "title": "The Rhythm",
+      "caption": "言葉による説明を超越した二人の共鳴。「心臓の鼓動」がシンクロするような、場所や時間から切り離された特別な親密なリズムを描いている。",
+      "type": "vocal",
+      "duration": 174,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/The%20Rhythm.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh, ooh)\n(Keep it right there)\n\n[Verse 1]\nRest your weight on me\nFeel the skin go warm\nCounting every beat\nLike a heavy velvet drum\n(Heavy drum)\nNothing moves outside\nNothing else is loud\n\n[Pre-Chorus]\nI like the way you lean in\nCatching every little vibration\n(Vibration)\nIt’s a language only we speak\nNo translation\n\n[Chorus]\nThis is the rhythm\nSteady and slow\nKeeping us level\nWhen the tide is low\n(Steady, steady)\nNo words required\nJust the way your heart follows mine\n(Follows mine)\n\n[Verse 2]\nLight hits the floor\nDust dancing in the air\nWe could stay all day\nCancel every plan we made\n(Forget 'em)\nSilk against your shoulder\nLooking like a masterpiece\nIn the quietest way\n\n[Chorus]\nThis is the rhythm\nSteady and slow\nKeeping us level\nWhen the tide is low\n(Steady, steady)\nNo words required\nJust the way your heart follows mine\n\n[Bridge]\nDon't you feel the sync?\nMatching up the pace\nTwo worlds in a circle\nIn this tiny space\n(In this space)\nIt’s the luxury of knowing\nWe don't have to chase a thing\n\n[Chorus]\nThis is the rhythm\nSteady and slow\nKeeping us level\nWhen the tide is low\n(Steady, steady)\nNo words required\nJust the way your heart follows mine\n\n[Outro]\n(Steady now)\n(Keep that count)\nJust the rhythm\n(Don't let go)\nYeah\n(Ooh)\n(Just stay)",
       "added_at": "2026-06-14"
     }
   ]
