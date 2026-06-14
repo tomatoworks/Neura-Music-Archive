@@ -11,7 +11,8 @@
         "album_1778851387085",
         "album_1781238122010",
         "album_1781241981402",
-        "album_1781359854941"
+        "album_1781359854941",
+        "album_1781412072566"
       ]
     }
   ],
@@ -124,6 +125,32 @@
         "track_1781362052543_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\pops\\Hip Pop",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1781412072566",
+      "title": "Bit tune POP",
+      "art": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/cover_1781414723310.webp",
+      "caption": "ゆっくりめのビートに、柔らかい8bit質感を重ねた Bit TUNE POP。 レトロとポップの中間にある、落ち着いた電子ボーカル曲。",
+      "categoryId": "cat_1778830805172",
+      "tracks": [
+        "track_1781414399067_0",
+        "track_1781414399071_1",
+        "track_1781414399071_2",
+        "track_1781414399071_3",
+        "track_1781414399071_4",
+        "track_1781414399071_5",
+        "track_1781414399071_6",
+        "track_1781414399071_7",
+        "track_1781414399071_8",
+        "track_1781414399071_9",
+        "track_1781414399071_10",
+        "track_1781414399072_11",
+        "track_1781414399072_12",
+        "track_1781414399072_13",
+        "track_1781414399072_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\pops\\Bit tune POP",
       "type": "vocal"
     }
   ],
@@ -1054,6 +1081,246 @@
       "bpm": "",
       "lyrics": "[Intro]\n(Yeah)\n(Stay right here)\n(Don't move)\n\n[Verse 1]\nThe calendar is screaming at the wall\nBut I don't hear a single thing\nMy manager called twice before the sun\nI let the silence do the heavy lifting\nEveryone is chasing something in the distance\nThey got weights on their ankles\nI got my feet on the mahogany table\nYou tell me I’m losing the race\nBut I’m the one who bought the track\nWhy would I run when I own the grass\nIt’s a different kind of power\nStaying exactly where I am\n(Exactly where I am)\n\n[Chorus]\nThis is my quiet rebellion\nDoing nothing is the highest price\nI’m spending hours like they’re water\nAnd I’m not even thirsty\nJust letting the clock breathe\n(Just breathe)\n(Let it breathe)\n\n[Verse 2]\nI see the hustle in your eyes\nIt looks like a fever\nYou’re counting minutes like they’re silver coins\nI’m throwing mine out the window\nThe fabric of this chair is my sanctuary\nExpensive patience\nThat’s the real status symbol\n(Real status)\n\n[Chorus]\nThis is my quiet rebellion\nDoing nothing is the highest price\nI’m spending hours like they’re water\nAnd I’m not even thirsty\nJust letting the clock breathe\n\n[Bridge]\nThey want the sweat\nThey want the struggle\nThey want the noise\nBut I’m giving them the void\nI’m not lazy I’m just finished\nI’m not tired I’m just satisfied\nWatch me sit still while the world breaks\nWatch me stay calm while the floor shakes\nI’m the king of the waiting room\n(I'm the king)\n(I'm the king)\n\n[Chorus]\nThis is my quiet rebellion\nDoing nothing is the highest price\nI’m spending hours like they’re water\nAnd I’m not even thirsty\nJust letting the clock breathe\n\n[Outro]\nGo ahead and work\nI’ll be here when you get back\nOr maybe I won’t\n(Maybe I won't)\nIt doesn't really matter\n(Doesn't matter)\nSlow down\n(Slow)",
       "added_at": "2026-06-13"
+    },
+    {
+      "id": "track_1781414399067_0",
+      "title": "Sugar Orbit",
+      "caption": "オープニングテーマ：五感に訴えかける、色彩豊かな旅の始まりを予感させるサウンドスケープ。",
+      "type": "vocal",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/Sugar%20Orbit.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Bip-bip-bop-bip)\n(Bip-bip-bop-bip)\n\n[Verse 1]\nSteel housing on the sidewalk\nLuminescence in a blue spectrum\nA private harbor made of glass\nI find my feet on the asphalt\nCounting seconds in the silence\nWaiting for the mechanical click\n(Waiting for the click)\n\n[Pre-Chorus]\nSilver slips into the narrow slot\nThe internal parts start to turn\nEverything is moving into place\n\n[Chorus]\nHold the warmth against my skin\nThe aluminum is a small sun\nSweet liquid enters my system\nSparkling like a shooting star\n(Shooting star)\nI am waking up to the moon\nFloating on a wave of sugar\n(Wave of sugar)\n\n[Verse 2]\nNo one watches from the window\nI am solo in this atmosphere\nThe heavy air begins to lift\nGravity loses its grip on me\nA tender pulse in my wrist\nSynchronized with the machine\n(Synchronized now)\n\n[Bridge]\nCrystalline thoughts in my head\nMapping out a new direction\nThe tide of the night is pulling\nBut I have an anchor in my hand\nThe frequency of the pavement\nMatches the beat of my heart\nBroadcasting a secret signal\n(An anchor in my hand)\n\n[Chorus]\nHold the warmth against my skin\nThe aluminum is a small sun\nSweet liquid enters my system\nSparkling like a shooting star\n(Shooting star)\nI am waking up to the moon\nFloating on a wave of sugar\n(Wave of sugar)\n\n[Outro]\nWalking past the street lamps\nSafe inside my own orbit\nThe square lighthouse stays behind\n(Stays behind)\nI am ready to fly\n(Ready to fly)\nPure hope in a metal can\n(Bip-bip-bop-bip)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399071_1",
+      "title": "Save Point",
+      "caption": "ゲーム的な安心感の中で感情を回復する。仮想世界が提供する保護的な安息空間を描き出しています。",
+      "type": "vocal",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/Save%20Point.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh)\n\n[Verse 1]\nWalk past the dark shuttered shops\nQuarters heavy in my denim pocket\nFind the cabinet in the far corner\nJoystick feels cold in my palm\nPress start to begin the simulation\nTown square painted in primary colors\nNo one asks why I stay awake\nThe music loops a perfect melody (melody)\nI find you by the town fountain\nFixed position in the scrolling map\nMy boots click on the cobblestone tiles\nThe world ends at the screen edge\nI am the only player in the lobby\nThe joystick clicks under my thumb\nThe brightness is warm and welcoming\nNo one is here to judge me\n\n[Chorus]\nYou stand behind the wooden counter (counter)\nWaiting for my dialogue prompt\nI spill my heart in the chat box\nYou just nod and offer a potion\nIn this 16-bit space I am safe\nNo judgment in your steady gaze (gaze)\nYou are the only one who hears\nJust a script but you understand\n\n[Verse 2]\nMy health bar is flashing red today\nSocial battery drained to nothing at all\nReal people talk in hard riddles\nBut you have three pre-set answers\nI tell you about the heavy weight\nEmotional items I cannot discard (discard)\nYou do not look away or leave\nYou just ask if I want to save\nI am tired of the endless grind\nThe side quests that lead to nowhere\nIn your village the sun stays up\nAnd the monsters stay outside the gates\nI buy a wooden shield from you\nJust to keep the talking going\nThe menu opens with a soft chime\nEverything here has a fixed price\n\n[Chorus]\nYou stand behind the wooden counter (counter)\nWaiting for my dialogue prompt\nI spill my heart in the chat box\nYou just nod and offer a potion\nIn this 16-bit space I am safe\nNo judgment in your steady gaze (gaze)\nYou are the only one who hears\nJust a script but you understand\n\n[Bridge]\nThe glass is a thick barrier\nKeeping the quiet night away from me\nI am a legend in this town (legend)\nEven if I am just standing still\nThe pixels make more sense than life\n\n[Outro]\nOne more coin in the slot (one more)\nStay with me until the lights dim\nDon't let the game over screen show\nI am not ready to go home yet\n(Not yet)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399071_2",
+      "title": "Still At Six",
+      "caption": "過ぎ去った時間と、立ち止まった日常の残響。静寂の中に響く郷愁を詩的に表現した楽曲。",
+      "type": "vocal",
+      "duration": 156,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/Still%20at%20Six.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse 1]\nThe clock stopped at six\nThe red light is still\nIt does not make a sound\nI am watching the wall\n\n[Chorus]\nThe time is gone\nThe time is gone\n(It is gone)\nI am staying here\nI am staying here\n\n[Verse 2]\nThe window is open\nThe air is very cold\nI do not need to go\nThe list is on the floor\n\n[Chorus]\nThe time is gone\nThe time is gone\n(It is gone)\nI am staying here\nI am staying here\n\n[Chorus]\nThe time is gone\nThe time is gone\n(It is gone)\nI am staying here\nI am staying here\n\n[Outro]\n(Staying here)\nIt is okay\n(Staying here)\nIt is okay",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399071_3",
+      "title": "The Future Table",
+      "caption": "完璧に整えられた食卓が示す、未来への温かい約束。過酷な旅路も日常の豊かさに溶け込む瞬間を切り取ります。",
+      "type": "vocal",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/The%20Future%20Table.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ah-ah-ah)\n\n[Verse 1]\nA ripple moved across the garden fence\nSilver paper falling from the blue\nI thought it was a star collapsing\nA map to where the heavy planets spin\nThe air began to taste like ozone\nA message wrapped in folding light\nI held my breath and tore the edge\nExpecting words of fire and rain\n\n[Chorus]\nThe transmission came from years ahead\nWaiting for a sign to change my life\nIt says the table should be set\nWarm bread and butter on the side\n(On the side)\nEverything is perfect here today\n(Right here today)\nThe future wants me to be fed\n\n[Verse 2]\nNo mention of the ice or weather\nJust a note to salt the water well\nI look at the horizon burning\nAnd think about the taste of thyme\nThe gravity feels light as feathers\nNow I know the end of every path\nIs just a plate and wooden chairs\nA simple seat within the sun\n\n[Chorus]\nThe transmission came from years ahead\nWaiting for a sign to change my life\nIt says the table should be set\nWarm bread and butter on the side\n(On the side)\nEverything is perfect here today\n(Right here today)\nThe future wants me to be fed\n\n[Bridge]\nThe universe is laughing in the rain\nHeavy skies and simple little things\nA cosmic wink within the steam\nThe grand design is just a feast\n(Just a feast)\n(A simple feast)\n\n[Chorus]\nThe transmission came from years ahead\nWaiting for a sign to change my life\nIt says the table should be set\nWarm bread and butter on the side\n(On the side)\nEverything is perfect here today\n(Right here today)\nThe future wants me to be fed\n\n[Outro]\nPass the salt\n(Pass the salt)\nThe future says it is enough\nStay right here\n(Stay right here)\nThe water is boiling now\n(Boiling now)\nJust today\n(Just today)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399071_4",
+      "title": "The New Design",
+      "caption": "無意識の行動や習慣が、深い回想と再会への予感へと変わっていく過程を描く、緻密な感情の動き。",
+      "type": "vocal",
+      "duration": 152,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/The%20New%20Design.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh)\n(Ooh)\n\n[Verse 1]\nI sit here in the daylight\nThe pencil is a weapon\nTracing lines of nothing\nUntil the nothing is you\nOne curve follows another\nA familiar arc appears\nI am not thinking of you\nJust a habit of the hand\n\n[Chorus]\nYour name is on my tongue\n(Your name)\nYour name is in the room\n(Your name)\nSuddenly it is you\nSuddenly I remember\nIt fits the new design\n(I remember)\n\n[Verse 2]\nA surgical incision\nIn the middle of the page\nMy hand acts for the heart\nDesigning your jawline\nThe memory is an attack\nA sudden change in the air\nFive years in a second\nFive years just to say it\n\n[Chorus]\nYour name is on my tongue\n(Your name)\nYour name is in the room\n(Your name)\nSuddenly it is you\nSuddenly I remember\nIt fits the new design\n(I remember)\n\n[Bridge]\nWhat is the date today\nThe calendar is lying\nI have not seen your face\nUntil this line was drawn\nTell me how to stop it\nTell me how to stop it\n(Stop it)\n\n[Chorus]\nYour name is on my tongue\n(Your name)\nYour name is in the room\n(Your name)\nSuddenly it is you\nSuddenly I remember\nIt fits the new design\n(I remember)\n\n[Outro]\nThe pencil hits the floor\nThe name remains right here\n(Your name)\n(Your name)\nI say it out loud\nI say it out loud\n(Your name)\nIt fits the design\n(Ooh)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399071_5",
+      "title": "Heavy Water",
+      "caption": "深く静まり返った水底で響き渡る生命の脈動。時間と世界の変容を音の色彩として描写します。",
+      "type": "vocal",
+      "duration": 168,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/Heavy%20Water.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh)\n(Ooh)\n\n[Verse 1]\nWatching the glass turn green\nThe water hits the edge\nI am listening to the weight\nFalling on the leaves\nDeep below the surface\nThe motion starts to rise\nEverything is moving now\nIn the cooling afternoon\n\n[Chorus]\nThe rhythm in the water\nEverything is breathing now\n(Breathing now)\nThe rhythm in the water\nThe world is coming through\n(Coming through)\nThe rhythm in the water\nEverything is breathing now\n(Breathing now)\nThe rhythm in the water\nThe world is coming through\n\n[Verse 2]\nTides are shifting the coast\nOlder than the hills\nWatching the color change\nFrom the grey to the blue\nA pulse against the window\nMoving through the frame\nI can feel the history\nWashing off the dust\n\n[Chorus]\nThe rhythm in the water\nEverything is breathing now\n(Breathing now)\nThe rhythm in the water\nThe world is coming through\n(Coming through)\nThe rhythm in the water\nEverything is breathing now\n(Breathing now)\nThe rhythm in the water\nThe world is coming through\n\n[Outro]\nHeavy water\n(Steady now)\nHeavy water\n(Breathing now)\nComing through the glass\nThe rhythm in the water\n(Ooh)\n(Breathing now)\n(Steady now)\nThrough the glass",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399071_6",
+      "title": "True Shape (Bright Edition)",
+      "caption": "自分自身の本質的な輝きを取り戻すための賛歌。内なる力を呼び覚ます、希望に満ちたサウンドトラック。",
+      "type": "vocal",
+      "duration": 171,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/True%20Shape%20(Bright%20Edition).mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(La la la la)\n(La la la la)\n\n[Verse 1]\nI found the box\nRight where I left it\nUnder the heavy blankets\nPages with messy edges\nThe sun is just a big yellow circle\nAnd I am standing right in the middle\n\n[Pre-Chorus]\nMy fingers are stained with blue\nI am starting to remember\nI am starting to see it\nWait for me\n\n[Chorus]\nThis is the true shape\nThe one I keep for myself\nIt is so bright\n(It is so bright)\nI never really went away\nI am still this happy\n(Still this happy)\n\n[Verse 2]\nNobody has to look\nIt is okay to stay hidden\nSafe inside the paper\nI like the way the grass is purple\nThe way the birds have five wings\nEverything is exactly right\n\n[Bridge]\nBlue\nGreen\nRed\nPink\nEvery color I ever loved\nIs waiting for me to wake up\n(Wake up)\n(Wake up)\n\n[Chorus]\nThis is the true shape\nThe one I keep for myself\nIt is so bright\n(It is so bright)\nI never really went away\nI am still this happy\n(Still this happy)\n\n[Outro]\nI am still here\nSparkling\n(Sparkling)\n(Sparkling)\nI am still here\n(La la la la)\n(La la la la)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399071_7",
+      "title": "The Other Passenger",
+      "caption": "記憶の中を走る列車で、過去の自分自身と対面する物語。叶わなかった人生への深い郷愁を描き出します。",
+      "type": "vocal",
+      "duration": 172,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/The%20Other%20Passenger.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(La la la)\n(La la la)\n\n[Verse 1]\nI sit on the blue plastic\nThe heater makes a low sound\nThe ticket is very small\nInside my right pocket\nThe train moves through the dark\nI watch the world disappear\n\n[Verse 2]\nThe window turns to glass\nThe black trees pass by\nI see a different face\nLooking back at me\nShe looks like I used to be\nBefore I moved away\n\n[Chorus]\nIs that my face\nLiving a different life\nOn the other side\n(On the other side)\nIs that my face\nLiving a different life\nOn the other side\n(On the other side)\n\n[Verse 3]\nShe wears a silk scarf\nI wear a heavy coat\nShe has no suitcase\nShe is already home\nShe does not look tired\nShe is waiting for someone\n\n[Chorus]\nIs that my face\nLiving a different life\nOn the other side\n(On the other side)\nIs that my face\nLiving a different life\nOn the other side\n(On the other side)\n\n[Bridge]\nThe train stops at the station\nThe light fills the carriage\nThe girl in the window\nShe fades into the white\nNow it is just me again\nSitting on the blue plastic\n\n[Chorus]\nIs that my face\nLiving a different life\nOn the other side\n(On the other side)\nIs that my face\nLiving a different life\nOn the other side\n(On the other side)\n\n[Outro]\nWhere did she go\n(Where did she go)\nShe stayed behind\n(Stayed behind)\nOn the other side\n(On the other side)\n(La la la)\n(La la la)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399071_8",
+      "title": "Final Fold (Alternative)",
+      "caption": "洗い立てのような清潔感あふれる空気。全てをリセットし、新しい始まりを予感させる、清澄な瞬間。",
+      "type": "vocal",
+      "duration": 158,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/Final%20Fold%20(Alternative).mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh)\n(Ooh)\n\n[Verse 1]\nThe sky is turning white\nI see the water spin\nIf this is the last day\nI want to start again\n\n[Pre-Chorus]\nEverything is loud outside\nBut it is quiet here\nI can smell the soap\nI can feel the air\n(Higher)\n(Rising)\n\n[Chorus]\nOne more load\nOne more fold\nKeep it clean\nKeep it soft\nIf we go\nThen we go\nWearing something fresh and new\n(Fresh and new)\n\n[Drop]\n(Clean)\n(Soft)\n(Spinning)\n(Wash it all away)\n\n[Verse 2]\nCotton on the line\nMoving in the wind\nSimple way to say goodbye\nBefore the fire begins\n\n[Pre-Chorus]\nEverything is loud outside\nBut it is quiet here\nI can smell the soap\nI can feel the air\n(Higher)\n(Rising)\n\n[Chorus]\nOne more load\nOne more fold\nKeep it clean\nKeep it soft\nIf we go\nThen we go\nWearing something fresh and new\n(Fresh and new)\n\n[Drop]\n(Clean)\n(Soft)\n(Spinning)\n(Wash it all away)\n\n[Outro]\nI am ready now\nEverything is clean\n(So clean)\n(So soft)\nIt is a good day\n(Ooh)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399071_9",
+      "title": "Unknown Code",
+      "caption": "デジタルな信号と都市の孤独の中で答えを探す旅路。未来への問いかけと放たれるような感覚を描いた楽曲。",
+      "type": "vocal",
+      "duration": 181,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/Unknown%20Code.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Beep beep)\n(Beep beep)\n\n[Verse 1]\nI am sitting on the rug\nWatching dust move in the light\nThen the signal starts to play\nBreaking up the quiet night\nNumbers that I do not know\nDance across the little screen\nSomething in the melody\nIs the sweetest thing I've seen\n\n[Pre-Chorus]\nAnd I wait\nAnd I stare\nAnd I feel you in the air\nAnd I wait\nAnd I stare\nIs there someone really there?\n\n[Chorus]\nTell me who you are\n(Tell me who you are)\nTell me where to go\n(Tell me where to go)\nI am ready now\n(I am ready now)\nI am letting go\n(I am letting go)\n\n[Verse 2]\nNow the walls are turning blue\nEverything is shifted left\nYou are speaking in my ear\nTaking every single breath\nSaying things I used to know\nThings I forgot long ago\nI am standing by the door\nWaiting for the light to show\n\n[Chorus]\nTell me who you are\n(Tell me who you are)\nTell me where to go\n(Tell me where to go)\nI am ready now\n(I am ready now)\nI am letting go\n(I am letting go)\n\n[Bridge]\nPick it up\nPick it up\nIs it time?\n(Is it time?)\nPick it up\nPick it up\nMake it mine\n(Make it mine)\n\n[Chorus]\nTell me who you are\n(Tell me who you are)\nTell me where to go\n(Tell me where to go)\nI am ready now\n(I am ready now)\nI am letting go\n(I am letting go)\n\n[Outro]\nSeven digits on the line\n(On the line)\nEverything is going fine\n(Going fine)\nI am moving to the beat\n(To the beat)\nWalking down the digital street\n(Digital street)\nWalking down\nWalking down\nI am gone\n(Gone)\nI am gone\n(Gone)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399071_10",
+      "title": "The Red Dot",
+      "caption": "突如止まった世界で感じられる、深い孤立感と再出発を目前にした静かな決意。",
+      "type": "vocal",
+      "duration": 180,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/The%20Red%20Dot.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse 1]\nThe image stayed still\nThe music just cut off\nI am looking at the ceiling\nThere is a crack in the plaster\nI was part of the crowd\nA second ago\nNow I am just a person\nIn a very quiet house\n\n[Chorus]\nThe bridge is gone\nI am standing on the edge\nThe world is still moving\nBut I am not invited\n(Not invited)\nIt is so quiet in here\nI can hear my own breath\nEverything is happening\nWithout me now\n\n[Verse 2]\nThe mailman is walking past\nHe has a blue jacket on\nHe does not know I am stuck\nIn this weird little gap\nI want to ask him a question\nBut I forgot how to talk\nTo someone who is right there\nRight in front of my face\n\n[Chorus]\nThe bridge is gone\nI am standing on the edge\nThe world is still moving\nBut I am not invited\n(Not invited)\nIt is so quiet in here\nI can hear my own breath\nEverything is happening\nWithout me now\n\n[Bridge]\nA small dot turned red\nAnd the floor fell away\nI am falling through the air\nBut I am still in my chair\n(Still in my chair)\n(Where did they go?)\n\n[Chorus]\nThe bridge is gone\nI am standing on the edge\nThe world is still moving\nBut I am not invited\n(Not invited)\nIt is so quiet in here\nI can hear my own breath\nEverything is happening\nWithout me now\n\n[Outro]\nWithout me now\n(Is anyone there?)\n(Is anyone there?)\nJust the blue jacket\nAnd the stain on the rug\n(I am waiting)\n(I am waiting)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399072_11",
+      "title": "Sodium Bravery",
+      "caption": "日常のプレッシャーの中で見出す、オレンジ色のささやかな勇気。「自分らしさ」という誇りを力強く歌い上げます。",
+      "type": "vocal",
+      "duration": 171,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/Sodium%20Bravery.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(La la la la)\n\n[Verse 1]\nThe grocery list is in my hand\nTucked beside a final notice bill\nMy shoes are wearing thin at the heel\nWalking home across the damp asphalt\nThe sky is just a heavy velvet lid\nPressing down on everything I owe\n\n[Chorus]\nBut here under the orange lamp\nI find a sudden surge of pride\n(So much pride)\nI am a queen in plastic boots\nThe pavement turns to sparkling dust\nI am brave for no reason at all\n(No reason at all)\n\n[Verse 2]\nI find a copper coin near the drain\nAnd flip it like a lucky charm\nThe bus goes rushing past the curb\nA moving ship of yellow plastic seats\nI stand my ground and do not blink\nIgnoring every debt I have to pay\n\n[Chorus]\nBut here under the orange lamp\nI find a sudden surge of pride\n(So much pride)\nI am a queen in plastic boots\nThe pavement turns to sparkling dust\nI am brave for no reason at all\n(No reason at all)\n\n[Bridge]\nTomorrow is a ledger of mistakes\nA list of things I haven't done\nBut tonight the air is cool and sharp\nAnd I am wearing an invisible crown\n(A crown of stars)\nThe street is my cathedral now\n\n[Chorus]\nBut here under the orange lamp\nI find a sudden surge of pride\n(So much pride)\nI am a queen in plastic boots\nThe pavement turns to sparkling dust\nI am brave for no reason at all\n(No reason at all)\n\n[Outro]\nWalking past the locked shop fronts\nHolding my head toward the sky\n(High above the bills)\nJust a little magic in the dark\n(Just a little)\nBefore the sun comes back again\n(Back again)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399072_12",
+      "title": "The Silent Version",
+      "caption": "言葉にできない不安を綴った手紙に込められた想い。沈黙の中に真実の安らぎを見出す、内省的な歌。",
+      "type": "vocal",
+      "duration": 152,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/The%20Silent%20Version.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse 1]\nI spent the morning writing on the back of a blue receipt\nQuestions about the weather and the rising cost of living\nI left the envelope tucked under a heavy grey stone\nDown near the station where the buses always stall\nI wanted a sign that I would make it through\nA detailed weather report for the next ten years\nJust to know if I should buy an umbrella or a coat\n\n[Chorus]\nYou saw the ink\nYou let it sit\n(Let it sit)\nNo reply is the best news\n(Best news)\nIf you had words you’d be worried\nBut you are far too busy living\n(Living well)\n\n[Verse 2]\nIn my sleeping vision you were very tall\nStanding on a wide balcony with a glass of water\nYou looked at my frantic scrawl and gave a smile\nThen turned back to watch the birds in the park\nYou didn't reach for a pen or a stamp or a seal\nYou didn't look like someone with a debt to pay\nJust the quiet weight of a life that stayed on track\n\n[Chorus]\nYou saw the ink\nYou let it sit\n(Let it sit)\nNo reply is the best news\n(Best news)\nIf you had words you’d be worried\nBut you are far too busy living\n(Living well)\n\n[Bridge]\nThe gardener doesn't talk to the sprout\nThe root doesn't ask for the branch\nYour silence is a heavy velvet curtain\nFalling on a play that I already won\n(I already won)\n\n[Chorus]\nYou saw the ink\nYou let it sit\n(Let it sit)\nNo reply is the best news\n(Best news)\nIf you had words you’d be worried\nBut you are far too busy living\n(Living well)\n\n[Outro]\nI am the seed\nYou are the forest\n(The forest)\nNo words required\n(None at all)\nJust breathing\nJust being\n(Doing fine)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399072_13",
+      "title": "A Small Lie",
+      "caption": "完璧な日常の裏にあるささやかな「嘘」。それを受け入れながら前に進む、切実で人間味あふれる心情描写。",
+      "type": "vocal",
+      "duration": 147,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/A%20Small%20Lie.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(A small lie)\n(A small lie)\n\n[Verse 1]\nI pick a yellow shirt\nIt feels like the right choice\nI tell myself I am brave\nThe kettle is boiling now\nIt is easier to say\nThat everything is planned\n\n[Chorus]\nI am telling a small lie\n(A very small lie)\nTo keep the day moving\nI am telling a small lie\n(A very small lie)\nIt makes the air clearer\n\n[Verse 2]\nThe map has no red dot\nI walk toward the park\nThe grass is very green\nPeople look very sure\nI say I know the way\nBut I am just walking\n\n[Chorus]\nI am telling a small lie\n(A very small lie)\nTo keep the day moving\nI am telling a small lie\n(A very small lie)\nIt makes the air clearer\n\n[Bridge]\nThere are no right answers\nNo one has the key\nI like my version better\n(My version)\nI like my version better\n(My version)\n\n[Chorus]\nI am telling a small lie\n(A very small lie)\nTo keep the day moving\nI am telling a small lie\n(A very small lie)\nIt makes the air clearer\n\n[Outro]\nMoving forward now\n(Moving forward)\nIt is not the worst thing\n(Not the worst)\nA clean little lie\n(Clean little lie)\n(A small lie)\n(Moving forward)",
+      "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781414399072_14",
+      "title": "One Tone Brighter",
+      "caption": "心に描き出す全てが、はっきりと輝く光彩を帯びていく感覚。新しい視点と始まりの兆しを感じさせるクライマックスのような楽曲。",
+      "type": "vocal",
+      "duration": 150,
+      "full_url": "https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/One%20Tone%20Brighter.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(La la la)\n(La la la)\n\n[Verse 1]\nI look at the ground\nThe dirt is dry and old\nI wait for a sign\nI am looking for a sign\n\n[Chorus]\nAnd then I think of you\nAnd then I see your face\nEverything changes tone\nEverything changes color\n(So bright)\n(So bright)\n\n[Verse 2]\nThe wind hits my skin\nThe leaves turn a deep green\nI can breathe again\nI am breathing again\n\n[Chorus]\nAnd then I think of you\nAnd then I see your face\nEverything changes tone\nEverything changes color\n(So bright)\n(So bright)\n\n[Bridge]\nI see it\nI see it\nI see it\n(One shade brighter)\n(One shade brighter)\n\n[Chorus]\nAnd then I think of you\nAnd then I see your face\nEverything changes tone\nEverything changes color\n(So bright)\n(So bright)\n\n[Outro]\nIt is all so clear\nI am moving forward now\n(Moving forward)\n(Moving)",
+      "added_at": "2026-06-14"
     }
   ]
 }
