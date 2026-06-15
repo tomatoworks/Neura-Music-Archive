@@ -373,6 +373,17 @@ export function renderAlbumGrid(theme) {
   }
 
   mainContent.innerHTML = contentHtml;
+
+  if (adHtml) {
+    const adElements = mainContent.querySelectorAll('.adsbygoogle:not([data-adsbygoogle-status])');
+    adElements.forEach(() => {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {
+        console.error("AdSense error:", e);
+      }
+    });
+  }
 }
 
 export function renderAlbumDetail(album) {
