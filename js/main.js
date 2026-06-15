@@ -443,7 +443,9 @@ window.downloadSelectedZip = (albumId, btnElement) => {
   };
 
   window.shareAlbum = (albumTitle) => {
-    const url = window.location.href;
+    const baseUrl = 'https://neura-music.com';
+    const path = window.location.pathname + window.location.search;
+    const url = `${baseUrl}${path}`;
     const text = `Neura Music Archiveで「${albumTitle}」を聴いています！\n`;
 
     if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
