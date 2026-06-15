@@ -68,6 +68,20 @@ export function initPlayer() {
       }
     });
   }
+
+  const btnNext = document.getElementById('btn-next');
+  if (btnNext) {
+    btnNext.addEventListener('click', () => {
+      playNextTrack();
+    });
+  }
+
+  const btnPrev = document.getElementById('btn-prev');
+  if (btnPrev) {
+    btnPrev.addEventListener('click', () => {
+      playPrevTrack();
+    });
+  }
 }
 
 export function playTrack(trackId, title, type, duration, artUrl) {
@@ -120,12 +134,12 @@ export function playTrack(trackId, title, type, duration, artUrl) {
         if (timeCurrentEl) timeCurrentEl.textContent = "0:00";
 
         const footerDlBtn = document.getElementById('footer-dl-btn');
-        if (footerDlBtn) {
-          footerDlBtn.disabled = true;
-          footerDlBtn.className = "flex items-center space-x-1 text-sm font-medium text-gray-400 dark:text-gray-600 bg-gray-50 dark:bg-gray-900 cursor-not-allowed px-3 py-1.5 rounded transition";
-        }
-      }
+    if (footerDlBtn) {
+      footerDlBtn.disabled = true;
+      footerDlBtn.className = "flex items-center space-x-1 text-sm font-medium text-gray-400 dark:text-gray-600 bg-gray-50 dark:bg-gray-900 cursor-not-allowed px-3 py-1.5 rounded transition";
     }
+  }
+}
     
     state.playingTrack = trackId;
     state.isPlaying = true;
@@ -250,6 +264,97 @@ export function playNextTrack() {
   if (nextTrackId) {
     const nextTrack = currentTheme.tracks.find(t => t.id === nextTrackId);
     playTrack(nextTrack.id, nextTrack.title, nextTrack.type, nextTrack.duration, nextAlbum.art);
+  } else {
+    state.isPlaying = false;
+    updatePlayerUI();
+    renderMainContent();
+
+    const footerDlBtn = document.getElementById('footer-dl-btn');
+    if (footerDlBtn) {
+      footerDlBtn.disabled = true;
+      footerDlBtn.className = "flex items-center space-x-1 text-sm font-medium text-gray-400 dark:text-gray-600 bg-gray-50 dark:bg-gray-900 cursor-not-allowed px-3 py-1.5 rounded transition";
+    }
+  }
+}
+
+export function playPrevTrack() {
+  if (!state.data || !state.data.themes) {
+    state.isPlaying = false;
+    updatePlayerUI();
+    renderMainContent();
+    return;
+  }
+
+  if (state.searchQuery) {
+    const results = filterTracksBySearch(state.data.themes, state.searchQuery);
+    if (results.length > 0) {
+      const currentIndex = results.findIndex(r => r.track.id === state.playingTrack);
+      if (currentIndex >= 0) {
+        for (let i = 1; i <= results.length; i++) {
+          const prevIndex = (currentIndex - i + results.length) % results.length;
+          const prevResult = results[prevIndex];
+          if (prevResult.track.full_url) {
+            playTrack(prevResult.track.id, prevResult.track.title, prevResult.track.type, prevResult.track.duration, prevResult.album.art);
+            return;
+          }
+        }
+      }
+    }
+  }
+
+  let currentTheme = state.data.themes.find(t => t.tracks && t.tracks.some(track => track.id === state.playingTrack));
+  if (!currentTheme) currentTheme = state.data.themes.find(t => t.id === state.currentThemeId);
+  if (!currentTheme || !currentTheme.albums) {
+    state.isPlaying = false;
+    updatePlayerUI();
+    renderMainContent();
+    return;
+  }
+
+  let currentAlbumIndex = currentTheme.albums.findIndex(a => a.tracks && a.tracks.includes(state.playingTrack));
+  if (currentAlbumIndex === -1) currentAlbumIndex = 0;
+  
+  const currentAlbum = currentTheme.albums[currentAlbumIndex];
+  const trackIndex = currentAlbum.tracks.indexOf(state.playingTrack);
+
+  let prevTrackId = null;
+  let prevAlbum = currentAlbum;
+
+  for (let i = trackIndex - 1; i >= 0; i--) {
+    const t = currentTheme.tracks.find(track => track.id === currentAlbum.tracks[i]);
+    if (t && t.full_url) {
+      prevTrackId = t.id;
+      break;
+    }
+  }
+
+  if (!prevTrackId) {
+    for (let i = 1; i <= currentTheme.albums.length; i++) {
+      const prevAlbumIdx = (currentAlbumIndex - i + currentTheme.albums.length) % currentTheme.albums.length;
+      const album = currentTheme.albums[prevAlbumIdx];
+      
+      if (!album.tracks) continue;
+      
+      let playableTrackId = null;
+      for (let j = album.tracks.length - 1; j >= 0; j--) {
+        const t = currentTheme.tracks.find(track => track.id === album.tracks[j]);
+        if (t && t.full_url) {
+          playableTrackId = t.id;
+          break;
+        }
+      }
+
+      if (playableTrackId) {
+        prevTrackId = playableTrackId;
+        prevAlbum = album;
+        break;
+      }
+    }
+  }
+
+  if (prevTrackId) {
+    const prevTrack = currentTheme.tracks.find(t => t.id === prevTrackId);
+    playTrack(prevTrack.id, prevTrack.title, prevTrack.type, prevTrack.duration, prevAlbum.art);
   } else {
     state.isPlaying = false;
     updatePlayerUI();

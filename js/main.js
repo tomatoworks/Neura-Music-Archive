@@ -17,6 +17,24 @@ export const state = {
 
 window.state = state;
 
+function updateMetaTags(url) {
+  let title = "🎼 Neura Music Archive - AI BGM Portal & Creator Tools";
+  let description = "AIが生成した商用利用可能・クレジット表記不要の高品質なBGMを無料ダウンロードできる「Neura Music Archive」。動画や配信用BGMに加え、OBS等で使える便利なHTML時計などクリエイター向けツールも公開中。";
+
+  if (state.currentAlbum) {
+    title = `${state.currentAlbum.title} - Neura Music Archive`;
+    if (state.currentAlbum.caption) {
+      description = state.currentAlbum.caption.replace(/<[^>]*>?/gm, '');
+    }
+  }
+
+  document.title = title;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.content = description;
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.href = url.toString();
+}
+
 function updateURL() {
   const url = new URL(window.location.href);
   url.searchParams.delete('theme');
@@ -39,6 +57,8 @@ function updateURL() {
   if (url.toString() !== window.location.href) {
     window.history.pushState(null, '', url);
   }
+  
+  updateMetaTags(url);
 }
 
 function syncStateFromURL() {
@@ -89,6 +109,7 @@ async function init() {
 
   syncStateFromURL();
   window.history.replaceState(null, '', window.location.href);
+  updateMetaTags(new URL(window.location.href));
   
   initPlayer();
   renderInfoArea(); // 追加
@@ -146,6 +167,7 @@ async function init() {
 
   window.addEventListener('popstate', () => {
     syncStateFromURL();
+    updateMetaTags(new URL(window.location.href));
     renderThemes();
     renderMainContent();
     const scrollArea = document.getElementById('scroll-area');
