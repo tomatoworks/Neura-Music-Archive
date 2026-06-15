@@ -31,8 +31,13 @@ function updateMetaTags(url) {
   document.title = title;
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) metaDesc.content = description;
-  const canonical = document.querySelector('link[rel="canonical"]');
-  if (canonical) canonical.href = url.toString();
+  let canonical = document.querySelector('link[rel="canonical"]');
+  if (!canonical) {
+    canonical = document.createElement('link');
+    canonical.rel = 'canonical';
+    document.head.appendChild(canonical);
+  }
+  canonical.href = url.toString();
 }
 
 function updateURL() {
@@ -43,16 +48,22 @@ function updateURL() {
   url.searchParams.delete('article');
   url.searchParams.delete('search');
 
+  let newPath = '/';
   if (state.searchQuery) {
-    url.searchParams.set('search', state.searchQuery);
+    newPath = '/search/' + encodeURIComponent(state.searchQuery);
   } else if (state.currentMode === 'theme') {
-    if (state.currentThemeId) url.searchParams.set('theme', state.currentThemeId);
-    if (state.currentAlbum) url.searchParams.set('album', state.currentAlbum.id);
+    if (state.currentThemeId && state.currentAlbum) {
+      newPath = '/theme/' + state.currentThemeId + '/album/' + state.currentAlbum.id;
+    } else if (state.currentThemeId) {
+      newPath = '/theme/' + state.currentThemeId;
+    }
   } else if (state.currentMode === 'tool') {
-    if (state.currentContentId) url.searchParams.set('tool', state.currentContentId);
+    if (state.currentContentId) newPath = '/tool/' + state.currentContentId;
   } else if (state.currentMode === 'article') {
-    if (state.currentContentId) url.searchParams.set('article', state.currentContentId);
+    if (state.currentContentId) newPath = '/article/' + state.currentContentId;
   }
+
+  url.pathname = newPath;
 
   if (url.toString() !== window.location.href) {
     window.history.pushState(null, '', url);
@@ -62,12 +73,13 @@ function updateURL() {
 }
 
 function syncStateFromURL() {
+  const pathParts = window.location.pathname.split('/').filter(p => p);
   const params = new URLSearchParams(window.location.search);
-  const search = params.get('search');
-  const theme = params.get('theme');
-  const albumId = params.get('album');
-  const tool = params.get('tool');
-  const article = params.get('article');
+  const search = params.get('search') || (pathParts[0] === 'search' ? decodeURIComponent(pathParts[1]) : null);
+  const theme = params.get('theme') || (pathParts[0] === 'theme' ? pathParts[1] : null);
+  const albumId = params.get('album') || (pathParts[2] === 'album' ? pathParts[3] : null);
+  const tool = params.get('tool') || (pathParts[0] === 'tool' ? pathParts[1] : null);
+  const article = params.get('article') || (pathParts[0] === 'article' ? pathParts[1] : null);
 
   state.searchQuery = '';
   state.currentAlbum = null;

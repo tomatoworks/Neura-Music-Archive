@@ -28,14 +28,14 @@ function generateSitemap() {
     for (const themeFile of manifest.theme_files) {
       const themeId = themeFile.id;
       
-      urls.push(`  <url>\n    <loc>${BASE_URL}?theme=${themeId}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.8</priority>\n  </url>`);
+      urls.push(`  <url>\n    <loc>${BASE_URL}theme/${themeId}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.8</priority>\n  </url>`);
 
       const themeDataPath = path.join(DATA_DIR, themeFile.fileName);
       if (fs.existsSync(themeDataPath)) {
         const themeData = JSON.parse(fs.readFileSync(themeDataPath, 'utf8'));
         if (themeData.albums && Array.isArray(themeData.albums)) {
           for (const album of themeData.albums) {
-            urls.push(`  <url>\n    <loc>${BASE_URL}?theme=${themeId}&amp;album=${album.id}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.6</priority>\n  </url>`);
+            urls.push(`  <url>\n    <loc>${BASE_URL}theme/${themeId}/album/${album.id}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.6</priority>\n  </url>`);
           }
         }
       } else {
@@ -46,18 +46,17 @@ function generateSitemap() {
 
   if (manifest.tools && Array.isArray(manifest.tools)) {
     for (const tool of manifest.tools) {
-      urls.push(`  <url>\n    <loc>${BASE_URL}?tool=${tool.id}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.8</priority>\n  </url>`);
+      urls.push(`  <url>\n    <loc>${BASE_URL}tool/${tool.id}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.8</priority>\n  </url>`);
     }
   }
 
   if (manifest.articles && Array.isArray(manifest.articles)) {
     for (const article of manifest.articles) {
-      urls.push(`  <url>\n    <loc>${BASE_URL}?article=${article.id}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.8</priority>\n  </url>`);
+      urls.push(`  <url>\n    <loc>${BASE_URL}article/${article.id}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.8</priority>\n  </url>`);
     }
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>`;
-
   fs.writeFileSync(OUTPUT_FILE, xml, 'utf8');
   console.log(`sitemap.xml を生成しました。 (総URL数: ${urls.length})`);
 }

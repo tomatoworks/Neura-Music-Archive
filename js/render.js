@@ -229,7 +229,7 @@ function renderSearchResults(results) {
     return `
     <div class="flex items-center gap-3 md:gap-4 p-3 md:p-4 border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-[#262626] transition group">
       
-      <a href="?theme=${themeId}&album=${album.id}" class="relative cursor-pointer flex-shrink-0 block" onclick="event.preventDefault(); selectAlbum('${themeId}', '${album.id}')" title="このアルバムを開く">
+      <a href="/theme/${themeId}/album/${album.id}" class="relative cursor-pointer flex-shrink-0 block" onclick="event.preventDefault(); selectAlbum('${themeId}', '${album.id}')" title="このアルバムを開く">
         <img src="${album.art}" class="w-12 h-12 md:w-14 md:h-14 object-cover rounded-md border border-gray-200 dark:border-gray-700" alt="Album Art" loading="lazy" decoding="async">
       </a>
 
@@ -292,7 +292,7 @@ function createAlbumCardHtml(themeId, album) {
 
   return `
     <div class="group border border-gray-100 dark:border-[#333333] rounded-xl overflow-hidden hover:shadow-lg hover:border-gray-200 dark:hover:border-gray-400 transition bg-white dark:bg-[#242424] flex flex-col">
-      <a href="?theme=${themeId}&album=${album.id}" class="relative cursor-pointer block" onclick="event.preventDefault(); selectAlbum('${themeId}', '${album.id}')">
+      <a href="/theme/${themeId}/album/${album.id}" class="relative cursor-pointer block" onclick="event.preventDefault(); selectAlbum('${themeId}', '${album.id}')">
         <div class="aspect-square relative overflow-hidden bg-gray-100 dark:bg-gray-800">
           <img src="${album.art}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Art" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
@@ -306,7 +306,7 @@ function createAlbumCardHtml(themeId, album) {
           </div>
         </div>
       </a>
-      <a href="?theme=${themeId}&album=${album.id}" class="p-4 pt-3 flex-1 flex flex-col justify-start cursor-pointer block" onclick="event.preventDefault(); selectAlbum('${themeId}', '${album.id}')">
+      <a href="/theme/${themeId}/album/${album.id}" class="p-4 pt-3 flex-1 flex flex-col justify-start cursor-pointer block" onclick="event.preventDefault(); selectAlbum('${themeId}', '${album.id}')">
         <div>
           <h3 class="font-bold text-gray-800 dark:text-gray-100 text-base line-clamp-1">${album.title}</h3>
         </div>
