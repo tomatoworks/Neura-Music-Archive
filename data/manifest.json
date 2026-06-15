@@ -55,7 +55,7 @@
       "title": "Youtube拡張ツール",
       "content_url": "contents/tools/neuratube/neuratube_introduction_user_manual.html",
       "date": "2026-06-14",
-      "is_visible": true
+      "is_visible": false
     }
   ],
   "articles": [
@@ -64,28 +64,28 @@
       "title": "Neuraとは",
       "content_url": "contents/articles/articles_index.html",
       "date": "2026-06-10",
-      "is_visible": true
+      "is_visible": false
     },
     {
       "id": "article_20260612134623",
       "title": "配信時計の作り方",
       "content_url": "contents/articles/obs_clock_article.html",
       "date": "2026-06-12",
-      "is_visible": true
+      "is_visible": false
     },
     {
       "id": "article_20260613152328",
       "title": "いかにして量産するか",
       "content_url": "contents/articles/code_artifact.html",
       "date": "2026-06-14",
-      "is_visible": true
+      "is_visible": false
     },
     {
       "id": "article_20260615171158",
       "title": "SPAのSEO",
       "content_url": "contents/articles/seoblog-1.html",
       "date": "2026-06-15",
-      "is_visible": true
+      "is_visible": false
     }
   ]
 }
