@@ -171,7 +171,11 @@ export function renderMainContent() {
 
 function renderExternalContent(item) {
   const mainContent = document.getElementById('main-content');
-  const iframeUrl = item.content_url.endsWith('/') ? `${item.content_url}${item.id}/index.html` : item.content_url;
+  let iframeUrl = item.content_url.endsWith('/') ? `${item.content_url}${item.id}/index.html` : item.content_url;
+  
+  if (!iframeUrl.startsWith('http://') && !iframeUrl.startsWith('https://') && !iframeUrl.startsWith('/')) {
+    iframeUrl = '/' + iframeUrl;
+  }
   
   // iframeを領域いっぱいに広げるため、親要素の余白を消してflexレイアウトに変更
   mainContent.classList.remove('p-4', 'md:p-8');
