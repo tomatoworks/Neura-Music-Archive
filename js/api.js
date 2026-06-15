@@ -31,7 +31,7 @@ export async function fetchSiteData(onProgress) {
   if (dataPath) {
     dataPath = dataPath.replace(/\/$/, '');
   } else {
-    dataPath = './data';
+    dataPath = '/data';
   }
 
   try {
