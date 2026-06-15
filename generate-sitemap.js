@@ -46,12 +46,14 @@ function generateSitemap() {
 
   if (manifest.tools && Array.isArray(manifest.tools)) {
     for (const tool of manifest.tools) {
+      if (tool.is_visible === false) continue;
       urls.push(`  <url>\n    <loc>${BASE_URL}tool/${tool.id}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.8</priority>\n  </url>`);
     }
   }
 
   if (manifest.articles && Array.isArray(manifest.articles)) {
     for (const article of manifest.articles) {
+      if (article.is_visible === false) continue;
       urls.push(`  <url>\n    <loc>${BASE_URL}article/${article.id}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.8</priority>\n  </url>`);
     }
   }
