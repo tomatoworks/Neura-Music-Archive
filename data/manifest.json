@@ -52,7 +52,7 @@
     },
     {
       "id": "tool_20260614162531",
-      "title": "Youtube用神ツール",
+      "title": "Youtube用最強拡張",
       "content_url": "contents/tools/neuratube/neuratube_introduction_user_manual.html",
       "date": "2026-06-14",
       "is_visible": true
@@ -61,21 +61,21 @@
   "articles": [
     {
       "id": "article_20260610125859",
-      "title": "NMAとは",
+      "title": "Neuraとは",
       "content_url": "contents/articles/articles_index.html",
       "date": "2026-06-10",
       "is_visible": true
     },
     {
       "id": "article_20260612134623",
-      "title": "配信用時計作り方",
+      "title": "配信時計の作り方",
       "content_url": "contents/articles/obs_clock_article.html",
       "date": "2026-06-12",
       "is_visible": true
     },
     {
       "id": "article_20260613152328",
-      "title": "生成フローについて",
+      "title": "いかにして量産するか",
       "content_url": "contents/articles/code_artifact.html",
       "date": "2026-06-14",
       "is_visible": true
