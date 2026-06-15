@@ -46,6 +46,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://neura-music.com/?theme=ambient&amp;album=album_1781516916663</loc>
+    <lastmod>2026-06-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://neura-music.com/?theme=chill</loc>
     <lastmod>2026-06-15</lastmod>
     <priority>0.8</priority>

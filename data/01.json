@@ -20,7 +20,8 @@
       "name": "R&B",
       "caption": "「R&B系VOCAL素材を収録したカテゴリ。 落ち着いた場面向けのボーカルコンテンツをまとめています。」",
       "albums": [
-        "album_1781457777586"
+        "album_1781457777586",
+        "album_1781516916663"
       ]
     }
   ],
@@ -180,6 +181,27 @@
         "track_1781459182992_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\R&B\\Night Scenes – Vocal R&B",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1781516916663",
+      "title": "Quiet Shades – Vocal R&B",
+      "art": "https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/cover_1781517279305.webp",
+      "caption": "淡いトーンの女性ボーカルを使った静かな R&B 曲集。 夜間の映像や控えめなシーンに馴染む、密度の低い落ち着いたトラックを収録しています。",
+      "categoryId": "cat_1781457641530",
+      "tracks": [
+        "track_1781516975728_0",
+        "track_1781516975729_1",
+        "track_1781516975729_2",
+        "track_1781516975729_3",
+        "track_1781516975729_4",
+        "track_1781516975729_5",
+        "track_1781516975729_6",
+        "track_1781516975729_7",
+        "track_1781516975729_8",
+        "track_1781516975729_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\R&B\\Quiet Shades – Vocal R&B",
       "type": "vocal"
     }
   ],
@@ -1520,6 +1542,176 @@
       "bpm": "",
       "lyrics": "[Intro]\n(Ooh, ooh)\n(Keep it right there)\n\n[Verse 1]\nRest your weight on me\nFeel the skin go warm\nCounting every beat\nLike a heavy velvet drum\n(Heavy drum)\nNothing moves outside\nNothing else is loud\n\n[Pre-Chorus]\nI like the way you lean in\nCatching every little vibration\n(Vibration)\nIt’s a language only we speak\nNo translation\n\n[Chorus]\nThis is the rhythm\nSteady and slow\nKeeping us level\nWhen the tide is low\n(Steady, steady)\nNo words required\nJust the way your heart follows mine\n(Follows mine)\n\n[Verse 2]\nLight hits the floor\nDust dancing in the air\nWe could stay all day\nCancel every plan we made\n(Forget 'em)\nSilk against your shoulder\nLooking like a masterpiece\nIn the quietest way\n\n[Chorus]\nThis is the rhythm\nSteady and slow\nKeeping us level\nWhen the tide is low\n(Steady, steady)\nNo words required\nJust the way your heart follows mine\n\n[Bridge]\nDon't you feel the sync?\nMatching up the pace\nTwo worlds in a circle\nIn this tiny space\n(In this space)\nIt’s the luxury of knowing\nWe don't have to chase a thing\n\n[Chorus]\nThis is the rhythm\nSteady and slow\nKeeping us level\nWhen the tide is low\n(Steady, steady)\nNo words required\nJust the way your heart follows mine\n\n[Outro]\n(Steady now)\n(Keep that count)\nJust the rhythm\n(Don't let go)\nYeah\n(Ooh)\n(Just stay)",
       "added_at": "2026-06-14"
+    },
+    {
+      "id": "track_1781516975728_0",
+      "title": "Navy Hoodie (Take 2)",
+      "caption": "伝えきれなかった言葉が、冷たい重みとなって胸に横たわる。日常の静寂の中で向き合う、後悔と感情の機微を描いたシーン。",
+      "type": "vocal",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/Navy%20Hoodie%20(Take%202).mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Verse 1]\nThe glass is freezing against my skin\nI watched your tires kick up the gravel\nI didn't move an inch from this spot\nJust let the silence get really loud\n(really loud)\nIt’s Tuesday and I feel like a ghost\nThe neighbor's dog is barking at nothing\n\n[Chorus]\nI kept the words in my mouth\nNow they’re sitting there like wet stones\nHeavy and cold and making me sick\nI should’ve said something\n(I should’ve said something)\nI should’ve said something\n\n[Verse 2]\nYour navy hoodie is still on the chair\nIt smells like that orange soap you use\nThe street lamp is the only thing awake\nMaking the pavement look all grey and wet\nI wonder if you’re sleeping already\nOr if you’re thinking about the drive back\nI forgot to tell you to be safe\n\n[Chorus]\nI kept the words in my mouth\nNow they’re sitting there like wet stones\nHeavy and cold and making me sick\nI should’ve said something\n(I should’ve said something)\nI should’ve said something\n\n[Bridge]\nMaybe I’ll just move to a different city\nPack my stuff and leave it in the sink\nMy throat feels tight and actually hurts\nGod I feel so incredibly stupid\n(so stupid)\nWhy do I always do this to myself?\n\n[Chorus]\nI kept the words in my mouth\nNow they’re sitting there like wet stones\nHeavy and cold and making me sick\nI should’ve said something\n(I should’ve said something)\nI should’ve said something\n\n[Outro]\nJust the sound of the heater clicking\nAnd the dark outside the glass\nWet stones\n(wet stones)\nI’m still here\n(still here)\nI'm still here",
+      "added_at": "2026-06-15"
+    },
+    {
+      "id": "track_1781516975729_1",
+      "title": "Traces Of You",
+      "caption": "かつて深く愛した記憶が、五感の隙間から滲み出る。それは形を持たない、漂い続ける懐かしさの残響のようなものだ。",
+      "type": "vocal",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/Traces%20of%20You.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Ooh)\n\n[Verse 1]\nSomething in the air just shifted\nA heavy sweetness I remember\nIt brushes past my skin\nLike a hand I used to hold\n(Used to hold)\nBut the face is just a blur\n\n[Chorus]\nIt is a haunting of the senses\nA recognition without a name\nI am breathing in the memory\nOf a love that lost its shape\n(Lost its shape)\nStay a little longer\nIn this soft echo\n(Soft echo)\n\n[Verse 2]\nCedar wood and autumn rain\nThe scent is clinging to my collar\nI close my eyes to see you\nBut the image slips away\n(Slipping away)\nI only have the feeling left\n(Only the feeling)\n\n[Chorus]\nIt is a haunting of the senses\nA recognition without a name\nI am breathing in the memory\nOf a love that lost its shape\n(Lost its shape)\nStay a little longer\nIn this soft echo\n\n[Bridge]\nHow can I miss what I cannot see\nMy heart knows the rhythm\nEven if my mind is blank\nDon't leave me in the silence\n(Don't leave me)\nI surrender to the ghost of us\n(Surrender)\n\n[Chorus]\nIt is a haunting of the senses\nA recognition without a name\nI am breathing in the memory\nOf a love that lost its shape\n(Lost its shape)\nStay a little longer\nIn this soft echo\n\n[Outro]\n(Soft echo)\n(Just a trace)\nIt is all I have\n(Don't go)\nJust a trace of you\n(Mmm)\n(Stay)\n(Soft echo)",
+      "added_at": "2026-06-15"
+    },
+    {
+      "id": "track_1781516975729_2",
+      "title": "Thin Air",
+      "caption": "心と心の間に存在する「薄い空気」。触れることさえ許されない距離の中で感じる、感情的な喪失感。繊細で切ない夜明けの情景を表現する。",
+      "type": "vocal",
+      "duration": 173,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/Thin%20Air.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh)\n(Ooh)\n\n[Verse 1]\nThe linen is a desert between our skin\nEven though the air is thick and sweet\nI watch the slow rise of your chest\nA steady tide that never reaches the sand\nWe are lying within arm’s reach\nBut I feel the map expanding in the dark\nA quiet prayer for a touch\nThat used to come without a thought\n(Without a thought)\n\n[Chorus]\nQuiet breathing in the dark\n(Counting every second)\nA heavy grace we cannot hold\nI am losing the weight of you\n(Losing you)\nIn the space where the air goes thin\n(Where the air goes thin)\n\n[Verse 2]\nYou smell like the rain from this afternoon\nIt used to feel like a sanctuary\nNow it just feels like a memory\nVanishing before the sun comes up\nI try to match my lungs to yours\nSearching for that old syncopation\nBut your rhythm is a foreign language\nThat I am slowly starting to forget\n\n[Chorus]\nQuiet breathing in the dark\n(Counting every second)\nA heavy grace we cannot hold\nI am losing the weight of you\n(Losing you)\nIn the space where the air goes thin\n(Thin air)\n\n[Bridge]\nMaybe the silence is a teacher\n(Is it a teacher)\nShowing me how to stand alone\nWhile you are right beside me\nIt is holy and it is hollow\n(Hollow)\n(So hollow)\n\n[Outro]\nJust breath\n(Just breath)\nThe distance grows\n(It grows)\nInto the dark\n(Into the dark)\n(Ooh)\n(Wait for the light)\n(Thin air)\n(Ooh)",
+      "added_at": "2026-06-15"
+    },
+    {
+      "id": "track_1781516975729_3",
+      "title": "Pale Trace (Take 2)",
+      "caption": "水彩画のように薄れゆく痕跡たち。過ぎ去った時間の中で、痛みが徐々に淡く霞みながら消えていく過程を描いた、透明なノスタルジー。",
+      "type": "vocal",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/Pale%20Trace%20(Take%202).mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse 1]\nWatermark on the glass\nWhere the heat died\nPressed palm\nJust a thin film\n(Paper thin)\n(Cold)\nTrace the edge\nWith a blunt nail\nA dull ache\nIn the lung\nWaiting for the thaw\n(Wait for it)\n\n[Refrain]\nEndure the white\nCarrying the salt\nIt won't fade\nIt just gets clear\n(So clear)\n\n[Verse 2]\nSpine remembers\nGravity pulling\nHard to the left\nWhere you leaned\nHeavy and soft\nDamp wool\nSkin on skin\n(Still there)\nCounting breaths\nUntil the room\nStarts to tilt\nInto the past\n(Long ago)\n\n[Refrain]\nEndure the white\nCarrying the salt\nIt won't fade\nIt just gets clear\n(So clear)\n\n[Bridge]\nPressure in the throat\nLike swallowing ice\nTransparent\nCutting through\nHolding the shape\nOf what left\n(Hold it)\n(Keep it)\n\n[Outro]\nPale\nClear\n(Almost gone)\n(Gone)\n(Gone)",
+      "added_at": "2026-06-15"
+    },
+    {
+      "id": "track_1781516975729_4",
+      "title": "Heavy Quiet",
+      "caption": "沈黙そのものが物質を持つ瞬間。言葉では測れない距離感と、水面下でゆっくりと脈打つ感情の重さを表現した静かな情景。",
+      "type": "vocal",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/Heavy%20Quiet.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Mmm)\n\n[Verse]\nYou shifted your weight\nThe air felt heavy then\nI watched your pulse move\nIn the hollow of your neck\nYou didn't say a word\nBut the silence had a shape\nI’m still trying to hold it\nTrying to make it real\n\n[Pre-Chorus]\nAnd I wait for the shift\nAnd I feel for the heat\nIs it just in my head\nIs it just how you breathe\n\n[Chorus]\nWe are blurring at the edges\nI can’t see where you end\nIt’s a heavy kind of quiet\n(Heavy kind of quiet)\nKeep me under the surface\n(Under the surface)\n\n[Verse]\nYour hand brushed my sleeve\nA second too long to be accidental\nI’m reading into the space\nCounting the seconds you stay\nYou look away when I look up\nThe tension is a physical thing\nLike salt on the skin\nLike water in the lungs\n\n[Chorus]\nWe are blurring at the edges\nI can’t see where you end\nIt’s a heavy kind of quiet\n(Heavy kind of quiet)\nKeep me under the surface\n(Under the surface)\n\n[Bridge]\nAnd I look, and I miss\nAnd I want, and I wait\nYou are a blur in the dark\nA shape I can't quite name\n(I can't name)\n(I can't name)\n\n[Chorus]\nWe are blurring at the edges\nI can’t see where you end\nIt’s a heavy kind of quiet\n(Heavy kind of quiet)\nKeep me under the surface\n(Keep me under)\n\n[Outro]\n(Under the surface)\n(Heavy kind of quiet)\nI can't see where you end\n(Where you end)\n(Mmm)",
+      "added_at": "2026-06-15"
+    },
+    {
+      "id": "track_1781516975729_5",
+      "title": "The Missing Button",
+      "caption": "日常の喧騒を忘れ、心の拠り所となる「あなた」の確かな温もり。遠く離れた場所で求められる安らぎと深い繋がりを描き出す。",
+      "type": "vocal",
+      "duration": 165,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/The%20Missing%20Button.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Stay right here)\n(Right here)\n\n[Verse]\nTurned the engine off\nThe garage door settles with a thud\nSilk sheets are too cold when I’m solo\nBut you’re under the wool from that shop uptown\nWaiting for the comedown to start\nMy head is still spinning from the flight\nToo much altitude\nToo much recycled air\n\n[Chorus]\nJust hold me down\nLike the gravity I keep losing\nYour skin smells like cedar and rain\nDon’t let me float back to the ceiling\n(Stay steady)\n(Don't let go)\n\n[Verse]\nI’ve been in three time zones this week\nLiving out of a black Rimowa case\nEverything I touch feels like plastic\nUntil your hands find the small of my back\nTracing shapes I can’t name\nI don’t need the expensive wine tonight\nThe silence is finally soft\nYour chest moving against my shoulder\nIs the only clock I want to follow\n\n[Chorus]\nJust hold me down\nLike the gravity I keep losing\nYour skin smells like cedar and rain\nDon’t let me float back to the ceiling\n(Stay steady)\n(Keep me here)\n\n[Outro]\nNo more motion\nJust the weight of your arm\nAcross my hip\n(So heavy)\n(So safe)\nKeep me in the dark\nWhere it’s warm\n(Right here)\n(Don’t move)",
+      "added_at": "2026-06-15"
+    },
+    {
+      "id": "track_1781516975729_6",
+      "title": "The Blue Dark",
+      "caption": "都会の灯りを背に、二人きりで見上げる星空の下での語らい。秘めた想いと未来への戸惑いが混ざり合う、静かでロマンティックな夜明けのエチュード。",
+      "type": "vocal",
+      "duration": 171,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/The%20Blue%20Dark.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Yeah)\n\n[Verse 1]\nThe grass is cold through these old socks\nYou’re leaning back, looking at the stars\nI’m just tracing the line of your jaw\nThe air tastes like damp earth and salt\nQuiet enough to hear you breathe\nI guess I’m just caught in the moment\n\n[Pre-Chorus]\nI have this whole vision in my head\nOf us in a house with a proper garden\nMaybe a kitchen that actually fits two\nJust a thought I’m having right now\n\n[Chorus]\nBut I’m keeping it all to myself\n(Keeping it all)\nJust watching the sky with you\n(Watching with you)\nYeah, I’m keeping it all to myself\n(All to myself)\n\n[Verse 2]\nYou ask if I’m okay because I’m staring\nI just laugh and look back at the trees\nI won’t tell you about the names I picked\nOr how the kids would have your eyes\nThat’s way too much for a Tuesday night\nBetter to just stay right here, you know?\n\n[Chorus]\nSo I’m keeping it all to myself\n(Keeping it all)\nJust watching the sky with you\n(Watching with you)\nYeah, I’m keeping it all to myself\n(All to myself)\n\n[Bridge]\nIt’s better this way, I think\nNo expectations to ruin the mood\nI’ll just stay here in the blue dark\nLetting the maybe stay quiet\nWhile you count the satellites \n\n[Outro]\nYeah, I’m fine right here\n(Right here)\nIn the silence\n(In the silence)\nKeeping it all\n(All to myself)\nJust us and the dark\n(Just us)\n(Mmm)",
+      "added_at": "2026-06-15"
+    },
+    {
+      "id": "track_1781516975729_7",
+      "title": "The Still Kingdom",
+      "caption": "外部の視線から自分を隔て、心の内なる場所を守り抜く。自己との対話を通じて真の平和と完全な自己を取り戻す、静謐な旅路。",
+      "type": "vocal",
+      "duration": 175,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/The%20Still%20Kingdom.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Stillness)\n\n[Verse 1]\nThe world demands a version of my face\nThat I can no longer carry for them\nI step back into the cool water\nWhere the rain does not feel heavy\nI am turning the volume down now\n\n[Pre-Chorus]\nClosing the heavy doors one by one\nUntil the outside is a memory\n(Leaving it all)\n(Letting it go)\n\n[Chorus]\nI have built a sanctuary inside\nWhere the air is heavy and sweet\nA royal peace upon my brow\nI am finally whole and complete\n(So whole)\n\n[Verse 2]\nIt took years to plant these trees\nTo keep the loud voices from the root\nI do not need to explain my breath\nOr why I choose to stay quiet\nThe soil here is rich and mine\n\n[Pre-Chorus]\nClosing the heavy doors one by one\nUntil the outside is a memory\n(Leaving it all)\n(Letting it go)\n\n[Chorus]\nI have built a sanctuary inside\nWhere the air is heavy and sweet\nA royal peace upon my brow\nI am finally whole and complete\n(So whole)\n\n[Bridge]\nLet the rest of it fall away\nI am not lost I am found\n(Found within)\nDeep in the roots of my soul\n(Oooooh)\n\n[Chorus]\nI have built a sanctuary inside\nWhere the air is heavy and sweet\nA royal peace upon my brow\nI am finally whole and complete\n\n[Outro]\nJust the piano and the breath\nSovereign in my own house\n(My own house)\n(Peace)\nSafe now\n(Safe)",
+      "added_at": "2026-06-15"
+    },
+    {
+      "id": "track_1781516975729_8",
+      "title": "Sky Pull",
+      "caption": "空へと軽やかに溶け出すような感情を謳い上げた、高揚感のあるボーカルワーク。浮遊するような解放感を表現するサウンドスケープ。",
+      "type": "vocal",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/Sky%20Pull.mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse 1]\nBlue ice on tongue\nFloating on the floor\nLines become circles\nSlow pulse in the vein\n(Slow pulse in the vein)\n\n[Chorus]\nLet the sky pull\nUntil I am gone\nLet the sky pull\n(Falling up now)\nLet the sky pull\n(Falling up now)\n\n[Verse 2]\nNo weight on bone\nDrifting past the gate\nEvery color is soft\nTurning inside out\n(Inside out)\n\n[Chorus]\nLet the sky pull\nUntil I am gone\nLet the sky pull\n(Falling up now)\nLet the sky pull\n(Falling up now)\n\n[Bridge]\nAnd the wind\nAnd the salt\nAnd the deep\nAnd the open\n(And the open)\n\n[Chorus]\nLet the sky pull\nUntil I am gone\nLet the sky pull\n(Falling up now)\nLet the sky pull\n(Falling up now)\n\n[Outro]\nOnly the breath\nOnly the breath\n(Stay here)\nOnly the breath\n(Stay here)\nOnly the breath\nOnly the breath\n(Stay here)",
+      "added_at": "2026-06-15"
+    },
+    {
+      "id": "track_1781516975729_9",
+      "title": "Settled In (Acoustic)",
+      "caption": "穏やかな朝の光の中、自分自身と静かに再会する時間。迷いを手放し、「私」という場所へ落ち着きを取り戻す過程を綴ったアコースティックな記録。",
+      "type": "vocal",
+      "duration": 179,
+      "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/Settled%20In%20(Acoustic).mp3",
+      "tags": [
+        "R&B",
+        "静か",
+        "生録音風",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Yeah)\n(Finally)\nIt is that time right before the sun shows up\nWhen everything is just... still\nI am not running anymore\nI am right where I should be\n\n[Verse 1]\nThe sky is turning a pale shade of blue\nI am sitting out on the back porch\nWatching the dew settle on the grass\nFor the first time in years I am not waiting\nNot waiting for a sign or a reason to stay\nI used to think I needed a map to find peace\nBut it was always sitting right under my skin\nI am breathing slow and the air feels cold\nIt feels like a clean start\nLike I am finally meeting myself for real\n\n[Chorus]\nI am coming home to who I am\n(Coming home)\nNo more searching in the dark\n(No more)\nI got everything I need right here\nIt is a quiet kind of power\nI am settled in my own spirit\n(So settled)\nAnd I am not leaving again\n\n[Verse 2]\nI remember when I used to be so loud\nTrying to prove that I was worth the space\nI was chasing things that did not want me back\nBut the silence this morning is a gift\nI do not have to say a single word\nTo know that I have grown through the mess\nThe struggle made the foundation solid\nI am standing on ground I built myself\nAnd it does not shake when the wind hits\nI am solid\n(I am so solid now)\n\n[Chorus]\nI am coming home to who I am\n(Coming home)\nNo more searching in the dark\n(No more)\nI got everything I need right here\nIt is a quiet kind of power\nI am settled in my own spirit\n(So settled)\nAnd I am not leaving again\n\n[Bridge]\nWisdom is not about having all the answers\nIt is about being okay with the questions\nI am not scared of what comes next\nThe light is breaking over the trees\nAnd I am wide awake for it\n(Wide awake)\n(I see it now)\n\n[Chorus]\nI am coming home to who I am\n(Coming home)\nNo more searching in the dark\n(No more)\nI got everything I need right here\nIt is a quiet kind of power\nI am settled in my own spirit\n(So settled)\nAnd I am not leaving again\n\n[Outro]\nJust me and the morning\n(Me and the morning)\nI am finally back\n(So good to be back)\nYeah\n(Mmm)\nIt is a long time coming\nBut I am home\n(Home)\n(Yeah)",
+      "added_at": "2026-06-15"
     }
   ]
 }
