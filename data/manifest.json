@@ -79,6 +79,13 @@
       "content_url": "contents/articles/code_artifact.html",
       "date": "2026-06-14",
       "is_visible": true
+    },
+    {
+      "id": "article_20260615171158",
+      "title": "SPAのSEO",
+      "content_url": "contents/articles/seoblog-1.html",
+      "date": "2026-06-15",
+      "is_visible": true
     }
   ]
 }
