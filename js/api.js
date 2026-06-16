@@ -56,6 +56,7 @@ export async function fetchSiteData(onProgress) {
           id: meta.id,
           name: meta.name,
           fileName: meta.fileName,
+          isLoaded: false,
           albums: [],
           tracks: [],
           categories: []
@@ -67,9 +68,11 @@ export async function fetchSiteData(onProgress) {
         const res = await fetch(`${dataPath}/${firstThemeMeta.fileName}`);
         if (res.ok) {
           Object.assign(themes[0], await res.json());
+          themes[0].isLoaded = true;
         }
       } catch (e) {
         console.warn(`Failed to fetch theme file: ${firstThemeMeta.fileName}`, e);
+        themes[0].isLoaded = true;
       }
 
       if (manifest.theme_files.length > 1) {
@@ -82,10 +85,12 @@ export async function fetchSiteData(onProgress) {
               const res = await fetch(`${dataPath}/${meta.fileName}`);
               if (res.ok) {
                 Object.assign(themes[themeIndex], await res.json());
+                themes[themeIndex].isLoaded = true;
                 if (onProgress) onProgress();
               }
             } catch (e) {
               console.warn(`Failed to fetch theme file: ${meta.fileName}`, e);
+              themes[themeIndex].isLoaded = true;
             }
           }
         }, 0);

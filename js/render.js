@@ -165,7 +165,18 @@ export function renderMainContent() {
     renderAlbumDetail(state.currentAlbum);
   } else {
     const theme = state.data.themes.find(t => t.id === state.currentThemeId);
-    if (theme) renderAlbumGrid(theme);
+    if (theme) {
+      if (!theme.isLoaded) {
+        const mainContent = document.getElementById('main-content');
+        mainContent.innerHTML = `
+          <div class="flex justify-center items-center h-64">
+            <div class="w-10 h-10 border-4 border-gray-200 dark:border-gray-700 border-t-gray-800 dark:border-t-gray-100 rounded-full animate-spin"></div>
+          </div>
+        `;
+      } else {
+        renderAlbumGrid(theme);
+      }
+    }
   }
 }
 
