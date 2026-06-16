@@ -224,7 +224,7 @@
         "track_1781603295993_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\R&B\\Afterglow – Ending R&B",
-      "type": ""
+      "type": "vocal"
     }
   ],
   "tracks": [
@@ -1739,7 +1739,7 @@
       "id": "track_1781603295990_0",
       "title": "The Quiet Part",
       "caption": "星が沈む夜、日常の喧騒から切り離された二人の穏やかな時間。儚くも温かい空気感を綴る一枚絵のような情景描写。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 179,
       "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/The%20Quiet%20Part.mp3",
       "tags": [
@@ -1756,7 +1756,7 @@
       "id": "track_1781603295993_1",
       "title": "On The Table",
       "caption": "重荷をテーブルに置き、ただ時間を手放すような感覚。深い夜が訪れ、すべてから解きほぐされる静謐な安らぎの瞬間。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 175,
       "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/On%20The%20Table.mp3",
       "tags": [
@@ -1773,7 +1773,7 @@
       "id": "track_1781603295993_2",
       "title": "Orange Pulse",
       "caption": "街の雑音を洗い流し、オレンジ色の光に包まれる。心の波が穏やかになり、自分自身と対話する静かな旅路のワンシーン。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 178,
       "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/Orange%20Pulse.mp3",
       "tags": [
@@ -1790,7 +1790,7 @@
       "id": "track_1781603295993_3",
       "title": "The Price Of Peace",
       "caption": "言葉では語れない真実の重さ。抱え込まざるを得ない沈黙と、平和を守り抜くための鎮魂的な調べが響き渡る。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 180,
       "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/The%20Price%20of%20Peace.mp3",
       "tags": [
@@ -1807,7 +1807,7 @@
       "id": "track_1781603295993_4",
       "title": "Wind Closing",
       "caption": "夜明け前、過ぎ去った時間への優しいさよならを告げる風の調べ。全てを受け止め、穏やかな解放感をもたらすコーラスワークに包まれる。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 170,
       "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/Wind%20Closing.mp3",
       "tags": [
@@ -1824,7 +1824,7 @@
       "id": "track_1781603295993_5",
       "title": "Velvet Sinking",
       "caption": "時間が溶けていくような感覚。重力から解き放たれた「ベルベットのような」深淵な静けさの中で、忘れられない瞬間に目撃される物語。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 181,
       "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/Velvet%20Sinking.mp3",
       "tags": [
@@ -1841,7 +1841,7 @@
       "id": "track_1781603295993_6",
       "title": "The Long Breath",
       "caption": "深い呼吸が促す再生の儀式。過去の喧騒を洗い流し、再び自分だけの心の平穏な場所から歩き出す静かな決意。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 174,
       "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/The%20Long%20Breath.mp3",
       "tags": [
@@ -1858,7 +1858,7 @@
       "id": "track_1781603295993_7",
       "title": "Pale Bruise",
       "caption": "夜明け直前の空気。柔らかな光と残り香が混ざり合うような、非常に繊細で儚い情緒を表現した情景描写。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 173,
       "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/Pale%20Bruise.mp3",
       "tags": [
@@ -1875,7 +1875,7 @@
       "id": "track_1781603295993_8",
       "title": "The Rising Blue",
       "caption": "静まり返った水面が青く輝き出す様子を描写。すべてを包み込む深遠な安らぎを感じさせる、広がりと奥行きを持つサウンドスケープ。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 167,
       "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/The%20Rising%20Blue.mp3",
       "tags": [
@@ -1892,7 +1892,7 @@
       "id": "track_1781603295993_9",
       "title": "Carry The Heat",
       "caption": "深い沈黙の中で燃え続ける内なる光をテーマに。その熱が暗闇を照らし、新たな始まりへ向かうための希望の導きとなる情景。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 178,
       "full_url": "https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/Carry%20The%20Heat.mp3",
       "tags": [
