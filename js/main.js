@@ -18,7 +18,7 @@ export const state = {
 window.state = state;
 
 function updateMetaTags(url) {
-  let title = "🎼 Neura Music Archive - AI BGM Portal & Creator Tools";
+  let title = "Neura Music Archive - AI BGM Portal & Creator Tools";
   let description = "AIが生成した商用利用可能・クレジット表記不要の高品質なBGMを無料ダウンロードできる「Neura Music Archive」。動画や配信用BGMに加え、OBS等で使える便利なHTML時計などクリエイター向けツールも公開中。";
 
   if (state.currentAlbum) {
