@@ -58,8 +58,8 @@
   </header>
 
   <div class="flex-1 flex flex-col md:flex-row overflow-hidden">
-    <aside class="w-[240px] bg-[#fafafa] dark:bg-[#1c1c1c] border-r dark:border-gray-800 overflow-y-auto hidden md:block flex-shrink-0 pb-24">
-      <div class="p-6">
+    <aside class="w-[240px] bg-[#fafafa] dark:bg-[#1c1c1c] border-r dark:border-gray-800 overflow-y-auto hidden md:block flex-shrink-0 pb-24 flex flex-col">
+      <div class="p-6 flex-1 flex flex-col">
         <h2 class="text-sm font-bold text-gray-400 tracking-wider mb-4 uppercase">Themes</h2>
         <ul class="space-y-1" id="theme-list">
         </ul>
@@ -70,7 +70,15 @@
         <ul class="space-y-1" id="article-list">
         </ul>
         
-        <div id="sidebar-ad-container" class="mt-8"></div>
+        <div id="sidebar-ad-container" class="mt-auto pt-10 flex justify-center w-full">
+          <ins class="adsbygoogle"
+               style="display:inline-block;width:192px;height:450px"
+               data-ad-client="ca-pub-2117398261086059"
+               data-ad-slot="1623642236"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
       </div>
     </aside>
 
