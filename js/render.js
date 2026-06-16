@@ -531,6 +531,10 @@ export function renderAlbumDetail(album) {
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
             選択してDL
           </button>
+          <button class="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-5 py-2.5 rounded-full text-[15px] font-bold hover:bg-gray-200 dark:hover:bg-gray-700 transition shadow-sm flex items-center gap-2" onclick="navigator.clipboard.writeText(window.location.href); const t=this.querySelector('span'); const orig=t.innerText; t.innerText='Copied!'; setTimeout(()=>t.innerText=orig, 2000);">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            <span>Share</span>
+          </button>
         `;
       }
 
