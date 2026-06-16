@@ -19,7 +19,9 @@ export function initPlayer() {
         state.isPlaying = true;
       }
       updatePlayerUI();
-      renderMainContent();
+      if (state.currentMode !== 'tool' && state.currentMode !== 'article') {
+        renderMainContent();
+      }
     });
   }
 
@@ -174,7 +176,9 @@ export function playTrack(trackId, title, type, duration, artUrl) {
     }
   }
   updatePlayerUI();
-  renderMainContent();
+  if (state.currentMode !== 'tool' && state.currentMode !== 'article') {
+    renderMainContent();
+  }
 }
 
 function updatePlayerUI() {
@@ -220,7 +224,9 @@ export function playNextTrack() {
   if (!currentTheme || !currentTheme.albums) {
     state.isPlaying = false;
     updatePlayerUI();
-    renderMainContent();
+    if (state.currentMode !== 'tool' && state.currentMode !== 'article') {
+      renderMainContent();
+    }
     return;
   }
 
@@ -267,7 +273,9 @@ export function playNextTrack() {
   } else {
     state.isPlaying = false;
     updatePlayerUI();
-    renderMainContent();
+    if (state.currentMode !== 'tool' && state.currentMode !== 'article') {
+      renderMainContent();
+    }
 
     const footerDlBtn = document.getElementById('footer-dl-btn');
     if (footerDlBtn) {
@@ -358,7 +366,9 @@ export function playPrevTrack() {
   } else {
     state.isPlaying = false;
     updatePlayerUI();
-    renderMainContent();
+    if (state.currentMode !== 'tool' && state.currentMode !== 'article') {
+      renderMainContent();
+    }
 
     const footerDlBtn = document.getElementById('footer-dl-btn');
     if (footerDlBtn) {
