@@ -109,16 +109,16 @@ export function renderThemes() {
   };
 
   const createItemHtml = (item, type, isMobile) => {
-    if (item.is_visible === false) return '';
-    const isActive = state.currentMode === type && state.currentContentId === item.id;
-    const activeClass = isActive
-      ? (isMobile ? 'text-gray-900 dark:text-gray-100 font-bold border-b-2 border-gray-900 dark:border-gray-100 pb-1' : 'bg-gray-100 dark:bg-[#4a4a4a] text-gray-900 dark:text-gray-100 font-bold rounded-md')
-      : (isMobile ? 'text-gray-500 dark:text-gray-400 pb-1' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#404040] hover:text-gray-900 dark:hover:text-gray-100 rounded-md');
-    const onClick = type === 'tool' ? `selectTool('${item.id}')` : `selectArticle('${item.id}')`;
-    return isMobile
-      ? `<button class="text-sm transition flex items-center gap-1.5 ${activeClass}" onclick="${onClick}">${item.title}</button>`
-      : `<li><button class="w-full text-left px-3 py-2 text-sm transition flex justify-between items-center ${activeClass}" onclick="${onClick}"><span>${item.title}</span></button></li>`;
-  };
+        if (item.is_visible === false) return '';
+        const isActive = state.currentMode === type && state.currentContentId === item.id;
+        const activeClass = isActive
+          ? (isMobile ? 'text-gray-900 dark:text-gray-100 font-bold border-b-2 border-gray-900 dark:border-gray-100 pb-1' : 'bg-gray-100 dark:bg-[#4a4a4a] text-gray-900 dark:text-gray-100 font-bold rounded-md')
+          : (isMobile ? 'text-gray-500 dark:text-gray-400 pb-1' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#404040] hover:text-gray-900 dark:hover:text-gray-100 rounded-md');
+        const onClick = type === 'tool' ? `selectTool('${item.id}')` : `selectArticle('${item.id}')`;
+        return isMobile
+          ? `<button class="text-sm transition flex items-center gap-1.5 ${activeClass}" onclick="${onClick}">${item.title}</button>`
+          : `<li><button class="w-full text-left px-3 py-1 text-sm transition flex justify-between items-center ${activeClass}" onclick="${onClick}"><span>${item.title}</span></button></li>`;
+      };
 
   if (themeList) themeList.innerHTML = state.data.themes.map(t => createThemeHtml(t, false)).join('');
   
