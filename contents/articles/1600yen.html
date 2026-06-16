@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>年間1,600円の正体。維持費ほぼゼロで音楽配布サイトを運用する仕組み | Neura Music Archive</title>
+  <meta name="description" content="大量の音楽ファイルを置いて自由にダウンロードできるWebサイト。毎月の維持費がすごく高いと思われがちですが、実は年間1,600円（ドメイン代のみ）で運用しています。専門知識がなくても分かる、モダンなサイト運用の仕組みについての解説です。">
+
+  <link rel="canonical" href="https://neura-music.com/articles/annual-1600-yen-site.html">
+
+  <meta property="og:title" content="年間1,600円の正体。維持費ほぼゼロで音楽配布サイトを運用する仕組み">
+  <meta property="og:description" content="大量の音楽ファイルを置いて自由にダウンロードできるWebサイト。毎月の維持費がすごく高いと思われがちですが、実は年間1,600円（ドメイン代のみ）で運用しています。専門知識がなくても分かる、モダンなサイト運用の仕組みについての解説です。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://neura-music.com/articles/annual-1600-yen-site.html">
+  <meta property="og:image" content="https://neura-music.com/assets/og-image-seo.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="年間1,600円の正体。維持費ほぼゼロで音楽配布サイトを運用する仕組み">
+  <meta name="twitter:description" content="大量の音楽ファイルを置いて自由にダウンロードできるWebサイト。毎月の維持費がすごく高いと思われがちですが、実は年間1,600円（ドメイン代のみ）で運用しています。専門知識がなくても分かる、モダンなサイト運用の仕組みについての解説です。">
+  <meta name="twitter:image" content="https://neura-music.com/assets/og-image-seo.jpg">
+  <script src="https://cdn.tailwindcss.com" nonce="MTc3MTMzODM4OCwxNDQ4ODMwNDMx"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <script nonce="MTc3MTMzODM4OCwxNDQ4ODMwNDMx">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Noto Sans JP', 'sans-serif'],
+            mono: ['Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-feature-settings: "palt";
+    }
+
+    /* スクロールバーのカスタマイズ（モノトーン調） */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .dark ::-webkit-scrollbar-track {
+      background: #181818;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background: #27272a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #e4e4e7;
+      border-radius: 3px;
+    }
+
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d4d4d8;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-white dark:bg-[#181818] text-slate-800 dark:text-zinc-200 font-sans antialiased selection:bg-slate-900 selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-200">
+
+  <div class="fixed top-4 right-4 z-50">
+
+  </div>
+
+  <div class="min-h-screen flex flex-col">
+
+    <header class="border-b border-slate-100 dark:border-zinc-900 sticky top-0 bg-white/80 dark:bg-black/80 backdrop-blur-md z-40">
+      <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-end">
+        <span class="text-[10px] font-mono text-slate-400 dark:text-zinc-600 tracking-wider">DEVELOPER BLOG</span>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-3xl mx-auto px-6 py-10 md:py-16 w-full space-y-12 md:space-y-16">
+
+      <article class="space-y-8">
+        <header class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-[10px] font-bold text-slate-600 dark:text-zinc-400 tracking-wider uppercase">
+              DIARY & DEV
+            </span>
+            <span class="text-xs text-slate-400 dark:text-zinc-500 font-mono">2026.06.16</span>
+          </div>
+          
+          <h1 class="text-2xl md:text-3.5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-snug">
+            年間1,600円の正体。維持費ほぼゼロで音楽配布サイト運用の仕組み
+          </h1>
+
+          <div class="flex items-center gap-4 text-xs text-slate-500 dark:text-zinc-400 pt-1">
+            <div class="flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-slate-900 dark:bg-zinc-800 flex items-center justify-center text-[10px] font-bold text-white font-mono">N</span>
+              <span>NMA Dev Team</span>
+            </div>
+            <span>•</span>
+            <span>読了時間: 約3分</span>
+          </div>
+        </header>
+
+        <section class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+          <p>
+            インターネット上で独自のホームページやサービスを運営する場合、多くの人は「毎月数千円の維持費がかかる」というイメージを持つ。特に、大量の音楽ファイルを保管し、それを自由に再生・ダウンロードさせるようなサイトであれば、なおさら高額なサーバー代や通信課金が発生するように思える。
+          </p>
+          <p>
+            しかし、この音楽サイト「Neura Music Archive」の純粋な固定費を計算してみると、<strong>年間で約1,600円</strong>しかかかっていない。月換算すると130円ほど、つまり自動販売機の缶ジュース1本分程度のコストである。
+          </p>
+          <p>
+            最新のインターネットインフラを適切に組み合わせることで、なぜこれほどの低コスト運用が可能なのか。専門知識がなくても全貌が分かるように、その仕組みと「どうしても削れない必要経費」の正体について整理してみた。
+          </p>
+        </section>
+
+        <hr class="border-slate-100 dark:border-zinc-900">
+
+        <div class="space-y-10 md:space-y-12">
+          
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              1. 唯一の固定費「1,600円」は、見栄えのためではなくシステム上の必須条件
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                このサイトにかかっている年間1,600円という費用の正体は、「neura-music.com」という独自の文字列（カスタムドメイン）を維持するための登録料である。
+              </p>
+              <p>
+                「無料の初期ドメインを使えば完全0円にできるのでは？」と思われるかもしれないが、この音楽サイトの構造上、カスタムドメインは絶対に省略することができない。
+              </p>
+              <p>
+                当サイトのすべての楽曲ファイル（mp3）は、「Cloudflare R2」という大容量データ専用のクラウドストレージに保管されている。このストレージに保存したファイルを、Webサイトのプレイヤーで再生したり、ユーザーがダウンロードできるように外部公開するためには、<strong>「独自のカスタムドメインをストレージに紐付けること」がシステム上の必須の制約</strong>になっている。無料の初期状態のままでは、外部からアクセスするための公開URL自体が発行できない仕組みなのだ。
+              </p>
+              <p>
+                つまり、この1,600円は単に「サイトのURLを格好よく見せるため」のものではなく、音楽配布サイトとして機能させるためにどうしてもケチることのできない、唯一の「必須原価」ということになる。
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              2. サイトを置く「土地代（サーバー代）」が0円の理由
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                ドメイン代以外のコスト、すなわちサイトを表示するためのシステムサーバー代は完全に0円である。
+              </p>
+              <p>
+                これは、サイトのホスティングに「Cloudflare Pages」という近代的なサービスを利用しているためだ。このサイトは、複雑なサーバー処理を必要としない「静的サイト（SPA）」と呼ばれる設計で組まれており、純粋なHTML、CSS、JavaScriptだけで動作している。このような構成であれば、個人の運用範囲内において、どれだけアクセスが集まっても基本的に無料で土地を貸してくれるサービスが存在するため、従来のレンタルサーバーのような月額費用は発生しない。
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              3. 音楽サイト最大の壁「ダウンロード通信量」を無料枠で解決する
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                音楽配布サイトを運営する上で、最も高額な追加課金が発生しやすいポイントが、ユーザーがファイルを落とす際の「データ転送量（通信量）」である。普通のサーバーであれば、大量のダウンロードが発生した時点でメーターが回り、従量課金の手数料が跳ね上がってしまう。
+              </p>
+              <p>
+                前述した「Cloudflare R2」というストレージが画期的なのは、他社の多くのクラウドサービスと違い、<strong>「データのダウンロードに伴う転送の手数料（Egress料金）が完全無料」</strong>という仕様になっている点だ。
+              </p>
+              <p>
+                最初に「公開URLを作るため」のカスタムドメイン代（1,600円）さえ投資しておけば、その後どれだけ多くのファイルがダウンロードされようとも、転送量による追加料金の請求に怯える必要が一切ないシステムが完成する。
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              まとめ：低コスト構造がもたらす「維持の軽さ」
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                もしこれが、毎月数千円の維持費が口座から引かれ続ける一般的な構成であれば、「早くアクセスを増やさなければ大赤字になる」という無駄なプレッシャーを抱えることになっていただろう。
+              </p>
+              <p>
+                しかし、年間1,600円（月換算133円）という限界まで削ぎ落としたコスト構造であれば、仮に長期にわたってアクセスが少ない時期があろうとも、完全に放置しようとも、お財布にも精神的にも実質的な痛手は皆無と言える。
+              </p>
+              <p>
+                この「圧倒的な維持の軽さ」こそが、個人が趣味の延長としてWebサイトを長く維持し、気が向いたときに少しずつアップデートを重ねていくための、最も強力なライフハックなのかもしれない。
+              </p>
+            </div>
+          </section>
+
+        </div>
+
+      </article>
+
+      <hr class="border-slate-200 dark:border-zinc-800">
+
+      <section id="share" class="space-y-4">
+        <div class="space-y-1">
+          <h2 class="text-sm font-bold text-slate-800 dark:text-zinc-200 tracking-tight flex items-center gap-2">
+            Share This Article
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-zinc-400">
+            この記事が役立ちましたら、SNS等でのシェアをお願いいたします。
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2">
+          <a href="https://twitter.com/share?url=https%3A%2F%2Fneura-music.com%2Farticles%2Fannual-1600-yen-site.html&text=%E5%B9%B4%E9%96%931%2C600%E5%86%86%E3%80%AF%E6%AD%A3%E4%BD%93%E3%80%82%E7%B5%AD%E6%8C%81%E8%B2%BB%E3%81%BB%E3%81%BC%E3%82%BC%E3%83%AD%E3%81%A7%E9%9F%B3%E6%A5%BD%E9%85%8D%E5%B8%83%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E9%81%8B%E7%94%A8%E3%81%99%E3%82%8B%E3%81%97%E3%81%8F%E3%81%BF" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-900 hover:border-slate-300 dark:hover:border-zinc-700 transition-all text-xs font-semibold text-slate-800 dark:text-zinc-200">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.244 2.25h3.308l-4.717 5.392L22.42 22.5h-6.653l-5.207-8.7-5.962 8.7H1.368l5.221-5.972L1.252 2.25h6.823l4.7 6.22 5.469-6.22H18.244zM17.08 20.528h1.832L7.08 4.145H5.113L17.08 20.528z"/>
+            </svg>
+            X (Twitter)
+          </a>
+
+          <a href="https://bsky.app/intent/compose?text=%E5%B9%B4%E9%96%931%2C600%E5%86%86%E3%80%AF%E6%AD%A3%E4%BD%93%E3%80%82%E7%B5%AD%E6%8C%81%E8%B2%BB%E3%81%BB%E3%81%BC%E3%82%BC%E3%83%AD%E3%81%A7%E9%9F%B3%E6%A5%BD%E9%85%8D%E5%B8%83%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E9%81%8B%E7%94%A8%E3%81%99%E3%82%8B%E3%81%97%E3%81%8F%E3%81%BF%20https%3A%2F%2Fneura-music.com%2Farticles%2Fannual-1600-yen-site.html" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-900 hover:border-slate-300 dark:hover:border-zinc-700 transition-all text-xs font-semibold text-slate-800 dark:text-zinc-200">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M111.8 77.2C151.7 114.7 197.8 181 228.6 226.6c2.7 4 4.1 8.8 4.1 13.7v10.5c0 4.9-1.4 9.7-4.1 13.7-30.8 45.6-76.9 111.9-116.8 149.4C71.7 451.3 16 480 16 381.1c0-43.6 27.5-84.4 69.4-106C42.8 253.5 16 212.7 16 169.1 16 70.2 71.7 99 111.8 77.2zm288.4 0c40.1 21.8 95.8-7 95.8 91.9 0 43.6-26.8 84.4-69.4 106 41.9 21.6 69.4 62.4 69.4 106 0 98.9-55.7 70.2-95.8 132.8-39.9-37.5-86-103.8-116.8-149.4-2.7-4-4.1-8.8-4.1-13.7V250.8c0-4.9 1.4-9.7 4.1-13.7 30.8-45.6 76.9-111.9 116.8-149.4z"/>
+            </svg>
+            Bluesky
+          </a>
+
+          <a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fneura-music.com%2Farticles%2Fannual-1600-yen-site.html" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-900 hover:border-slate-300 dark:hover:border-zinc-700 transition-all text-xs font-semibold text-slate-800 dark:text-zinc-200">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 5.518 2 9.854c0 3.864 3.54 7.105 8.318 7.734.324.07.765.214.876.544.1.298.066.764.032 1.066l-.141 1.012c-.042.302-.204 1.18 1.135.534 1.338-.646 5.865-3.486 7.994-5.967C21.36 13.568 22 11.815 22 9.854 22 5.518 17.52 2 12 2zm4.184 10.155h-1.285a.311.311 0 01-.311-.311V7.935a.311.311 0 01.311-.311h1.285a.311.311 0 01.311.311v1.909h1.018a.311.311 0 01.311.311v1.1c0 .17-.14.31-.311.31h-1.319zm-3.099 0h-1.285a.311.311 0 01-.311-.311V7.935a.311.311 0 01.311-.311h1.285a.311.311 0 01.311.311v3.909c0 .17-.14.31-.311.31zm-2.091 0h-1.285a.311.311 0 01-.311-.311v-1.78l-1.422-2.1c-.046-.07-.055-.16-.02-.23.036-.08.115-.13.2-.13h1.285a.311.311 0 01.258.156l.872 1.411V7.935c0-.17.14-.31.311-.31h1.285c.17 0 .31.14.31.311v3.909c0 .17-.14.31-.31.31h-.28zm-4.708 0H5h-1.285a.311.311 0 01-.311-.311V7.935a.311.311 0 01.311-.311h1.285a.311.311 0 01.311.311v1.909h1.018c.17 0 .31.14.31.311v1.1c0 .17-.14.31-.311.31z"/>
+            </svg>
+            LINE
+          </a>
+
+          <button onclick="copyShareLink(this)" data-share-url="https://neura-music.com/articles/annual-1600-yen-site.html"
+            class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-slate-50 dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 hover:bg-slate-100 dark:hover:bg-zinc-900 hover:border-slate-300 dark:hover:border-zinc-700 transition-all text-xs font-semibold text-slate-800 dark:text-zinc-200 focus:outline-none">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+            </svg>
+            <span class="share-btn-text">Copy Link</span>
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2117398261086059"
+     crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2117398261086059"
+         data-ad-slot="5122704434"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <footer
+      class="bg-slate-50 dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-900 py-8 text-center text-xs text-slate-500 dark:text-zinc-500 space-y-1.5 relative z-10">
+      <p>Neura Music Archive (NMA) — ロイヤリティフリー音楽アーカイブ</p>
+      <p class="font-mono">&copy; 2026 Neura Music Archive</p>
+    </footer>
+  </div>
+
+  <script>
+    function copyShareLink(button) {
+      const url = button.getAttribute('data-share-url') || window.location.href;
+      
+      // テキストコピーの実行
+      const tempTextArea = document.createElement("textarea");
+      tempTextArea.value = url;
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      
+      let copied = false;
+      try {
+        // iframe制約に対応するフォールバック処理
+        document.execCommand('copy');
+        copied = true;
+      } catch (err) {
+        navigator.clipboard.writeText(url).then(() => {
+          copied = true;
+        }).catch(() => {
+          copied = false;
+        });
+      }
+      document.body.removeChild(tempTextArea);
+
+      // UIフィードバックの適用
+      const btnText = button.querySelector('.share-btn-text');
+      const originalText = btnText.innerText;
+      
+      if (copied) {
+        btnText.innerText = "Copied!";
+        button.classList.add("border-emerald-500", "text-emerald-500", "dark:border-emerald-600", "dark:text-emerald-400");
+        button.classList.remove("border-slate-200", "dark:border-zinc-800");
+        
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          button.classList.remove("border-emerald-500", "text-emerald-500", "dark:border-emerald-600", "dark:text-emerald-400");
+          button.classList.add("border-slate-200", "dark:border-zinc-800");
+        }, 2000);
+      }
+    }
+  </script>
+
+</body>
+
+</html>
