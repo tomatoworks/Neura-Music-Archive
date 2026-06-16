@@ -112,6 +112,17 @@ function syncStateFromURL() {
 
 async function init() {
   const data = await fetchSiteData(() => {
+    if (state.currentMode === 'theme' && state.currentThemeId && !state.currentAlbum) {
+      const pathParts = window.location.pathname.split('/').filter(p => p);
+      const albumId = new URLSearchParams(window.location.search).get('album') || (pathParts[2] === 'album' ? pathParts[3] : null);
+      if (albumId && state.data && state.data.themes) {
+        const themeData = state.data.themes.find(t => t.id === state.currentThemeId);
+        if (themeData && themeData.albums) {
+          state.currentAlbum = themeData.albums.find(a => a.id === albumId) || null;
+        }
+      }
+    }
+
     renderThemes();
     if (state.searchQuery || state.currentMode === 'theme') {
       renderMainContent();
