@@ -45,9 +45,16 @@
   "tools": [
     {
       "id": "tool_20260527171110",
-      "title": "html clock",
+      "title": "CLOCK GEN",
       "content_url": "https://cdn.neura-music.com/tools/tools_obs_html_clock_generator.html",
       "date": "2026-06-12",
+      "is_visible": true
+    },
+    {
+      "id": "tool_20260617170241",
+      "title": "BEST10 GEN",
+      "content_url": "https://cdn.neura-music.com/tools/flipper_generator.html",
+      "date": "2026-06-18",
       "is_visible": true
     },
     {
