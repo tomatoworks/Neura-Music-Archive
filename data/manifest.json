@@ -63,6 +63,13 @@
       "content_url": "contents/tools/neuratube/neuratube_introduction_user_manual.html",
       "date": "2026-06-14",
       "is_visible": true
+    },
+    {
+      "id": "tool_20260617181151",
+      "title": "BEST10発表！",
+      "content_url": "contents/tools/best10/best_10_flipper.html",
+      "date": "2026-06-18",
+      "is_visible": true
     }
   ],
   "articles": [
