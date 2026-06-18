@@ -24,6 +24,14 @@
         "album_1781516916663",
         "album_1781595273791"
       ]
+    },
+    {
+      "id": "cat_1781775909905",
+      "name": "JAZZ",
+      "caption": "ピアノやウッドベースを中心に、静かな時間や夜の作業にも使いやすい構成にしています。",
+      "albums": [
+        "album_1781775942038"
+      ]
     }
   ],
   "albums": [
@@ -224,6 +232,27 @@
         "track_1781603295993_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\R&B\\Afterglow – Ending R&B",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1781775942038",
+      "title": "Daylight Vocal Jazz",
+      "art": "https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/cover_1781777478561.webp",
+      "caption": "明るい時間帯に使いやすい、軽やかなボーカルジャズを集めたアルバムです。",
+      "categoryId": "cat_1781775909905",
+      "tracks": [
+        "track_1781777348121_0",
+        "track_1781777348123_1",
+        "track_1781777348123_2",
+        "track_1781777348123_3",
+        "track_1781777348123_4",
+        "track_1781777348123_5",
+        "track_1781777348124_6",
+        "track_1781777348124_7",
+        "track_1781777348124_8",
+        "track_1781777348124_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\jazz\\Daylight Vocal Jazz",
       "type": "vocal"
     }
   ],
@@ -1904,6 +1933,176 @@
       "bpm": "",
       "lyrics": "[Intro]\n(Mmm)\n(Holding on to the peace)\n\n[Verse 1]\nI sat on the porch steps until the sky bruised\nThe wood beneath my palms is still breathing\nHolding the memory of a long afternoon\nThe earth keeps what the sun gave away\nI don't need a lamp to find my center\nI just feel the heavy air settling in the grass\nLike a blanket woven from hours well spent\nNothing is lost when the color fades\n\n[Chorus]\nCarry the heat\n(Carry the heat)\nThe spirit stays warm in the dark\nA quiet promise for a new start\nCarry the heat\n\n[Verse 2]\nPeople spend their lives chasing shiny things\nBuying a peace that breaks before morning\nBut I found my wealth in the silence of the soil\nIn the way the roots don't panic when it's dim\nMy skin remembers the touch of the light\nIt sinks deep into the marrow and the bone\nHealing is the labor we do while we rest\nTrusting the circle to bring the vision home\n\n[Chorus]\nCarry the heat\n(Keep it inside)\nThe spirit stays warm in the dark\nA quiet promise for a new start\nCarry the heat\n\n[Bridge]\nIt is the internal fire that guides us\nNot a flicker from a match or a candle\nWe are the architects of our own calm\nLetting the residue of today\nFuel the courage of our tomorrow\n(Fuel the soul)\n(It never leaves)\n\n[Outro]\nStill warm in the morning\n(Still warm)\nI can feel the resonance\n(It stays)\nTracing the curve of the horizon\n(It stays)\nLove is a boomerang\nPeace is the destination\n(Wait for the rise)\nKeep the ember breathing\n(Breathing)\n(Mmm)\nJust carry the heat\n(Carry the heat) \n(Carry the heat) \n(It stays) \n(It stays) \n(Always) \n(Always) \n(Mmm)",
       "added_at": "2026-06-16"
+    },
+    {
+      "id": "track_1781777348121_0",
+      "title": "The Bright Angle",
+      "caption": "希望と輝きに満ちたメロディ。光と色彩の交差を描き出し、心躍る感情の移ろいを表現しました。",
+      "type": "vocal",
+      "duration": 153,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/The%20Bright%20Angle.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-18"
+    },
+    {
+      "id": "track_1781777348123_1",
+      "title": "The Linen Sail",
+      "caption": "広大な空を背景に、軽やかな布が潮風に揺れる情景。聴く者を優しく包み込むような開放感を音で描きました。",
+      "type": "vocal",
+      "duration": 156,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/The%20Linen%20Sail.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-18"
+    },
+    {
+      "id": "track_1781777348123_2",
+      "title": "A Simple Grace",
+      "caption": "優雅なピアノとストリングスの響きが、穏やかな安らぎを心に届けます。日常の喧騒を忘れさせる静かな午後のひとときを彩ります。",
+      "type": "vocal",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/A%20Simple%20Grace.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-18"
+    },
+    {
+      "id": "track_1781777348123_3",
+      "title": "Small Talk",
+      "caption": "軽快なリズムとピアノが、友人との会話のような温かさで満たされます。心に寄り添う心地よい語らいの時間をお届けします。",
+      "type": "vocal",
+      "duration": 181,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/Small%20Talk.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-18"
+    },
+    {
+      "id": "track_1781777348123_4",
+      "title": "The Open Path",
+      "caption": "光あふれる開かれた道を歩く感覚を音にしました。どこまでも続く道の開放感と、新たな始まりへの期待感を演出するサウンドスケープです。",
+      "type": "vocal",
+      "duration": 168,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/The%20Open%20Path.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-18"
+    },
+    {
+      "id": "track_1781777348123_5",
+      "title": "The Garden Map",
+      "caption": "静寂な庭園の散策路を彩る音風景。光と影が織りなす、郷愁的で穏やかな情景描写を通じて、心地よい時間を提供します。",
+      "type": "vocal",
+      "duration": 172,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/The%20Garden%20Map.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-18"
+    },
+    {
+      "id": "track_1781777348124_6",
+      "title": "Table In The Sun",
+      "caption": "降り注ぐ午後の日差しのような優しいメロディ。日常の小さな瞬間の中に溶け込む、静かで温かい時間を描き出しました。",
+      "type": "vocal",
+      "duration": 150,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/Table%20in%20the%20Sun.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-18"
+    },
+    {
+      "id": "track_1781777348124_7",
+      "title": "No Clock Today",
+      "caption": "時間はゆっくりと流れる感覚を表現。目覚めの静寂と洗練されたグルーヴが調和し、内面に向き合う心地よい空間を提供します。",
+      "type": "vocal",
+      "duration": 154,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/No%20Clock%20Today.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-18"
+    },
+    {
+      "id": "track_1781777348124_8",
+      "title": "The Bright Release",
+      "caption": "希望に満ちた、清々しいサウンドスケープ。解放感あふれる音色で、新たな旅立ちや始まりを予感させる透明度の高いメロディです。",
+      "type": "vocal",
+      "duration": 153,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/The%20Bright%20Release.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-18"
+    },
+    {
+      "id": "track_1781777348124_9",
+      "title": "Steady Light",
+      "caption": "深い静寂の中で響く優しいトーンが特徴。自分自身を見つめ直すような、内省的で落ち着いた心の旅路をそっと彩ります。",
+      "type": "vocal",
+      "duration": 179,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/Steady%20Light.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-18"
     }
   ]
 }
