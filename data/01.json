@@ -30,7 +30,8 @@
       "name": "JAZZ",
       "caption": "ピアノやウッドベースを中心に、静かな時間や夜の作業にも使いやすい構成にしています。",
       "albums": [
-        "album_1781775942038"
+        "album_1781775942038",
+        "album_1781864098749"
       ]
     }
   ],
@@ -253,6 +254,27 @@
         "track_1781777348124_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\jazz\\Daylight Vocal Jazz",
+      "type": "vocal"
+    },
+    {
+      "id": "album_1781864098749",
+      "title": "Blue Hour",
+      "art": "https://cdn.neura-music.com/01vocal/jazz/Blue%20Hour/cover_1781872498497.webp",
+      "caption": "夕方から夜に移る時間帯に合う、落ち着いた男性ボーカルジャズをまとめたアルバムです。静かな作業や夜のVLOGに使いやすい、柔らかなトーンのボーカルと控えめな伴奏が中心です。",
+      "categoryId": "cat_1781775909905",
+      "tracks": [
+        "track_1781865254941_0",
+        "track_1781865254945_1",
+        "track_1781865254945_2",
+        "track_1781865254945_3",
+        "track_1781865254945_4",
+        "track_1781865254945_5",
+        "track_1781865254945_6",
+        "track_1781865254946_7",
+        "track_1781865254946_8",
+        "track_1781865254946_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\jazz\\Blue Hour",
       "type": "vocal"
     }
   ],
@@ -2103,6 +2125,166 @@
       "bpm": "",
       "lyrics": "[Intro]\n(Mmm-mm)\n(Yeah)\n\n[Verse 1]\nThe dust settles on the wooden surface of the desk\nI see the marks where the graphite moved across the grain\nEverything is in its place now and the air feels still\nMy hands feel much lighter than they did at noon today\nI look at the stacks of paper and the empty glass\nThere is a weight that lifted when the clock struck four\nI am not chasing the minutes or the fading light\nI am sitting in the middle of a job well done\n\n[Chorus]\nReady for the sun to drop\nReady for the moon to rise\nTomorrow is an open door\nI am breathing easy tonight\n(Breathing easy now)\nI am breathing easy tonight\n\n[Verse 2]\nThe shadows stretch across the floor like long tired limbs\nTracing the patterns of the oak and the scattered rugs\nI am not running from the schedule or the coming week\nI am walking right beside the rhythm of the house\nThe water in the pitcher is cool and clear\nThe silence is a reward I earned with my own strength\nIt is good to know exactly where the day went\nIt is good to feel the floorboards under my feet\n\n[Chorus]\nReady for the sun to drop\nReady for the moon to rise\nTomorrow is an open door\nI am breathing easy tonight\n(So easy tonight)\nI am breathing easy tonight\n\n[Bridge]\nOne task after another like stacking heavy stones\nBuilding a wall that finally stands on its own\nNow the work is silent and the view is wide\nI can lean back and close my eyes for a while\n(Close my eyes)\n(For a little while)\n\n[Chorus]\nReady for the sun to drop\nReady for the moon to rise\nTomorrow is an open door\nI am breathing easy tonight\n(Breathing easy now)\nI am breathing easy tonight\n\n[Outro]\nThe morning is coming soon\nThe morning is a fresh start\n(Fresh start)\nI am ready for the new day\n(Ready now)\nI am ready for it all\n(Ready now)\nYeah\n(Mmm-mm)",
       "added_at": "2026-06-18"
+    },
+    {
+      "id": "track_1781865254941_0",
+      "title": "The New Stride (Alt Take)",
+      "caption": "石畳を響かせる足音と、新しい始まりへの躍動感。深まる空の色と共に描く、洗練された都会のストライド。",
+      "type": "vocal",
+      "duration": 160,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Blue%20Hour/The%20New%20Stride%20(Alt%20Take).mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse]\nHeel taps on the granite\nSky turns a deep mauve\nThe day is a spent match\nReady for a new strike\n(A new strike)\nI button the wool tight\nThe air has a sharp edge\nA crisp trade for the heat\nChecking the time by the color\nOf the high roof line\n\n[Verse]\nI walk with a loose grace\nI walk with a steady beat\nI walk with a fresh plan\nThe avenue opens up wide\nA clean slate for the leather shoes\nWatch the brass of the sunset\nPushed through the clouds like a horn\nA big sound in the silence\nNo weight in the pockets\nJust the keys and the rhythm\n(Just the rhythm)\n\n[Bridge]\nThe sun is a heavy coin\nFalling through a slot in the street\nPaying the toll for the night\nTall windows catch the orange\nBefore the deep blue takes hold\n(Before the blue)\nIt is a simple shift\nA gear turning in the sky\nA quiet way to begin again\n\n[Verse]\nShoulders back in the coat\nThe stride is a long run\nToday was a rehearsal\nTomorrow is the real set\nI am catching the movement\nJust catching the movement\n(The movement)\nThe pavement is a drum\nAnd the beat is wide open\nWide open and new\n\n[Outro]\nMauve and violet\n(Mauve and violet)\nThe new stride\nButton it up\n(Button it up)\nReady for the turn\nThe big turn\n(The turn)\nEverything is possible\nRight now\n(Right now)",
+      "added_at": "2026-06-19"
+    },
+    {
+      "id": "track_1781865254945_1",
+      "title": "The Spirit Still",
+      "caption": "静寂の中に宿る、尽きることのない平和と安らぎを歌う。全てが満たされ、心が深く落ち着く瞬間を綴る。",
+      "type": "vocal",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Blue%20Hour/The%20Spirit%20Still.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Mmm)\n\n[The Head]\nPeace is here\nPeace is now\n(Peace is now)\nPeace is here\nPeace is now\n(Peace is now)\nThe day is done\nThe peace is won\n(Peace is won)\nThe day is done\nThe peace is won\n(The peace is won)\n\n[Verse]\nPour the water\nWatch the steam rise\nThe heat is love\nThe dark is wise\n(Wise and deep)\nRest the body\nRest the soul\nThe Creator makes me whole\n(Makes me whole)\nThe heat is love\nThe spirit is full\nThe spirit is full\n(Full and light)\n\n[Chorus]\nIt is well\nIn the quiet\n(It is well)\nIt is well\nIn the silence\n(It is well)\nPeace is everywhere\nLove is everywhere\n(Everywhere)\nPeace is everywhere\nLove is everywhere\n(Everywhere)\n\n[Verse]\nThe cup is warm\nBetween my hands\nThe spirit knows\nThe spirit understands\n(He understands)\nNo more worry\nNo more strife\nI thank the Giver for this life\n(For this life)\nThe steam rises up\nThe spirit rises up\n(Rises up)\n\n[Chorus]\nIt is well\nIn the quiet\n(It is well)\nIt is well\nIn the silence\n(It is well)\nPeace is everywhere\nLove is everywhere\n(Everywhere)\nPeace is everywhere\nLove is everywhere\n(Everywhere)\n\n[Bridge]\nThe great plan is moving\nThe great plan is still\n(Moving and still)\nRest in the center\nRest in the will\n(Rest in the will)\nThe night is a blessing\nThe night is a home\n(A home)\nI am never alone\n(Never alone)\n\n[Recapitulation]\nPeace is here\nPeace is now\n(Peace is now)\nThe day is done\nThe peace is won\n(The peace is won)\nIt is well\nIt is well\n(It is well)\n\n[Outro]\nEverywhere\n(Everywhere)\nThe peace is everywhere\n(Everywhere)\nThank you for the peace\n(Thank you)\nThank you for the night\n(Thank you)\n(Mmm)\n(Mmm)\n(Peace)\n(Peace)\n(Peace)",
+      "added_at": "2026-06-19"
+    },
+    {
+      "id": "track_1781865254945_2",
+      "title": "The Sweet Current",
+      "caption": "時間は穏やかな川の流れに例えられる。優しい灯りの下で「今ここ」という感覚を教えてくれる、静謐な時の讃歌。",
+      "type": "vocal",
+      "duration": 175,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Blue%20Hour/The%20Sweet%20Current.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Mmm)\n\n[The Head]\nThe river flows\nThe river is time\nSoft lamps outside\nThe path is clear\nPeace is here\nPeace is here\n\n[Verse]\nOne lamp stays\nTwo lamps stay\nThey watch the water\nThe water of the hour\nIt moves so slow\nIt moves for us\n(It moves for us)\nEverything is now\nEverything is well\n\n[Chorus]\nNow is all\n(Now is all)\nNow is all\n(Now is all)\nThe sweet current\nThe sweet river\n(Now is all)\n\n[Recapitulation]\nThe river flows\nThe river is time\nSoft lamps outside\nThe path is clear\nPeace is here\nPeace is here\n\n[Outro]\nTime is a gift\nThe river is wide\n(Now is all)\n(Now is all)\nSteady light\nSteady heart\nPeace\nPeace\nPeace",
+      "added_at": "2026-06-19"
+    },
+    {
+      "id": "track_1781865254945_3",
+      "title": "The Long Stroll",
+      "caption": "都会の湿り気を纏いながらも、揺るぎないリズムと静かな熱を抱えて歩き続ける。心象風景としての早朝散策路。",
+      "type": "vocal",
+      "duration": 172,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Blue%20Hour/The%20Long%20Stroll.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Yeah)\n\n[Verse]\nTurn the lapel up high\nPavement is slick under my boots\nDrifting through the damp gray\nListening to the city breathe out\nNo hurry to find the door\nJust the pull of the next block\nAnd the certain tilt of the horizon\n\n[Verse]\nI carry a quiet weight in my palm\nNot heavy, just enough to feel\nA small pilot light burning steady\nTucked away where the wind cannot bite\nIt is a heavy heat for a cold season\nKeeping the chill from settling deep\nThe road stretches out like a ribbon\nUnwinding toward a morning I cannot see yet\n\n[Bridge]\nThe night is a wide open room\n(So wide)\nNo walls to stop the momentum\n(Keep moving)\nI am catching a draft heading north\nRiding the crest of a calm thought\nThe stars do not need to explain\n(No they don't)\nThey just hang there looking satisfied\n\n[Verse]\nEverything is falling into place\nLike a well-timed chord change\nI am stepping light into the dark\nKnowing exactly where the landing is\nI will keep this rhythm locked in tight\nWatching my breath turn into clouds\nMoving toward the break of day\nJust the breeze and the beat and me\n\n[Outro]\nJust a steady stroll\n(Steady now)\nInto the blue before the sun\n(So blue)\nKeeping that fire tucked away\nSafe and sound\n(Safe and sound)\nYeah\n(Mmm)",
+      "added_at": "2026-06-19"
+    },
+    {
+      "id": "track_1781865254945_4",
+      "title": "The Lingering Impression",
+      "caption": "過ぎ去った記憶や、誰かの温もりを手のひらで慈しむような時間。ささやかな触れ合いが唯一無二の安息となる瞬間を描く。",
+      "type": "vocal",
+      "duration": 180,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Blue%20Hour/The%20Lingering%20Impression.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh, so warm)\n(Stay right here)\n\n[Verse 1]\nThe rain is drumming softly against the window glass\nI am sitting here in the center of this quiet room\nThere is no reason to disturb the peace of the evening\nBecause I can still feel the weight of your palm\nIt is a steady pressure that remains against my skin\nA gentle miracle that does not seem to fade away\n\n[Chorus]\nI do not need to reach out to find you tonight\nYour hand is still resting perfectly inside of mine\n(Right here in my hand)\nIt is a warmth that lingers long after you leave\nA sanctuary I carry wherever I go\nI will let you sleep while I hold onto this feeling\n(Hold onto the feeling)\n\n[Verse 2]\nThe way your fingers used to lace between my own\nCreated a pattern that I can still trace in the dark\nI remember the specific rhythm of your pulse\nMoving against the sensitive surface of my wrist\nIt is an impression more vivid than a photograph\nEtched into the very way that I move through the day\n\n[Chorus]\nI do not need to reach out to find you tonight\nYour hand is still resting perfectly inside of mine\n(Right here in my hand)\nIt is a warmth that lingers long after you leave\nA sanctuary I carry wherever I go\nI will let you sleep while I hold onto this feeling\n\n[Bridge]\nThere is a dignity in this chosen silence\nA devotion that does not require a single word\nI am cradling the memory of your touch\nAnd it provides every comfort that I require\n(Every comfort I need)\n(More than enough)\n\n[Chorus]\nI do not need to reach out to find you tonight\nYour hand is still resting perfectly inside of mine\n(In the palm of my hand)\nIt is a warmth that lingers long after you leave\nA sanctuary I carry wherever I go\nI will let you sleep while I hold onto this feeling\n\n[Outro]\nI can feel you here\n(Still feel you)\nSuch a tender impression\nI am satisfied with the memory\n(So satisfied)\nRest well, my darling\n(Rest well)\nI have everything I need right here\n(Right here)\n(Ooh, in my hand)",
+      "added_at": "2026-06-19"
+    },
+    {
+      "id": "track_1781865254945_5",
+      "title": "The Audible Void",
+      "caption": "視覚から隔絶された、純粋な音響空間の記録。内部に存在する全周波数やリズムを深く聴き取る実験的な試み。",
+      "type": "vocal",
+      "duration": 159,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Blue%20Hour/The%20Audible%20Void.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Check the frequency)\n(Kill the visibility)\n(Now listen)\n\n[Verse 1]\nPalms press the plastic plate and the current breaks\nVisual weight evaporates as the iris dilates wide\nTotal absence is a luxury I manufacture at will\nNo more optical clutter fighting for my focus\nThe heavy velvet of the dark occupies the corner\nNow the radiator hiss sounds like a distant choir\nMy breath is a metronome counting every second\nThe floorboards groan under the pressure of stillness\nI am the architect of this specific silence\nIntellect sharpens when the retinas go dormant\nI hear the frequency of the building breathing\nTracing the copper pipes through the thick plaster\nThe neighbor upstairs drops a heavy coin\nIt resonates like a temple bell in my chest\nThis is the laboratory of the inner ear\nThe sonic landscape is finally topographical\n\n[Chorus]\n(Eyes closed tight)\n(Ears open wide)\n(Time starts to bend)\n(Inside the sound)\n\n[Verse 2]\nLinear time is a myth invented by the sighted\nIn this black box minutes expand into decades\nIdeas don't arrive they emerge from the texture\nVibrations climb the spine like a ladder of logic\nI capture the cadence of the ticking watch\nTranslating the mechanical into the metaphysical\nThe void isn't empty it is crowded with data\nEvery friction point tells a different narrative\nLanguage flows easier without the distraction\nOf furniture and dust and the movement of dust\nI am harvesting rhythms from the quietude\nTurning the absence of light into a heavy harvest\nThe mind is a radar dish scanning for signals\nDecoding the mathematics of the silent room\nOriginal thought is a byproduct of the isolation\nRefining the craft in the absolute zero of sight\n\n[Outro]\n(Let it ring)\n(Pure audio)\n(The sound is all)\n(Stay in the dark)\n(Total focus)\n(No distractions)\n(Listen)\n(Listen)",
+      "added_at": "2026-06-19"
+    },
+    {
+      "id": "track_1781865254945_6",
+      "title": "The Silent Sanctuary",
+      "caption": "喧騒から切り離された、静謐な空間。時間すらも停止したかのような安らぎと愛に身を委ねる特別な場所。",
+      "type": "vocal",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Blue%20Hour/The%20Silent%20Sanctuary.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse 1]\nThe street remains a frantic storm\nBeyond the heavy wooden door\nI leave the restless world behind\nTo find the anchor for my heart\nI lay my armor on the floor\nAnd breathe the air of this retreat\n\n[Verse 2]\nThe silence is a gentle gift\nNo longer chasing after hours\nI see the light within your eyes\nA harbor in the deep of night\nA place where I can finally rest\nAnd let the noise of duty die\n\n[Chorus]\nResting in this quiet grace\nEvery burden starts to fade\nIn the circle of your love\nTime is standing still for us\n(Standing still)\nI surrender all I am\nTo the safety of your touch\n\n[Verse 3]\nWe do not need a single word\nTo fill this blank space between\nThe fragrance of the falling rain\nSoftly meets your skin so fair\nYour heartbeat is the only sound\nThat matters in this temple now\n\n[Chorus]\nResting in this quiet grace\nEvery burden starts to fade\nIn the circle of your love\nTime is standing still for us\n(Standing still)\nI surrender all I am\nTo the safety of your touch\n\n[Bridge]\nLet the world continue turning\nLet the seasons hurry past\nAs long as I can find this moment\nI will have everything I need\nThe only truth I ever knew\nIs right here in this soft embrace\n\n[Chorus]\nResting in this quiet grace\nEvery burden starts to fade\nIn the circle of your love\nTime is standing still for us\n(Standing still)\nI surrender all I am\nTo the safety of your touch\n\n[Outro]\nHere with you\n(Only you)\nIn the blank space\nPeace at last\n(Peace at last)\nSafe in your arms",
+      "added_at": "2026-06-19"
+    },
+    {
+      "id": "track_1781865254946_7",
+      "title": "Everything Fits",
+      "caption": "全てが自然に収まる心地よさ。迷いや予定調和のない、確かな存在感と穏やかな温もりを感じさせるムード。",
+      "type": "vocal",
+      "duration": 167,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Blue%20Hour/Everything%20Fits.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm-mm)\n\n[Verse]\nThe pavement feels different tonight\nEvery step has a certain weight to it\nThe kind that says I’m exactly where I should be\nThe street lamps are watching the houses sleep\nAnd I’m just walking, thinking about how you stay\n\n[Verse]\nIt’s not the fireworks we used to talk about\nThose things burn out before the party’s over\nThis is the steady heat of a fireplace\nA slow burn that keeps the chill off the glass\nYou’ve become the background music of my life\n\n[Bridge]\nRemember when we used to chase the morning?\nRunning until our lungs felt like paper\nNow I prefer the way the clock ticks\nMarking the time we’ve already won\nIt’s a different kind of victory\n\n[Verse]\nThe front door is waiting just around the bend\nI’ll hang my hat and find you there\nNo surprises, just the truth of us\nEverything has finally clicked into place\nThe way the moon finds its spot in the sky\n\n[Outro]\n(It's finally clicked)\nJust the truth of us\nWalking home\nIt fits\n(Mmm)",
+      "added_at": "2026-06-19"
+    },
+    {
+      "id": "track_1781865254946_8",
+      "title": "The Deep Side",
+      "caption": "深い息遣いを音の層に重ねるように、過去の深部を掘り下げる。過ぎ去った時間の質感と肌寒い空気感が漂う叙情的なサウンドスケープ。",
+      "type": "vocal",
+      "duration": 156,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Blue%20Hour/The%20Deep%20Side.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse]\nThe jacket is frayed at the seam\nWhite cardboard showing through\nNeedle finds the outer rim\nBlack disc spinning wide\nShoulders drop two inches\nLungs expand against the cotton\nAir tastes like old timber\n(Hold)\n(Let go)\n\n[Instrumental Break]\n\n[Verse]\nBrass caught in a loop\nScratch on the third track\nFamiliar now\nLike a bruise you forget is there\nCool air in\nCount the beat\nOne\nTwo\nThree\nChest moves out\n(Deeply)\nExhale over the floorboards\n\n[Outro]\nSpinning\nStill spinning\n(The end of the side)\n(Release)",
+      "added_at": "2026-06-19"
+    },
+    {
+      "id": "track_1781865254946_9",
+      "title": "The Slow Tide",
+      "caption": "重荷を下ろし、抗うことなく流れに身を任せる。緩やかな潮の満ち引きのように、心を解放していく感覚。",
+      "type": "vocal",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Blue%20Hour/The%20Slow%20Tide.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "男性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Yeah)\n(Let it go)\n\n[Verse]\nToss the keys on the wood\nUnstrap the heavy boots\nThe day was a hard climb\nNow let the river take the weight\n(Let it go)\nLet the river take the weight\n\n[Verse]\nTight knots in the mind\nUndo them one by one\nThe ticking clock skips a beat\nLet the river take the weight\n(Let it go)\nLet the river take the weight\n\n[Bridge]\nIt is a slow tide\nCool water on the heat\nNo more push and pull\nJust the drift of the tide\n(Cool water)\nNo more push and pull\nJust the drift of the tide\n\n[Verse]\nEyes shut to the moon\nThe spirit starts to swing\nNo more mountain to move\nLet the river take the weight\n(Let it go)\nLet the river take the weight\n\n[Outro]\nLet it slide\nLet it drift\n(Down the river)\n(Down the river)\nWatch it slide\n(Down the river)\nLet it go\n(Let it go)\nLet it go\n(Mmm)\nYeah\nRest now\nRest now",
+      "added_at": "2026-06-19"
     }
   ]
 }
