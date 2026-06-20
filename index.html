@@ -32,10 +32,23 @@
 
   <header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
     <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
-      <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
-        <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
-        <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
-      </a>
+      <div class="flex items-center space-x-4">
+        <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+          <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+          <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+        </a>
+        <div class="relative inline-block">
+          <select onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+            <option value="">Generatorを選択</option>
+            <option value="/tools/clock-generator.html">CLOCK GEN</option>
+            <option value="/tools/ranking-generator.html">BEST10 GEN</option>
+            <option value="/tools/overlay/">OVERLAY GEN</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+        </div>
+      </div>
       <div class="hidden md:flex items-center space-x-4">
         <div class="relative">
           <input type="text" id="search-input" placeholder="曲名やタグで検索..." class="border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1 text-sm focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 w-48">
