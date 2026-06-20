@@ -30,16 +30,6 @@
       "id": "theme_1778218375932",
       "fileName": "06.json",
       "name": "GAME"
-    },
-    {
-      "id": "theme_1778218397682",
-      "fileName": "07.json",
-      "name": "CINEMATIC"
-    },
-    {
-      "id": "theme_1778218425148",
-      "fileName": "08.json",
-      "name": "WORK"
     }
   ],
   "tools": [
@@ -55,6 +45,13 @@
       "title": "BEST10 GEN",
       "content_url": "https://cdn.neura-music.com/tools/flipper_generator.html",
       "date": "2026-06-18",
+      "is_visible": true
+    },
+    {
+      "id": "tool_20260620120839",
+      "title": "OVERLAY GEN",
+      "content_url": "https://cdn.neura-music.com/tools/%E6%9E%A0generator/index.html",
+      "date": "2026-06-20",
       "is_visible": true
     },
     {
