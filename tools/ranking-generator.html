@@ -5,13 +5,22 @@
   <title>Best 10 Flipper Generator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="description" content="配信・録画用の高品質なパタパタランキング生成ツール。OBS等で使えるランキングボードを簡単に作成できます。">
+  <meta property="og:title" content="Best 10 Flipper Generator">
+  <meta property="og:description" content="配信・録画用の高品質なパタパタランキング生成ツール。OBS等で使えるランキングボードを簡単に作成できます。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://neura-music.com/tools/ranking-generator.html">
+  <meta property="og:image" content="https://neura-music.com/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://neura-music.com/tools/ranking-generator.html">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com" nonce="MjcwOTA4OTcxOSwxMDYzOTQyNDY3"></script>
 
-  <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js" nonce="MjcwOTA4OTcxOSwxMDYzOTQyNDY3"></script>
+  <script src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js" nonce="MjcwOTA4OTcxOSwxMDYzOTQyNDY3"></script>
   <script type="importmap" nonce="MjcwOTA4OTcxOSwxMDYzOTQyNDY3">
   {
     "imports": {
@@ -25,7 +34,41 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js" nonce="MjcwOTA4OTcxOSwxMDYzOTQyNDY3"></script>
 </head>
 
-<body class="bg-[#0d0d0d] text-[#f3f4f6]">
+<body class="bg-[var(--bg-color)] text-[var(--text-main)] font-sans m-0 p-0">
+
+  <header class="sticky top-0 z-[100] bg-white dark:bg-[#242424] flex flex-col shadow-sm border-b border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-100">
+    <div class="px-4 py-2 flex justify-between items-center text-sm h-10">
+      <div class="flex items-center space-x-4">
+        <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+          <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+          <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+        </a>
+        <div class="relative inline-block">
+          <select id="generator-selector" onchange="if(this.value) window.top.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+            <option value="">Generatorを選択</option>
+            <option value="/tools/clock-generator.html">CLOCK GEN</option>
+            <option value="/tools/ranking-generator.html">BEST10 GEN</option>
+            <option value="/tools/overlay/">OVERLAY GEN</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center space-x-4">
+        <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+          <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+          <a href="javascript:void(0)" onclick="openModal('terms')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">利用規約</a>
+          <a href="javascript:void(0)" onclick="openModal('contact')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">連絡先</a>
+          <a href="javascript:void(0)" onclick="openModal('ads')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">広告関連</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b border-gray-200 dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+    </div>
+  </header>
+
   <div id="root"></div>
 
   <script data-type="module" type="text/babel" nonce="MjcwOTA4OTcxOSwxMDYzOTQyNDY3">
@@ -751,27 +794,120 @@
         <>
           <style>{`
             :root {
-              --bg-color: #0d0d0d;
-              --container-bg: #141414;
-              --card-bg: #1a1a1a;
-              --accent-color: #ffaa00;
-              --accent-hover: #ffbb33;
-              --accent-glow: rgba(255, 170, 0, 0.25);
-              --text-main: #f3f4f6;
-              --text-sub: #9ca3af;
-              --border-color: #2e2e2e;
-              --shadow-plate: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
-              --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.25);
+              --bg-color: #f3f4f6;
+              --container-bg: #ffffff;
+              --card-bg: #f9fafb;
+              --accent-color: #f59e0b;
+              --accent-hover: #d97706;
+              --accent-glow: rgba(245, 158, 11, 0.25);
+              --text-main: #1f2937;
+              --text-sub: #4b5563;
+              --border-color: #e5e7eb;
+              --shadow-plate: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+              --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.02);
             }
-            body { background-color: var(--bg-color); color: var(--text-main); font-family: 'IBM Plex Sans JP', sans-serif; line-height: 1.6; margin: 0; padding: 0; }
-            .theme-container { background: var(--container-bg); border-radius: 24px; box-shadow: var(--shadow-plate); border: 1px solid rgba(255, 255, 255, 0.04); }
-            .card { background: var(--card-bg); border-radius: 18px; border: 1px solid var(--border-color); box-shadow: var(--shadow-card); }
-            .modern-input { background: #111111 !important; color: var(--text-main) !important; border: 1px solid #333 !important; border-radius: 12px; transition: all 0.2s ease; padding: 12px 16px; font-size: 14px; width: 100%; outline: none; }
-            .modern-input:focus { border-color: var(--accent-color) !important; box-shadow: 0 0 0 2px var(--accent-glow) !important; background: #000 !important; }
+
+            @media (prefers-color-scheme: dark) {
+              :root {
+                --bg-color: #0d0d0d;
+                --container-bg: #141414;
+                --card-bg: #1a1a1a;
+                --accent-color: #ffaa00;
+                --accent-hover: #ffbb33;
+                --accent-glow: rgba(255, 170, 0, 0.25);
+                --text-main: #f3f4f6;
+                --text-sub: #9ca3af;
+                --border-color: #2e2e2e;
+                --shadow-plate: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+                --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.25);
+              }
+            }
+
+            body {
+              background-color: var(--bg-color);
+              color: var(--text-main);
+              font-family: 'IBM Plex Sans JP', 'Inter', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              line-height: 1.6;
+              margin: 0;
+              padding: 0;
+              transition: background-color 0.2s, color 0.2s;
+            }
+
+            .theme-container {
+              background: var(--container-bg) !important;
+              border-radius: 24px;
+              box-shadow: var(--shadow-plate);
+              border: 1px solid var(--border-color) !important;
+            }
+
+            .card {
+              background: var(--card-bg) !important;
+              border-radius: 18px;
+              border: 1px solid var(--border-color) !important;
+              box-shadow: var(--shadow-card);
+            }
+
+            .bg-\[\#141414\] { background-color: var(--container-bg) !important; }
+            .bg-\[\#1a1a1a\] { background-color: var(--card-bg) !important; }
+            .bg-\[\#222\] { background-color: var(--bg-color) !important; }
+            .bg-\[\#111\] { background-color: var(--bg-color) !important; }
+            .bg-\[\#111111\] { background-color: var(--bg-color) !important; }
+            .bg-\[\#151515\] { background-color: var(--bg-color) !important; }
+            .bg-\[\#252525\] { background-color: var(--card-bg) !important; }
+            .bg-\[\#0a0a0a\] { background-color: var(--bg-color) !important; }
+            .bg-\[\#333\] { background-color: var(--accent-color) !important; }
+            
+            .border-\[\#333\] { border-color: var(--border-color) !important; }
+            .border-\[\#444\] { border-color: var(--border-color) !important; }
+            .border-\[\#2e2e2e\] { border-color: var(--border-color) !important; }
+            .border-\[\#3a3a3a\] { border-color: var(--border-color) !important; }
+            
+            .text-white { color: var(--text-main) !important; }
+            .text-gray-300 { color: var(--text-main) !important; }
+            .text-gray-400 { color: var(--text-sub) !important; }
+            .text-gray-500 { color: var(--text-sub) !important; }
+            .text-\[\#eee\] { color: var(--text-main) !important; }
+            .text-\[\#9ca3af\] { color: var(--text-sub) !important; }
+
+            .modern-input {
+              background: #111111 !important;
+              color: var(--text-main) !important;
+              border: 1px solid #333 !important;
+              border-radius: 12px;
+              transition: all 0.2s ease;
+              padding: 12px 16px;
+              font-size: 14px;
+              width: 100%;
+              outline: none;
+            }
+            @media (prefers-color-scheme: light) {
+              .modern-input {
+                background: #ffffff !important;
+                border: 1px solid #d1d5db !important;
+                color: var(--text-main) !important;
+              }
+            }
+            .modern-input:focus {
+              border-color: var(--accent-color) !important;
+              box-shadow: 0 0 0 2px var(--accent-glow) !important;
+              background: #000 !important;
+            }
+            @media (prefers-color-scheme: light) {
+              .modern-input:focus {
+                background: #ffffff !important;
+              }
+            }
+
             ::-webkit-scrollbar { width: 8px; height: 8px; }
             ::-webkit-scrollbar-track { background: var(--container-bg); border-radius: 4px; }
             ::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
+            @media (prefers-color-scheme: light) {
+               ::-webkit-scrollbar-thumb { background: #cbd5e1; }
+            }
             ::-webkit-scrollbar-thumb:hover { background: #666; }
+            @media (prefers-color-scheme: light) {
+               ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+            }
           `}</style>
 
           <div className="min-h-screen p-4 sm:p-8 flex justify-center bg-[var(--bg-color)] text-[var(--text-main)] overflow-x-hidden">
@@ -955,6 +1091,73 @@
 
     const root = createRoot(document.getElementById('root'));
     root.render(<App />);
+  </script>
+
+  <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800 text-gray-800 dark:text-gray-100" onclick="event.stopPropagation()">
+      <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+        <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
+        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div id="modal-body" class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      let pagesData = null;
+      async function loadPagesData() {
+        try {
+          const res = await fetch('/data/pages.json');
+          if (res.ok) {
+            const data = await res.json();
+            pagesData = data.pages;
+          }
+        } catch (e) {
+          console.error("Failed to load pages.json", e);
+        }
+      }
+      async function openModal(pageKey) {
+        if (!pagesData) {
+          await loadPagesData();
+        }
+        const modal = document.getElementById('modal-overlay');
+        const titleEl = document.getElementById('modal-title');
+        const bodyEl = document.getElementById('modal-body');
+        
+        if (modal && pagesData && pagesData[pageKey]) {
+          titleEl.innerText = pagesData[pageKey].title;
+          bodyEl.innerHTML = pagesData[pageKey].content;
+          modal.style.display = 'flex';
+        }
+      }
+      function closeModal() {
+        const modal = document.getElementById('modal-overlay');
+        if (modal) {
+          modal.style.display = 'none';
+        }
+      }
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = document.getElementById('generator-selector');
+        if (selector) {
+          const currentPath = window.location.pathname;
+          const options = Array.from(selector.options);
+          const matchedOption = options.find(opt => opt.value && currentPath.includes(opt.value));
+          
+          if (matchedOption) {
+            selector.value = matchedOption.value;
+          } else {
+            selector.value = "";
+          }
+        }
+      });
+    })();
   </script>
 </body>
 </html>
