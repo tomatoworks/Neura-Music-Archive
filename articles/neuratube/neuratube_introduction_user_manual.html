@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO / OGP / Twitter / Canonical -->
+  <title>NeuraTube 紹介＆取扱ガイド | ノイズを排した視聴環境</title>
+  <meta name="description" content="YouTubeの画面からノイズを徹底的に排除し、自分が本当に登録したチャンネルの動画だけに集中できる環境を構築するためのブラウザ拡張機能「NeuraTube」の使い方ガイドです。">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://neura-music.com/tool/tool_20260614162531">
+
+  <meta property="og:title" content="NeuraTube 紹介＆取扱ガイド | ノイズを排した視聴環境">
+  <meta property="og:description" content="YouTubeのノイズを徹底的に排除し、登録チャンネルだけに集中できる視聴環境を作るブラウザ拡張「NeuraTube」の使い方ガイド。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://neura-music.com/tool/tool_20260614162531">
+  <meta property="og:image" content="https://neura-music.com/assets/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NeuraTube 紹介＆取扱ガイド | ノイズを排した視聴環境">
+  <meta name="twitter:description" content="YouTubeのノイズを徹底的に排除し、登録チャンネルだけに集中できる視聴環境を作るブラウザ拡張「NeuraTube」の使い方ガイド。">
+  <meta name="twitter:image" content="https://neura-music.com/assets/og-image.jpg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Noto Sans JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Noto Sans JP', 'sans-serif'],
+            mono: ['Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+
+  <style>
+    body {
+      font-feature-settings: "palt";
+    }
+
+    /* スクロールバーのカスタマイズ（モノトーン調） */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .dark ::-webkit-scrollbar-track {
+      background: #181818;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background: #27272a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #e4e4e7;
+      border-radius: 3px;
+    }
+
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d4d4d8;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-white dark:bg-[#181818] text-slate-800 dark:text-zinc-200 font-sans antialiased selection:bg-slate-900 selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-200">
+
+  <div class="fixed top-4 right-4 z-50">
+
+  </div>
+
+  <div class="min-h-screen flex flex-col">
+
+    <header class="border-b border-slate-100 dark:border-zinc-900 sticky top-0 bg-white/80 dark:bg-black/80 backdrop-blur-md z-40">
+      <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+        <span class="font-bold text-sm tracking-wide text-slate-800 dark:text-white">NeuraTube</span>
+        <span class="text-[10px] font-mono text-slate-400 dark:text-zinc-600 tracking-wider">USER MANUAL</span>
+      </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="flex-1 max-w-3xl mx-auto px-6 py-10 md:py-16 w-full space-y-12 md:space-y-16">
+
+      <!-- 記事ヘッダー / タイトル -->
+      <article class="space-y-8">
+        <header class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-[10px] font-bold text-slate-600 dark:text-zinc-400 tracking-wider uppercase">
+              EXTENSION GUIDE
+            </span>
+            <span class="text-xs text-slate-400 dark:text-zinc-500 font-mono">Ver 1.0</span>
+          </div>
+          
+          <h1 class="text-2xl md:text-3.5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-snug">
+            YouTubeを“自分専用アプリ”に。<br>ノイズを排した視聴環境を作る「NeuraTube」紹介＆取扱ガイド
+          </h1>
+
+          <div class="flex items-center gap-4 text-xs text-slate-500 dark:text-zinc-400 pt-1">
+            <div class="flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-slate-900 dark:bg-zinc-800 flex items-center justify-center text-[10px] font-bold text-white font-mono">N</span>
+              <span>NeuraTube Developer</span>
+            </div>
+            <span>•</span>
+            <span>読了時間: 約3分</span>
+          </div>
+        </header>
+
+        <!-- リード文 -->
+        <section class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+          <p>
+            毎日YouTubeを開くたび、興味のないショート動画や、アルゴリズムがおすすめしてくる誘惑に時間を奪われていませんか？
+          </p>
+          <p>
+            <strong>「NeuraTube（ニューラチューブ）」</strong>は、YouTubeの画面からノイズを徹底的に排除し、自分が本当に登録したチャンネルの動画だけに集中できる環境を構築するためのブラウザ拡張機能です。<br>
+            技術的な難しい仕組みはすべて裏側に隠し、あなたのYouTube視聴を「快適で確実なもの」へと変えるための使い方を優しく解説します。
+          </p>
+        </section>
+
+        <!-- 比較カード (ビフォーアフター) -->
+        <section class="p-5 rounded-xl bg-slate-50 dark:bg-zinc-950 border border-slate-200/60 dark:border-zinc-900 space-y-4">
+          <h3 class="text-xs font-bold text-slate-800 dark:text-zinc-200 uppercase tracking-wider font-mono flex items-center gap-2">
+            <span>💡</span> NeuraTubeで変わる3つの視聴体験
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
+            <!-- Card 1 -->
+            <div class="p-4 rounded-lg bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-2">
+              <div class="text-xs text-slate-400 dark:text-zinc-500 line-through">開くたびおすすめやShortsに目を奪われる</div>
+              <div class="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                <span>✨</span> クリーンな視界
+              </div>
+              <p class="text-[11px] md:text-xs text-slate-500 dark:text-zinc-400">登録チャンネルの動画だけが並ぶノイズレスな環境に。</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="p-4 rounded-lg bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-2">
+              <div class="text-xs text-slate-400 dark:text-zinc-500 line-through">配信予定やプレミア公開を見逃してしまう</div>
+              <div class="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                <span>✨</span> 自動オープン予約
+              </div>
+              <p class="text-[11px] md:text-xs text-slate-500 dark:text-zinc-400">開始60秒前に自動でタブが開き、画面を最前面化してお知らせ。</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="p-4 rounded-lg bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-2">
+              <div class="text-xs text-slate-400 dark:text-zinc-500 line-through">登録チャンネルが多すぎて見たい動画が埋もれる</div>
+              <div class="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                <span>✨</span> カテゴリ別に整理
+              </div>
+              <p class="text-[11px] md:text-xs text-slate-500 dark:text-zinc-400">「音楽」「VTuber」「教養」などジャンル別にチャンネルを整理。</p>
+            </div>
+          </div>
+        </section>
+
+        <hr class="border-slate-100 dark:border-zinc-900">
+
+        <!-- 本文セクション -->
+        <div class="space-y-10 md:space-y-12">
+          
+          <!-- Section 1 -->
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-slate-400 dark:text-zinc-600">01.</span> 🛠️ 【かんたん】導入手順（インストール）
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-4">
+              <p>
+                NeuraTubeは開発者向けパッケージ（Unpacked Extension）として提供されています。以下の手順で、あなたのブラウザに簡単に取り込むことができます。
+              </p>
+              
+              <!-- ダウンロードエリアを追加 -->
+              <div class="my-8 p-6 md:p-8 bg-indigo-50/50 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/50 rounded-2xl text-center space-y-4 shadow-sm">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">拡張機能のダウンロード</h3>
+                <p class="text-sm text-slate-600 dark:text-zinc-400">まずは以下のボタンからシステム一式（ZIPファイル）をダウンロードしてください。</p>
+                <div class="pt-2">
+                  <a href="https://cdn.neura-music.com/tools/NeuraTube.zip" onclick="forceDownload(event, 'https://cdn.neura-music.com/tools/NeuraTube.zip', 'NeuraTube.zip')" class="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 rounded-xl shadow-md hover:shadow-lg transition-all w-full sm:w-auto">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    <span>NeuraTube.zip をダウンロード</span>
+                  </a>
+                </div>
+              </div>
+              
+              <ol class="list-decimal pl-5 space-y-3">
+                <li>
+                  <strong class="text-slate-800 dark:text-zinc-200">ファイルを準備する</strong><br>
+                  配布されたソースコード（フォルダ一式）をパソコンの使いやすい場所に保存し、解凍しておきます。
+                </li>
+                <li>
+                  <strong class="text-slate-800 dark:text-zinc-200">ブラウザの設定画面を開く</strong><br>
+                  Google Chrome（またはEdgeなどのChromium系ブラウザ）を開き、アドレスバーに以下を入力して移動します。<br>
+                  <code class="inline-block mt-1 px-2 py-1 bg-slate-100 dark:bg-zinc-800 rounded font-mono text-xs border border-slate-200 dark:border-zinc-700">chrome://extensions/</code>
+                </li>
+                <li>
+                  <strong class="text-slate-800 dark:text-zinc-200">デベロッパーモードをONにする</strong><br>
+                  管理画面の右上にある「デベロッパーモード」のスイッチをONにします。
+                </li>
+                <li>
+                  <strong class="text-slate-800 dark:text-zinc-200">システムを読み込む</strong><br>
+                  左上に表示される「パッケージ化されていない拡張機能を読み込む」ボタンをクリックし、手順1で解凍したフォルダを選択します。
+                </li>
+                <li>
+                  <strong class="text-slate-800 dark:text-zinc-200">インストール完了</strong><br>
+                  一覧に「NeuraTube」が表示されたら、いつでも使える状態になります！
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <!-- Section 2 -->
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-slate-400 dark:text-zinc-600">02.</span> 📖 クイック取扱説明書（ファーストステップ）
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-3">
+              <p>導入したら、まずはあなた専用のデータベースを作りましょう。設定は最初の1回だけで完了します。</p>
+              
+              <div class="space-y-4 mt-6">
+                <!-- Step 1 -->
+                <div class="p-4 border-l-2 border-indigo-400 dark:border-indigo-600 bg-slate-50 dark:bg-zinc-900/50">
+                  <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-base">ステップ 1：購読チャンネルをスキャンする</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-slate-600 dark:text-zinc-400">
+                    <li>YouTubeを開き、画面右上（またはヘッダー）に追加された「 ⚙️（設定ボタン） 」をクリックします。</li>
+                    <li>「データ保守」にある「YouTube 登録チャンネル一覧を開く」をクリックします。</li>
+                    <li>新しいタブが開いたら、画面右下にある赤い「完全スキャン開始」ボタンを押します。</li>
+                    <li>自動でスクロールされ、全チャンネルがスキャンされます。「完了！」と出たらタブを閉じてOKです。</li>
+                  </ul>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="p-4 border-l-2 border-indigo-400 dark:border-indigo-600 bg-slate-50 dark:bg-zinc-900/50">
+                  <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-base">ステップ 2：カテゴリを作る</h4>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-zinc-400">
+                    設定画面の「カテゴリ編集」で、あなたがよく見るジャンル（例：音楽、ガジェット、VTuberなど）を入力して「追加」します。ドラッグ＆ドロップで表示順も自由に変えられます。
+                  </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="p-4 border-l-2 border-indigo-400 dark:border-indigo-600 bg-slate-50 dark:bg-zinc-900/50">
+                  <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-base">ステップ 3：チャンネルを振り分ける</h4>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-zinc-400">
+                    「チャンネルリスト & 振り分け」で、スキャンされたチャンネルにカテゴリを割り当てます。「未分類」フィルタを使うと、サクサク作業が終わります（自動保存されます）。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 3 -->
+          <section class="space-y-6 md:space-y-8">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-slate-400 dark:text-zinc-600">03.</span> 📺 主要機能の紹介と使い方
+            </h2>
+            
+            <!-- オプション画面画像 (全体設定) -->
+            <div class="py-2">
+              <div class="w-full rounded-lg overflow-hidden border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 shadow-sm">
+                <img src="neutube1.webp" alt="NeuraTube 設定画面" class="w-full h-auto object-cover opacity-95 hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="hidden p-8 flex-col items-center justify-center text-center text-slate-400 dark:text-zinc-600 space-y-2 min-h-[200px]">
+                  <svg class="w-8 h-8 stroke-current" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                  <span class="text-xs font-semibold">neutube1.webp (NeuraTube 設定パネル)</span>
+                </div>
+                <div class="p-3 bg-white dark:bg-black border-t border-slate-100 dark:border-zinc-900 text-[11px] text-slate-500 dark:text-zinc-400 text-center font-medium">
+                  図1. NeuraTubeの基本設定パネル。ノイズキャンセリングや自動予約機能のON/OFFを一括管理できます。
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 pt-2">
+              <!-- Feature 1 -->
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-slate-800 dark:text-zinc-200 text-[15px]">1. 整理整頓されたスマート・サイドバー</h3>
+                  <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">設定が終わると、YouTubeの左メニューにあなただけのカテゴリが表示されます。</p>
+                  <ul class="list-none space-y-1 text-sm text-slate-600 dark:text-zinc-400">
+                    <li><span class="bg-slate-200 dark:bg-zinc-800 px-1.5 py-0.5 rounded text-xs mr-1">📺 全て</span> 通常のフィードを表示</li>
+                    <li><span class="bg-slate-200 dark:bg-zinc-800 px-1.5 py-0.5 rounded text-xs mr-1">📡 配信予定</span> 今後のライブ・プレミアを時間順に</li>
+                    <li><span class="bg-slate-200 dark:bg-zinc-800 px-1.5 py-0.5 rounded text-xs mr-1">📁 各カテゴリ</span> 割り当てたチャンネルの動画だけを表示</li>
+                  </ul>
+                </div>
+                
+                <!-- 画像2 (サイドバー) -->
+                <div class="w-full max-w-[240px] rounded-lg overflow-hidden border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 shadow-sm mt-4">
+                  <img src="neutube2.webp" alt="スマート・サイドバー" class="w-full h-auto object-cover opacity-95 hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <div class="hidden p-4 flex-col items-center justify-center text-center text-slate-400 dark:text-zinc-600 space-y-2 min-h-[150px]">
+                    <svg class="w-6 h-6 stroke-current" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <span class="text-[10px] font-semibold">neutube2.webp</span>
+                  </div>
+                  <div class="p-2 bg-white dark:bg-black border-t border-slate-100 dark:border-zinc-900 text-[10px] text-slate-500 dark:text-zinc-400 text-center font-medium">
+                    図2. 独自カテゴリが追加されたメニュー
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-8">
+                <!-- Feature 2 -->
+                <div class="space-y-2">
+                  <h3 class="font-bold text-slate-800 dark:text-zinc-200 text-[15px]">2. ノイズ・キャンセリング機能</h3>
+                  <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                    設定から有効にすることで、動画一覧に紛れ込む「Shorts（ショート動画）」や「アルゴリズムによるおすすめ動画棚」を跡形もなく消し去ります。スクロールしても邪魔なものは一切出てきません。
+                  </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="space-y-2">
+                  <h3 class="font-bold text-slate-800 dark:text-zinc-200 text-[15px]">3. 絶対に見逃さない「配信の自動オープン予約」</h3>
+                  <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                    楽しみにしているライブ配信やプレミア公開を絶対に逃さないための強力なアシスト機能です。
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-slate-600 dark:text-zinc-400">
+                    <li><strong>予約方法：</strong>動画のサムネイルやリンクを <strong>右クリック</strong> し、「この配信を自動オープン予約」を選択するだけ。</li>
+                    <li><strong>自動オープン：</strong>配信が始まる <strong>60秒前</strong> になると、自動的に新しいタブでその配信ページを開き、ウィンドウを最前面に呼び出して合図してくれます。</li>
+                    <li><strong>自動リフレッシュ：</strong>待機所で待っている間、配信が始まった瞬間に自動でページを読み込み、再生を開始してくれます。</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Feature 4 -->
+              <div class="space-y-2 md:col-span-2 border-t border-slate-100 dark:border-zinc-900 pt-6">
+                <h3 class="font-bold text-slate-800 dark:text-zinc-200 text-[15px]">4. PWA（アプリ化）への完全対応</h3>
+                <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                  YouTubeを「ウィンドウとして開く（PWA）」でお使いの場合、起動した瞬間に一瞬のチラつきもなく「登録チャンネルフィード」を直接開くように自動制御されます。まるで最初からパソコン専用のYouTubeアプリを起動したかのような快適さを体験できます。
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- ご利用上の注意 (Callout Box) -->
+          <section>
+            <div class="p-5 rounded-lg bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900/50 space-y-3 text-sm text-slate-700 dark:text-zinc-300">
+              <div class="font-bold text-red-800 dark:text-red-400 flex items-center gap-2 font-mono uppercase tracking-wider">
+                <span>⚠️</span> ご利用上の注意
+              </div>
+              <ul class="list-disc pl-5 space-y-2 leading-relaxed">
+                <li><strong>非公式ツールです：</strong>NeuraTubeは個人の開発者によって提供されている非公式なツールです。YouTube公式やGoogle社とは関係ありません。</li>
+                <li><strong>仕様変更による影響：</strong>YouTube側のデザインやシステムの大きな変更によって、一時的に機能が使えなくなる場合があります。</li>
+                <li><strong>自己責任での運用：</strong>本ツールの利用により生じたトラブルや不利益について、開発元は責任を負いかねますのでご了承ください。</li>
+              </ul>
+            </div>
+          </section>
+
+        </div>
+
+      </article>
+
+      <div id="share-container"></div>
+      <script src="/js/article-share.js"></script>
+
+    </main>
+
+    <!-- フッター -->
+    <footer
+      class="bg-slate-50 dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-900 py-8 text-center text-xs text-slate-500 dark:text-zinc-500 space-y-1.5 relative z-10">
+      <p>NeuraTube — The ultimate noise-free extension for YouTube</p>
+    </footer>
+  </div>
+
+  
+  <!-- ファイルダウンロード処理スクリプト -->
+  <script>
+    async function forceDownload(event, url, filename) {
+      event.preventDefault();
+      const btn = event.currentTarget;
+      const textSpan = btn.querySelector('span');
+      const originalText = textSpan.innerText;
+      
+      try {
+        textSpan.innerText = 'ダウンロード中...';
+        btn.style.pointerEvents = 'none';
+        btn.classList.add('opacity-80');
+
+        const response = await fetch(url);
+        if (!response.ok) throw new Error('Network response was not ok');
+        
+        const blob = await response.blob();
+        const downloadUrl = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = downloadUrl;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        
+        window.URL.revokeObjectURL(downloadUrl);
+        document.body.removeChild(a);
+        
+      } catch (error) {
+        console.warn('Fetch failed (likely CORS), falling back to direct link:', error);
+        window.open(url, '_blank');
+      } finally {
+        textSpan.innerText = originalText;
+        btn.style.pointerEvents = 'auto';
+        btn.classList.remove('opacity-80');
+      }
+    }
+  </script>
+
+</body>
+
+</html>

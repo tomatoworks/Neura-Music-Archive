@@ -31,7 +31,8 @@
       "caption": "ピアノやウッドベースを中心に、静かな時間や夜の作業にも使いやすい構成にしています。",
       "albums": [
         "album_1781775942038",
-        "album_1781864098749"
+        "album_1781864098749",
+        "album_1782090112112"
       ]
     }
   ],
@@ -276,6 +277,27 @@
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\jazz\\Blue Hour",
       "type": "vocal"
+    },
+    {
+      "id": "album_1782090112112",
+      "title": "Light Vocal Piano Jazz",
+      "art": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/cover_1782095193001.webp",
+      "caption": "ピアノと柔らかなパッドを中心にした、軽やかなボーカルジャズのアルバムです。",
+      "categoryId": "cat_1781775909905",
+      "tracks": [
+        "track_1782093848703_0",
+        "track_1782093848706_1",
+        "track_1782093848706_2",
+        "track_1782093848706_3",
+        "track_1782093848706_4",
+        "track_1782093848706_5",
+        "track_1782093848706_6",
+        "track_1782093848707_7",
+        "track_1782093848707_8",
+        "track_1782093848707_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\jazz\\Light Vocal Piano Jazz",
+      "type": ""
     }
   ],
   "tracks": [
@@ -2285,6 +2307,166 @@
       "bpm": "",
       "lyrics": "[Intro]\n(Mmm)\n(Yeah)\n(Let it go)\n\n[Verse]\nToss the keys on the wood\nUnstrap the heavy boots\nThe day was a hard climb\nNow let the river take the weight\n(Let it go)\nLet the river take the weight\n\n[Verse]\nTight knots in the mind\nUndo them one by one\nThe ticking clock skips a beat\nLet the river take the weight\n(Let it go)\nLet the river take the weight\n\n[Bridge]\nIt is a slow tide\nCool water on the heat\nNo more push and pull\nJust the drift of the tide\n(Cool water)\nNo more push and pull\nJust the drift of the tide\n\n[Verse]\nEyes shut to the moon\nThe spirit starts to swing\nNo more mountain to move\nLet the river take the weight\n(Let it go)\nLet the river take the weight\n\n[Outro]\nLet it slide\nLet it drift\n(Down the river)\n(Down the river)\nWatch it slide\n(Down the river)\nLet it go\n(Let it go)\nLet it go\n(Mmm)\nYeah\nRest now\nRest now",
       "added_at": "2026-06-19"
+    },
+    {
+      "id": "track_1782093848703_0",
+      "title": "Le Rideau De Lin",
+      "caption": "レースのカーテンが優しく揺れる音。窓から差し込む光と、過ぎゆく夏の日差しを、ただ静かに感じる時間。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Le%20Rideau%20de%20Lin.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse]\nLe lin s'agite doucement\nComme un souffle sur ma main\nLa fenêtre reste ouverte\nPour laisser entrer l'été\nIl fait bon rester ici\nÀ regarder le jour glisser\n\n[Verse]\nCe mouvement de dentelle\nMe rappelle ton sourire\nUne paix qui s'installe\nSur le bois du salon\nOn ne cherchait rien de plus\nQue ce calme partagé\n\n[Verse]\nLes nuages passent au loin\nLe silence est un ami\nOn écoutait le dehors\nDevenir un paysage\nSans un mot, sans un geste\nLaissant la place à l'instant\n\n[Bridge]\nLe temps n'a plus d'importance\nC'est une valse sans bruit\nUn souvenir qui voyage\nDans le salon immobile\n(Tout est tranquille)\n(Si tranquille)\n\n[Verse]\nLe vent soulève le voile\nLe soleil dessine des lignes\nJe respire cette absence\nAvec une douceur immense\nRien ne presse le monde\nLa vie s'arrête un instant\n\n[Outro]\nJuste le rideau qui bouge\n(Le vent léger)\nJuste un peu de lumière\n(Sur le sol)\nRien de plus\nTout est là\n(Rien de plus)",
+      "added_at": "2026-06-22"
+    },
+    {
+      "id": "track_1782093848706_1",
+      "title": "Par La Vitre",
+      "caption": "窓ガラス越しに見つめる、無数の人々の営み。日常の喧騒の中にこそ宿る、穏やかな美しさと静謐な時間の流れを綴った一瞬の詩情。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Par%20la%20Vitre.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse 1]\nLe ciel gris est un manteau de laine douce\nJe m'installe confortablement derrière le verre immense\nRegardant le mouvement des gens qui courent dehors\nIci le temps semble enfin vouloir s'arrêter\nBien au chaud sur le velours d'un vieux banc\nLe silence est un ami qui me comprend\n\n[Chorus]\nChaque passant porte une vie entière en lui\nUn mystère que je devine à peine aujourd'hui\nJe les regarde passer sans dire un seul mot\nDans la clarté pure de cet instant de paix\nTout devient calme et tout devient vraiment beau\n(Vraiment beau)\n\n[Verse 2]\nUn vieil homme réajuste son écharpe de laine bleue\nUne femme sourit seule à une pensée invisible\nLeurs pas résonnent doucement sur les pierres du chemin\nJe reste le témoin discret de tous leurs silences\nCapturant la beauté fragile de chaque petit geste\nLe monde défile comme un poème sans fin\n\n[Chorus]\nChaque passant porte une vie entière en lui\nUn mystère que je devine à peine aujourd'hui\nJe les regarde passer sans dire un seul mot\nDans la clarté pure de cet instant de paix\nTout devient calme et tout devient vraiment beau\n(Si calme)\n\n[Bridge]\nSoudain la lumière change et réchauffe mon visage\nLe soleil vient percer la grisaille de ces nuages\nJe sens mon cœur devenir soudain beaucoup plus léger\nL'avenir se dessine devant moi de façon plus claire\nComme une promesse qui commence enfin à naître\n(Une promesse pour demain)\n\n[Chorus]\nChaque passant porte une vie entière en lui\nUn mystère que je devine à peine aujourd'hui\nJe les regarde passer sans dire un seul mot\nDans la clarté pure de cet instant de paix\nTout devient calme et tout devient vraiment beau\n\n[Outro]\nLa paix m'enveloppe si doucement dans cet abri\nPar la fenêtre le jour s'étire à l'infini\nTout est si calme\nTout est si beau\n(Si beau)\n(Tout est calme)\n(Je me sens bien ici)",
+      "added_at": "2026-06-22"
+    },
+    {
+      "id": "track_1782093848706_2",
+      "title": "Un Instant à Moi",
+      "caption": "日常の喧騒から離れ、自分だけの静かで甘いひとときを慈しむ、内省的で優雅な時間を描いた歌。\n太陽の光が窓を通り抜け、時間さえも止まるような「私だけの瞬間」を綴っています。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Un%20Instant%20%C3%A0%20Moi.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\nLe soleil traverse la vitre\nLe temps s'arrête un instant\nSeule avec mes pensées\nC'est un délice\n\n[Verse]\nClaquent les talons sur le pavé\nJe trouve mon refuge discret\nUn rayon de lumière vive\nSur le bord de ma tasse\n(Sur le bord de ma tasse)\nValse des nuages au-dehors\nJe savoure ce décor léger\nRien ne presse aujourd'hui\nLe bonheur me sourit\n\n[Verse]\nLe sucre fond tout doucement\nDans cette paix que je ressens\nMon livre repose sur la nappe\nLe monde entier m'échappe\n(Tout m'échappe enfin)\nChaque seconde est un trésor\nQue je garde en mon for intérieur\nC'est une chance inouïe\nDe vivre cette poésie\n\n[Bridge]\nOn dit que la ville s'agite\nQue la foule court et s'invite\nMais je préfère ce silence\nCette douce et belle absence\n(Belle absence)\nJe suis la reine du moment\nDans mon jardin de sentiments\n\n[Verse]\nC'est ma petite victoire à moi\nSous ce plafond rempli de joie\nUne parenthèse enchantée\nLoin de toute la vanité\n(Toute la vanité)\nLa vie est enfin si simple\nQuand on prend le temps d'être simple\nUn instant de liberté\nDans ma douce tranquillité\n\n[Outro]\nUn instant à moi\n(Tout à moi)\nSi divin\n(Si divin)\nSimplement moi\nC'est parfait",
+      "added_at": "2026-06-22"
+    },
+    {
+      "id": "track_1782093848706_3",
+      "title": "Une Petite Trêve (Variation 1)",
+      "caption": "完璧な「大きな愛」ではない、ただの静寂。喧騒の中でのささやかな休息時間のような、疲れた都会を歩く日常の描写。",
+      "type": "instrumental",
+      "duration": 181,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Une%20Petite%20Tr%C3%AAve%20(Variation%201).mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ouh, ouh)\n\n[Verse 1]\nJe quitte enfin cet appartement beaucoup trop cher\nL'odeur du vernis sur l'escalier me donne la nausée\nLa rue de Rivoli s'étire comme un vieux chat fatigué\nSous un ciel bas qui n'a absolument rien de poétique\nJe marche sans but précis en fixant le bitume\nÉvitant les flaques sombres où flottent des plastiques\nLe bruit de mes talons est le seul rythme qui compte\nDans cette ville qui ne dort jamais, elle somnole simplement\n\n[Chorus]\nCe n'est pas le grand amour, c'est juste le calme\nUne petite trêve entre deux coups de klaxon\n(Le silence, enfin)\nMes pensées arrêtent enfin de se mordre la queue\nPendant que mes semelles usées frappent le pavé\nC'est un répit, rien de plus qu'une parenthèse\n\n[Verse 2]\nMonsieur Martin porte encore ses lunettes cassées\nIl me dévisage comme si je lui devais trois mois de loyer\nLa petite librairie du coin a finalement baissé le rideau\nPour laisser la place à une boutique de bougies artisanales\nC'est le signe des temps, une odeur de lavande chimique\nQui masque les relents d'égout de la station de métro\nOn appelle ça la gentrification, je suppose\nMoi j'appelle ça un ennui particulièrement coûteux\n\n[Chorus]\nCe n'est pas le grand amour, c'est juste le calme\nUne petite trêve entre deux coups de klaxon\n(Un peu de paix)\nMes pensées arrêtent enfin de se mordre la queue\nPendant que mes semelles usées frappent le pavé\nC'est un répit, rien de plus qu'une parenthèse\n\n[Bridge]\nOn se donne des airs de poète maudit à chaque coin de rue\nMais je suis juste un type avec une très mauvaise posture\nLe vent frais n'est pas une caresse divine sur mon front\nC'est juste de l'air en mouvement contre ma peau fatiguée\nIl n'y a pas de message caché dans le vol des pigeons\nJuste la faim et le bruit de leurs ailes un peu sales\n(Rien de sacré ici)\n\n[Chorus]\nCe n'est pas le grand amour, c'est juste le calme\nUne petite trêve entre deux coups de klaxon\n(Le silence, enfin)\nMes pensées arrêtent enfin de se mordre la queue\nPendant que mes semelles usées frappent le pavé\nC'est un répit, rien de plus qu'une parenthèse\n\n[Outro]\nJe vais bientôt rentrer dans ma boîte à chaussures\nLa clé tourne déjà dans ma tête, un bruit métallique\nUn dernier regard pour cette gouttière qui fuit\nC'est bien suffisant pour aujourd'hui\n(C'est assez)\n(Vraiment assez)",
+      "added_at": "2026-06-22"
+    },
+    {
+      "id": "track_1782093848706_4",
+      "title": "L'Ancre Douce",
+      "caption": "過ぎゆく時間の中で、ただあなただけが心の錨（いかり）となり、揺るぎない存在を支える。",
+      "type": "instrumental",
+      "duration": 167,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/L'Ancre%20Douce.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(La la la la)\n(Mmm mmm)\n\n[Verse 1]\nLe jour retire ses voiles\nLe mauve s'installe doucement\nSur la ligne des toits\nTout bascule vers le gris\nSauf la clarté de tes yeux\nQui me garde ici\n\n[Chorus]\nTu restes l’ancre\nDans ce mouvement perpétuel\nQuand le vent se lève\nTu es mon port\nMa seule évidence\n(Mon évidence)\n\n[Verse 2]\nLe sable coule entre les doigts\nLe temps n'a plus de forme\nLes passants se hâtent\nVers un foyer incertain\nJe marche à ton rythme\nSur le bois du ponton\n\n[Chorus]\nTu restes l’ancre\nDans ce mouvement perpétuel\nQuand le vent se lève\nTu es mon port\nMa seule évidence\n(Mon évidence)\n\n[Bridge]\nRien ne dure sous le soleil\nMême la pierre s'effrite\nMais ta voix résonne\nComme un accord majeur\nDans le silence du soir\n(Si pur, si vrai)\n\n[Chorus]\nTu restes l’ancre\nDans ce mouvement perpétuel\nQuand le vent se lève\nTu es mon port\nMa seule évidence\n\n[Outro]\nLe ciel devient velours\nTu es là\nTout va bien\n(Tout va bien)\n(Mmm mmm)\n(La la la la)",
+      "added_at": "2026-06-22"
+    },
+    {
+      "id": "track_1782093848706_5",
+      "title": "Ma Pluie De Paix",
+      "caption": "雨のカーテン越しに見る、心の平穏な瞬間。過ぎ去った後悔や重荷を洗い流し、再び立ち上がるためのささやかな勝利を謳う歌。\n\n「C'est ma pluie de paix (これは私の平和の雨)」というフレーズが示すように、静寂の中での自己発見と再生の物語です。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Ma%20Pluie%20de%20Paix.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Ouh)\n\n[Verse 1]\nLe front contre le verre froid\nJe regarde les gouttes glisser\nElles font la course dehors\nLe monde est enfin en pause\nMa poitrine se desserre un peu\nJe laisse tout sortir maintenant\nLa peur et le bruit des autres\nJe ne tremble plus du tout\n\n[Pre-Chorus]\nC’est le moment\nOù je me retrouve\n(Je me retrouve)\n\n[Chorus]\nC'est ma pluie de paix\nElle lave tous mes regrets\nJe suis encore là debout\nBien plus forte qu'avant\nC’est ma petite victoire\nIci dans ce coin de vitre\n\n[Verse 2]\nTu parlais toujours beaucoup trop\nTon venin s'efface doucement\nSous cette eau qui tombe fort\nJe n'écoute plus tes reproches\nJe regarde le ciel devenir gris\nIl est immense et protecteur\nJe peux enfin marcher seule\n\n[Pre-Chorus]\nC’est le moment\nOù je me retrouve\n(Où je me retrouve)\n\n[Chorus]\nC'est ma pluie de paix\nElle lave tous mes regrets\nJe suis encore là debout\nBien plus forte qu'avant\nC’est ma petite victoire\nIci dans ce coin de vitre\n\n[Bridge]\nPlus aucun cri\nJuste cette eau douce\nQui efface ton nom\nJe me pardonne tout\nJe tourne enfin la page\nLe ciel est à moi\n(Le ciel est à moi)\n\n[Chorus]\nC'est ma pluie de paix\nElle lave tous mes regrets\nJe suis encore là debout\nBien plus forte qu'avant\nC’est ma petite victoire\nIci dans ce coin de vitre\n\n[Outro]\nLe calme est revenu\n(Calme)\nJe reste ici\n(Mmm)\nTout est lavé\n(Tout est lavé)",
+      "added_at": "2026-06-22"
+    },
+    {
+      "id": "track_1782093848706_6",
+      "title": "Le Soir Sage",
+      "caption": "静けさの中で、日中の喧騒が薄れゆく。時間というものへの確信と、夜の深い安らぎが訪れる瞬間を描いた歌。\nLa lampe est très basse. Le silence est un manteau.",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Le%20Soir%20Sage.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm)\n(Mmm)\n\n[Verse 1]\nLa lampe est très basse\nLe rideau de lin ne bouge plus\nUn simple verre d'eau sur le bois\nLe silence est un manteau\n(Un manteau si doux)\nL'air est frais sur ma peau\nLa journée s'efface enfin\nSans laisser de trace\n\n[Verse 2]\nJe regarde le long chemin parcouru\nLes pierres pointues et les fleurs\nRien n'était vraiment un faux pas\nJuste un mouvement nécessaire\n(Un mouvement vers soi)\nChaque seconde avait son sens\nMême le vent et la pluie\nM'ont menée jusqu'ici\n\n[Bridge]\nLa sagesse arrive sans bruit\nComme la marée qui monte\nUne certitude enfin limpide\nPosée au creux de ma main\nLe ciel est vaste et noir\nMais je n'ai plus peur\nJe respire enfin\n\n[Verse 3]\nDemain sera une petite danse\nLégère et sans aucun effort\nJe respire l'air de la nuit\nAvec une joie immense\n(Une joie tranquille)\nLe temps n'est plus un ennemi\nMais un ami qui m'attend\n(Il m'attend)\n\n[Outro]\nTout est calme maintenant\n(Si calme)\nLe chemin est là\n(Mmm)\nJe suis là\n(Mmm)",
+      "added_at": "2026-06-22"
+    },
+    {
+      "id": "track_1782093848707_7",
+      "title": "Papier Mat",
+      "caption": "新しい一日が始まる静かな目覚め。過ぎ去った美しい思い出を胸に、優しく未来へと歩みを進めていくような情景を描きます。",
+      "type": "instrumental",
+      "duration": 168,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Papier%20Mat.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh la la la)\n(Mmm)\n\n[Verse]\nLe jour se lève à peine\nJe regarde ton visage\nSur ce vieux papier mat\nTu souris encore\n(Tu souris encore)\nLe vent fait bouger le rideau\nC'est doux\nC'est calme\n\n[Verse]\nJe tourne une autre page\nOn marchait sur le sable\nTa main dans la mienne\nJe sens la chaleur\n(Je sens la chaleur)\nPas besoin de parler\nLe piano suffit\n\n[Bridge]\nTout est si clair maintenant\nLe passé n'est pas triste\nC'est un cadeau posé là\nSur la table en bois\nJe te salue en silence\nAvant que le monde s'éveille\n\n[Verse]\nJe referme le livre\nTon éclat reste ici\nDans la lumière neuve\nJe marche vers demain\n(Vers demain)\nLe cœur est léger\nTout va bien\n\n[Outro]\n(Tout va bien)\n(Mmm)\n(L'aube est là)\n(L'aube est là)",
+      "added_at": "2026-06-22"
+    },
+    {
+      "id": "track_1782093848707_8",
+      "title": "Toile de Pluie (Take 1)",
+      "caption": "雨上がりの街並み、濡れた路面が描く光と影の抽象的な風景。時間が止まったかのような静寂の中に、微かなリズムだけが残る瞬間を捉えた一枚。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Toile%20de%20Pluie%20(Take%201).mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Check it)\n(Regarde)\n(Écoute)\n\n[Verse 1]\nL'orage s'en va\nL'air est lourd\nHumide et frais\nLa ville se tait\nL'eau se pose\nSous mes pieds\nLe bitume respire\nLe noir se transforme\nL'asphalte est un écrin\n\n[Chorus]\nToile de pluie\n(Dans la flaque)\nToile de pluie\n(Tout craque)\nToile de pluie\n(Je glisse)\nToile de pluie\n(Fixe le sol)\n\n[Verse 2]\nFeux rouges qui coulent\nVitrines qui flottent\nJe marche sur l'envers\nSans me mouiller\nLe rythme est strict\nLe silence est grand\nTaches de pétrole\nLe bleu devient roi\nLe groove est là\n\n[Chorus]\nToile de pluie\n(Dans la flaque)\nToile de pluie\n(Tout craque)\nToile de pluie\n(Je glisse)\nToile de pluie\n(Fixe le sol)\n\n[Bridge]\nUn pas\nDeux pas\nRien ne bouge\nTout change\nLa ville est propre\nLa ville est neuve\nReste concentré\nSur le mouvement\n\n[Outro]\nÉphémère\n(C'est maintenant)\nLiquide\n(Regarde bien)\nToile de pluie\n(Rien ne reste)\nToile de pluie\n(Juste le groove)\n(Dans la flaque)\n(Sur le goudron)\n(Sous mon pas)\n(Fixe le sol)\nToile de pluie\n(Tout craque)\n(Tout brille)\nToile de pluie\n(C'est fini)",
+      "added_at": "2026-06-22"
+    },
+    {
+      "id": "track_1782093848707_9",
+      "title": "Capitulation De Soie",
+      "caption": "抗いがたい優雅さの中での自己降伏。知的な防御を解き放ち、最も贅沢な「何もしない」瞬間に身を委ねる歌。\n\nあらゆる皮肉や鋭利な言葉を脇に置き、ただ静かな光の中で安堵する感覚を描写。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Capitulation%20de%20Soie.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(douceur)\n\n[Verse 1]\nMon cerveau cesse enfin sa petite dictature\nJ'abandonne l'idée de corriger le monde entier\nLe lin froissé est mon seul dictionnaire ce soir\nC’est une capitulation en soie, une défaite élégante\nMes griefs contre l’industrie et les voisins\nSe dissolvent dans un verre d’eau sur la table\n(si douce, l'eau)\n\n[Chorus]\nQuelle paix déconcertante, presque impolie\nUne absence totale de punchline ou d'ironie\nLe silence n'est pas un vide, c'est un luxe\n(c'est un luxe)\nJe dépose mes armes, mes livres, mes sarcasmes\nEt je m'installe dans cette clarté sans effort\n(enfin)\n\n[Verse 2]\nOn s'était disputés pour une virgule mal placée\nPour un vin trop cher ou une vérité mal léchée\nMais l'architecture de ma chambre est parfaite maintenant\nLes angles droits me pardonnent mes fautes de goût\nPas de métaphores, juste le poids de mes jambes\nLa gravité est la seule loi que je respecte encore\n(loi physique)\n\n[Chorus]\nQuelle paix déconcertante, presque impolie\nUne absence totale de punchline ou d'ironie\nLe silence n'est pas un vide, c'est un luxe\n(c'est un luxe)\nJe dépose mes armes, mes livres, mes sarcasmes\nEt je m'installe dans cette clarté sans effort\n(sans effort)\n\n[Bridge]\nC'est le moment pathétique où le snob s'endort\nHeureux d'être bête, heureux d'avoir tort\nAdieu la pertinence, adieu la posture\nJe suis juste un corps qui respire sans mesure\n\n[Chorus]\nQuelle paix déconcertante, presque impolie\nUne absence totale de punchline ou d'ironie\nLe silence n'est pas un vide, c'est un luxe\n(c'est un luxe)\nJe dépose mes armes, mes livres, mes sarcasmes\nEt je m'installe dans cette clarté sans effort\n(enfin libre)\n\n[Outro]\nZéro cynisme\nJuste le coton\n(le coton)\nC'est fini pour aujourd'hui\n(tout est fini)",
+      "added_at": "2026-06-22"
     }
   ]
 }
