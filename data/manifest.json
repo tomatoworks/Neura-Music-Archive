@@ -104,6 +104,13 @@
       "content_url": "contents/articles/1600yen.html",
       "date": "2026-06-16",
       "is_visible": true
+    },
+    {
+      "id": "article_20260622154744",
+      "title": "SPA×MPA",
+      "content_url": "public-site/contents/articles/mpaとseo.html",
+      "date": "2026-06-22",
+      "is_visible": true
     }
   ]
 }
