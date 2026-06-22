@@ -20,21 +20,27 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0', transform: 'translateY(10px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        keyframes: {
+                            fadeIn: {
+                                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                                '100%': { opacity: '1', transform: 'translateY(0)' },
+                            }
                         }
                     }
                 }
             }
-        }
-    </script>
-</head>
-<body class="bg-[var(--bg-color)] text-[var(--text-main)] h-screen flex flex-col font-['IBM_Plex_Sans_JP',_'Inter',_sans-serif] overflow-hidden">
+        </script>
+        <style>
+            body {
+                font-family: 'IBM Plex Sans JP', 'Inter', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                line-height: 1.6;
+            }
+        </style>
+    </head>
+    <body class="bg-[var(--bg-color)] text-[var(--text-main)] h-screen flex flex-col font-sans overflow-hidden">
 
     <header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
     <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
