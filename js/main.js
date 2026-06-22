@@ -289,11 +289,51 @@ window.showLyrics = (title, lyrics) => {
 
 // モーダル制御
 window.openModal = (pageKey) => {
-  const pageData = state.data.pagesData?.pages?.[pageKey];
-  if (!pageData) return;
+  const pages = state.data.pagesData?.pages;
+  if (!pages) return;
 
-  document.getElementById('modal-title').textContent = pageData.title;
-  document.getElementById('modal-body').innerHTML = pageData.content;
+  let modalTitle = "";
+  let modalContent = "";
+
+  if (pageKey === 'about') {
+    modalTitle = "このサイトについて";
+    
+    const keysToMerge = ['terms', 'contact', 'ads'];
+    let mergedHtml = "";
+    
+    keysToMerge.forEach(key => {
+      const page = pages[key];
+      if (page) {
+        mergedHtml += `
+          <div class="mb-10 last:mb-0">
+            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-800 pb-2 mb-4">
+              ${page.title}
+            </h4>
+            <div class="space-y-4">
+              ${page.content}
+            </div>
+          </div>
+        `;
+      }
+    });
+
+    if (!mergedHtml) return;
+    modalContent = mergedHtml;
+
+  } else if (pageKey === 'privacy') {
+    modalTitle = "プライバシーポリシー";
+    const privacySource = document.getElementById('raw-privacy-policy');
+    modalContent = privacySource ? privacySource.innerHTML : "プライバシーポリシーの読み込みに失敗しました。";
+
+  } else {
+    const pageData = pages[pageKey];
+    if (!pageData) return;
+    modalTitle = pageData.title;
+    modalContent = pageData.content;
+  }
+
+  document.getElementById('modal-title').textContent = modalTitle;
+  document.getElementById('modal-body').innerHTML = modalContent;
   
   // 文章用にサイズと余白を「広め」に設定
   const modalContainer = document.querySelector('#modal-overlay > div');
