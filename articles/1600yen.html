@@ -81,6 +81,56 @@
 <body
   class="bg-white dark:bg-[#181818] text-slate-800 dark:text-zinc-200 font-sans antialiased selection:bg-slate-900 selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-200">
 
+<!-- NMA-HEADER-START -->
+<header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+    <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      <div class="flex items-center">
+        <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+          <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+          <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+        </a>
+      </div>
+
+      <div class="flex items-center space-x-3 md:space-x-7">
+        
+        <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
+          <a id="latest-blog-link" href="#" class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
+          <a href="#" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-7">
+          <div class="relative inline-block">
+            <select onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+              <option value="">Generatorを選択</option>
+              <option value="/tools/clock-generator.html">CLOCK GEN</option>
+              <option value="/tools/ranking-generator.html">BEST10 GEN</option>
+              <option value="/tools/overlay/">OVERLAY GEN</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+          </div>
+          
+          <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+          </div>
+        </div>
+
+        <button class="md:hidden text-gray-500 dark:text-gray-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+    </div>
+  </header>
+<!-- NMA-HEADER-END -->
+
+
   <div class="fixed top-4 right-4 z-50">
 
   </div>
@@ -88,7 +138,10 @@
   <div class="min-h-screen flex flex-col">
 
     <header class="border-b border-slate-100 dark:border-zinc-900 sticky top-0 bg-white/80 dark:bg-black/80 backdrop-blur-md z-40">
-      <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-end">
+      <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+        <a href="/" class="text-sm font-bold tracking-tight text-slate-900 dark:text-white hover:opacity-80 transition-opacity">
+          音楽配布サイトを年間1,600円で運用する方法
+        </a>
         <span class="text-[10px] font-mono text-slate-400 dark:text-zinc-600 tracking-wider">DEVELOPER BLOG</span>
       </div>
     </header>
@@ -209,11 +262,90 @@
       <div id="share-container"></div>
       <script src="/js/article-share.js"></script>
 
-    <footer
+          </main>
+
+    
+<!-- NMA-LINKS-START -->
+<nav class="mt-12 pt-6 border-t border-slate-200 dark:border-zinc-800 flex justify-between items-stretch gap-4">
+  <a href="best10/best_10_flipper.html" class="flex-1 p-4 border border-slate-200 dark:border-zinc-800 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-800/50 transition text-left block"><div class="text-xs text-slate-500 mb-1">← 古い記事</div><div class="text-sm font-bold text-slate-800 dark:text-slate-200 line-clamp-2">Best 10 Flipper - 取扱説明書 & デモ</div></a>
+  <div class="flex-1 p-4 border border-transparent"></div>
+</nav>
+<!-- NMA-LINKS-END -->
+
+<footer
       class="bg-slate-50 dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-900 py-8 text-center text-xs text-slate-500 dark:text-zinc-500 space-y-1.5 relative z-10">
       <p>Neura Music Archive (NMA) — ロイヤリティフリー音楽アーカイブ</p>
       <p class="font-mono">&copy; 2026 Neura Music Archive</p>
     </footer>
+
+
+<!-- NMA-FOOTER-START -->
+  <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800 text-gray-800 dark:text-gray-100" onclick="event.stopPropagation()">
+      <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+        <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
+        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div id="modal-body" class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      let pagesData = null;
+      async function loadPagesData() {
+        try {
+          const res = await fetch('/data/pages.json');
+          if (res.ok) {
+            const data = await res.json();
+            pagesData = data.pages;
+          }
+        } catch (e) {
+          console.error("Failed to load pages.json", e);
+        }
+      }
+      async function openModal(pageKey) {
+        if (!pagesData) {
+          await loadPagesData();
+        }
+        const modal = document.getElementById('modal-overlay');
+        const titleEl = document.getElementById('modal-title');
+        const bodyEl = document.getElementById('modal-body');
+        
+        if (modal && pagesData && pagesData[pageKey]) {
+          titleEl.innerText = pagesData[pageKey].title;
+          bodyEl.innerHTML = pagesData[pageKey].content;
+          modal.style.display = 'flex';
+        }
+      }
+      function closeModal() {
+        const modal = document.getElementById('modal-overlay');
+        if (modal) {
+          modal.style.display = 'none';
+        }
+      }
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = document.getElementById('generator-selector');
+        if (selector) {
+          const currentPath = window.location.pathname;
+          const options = Array.from(selector.options);
+          const matchedOption = options.find(opt => opt.value && currentPath.includes(opt.value));
+          if (matchedOption) {
+            selector.value = matchedOption.value;
+          } else {
+            selector.value = "";
+          }
+        }
+      });
+    })();
+  </script>
+<!-- NMA-FOOTER-END -->
 
 </body>
 
