@@ -289,47 +289,45 @@ window.showLyrics = (title, lyrics) => {
 
 // モーダル制御
 window.openModal = (pageKey) => {
-  const pages = state.data.pagesData?.pages;
-  if (!pages) return;
-
   let modalTitle = "";
   let modalContent = "";
 
-  if (pageKey === 'about') {
-    modalTitle = "このサイトについて";
-    
-    const keysToMerge = ['terms', 'contact', 'ads'];
-    let mergedHtml = "";
-    
-    keysToMerge.forEach(key => {
-      const page = pages[key];
-      if (page) {
-        mergedHtml += `
-          <div class="mb-10 last:mb-0">
-            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-800 pb-2 mb-4">
-              ${page.title}
-            </h4>
-            <div class="space-y-4">
-              ${page.content}
-            </div>
-          </div>
-        `;
-      }
-    });
-
-    if (!mergedHtml) return;
-    modalContent = mergedHtml;
-
-  } else if (pageKey === 'privacy') {
+  if (pageKey === 'privacy') {
     modalTitle = "プライバシーポリシー";
     const privacySource = document.getElementById('raw-privacy-policy');
     modalContent = privacySource ? privacySource.innerHTML : "プライバシーポリシーの読み込みに失敗しました。";
-
   } else {
-    const pageData = pages[pageKey];
-    if (!pageData) return;
-    modalTitle = pageData.title;
-    modalContent = pageData.content;
+    const pages = state.data.pagesData?.pages;
+    if (!pages) return;
+
+    if (pageKey === 'about') {
+      modalTitle = "このサイトについて";
+      const keysToMerge = ['terms', 'contact', 'ads'];
+      let mergedHtml = "";
+      
+      keysToMerge.forEach(key => {
+        const page = pages[key];
+        if (page) {
+          mergedHtml += `
+            <div class="mb-10 last:mb-0">
+              <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-800 pb-2 mb-4">
+                ${page.title}
+              </h4>
+              <div class="space-y-4">
+                ${page.content}
+              </div>
+            </div>
+          `;
+        }
+      });
+
+      modalContent = mergedHtml ? mergedHtml : "<p class='text-gray-500'>データの読み込みに失敗しました。ブラウザのキャッシュをクリアして再度お試しください。</p>";
+    } else {
+      const pageData = pages[pageKey];
+      if (!pageData) return;
+      modalTitle = pageData.title;
+      modalContent = pageData.content;
+    }
   }
 
   document.getElementById('modal-title').textContent = modalTitle;
