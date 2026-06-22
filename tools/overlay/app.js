@@ -67,7 +67,8 @@ const state = {
         showLive: true,
         customHTML: "",
         fontFamily: "'Orbitron', sans-serif",
-        color: "#ef4444"
+        color: "#ef4444",
+        numWidth: 0.65
     },
     
     ticker: {
@@ -212,12 +213,16 @@ function updateFromInputs() {
     state.clock.customHTML = document.getElementById("clockHTML").value;
     state.clock.fontFamily = document.getElementById("clockFont").value;
     state.clock.color = document.getElementById("clockColor").value;
+    state.clock.numWidth = parseFloat(document.getElementById("clockNumWidth").value) || 0.65;
+    
+    document.getElementById("clockNumWidthVal").textContent = state.clock.numWidth.toFixed(2);
 
     const isClockCustom = state.clock.customHTML.trim() !== "";
     document.getElementById("clockSize").disabled = isClockCustom;
     document.getElementById("clockFont").disabled = isClockCustom;
     document.getElementById("clockColor").disabled = isClockCustom;
     document.getElementById("clockShowLive").disabled = isClockCustom;
+    document.getElementById("clockNumWidth").disabled = isClockCustom;
 
     document.getElementById("clockSettings").style.opacity = state.clock.enabled ? "1" : "0.4";
     document.getElementById("clockSettings").style.pointerEvents = state.clock.enabled ? "auto" : "none";
@@ -278,6 +283,22 @@ function getGradientDef(id, c1, c2, angle) {
 
 let currentQrIdx = 0;
 let qrIntervalTimer = null;
+let previewClockTimer = null;
+
+function updatePreviewClockDisplay() {
+    const el = document.getElementById('clockTimer');
+    if (!el) return;
+    const now = new Date();
+    const timeStr = String(now.getHours()).padStart(2, '0') + ':' + 
+                    String(now.getMinutes()).padStart(2, '0') + ':' + 
+                    String(now.getSeconds()).padStart(2, '0');
+    let html = '';
+    for(let i = 0; i < timeStr.length; i++) {
+        const w = timeStr[i] === ':' ? '0.3em' : `${state.clock.numWidth}em`;
+        html += `<span class="inline-block text-center" style="width: ${w};">${timeStr[i]}</span>`;
+    }
+    el.innerHTML = html;
+}
 
 function renderPreview() {
     const viewport = document.getElementById("canvasViewport");
@@ -577,6 +598,10 @@ function renderPreview() {
                 
                 overlayClock.innerHTML = `<iframe id="clockIframe" src="${blobUrl}" style="border:none; width:100px; height:50px; background:transparent;" scrolling="no"></iframe>`;
             }
+            if (previewClockTimer) {
+                clearInterval(previewClockTimer);
+                previewClockTimer = null;
+            }
         } else {
             overlayClock.style.transform = "none";
             overlayClock.style.fontSize = `${state.clock.size}px`;
@@ -587,10 +612,15 @@ function renderPreview() {
                     <div id="clockLiveIndicator" class="flex items-center gap-1.5 text-red-500 hidden text-[10px] tracking-widest leading-none">
                         <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>LIVE
                     </div>
-                    <div id="clockTimer" class="leading-none">12:34:56</div>
+                    <div id="clockTimer" class="leading-none flex items-center"></div>
                 </div>
             `;
             const liveIndicator = document.getElementById("clockLiveIndicator");
+            
+            updatePreviewClockDisplay();
+            if (!previewClockTimer) {
+                previewClockTimer = setInterval(updatePreviewClockDisplay, 1000);
+            }
             if (liveIndicator) {
                 liveIndicator.style.display = state.clock.showLive ? 'flex' : 'none';
             }
@@ -619,6 +649,10 @@ function renderPreview() {
         }
     } else {
         overlayClock.style.display = "none";
+        if (previewClockTimer) {
+            clearInterval(previewClockTimer);
+            previewClockTimer = null;
+        }
     }
 
     const overlayTicker = document.getElementById("overlayTicker");
@@ -864,7 +898,7 @@ window.onload = () => {
         "snsUseX", "snsValX", "snsUseYT", "snsValYT", "snsUseTwitch", "snsValTwitch",
         "snsUseIG", "snsValIG", "snsUseTikTok", "snsValTikTok", "snsUseCustom", "snsValCustom",
         "wipeEnabled", "wipePos", "wipeAspect", "wipeWidth", "wipeMargin", "wipeTextTop", "wipeTextBottom", "wipeTextSize", "wipeFont", "wipeColor", "wipeMatchMain",
-        "clockEnabled", "clockPos", "clockSize", "clockMargin", "clockShowLive", "clockHTML", "clockFont", "clockColor",
+        "clockEnabled", "clockPos", "clockSize", "clockMargin", "clockShowLive", "clockHTML", "clockFont", "clockColor", "clockNumWidth",
         "tickerEnabled", "tickerText1", "tickerText2", "tickerText3", "tickerBgEnabled", "tickerPos", "tickerWidth", "tickerBgOpacity", "tickerSpeed", "tickerFont", "tickerSize", "tickerColor",
         "qrEnabled", "qrPos", "qrWidth", "qrMargin", "qrMatchMain", "qrInterval", "qrAnim",
         "qrUrl1", "qrLabel1", "qrColor1_1", "qrColor1_2", "qrLogo1",
@@ -1055,19 +1089,29 @@ function exportHTML() {
     let clockBodyHTML = `
         <div style="display: flex; align-items: center; gap: 12px;">
             ${state.clock.showLive ? `<div style="display: flex; align-items: center; gap: 6px; color: #ef4444; font-size: 0.35em; letter-spacing: 0.1em;"><span style="width: 8px; height: 8px; background-color: #ef4444; border-radius: 50%; display: inline-block; animation: custom-pulse 2s infinite;"></span>LIVE</div>` : ''}
-            <div id="clockTimer" style="line-height: 1;">00:00:00</div>
+            <div id="clockTimer" style="line-height: 1; display: flex; align-items: center;">
+            </div>
         </div>
     `;
     let clockScript = `
         function startClock() {
-            setInterval(() => {
+            function updateClock() {
                 const now = new Date();
-                const h = String(now.getHours()).padStart(2, '0');
-                const m = String(now.getMinutes()).padStart(2, '0');
-                const s = String(now.getSeconds()).padStart(2, '0');
+                const timeStr = String(now.getHours()).padStart(2, '0') + ':' + 
+                                String(now.getMinutes()).padStart(2, '0') + ':' + 
+                                String(now.getSeconds()).padStart(2, '0');
                 const el = document.getElementById('clockTimer');
-                if(el) el.textContent = h + ':' + m + ':' + s;
-            }, 1000);
+                if(el) {
+                    let html = '';
+                    for(let i=0; i<timeStr.length; i++) {
+                        const w = timeStr[i] === ':' ? '0.3em' : '${state.clock.numWidth}em';
+                        html += '<span style="display: inline-block; width: ' + w + '; text-align: center;">' + timeStr[i] + '</span>';
+                    }
+                    el.innerHTML = html;
+                }
+            }
+            updateClock();
+            setInterval(updateClock, 1000);
         }
         startClock();
     `;
