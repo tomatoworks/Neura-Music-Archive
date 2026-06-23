@@ -436,7 +436,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://neura-music.com/articles/Overlay Article/overlay-article.html</loc>
+    <loc>https://neura-music.com/article/article_20260623130048</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neura-music.com/articles/Overlay/overlay-article.html</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.8</priority>
   </url>
