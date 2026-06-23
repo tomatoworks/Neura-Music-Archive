@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Night Scenes – Vocal R&B - Neura Music Archive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white dark:bg-[#0f0f0f] text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+  <header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+    <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      <div class="flex items-center">
+        <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+          <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+          <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+        </a>
+      </div>
+
+      <div class="flex items-center space-x-3 md:space-x-7">
+        
+        <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
+          <a id="latest-blog-link" href="#" class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
+          <a href="#" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-7">
+          <div class="relative inline-block">
+            <select onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+              <option value="">Generatorを選択</option>
+              <option value="/tools/clock-generator.html">CLOCK GEN</option>
+              <option value="/tools/ranking-generator.html">BEST10 GEN</option>
+              <option value="/tools/overlay/">OVERLAY GEN</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+          </div>
+          
+          <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+          </div>
+        </div>
+
+        <button class="md:hidden text-gray-500 dark:text-gray-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+    </div>
+  </header>
+  <div class="flex-1">
+    
+          <main class="container mx-auto px-4 py-10 max-w-5xl">
+            <button onclick="window.history.back()" class="inline-flex items-center text-sm font-bold text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition mb-8 gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+              Back
+            </button>
+            
+            <div class="flex flex-col md:flex-row gap-6 md:gap-8 mb-12">
+              <div class="w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-[#111]">
+                <img src="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/cover_1781459417689.webp" alt="Night Scenes – Vocal R&B" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex-1 flex flex-col justify-end">
+                <span class="text-sm font-bold tracking-widest text-gray-400 uppercase mb-2">Album</span>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-gray-100 mb-3">Night Scenes – Vocal R&B</h1>
+                <p class="text-[15px] text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap leading-relaxed">夜間の映像や落ち着いたシーン向けのVOCAL R&B素材をまとめたアルバム。 人物中心のカットや静かな場面で扱いやすいボーカルトラックを収録しています。</p>
+                <div class="flex items-center gap-3 text-xs font-semibold text-gray-500 uppercase tracking-widest">
+                  <span>10 Tracks</span>
+                  <span>•</span>
+                  <span>ambient</span>
+                  <span>•</span>
+                  <span>Added: Unknown</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <div class="flex items-center px-4 pb-2 text-xs font-bold text-gray-400 uppercase tracking-wider border-b border-gray-200 dark:border-[#2e2e2e] mb-4">
+                <div class="w-8 text-center">#</div>
+                <div class="flex-1 px-4">Title</div>
+                <div class="w-24 text-right hidden sm:block">Time</div>
+                <div class="w-20 text-center">Lyrics</div>
+                <div class="w-16"></div>
+              </div>
+              
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">1</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Holy Ache</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">痛みや後悔といった心の闇と向き合い、「聖なるもの」として受け入れる過程を描く。崩壊の受容から静かな安堵へと至る、内省的なバラードだ。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:58
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1781459182989_0')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Holy%20Ache.mp3" data-track-title="Holy Ache" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Holy%20Ache.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">2</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Smoothing Edges</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">ざらつきがちな日常の輪郭を優しく撫でていくような時間。「小さな休息」や「自己への回帰」を通じて、心をそっと整えていく穏やかな楽曲。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:54
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1781459182991_1')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Smoothing%20Edges.mp3" data-track-title="Smoothing Edges" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Smoothing%20Edges.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">3</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">The Root</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">人生の困難な試練を経て、根源から生まれ変わる強さを描くバラード。新しい自己を受け入れ、「光の中へ立つ」という強い決意と成長を感じさせる一曲だ。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:58
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1781459182991_2')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/The%20Root.mp3" data-track-title="The Root" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/The%20Root.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">4</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">No Questions Asked</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">言葉を交わす必要もない、ただ静かに存在し合う空間。「無条件の寄り添い」がもたらす深い安らぎと温かい感情を描き出している。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:59
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1781459182991_3')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/No%20Questions%20Asked.mp3" data-track-title="No Questions Asked" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/No%20Questions%20Asked.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">5</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">The Resonance</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">音楽の力によって特別な結びつきを感じる瞬間。「響き（レゾナンス）」が、心と心を一つにする感動的な情景を描いた楽曲だ。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    3:01
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1781459182991_4')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/The%20Resonance.mp3" data-track-title="The Resonance" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/The%20Resonance.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">6</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Pale Yellow</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">過ぎ去った時間や大切な思い出が、まるで写真の黄ばみのように色褪せていく感覚を表現。記憶を手放し、静かに過去と訣別するような情緒的な作品だ。
+</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:57
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1781459182991_5')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Pale%20Yellow.mp3" data-track-title="Pale Yellow" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Pale%20Yellow.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">7</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Clear The Air</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">張り詰めた空気が解放され、抑えられていた真実が表面化する瞬間。「清められる」感覚と共に、切なさと確かな希望が混在する一曲だ。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:54
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1781459182991_6')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Clear%20the%20Air.mp3" data-track-title="Clear The Air" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Clear%20the%20Air.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">8</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">The Back Gate</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">完璧ではないけれど、ささやかな達成感や明日に向かう気まぐれな期待が共存する穏やかな時間。「日常の背後の門」を通り過ぎるような、優しくも切ない午後だ。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:37
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1781459182992_7')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/The%20Back%20Gate.mp3" data-track-title="The Back Gate" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/The%20Back%20Gate.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">9</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Phantom Skin</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">君の存在が空気や皮膚にまで残るかのような、「消せない痕跡（ファントム）」としての重さ。幻影のように漂う、叶わぬ愛情と記憶を描いた楽曲だ。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:56
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1781459182992_8')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Phantom%20Skin.mp3" data-track-title="Phantom Skin" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/Phantom%20Skin.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">10</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">The Rhythm</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">言葉による説明を超越した二人の共鳴。「心臓の鼓動」がシンクロするような、場所や時間から切り離された特別な親密なリズムを描いている。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:54
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1781459182992_9')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/The%20Rhythm.mp3" data-track-title="The Rhythm" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/The%20Rhythm.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+            </div>
+          </main>
+        
+          
+                <div id="modal-lyrics-track_1781459182989_0" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1781459182989_0')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Holy Ache</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1781459182989_0')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Mmm)<br>(Yeah)<br>(Ooh)<br><br>[Verse 1]<br>Sitting where the grass meets the dirt<br>Counting the ways I let it go<br>The air tastes like iron and rain<br>I thought I was being honest<br>But I was just being loud<br>Now the silence is heavy as a stone<br>In my pocket where I keep my hands<br>(Keeping my hands cold)<br>(So cold)<br><br>[Chorus]<br>I’m not trying to fix the break<br>Just trying to feel the edges<br>It’s a holy kind of ache<br>Knowing what I put you through<br>I’m finally coming down<br>(Coming down slow)<br><br>[Verse 2]<br>The wine in the glass is dark<br>Like the water under the pier<br>I remember how you looked in that blue shirt<br>Telling me I didn’t have to stay<br>I should have held my breath<br>Instead of wasting all that air<br>Trying to prove I was right<br>(Wasted it all)<br>(Every bit of it)<br><br>[Chorus]<br>I’m not trying to fix the break<br>Just trying to feel the edges<br>It’s a holy kind of ache<br>Knowing what I put you through<br>I’m finally coming down<br>(Down)<br><br>[Bridge]<br>The tide doesn’t ask to come in<br>It just follows the pull<br>I was fighting against the moon<br>Trying to keep my cup full<br>But it’s easier to let it spill<br>(Let it spill)<br>(Let it all go)<br><br>[Outro]<br>Walking back to the door<br>I don’t want to run anymore<br>(No more running)<br>Just the salt on my skin<br>(Salt on my skin)<br>Accepting where I’ve been<br>(Mmm)<br>(Where I’ve been)<br>(Yeah)<br>(The weight of it)<br>(The weight of it all)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1781459182991_1" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1781459182991_1')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Smoothing Edges</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1781459182991_1')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Mmm, yeah)<br><br>[Verse]<br>I'm just smoothing the edges of the rug<br>moving slow, like the ice in my glass<br>yeah, I think it's raining again<br>tapping on the glass like it wants in<br>I found that old sweater under the chair<br>the one with the loose thread<br>it’s softer than I remembered<br>maybe I’ll just sit here for a bit<br>the tea is still too hot to drink anyway<br>it’s okay, really<br>I’m just catching my breath<br><br>[Bridge]<br>(You know, sometimes it's just nice to stay still)<br>(Yeah)<br><br>[Outro]<br>I think I'm okay now<br>I think I'm okay now<br>I think I'm okay now<br>I think I'm okay now
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1781459182991_2" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1781459182991_2')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">The Root</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1781459182991_2')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Ooh)<br>(Mmm)<br><br>[Verse 1]<br>I found my keys on the table<br>Right where I left them a year ago<br>But my hands feel heavier now<br>I don't reach for what I used to<br>The air is thick in this house<br>But I can breathe just fine<br>I looked at the marks on the door<br>I am taller than I was back then<br><br>[Chorus]<br>I am a different kind of man<br>(Different man)<br>The storm didn't kill the root<br>(Kill the root)<br>I am standing in the light<br>(In the light)<br>Thankful for the wreckage<br>(So thankful)<br><br>[Verse 2]<br>I used to run from the thunder<br>Now I just stand and let it soak<br>You said I would never make it<br>Well look at me right now<br>I took the salt and the fire<br>And I made a brand new heart<br>I don't need the things I lost<br>They were too small for me anyway<br><br>[Chorus]<br>I am a different kind of man<br>(Different man)<br>The storm didn't kill the root<br>(Kill the root)<br>I am standing in the light<br>(In the light)<br>Thankful for the wreckage<br>(So thankful)<br><br>[Bridge]<br>It took a long time to see<br>That the breaking was the healing<br>It took a hard road to walk<br>To find out where I belong<br>I am home<br>(He's home)<br>I am finally home<br><br>[Chorus]<br>I am a different kind of man<br>(Different man)<br>The storm didn't kill the root<br>(Kill the root)<br>I am standing in the light<br>(In the light)<br>Thankful for the wreckage<br>(So thankful)<br><br>[Outro]<br>I'm different now<br>(Yes he is)<br>Look at my face<br>(Look at him)<br>I am standing tall<br>(So tall)<br>The root is strong<br>(The root is strong)<br>I survived it<br>(He survived)<br>I am a new man<br>(New man)<br>Yeah<br>(Yeah)<br>I'm different
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1781459182991_3" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1781459182991_3')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">No Questions Asked</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1781459182991_3')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Mmm)<br>(Yeah)<br><br>[Verse 1]<br>I left the world at the door<br>The keys are heavy in my pocket<br>You don't ask where I have been<br>Or why I am back so late<br>You just lean your head on my knee<br>Waiting for me to find my center<br>Your fur is soft against my palm<br>The only thing that feels real<br><br>[Chorus]<br>We don't need to say a thing<br>(No words)<br>I am okay with the silence now<br>(Just us)<br>Everything else is too loud<br>But here the air is steady<br>Just the weight of you staying close<br>(Staying close)<br><br>[Verse 2]<br>Outside they want too many answers<br>People expecting me to be something<br>But you just watch the dust settle<br>In the soft light from the hallway<br>No expectations in those eyes<br>Just a simple kind of belonging<br>I can feel my heart slowing down<br>Matching the pace of your breathing<br><br>[Chorus]<br>We don't need to say a thing<br>(No words)<br>I am okay with the silence now<br>(Just us)<br>Everything else is too loud<br>But here the air is steady<br>Just the weight of you staying close<br>(Staying close)<br><br>[Bridge]<br>Maybe this is the only truth<br>Not the noise or the heavy lifting<br>Just a body resting near another<br>Safe within these four walls<br>(Safe right here)<br><br>[Chorus]<br>We don't need to say a thing<br>(No words)<br>I am okay with the silence now<br>(Just us)<br>Everything else is too loud<br>But here the air is steady<br>Just the weight of you staying close<br>(Staying close)<br><br>[Outro]<br>Just stay right here<br>(Right here)<br>Don't move a muscle<br>(Don't move)<br>The silence is enough<br>(It is enough)<br>(Mmm)<br>(Yeah)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1781459182991_4" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1781459182991_4')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">The Resonance</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1781459182991_4')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Ooh)<br>(Mmm)<br><br>[Verse 1]<br>The first few notes begin to play<br>The air around me starts to change<br>I close my eyes and let it flow<br>Finding places only we know<br><br>[Chorus]<br>Oh this melody remains<br>The only way I call your name<br>Every rise and every fall<br>I can finally have it all (Have it all)<br>Just one song and I am home<br><br>[Verse 2]<br>We were driving toward the coast<br>The radio played this very soul<br>Your hand was resting on my own<br>A moment carved in every tone<br><br>[Chorus]<br>Oh this melody remains<br>The only way I call your name<br>Every rise and every fall<br>I can finally have it all (Have it all)<br>Just one song and I am home<br><br>[Bridge]<br>Don't let the silence take the light<br>Sing it louder through the night<br>I am reaching for the high (Reaching high)<br>Where our spirits never die<br><br>[Chorus]<br>Oh this melody remains<br>The only way I call your name<br>Every rise and every fall<br>I can finally have it all (Have it all)<br>Just one song and I am home<br><br>[Outro]<br>It takes me home<br>(Yeah)<br>Stay right here in the sound<br>(In the sound)<br>Don't ever stop<br>(Ooh)<br>(Every note)<br>(Every note)<br>(Home)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1781459182991_5" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1781459182991_5')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Pale Yellow</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1781459182991_5')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Mmm)<br>(Yeah)<br><br>[Verse 1]<br>Found that picture in the shoebox<br>The edges are turning a pale yellow<br>Sun must have caught it on the shelf<br>Your face is getting hard to find<br>Just a soft blur where you used to be<br>I can't see the shirt you wore<br>The one with the holes in the collar<br>Funny how the paper just gives up<br><br>[Chorus]<br>You’re fading out of the frame<br>Losing the shape of your name<br>I’m trying to remember the colors<br>But it's all turning grey<br>(Everything's turning grey)<br><br>[Verse 2]<br>The chemicals are finally breaking down<br>Leaving me with nothing to hold<br>I don't think I mind the lack of detail<br>It’s easier when I can’t see the look<br>The one you gave me before you left<br>It’s just a blank space now<br><br>[Chorus]<br>You’re fading out of the frame<br>Losing the shape of your name<br>I’m trying to remember the colors<br>But it's all turning grey<br>(Everything's turning grey)<br><br>[Outro]<br>Just a piece of card<br>(Just a piece of card)<br>Turning white<br>(Turning white)<br>I’m forgetting the rest<br>(Forgetting the rest)<br>It’s okay<br>It’s fine<br>(Mmm)<br>Just let it go<br>(Let it go)<br>White paper<br>Nothing left to see<br>(Nothing left)<br>Yeah
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1781459182991_6" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1781459182991_6')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Clear The Air</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1781459182991_6')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Ooh, yeah)<br>(Just listen)<br><br>[Verse 1]<br>Rain is slick on the pavement<br>We’re sitting heavy in the car<br>The dashboard light hits your face<br>I see the way you’re holding back<br>Like you’re waiting for a sign<br>To tell you it’s safe to stay<br><br>[Chorus]<br>Can we find where the wire broke<br>Bring it back to the honest parts<br>I don’t want the silence to win<br>(Just hear me out)<br>Give me a minute of your time<br>(Stay for a while)<br>I’m opening every door I have<br><br>[Verse 2]<br>Your hand is still on the leather<br>Cold to the touch while I’m heat<br>Remember how we used to slide<br>No friction in the way we spoke<br>Now there’s a weight in the air<br>Heavy as the clouds above<br><br>[Bridge]<br>I’m laying my pride on the floor<br>Stripping away the layers<br>I need you to look at me<br>Really see the man I am<br>(Don't turn away)<br>(Don't let us go)<br><br>[Chorus]<br>Can we find where the wire broke<br>Bring it back to the honest parts<br>I don’t want the silence to win<br>(Just hear me out)<br>Give me a minute of your time<br>(Stay for a while)<br>I’m opening every door I have<br><br>[Outro]<br>Just a minute more<br>(Honest parts)<br>Let the air clear out<br>(Every door I have)<br>(Ooh, open)<br>Stay for a while<br>(Stay with me)<br>(Yeah)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1781459182992_7" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1781459182992_7')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">The Back Gate</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1781459182992_7')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br><br>[Verse]<br>Finally fixed the latch on the gate<br>it stayed shut all afternoon<br>a small win for today<br>then I burnt the toast a bit<br>scraped the char into the basin<br>it’s whatever<br>(it’s whatever)<br>I think I did okay<br>mostly I guess<br>maybe the laundry can wait <br><br>[Bridge]<br>The tea is getting cold on the table <br>The steam is all gone<br>I should probably just go to bed<br><br>[Outro]<br>Tomorrow is just tomorrow<br>Tomorrow is just tomorrow<br>Tomorrow is just tomorrow<br>Tomorrow is just tomorrow<br>(yeah)<br>(tomorrow)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1781459182992_8" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1781459182992_8')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Phantom Skin</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1781459182992_8')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Ooh)<br>(Mmm)<br><br>[Verse 1]<br>The light hits the floor at an angle<br>I see the dust dancing where you stood<br>I reach out but touch nothing but heat<br>A phantom warmth against my palm<br>The air feels thick with your presence<br>Even though the room is still<br>I can feel the grain of your voice<br>Tugging at the edge of my ear<br><br>[Pre-Chorus]<br>I’m breathing you in<br>Filling my lungs with the salt of you<br>Suspended in this quiet<br>(Holding on)<br>(Just holding on)<br><br>[Chorus]<br>Heavy on my skin<br>(So heavy)<br>I feel your gravity pulling me thin<br>Across the water, across the state<br>Your shape is etched in this space<br>(Still here)<br>(You're still here)<br><br>[Verse 2]<br>My blood is humming a low frequency<br>A slow vibration under the surface<br>I can almost feel the weight of your head<br>Leaning hard against my shoulder<br>I’m not lonely when the world stops<br>Because the pressure of you stays<br>Like a physical stain on the afternoon<br>Making it hard to move<br><br>[Chorus]<br>Heavy on my skin<br>(So heavy)<br>I feel your gravity pulling me thin<br>Across the water, across the state<br>Your shape is etched in this space<br>(Always)<br>(You're always here)<br><br>[Bridge]<br>Let the walls dissolve<br>The distance is just a lie we tell<br>I can feel you breathing on my neck<br>Don't wake me from this weight<br>(Don't wake me)<br>(Let me sink)<br><br>[Outro]<br>Stay right here<br>In the gap between breaths<br>(Just a little longer)<br>(I feel you)<br>Your shape in the space<br>(Mmm)<br>(Still here)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1781459182992_9" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1781459182992_9')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">The Rhythm</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1781459182992_9')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Ooh, ooh)<br>(Keep it right there)<br><br>[Verse 1]<br>Rest your weight on me<br>Feel the skin go warm<br>Counting every beat<br>Like a heavy velvet drum<br>(Heavy drum)<br>Nothing moves outside<br>Nothing else is loud<br><br>[Pre-Chorus]<br>I like the way you lean in<br>Catching every little vibration<br>(Vibration)<br>It’s a language only we speak<br>No translation<br><br>[Chorus]<br>This is the rhythm<br>Steady and slow<br>Keeping us level<br>When the tide is low<br>(Steady, steady)<br>No words required<br>Just the way your heart follows mine<br>(Follows mine)<br><br>[Verse 2]<br>Light hits the floor<br>Dust dancing in the air<br>We could stay all day<br>Cancel every plan we made<br>(Forget 'em)<br>Silk against your shoulder<br>Looking like a masterpiece<br>In the quietest way<br><br>[Chorus]<br>This is the rhythm<br>Steady and slow<br>Keeping us level<br>When the tide is low<br>(Steady, steady)<br>No words required<br>Just the way your heart follows mine<br><br>[Bridge]<br>Don't you feel the sync?<br>Matching up the pace<br>Two worlds in a circle<br>In this tiny space<br>(In this space)<br>It’s the luxury of knowing<br>We don't have to chase a thing<br><br>[Chorus]<br>This is the rhythm<br>Steady and slow<br>Keeping us level<br>When the tide is low<br>(Steady, steady)<br>No words required<br>Just the way your heart follows mine<br><br>[Outro]<br>(Steady now)<br>(Keep that count)<br>Just the rhythm<br>(Don't let go)<br>Yeah<br>(Ooh)<br>(Just stay)
+                    </div>
+                  </div>
+                </div>
+              
+          <script>
+            function openLyricsModal(trackId) {
+              const modal = document.getElementById('modal-lyrics-' + trackId);
+              if (modal) modal.style.display = 'flex';
+            }
+            function closeLyricsModal(trackId) {
+              const modal = document.getElementById('modal-lyrics-' + trackId);
+              if (modal) modal.style.display = 'none';
+            }
+          </script>
+          <script src="/js/player.js" defer></script>
+        
+  </div>
+
+    <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800 text-gray-800 dark:text-gray-100" onclick="event.stopPropagation()">
+      <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+        <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
+        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div id="modal-body" class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      let pagesData = null;
+      async function loadPagesData() {
+        try {
+          const res = await fetch('/data/pages.json');
+          if (res.ok) {
+            const data = await res.json();
+            pagesData = data.pages;
+          }
+        } catch (e) {
+          console.error("Failed to load pages.json", e);
+        }
+      }
+      async function openModal(pageKey) {
+        if (!pagesData) {
+          await loadPagesData();
+        }
+        const modal = document.getElementById('modal-overlay');
+        const titleEl = document.getElementById('modal-title');
+        const bodyEl = document.getElementById('modal-body');
+        
+        if (modal && pagesData && pagesData[pageKey]) {
+          titleEl.innerText = pagesData[pageKey].title;
+          bodyEl.innerHTML = pagesData[pageKey].content;
+          modal.style.display = 'flex';
+        }
+      }
+      function closeModal() {
+        const modal = document.getElementById('modal-overlay');
+        if (modal) {
+          modal.style.display = 'none';
+        }
+      }
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = document.getElementById('generator-selector');
+        if (selector) {
+          const currentPath = window.location.pathname;
+          const options = Array.from(selector.options);
+          const matchedOption = options.find(opt => opt.value && currentPath.includes(opt.value));
+          if (matchedOption) {
+            selector.value = matchedOption.value;
+          } else {
+            selector.value = "";
+          }
+        }
+      });
+    })();
+  </script>
+  </body>
+</html>

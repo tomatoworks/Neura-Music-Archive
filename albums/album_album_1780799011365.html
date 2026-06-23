@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>エンディングのためのJAZZ - Neura Music Archive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white dark:bg-[#0f0f0f] text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+  <header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+    <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      <div class="flex items-center">
+        <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+          <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+          <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+        </a>
+      </div>
+
+      <div class="flex items-center space-x-3 md:space-x-7">
+        
+        <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
+          <a id="latest-blog-link" href="#" class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
+          <a href="#" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-7">
+          <div class="relative inline-block">
+            <select onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+              <option value="">Generatorを選択</option>
+              <option value="/tools/clock-generator.html">CLOCK GEN</option>
+              <option value="/tools/ranking-generator.html">BEST10 GEN</option>
+              <option value="/tools/overlay/">OVERLAY GEN</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+          </div>
+          
+          <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+          </div>
+        </div>
+
+        <button class="md:hidden text-gray-500 dark:text-gray-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+    </div>
+  </header>
+  <div class="flex-1">
+    
+          <main class="container mx-auto px-4 py-10 max-w-5xl">
+            <button onclick="window.history.back()" class="inline-flex items-center text-sm font-bold text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition mb-8 gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+              Back
+            </button>
+            
+            <div class="flex flex-col md:flex-row gap-6 md:gap-8 mb-12">
+              <div class="w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-[#111]">
+                <img src="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/cover_1780800863342.webp" alt="エンディングのためのJAZZ" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex-1 flex flex-col justify-end">
+                <span class="text-sm font-bold tracking-widest text-gray-400 uppercase mb-2">Album</span>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-gray-100 mb-3">エンディングのためのJAZZ</h1>
+                <p class="text-[15px] text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap leading-relaxed">配信や動画の締めに使える、静かなジャズのアウトロ曲を集めたインストアルバムです。</p>
+                <div class="flex items-center gap-3 text-xs font-semibold text-gray-500 uppercase tracking-widest">
+                  <span>15 Tracks</span>
+                  <span>•</span>
+                  <span>chill</span>
+                  <span>•</span>
+                  <span>Added: Unknown</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <div class="flex items-center px-4 pb-2 text-xs font-bold text-gray-400 uppercase tracking-wider border-b border-gray-200 dark:border-[#2e2e2e] mb-4">
+                <div class="w-8 text-center">#</div>
+                <div class="flex-1 px-4">Title</div>
+                <div class="w-24 text-right hidden sm:block">Time</div>
+                <div class="w-20 text-center">Lyrics</div>
+                <div class="w-16"></div>
+              </div>
+              
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">1</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Paper Walls At Dawn</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">夜明けの柔らかな光と、脆い紙の壁を通して差し込む儚さ。始まりと終焉の境界で漂うような、透明感に満ちた音景（サウンドスケープ）。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    1:58
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Paper_Walls_at_Dawn.mp3" data-track-title="Paper Walls At Dawn" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Paper_Walls_at_Dawn.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">2</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">The Weight Of Morning Light</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">夜明けの光が纏わせる静かで重厚な空気。新たな日への期待と、微かな不安を同時に描き出すアンビエントサウンドスケープ。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:26
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/The_Weight_of_Morning_Light.mp3" data-track-title="The Weight Of Morning Light" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/The_Weight_of_Morning_Light.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">3</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Streetlamps On Water</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">水面に揺れる街灯の光が、静寂の中に幻想的な律動を刻む瞬間。都市と自然が出会う場所の、儚い美しさを表現した作品。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:55
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Streetlamps_on_Water.mp3" data-track-title="Streetlamps On Water" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Streetlamps_on_Water.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">4</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Lights Of</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">輝く光源が夜景を彩り、まるで夢のような幕開けや、深い余韻を残すような美しい終焉を演出する音の描写。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    3:00
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Lights_of.mp3" data-track-title="Lights Of" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Lights_of.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">5</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">The Sun Leans Low</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">低い位置から差し込む夕暮れの光が影を長く伸ばす。時が止まった静けさの中で、内省的なメロディと和音が空間を満たしていく時間帯。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:25
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1780800631893_4')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/The_Sun_Leans_Low.mp3" data-track-title="The Sun Leans Low" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/The_Sun_Leans_Low.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">6</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Morning In</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">目覚めの穏やかな静寂から、新しい一日が始まる柔らかな光。淡い音色が徐々に空間を満たしていく、優しい「始まり」の感覚。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:27
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Morning_in.mp3" data-track-title="Morning In" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Morning_in.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">7</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Stone Path At Dawn</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">夜明けの石畳が舞台となる情景。湿気を含んだ空気が漂い、新たな一歩を踏み出すための静かな高揚感を伝える音色。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    1:15
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Stone_Path_at_Dawn.mp3" data-track-title="Stone Path At Dawn" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Stone_Path_at_Dawn.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">8</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Japan At Dusk</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">夕暮れの東京を背景に描く、郷愁と躍動が交錯するサウンドスケープ。日本的な深い情感をメロディーに乗せて描き出す作品。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:32
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/japan_at_Dusk.mp3" data-track-title="Japan At Dusk" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/japan_at_Dusk.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">9</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Rain On The Glass</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">雨粒がガラス窓に当たる、クリアで透明な音響。過ぎゆく時間と静かな内省が交差する、穏やかな哀愁を伴うインストゥルメンタル。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:12
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Rain_on_the_Glass.mp3" data-track-title="Rain On The Glass" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Rain_on_the_Glass.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">10</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Morning On The Threshold</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">夜明けの静寂に包まれた場所。新しい一日を迎えるための、心が震えるような予感と導入部（イントロダクション）。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:34
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Morning_on_the_Threshold.mp3" data-track-title="Morning On The Threshold" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Morning_on_the_Threshold.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">11</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Paper Lanterns At Dawn</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">夜が明ける前の静けさの中、和紙の提灯が一つずつ光を放つ。穏やかで情緒的な、新しい一日を迎える情景描写。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    1:28
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Paper_Lanterns_at_Dawn.mp3" data-track-title="Paper Lanterns At Dawn" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Paper_Lanterns_at_Dawn.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">12</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Midnight Glass</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">夜の沈黙と、ガラス同士が触れ合う微かな音。秘密めいたメロディが、深く考え込む時間帯に聴くためのサウンドスケープ。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:48
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Midnight_Glass.mp3" data-track-title="Midnight Glass" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Midnight_Glass.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">13</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Velvet Curtains Drawn</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">ベルベットのカーテンが静かに引かれる動作から始まる音。舞台が開幕する直前の、深い期待感と神秘的な余韻を予感させるサウンドスケープ。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:27
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Velvet_Curtains_Drawn.mp3" data-track-title="Velvet Curtains Drawn" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Velvet_Curtains_Drawn.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">14</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Three Notes Before Dawn</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">夜明けの極限的な静寂に、三つの音符が紡ぎ出すような、夢うつつな感覚に包まれた情景描写。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:47
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Three_Notes_Before_Dawn.mp3" data-track-title="Three Notes Before Dawn" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/Three_Notes_Before_Dawn.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">15</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">The Last Train From Tokyo</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">遠ざかっていく光の軌跡を辿る旅路。「東京を去る最終列車」が伝える、夜明け前の深い郷愁と、物思いに耽るような静謐な時間。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:26
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/The_Last_Train_from_tokyo.mp3" data-track-title="The Last Train From Tokyo" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/The_Last_Train_from_tokyo.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+            </div>
+          </main>
+        
+          
+                <div id="modal-lyrics-track_1780800631893_4" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1780800631893_4')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">The Sun Leans Low</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1780800631893_4')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      The sun leans low against the wall<br>A shadow stretches down the hall<br>Time is frozen, held in light<br>Between the morning and the night<br><br>In the stillness, I can hear<br>Every thought is held so near<br>Open harmonies in the air<br>Finding peace in moment's rest<br>Finding peace in moment's rest<br><br>A muted horn, a gentle chord<br>A silence that cannot be ignored<br>Floating on a tide of grace<br>Lost within this quiet space<br><br>Everything is still<br>Stillness
+                    </div>
+                  </div>
+                </div>
+              
+          <script>
+            function openLyricsModal(trackId) {
+              const modal = document.getElementById('modal-lyrics-' + trackId);
+              if (modal) modal.style.display = 'flex';
+            }
+            function closeLyricsModal(trackId) {
+              const modal = document.getElementById('modal-lyrics-' + trackId);
+              if (modal) modal.style.display = 'none';
+            }
+          </script>
+          <script src="/js/player.js" defer></script>
+        
+  </div>
+
+    <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800 text-gray-800 dark:text-gray-100" onclick="event.stopPropagation()">
+      <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+        <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
+        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div id="modal-body" class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      let pagesData = null;
+      async function loadPagesData() {
+        try {
+          const res = await fetch('/data/pages.json');
+          if (res.ok) {
+            const data = await res.json();
+            pagesData = data.pages;
+          }
+        } catch (e) {
+          console.error("Failed to load pages.json", e);
+        }
+      }
+      async function openModal(pageKey) {
+        if (!pagesData) {
+          await loadPagesData();
+        }
+        const modal = document.getElementById('modal-overlay');
+        const titleEl = document.getElementById('modal-title');
+        const bodyEl = document.getElementById('modal-body');
+        
+        if (modal && pagesData && pagesData[pageKey]) {
+          titleEl.innerText = pagesData[pageKey].title;
+          bodyEl.innerHTML = pagesData[pageKey].content;
+          modal.style.display = 'flex';
+        }
+      }
+      function closeModal() {
+        const modal = document.getElementById('modal-overlay');
+        if (modal) {
+          modal.style.display = 'none';
+        }
+      }
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = document.getElementById('generator-selector');
+        if (selector) {
+          const currentPath = window.location.pathname;
+          const options = Array.from(selector.options);
+          const matchedOption = options.find(opt => opt.value && currentPath.includes(opt.value));
+          if (matchedOption) {
+            selector.value = matchedOption.value;
+          } else {
+            selector.value = "";
+          }
+        }
+      });
+    })();
+  </script>
+  </body>
+</html>

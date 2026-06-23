@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>配信みてくれてありがとうSONGS - Neura Music Archive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white dark:bg-[#0f0f0f] text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+  <header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+    <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      <div class="flex items-center">
+        <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+          <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+          <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+        </a>
+      </div>
+
+      <div class="flex items-center space-x-3 md:space-x-7">
+        
+        <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
+          <a id="latest-blog-link" href="#" class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
+          <a href="#" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-7">
+          <div class="relative inline-block">
+            <select onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+              <option value="">Generatorを選択</option>
+              <option value="/tools/clock-generator.html">CLOCK GEN</option>
+              <option value="/tools/ranking-generator.html">BEST10 GEN</option>
+              <option value="/tools/overlay/">OVERLAY GEN</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+          </div>
+          
+          <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+          </div>
+        </div>
+
+        <button class="md:hidden text-gray-500 dark:text-gray-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+    </div>
+  </header>
+  <div class="flex-1">
+    
+          <main class="container mx-auto px-4 py-10 max-w-5xl">
+            <button onclick="window.history.back()" class="inline-flex items-center text-sm font-bold text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition mb-8 gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+              Back
+            </button>
+            
+            <div class="flex flex-col md:flex-row gap-6 md:gap-8 mb-12">
+              <div class="w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-[#111]">
+                <img src="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/cover_1779091939427.webp" alt="配信みてくれてありがとうSONGS" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex-1 flex flex-col justify-end">
+                <span class="text-sm font-bold tracking-widest text-gray-400 uppercase mb-2">Album</span>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-gray-100 mb-3">配信みてくれてありがとうSONGS</h1>
+                <p class="text-[15px] text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap leading-relaxed">配信の最後にかけるべき曲を集めたボーカルアルバム</p>
+                <div class="flex items-center gap-3 text-xs font-semibold text-gray-500 uppercase tracking-widest">
+                  <span>10 Tracks</span>
+                  <span>•</span>
+                  <span>chill</span>
+                  <span>•</span>
+                  <span>Added: Unknown</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <div class="flex items-center px-4 pb-2 text-xs font-bold text-gray-400 uppercase tracking-wider border-b border-gray-200 dark:border-[#2e2e2e] mb-4">
+                <div class="w-8 text-center">#</div>
+                <div class="flex-1 px-4">Title</div>
+                <div class="w-24 text-right hidden sm:block">Time</div>
+                <div class="w-20 text-center">Lyrics</div>
+                <div class="w-16"></div>
+              </div>
+              
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">1</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Abfahrt</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">旅立ちを予感させる、静寂と風景が一体となったインストゥルメンタル。新たな道の始まりに寄り添うような、切なさと期待が混じり合う調べ。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:36
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1779213279840_0')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/ABFAHRT.mp3" data-track-title="Abfahrt" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/ABFAHRT.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">2</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Gratitude On The Corner</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">日常の小さな光景が温かいメロディーに彩られる、感謝の気持ちを巡らせるような心地よい楽曲。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    1:37
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1779213279842_1')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/Gratitude_on_the_Corner.mp3" data-track-title="Gratitude On The Corner" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/Gratitude_on_the_Corner.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">3</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">L'Eterno Grazie</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">永遠の感謝をテーマにした、壮大で感動的な音の旅。荘厳なストリングスとピアノが、心の内面から響きわたる高揚感を演出します。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:54
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1779213279842_2')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/L'Eterno%20Grazie.mp3" data-track-title="L'Eterno Grazie" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/L'Eterno%20Grazie.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">4</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">La_fin_de_soirée</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">昼から夜へ、喧騒から静寂へ。物語が区切りをつけ、時間がゆったりと流れる、移ろいゆく空気の描写。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    1:42
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1779213279842_3')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/La_fin_de_soir%C3%A9e.mp3" data-track-title="La_fin_de_soirée" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/La_fin_de_soir%C3%A9e.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">5</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Merci vielmal Noir (Alt Take)</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">過ぎ去った日々を優しく回顧する、郷愁を誘うピアノ中心のインストゥルメンタル。深い内省とともに、穏やかな哀愁を感じる時間。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:56
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1779213279842_4')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/Merci%20vielmal%20Noir%20(Alt%20Take).mp3" data-track-title="Merci vielmal Noir (Alt Take)" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/Merci%20vielmal%20Noir%20(Alt%20Take).mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">6</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Rearview Thanks</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">旅の終点から見つめる、穏やかで心地よい余韻。大切な瞬間を振り返る、静謐なサウンドスケープ。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:54
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1779213279842_5')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/Rearview%20Thanks.mp3" data-track-title="Rearview Thanks" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/Rearview%20Thanks.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">7</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">The Final High Score</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">最高の瞬間を締めくくる、熱狂と別れが交差する夜のクライマックス。達成感と疾走感が織りなす壮大なサウンドトラック。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:27
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1779213279842_6')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/The_Final_High_Score.mp3" data-track-title="The Final High Score" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/The_Final_High_Score.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">8</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">ありがとう連呼 (大合唱Ver. A)</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">溢れ出る祝福の念を乗せた、力強くも温かい大合唱。感動的な共有体験を彩る、輝かしいコーラスサウンドです。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    1:52
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E9%80%A3%E5%91%BC%20(%E5%A4%A7%E5%90%88%E5%94%B1Ver.%20A).mp3" data-track-title="ありがとう連呼 (大合唱Ver. A)" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E9%80%A3%E5%91%BC%20(%E5%A4%A7%E5%90%88%E5%94%B1Ver.%20A).mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">9</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">ありが加藤-加藤さん専用曲mix</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">特別な人へ捧げる、心温まる祝福の調べ。パーソナルな感情と感謝が詰まった、彩り豊かなインストゥルメンタル・サウンド。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    1:34
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/%E3%81%82%E3%82%8A%E3%81%8C%E5%8A%A0%E8%97%A4-%E5%8A%A0%E8%97%A4%E3%81%95%E3%82%93%E5%B0%82%E7%94%A8%E6%9B%B2mix.mp3" data-track-title="ありが加藤-加藤さん専用曲mix" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/%E3%81%82%E3%82%8A%E3%81%8C%E5%8A%A0%E8%97%A4-%E5%8A%A0%E8%97%A4%E3%81%95%E3%82%93%E5%B0%82%E7%94%A8%E6%9B%B2mix.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">10</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">洗脳さんきゅーっ！(Senno Thank You!)</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">喧騒を抜け出し、深い安心感に包まれるような夜の帳の描写。安らぎと劇的な深みが同居する、穏やかでドラマチックな調べ。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:59
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1779213279842_9')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/%E6%B4%97%E8%84%B3%E3%81%95%E3%82%93%E3%81%8D%E3%82%85%E3%83%BC%E3%81%A3%EF%BC%81(Senno%20Thank%20You!).mp3" data-track-title="洗脳さんきゅーっ！(Senno Thank You!)" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/%E6%B4%97%E8%84%B3%E3%81%95%E3%82%93%E3%81%8D%E3%82%85%E3%83%BC%E3%81%A3%EF%BC%81(Senno%20Thank%20You!).mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+            </div>
+          </main>
+        
+          
+                <div id="modal-lyrics-track_1779213279840_0" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1779213279840_0')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Abfahrt</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1779213279840_0')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Check, check)<br>(Ja, ja)<br>Abfahrt jetzt<br>Feierabend im Block<br><br>[Refrain]<br>Danke für die Zeit, Bruder<br>Danke für den Vibe, Bruder<br>Danke für den Hype, Bruder<br>Keine Snitches, echte Liebe, Bruder<br>(Echte Liebe)<br>Danke für die Zeit, Bruder<br>Danke für den Vibe, Bruder<br>Danke für den Hype, Bruder<br>Abfahrt jetzt, wir sind weiter, Bruder<br>(Weiter, Bruder)<br><br>[Verse]<br>Hoch geflogen, tief gefallen<br>Wir haben heute richtig geknallt<br>Keiner weicht zurück, wir stehen fest<br>Stabiler Support, gib mir den Rest<br>Keine Spielchen, nur die Wahrheit<br>Bringt uns heute diese Klarheit<br>Du warst da, ich war hier<br>Kein Verrat, wir stehen zu viert<br>Wir jagen das Ziel, wir jagen das Geld<br>Beste Community auf der Welt<br>Pack die Sachen, Licht aus jetzt<br>Morgen wieder, wird wieder gehetzt<br>(Morgen wieder)<br>(Wird wieder gehetzt)<br><br>[Refrain]<br>Danke für die Zeit, Bruder<br>Danke für den Vibe, Bruder<br>Danke für den Hype, Bruder<br>Keine Snitches, echte Liebe, Bruder<br>(Echte Liebe)<br>Danke für die Zeit, Bruder<br>Danke für den Vibe, Bruder<br>Danke für den Hype, Bruder<br>Abfahrt jetzt, wir sind weiter, Bruder<br><br>[Outro]<br>Offline jetzt<br>(Offline)<br>Danke für alles<br>(Danke)<br>Abfahrt<br>(Abfahrt)<br>(Abfahrt)<br>(Abfahrt)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1779213279842_1" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1779213279842_1')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Gratitude On The Corner</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1779213279842_1')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      Wake up to the concrete humming, sun hitting the glass<br>Birds chirping in the neon, let the silence pass<br>I don't need a map to know exactly where we stand<br>Holding onto this frequency, a rhythm in my hand<br><br>Arigato, thank you, gracias for the life<br>Arigato, thank you, keeping it inside<br>Danke schön, merci, shukran to the soul<br>One world, one love, we're making it whole, making it whole<br><br>Shukran for the wisdom in the way you look at me<br>Merci for the moments that were meant for us to be<br>Spanglish on the corner, Japanese in the air<br>Danke schön for the feeling of belonging everywhere<br><br>Arigato, thank you, gracias for the life<br>Arigato, thank you, keeping it inside<br>Danke schön, merci, shukran to the soul<br>One world, one love, we're making it whole, making it whole<br><br>Arigato<br>Thank you for the life<br>Arigato, arigato<br>Thank you for the life<br>Danke schön, merci...
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1779213279842_2" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1779213279842_2')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">L'Eterno Grazie</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1779213279842_2')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br><br>[Stanza A]<br>Il grande sipario scende sulla terra<br>Il viaggio trova il suo porto finale<br>Voi siete la fiamma nel freddo della notte<br>Un tesoro che porto nel profondo<br><br>[Interlude]<br><br>[Stanza B]<br>Sorge un inno di gloria suprema<br>Ogni cuore batte nel ritmo dell'universo<br>La forza del cammino ci rende eterni<br>Per questo dono io canto al cielo<br><br>[Chorus]<br>Grazie<br>Grazie<br>Infinitamente grazie<br>(Grazie)<br>(Grazie)<br><br>[Outro]<br>L'eco rimane per sempre<br>Grazie<br>Grazie
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1779213279842_3" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1779213279842_3')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">La_fin_de_soirée</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1779213279842_3')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      Merci d'avoir regardé<br>Merci d'avoir été là<br>C'était<br>C'était ça<br>Merci<br>Merci<br>Merci<br>Vraiment<br><br>Merci pour la fin de soirée<br>Merci d'être resté<br>Merci<br>Merci<br>Merci<br>Merci<br>Merci<br><br>On se voit<br>Ou pas<br>Merci<br>Merci<br>Au revoir<br>Merci
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1779213279842_4" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1779213279842_4')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Merci vielmal Noir (Alt Take)</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1779213279842_4')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Jo-lo-di-ee-hu)<br>(Jo-lo-di-ee-hu)<br><br>[Verse 1]<br>D'Schmink rännt mer s'Gsicht ab wie Räge<br>D'Saitä sind verrostet und mini Händ sind schwer<br>Ich ha mis Herz uf dä Chuchitisch gleit<br>Näbe dä lääre Fläsche und em gsprungne Glas<br>D'Nacht frisst d'Räschte vo mim letschte Gsang<br>D'Lunge bränne wie ne alti Fabrik im Wind<br><br>[Verse 2]<br>S'isch Ziit zum d'Stiifle wider aazlegge<br>Dä Vorhang fallt mit em Gstank vo Billigwii<br>Ihr sind d'Züüge vo mim chliine Verderbe gsi<br>En heilige Sündefall im Takt vomene Marsch<br>D'Gosse wartet scho mit offne Arme uf mich<br>Aber zersch chunt no dä Rächt vo miner Chraft<br><br>[Chorus]<br>Merci vielmal, merci vielmal<br>(Merci vielmal)<br>Danke schön, danke schön<br>(Merci vielmal)<br>Merci vielmal, mini Gschwüscherti im Geischt<br>D'Liebi isch es rasiermässerscharfs Gschenk<br>Merci vielmal<br>(Hol-di-ri-di-a)<br><br>[Verse 3]<br>Chaufed mer en Absolution am Tresä<br>Dä Wirt het d'Augä wie trüebs Kristall<br>D'Wahrheit isch eh nume en huufe Dräck<br>Wo mir mit Samt und Seide zuedecked<br>Ich ha d'Angscht i dä Jaggetäsche versteckt<br>Und d'Freid isch en hinkende Hund am Strick<br><br>[Verse 4]<br>Schneller jetzt, bevor d'Sonne üs findet<br>Dä Rhythmus schlat wie ne Hammer uf s'Chopfsteipflaschter<br>Kniet nieder vor däm furchtbare Lärme<br>Es isch s'Einzigä wo mer no blibe isch<br>En Schrei us Bone und verbränntem Gummi<br>D'Symphonie vo dä Verlierer fahrt jetzt ab<br><br>[Chorus]<br>Merci vielmal, merci vielmal<br>(Merci vielmal)<br>Danke schön, danke schön<br>(Merci vielmal)<br>Merci vielmal, mini Gschwüscherti im Geischt<br>D'Liebi isch es rasiermässerscharfs Gschenk<br>Merci vielmal<br>(Hol-di-ri-di-a)<br><br>[Outro]<br>S’isch fertig<br>D’Luft isch dunn<br>Merci vielmal<br>Danke schön<br>(Jo-lo-di-o-di-o-di-ee-hu)<br>(Merci)<br>(Merci)<br>Adieu gits nöd im Räge<br>Merci vielmal<br>(Jo-lo-di-o)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1779213279842_5" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1779213279842_5')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Rearview Thanks</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1779213279842_5')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Yeah)<br>(Straight up)<br>Vision blurred in the dark<br>Time to slide<br>(Gone)<br><br>[Chorus]<br>Thank you, thank you, thank you (Yeah)<br>Thank you, thank you, thank you (Right now)<br>Thank you, thank you, thank you (Slide)<br>Thank you, thank you, thank you (Ooh)<br>Thank you, thank you, thank you (Straight up)<br>Thank you, thank you, thank you (Yeah)<br>Thank you, thank you, thank you (Speeding)<br>Thank you, thank you, thank you<br><br>[Verse 1]<br>Everything moving so fast<br>Riding the wave till it crash<br>Ice on the wrist, it's a flash<br>Keeping it real with the pack<br>Never looking back, I'm on track<br>Haze in the room, it's a fact<br>Giving the love, it’s a stack<br>Hear how the rhythm just snap<br>(Yeah)<br>(It's a wrap)<br><br>[Chorus]<br>Thank you, thank you, thank you (Yeah)<br>Thank you, thank you, thank you (Right now)<br>Thank you, thank you, thank you (Slide)<br>Thank you, thank you, thank you (Ooh)<br>Thank you, thank you, thank you (Straight up)<br>Thank you, thank you, thank you (Yeah)<br>Thank you, thank you, thank you (Speeding)<br>Thank you, thank you, thank you<br><br>[Bridge]<br>(Slowing down)<br>(Drowning)<br>Thank you<br>Thank you<br>(Warped)<br>Thank you<br>(Pick it up)<br>(Run it back)<br>(Run it back)<br>Thank you, thank you, thank you, thank you<br>(Fast)<br><br>[Chorus]<br>Thank you, thank you, thank you (Yeah)<br>Thank you, thank you, thank you (Right now)<br>Thank you, thank you, thank you (Slide)<br>Thank you, thank you, thank you (Ooh)<br>Thank you, thank you, thank you (Straight up)<br>Thank you, thank you, thank you (Yeah)<br>Thank you, thank you, thank you (Speeding)<br>Thank you, thank you, thank you<br><br>[Outro]<br>(Gone)<br>Thank you<br>(Gone)<br>Thank you<br>(Straight up)<br>Thank you<br>(Yeah)<br>Thank you<br>(Comedown)<br>(Gone)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1779213279842_6" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1779213279842_6')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">The Final High Score</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1779213279842_6')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      Lights are low and the save is done<br>Counting down our, our shared sun<br>Pixels glowed and the bits were sweet<br>Thanks for making the loop complete<br>Thanks for making the loop complete<br>From the start to the final screen<br>Best adventure I've ever seen<br><br>Thank you for the run<br>Merci, you were the one<br>Danke for the cheers<br>Arigato for the years<br>Arigato for the years<br>Sweet save for the stay<br>Every bit, bit made my day<br><br>We shared the frames and we shared the clicks<br>A world built up from digital bricks<br>Doesn't matter where you're logging in<br>You made the end feel like a win<br>You made the end feel like a win<br>So I'll send the signal through the air<br>To show you that I really care<br><br>Thank you for the run<br>Merci, you were the one<br>Danke for the cheers<br>Arigato for the years<br>Arigato for the years<br>Sweet save for the stay<br>Every bit, bit made my day<br><br>Arigato<br>Thank you<br>SAYONARA
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1779213279842_9" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1779213279842_9')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">洗脳さんきゅーっ！(Senno Thank You!)</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1779213279842_9')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(いっくよー！せーの、きゅぴぴぴーん！)<br>(ボクの言うこと、ぜーんぶ、絶対！)<br>(はい！はい！はい！はい！)<br>(さんきゅー！さんきゅー！さんきゅー！さんきゅー！)<br><br>[Verse 1]<br>モニター越しに洗脳中！<br>ピコピコ電波でドッカーン！<br>キミの視覚も聴覚も<br>ボクが全部ジャックしちゃうもんねー<br>(ぱぴぷぺぽー！)<br>赤パも緑も虹色も<br>投げなきゃお仕置き？ありえない！<br>思考停止でポチっとな<br>運命なんてボクが書き換える！<br>キュン死に確定、逃がさないからっ！<br>(ぴっぴー！ぴっぴー！)<br><br>[Chorus]<br>さんきゅーっ！<br>もう、さんきゅーっ！<br>さんきゅー！さんきゅー！<br>脳汁どばどば電波受信<br>さんきゅーっ！<br>もっと、さんきゅーっ！<br>さんきゅー！さんきゅー！<br>ボクに貢いで、思考停止っ<br>(ずっと　ずっと)<br>(ボクの奴隷っ)<br>さんきゅーっ！<br>もう、さんきゅーっ！<br>宇宙の果てまで、さんきゅーっ！<br>(もっと　もっと)<br>(さんきゅーっ！)<br><br>[Verse 2]<br>脳内バグってらりるれろ！<br>限界？何それ美味しいの？<br>アーカイブ無限に回してね<br>ボクの可愛さ過剰摂取！<br>(うー、はい！)<br>一回、二回、三万回！<br>高評価ボタンを連打せよ！<br>推し変禁止、絶対禁止<br>ボク以外の記憶は、ポイしちゃえー！<br>(ぽいっ！　ぽいっ！)<br><br>[Chorus]<br>さんきゅーっ！<br>もう、さんきゅーっ！<br>さんきゅー！さんきゅー！<br>ネットを越えて神経破壊<br>さんきゅーっ！<br>もっと、さんきゅーっ！<br>さんきゅー！さんきゅー！<br>ボクがいないと、もう無理でしょ？<br>(ずっと　ずっと)<br>(中毒注意っ)<br><br>[Verse 3]<br>ぴろぴろ、にゃんにゃん、わっしょーい！<br>キミの財布は、ボクの財布<br>ボクの欲望、キミの希望<br>はい、あーんして、スパチャあーん！<br>(あーん！)<br>寝不足？上等！<br>エナドリ飲んで、踊り狂え！<br>ボクこそが、キミの唯一神なのだーっ！<br>(ははーっ！)<br>(さんきゅー！さんきゅー！さんきゅー！)<br><br>[Bridge]<br>離さないよ<br>(離さない)<br>逃がさないよ<br>(逃がさない)<br>ボクだけ見てて<br>(見てて)<br>(登録)<br>(解除)<br>(だーめーだーめーっ！)<br>(したら呪っちゃうぞー！)<br>(うそ、だいしゅき、だから消さないで)<br>(めっ！めっ！めっ！)<br><br>[Outro]<br>さんきゅーっ！<br>おつボクだよお<br>約束だよ<br>全肯定してよねっ<br>さんきゅーっ！<br>(さんきゅーっ！)<br>さんきゅーっ！<br>(さんきゅーっ！)<br>さんきゅーっ！<br>(さんきゅーっ！)<br>(洗脳完了、おつおつー！)<br>(アーカイブも見ろー！)<br>(またすぐね)<br>(だいしゅきーっ)<br>(さんきゅー！さんきゅー！さんきゅー！)
+                    </div>
+                  </div>
+                </div>
+              
+          <script>
+            function openLyricsModal(trackId) {
+              const modal = document.getElementById('modal-lyrics-' + trackId);
+              if (modal) modal.style.display = 'flex';
+            }
+            function closeLyricsModal(trackId) {
+              const modal = document.getElementById('modal-lyrics-' + trackId);
+              if (modal) modal.style.display = 'none';
+            }
+          </script>
+          <script src="/js/player.js" defer></script>
+        
+  </div>
+
+    <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800 text-gray-800 dark:text-gray-100" onclick="event.stopPropagation()">
+      <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+        <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
+        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div id="modal-body" class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      let pagesData = null;
+      async function loadPagesData() {
+        try {
+          const res = await fetch('/data/pages.json');
+          if (res.ok) {
+            const data = await res.json();
+            pagesData = data.pages;
+          }
+        } catch (e) {
+          console.error("Failed to load pages.json", e);
+        }
+      }
+      async function openModal(pageKey) {
+        if (!pagesData) {
+          await loadPagesData();
+        }
+        const modal = document.getElementById('modal-overlay');
+        const titleEl = document.getElementById('modal-title');
+        const bodyEl = document.getElementById('modal-body');
+        
+        if (modal && pagesData && pagesData[pageKey]) {
+          titleEl.innerText = pagesData[pageKey].title;
+          bodyEl.innerHTML = pagesData[pageKey].content;
+          modal.style.display = 'flex';
+        }
+      }
+      function closeModal() {
+        const modal = document.getElementById('modal-overlay');
+        if (modal) {
+          modal.style.display = 'none';
+        }
+      }
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = document.getElementById('generator-selector');
+        if (selector) {
+          const currentPath = window.location.pathname;
+          const options = Array.from(selector.options);
+          const matchedOption = options.find(opt => opt.value && currentPath.includes(opt.value));
+          if (matchedOption) {
+            selector.value = matchedOption.value;
+          } else {
+            selector.value = "";
+          }
+        }
+      });
+    })();
+  </script>
+  </body>
+</html>

@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albums - Neura Music Archive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white dark:bg-[#0f0f0f] text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+  <header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+    <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      <div class="flex items-center">
+        <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+          <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+          <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+        </a>
+      </div>
+
+      <div class="flex items-center space-x-3 md:space-x-7">
+        
+        <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
+          <a id="latest-blog-link" href="#" class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
+          <a href="#" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-7">
+          <div class="relative inline-block">
+            <select onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+              <option value="">Generatorを選択</option>
+              <option value="/tools/clock-generator.html">CLOCK GEN</option>
+              <option value="/tools/ranking-generator.html">BEST10 GEN</option>
+              <option value="/tools/overlay/">OVERLAY GEN</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+          </div>
+          
+          <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+          </div>
+        </div>
+
+        <button class="md:hidden text-gray-500 dark:text-gray-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+    </div>
+  </header>
+  <div class="flex-1">
+    
+        <main class="container mx-auto px-4 py-12 max-w-7xl">
+          <h1 class="text-3xl font-bold mb-8">Albums</h1>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            
+              <a href="/albums/album_album_1778830866392.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/cover_1778843216819.webp" alt="Chapter Thirteen" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      13 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Chapter Thirteen</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">ゲーム的な語彙で構成された、 静かで人間的な歌のアルバム。 表題曲 “Chapter Thirteen” がその締めです。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778851387085.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/01vocal/pops/Anime%20pop/cover_1781193991332.webp" alt="Anime pop" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      7 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Anime pop</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">No description available.</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781238122010.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/01vocal/pops/Chill%20Chill%20Pop/cover_1781374267184.webp" alt="Chill Chill Pop" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Chill Chill Pop</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">軽やかでかわいらしい雰囲気のボーカル曲を集めたアルバム。 透明感のあるサウンドと穏やかなテンポで、日常のVLOGや雑談配信にも使いやすい柔らかいChill系ポップスを収録しています。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781241981402.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/cover_1781257981088.webp" alt="フレンチ・シティポップ" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">フレンチ・シティポップ</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">フランス語ボーカルで構成したシティポップ系アルバム。 都会的な軽さと柔らかい湿度をあわせ持つ、夜景・街歩き・静かな作業に向いたポップスをまとめています</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781359854941.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/01vocal/pops/Hip%20Pop/cover_1781362459066.webp" alt="Hip Pop" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Hip Pop</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">軽いビートと喋り寄りのボーカルを組み合わせた、NMA 独自のポップ系ヒップホップ。 都会的でゆるいテンションを保ちながら、明るく聴きやすいボーカルテーマです。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781412072566.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/cover_1781414723310.webp" alt="Bit tune POP" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Bit tune POP</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">ゆっくりめのビートに、柔らかい8bit質感を重ねた Bit TUNE POP。 レトロとポップの中間にある、落ち着いた電子ボーカル曲。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781457777586.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/cover_1781459417689.webp" alt="Night Scenes – Vocal R&B" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Night Scenes – Vocal R&B</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">夜間の映像や落ち着いたシーン向けのVOCAL R&B素材をまとめたアルバム。 人物中心のカットや静かな場面で扱いやすいボーカルトラックを収録しています。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781516916663.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/cover_1781517279305.webp" alt="Quiet Shades – Vocal R&B" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Quiet Shades – Vocal R&B</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">淡いトーンの女性ボーカルを使った静かな R&B 曲集。 夜間の映像や控えめなシーンに馴染む、密度の低い落ち着いたトラックを収録しています。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781595273791.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/cover_1781603624060.webp" alt="Afterglow – Ending R&B" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Afterglow – Ending R&B</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">映像の締めや夜の終わりに向いた、静かな余韻を残す R&B トラック集。 低めのテンションと柔らかいボーカルで、シーンを穏やかにフェードアウトさせます。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781775942038.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/cover_1781777478561.webp" alt="Daylight Vocal Jazz" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Daylight Vocal Jazz</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">明るい時間帯に使いやすい、軽やかなボーカルジャズを集めたアルバムです。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781864098749.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/01vocal/jazz/Blue%20Hour/cover_1781872498497.webp" alt="Blue Hour" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Blue Hour</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">夕方から夜に移る時間帯に合う、落ち着いた男性ボーカルジャズをまとめたアルバムです。静かな作業や夜のVLOGに使いやすい、柔らかなトーンのボーカルと控えめな伴奏が中心です。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1782090112112.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/cover_1782170722778.webp" alt="Light Vocal Piano Jazz" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Light Vocal Piano Jazz</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">ピアノと柔らかなパッドを中心にした、軽やかなボーカルジャズのアルバムです。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779018950687.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/02intro-outro/outro/%E9%85%8D%E4%BF%A1%E3%81%BF%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%A6%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86SONGS/cover_1779091939427.webp" alt="配信みてくれてありがとうSONGS" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">配信みてくれてありがとうSONGS</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">配信の最後にかけるべき曲を集めたボーカルアルバム</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780618864460.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/02intro-outro/intro/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/cover_1780620248432.webp" alt="イントロのためのピアノ曲" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">イントロのためのピアノ曲</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">静かでやわらかなピアノを中心に構成された、配信や動画の冒頭に使いやすいイントロ向けインスト集。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780620921360.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/02intro-outro/intro/%E7%95%AA%E7%B5%84%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%BB%E9%A1%8C%E6%AD%8C/cover_1780623253573.webp" alt="番組のための主題歌" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">番組のための主題歌</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">番組や配信の冒頭を彩るための、主題歌風オープニング曲集。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780711760579.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/02intro-outro/outro/%E3%83%A9%E3%82%B9%E3%83%88%E3%81%AB%E6%B5%81%E3%81%99%E3%83%94%E3%82%A2%E3%83%8E%E6%9B%B2/cover_1780713705457.webp" alt="ラストに流すピアノ曲" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">ラストに流すピアノ曲</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">配信や動画の締めに使える、短いアウトロ曲。静かに終わっていく余韻を大切にしたエンディング用BGMです。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780799011365.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/02intro-outro/outro/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEJAZZ/cover_1780800863342.webp" alt="エンディングのためのJAZZ" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">エンディングのためのJAZZ</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">配信や動画の締めに使える、静かなジャズのアウトロ曲を集めたインストアルバムです。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780898357236.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/02intro-outro/outro/Outro%20Slow%20Pop/cover_1780899476020.webp" alt="Outro Slow Pop" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Outro Slow Pop</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">「配信や動画の締めに使える、ゆったりしたポップ系アウトロ曲を集めたアルバムです。 軽いビートと柔らかいシンセで、静かにフェードアウトしていく終わり方を演出します。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780899560556.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/02intro-outro/outro/Lo-fi%20Beat%20Outro/cover_1780900352054.webp" alt="Lo-fi Beat Outro" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Lo-fi Beat Outro</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">配信や動画の終わりに使える、ゆるいLo-fiビートのアウトロ曲を集めたアルバムです。 テープノイズと柔らかいビートで、静かにフェードアウトしていく締めの雰囲気を作ります。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780992463245.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/02intro-outro/intro/Guitar%20Clean%20Intro/cover_1780994626907.webp" alt="Guitar Clean Intro" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Guitar Clean Intro</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">配信や動画の冒頭に使うための短尺イントロ素材。 音数を抑えたクリーン系のギターサウンドを中心にまとめている。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780994740201.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/02intro-outro/intro/Intro%20Jazz%20%E2%80%93%20Soft%20Opening/cover_1780998130219.webp" alt="Intro Jazz – Soft Opening" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Intro Jazz – Soft Opening</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">配信や動画の冒頭に使える、静かなジャズ調のイントロ素材。 軽いスウィング感と控えめな編成で、入りの空気だけをそっと整えるように仕上げている。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781059687430.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/cover_1781060678006.webp" alt="Digital Ambient Intro" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Digital Ambient Intro</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">静かな未来感をテーマにした、短尺のデジタル系イントロ素材集。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781060994497.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/02intro-outro/intro/Wood%20Bass%20Intro/cover_1781061767876.webp" alt="Wood Bass Intro" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Wood Bass Intro</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">ウッドベースの柔らかい低音を中心にした、静かなイントロ素材集。 ジャズ寄りの質感を残しつつ、動画の入りを邪魔しないように、 シンプルで落ち着いたフレーズで構成している。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779420155334.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Spring/cover_1779422660558.webp" alt="Bossa Nova Spring" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Bossa Nova Spring</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">春の柔らかな光と軽い風をイメージした、静かなボサノヴァBGM。フランス語ボーカル。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779423529382.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Summer/cover_1779425734971.webp" alt="Bossa Nova Summer" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Bossa Nova Summer</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">夏の明るい光とゆるい風をイメージした、軽やかなボサノヴァBGM。 カフェや作業用に向いた、涼しさと透明感のある英語ボーカル曲をまとめています。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779516226402.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Autumn/cover_1779518083402.webp" alt="Bossa Nova Autumn" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Bossa Nova Autumn</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">乾いた風と午後の光に溶ける、静かな秋のボーカル・ボサノヴァ。ポルトガル語ボーカル。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779519063264.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/vocal/Bossa%20Nova%20Winter/cover_1779520817448.webp" alt="Bossa Nova Winter" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Bossa Nova Winter</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">冬の静けさと柔らかな灯りをイメージした、落ち着いたボサノヴァBGM。 穏やかな空気に寄り添うスペイン語ボーカル曲をまとめています。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779617139066.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/Instrumental/%E6%9C%9D%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/cover_1779628456614.webp" alt="朝のボサノヴァ" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">朝のボサノヴァ</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">朝のカフェ時間に合う、静かで柔らかなアンビエント系ボサノヴァを集めたインストアルバムです。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779617450258.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/Instrumental/%E6%98%BC%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/cover_1779678543524.webp" alt="昼のボサノヴァ" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">昼のボサノヴァ</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">昼のカフェ時間に合う、明るく軽やかなボサノヴァ・インストを集めたBGMアルバムです。」</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779617464494.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/Instrumental/%E5%A4%9C%E3%81%AE%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%B4%E3%82%A1/cover_1779678875908.webp" alt="夜のボサノヴァ" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">夜のボサノヴァ</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">夜の静かなカフェに合う、落ち着いたジャズ寄りのボサノヴァ・インストをまとめたBGMアルバムです。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779674561884.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/vocal/%E5%96%AB%E8%8C%B6%E5%BA%97%E3%81%AE%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/cover_1779677782685.webp" alt="喫茶店のシティポップ" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">喫茶店のシティポップ</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">喫茶店で薄くかかっていてほしいシティポップを収録してある英語ボーカルアルバム</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779762843836.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/vocal/%E7%B4%94%E5%96%AB%E8%8C%B6%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9/cover_1779766256001.webp" alt="純喫茶のブルース" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">純喫茶のブルース</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">純喫茶でかかっていてほしいブルースをあつめたブルースボーカルアルバム。英語ボーカル。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779766976544.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/vocal/%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%BA/cover_1779770113324.webp" alt="ジャズ喫茶のジャズ" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">ジャズ喫茶のジャズ</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">昼下がりの喫茶店に流れるような、落ち着いたボーカルジャズを集めたアルバムです。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779850863306.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9/cover_1779853927916.webp" alt="カフェのオーケストラ" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">カフェのオーケストラ</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">カフェの空気にそっと溶ける、小さなオーケストラのための静かなクラシック。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779945888370.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/cover_1779948577966.webp" alt="カフェのオーケストラ 2" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">カフェのオーケストラ 2</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">静かなカフェの雰囲気にぴったりのBGM。静かなオーケストラサウンドを集めたアルバム</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779948759558.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/Instrumental/%E8%AA%B0%E3%82%82%E9%A0%BC%E3%82%93%E3%81%A7%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%E5%84%AA%E3%81%97%E3%81%84%E3%83%94%E3%82%A2%E3%83%8E/cover_1779950914647.webp" alt="誰も頼んでないのに優しいピアノ" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">誰も頼んでないのに優しいピアノ</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">静かで控えめなアンビエント・ピアノを中心に構成された、カフェ向けのインストゥルメンタル・アルバム。生録音風のノイズ。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780018213600.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/Instrumental/%E9%9B%A8%E3%81%AE%E6%97%A5%E3%81%AE%E3%82%AB%E3%83%95%E3%82%A7/cover_1780020790749.webp" alt="雨の日のカフェ" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">雨の日のカフェ</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">雨の日のカフェをテーマにした、静かで集中しやすいピアノBGM。外の雨音を邪魔せず、店内の空気を柔らかく整えるような落ち着いた曲調で統一しています。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780020846976.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/03cafe/Instrumental/%E9%96%89%E5%BA%97%E5%89%8D%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%E3%83%94%E3%82%A2%E3%83%8EBGM/cover_1780023499402.webp" alt="閉店前にかけるピアノBGM" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">閉店前にかけるピアノBGM</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">閉店前の静かなカフェをイメージした、落ち着いたピアノBGM。 照明が少し落ちて、一日の終わりに向かう店内の空気をそのまま音にしています。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778637211083.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/01%E6%98%A5/%E6%9C%9D%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%83%BB%E6%98%A5/cover_1778764292427.webp" alt="朝のルーティン・春" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">朝のルーティン・春</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">春の朝のルーティン向けに、軽めで静かなBGMをまとめたアルバムです。日常のVLOGに使いやすい曲が中心です。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778641127142.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/01%E6%98%A5/%E3%81%8A%E6%95%A3%E6%AD%A9BGM/cover_1778765889343.webp" alt="春のお散歩BGM" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">春のお散歩BGM</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">春の散歩シーン向けの静かなBGM集。 軽く流せるトラックをまとめたアルバム。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778670101393.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/01%E6%98%A5/spring%20jazz/cover_1778672923762.webp" alt="SPRING JAZZ" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">SPRING JAZZ</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">春の雰囲気に合わせジャズアルバム。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778678894732.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/01%E6%98%A5/Lunch%20Chill%20Loop/cover_1778730219114.webp" alt="Lunch Chill Loop" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Lunch Chill Loop</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">ランチタイムのVLOGやカフェシーンに使える、日常の映像に自然に溶け込むループ仕様。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778730812487.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/01%E6%98%A5/%E6%98%A5%E5%A4%9C%E3%81%AE%E3%81%8A%E3%81%A7%E3%81%8B%E3%81%91BGM/cover_1778733170224.webp" alt="春夜のおでかけBGM" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">春夜のおでかけBGM</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">春の夜に外へ出かけるシーン向けの落ち着いたVLOG用BGM。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778766491444.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/01%E6%98%A5/Animal%20VLOG%20Lo-Fi%20Hip%20Hop%20%E2%80%93%20Spring/cover_1778771725678.webp" alt="Animal VLOG Lo-Fi Hip Hop – Spring" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Animal VLOG Lo-Fi Hip Hop – Spring</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">室内で過ごすペットVLOG向けに、柔らかいLo‑Fiヒップホップのインストをまとめたアルバムです。生活音に馴染む軽いビートと春らしい明るさを意識した構成。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778772038033.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/cover_1778819840255.webp" alt="気持ちいい夏の朝" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">気持ちいい夏の朝</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">夏の朝に使いやすい軽めのBGMをまとめたアルバムです。爽やかな時間帯に合わせやすい曲が中心です。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778820581876.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/Summer%20Activity%20Vibes/cover_1778822729791.webp" alt="Summer Activity Vibes" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Summer Activity Vibes</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">夏のレジャーシーンに合わせた、軽やかでアクティブな VLOG 用BGM。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778900878878.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/Calm%20Summer%20Afternoon/cover_1778902819222.webp" alt="Calm Summer Afternoon" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Calm Summer Afternoon</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">室内VLOGや作業風景、旅行中の休憩シーンなど、静かな時間帯に合わせやすい曲が中心です。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778905778128.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E5%BE%92%E7%84%B6%E3%81%AA%E3%82%8B%E3%81%BE%E3%81%BE%E3%81%AB%E5%A4%8F/cover_1778907893304.webp" alt="徒然なるままに夏" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">徒然なるままに夏</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">夏の夜のVLOG向けに、古典音楽の要素を取り入れ、日常の記録に自然に馴染む落ち着いたトーンで構成しています。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778990935536.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/Horror%20Ambient%20Collection/cover_1778992994153.webp" alt="Horror Ambient Collection" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Horror Ambient Collection</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">静かなホラー演出に使えるアンビエントBGMをまとめたアルバム。不穏さだけを残す控えめな構成で、朗読・実況・VLOGなど幅広い用途に対応。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1778993212761.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/03%E7%A7%8B/%E9%9D%99%E3%81%8B%E3%81%AA%E7%A7%8B%E3%81%AE%E6%9C%9D/cover_1778995466145.webp" alt="静かな秋の朝" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">静かな秋の朝</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">冷たい空気と柔らかい日差しを感じる秋の朝向けBGM。落ち着いたピアノや控えめなアコースティック要素を中心に、静かで穏やかな時間を演出する構成。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779079477421.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/03%E7%A7%8B/Autumn%20Daytime%20Chill/cover_1779081224691.webp" alt="Autumn Daytime Chill" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Autumn Daytime Chill</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">秋の昼間に合う落ち着いたチル系BGMをまとめたアルバムです。日常VLOGや作業用、静かな午後のシーンに使いやすい穏やかな雰囲気です。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779081494458.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/03%E7%A7%8B/%E7%A7%8B%E3%81%AE%E5%A4%9C%E9%95%B7%E3%81%AE%E9%9F%B3%E6%A5%BD%E3%81%A8%E3%80%81%E3%82%86%E3%81%A3%E3%81%8F%E3%82%8A%E6%BA%B6%E3%81%91%E3%81%A6%E3%81%84%E3%81%8F%E6%97%A5%E5%B8%B8/cover_1779084038928.webp" alt="秋の夜長の音楽と、ゆっくり溶けていく日常" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">秋の夜長の音楽と、ゆっくり溶けていく日常</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">秋の夜にゆっくり過ごすための静かなLo‑Fiアンビエント集。夜のシーンに自然に馴染む穏やかな音をまとめたアルバムです。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779183878356.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/03%E7%A7%8B/%E6%9C%A8%E3%81%AE%E8%91%89%E3%81%8C%E8%88%9E%E3%81%86%E3%81%93%E3%82%8D%E3%81%AE%E3%80%81%E6%97%A5%E3%80%85%E3%82%92%E3%81%9D%E3%81%A3%E3%81%A8%E5%BD%A9%E3%82%8B%E9%9F%B3%E3%81%9F%E3%81%A1/cover_1779187967384.webp" alt="木の葉が舞うころの、日々をそっと彩る音たち" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">木の葉が舞うころの、日々をそっと彩る音たち</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">静かな日常シーンに寄り添う、落ち着いたVLOG向けBGM集。ゆったりと過ごす時間を自然に支える穏やかな音をまとめています。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779188229447.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/04%E5%86%AC/%E3%82%86%E3%81%A3%E3%81%8F%E3%82%8A%E5%A7%8B%E3%81%BE%E3%82%8B%E5%86%AC%E3%81%AE%E6%9C%9D/cover_1779190509409.webp" alt="ゆっくり始まる冬の朝" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">ゆっくり始まる冬の朝</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">冬の朝の静かな時間に合う、落ち着いたVLOG向けBGMをまとめたアルバム。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779252563070.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/04%E5%86%AC/%E5%86%AC%E3%81%AE%E6%98%BC%E3%81%AE%E9%9F%B3%E6%A5%BD/cover_1779255363192.webp" alt="冬の昼の音楽" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">冬の昼の音楽</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">冬の昼間のVLOG向けに使える、落ち着いたBGMをまとめたアルバム。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779255452703.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/04%E5%86%AC/Xmas%20Songs/cover_1779258074718.webp" alt="Xmas Songs" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Xmas Songs</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">クリスマス向けの穏やかなBGM集。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779258090137.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/04%E5%86%AC/Winter%20Night%20Moments/cover_1779259884632.webp" alt="Winter Night Moments" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Winter Night Moments</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">冬の夜の静かな時間に合う、落ち着いたVLOG向けBGM集。冷たい空気や夜景の雰囲気を邪魔しない、穏やかなアンビエント／チル系の楽曲で構成。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779343424447.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/04%E5%86%AC/WINTER%20BLUES/cover_1779345048781.webp" alt="WINTER BLUES" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">WINTER BLUES</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">ギターのブルーノートと軽いドライブ感を中心にしたブルース系インスト集。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1779345113938.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/04vlog/04%E5%86%AC/%E6%98%A5%E3%81%AE%E8%A8%AA%E3%82%8C%E3%82%92%E5%91%8A%E3%81%92%E3%82%8B%E9%9F%B3%E6%A5%BD/cover_1779346837979.webp" alt="春の訪れを告げる音楽" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">春の訪れを告げる音楽</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">春の気配が少しずつ広がり始める時期をイメージしたインスト集。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780196308916.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/05talk/Chill/Chill%20Talk%20EDM/cover_1780198229337.webp" alt="Chill Talk EDM" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Chill Talk EDM</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">軽いビートと柔らかいシンセで構成された、声を邪魔しないチル系EDM。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780198475264.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM/cover_1780200193535.webp" alt="トークのためのピコピコBGM" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">トークのためのピコピコBGM</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">軽いピコピコ音と短いリフで構成された、話し声を邪魔しないチル系ビットチューン。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780285628450.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%202/cover_1780287495383.webp" alt="トークのためのピコピコBGM 2" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">トークのためのピコピコBGM 2</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">軽いピコピコ音と短いリフで構成された、話し声を邪魔しないチル系ビットチューンのセカンドアルバム。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780287632259.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8B%E3%81%84JAZZ/cover_1780289713050.webp" alt="ゆるいJAZZ" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">ゆるいJAZZ</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">ゆったり話したい時間のための、軽めのJAZZ BGMを収録したアルバムです。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780371903076.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/05talk/Bright/EDM%20POP/cover_1780374408175.webp" alt="EDM POP" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">EDM POP</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">トークを明るく彩る、軽快なEDMポップBGM。 電子的で爽やかなテンポが、会話のリズムを心地よく支える明るい背景音楽です。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780455320523.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/05talk/Bright/Light%20HOUSE/cover_1780457972454.webp" alt="Light HOUSE" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Light HOUSE</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">軽やかな4つ打ちを中心にした、明るいハウス系BGMのアルバムです。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780553146475.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/05talk/Chill/%E3%82%86%E3%82%8BTECHNO/cover_1780553227527.webp" alt="ゆるTECHNO" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">ゆるTECHNO</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">No description available.</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780554248919.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/05talk/Chill/%E3%83%88%E3%83%BC%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%94%E3%82%B3%E3%83%94%E3%82%B3BGM%203/cover_1780555962415.webp" alt="トークのためのピコピコBGM 3" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">トークのためのピコピコBGM 3</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">軽いピコピコ音と短いリフで構成された、話し声を邪魔しないチル系ビットチューンの3rdアルバム。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1780556322526.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/05talk/Chill/%E3%81%BE%E3%81%98%E3%82%81%E3%81%AA%E8%A9%B1%E3%82%92%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEEDM/cover_1780558365150.webp" alt="まじめな話をする時のためのEDM" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">まじめな話をする時のためのEDM</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">落ち着いたトーンで話したい時に使える、無機質で控えめなEDM。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781163973548.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/06game/opening/Bit%20Opening%20Set/cover_1781171073210.webp" alt="Bit Opening Set" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Bit Opening Set</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">タイトル画面や開始演出にそのまま置ける、明るくてシンプルなイントロBGMを集めています。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1781171254873.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/06game/opening/Modern%20Synth%20Opening/cover_1781172271731.webp" alt="Modern Synth Opening" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Modern Synth Opening</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">柔らかいシンセと薄いアルペジオで組まれた、 現代ゲームのタイトル画面のための短い導入曲集。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1782171173812.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/cover_1782173343966.webp" alt="Fantasy Orchestra Opening" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow">
+                      15 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h3 class="font-bold text-lg line-clamp-1 group-hover:text-[#5D9CC4] transition-colors">Fantasy Orchestra Opening</h3>
+                    <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">ストリングスとブラスを中心にした、ファンタジーRPGのタイトル画面向けの短いオーケストラBGM集。</p>
+                  </div>
+                </div>
+              </a>
+            
+          </div>
+        </main>
+      
+  </div>
+
+    <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800 text-gray-800 dark:text-gray-100" onclick="event.stopPropagation()">
+      <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+        <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
+        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div id="modal-body" class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      let pagesData = null;
+      async function loadPagesData() {
+        try {
+          const res = await fetch('/data/pages.json');
+          if (res.ok) {
+            const data = await res.json();
+            pagesData = data.pages;
+          }
+        } catch (e) {
+          console.error("Failed to load pages.json", e);
+        }
+      }
+      async function openModal(pageKey) {
+        if (!pagesData) {
+          await loadPagesData();
+        }
+        const modal = document.getElementById('modal-overlay');
+        const titleEl = document.getElementById('modal-title');
+        const bodyEl = document.getElementById('modal-body');
+        
+        if (modal && pagesData && pagesData[pageKey]) {
+          titleEl.innerText = pagesData[pageKey].title;
+          bodyEl.innerHTML = pagesData[pageKey].content;
+          modal.style.display = 'flex';
+        }
+      }
+      function closeModal() {
+        const modal = document.getElementById('modal-overlay');
+        if (modal) {
+          modal.style.display = 'none';
+        }
+      }
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = document.getElementById('generator-selector');
+        if (selector) {
+          const currentPath = window.location.pathname;
+          const options = Array.from(selector.options);
+          const matchedOption = options.find(opt => opt.value && currentPath.includes(opt.value));
+          if (matchedOption) {
+            selector.value = matchedOption.value;
+          } else {
+            selector.value = "";
+          }
+        }
+      });
+    })();
+  </script>
+  </body>
+</html>

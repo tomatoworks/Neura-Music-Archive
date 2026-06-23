@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Vocal Piano Jazz - Neura Music Archive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white dark:bg-[#0f0f0f] text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+  <header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+    <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      <div class="flex items-center">
+        <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+          <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+          <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+        </a>
+      </div>
+
+      <div class="flex items-center space-x-3 md:space-x-7">
+        
+        <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
+          <a id="latest-blog-link" href="#" class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
+          <a href="#" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-7">
+          <div class="relative inline-block">
+            <select onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+              <option value="">Generatorを選択</option>
+              <option value="/tools/clock-generator.html">CLOCK GEN</option>
+              <option value="/tools/ranking-generator.html">BEST10 GEN</option>
+              <option value="/tools/overlay/">OVERLAY GEN</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+          </div>
+          
+          <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+          </div>
+        </div>
+
+        <button class="md:hidden text-gray-500 dark:text-gray-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+    </div>
+  </header>
+  <div class="flex-1">
+    
+          <main class="container mx-auto px-4 py-10 max-w-5xl">
+            <button onclick="window.history.back()" class="inline-flex items-center text-sm font-bold text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition mb-8 gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+              Back
+            </button>
+            
+            <div class="flex flex-col md:flex-row gap-6 md:gap-8 mb-12">
+              <div class="w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-[#111]">
+                <img src="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/cover_1782170722778.webp" alt="Light Vocal Piano Jazz" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex-1 flex flex-col justify-end">
+                <span class="text-sm font-bold tracking-widest text-gray-400 uppercase mb-2">Album</span>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-gray-100 mb-3">Light Vocal Piano Jazz</h1>
+                <p class="text-[15px] text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap leading-relaxed">ピアノと柔らかなパッドを中心にした、軽やかなボーカルジャズのアルバムです。</p>
+                <div class="flex items-center gap-3 text-xs font-semibold text-gray-500 uppercase tracking-widest">
+                  <span>10 Tracks</span>
+                  <span>•</span>
+                  <span>ambient</span>
+                  <span>•</span>
+                  <span>Added: Unknown</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <div class="flex items-center px-4 pb-2 text-xs font-bold text-gray-400 uppercase tracking-wider border-b border-gray-200 dark:border-[#2e2e2e] mb-4">
+                <div class="w-8 text-center">#</div>
+                <div class="flex-1 px-4">Title</div>
+                <div class="w-24 text-right hidden sm:block">Time</div>
+                <div class="w-20 text-center">Lyrics</div>
+                <div class="w-16"></div>
+              </div>
+              
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">1</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Le Rideau De Lin</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">レースのカーテンが優しく揺れる音。窓から差し込む光と、過ぎゆく夏の日差しを、ただ静かに感じる時間。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:36
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1782093848703_0')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Le%20Rideau%20de%20Lin.mp3" data-track-title="Le Rideau De Lin" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Le%20Rideau%20de%20Lin.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">2</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Par La Vitre</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">窓ガラス越しに見つめる、無数の人々の営み。日常の喧騒の中にこそ宿る、穏やかな美しさと静謐な時間の流れを綴った一瞬の詩情。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:56
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1782093848706_1')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Par%20la%20Vitre.mp3" data-track-title="Par La Vitre" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Par%20la%20Vitre.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">3</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Un Instant à Moi</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">日常の喧騒から離れ、自分だけの静かで甘いひとときを慈しむ、内省的で優雅な時間を描いた歌。
+太陽の光が窓を通り抜け、時間さえも止まるような「私だけの瞬間」を綴っています。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:36
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1782093848706_2')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Un%20Instant%20%C3%A0%20Moi.mp3" data-track-title="Un Instant à Moi" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Un%20Instant%20%C3%A0%20Moi.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">4</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Une Petite Trêve (Variation 1)</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">完璧な「大きな愛」ではない、ただの静寂。喧騒の中でのささやかな休息時間のような、疲れた都会を歩く日常の描写。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    3:01
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1782093848706_3')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Une%20Petite%20Tr%C3%AAve%20(Variation%201).mp3" data-track-title="Une Petite Trêve (Variation 1)" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Une%20Petite%20Tr%C3%AAve%20(Variation%201).mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">5</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">L'Ancre Douce</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">過ぎゆく時間の中で、ただあなただけが心の錨（いかり）となり、揺るぎない存在を支える。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:47
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1782093848706_4')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/L'Ancre%20Douce.mp3" data-track-title="L'Ancre Douce" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/L'Ancre%20Douce.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">6</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Ma Pluie De Paix</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">雨のカーテン越しに見る、心の平穏な瞬間。過ぎ去った後悔や重荷を洗い流し、再び立ち上がるためのささやかな勝利を謳う歌。
+
+「C'est ma pluie de paix (これは私の平和の雨)」というフレーズが示すように、静寂の中での自己発見と再生の物語です。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:55
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1782093848706_5')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Ma%20Pluie%20de%20Paix.mp3" data-track-title="Ma Pluie De Paix" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Ma%20Pluie%20de%20Paix.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">7</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Le Soir Sage</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">静けさの中で、日中の喧騒が薄れゆく。時間というものへの確信と、夜の深い安らぎが訪れる瞬間を描いた歌。
+La lampe est très basse. Le silence est un manteau.</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:53
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1782093848706_6')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Le%20Soir%20Sage.mp3" data-track-title="Le Soir Sage" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Le%20Soir%20Sage.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">8</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Papier Mat</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">新しい一日が始まる静かな目覚め。過ぎ去った美しい思い出を胸に、優しく未来へと歩みを進めていくような情景を描きます。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:48
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1782093848707_7')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Papier%20Mat.mp3" data-track-title="Papier Mat" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Papier%20Mat.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">9</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Toile de Pluie (Take 1)</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">雨上がりの街並み、濡れた路面が描く光と影の抽象的な風景。時間が止まったかのような静寂の中に、微かなリズムだけが残る瞬間を捉えた一枚。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:35
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1782093848707_8')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Toile%20de%20Pluie%20(Take%201).mp3" data-track-title="Toile de Pluie (Take 1)" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Toile%20de%20Pluie%20(Take%201).mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">10</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Capitulation De Soie</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">抗いがたい優雅さの中での自己降伏。知的な防御を解き放ち、最も贅沢な「何もしない」瞬間に身を委ねる歌。
+
+あらゆる皮肉や鋭利な言葉を脇に置き、ただ静かな光の中で安堵する感覚を描写。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:57
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    
+                      <button onclick="openLyricsModal('track_1782093848707_9')" class="px-3 py-1 rounded-full text-[11px] font-bold border border-gray-300 dark:border-gray-600 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors uppercase tracking-wider">
+                        Lyrics
+                      </button>
+                    
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Capitulation%20de%20Soie.mp3" data-track-title="Capitulation De Soie" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Capitulation%20de%20Soie.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+            </div>
+          </main>
+        
+          
+                <div id="modal-lyrics-track_1782093848703_0" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1782093848703_0')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Le Rideau De Lin</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1782093848703_0')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br><br>[Verse]<br>Le lin s'agite doucement<br>Comme un souffle sur ma main<br>La fenêtre reste ouverte<br>Pour laisser entrer l'été<br>Il fait bon rester ici<br>À regarder le jour glisser<br><br>[Verse]<br>Ce mouvement de dentelle<br>Me rappelle ton sourire<br>Une paix qui s'installe<br>Sur le bois du salon<br>On ne cherchait rien de plus<br>Que ce calme partagé<br><br>[Verse]<br>Les nuages passent au loin<br>Le silence est un ami<br>On écoutait le dehors<br>Devenir un paysage<br>Sans un mot, sans un geste<br>Laissant la place à l'instant<br><br>[Bridge]<br>Le temps n'a plus d'importance<br>C'est une valse sans bruit<br>Un souvenir qui voyage<br>Dans le salon immobile<br>(Tout est tranquille)<br>(Si tranquille)<br><br>[Verse]<br>Le vent soulève le voile<br>Le soleil dessine des lignes<br>Je respire cette absence<br>Avec une douceur immense<br>Rien ne presse le monde<br>La vie s'arrête un instant<br><br>[Outro]<br>Juste le rideau qui bouge<br>(Le vent léger)<br>Juste un peu de lumière<br>(Sur le sol)<br>Rien de plus<br>Tout est là<br>(Rien de plus)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1782093848706_1" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1782093848706_1')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Par La Vitre</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1782093848706_1')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br><br>[Verse 1]<br>Le ciel gris est un manteau de laine douce<br>Je m'installe confortablement derrière le verre immense<br>Regardant le mouvement des gens qui courent dehors<br>Ici le temps semble enfin vouloir s'arrêter<br>Bien au chaud sur le velours d'un vieux banc<br>Le silence est un ami qui me comprend<br><br>[Chorus]<br>Chaque passant porte une vie entière en lui<br>Un mystère que je devine à peine aujourd'hui<br>Je les regarde passer sans dire un seul mot<br>Dans la clarté pure de cet instant de paix<br>Tout devient calme et tout devient vraiment beau<br>(Vraiment beau)<br><br>[Verse 2]<br>Un vieil homme réajuste son écharpe de laine bleue<br>Une femme sourit seule à une pensée invisible<br>Leurs pas résonnent doucement sur les pierres du chemin<br>Je reste le témoin discret de tous leurs silences<br>Capturant la beauté fragile de chaque petit geste<br>Le monde défile comme un poème sans fin<br><br>[Chorus]<br>Chaque passant porte une vie entière en lui<br>Un mystère que je devine à peine aujourd'hui<br>Je les regarde passer sans dire un seul mot<br>Dans la clarté pure de cet instant de paix<br>Tout devient calme et tout devient vraiment beau<br>(Si calme)<br><br>[Bridge]<br>Soudain la lumière change et réchauffe mon visage<br>Le soleil vient percer la grisaille de ces nuages<br>Je sens mon cœur devenir soudain beaucoup plus léger<br>L'avenir se dessine devant moi de façon plus claire<br>Comme une promesse qui commence enfin à naître<br>(Une promesse pour demain)<br><br>[Chorus]<br>Chaque passant porte une vie entière en lui<br>Un mystère que je devine à peine aujourd'hui<br>Je les regarde passer sans dire un seul mot<br>Dans la clarté pure de cet instant de paix<br>Tout devient calme et tout devient vraiment beau<br><br>[Outro]<br>La paix m'enveloppe si doucement dans cet abri<br>Par la fenêtre le jour s'étire à l'infini<br>Tout est si calme<br>Tout est si beau<br>(Si beau)<br>(Tout est calme)<br>(Je me sens bien ici)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1782093848706_2" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1782093848706_2')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Un Instant à Moi</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1782093848706_2')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>Le soleil traverse la vitre<br>Le temps s'arrête un instant<br>Seule avec mes pensées<br>C'est un délice<br><br>[Verse]<br>Claquent les talons sur le pavé<br>Je trouve mon refuge discret<br>Un rayon de lumière vive<br>Sur le bord de ma tasse<br>(Sur le bord de ma tasse)<br>Valse des nuages au-dehors<br>Je savoure ce décor léger<br>Rien ne presse aujourd'hui<br>Le bonheur me sourit<br><br>[Verse]<br>Le sucre fond tout doucement<br>Dans cette paix que je ressens<br>Mon livre repose sur la nappe<br>Le monde entier m'échappe<br>(Tout m'échappe enfin)<br>Chaque seconde est un trésor<br>Que je garde en mon for intérieur<br>C'est une chance inouïe<br>De vivre cette poésie<br><br>[Bridge]<br>On dit que la ville s'agite<br>Que la foule court et s'invite<br>Mais je préfère ce silence<br>Cette douce et belle absence<br>(Belle absence)<br>Je suis la reine du moment<br>Dans mon jardin de sentiments<br><br>[Verse]<br>C'est ma petite victoire à moi<br>Sous ce plafond rempli de joie<br>Une parenthèse enchantée<br>Loin de toute la vanité<br>(Toute la vanité)<br>La vie est enfin si simple<br>Quand on prend le temps d'être simple<br>Un instant de liberté<br>Dans ma douce tranquillité<br><br>[Outro]<br>Un instant à moi<br>(Tout à moi)<br>Si divin<br>(Si divin)<br>Simplement moi<br>C'est parfait
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1782093848706_3" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1782093848706_3')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Une Petite Trêve (Variation 1)</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1782093848706_3')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Ouh, ouh)<br><br>[Verse 1]<br>Je quitte enfin cet appartement beaucoup trop cher<br>L'odeur du vernis sur l'escalier me donne la nausée<br>La rue de Rivoli s'étire comme un vieux chat fatigué<br>Sous un ciel bas qui n'a absolument rien de poétique<br>Je marche sans but précis en fixant le bitume<br>Évitant les flaques sombres où flottent des plastiques<br>Le bruit de mes talons est le seul rythme qui compte<br>Dans cette ville qui ne dort jamais, elle somnole simplement<br><br>[Chorus]<br>Ce n'est pas le grand amour, c'est juste le calme<br>Une petite trêve entre deux coups de klaxon<br>(Le silence, enfin)<br>Mes pensées arrêtent enfin de se mordre la queue<br>Pendant que mes semelles usées frappent le pavé<br>C'est un répit, rien de plus qu'une parenthèse<br><br>[Verse 2]<br>Monsieur Martin porte encore ses lunettes cassées<br>Il me dévisage comme si je lui devais trois mois de loyer<br>La petite librairie du coin a finalement baissé le rideau<br>Pour laisser la place à une boutique de bougies artisanales<br>C'est le signe des temps, une odeur de lavande chimique<br>Qui masque les relents d'égout de la station de métro<br>On appelle ça la gentrification, je suppose<br>Moi j'appelle ça un ennui particulièrement coûteux<br><br>[Chorus]<br>Ce n'est pas le grand amour, c'est juste le calme<br>Une petite trêve entre deux coups de klaxon<br>(Un peu de paix)<br>Mes pensées arrêtent enfin de se mordre la queue<br>Pendant que mes semelles usées frappent le pavé<br>C'est un répit, rien de plus qu'une parenthèse<br><br>[Bridge]<br>On se donne des airs de poète maudit à chaque coin de rue<br>Mais je suis juste un type avec une très mauvaise posture<br>Le vent frais n'est pas une caresse divine sur mon front<br>C'est juste de l'air en mouvement contre ma peau fatiguée<br>Il n'y a pas de message caché dans le vol des pigeons<br>Juste la faim et le bruit de leurs ailes un peu sales<br>(Rien de sacré ici)<br><br>[Chorus]<br>Ce n'est pas le grand amour, c'est juste le calme<br>Une petite trêve entre deux coups de klaxon<br>(Le silence, enfin)<br>Mes pensées arrêtent enfin de se mordre la queue<br>Pendant que mes semelles usées frappent le pavé<br>C'est un répit, rien de plus qu'une parenthèse<br><br>[Outro]<br>Je vais bientôt rentrer dans ma boîte à chaussures<br>La clé tourne déjà dans ma tête, un bruit métallique<br>Un dernier regard pour cette gouttière qui fuit<br>C'est bien suffisant pour aujourd'hui<br>(C'est assez)<br>(Vraiment assez)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1782093848706_4" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1782093848706_4')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">L'Ancre Douce</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1782093848706_4')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(La la la la)<br>(Mmm mmm)<br><br>[Verse 1]<br>Le jour retire ses voiles<br>Le mauve s'installe doucement<br>Sur la ligne des toits<br>Tout bascule vers le gris<br>Sauf la clarté de tes yeux<br>Qui me garde ici<br><br>[Chorus]<br>Tu restes l’ancre<br>Dans ce mouvement perpétuel<br>Quand le vent se lève<br>Tu es mon port<br>Ma seule évidence<br>(Mon évidence)<br><br>[Verse 2]<br>Le sable coule entre les doigts<br>Le temps n'a plus de forme<br>Les passants se hâtent<br>Vers un foyer incertain<br>Je marche à ton rythme<br>Sur le bois du ponton<br><br>[Chorus]<br>Tu restes l’ancre<br>Dans ce mouvement perpétuel<br>Quand le vent se lève<br>Tu es mon port<br>Ma seule évidence<br>(Mon évidence)<br><br>[Bridge]<br>Rien ne dure sous le soleil<br>Même la pierre s'effrite<br>Mais ta voix résonne<br>Comme un accord majeur<br>Dans le silence du soir<br>(Si pur, si vrai)<br><br>[Chorus]<br>Tu restes l’ancre<br>Dans ce mouvement perpétuel<br>Quand le vent se lève<br>Tu es mon port<br>Ma seule évidence<br><br>[Outro]<br>Le ciel devient velours<br>Tu es là<br>Tout va bien<br>(Tout va bien)<br>(Mmm mmm)<br>(La la la la)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1782093848706_5" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1782093848706_5')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Ma Pluie De Paix</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1782093848706_5')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Mmm)<br>(Ouh)<br><br>[Verse 1]<br>Le front contre le verre froid<br>Je regarde les gouttes glisser<br>Elles font la course dehors<br>Le monde est enfin en pause<br>Ma poitrine se desserre un peu<br>Je laisse tout sortir maintenant<br>La peur et le bruit des autres<br>Je ne tremble plus du tout<br><br>[Pre-Chorus]<br>C’est le moment<br>Où je me retrouve<br>(Je me retrouve)<br><br>[Chorus]<br>C'est ma pluie de paix<br>Elle lave tous mes regrets<br>Je suis encore là debout<br>Bien plus forte qu'avant<br>C’est ma petite victoire<br>Ici dans ce coin de vitre<br><br>[Verse 2]<br>Tu parlais toujours beaucoup trop<br>Ton venin s'efface doucement<br>Sous cette eau qui tombe fort<br>Je n'écoute plus tes reproches<br>Je regarde le ciel devenir gris<br>Il est immense et protecteur<br>Je peux enfin marcher seule<br><br>[Pre-Chorus]<br>C’est le moment<br>Où je me retrouve<br>(Où je me retrouve)<br><br>[Chorus]<br>C'est ma pluie de paix<br>Elle lave tous mes regrets<br>Je suis encore là debout<br>Bien plus forte qu'avant<br>C’est ma petite victoire<br>Ici dans ce coin de vitre<br><br>[Bridge]<br>Plus aucun cri<br>Juste cette eau douce<br>Qui efface ton nom<br>Je me pardonne tout<br>Je tourne enfin la page<br>Le ciel est à moi<br>(Le ciel est à moi)<br><br>[Chorus]<br>C'est ma pluie de paix<br>Elle lave tous mes regrets<br>Je suis encore là debout<br>Bien plus forte qu'avant<br>C’est ma petite victoire<br>Ici dans ce coin de vitre<br><br>[Outro]<br>Le calme est revenu<br>(Calme)<br>Je reste ici<br>(Mmm)<br>Tout est lavé<br>(Tout est lavé)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1782093848706_6" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1782093848706_6')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Le Soir Sage</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1782093848706_6')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Mmm)<br>(Mmm)<br><br>[Verse 1]<br>La lampe est très basse<br>Le rideau de lin ne bouge plus<br>Un simple verre d'eau sur le bois<br>Le silence est un manteau<br>(Un manteau si doux)<br>L'air est frais sur ma peau<br>La journée s'efface enfin<br>Sans laisser de trace<br><br>[Verse 2]<br>Je regarde le long chemin parcouru<br>Les pierres pointues et les fleurs<br>Rien n'était vraiment un faux pas<br>Juste un mouvement nécessaire<br>(Un mouvement vers soi)<br>Chaque seconde avait son sens<br>Même le vent et la pluie<br>M'ont menée jusqu'ici<br><br>[Bridge]<br>La sagesse arrive sans bruit<br>Comme la marée qui monte<br>Une certitude enfin limpide<br>Posée au creux de ma main<br>Le ciel est vaste et noir<br>Mais je n'ai plus peur<br>Je respire enfin<br><br>[Verse 3]<br>Demain sera une petite danse<br>Légère et sans aucun effort<br>Je respire l'air de la nuit<br>Avec une joie immense<br>(Une joie tranquille)<br>Le temps n'est plus un ennemi<br>Mais un ami qui m'attend<br>(Il m'attend)<br><br>[Outro]<br>Tout est calme maintenant<br>(Si calme)<br>Le chemin est là<br>(Mmm)<br>Je suis là<br>(Mmm)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1782093848707_7" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1782093848707_7')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Papier Mat</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1782093848707_7')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Ooh la la la)<br>(Mmm)<br><br>[Verse]<br>Le jour se lève à peine<br>Je regarde ton visage<br>Sur ce vieux papier mat<br>Tu souris encore<br>(Tu souris encore)<br>Le vent fait bouger le rideau<br>C'est doux<br>C'est calme<br><br>[Verse]<br>Je tourne une autre page<br>On marchait sur le sable<br>Ta main dans la mienne<br>Je sens la chaleur<br>(Je sens la chaleur)<br>Pas besoin de parler<br>Le piano suffit<br><br>[Bridge]<br>Tout est si clair maintenant<br>Le passé n'est pas triste<br>C'est un cadeau posé là<br>Sur la table en bois<br>Je te salue en silence<br>Avant que le monde s'éveille<br><br>[Verse]<br>Je referme le livre<br>Ton éclat reste ici<br>Dans la lumière neuve<br>Je marche vers demain<br>(Vers demain)<br>Le cœur est léger<br>Tout va bien<br><br>[Outro]<br>(Tout va bien)<br>(Mmm)<br>(L'aube est là)<br>(L'aube est là)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1782093848707_8" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1782093848707_8')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Toile de Pluie (Take 1)</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1782093848707_8')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(Check it)<br>(Regarde)<br>(Écoute)<br><br>[Verse 1]<br>L'orage s'en va<br>L'air est lourd<br>Humide et frais<br>La ville se tait<br>L'eau se pose<br>Sous mes pieds<br>Le bitume respire<br>Le noir se transforme<br>L'asphalte est un écrin<br><br>[Chorus]<br>Toile de pluie<br>(Dans la flaque)<br>Toile de pluie<br>(Tout craque)<br>Toile de pluie<br>(Je glisse)<br>Toile de pluie<br>(Fixe le sol)<br><br>[Verse 2]<br>Feux rouges qui coulent<br>Vitrines qui flottent<br>Je marche sur l'envers<br>Sans me mouiller<br>Le rythme est strict<br>Le silence est grand<br>Taches de pétrole<br>Le bleu devient roi<br>Le groove est là<br><br>[Chorus]<br>Toile de pluie<br>(Dans la flaque)<br>Toile de pluie<br>(Tout craque)<br>Toile de pluie<br>(Je glisse)<br>Toile de pluie<br>(Fixe le sol)<br><br>[Bridge]<br>Un pas<br>Deux pas<br>Rien ne bouge<br>Tout change<br>La ville est propre<br>La ville est neuve<br>Reste concentré<br>Sur le mouvement<br><br>[Outro]<br>Éphémère<br>(C'est maintenant)<br>Liquide<br>(Regarde bien)<br>Toile de pluie<br>(Rien ne reste)<br>Toile de pluie<br>(Juste le groove)<br>(Dans la flaque)<br>(Sur le goudron)<br>(Sous mon pas)<br>(Fixe le sol)<br>Toile de pluie<br>(Tout craque)<br>(Tout brille)<br>Toile de pluie<br>(C'est fini)
+                    </div>
+                  </div>
+                </div>
+              
+                <div id="modal-lyrics-track_1782093848707_9" class="fixed inset-0 bg-black/80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLyricsModal('track_1782093848707_9')">
+                  <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+                    <div class="p-5 border-b border-gray-200 dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+                      <div>
+                        <h3 class="font-bold text-xl text-gray-900 dark:text-gray-100">Capitulation De Soie</h3>
+                        <p class="text-xs text-gray-500 mt-1">Lyrics</p>
+                      </div>
+                      <button onclick="closeLyricsModal('track_1782093848707_9')" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                      </button>
+                    </div>
+                    <div class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-loose text-[15px]">
+                      [Intro]<br>(douceur)<br><br>[Verse 1]<br>Mon cerveau cesse enfin sa petite dictature<br>J'abandonne l'idée de corriger le monde entier<br>Le lin froissé est mon seul dictionnaire ce soir<br>C’est une capitulation en soie, une défaite élégante<br>Mes griefs contre l’industrie et les voisins<br>Se dissolvent dans un verre d’eau sur la table<br>(si douce, l'eau)<br><br>[Chorus]<br>Quelle paix déconcertante, presque impolie<br>Une absence totale de punchline ou d'ironie<br>Le silence n'est pas un vide, c'est un luxe<br>(c'est un luxe)<br>Je dépose mes armes, mes livres, mes sarcasmes<br>Et je m'installe dans cette clarté sans effort<br>(enfin)<br><br>[Verse 2]<br>On s'était disputés pour une virgule mal placée<br>Pour un vin trop cher ou une vérité mal léchée<br>Mais l'architecture de ma chambre est parfaite maintenant<br>Les angles droits me pardonnent mes fautes de goût<br>Pas de métaphores, juste le poids de mes jambes<br>La gravité est la seule loi que je respecte encore<br>(loi physique)<br><br>[Chorus]<br>Quelle paix déconcertante, presque impolie<br>Une absence totale de punchline ou d'ironie<br>Le silence n'est pas un vide, c'est un luxe<br>(c'est un luxe)<br>Je dépose mes armes, mes livres, mes sarcasmes<br>Et je m'installe dans cette clarté sans effort<br>(sans effort)<br><br>[Bridge]<br>C'est le moment pathétique où le snob s'endort<br>Heureux d'être bête, heureux d'avoir tort<br>Adieu la pertinence, adieu la posture<br>Je suis juste un corps qui respire sans mesure<br><br>[Chorus]<br>Quelle paix déconcertante, presque impolie<br>Une absence totale de punchline ou d'ironie<br>Le silence n'est pas un vide, c'est un luxe<br>(c'est un luxe)<br>Je dépose mes armes, mes livres, mes sarcasmes<br>Et je m'installe dans cette clarté sans effort<br>(enfin libre)<br><br>[Outro]<br>Zéro cynisme<br>Juste le coton<br>(le coton)<br>C'est fini pour aujourd'hui<br>(tout est fini)
+                    </div>
+                  </div>
+                </div>
+              
+          <script>
+            function openLyricsModal(trackId) {
+              const modal = document.getElementById('modal-lyrics-' + trackId);
+              if (modal) modal.style.display = 'flex';
+            }
+            function closeLyricsModal(trackId) {
+              const modal = document.getElementById('modal-lyrics-' + trackId);
+              if (modal) modal.style.display = 'none';
+            }
+          </script>
+          <script src="/js/player.js" defer></script>
+        
+  </div>
+
+    <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800 text-gray-800 dark:text-gray-100" onclick="event.stopPropagation()">
+      <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+        <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
+        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div id="modal-body" class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      let pagesData = null;
+      async function loadPagesData() {
+        try {
+          const res = await fetch('/data/pages.json');
+          if (res.ok) {
+            const data = await res.json();
+            pagesData = data.pages;
+          }
+        } catch (e) {
+          console.error("Failed to load pages.json", e);
+        }
+      }
+      async function openModal(pageKey) {
+        if (!pagesData) {
+          await loadPagesData();
+        }
+        const modal = document.getElementById('modal-overlay');
+        const titleEl = document.getElementById('modal-title');
+        const bodyEl = document.getElementById('modal-body');
+        
+        if (modal && pagesData && pagesData[pageKey]) {
+          titleEl.innerText = pagesData[pageKey].title;
+          bodyEl.innerHTML = pagesData[pageKey].content;
+          modal.style.display = 'flex';
+        }
+      }
+      function closeModal() {
+        const modal = document.getElementById('modal-overlay');
+        if (modal) {
+          modal.style.display = 'none';
+        }
+      }
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = document.getElementById('generator-selector');
+        if (selector) {
+          const currentPath = window.location.pathname;
+          const options = Array.from(selector.options);
+          const matchedOption = options.find(opt => opt.value && currentPath.includes(opt.value));
+          if (matchedOption) {
+            selector.value = matchedOption.value;
+          } else {
+            selector.value = "";
+          }
+        }
+      });
+    })();
+  </script>
+  </body>
+</html>
