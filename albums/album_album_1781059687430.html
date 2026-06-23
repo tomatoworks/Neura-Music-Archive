@@ -20,7 +20,7 @@
         
         <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
           <a id="latest-blog-link" href="#" class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
-          <a href="#" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+          <a href="/albums/" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
         </div>
         
         <div class="hidden md:flex items-center space-x-7">
@@ -61,33 +61,8 @@
               Back
             </button>
             
-            <div class="flex flex-col md:flex-row gap-6 md:gap-8 mb-12">
-              <div class="w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-[#111]">
-                <img src="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/cover_1781060678006.webp" alt="Digital Ambient Intro" class="w-full h-full object-cover" />
-              </div>
-              <div class="flex-1 flex flex-col justify-end">
-                <span class="text-sm font-bold tracking-widest text-gray-400 uppercase mb-2">Album</span>
-                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-gray-100 mb-3">Digital Ambient Intro</h1>
-                <p class="text-[15px] text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap leading-relaxed">静かな未来感をテーマにした、短尺のデジタル系イントロ素材集。</p>
-                <div class="flex items-center gap-3 text-xs font-semibold text-gray-500 uppercase tracking-widest">
-                  <span>10 Tracks</span>
-                  <span>•</span>
-                  <span>chill</span>
-                  <span>•</span>
-                  <span>Added: Unknown</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="space-y-2">
-              <div class="flex items-center px-4 pb-2 text-xs font-bold text-gray-400 uppercase tracking-wider border-b border-gray-200 dark:border-[#2e2e2e] mb-4">
-                <div class="w-8 text-center">#</div>
-                <div class="flex-1 px-4">Title</div>
-                <div class="w-24 text-right hidden sm:block">Time</div>
-                <div class="w-20 text-center">Lyrics</div>
-                <div class="w-16"></div>
-              </div>
-              
+            <div class="space-y-1">
+              <h2 class="text-xl font-bold mb-4 border-b border-gray-200 dark:border-[#2e2e2e] pb-2">Tracklist</h2>
               
                 <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
                   <div class="w-8 text-center text-gray-400 text-sm font-mono">1</div>
@@ -109,7 +84,7 @@
                     <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Digital%20Progress.mp3" data-track-title="Digital Progress" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
-                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Digital%20Progress.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Digital%20Progress.mp3" data-track-title="Digital Progress" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     </a>
                   </div>
@@ -135,7 +110,7 @@
                     <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Serene%20Discovery.mp3" data-track-title="Serene Discovery" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
-                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Serene%20Discovery.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Serene%20Discovery.mp3" data-track-title="Serene Discovery" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     </a>
                   </div>
@@ -161,7 +136,7 @@
                     <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Sync%20Protocol.mp3" data-track-title="Sync Protocol" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
-                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Sync%20Protocol.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Sync%20Protocol.mp3" data-track-title="Sync Protocol" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     </a>
                   </div>
@@ -187,7 +162,7 @@
                     <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Dawn%20of%20a%20Digital%20Era.mp3" data-track-title="Dawn Of A Digital Era" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
-                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Dawn%20of%20a%20Digital%20Era.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Dawn%20of%20a%20Digital%20Era.mp3" data-track-title="Dawn Of A Digital Era" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     </a>
                   </div>
@@ -213,7 +188,7 @@
                     <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Data%20Streams%20Flowing.mp3" data-track-title="Data Streams Flowing" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
-                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Data%20Streams%20Flowing.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Data%20Streams%20Flowing.mp3" data-track-title="Data Streams Flowing" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     </a>
                   </div>
@@ -239,7 +214,7 @@
                     <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/System%20Boot%20sequence.mp3" data-track-title="System Boot Sequence" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
-                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/System%20Boot%20sequence.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/System%20Boot%20sequence.mp3" data-track-title="System Boot Sequence" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     </a>
                   </div>
@@ -265,7 +240,7 @@
                     <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Phase%20Logic.mp3" data-track-title="Phase Logic" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
-                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Phase%20Logic.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Phase%20Logic.mp3" data-track-title="Phase Logic" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     </a>
                   </div>
@@ -291,7 +266,7 @@
                     <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Pristine%20Horizons.mp3" data-track-title="Pristine Horizons" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
-                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Pristine%20Horizons.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Pristine%20Horizons.mp3" data-track-title="Pristine Horizons" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     </a>
                   </div>
@@ -317,7 +292,7 @@
                     <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Digital%20Ascension.mp3" data-track-title="Digital Ascension" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
-                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Digital%20Ascension.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Digital%20Ascension.mp3" data-track-title="Digital Ascension" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     </a>
                   </div>
@@ -343,7 +318,7 @@
                     <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Digital%20Momentum.mp3" data-track-title="Digital Momentum" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
-                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Digital%20Momentum.mp3" download class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                    <a href="https://cdn.neura-music.com/02intro-outro/intro/Digital%20Ambient%20Intro/Digital%20Momentum.mp3" data-track-title="Digital Momentum" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     </a>
                   </div>
@@ -354,6 +329,7 @@
         
           
           <script>
+            // 歌詞モーダル
             function openLyricsModal(trackId) {
               const modal = document.getElementById('modal-lyrics-' + trackId);
               if (modal) modal.style.display = 'flex';
@@ -362,8 +338,91 @@
               const modal = document.getElementById('modal-lyrics-' + trackId);
               if (modal) modal.style.display = 'none';
             }
+
+            // オーディオ再生＆DL処理
+            document.addEventListener('DOMContentLoaded', () => {
+              let currentAudio = null;
+              let currentPlayBtn = null;
+
+              const playSvg = '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>';
+              const pauseSvg = '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>';
+              const loadingSvg = '<svg class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>';
+
+              // 再生ボタン
+              document.querySelectorAll('.play-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  const url = this.getAttribute('data-track-url');
+                  if (!url) return;
+
+                  // 同じ曲の再生/一時停止
+                  if (currentAudio && currentAudio.src === url) {
+                    if (currentAudio.paused) {
+                      currentAudio.play();
+                      this.innerHTML = pauseSvg;
+                    } else {
+                      currentAudio.pause();
+                      this.innerHTML = playSvg;
+                    }
+                    return;
+                  }
+
+                  // 別の曲へ切り替え
+                  if (currentAudio) {
+                    currentAudio.pause();
+                    if (currentPlayBtn) currentPlayBtn.innerHTML = playSvg;
+                  }
+
+                  currentAudio = new Audio(url);
+                  currentPlayBtn = this;
+                  
+                  currentAudio.play().catch(err => console.error("Play error:", err));
+                  this.innerHTML = pauseSvg;
+
+                  currentAudio.onended = () => {
+                    this.innerHTML = playSvg;
+                  };
+                });
+              });
+
+              // ダウンロードボタン (クロスオリジン回避のためFetch -> Blob化)
+              document.querySelectorAll('.dl-btn').forEach(btn => {
+                btn.addEventListener('click', async function(e) {
+                  e.preventDefault();
+                  const url = this.getAttribute('href');
+                  let title = this.getAttribute('data-track-title') || 'track';
+                  if(!title.toLowerCase().endsWith('.mp3')) title += '.mp3';
+
+                  const originalContent = this.innerHTML;
+                  this.innerHTML = loadingSvg;
+                  this.style.pointerEvents = 'none';
+
+                  try {
+                    const response = await fetch(url);
+                    if (!response.ok) throw new Error('Network error');
+                    const blob = await response.blob();
+                    const blobUrl = window.URL.createObjectURL(blob);
+                    
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = blobUrl;
+                    a.download = title;
+                    document.body.appendChild(a);
+                    a.click();
+                    
+                    window.URL.revokeObjectURL(blobUrl);
+                    a.remove();
+                  } catch (err) {
+                    console.error("DL error:", err);
+                    alert("ダウンロードに失敗しました。R2のCORS設定を確認してください。");
+                  } finally {
+                    this.innerHTML = originalContent;
+                    this.style.pointerEvents = 'auto';
+                  }
+                });
+              });
+            });
           </script>
-          <script src="/js/player.js" defer></script>
         
   </div>
 
