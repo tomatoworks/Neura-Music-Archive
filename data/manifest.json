@@ -66,7 +66,7 @@
       "title": "BEST10発表！",
       "content_url": "contents/tools/best10/best_10_flipper.html",
       "date": "2026-06-18",
-      "is_visible": true
+      "is_visible": false
     }
   ],
   "articles": [
@@ -75,7 +75,7 @@
       "title": "Neuraとは",
       "content_url": "contents/articles/articles_index.html",
       "date": "2026-06-10",
-      "is_visible": true
+      "is_visible": false
     },
     {
       "id": "article_20260612134623",
@@ -110,6 +110,13 @@
       "title": "SPA×MPA",
       "content_url": "contents/articles/spaとmpa.html",
       "date": "2026-06-22",
+      "is_visible": true
+    },
+    {
+      "id": "article_20260623130048",
+      "title": "オーバーレイ生成装置とは",
+      "content_url": "contents/articles/overlay-gen-Article.html",
+      "date": "2026-06-23",
       "is_visible": true
     }
   ]
