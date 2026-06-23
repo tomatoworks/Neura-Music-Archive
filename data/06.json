@@ -7,7 +7,8 @@
       "name": "Opening",
       "albums": [
         "album_1781163973548",
-        "album_1781171254873"
+        "album_1781171254873",
+        "album_1782171173812"
       ],
       "caption": "ゲームのオープニング向けに作られた短いBGMをまとめたカテゴリです。"
     }
@@ -58,6 +59,32 @@
         "track_1781172131884_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\opening\\Modern Synth Opening",
+      "type": ""
+    },
+    {
+      "id": "album_1782171173812",
+      "title": "Fantasy Orchestra Opening",
+      "art": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/cover_1782173343966.webp",
+      "caption": "ストリングスとブラスを中心にした、ファンタジーRPGのタイトル画面向けの短いオーケストラBGM集。",
+      "categoryId": "cat_1781163959546",
+      "tracks": [
+        "track_1782173151335_0",
+        "track_1782173151338_1",
+        "track_1782173151338_2",
+        "track_1782173151338_3",
+        "track_1782173151338_4",
+        "track_1782173151338_5",
+        "track_1782173151338_6",
+        "track_1782173151338_7",
+        "track_1782173151338_8",
+        "track_1782173151338_9",
+        "track_1782173151338_10",
+        "track_1782173151338_11",
+        "track_1782173151338_12",
+        "track_1782173151338_13",
+        "track_1782173151338_14"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\opening\\Fantasy Orchestra Opening",
       "type": ""
     }
   ],
@@ -486,6 +513,231 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-06-11"
+    },
+    {
+      "id": "track_1782173151335_0",
+      "title": "Secrets Of The Obsidian Key",
+      "caption": "古の秘密が眠る廃墟に光が差すような、ミステリアスで荘厳な音響空間。探求心を掻き立てるサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/Secrets_of_the_Obsidian_Key.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_1",
+      "title": "Beyond The Horizon Line",
+      "caption": "未開の地を切り拓く冒険への序曲。水平線の向こうに広がる無限の可能性を描き出す、壮大な旅路が始まります。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/Beyond_the_Horizon_Line.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_2",
+      "title": "Before The High Pass",
+      "caption": "物語の幕開けを告げるような、期待に満ちたオープニングシーケンス。これから始まる運命を感じさせるメロディです。",
+      "type": "instrumental",
+      "duration": 180,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/Before_the_High_Pass.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_3",
+      "title": "Steps Upon The Marble",
+      "caption": "大理石の階段を踏みしめる足音と響き。深層の世界へと誘うような、期待感を高める壮麗なサウンドスケープが展開します。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/Steps_Upon_the_Marble.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_4",
+      "title": "The Iron Siege",
+      "caption": "鉄壁の城砦を包囲する、緊迫感に満ちた音響ドラマ。大きな衝突や戦いの予感を煽る重厚なサウンドトラックです。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/The_Iron_Siege.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_5",
+      "title": "A Crown Of Ancient Stones",
+      "caption": "失われた王国の秘密を語り継ぐような、重厚で神秘的な音響空間。広大な遺跡を巡る探求心を満たします。",
+      "type": "instrumental",
+      "duration": 144,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/A_Crown_of_Ancient_Stones.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_6",
+      "title": "Morning At The Spire",
+      "caption": "光と音が交錯する、新たな世界が目覚める瞬間。壮大で美しいスケール感を持つ夜明けの情景を描き出します。",
+      "type": "instrumental",
+      "duration": 144,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/Morning_at_the_Spire.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_7",
+      "title": "The Winter Breath",
+      "caption": "雪に閉ざされた街をさまよう、孤独で力強い鼓動。静寂の中に心に響くメロディが紡ぐ冬の深い情景です。",
+      "type": "instrumental",
+      "duration": 139,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/The_Winter_Breath.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_8",
+      "title": "The Brass Decree",
+      "caption": "荘厳なブラスの調べが広がる、壮大な世界の開幕を予感させるサウンドトラック。圧倒的なスケール感を感じさせます。",
+      "type": "instrumental",
+      "duration": 150,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/The_Brass_Decree.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_9",
+      "title": "Where The Banners Rest",
+      "caption": "静けさの中に残る戦いの痕跡と、新たな章の始まりを暗示する壮大な響き。物語の転換点を彩ります。",
+      "type": "instrumental",
+      "duration": 151,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/Where_the_Banners_Rest.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_10",
+      "title": "Before The Horizon",
+      "caption": "未知への旅立ちを決意させる、期待に満ちた広大なサウンドスケープ。冒険心を掻き立てるインストゥルメンタルです。",
+      "type": "instrumental",
+      "duration": 94,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/Before_the_Horizon.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_11",
+      "title": "Gates Of The Unseen Realm",
+      "caption": "神秘的な門の向こう側へ。異世界への扉を開く瞬間に響く、荘厳で非日常的な音響体験をお届けします。",
+      "type": "instrumental",
+      "duration": 163,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/Gates_of_the_Unseen_Realm.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_12",
+      "title": "The Final Ascent",
+      "caption": "頂点を目指す緊迫感と挑戦の輝きを描く、感情豊かなサウンドスケープ。秘めた決意が音となって昇華する瞬間を演出します。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/The_Final_Ascent.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_13",
+      "title": "Beneath The Falling Water",
+      "caption": "水滴の音だけが響く深奥の洞窟。時の流れから隔絶された、静謐で神秘的な幻想空間を表現しました。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/Beneath_the_Falling_Water.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782173151338_14",
+      "title": "Beyond The Ridge",
+      "caption": "眼前に広がる未知の景色。次のステージへと誘う壮大な導入部であり、希望と期待に満ちた旅路を描きます。",
+      "type": "instrumental",
+      "duration": 151,
+      "full_url": "https://cdn.neura-music.com/06game/opening/Fantasy%20Orchestra%20Opening/Beyond_the_Ridge.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-23"
     }
   ]
 }
