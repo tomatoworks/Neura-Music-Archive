@@ -50,6 +50,7 @@ const state = {
         pos: "top-right", 
         aspect: "16-9", 
         width: 400,
+        borderWidth: 2,
         margin: 30,
         textTop: "LIVE CAMERA",
         textBottom: "",
@@ -194,6 +195,7 @@ function updateFromInputs() {
     state.wipe.pos = document.getElementById("wipePos").value;
     state.wipe.aspect = document.getElementById("wipeAspect").value;
     state.wipe.width = parseInt(document.getElementById("wipeWidth").value) || 400;
+    state.wipe.borderWidth = parseInt(document.getElementById("wipeBorderWidth").value) || 0;
     state.wipe.margin = parseInt(document.getElementById("wipeMargin").value) || 30;
     state.wipe.textTop = document.getElementById("wipeTextTop").value;
     state.wipe.textBottom = document.getElementById("wipeTextBottom").value;
@@ -482,7 +484,7 @@ function renderPreview() {
         overlayWipe.style.height = `${state.wipe.width / aspectR}px`;
         
         let borderC = state.wipe.matchMain ? state.themeColor : state.wipe.color;
-        let borderW = state.wipe.matchMain && state.frame.enabled ? state.frame.width : 2;
+        let borderW = state.wipe.matchMain && state.frame.enabled ? state.frame.width : state.wipe.borderWidth;
         overlayWipe.style.border = `${borderW}px solid ${borderC}`;
         
         if (state.wipe.matchMain && state.useGradient) {
@@ -897,7 +899,7 @@ window.onload = () => {
         "snsEnabled", "snsPos", "snsMargin", "snsFont", "snsSize", "snsColor", "snsPadding",
         "snsUseX", "snsValX", "snsUseYT", "snsValYT", "snsUseTwitch", "snsValTwitch",
         "snsUseIG", "snsValIG", "snsUseTikTok", "snsValTikTok", "snsUseCustom", "snsValCustom",
-        "wipeEnabled", "wipePos", "wipeAspect", "wipeWidth", "wipeMargin", "wipeTextTop", "wipeTextBottom", "wipeTextSize", "wipeFont", "wipeColor", "wipeMatchMain",
+        "wipeEnabled", "wipePos", "wipeAspect", "wipeWidth", "wipeBorderWidth", "wipeMargin", "wipeTextTop", "wipeTextBottom", "wipeTextSize", "wipeFont", "wipeColor", "wipeMatchMain",
         "clockEnabled", "clockPos", "clockSize", "clockMargin", "clockShowLive", "clockHTML", "clockFont", "clockColor", "clockNumWidth",
         "tickerEnabled", "tickerText1", "tickerText2", "tickerText3", "tickerBgEnabled", "tickerPos", "tickerWidth", "tickerBgOpacity", "tickerSpeed", "tickerFont", "tickerSize", "tickerColor",
         "qrEnabled", "qrPos", "qrWidth", "qrMargin", "qrMatchMain", "qrInterval", "qrAnim",
@@ -1070,7 +1072,7 @@ function exportHTML() {
     const wipeHeight = state.wipe.width / wipeAspectR;
     
     let wipeBorderC = state.wipe.matchMain ? state.themeColor : state.wipe.color;
-    let wipeBorderW = state.wipe.matchMain && state.frame.enabled ? state.frame.width : 2;
+    let wipeBorderW = state.wipe.matchMain && state.frame.enabled ? state.frame.width : state.wipe.borderWidth;
     let wipeBorderRadius = state.wipe.matchMain && state.frame.enabled && state.frame.radius > 0 ? state.frame.radius : 0;
     
     let wipeBorderImg = "none";

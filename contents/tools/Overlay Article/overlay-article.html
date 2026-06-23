@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>OverlayGen 紹介＆取扱ガイド | 配信画面をブラウザで簡単デザイン</title>
+  <meta name="description" content="画像編集ソフト不要。OBSの配信画面に必要なフレーム、時計、テロップ、SNSアイコンなどをブラウザ上で直感的に作成し、1つのHTMLとして出力できるツール「OverlayGen」の使い方ガイドです。">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Noto Sans JP', 'sans-serif'],
+            mono: ['Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-feature-settings: "palt";
+    }
+
+    /* スクロールバーのカスタマイズ（モノトーン調） */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    .dark ::-webkit-scrollbar-track {
+      background: #181818;
+    }
+    ::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background: #27272a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #e4e4e7;
+      border-radius: 3px;
+    }
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d4d4d8;
+    }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-[#181818] text-slate-800 dark:text-zinc-200 font-sans antialiased selection:bg-slate-900 selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-200">
+
+  <div class="min-h-screen flex flex-col">
+
+    <header class="border-b border-slate-100 dark:border-zinc-900 sticky top-0 bg-white/80 dark:bg-black/80 backdrop-blur-md z-40">
+      <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+        <span class="font-bold text-sm tracking-wide text-slate-800 dark:text-white">OverlayGen</span>
+        <span class="text-[10px] font-mono text-slate-400 dark:text-zinc-600 tracking-wider">USER MANUAL</span>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-3xl mx-auto px-6 py-10 md:py-16 w-full space-y-12 md:space-y-16">
+
+      <article class="space-y-8">
+        <header class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-[10px] font-bold text-slate-600 dark:text-zinc-400 tracking-wider uppercase">
+              WEB TOOL GUIDE
+            </span>
+            <span class="text-xs text-slate-400 dark:text-zinc-500 font-mono">Ver 1.0</span>
+          </div>
+          
+          <h1 class="text-2xl md:text-3.5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-snug">
+            OBSの配信画面をブラウザで直感デザイン。<br>インストール不要のオーバーレイジェネレーター「OverlayGen」
+          </h1>
+
+          <div class="flex items-center gap-4 text-xs text-slate-500 dark:text-zinc-400 pt-1">
+            <div class="flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-slate-900 dark:bg-zinc-800 flex items-center justify-center text-[10px] font-bold text-white font-mono">O</span>
+              <span>OverlayGen Team</span>
+            </div>
+            <span>•</span>
+            <span>読了時間: 約3分</span>
+          </div>
+        </header>
+
+        <section class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+          <p>
+            配信のたびに画像編集ソフトを立ち上げ、レイヤーと格闘していませんか？あるいは、OBSのソース一覧がテキストや画像で埋め尽くされて管理不能になっていませんか？
+          </p>
+          <p>
+            <strong>「OverlayGen（オーバーレイ・ジェネレーター）」</strong>は、配信に必要な「枠（フレーム）」「SNSアイコン」「現在時刻」「動くテロップ」などをブラウザ上で直感的に組み合わせ、1つのHTMLファイルとして書き出せる画期的なツールです。<br>
+            面倒なインストールは一切不要。今すぐブラウザで設定し、数分後には洗練された配信画面をOBSに映し出すことができます。
+          </p>
+        </section>
+
+        <div class="py-4">
+          <div class="w-full rounded-lg overflow-hidden border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 shadow-sm">
+            <img src="overlay-2.png" alt="OverlayGen 配信画面プレビュー" class="w-full h-auto object-cover opacity-95 hover:opacity-100 transition-opacity">
+            <div class="p-3 bg-white dark:bg-black border-t border-slate-100 dark:border-zinc-900 text-[11px] text-slate-500 dark:text-zinc-400 text-center font-medium">
+              図1. OverlayGenで作成した配信オーバーレイの出力イメージ。全てが1つのHTMLで完結します。
+            </div>
+          </div>
+        </div>
+
+        <section class="p-5 rounded-xl bg-slate-50 dark:bg-zinc-950 border border-slate-200/60 dark:border-zinc-900 space-y-4">
+          <h3 class="text-xs font-bold text-slate-800 dark:text-zinc-200 uppercase tracking-wider font-mono flex items-center gap-2">
+            <span>💡</span> OverlayGenで変わる3つの配信体験
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
+            <div class="p-4 rounded-lg bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-2">
+              <div class="text-xs text-slate-400 dark:text-zinc-500 line-through">画像ソフトでの煩雑な作成作業</div>
+              <div class="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                <span>✨</span> 直感的なブラウザUI
+              </div>
+              <p class="text-[11px] md:text-xs text-slate-500 dark:text-zinc-400">ポチポチと設定を選ぶだけで、リアルタイムにプレビューが生成されます。</p>
+            </div>
+            <div class="p-4 rounded-lg bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-2">
+              <div class="text-xs text-slate-400 dark:text-zinc-500 line-through">静止画しか作れない</div>
+              <div class="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                <span>✨</span> 動的アニメーション
+              </div>
+              <p class="text-[11px] md:text-xs text-slate-500 dark:text-zinc-400">流れるテロップや自動更新される時計、切り替わるQRコードを標準搭載。</p>
+            </div>
+            <div class="p-4 rounded-lg bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-2">
+              <div class="text-xs text-slate-400 dark:text-zinc-500 line-through">OBSのソースが乱立し重くなる</div>
+              <div class="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                <span>✨</span> ソースは「1つ」だけ
+              </div>
+              <p class="text-[11px] md:text-xs text-slate-500 dark:text-zinc-400">全ての要素を1つのHTMLに統合。OBSの「ブラウザソース」1つで完結します。</p>
+            </div>
+          </div>
+        </section>
+
+        <hr class="border-slate-100 dark:border-zinc-900">
+
+        <div class="space-y-10 md:space-y-12">
+          
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-slate-400 dark:text-zinc-600">01.</span> 🚀 すぐに使える（インストール不要）
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-4">
+              <p>
+                OverlayGenは完全なWebブラウザ上で動作するアプリケーションです。PCにソフトをインストールしたり、ZIPファイルを解凍して初期設定を行ったりする手間は一切ありません。
+              </p>
+              
+              <div class="p-4 border-l-2 border-indigo-400 dark:border-indigo-600 bg-slate-50 dark:bg-zinc-900/50 mt-4">
+                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-600 dark:text-zinc-400">
+                  <li><a href="https://neura-music.com/tools/overlay/" class="text-indigo-600 dark:text-indigo-400 font-semibold underline hover:text-indigo-700 dark:hover:text-indigo-300">指定のURL（https://neura-music.com/tools/overlay/）</a> をお使いのブラウザで開くだけで即座に起動します。</li>
+                  <li>アカウント登録やログインも不要。誰でもすぐに使い始められます。</li>
+                  <li>設定した内容はHTMLファイルとして手元に書き出されるため、オフラインの配信環境でも問題なく動作します。</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="space-y-6 md:space-y-8">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-slate-400 dark:text-zinc-600">02.</span> 🛠️ カスタマイズ手順と主な機能
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-3">
+              <p>
+                画面下部のタブを切り替えながら、配信画面をデザインしていきます。上部のプレビュー画面にはリアルタイムで結果が反映されます。
+              </p>
+            </div>
+            
+            <div class="py-2">
+              <div class="w-full rounded-lg overflow-hidden border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 shadow-sm">
+                  <img src="overlay-1.png" alt="直感的なタブ操作UI" class="w-full h-auto object-cover opacity-95 hover:opacity-100 transition-opacity">
+                  <div class="p-3 bg-white dark:bg-black border-t border-slate-100 dark:border-zinc-900 text-[11px] text-slate-500 dark:text-zinc-400 text-center font-medium">
+                    図2. 直感的なタブ操作UI。設定を変更すると上部のプレビュー画面にリアルタイムで反映されます。
+                  </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 pt-2">
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-slate-800 dark:text-zinc-200 text-[15px]">1. メイン枠＆基本設定</h3>
+                  <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                    解像度（FHD, 4K, 縦型など）を選び、ベースとなる枠を決めます。「ネオン風」「上下シネマ帯」「点線」など多彩なスタイルと、グラデーションカラーを設定できます。
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-slate-800 dark:text-zinc-200 text-[15px]">2. 時計＆動的テロップ（ティッカー）</h3>
+                  <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                    四隅に配置できるデジタル時計（LIVEインジケーター付き）や、画面下部をスクロールするお知らせテロップをワンクリックで追加できます。
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-slate-800 dark:text-zinc-200 text-[15px]">3. スマートSNS表示</h3>
+                  <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                    X(旧Twitter)やYouTube、TwitchのアカウントIDを入力するだけ。配置場所（上下左右）に応じて、見栄え良く自動で縦並び・横並びに整列します。
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-slate-800 dark:text-zinc-200 text-[15px]">4. ローテーションQRコード</h3>
+                  <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                    複数のリンク（Webサイトやグッズページ）をQRコード化して配置可能。設定した秒数ごとに「フェード」や「スライド」で自動で切り替わります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-6 p-4 bg-indigo-50/50 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/50 rounded-xl text-center">
+              <p class="text-sm font-bold text-slate-800 dark:text-zinc-200 mb-2">出力はボタンを1つ押すだけ</p>
+              <p class="text-xs text-slate-600 dark:text-zinc-400">
+                デザインが完成したら、画面右上の<span class="inline-flex items-center gap-1 bg-red-500 text-white px-2 py-0.5 rounded font-bold mx-1"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>OBS用HTMLを出力する</span>を押すだけで、<code class="font-mono bg-white dark:bg-black px-1 rounded border border-slate-200 dark:border-zinc-800">obs_overlay.html</code> がダウンロードされます。
+              </p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-slate-50 dark:bg-zinc-950 border border-slate-200/60 dark:border-zinc-900 space-y-3 mt-6">
+              <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-sm flex items-center gap-2 font-mono uppercase tracking-wider">
+                <span>💡</span> 応用：パーツ単位の「ウィジェット」として自由自在に使う
+              </h4>
+              <p class="text-xs md:text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                OverlayGenは画面全体のオーバーレイを作るだけでなく、各要素のオン/オフを切り替えることでパーツ単体のウィジェットとしても活用できます。
+              </p>
+              <ul class="list-disc pl-5 text-xs md:text-sm text-slate-600 dark:text-zinc-400 space-y-2">
+                <li><strong>個別パーツ特化：</strong>メイン枠や他の要素をすべてオフにし、「QRコード」や「ティッカー」だけをオンにして出力すれば、配信画面の好きな場所に置ける専用の独立ウィジェットに変身します。</li>
+                <li><strong>自作PNGとの組み合わせ：</strong>「メイン枠」をオフにして出力すれば、自分がデザインしたお気に入りの背景画像やPNG枠の上に、OverlayGenの動く時計やテロップ、SNS情報だけを綺麗に重ねて配置する、といったハイブリッドな使い方も可能です。</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="space-y-6 md:space-y-8">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-slate-400 dark:text-zinc-600">03.</span> 📺 OBSへの詳しい導入手順（ブラウザソース）
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-3">
+              <p>出力したHTMLファイルをOBS Studioに読み込ませる手順を詳しく解説します。<strong>手順4の「カスタムCSSの消去」が最も重要です。</strong></p>
+
+              <div class="p-5 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/50 space-y-2 my-4">
+                <h4 class="font-bold text-amber-800 dark:text-amber-400 text-sm flex items-center gap-2 font-mono uppercase tracking-wider">
+                  <span>✨</span> 一瞬で画面に追加できる「裏技」
+                </h4>
+                <p class="text-xs md:text-sm text-slate-700 dark:text-zinc-300 leading-relaxed">
+                  ダウンロードした <code>obs_overlay.html</code> ファイルを、<strong>OBSのプレビュー画面（真っ黒な配信画面のエリア）に直接ドラッグ＆ドロップ</strong>するだけで、ブラウザソースとして一発で追加されます。画面サイズにも自動でオートフィットするため非常に手軽です。
+                </p>
+                <p class="text-[11px] text-amber-700 dark:text-amber-500 font-medium">
+                  ⚠️ 注意：ドラッグ＆ドロップによる追加は手軽ですが、解像度や配置のズレを防ぎ、完全に正確な位置へレイアウトしたい場合は、以下の「正規の手順」で行うことを推奨します。
+                </p>
+              </div>
+              
+              <div class="space-y-4 mt-6">
+                <div class="p-4 border-l-2 border-indigo-400 dark:border-indigo-600 bg-slate-50 dark:bg-zinc-900/50">
+                  <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-base">ステップ 1：ブラウザソースを追加する</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-slate-600 dark:text-zinc-400">
+                    <li>OBSを起動し、追加したいシーンの「ソース」エリア左下にある <strong>「＋」ボタン</strong> をクリックします。</li>
+                    <li>メニューから <strong>「ブラウザ」</strong> を選択します。</li>
+                    <li>分かりやすい名前（例: オーバーレイレイヤー）をつけて「OK」を押します。</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 border-l-2 border-indigo-400 dark:border-indigo-600 bg-slate-50 dark:bg-zinc-900/50">
+                  <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-base">ステップ 2：出力したHTMLファイルを指定する</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-slate-600 dark:text-zinc-400">
+                    <li>プロパティ画面が開いたら、一番上にある <strong>「ローカルファイル」</strong> のチェックボックスをオンにします。</li>
+                    <li>「参照」ボタンが現れるのでクリックし、OverlayGenからダウンロードした <code>obs_overlay.html</code> を選択します。</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 border-l-2 border-indigo-400 dark:border-indigo-600 bg-slate-50 dark:bg-zinc-900/50">
+                  <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-base">ステップ 3：解像度（サイズ）を合わせる</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-slate-600 dark:text-zinc-400">
+                    <li><strong>幅</strong> と <strong>高さ</strong> の数値を、ジェネレーターで設定した数値と全く同じに入力します。</li>
+                    <li>（例：フルHDで作成した場合は、幅「1920」高さ「1080」と入力します）</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 border-l-4 border-red-500 bg-red-50 dark:bg-red-950/20">
+                  <h4 class="font-bold text-red-800 dark:text-red-400 text-base flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    ステップ 4：【最重要】カスタムCSSを削除する
+                  </h4>
+                  <p class="mt-2 text-sm text-slate-700 dark:text-zinc-300 font-medium">
+                    下にスクロールすると「カスタムCSS」という入力欄があり、最初から <code>body { background-color: rgba(0, 0, 0, 0); ... }</code> のような文字が入っています。<br>
+                    <strong>この欄に入っている文字を「すべてバックスペースキーで削除して、完全に空」にしてください。</strong><br>
+                    これを消さないと、背景が黒く塗りつぶされてしまい、ゲームやカメラの映像が透過されません。
+                  </p>
+                </div>
+                
+                <div class="p-4 border-l-2 border-indigo-400 dark:border-indigo-600 bg-slate-50 dark:bg-zinc-900/50">
+                  <h4 class="font-bold text-slate-800 dark:text-zinc-200 text-base">ステップ 5：完了</h4>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-zinc-400">
+                    最後に「OK」を押せば完了です。OBSの画面全体に、作成したオーバーレイが綺麗に重なって表示されます！
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="p-5 rounded-lg bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 space-y-3 text-sm text-slate-700 dark:text-zinc-300">
+              <div class="font-bold text-slate-800 dark:text-zinc-200 flex items-center gap-2 font-mono uppercase tracking-wider">
+                <span>💡</span> よくある質問と注意点
+              </div>
+              <ul class="list-disc pl-5 space-y-2 leading-relaxed">
+                <li><strong>フォントが適用されない場合：</strong>当ツールはインターネット経由で「Google Fonts」を読み込んで美しい日本語・欧文フォントを描画しています。配信PCがインターネットに接続されているか確認してください。</li>
+                <li><strong>後から内容を変更したい場合：</strong>現バージョンでは設定の一時保存機能はありません。デザインやテロップの内容を変えたい場合は、再度ジェネレーターで作成し、HTMLを再ダウンロードしてOBSのブラウザソースの「ローカルファイル」を上書き指定してください。</li>
+              </ul>
+            </div>
+          </section>
+
+        </div>
+
+      </article>
+
+    </main>
+
+    <footer class="bg-slate-50 dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-900 py-8 text-center text-xs text-slate-500 dark:text-zinc-500 space-y-1.5 relative z-10">
+      <p>OverlayGen — Web-based OBS Overlay Generator</p>
+      <p class="font-mono">&copy; 2026 OverlayGen Team</p>
+    </footer>
+  </div>
+
+</body>
+</html>
