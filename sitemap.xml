@@ -411,16 +411,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://neura-music.com/tool/tool_20260617181151</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://neura-music.com/article/article_20260610125859</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://neura-music.com/article/article_20260612134623</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.8</priority>
@@ -442,6 +432,16 @@
   </url>
   <url>
     <loc>https://neura-music.com/article/article_20260622154744</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neura-music.com/article/article_20260623130048</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neura-music.com/articles/overlay-gen-Article.html</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.8</priority>
   </url>
