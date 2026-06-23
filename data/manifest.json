@@ -115,9 +115,9 @@
     {
       "id": "article_20260623130048",
       "title": "オーバーレイとは",
-      "content_url": "contents/articles/overlay-gen-Article.html",
+      "content_url": "contents/tools/Overlay Article/overlay-article.html",
       "date": "2026-06-23",
-      "is_visible": false
+      "is_visible": true
     }
   ]
 }
