@@ -11,6 +11,14 @@
         "album_1782171173812"
       ],
       "caption": "ゲームのオープニング向けに作られた短いBGMをまとめたカテゴリです。"
+    },
+    {
+      "id": "cat_1782297071446",
+      "name": "Battle",
+      "caption": "バトルシーンに仕様できるドラマチックでシネマチックな音楽",
+      "albums": [
+        "album_1782297107869"
+      ]
     }
   ],
   "albums": [
@@ -86,6 +94,27 @@
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\opening\\Fantasy Orchestra Opening",
       "type": ""
+    },
+    {
+      "id": "album_1782297107869",
+      "title": "Pixel Battle",
+      "art": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/cover_1782298901742.webp",
+      "caption": "8bit / 16bit のレトロゲーム風バトルBGM。 軽快なチップチューンと緊張感のあるメロディで、 クラシックな戦闘シーンを彩る短尺インスト集。",
+      "categoryId": "cat_1782297071446",
+      "tracks": [
+        "track_1782298344698_0",
+        "track_1782298344700_1",
+        "track_1782298344700_2",
+        "track_1782298344701_3",
+        "track_1782298344701_4",
+        "track_1782298344701_5",
+        "track_1782298344701_6",
+        "track_1782298344701_7",
+        "track_1782298344701_8",
+        "track_1782298344701_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Battle\\Pixel Battle",
+      "type": "instrumental"
     }
   ],
   "tracks": [
@@ -738,6 +767,166 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-06-23"
+    },
+    {
+      "id": "track_1782298344698_0",
+      "title": "The Last Barrier Climb",
+      "caption": "荒廃した世界を生き抜く最後の試練。迫る緊張感と切なさが交差する、壮大なクライマックスの予感。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/The_Last_Barrier_Climb.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-24"
+    },
+    {
+      "id": "track_1782298344700_1",
+      "title": "Panic_in_the_Lab (1)",
+      "caption": "突如として発生する混乱。ラボ内部で起こる予測不能な出来事とパニックを音で描く緊迫した描写。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/Panic_in_the_Lab%20(1).mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-24"
+    },
+    {
+      "id": "track_1782298344700_2",
+      "title": "Tarmac Pursuit",
+      "caption": "夕暮れの高速走行を描いたサウンドトラック。疾走感と胸の奥に秘めた切なさが入り混じり、主人公の決意を後押しする。",
+      "type": "instrumental",
+      "duration": 159,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/Tarmac_Pursuit.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-24"
+    },
+    {
+      "id": "track_1782298344701_3",
+      "title": "One Coin Remaining",
+      "caption": "最後の資源が光る、極限の決断の瞬間。静寂の中で希望と緊張が交錯し、物語の歯車をゆっくりと回していく感覚。",
+      "type": "instrumental",
+      "duration": 150,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/One_Coin_Remaining.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-24"
+    },
+    {
+      "id": "track_1782298344701_4",
+      "title": "One More Token",
+      "caption": "終わりなき競争心と次の一手に賭ける高揚感。勝敗の岐路に立つ刹那を捉え、退場寸前の張りつめた空気感を表現。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/One_More_Token.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-24"
+    },
+    {
+      "id": "track_1782298344701_5",
+      "title": "Final Sector Strike",
+      "caption": "巨大な脅威が接近する予感。次なる激戦に向けてカウントダウンを行うような、シネマティックで壮大な戦闘への導入部。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/Final_Sector_Strike.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-24"
+    },
+    {
+      "id": "track_1782298344701_6",
+      "title": "Controller Down",
+      "caption": "全ての力が尽きる瞬間。「ゲームオーバー」を告げるように、突然の静寂と重圧が残響するアンビエントな描写。",
+      "type": "instrumental",
+      "duration": 140,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/Controller_Down.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-24"
+    },
+    {
+      "id": "track_1782298344701_7",
+      "title": "Titan Class Horizon",
+      "caption": "眼下に広がる新時代の戦場。巨大構造物とシンクロする迫力あるオーケストレーションは、スケールの大きさを感じさせる荘厳なサウンド。",
+      "type": "instrumental",
+      "duration": 150,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/Titan_Class_Horizon.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-24"
+    },
+    {
+      "id": "track_1782298344701_8",
+      "title": "The Final Life Bar",
+      "caption": "命綱を巡る、最後の決戦の直前。心臓の高鳴りが響き渡り、極限的なドラマ性と切迫感を盛り上げる壮大なサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/The_Final_Life_Bar.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-24"
+    },
+    {
+      "id": "track_1782298344701_9",
+      "title": "Three Hearts Left",
+      "caption": "残された大切なものに焦点を当てる。物語の緊張感とともに、新たな局面を迎えるための決意と期待が芽生える静かな盛り上がり。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/Three_Hearts_Left.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-24"
     }
   ]
 }
