@@ -74,7 +74,26 @@
                   <span>•</span>
                   <span>Total Time: 25 min</span>
                 </div>
-                <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl">夏の朝に使いやすい軽めのBGMをまとめたアルバムです。爽やかな時間帯に合わせやすい曲が中心です。</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl mb-8">夏の朝に使いやすい軽めのBGMをまとめたアルバムです。爽やかな時間帯に合わせやすい曲が中心です。</p>
+                
+                <div class="bg-gray-50 dark:bg-[#1a1a1a] rounded-xl border border-gray-200 dark:border-[#2e2e2e] p-4 flex items-center gap-4 shadow-sm max-w-xl">
+                  <button id="btn-prev" class="p-2 text-gray-400 hover:text-[#5D9CC4] transition disabled:opacity-30 disabled:hover:text-gray-400" disabled>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z"/></svg>
+                  </button>
+                  <button id="btn-play-main" class="p-3 bg-[#5D9CC4] text-white dark:text-black rounded-full hover:scale-105 transition shadow-lg flex items-center justify-center">
+                    <svg id="icon-play-main" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                  </button>
+                  <button id="btn-next" class="p-2 text-gray-400 hover:text-[#5D9CC4] transition disabled:opacity-30 disabled:hover:text-gray-400" disabled>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M11.555 5.168A1 1 0 0010 6v2.798l-5.445-3.63A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4z"/></svg>
+                  </button>
+                  
+                  <div class="flex-1 min-w-0 px-2">
+                    <div id="player-title" class="text-sm font-bold text-gray-900 dark:text-gray-200 truncate">Select a track</div>
+                    <div class="w-full mt-2">
+                      <input type="range" id="player-progress" value="0" min="0" max="100" class="w-full h-1.5 bg-gray-300 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#5D9CC4]" disabled>
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
             
@@ -98,7 +117,7 @@
                   </div>
 
                   <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/The_Morning_Frost.mp3" data-track-title="The Morning Frost" aria-label="Play">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="0" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
                     <a href="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/The_Morning_Frost.mp3" data-track-title="The Morning Frost" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
@@ -124,7 +143,7 @@
                   </div>
 
                   <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Sunlight_by_the_Window.mp3" data-track-title="Sunlight By The Window" aria-label="Play">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="1" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
                     <a href="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Sunlight_by_the_Window.mp3" data-track-title="Sunlight By The Window" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
@@ -150,7 +169,7 @@
                   </div>
 
                   <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Before_the_Street_Wakes.mp3" data-track-title="Before The Street Wakes" aria-label="Play">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="2" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
                     <a href="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Before_the_Street_Wakes.mp3" data-track-title="Before The Street Wakes" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
@@ -176,7 +195,7 @@
                   </div>
 
                   <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Where_The_Light_Begins.mp3" data-track-title="Where The Light Begins" aria-label="Play">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="3" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
                     <a href="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Where_The_Light_Begins.mp3" data-track-title="Where The Light Begins" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
@@ -202,7 +221,7 @@
                   </div>
 
                   <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Ten_Minutes_Early.mp3" data-track-title="Ten Minutes Early" aria-label="Play">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="4" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
                     <a href="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Ten_Minutes_Early.mp3" data-track-title="Ten Minutes Early" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
@@ -228,7 +247,7 @@
                   </div>
 
                   <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/First_Hour_of_Summer.mp3" data-track-title="First Hour Of Summer" aria-label="Play">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="5" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
                     <a href="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/First_Hour_of_Summer.mp3" data-track-title="First Hour Of Summer" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
@@ -254,7 +273,7 @@
                   </div>
 
                   <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Glass_Horizon.mp3" data-track-title="Glass Horizon" aria-label="Play">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="6" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
                     <a href="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Glass_Horizon.mp3" data-track-title="Glass Horizon" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
@@ -280,7 +299,7 @@
                   </div>
 
                   <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Sunlight_Through_Curtains.mp3" data-track-title="Sunlight Through Curtains" aria-label="Play">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="7" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
                     <a href="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Sunlight_Through_Curtains.mp3" data-track-title="Sunlight Through Curtains" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
@@ -306,7 +325,7 @@
                   </div>
 
                   <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Sunlight_on_the_Floorboards.mp3" data-track-title="Sunlight On The Floorboards" aria-label="Play">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="8" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
                     <a href="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Sunlight_on_the_Floorboards.mp3" data-track-title="Sunlight On The Floorboards" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
@@ -332,7 +351,7 @@
                   </div>
 
                   <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-track-url="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Glass_Conservatory.mp3" data-track-title="Glass Conservatory" aria-label="Play">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="9" aria-label="Play">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
                     <a href="https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Glass_Conservatory.mp3" data-track-title="Glass Conservatory" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
@@ -356,53 +375,106 @@
               if (modal) modal.style.display = 'none';
             }
 
-            // オーディオ再生＆DL処理
+            // オーディオ・プレイリスト再生処理
             document.addEventListener('DOMContentLoaded', () => {
-              let currentAudio = null;
-              let currentPlayBtn = null;
+              const playlist = [{"url":"https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/The_Morning_Frost.mp3","title":"The Morning Frost"},{"url":"https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Sunlight_by_the_Window.mp3","title":"Sunlight By The Window"},{"url":"https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Before_the_Street_Wakes.mp3","title":"Before The Street Wakes"},{"url":"https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Where_The_Light_Begins.mp3","title":"Where The Light Begins"},{"url":"https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Ten_Minutes_Early.mp3","title":"Ten Minutes Early"},{"url":"https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/First_Hour_of_Summer.mp3","title":"First Hour Of Summer"},{"url":"https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Glass_Horizon.mp3","title":"Glass Horizon"},{"url":"https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Sunlight_Through_Curtains.mp3","title":"Sunlight Through Curtains"},{"url":"https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Sunlight_on_the_Floorboards.mp3","title":"Sunlight On The Floorboards"},{"url":"https://cdn.neura-music.com/04vlog/02%E5%A4%8F/%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%84%E3%81%84%E5%A4%8F%E3%81%AE%E6%9C%9D/Glass_Conservatory.mp3","title":"Glass Conservatory"}];
+              let currentIndex = -1;
+              const audio = new Audio();
+              
+              const btnPrev = document.getElementById('btn-prev');
+              const btnNext = document.getElementById('btn-next');
+              const btnPlayMain = document.getElementById('btn-play-main');
+              const playerTitle = document.getElementById('player-title');
+              const playerProgress = document.getElementById('player-progress');
+              const listBtns = document.querySelectorAll('.play-btn');
 
               const playSvg = '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>';
               const pauseSvg = '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>';
-              const loadingSvg = '<svg class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>';
+              
+              const mainPlaySvg = '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>';
+              const mainPauseSvg = '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>';
 
-              // 再生ボタン
-              document.querySelectorAll('.play-btn').forEach(btn => {
-                btn.addEventListener('click', function(e) {
+              function updateUI() {
+                if (currentIndex !== -1) {
+                  playerTitle.textContent = playlist[currentIndex].title;
+                  btnPrev.disabled = currentIndex === 0;
+                  btnNext.disabled = currentIndex === playlist.length - 1;
+                  playerProgress.disabled = false;
+                  btnPlayMain.innerHTML = audio.paused ? mainPlaySvg : mainPauseSvg;
+                }
+
+                listBtns.forEach((btn) => {
+                  const idx = parseInt(btn.getAttribute('data-index'), 10);
+                  if (idx === currentIndex && !audio.paused) {
+                    btn.innerHTML = pauseSvg;
+                    btn.classList.add('text-[#5D9CC4]');
+                  } else {
+                    btn.innerHTML = playSvg;
+                    btn.classList.remove('text-[#5D9CC4]');
+                  }
+                });
+              }
+
+              function playTrack(index) {
+                if (index < 0 || index >= playlist.length) return;
+                if (currentIndex !== index) {
+                  currentIndex = index;
+                  audio.src = playlist[index].url;
+                }
+                audio.play().catch(e => console.error("Play error:", e));
+                updateUI();
+              }
+
+              btnPlayMain.addEventListener('click', () => {
+                if (currentIndex === -1) {
+                  playTrack(0);
+                } else if (audio.paused) {
+                  audio.play();
+                  updateUI();
+                } else {
+                  audio.pause();
+                  updateUI();
+                }
+              });
+
+              btnPrev.addEventListener('click', () => playTrack(currentIndex - 1));
+              btnNext.addEventListener('click', () => playTrack(currentIndex + 1));
+
+              audio.addEventListener('ended', () => {
+                if (currentIndex < playlist.length - 1) {
+                  playTrack(currentIndex + 1);
+                } else {
+                  updateUI();
+                }
+              });
+
+              audio.addEventListener('timeupdate', () => {
+                if (audio.duration) {
+                  playerProgress.value = (audio.currentTime / audio.duration) * 100;
+                }
+              });
+
+              playerProgress.addEventListener('input', (e) => {
+                if (audio.duration) {
+                  audio.currentTime = (e.target.value / 100) * audio.duration;
+                }
+              });
+
+              listBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
                   e.preventDefault();
-                  const url = this.getAttribute('data-track-url');
-                  if (!url) return;
-
-                  // 同じ曲の再生/一時停止
-                  if (currentAudio && currentAudio.src === url) {
-                    if (currentAudio.paused) {
-                      currentAudio.play();
-                      this.innerHTML = pauseSvg;
-                    } else {
-                      currentAudio.pause();
-                      this.innerHTML = playSvg;
-                    }
-                    return;
+                  const idx = parseInt(btn.getAttribute('data-index'), 10);
+                  if (currentIndex === idx) {
+                    audio.paused ? audio.play() : audio.pause();
+                    updateUI();
+                  } else {
+                    playTrack(idx);
                   }
-
-                  // 別の曲へ切り替え
-                  if (currentAudio) {
-                    currentAudio.pause();
-                    if (currentPlayBtn) currentPlayBtn.innerHTML = playSvg;
-                  }
-
-                  currentAudio = new Audio(url);
-                  currentPlayBtn = this;
-                  
-                  currentAudio.play().catch(err => console.error("Play error:", err));
-                  this.innerHTML = pauseSvg;
-
-                  currentAudio.onended = () => {
-                    this.innerHTML = playSvg;
-                  };
                 });
               });
 
-              // ダウンロードボタン (クロスオリジン回避のためFetch -> Blob化)
+              // ダウンロードボタン
+              const loadingSvg = '<svg class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>';
               document.querySelectorAll('.dl-btn').forEach(btn => {
                 btn.addEventListener('click', async function(e) {
                   e.preventDefault();
@@ -431,7 +503,7 @@
                     a.remove();
                   } catch (err) {
                     console.error("DL error:", err);
-                    alert("ダウンロードに失敗しました。R2のCORS設定を確認してください。");
+                    alert("ダウンロードに失敗しました。CORS設定等を確認してください。");
                   } finally {
                     this.innerHTML = originalContent;
                     this.style.pointerEvents = 'auto';
