@@ -82,7 +82,7 @@
       "title": "配信時計の作り方",
       "content_url": "contents/articles/obs_clock_article.html",
       "date": "2026-06-12",
-      "is_visible": true
+      "is_visible": false
     },
     {
       "id": "article_20260613152328",
@@ -117,6 +117,13 @@
       "title": "オーバーレイとは",
       "content_url": "contents/tools/Overlay Article/overlay-article.html",
       "date": "2026-06-23",
+      "is_visible": true
+    },
+    {
+      "id": "article_20260624143656",
+      "title": "AdSense落ちるｗ",
+      "content_url": "contents/articles/AdSenseotita.html",
+      "date": "2026-06-24",
       "is_visible": true
     }
   ]
