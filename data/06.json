@@ -17,7 +17,8 @@
       "name": "Battle",
       "caption": "バトルシーンに仕様できるドラマチックでシネマチックな音楽",
       "albums": [
-        "album_1782297107869"
+        "album_1782297107869",
+        "album_1782357377180"
       ]
     }
   ],
@@ -98,7 +99,7 @@
     {
       "id": "album_1782297107869",
       "title": "Pixel Battle",
-      "art": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/cover_1782298901742.webp",
+      "art": "https://cdn.neura-music.com/06game/Battle/Pixel%20Battle/cover_1782359656652.webp",
       "caption": "8bit / 16bit のレトロゲーム風バトルBGM。 軽快なチップチューンと緊張感のあるメロディで、 クラシックな戦闘シーンを彩る短尺インスト集。",
       "categoryId": "cat_1782297071446",
       "tracks": [
@@ -114,6 +115,27 @@
         "track_1782298344701_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Battle\\Pixel Battle",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1782357377180",
+      "title": "Modern Battle EDM",
+      "art": "https://cdn.neura-music.com/06game/Battle/Modern%20Battle%20EDM/cover_1782359466294.webp",
+      "caption": "現代アクションの戦闘シーン向けに作られた、攻撃的でスピード感のあるEDM。",
+      "categoryId": "cat_1782297071446",
+      "tracks": [
+        "track_1782359247166_0",
+        "track_1782359247168_1",
+        "track_1782359247169_2",
+        "track_1782359247169_3",
+        "track_1782359247169_4",
+        "track_1782359247169_5",
+        "track_1782359247169_6",
+        "track_1782359247169_7",
+        "track_1782359247169_8",
+        "track_1782359247169_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Battle\\Modern Battle EDM",
       "type": "instrumental"
     }
   ],
@@ -927,6 +949,176 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-06-24"
+    },
+    {
+      "id": "track_1782359247166_0",
+      "title": "Zero Hour Tactics",
+      "caption": "切羽詰まった戦場の最中。決断の時、全てを賭ける静かなクライマックスへ誘うサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Modern%20Battle%20EDM/Zero_Hour_Tactics.mp3",
+      "tags": [
+        "EDM",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-25"
+    },
+    {
+      "id": "track_1782359247168_1",
+      "title": "The Last Corridor",
+      "caption": "深い闇の中を進むのみ。次なる局面へと導く、心に残る最後の回廊の響き。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Modern%20Battle%20EDM/The_Last_Corridor.mp3",
+      "tags": [
+        "EDM",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-25"
+    },
+    {
+      "id": "track_1782359247169_2",
+      "title": "Neural Combat",
+      "caption": "AIが支配する電脳空間での激しい知性戦を体現。神経回路が火花を散らすサイバーなバトルサウンドトラック。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Modern%20Battle%20EDM/Neural%20Combat.mp3",
+      "tags": [
+        "EDM",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-25"
+    },
+    {
+      "id": "track_1782359247169_3",
+      "title": "Tidal Siege",
+      "caption": "強大な潮流と敵の攻勢がぶつかり合う戦域。壮大なオーケストレーションが、闘争心と切迫感を高める。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Modern%20Battle%20EDM/Tidal_Siege.mp3",
+      "tags": [
+        "EDM",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-25"
+    },
+    {
+      "id": "track_1782359247169_4",
+      "title": "Grinding Perimeter",
+      "caption": "機械的な反復性が描く広大な世界観。出口のない消耗戦を描き出す、中毒性の高いビートワーク。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Modern%20Battle%20EDM/Grinding_Perimeter.mp3",
+      "tags": [
+        "EDM",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-25"
+    },
+    {
+      "id": "track_1782359247169_5",
+      "title": "Breach Protocol",
+      "caption": "未踏の深淵へ。システムから警報が鳴り響く、危険な領域への侵入を描くシネマティックな空気感。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Modern%20Battle%20EDM/Breach_Protocol.mp3",
+      "tags": [
+        "EDM",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-25"
+    },
+    {
+      "id": "track_1782359247169_6",
+      "title": "Kinetic Protocol",
+      "caption": "生命と機械が融合する、激烈なサイバーパンク・アクションを彩る楽曲。電子的なパルスが加速する物語性を表現する。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Modern%20Battle%20EDM/Kinetic_Protocol.mp3",
+      "tags": [
+        "EDM",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-25"
+    },
+    {
+      "id": "track_1782359247169_7",
+      "title": "Target Locked",
+      "caption": "目標に視線を合わせる緊迫の一瞬。高まる期待感とともに、戦場の臨場感を極限まで引き上げるビートワーク。",
+      "type": "instrumental",
+      "duration": 149,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Modern%20Battle%20EDM/Target_Locked.mp3",
+      "tags": [
+        "EDM",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-25"
+    },
+    {
+      "id": "track_1782359247169_8",
+      "title": "Apex Drive",
+      "caption": "夜のストリートを駆け抜ける疾走感と熱狂。エネルギッシュなサウンドで、ゲーム世界の高揚感を極限まで盛り上げるBGM。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Modern%20Battle%20EDM/Apex_Drive.mp3",
+      "tags": [
+        "EDM",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-25"
+    },
+    {
+      "id": "track_1782359247169_9",
+      "title": "Hostile Logic Loop",
+      "caption": "デジタルな論理が絡み合い、不協和音のループを形成する。人工的で冷たい緊張感が漂うサウンドテキスタイル。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Modern%20Battle%20EDM/Hostile_Logic_Loop.mp3",
+      "tags": [
+        "EDM",
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-25"
     }
   ]
 }
