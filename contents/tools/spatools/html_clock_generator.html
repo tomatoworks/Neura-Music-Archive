@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>OBS HTML Clock Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ▼ 追加：軽量メタタグ（SEO不要だがプロダクトとしての完成度向上） -->
+  <meta name="description" content="OBS向けの高品質な透過時計HTMLを生成できるツール。固定幅数字、ローカルフォントZIP、シャドウ調整、LIVEバッジなど配信特化の機能を搭載。">
+  <meta property="og:title" content="OBS HTML Clock Generator">
+  <meta property="og:description" content="OBS向けの透過時計HTMLを生成するWebツール。配信レイアウトに最適化された実用的なデザイン機能を搭載。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://neura-music.com/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- ▲ 追加ここまで -->
+
+  <!-- Google Fonts から IBM Plex Sans JP を読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS の読み込み -->
+  <script src="https://cdn.tailwindcss.com" nonce="NDA1NjMzODQxOSwyMDAwNDE0Njgz"></script>
+
+  <!-- JSZip（UMD） -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" nonce="NDA1NjMzODQxOSwyMDAwNDE0Njgz"></script>
+
+  <!-- React / Import Map -->
+  <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js" nonce="NDA1NjMzODQxOSwyMDAwNDE0Njgz"></script>
+  <script type="importmap" nonce="NDA1NjMzODQxOSwyMDAwNDE0Njgz">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@18.2.0",
+      "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+      "lucide-react": "https://esm.sh/lucide-react@0.292.0",
+      "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime"
+    }
+  }
+  </script>
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js" nonce="NDA1NjMzODQxOSwyMDAwNDE0Njgz"></script>
+</head>
+
+<body class="bg-[#0d0d0d] text-[#f3f4f6]">
+  <div id="root"></div>
+
+  <script data-type="module" type="text/babel" nonce="NDA1NjMzODQxOSwyMDAwNDE0Njgz">
+    import React, { useState, useEffect, useRef } from 'react';
+    import { createRoot } from 'react-dom/client';
+    import { Copy, Check, Download, Clock, Settings, Code, Layers, Type, Monitor, Upload, FileArchive, Sparkles, Calendar, Radio, Tag, Frame, Palette, Hash, AlignLeft, AlignCenter, AlignRight, HelpCircle, Twitter, Link as LinkIcon } from 'lucide-react';
+
+    const FONTS = [
+      { name: 'Arial', value: 'Arial, sans-serif', url: '' },
+      { name: 'Impact', value: 'Impact, sans-serif', url: '' },
+      { name: 'Courier New', value: '"Courier New", monospace', url: '' },
+      { name: 'Orbitron (Digital)', value: '"Orbitron", sans-serif', url: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap' },
+      { name: 'Roboto', value: '"Roboto", sans-serif', url: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' },
+      { name: 'M PLUS Rounded 1c (Pop)', value: '"M PLUS Rounded 1c", sans-serif', url: 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap' },
+      { name: 'Anton (Bold)', value: '"Anton", sans-serif', url: 'https://fonts.googleapis.com/css2?family=Anton&display=swap' },
+      { name: 'Press Start 2P (Pixel)', value: '"Press Start 2P", cursive', url: 'https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap' }
+    ];
+
+    const FORMATS = [
+      { label: '24時間 (HH:mm:ss)', value: 'HH:mm:ss' },
+      { label: '24時間 (HH:mm)', value: 'HH:mm' },
+      { label: '12時間 (hh:mm:ss AM/PM)', value: 'hh:mm:ss A' },
+      { label: '12時間 (hh:mm AM/PM)', value: 'hh:mm A' },
+    ];
+
+    const DATE_FORMATS = [
+      { label: 'YYYY/MM/DD', value: 'YYYY/MM/DD' },
+      { label: 'YYYY年MM月DD日', value: 'YYYY年MM月DD日' },
+      { label: 'MM/DD', value: 'MM/DD' },
+      { label: 'MM月DD日(曜)', value: 'MM月DD日(曜)' },
+    ];
+
+    const checkerboardStyle = {
+      backgroundImage: 'linear-gradient(45deg, #e5e7eb 25%, transparent 25%), linear-gradient(-45deg, #e5e7eb 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #e5e7eb 75%), linear-gradient(-45deg, transparent 75%, #e5e7eb 75%)',
+      backgroundSize: '20px 20px',
+      backgroundPosition: '0 0, 0 10px, 10px -10px, -10px 0px',
+      backgroundColor: '#ffffff'
+    };
+
+    const Slider = ({ label, value, min, max, step = 1, onChange, disabled = false }) => (
+      <div className={`flex flex-col gap-1.5 mb-5 transition-opacity ${disabled ? 'opacity-40 pointer-events-none' : ''}`}>
+        <div className="flex justify-between items-center">
+          <label className="text-sm font-medium" style={{ color: '#9ca3af' }}>{label}</label>
+          <span className="text-xs font-mono px-2 py-0.5 rounded-md" style={{ backgroundColor: '#111', color: '#f3f4f6', border: '1px solid #333' }}>{value}</span>
+        </div>
+        <input 
+          type="range" min={min} max={max} step={step} value={value} 
+          onChange={(e) => onChange(Number(e.target.value))}
+          disabled={disabled}
+          className="w-full h-1.5 rounded-lg appearance-none cursor-pointer mt-1"
+          style={{ background: '#151515', accentColor: '#5D9CC4', outline: 'none' }}
+        />
+      </div>
+    );
+
+    const ColorPicker = ({ label, value, onChange, className = "mb-5" }) => (
+      <div className={`flex items-center justify-between ${className}`}>
+        <label className="text-sm font-medium" style={{ color: '#9ca3af' }}>{label}</label>
+        <div className="flex items-center gap-3">
+          <span className="text-xs font-mono uppercase px-2 py-1 rounded-md" style={{ backgroundColor: '#111', color: '#f3f4f6', border: '1px solid #333' }}>{value}</span>
+          <div className="relative w-8 h-8 rounded-md overflow-hidden cursor-pointer hover:scale-105 transition-transform" style={{ border: '1px solid #2e2e2e', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
+            <input 
+              type="color" value={value} 
+              onChange={(e) => onChange(e.target.value)}
+              className="absolute -top-2 -left-2 w-12 h-12 cursor-pointer"
+            />
+          </div>
+        </div>
+      </div>
+    );
+
+    const PanelHeading = ({ icon: Icon, title }) => (
+      <h4 className="flex items-center gap-2 text-white font-bold mb-6 pb-3 border-b border-[#333] text-[15px] tracking-wide">
+        <Icon className="w-5 h-5 text-[#5D9CC4]" />
+        {title}
+      </h4>
+    );
+
+    const QuickSettingItem = ({ icon: Icon, label, description, isActive, onToggle, children }) => (
+      <div className={`rounded-xl border transition-all duration-300 overflow-hidden mb-4 ${isActive ? 'bg-[#222] border-[#444] shadow-[0_4px_12px_rgba(0,0,0,0.2)]' : 'bg-[#1a1a1a] border-[#333] hover:border-[#444]'}`}>
+        <div 
+          className="p-4 flex items-center justify-between cursor-pointer"
+          onClick={() => onToggle(!isActive)}
+        >
+          <div className="flex items-center gap-3.5">
+            <div className={`w-9 h-9 rounded-lg flex items-center justify-center transition-colors ${isActive ? 'bg-[#5D9CC4]/10 text-[#5D9CC4]' : 'bg-[#252525] text-[#777]'}`}>
+              <Icon className="w-5 h-5" />
+            </div>
+            <div>
+              <h4 className="text-sm font-semibold text-white tracking-wide">{label}</h4>
+              <p className="text-[11px] text-[#888] mt-0.5">{description}</p>
+            </div>
+          </div>
+          <div className="switch" onClick={(e) => { e.stopPropagation(); onToggle(!isActive); }}>
+            <input type="checkbox" checked={isActive} readOnly />
+            <span className="slider"></span>
+          </div>
+        </div>
+        <div className={`transition-all duration-300 ease-in-out ${isActive ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+          <div className="px-4 pb-4 pt-1 border-t border-[#333] mx-4 mt-1">
+            {children}
+          </div>
+        </div>
+      </div>
+    );
+
+    function App() {
+      const [activeTab, setActiveTab] = useState('text');
+
+      const [fontIndex, setFontIndex] = useState(3);
+      const [fontSize, setFontSize] = useState(80);
+      const [color, setColor] = useState('#ffffff');
+      const [bold, setBold] = useState(true);
+      const [textAlign, setTextAlign] = useState('center');
+      
+      const [strokeWidth, setStrokeWidth] = useState(2);
+      const [strokeColor, setStrokeColor] = useState('#000000');
+      
+      const [showShadow, setShowShadow] = useState(true);
+      const [shadowColor, setShadowColor] = useState('#000000');
+      const [shadowBlur, setShadowBlur] = useState(8);
+      const [shadowX, setShadowX] = useState(3);
+      const [shadowY, setShadowY] = useState(3);
+      
+      const [bgColor, setBgColor] = useState('#00ff00');
+      const [bgOpacity, setBgOpacity] = useState(0);
+      const [timeFormat, setTimeFormat] = useState('HH:mm:ss');
+      
+      const [copied, setCopied] = useState(false);
+      const [shareCopied, setShareCopied] = useState(false);
+      const [currentTimeStr, setCurrentTimeStr] = useState('00:00:00');
+
+      const copyShareUrl = () => {
+        navigator.clipboard.writeText("https://neura-music.com/?tool=tool_20260527171110").then(() => {
+          setShareCopied(true);
+          setTimeout(() => setShareCopied(false), 2000);
+        });
+      };
+
+      const [showDate, setShowDate] = useState(false);
+      const [dateFormat, setDateFormat] = useState('YYYY/MM/DD');
+      const [currentDateStr, setCurrentDateStr] = useState('');
+      const [dateSize, setDateSize] = useState(0.25);
+
+      const [previewMode, setPreviewMode] = useState('normal');
+      const [previewWidth, setPreviewWidth] = useState(800);
+      const previewRef = useRef(null);
+
+      const RESOLUTIONS = {
+        fhd: { width: 1920, height: 1080 },
+        qhd: { width: 2560, height: 1440 },
+        '4k': { width: 3840, height: 2160 },
+      };
+
+      const [digitWidth, setDigitWidth] = useState(1.0);
+
+      const [customFontFile, setCustomFontFile] = useState(null);
+      const [customFontUrl, setCustomFontUrl] = useState('');
+      const [useCustomFont, setUseCustomFont] = useState(false);
+      const fileInputRef = useRef(null);
+
+      const [decLive, setDecLive] = useState(false);
+      const [decLiveType, setDecLiveType] = useState('classic');
+      const [liveSize, setLiveSize] = useState(0.22);
+      const [decLabel, setDecLabel] = useState(false);
+      const [decLabelText, setDecLabelText] = useState('#LiveStream');
+      const [labelSize, setLabelSize] = useState(0.2);
+      const [labelColor, setLabelColor] = useState('#ffffff'); 
+      const [decFrame, setDecFrame] = useState('none');
+      const [framePadding, setFramePadding] = useState(0.4);
+      const [frameBgColor, setFrameBgColor] = useState('#000000'); 
+      const [rowGap, setRowGap] = useState(0.1);
+
+      const selectedFont = FONTS[fontIndex];
+
+      const TABS = [
+        { id: 'text', label: '基本 / テキスト', icon: Type },
+        { id: 'design', label: 'カラー / 装飾', icon: Palette },
+        { id: 'custom', label: 'カスタム要素', icon: Sparkles },
+        { id: 'help', label: '使い方 / Q&A', icon: HelpCircle },
+      ];
+
+      useEffect(() => {
+        if (!previewRef.current) return;
+        const observer = new ResizeObserver((entries) => {
+          for (let entry of entries) {
+            setPreviewWidth(entry.contentRect.width);
+          }
+        });
+        observer.observe(previewRef.current);
+        return () => observer.disconnect();
+      }, []);
+
+      const hexToRgb = (hex) => {
+        let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}` : '0, 0, 0';
+      };
+
+      const getDecorationCSS = () => {
+        const frameRgb = hexToRgb(frameBgColor);
+        const css = `
+          .clock-wrapper {
+            position: relative;
+            display: inline-flex;
+            flex-direction: column;
+            box-sizing: border-box;
+          }
+          .frame-simple {
+            background: rgba(${frameRgb}, 0.6);
+            border: 0.05em solid #ffffff;
+            border-radius: 0.2em;
+          }
+          .frame-glass {
+            background: rgba(${frameRgb}, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 0.02em solid rgba(255, 255, 255, 0.3);
+            border-radius: 0.3em;
+            box-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.4);
+          }
+          .frame-cyber {
+            background: rgba(${frameRgb}, 0.85);
+            border-left: 0.05em solid #00ffcc;
+            border-right: 0.05em solid #ff00ff;
+            clip-path: polygon(0.2em 0, 100% 0, 100% calc(100% - 0.2em), calc(100% - 0.2em) 100%, 0 100%, 0 0.2em);
+          }
+
+          .live-badge {
+            font-family: Arial, sans-serif;
+            font-size: ${liveSize}em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.4em;
+          }
+          
+          .live-badge.style-classic {
+            background: #e91e63;
+            color: white;
+            padding: 0.15em 0.8em;
+            border-radius: 2em;
+            box-shadow: 0 0.2em 0.6em rgba(233, 30, 99, 0.5);
+          }
+          .live-badge.style-outline {
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(4px);
+            color: #ff2a6d;
+            border: 0.1em solid #ff2a6d;
+            padding: 0.1em 0.7em;
+            border-radius: 2em;
+          }
+          .live-badge.style-neon {
+            background: #050505;
+            color: #ff0055;
+            border: 0.05em solid #ff0055;
+            padding: 0.15em 0.8em;
+            border-radius: 0.4em;
+            box-shadow: 0 0 0.5em rgba(255,0,85,0.4), inset 0 0 0.2em rgba(255,0,85,0.4);
+            text-shadow: 0 0 0.3em #ff0055;
+          }
+          .live-badge.style-minimal {
+            color: #ff2a6d;
+            padding: 0.1em 0.2em;
+            text-shadow: 0 0.1em 0.2em rgba(0,0,0,0.8);
+          }
+          .live-badge.style-tv {
+            background: #ff0000;
+            color: white;
+            padding: 0.1em 0.6em;
+            border-radius: 0.1em;
+            letter-spacing: 0.1em;
+          }
+
+          .live-dot {
+            width: 0.6em;
+            height: 0.6em;
+            border-radius: 50%;
+            animation: blink 1.5s infinite;
+          }
+          .style-classic .live-dot, .style-tv .live-dot { background: white; }
+          .style-outline .live-dot, .style-neon .live-dot, .style-minimal .live-dot { background: currentColor; box-shadow: 0 0.3em currentColor; }
+
+          @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.2; }
+            100% { opacity: 1; }
+          }
+
+          .time-label {
+            font-family: Arial, sans-serif;
+            font-size: ${labelSize}em;
+            font-weight: bold;
+            color: ${labelColor};
+            letter-spacing: 0.1em;
+            text-shadow: 0.05em 0.05em 0.1em rgba(0,0,0,0.8);
+          }
+        `;
+        return css.replace(/<br\s*\/?>/gi, '\n');
+      };
+
+      useEffect(() => {
+        if (customFontUrl && useCustomFont) {
+          const style = document.createElement('style');
+          style.id = 'custom-font-style';
+          style.innerHTML = `
+            @font-face {
+              font-family: 'OBSCustomFont';
+              src: url('${customFontUrl}');
+            }
+          `.replace(/<br\s*\/?>/gi, '\n');
+          document.head.appendChild(style);
+          return () => document.head.removeChild(style);
+        }
+      }, [customFontUrl, useCustomFont]);
+
+      useEffect(() => {
+        const linkId = 'dynamic-preview-font';
+        let linkElement = document.getElementById(linkId);
+        
+        if (selectedFont.url) {
+          if (!linkElement) {
+            linkElement = document.createElement('link');
+            linkElement.id = linkId;
+            linkElement.rel = 'stylesheet';
+            document.head.appendChild(linkElement);
+          }
+          linkElement.href = selectedFont.url;
+        }
+      }, [selectedFont]);
+
+      useEffect(() => {
+        const updatePreviewTime = () => {
+          const now = new Date();
+          let h = now.getHours();
+          let m = now.getMinutes();
+          let s = now.getSeconds();
+          
+          let display = "";
+          if (timeFormat === 'HH:mm:ss') {
+            display = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+          } else if (timeFormat === 'HH:mm') {
+            display = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0');
+          } else if (timeFormat === 'hh:mm:ss A') {
+            const ampm = h >= 12 ? 'PM' : 'AM';
+            h = h % 12 || 12; 
+            display = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0') + ' ' + ampm;
+          } else if (timeFormat === 'hh:mm A') {
+            const ampm = h >= 12 ? 'PM' : 'AM';
+            h = h % 12 || 12; 
+            display = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ' ' + ampm;
+          }
+          setCurrentTimeStr(display);
+
+          const y = now.getFullYear();
+          const mo = String(now.getMonth() + 1).padStart(2, '0');
+          const d = String(now.getDate()).padStart(2, '0');
+          const dayMap = ['日', '月', '火', '水', '木', '金', '土'];
+          const day = dayMap[now.getDay()];
+
+          let dStr = "";
+          if (dateFormat === 'YYYY/MM/DD') dStr = `${y}/${mo}/${d}`;
+          else if (dateFormat === 'YYYY年MM月DD日') dStr = `${y}年${mo}月${d}日`;
+          else if (dateFormat === 'MM/DD') dStr = `${mo}/${d}`;
+          else if (dateFormat === 'MM月DD日(曜)') dStr = `${mo}月${d}日(${day})`;
+          setCurrentDateStr(dStr);
+        };
+
+        const timerId = setInterval(updatePreviewTime, 1000);
+        updatePreviewTime();
+        return () => clearInterval(timerId);
+      }, [timeFormat, dateFormat]);
+
+      const generateHTML = () => {
+        const fontLink = (!useCustomFont && selectedFont.url) ? `\n<link href="${selectedFont.url}" rel="stylesheet">` : '';
+        
+        let fontFaceCSS = '';
+        if (useCustomFont && customFontFile) {
+          fontFaceCSS = `
+      @font-face {
+        font-family: 'OBSCustomFont';
+        src: url('./${customFontFile.name}');
+      }`;
+        }
+
+        const currentFontFamily = useCustomFont ? "'OBSCustomFont', sans-serif" : selectedFont.value;
+
+        const rawHtml = `<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>OBS Clock</title>${fontLink}
+<style>
+  ${fontFaceCSS}
+  ${getDecorationCSS()}
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(${hexToRgb(bgColor)}, ${bgOpacity});
+  }
+  body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 32px;
+    box-sizing: border-box;
+  }
+  #clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-family: ${currentFontFamily};
+    font-size: 1em; /* 親のサイズを継承 */
+    color: ${color};
+    font-weight: ${bold ? 'bold' : 'normal'};
+    white-space: nowrap;
+    ${strokeWidth > 0 ? `-webkit-text-stroke: ${strokeWidth}px ${strokeColor};` : ''}
+    ${showShadow ? `text-shadow: ${shadowX}px ${shadowY}px ${shadowBlur}px ${shadowColor};` : ''}
+  }
+  .date-display {
+    font-family: ${currentFontFamily};
+    font-size: ${dateSize}em; /* 右上に収まるよう小さく */
+    color: ${color};
+    font-weight: ${bold ? 'bold' : 'normal'};
+    white-space: nowrap;
+    text-align: right;
+    ${strokeWidth > 0 ? `-webkit-text-stroke: ${strokeWidth * dateSize}px ${strokeColor};` : ''}
+    ${showShadow ? `text-shadow: ${shadowX * dateSize}px ${shadowY * dateSize}px ${shadowBlur * dateSize}px ${shadowColor};` : ''}
+  }
+  .digit {
+    display: inline-block;
+    width: ${digitWidth}em;
+    text-align: ${textAlign};
+  }
+  .non-digit {
+    display: inline-block;
+    text-align: ${textAlign};
+  }
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: ${rowGap}em;
+    gap: 1em;
+  }
+  .bottom-row {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: ${rowGap}em;
+  }
+</style>
+</head>
+<body>
+  <div class="clock-wrapper ${decFrame !== 'none' ? `frame-${decFrame}` : ''}" style="font-size: ${fontSize}px; padding: ${decFrame !== 'none' ? framePadding : 0}em;">
+    
+    ${(decLive || showDate) ? `
+    <div class="top-row">
+      <div>
+        ${decLive ? `
+        <div class="live-badge style-${decLiveType}">
+          <div class="live-dot"></div>
+          LIVE
+        </div>` : ''}
+      </div>
+      <div>
+        ${showDate ? `
+        <div id="date-display" class="date-display"></div>` : ''}
+      </div>
+    </div>` : ''}
+    
+    <div id="clock"></div>
+    
+    ${decLabel ? `
+    <div class="bottom-row">
+      <div class="time-label">${decLabelText}</div>
+    </div>` : ''}
+  </div>
+  <script>
+    function updateTime() {
+      const now = new Date();
+
+      if (${showDate}) {
+        const y = now.getFullYear();
+        const mo = String(now.getMonth() + 1).padStart(2, '0');
+        const d = String(now.getDate()).padStart(2, '0');
+        const dayMap = ['日', '月', '火', '水', '木', '金', '土'];
+        const day = dayMap[now.getDay()];
+
+        let dStr = "";
+        const dFormat = "${dateFormat}";
+        if (dFormat === 'YYYY/MM/DD') dStr = y + '/' + mo + '/' + d;
+        else if (dFormat === 'YYYY年MM月DD日') dStr = y + '年' + mo + '月' + d + '日';
+        else if (dFormat === 'MM/DD') dStr = mo + '/' + d;
+        else if (dFormat === 'MM月DD日(曜)') dStr = mo + '月' + d + '日(' + day + ')';
+        
+        const dateEl = document.getElementById('date-display');
+        if (dateEl) dateEl.innerText = dStr;
+      }
+
+      let h = now.getHours();
+      let m = now.getMinutes();
+      let s = now.getSeconds();
+      
+      const format = "${timeFormat}";
+      let display = "";
+      
+      if (format === 'HH:mm:ss') {
+        display = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+      } else if (format === 'HH:mm') {
+        display = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0');
+      } else if (format === 'hh:mm:ss A') {
+        const ampm = h >= 12 ? 'PM' : 'AM';
+        h = h % 12 || 12; 
+        display = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0') + ' ' + ampm;
+      } else if (format === 'hh:mm A') {
+        const ampm = h >= 12 ? 'PM' : 'AM';
+        h = h % 12 || 12; 
+        display = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ' ' + ampm;
+      }
+      
+      let html = "";
+      for (let i = 0; i < display.length; i++) {
+        const char = display[i];
+        if (/[0-9]/.test(char)) {
+          html += '<span class="digit">' + char + '</span>';
+        } else {
+          html += '<span class="non-digit">' + char + '</span>';
+        }
+      }
+      
+      const clockEl = document.getElementById('clock');
+      if (clockEl) clockEl.innerHTML = html;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+  <\/script>
+</body>
+</html>`;
+        return rawHtml.replace(/<br\s*\/?>/gi, '\n');
+      };
+
+      const copyToClipboard = () => {
+        const html = generateHTML();
+        try {
+          const textArea = document.createElement("textarea");
+          textArea.value = html;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textArea);
+          setCopied(true);
+          setTimeout(() => setCopied(false), 2000);
+        } catch (err) {
+          navigator.clipboard.writeText(html).then(() => {
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+          });
+        }
+      };
+
+      const downloadExport = async () => {
+        if (useCustomFont && customFontFile) {
+          try {
+            // グローバルにロードした JSZip を使用して ZIP 生成
+            const zip = new window.JSZip();
+            const html = generateHTML();
+            
+            zip.file('obs_clock.html', html);
+            zip.file(customFontFile.name, customFontFile);
+            
+            const blob = await zip.generateAsync({ type: 'blob' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'obs_clock_with_font.zip';
+            a.click();
+            URL.revokeObjectURL(url);
+          } catch (error) {
+            console.error('ZIP生成エラー:', error);
+          }
+        } else {
+          const html = generateHTML();
+          const blob = new Blob([html], { type: 'text/html' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'obs_clock.html';
+          a.click();
+          URL.revokeObjectURL(url);
+        }
+      };
+
+      const handleFontUpload = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          setCustomFontFile(file);
+          const url = URL.createObjectURL(file);
+          setCustomFontUrl(url);
+          setUseCustomFont(true);
+        }
+      };
+
+      return (
+        <>
+          <style>{`
+            :root {
+              --bg-color: #0d0d0d;
+              --container-bg: #141414;
+              --card-bg: #1a1a1a;
+              --accent-color: #5D9CC4;
+              --accent-hover: #82b7db;
+              --accent-glow: rgba(93, 156, 196, 0.25);
+              --text-main: #f3f4f6;
+              --text-sub: #9ca3af;
+              --border-color: #2e2e2e;
+              --shadow-plate: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+              --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.25);
+            }
+            
+            body {
+              background-color: var(--bg-color);
+              color: var(--text-main);
+              font-family: 'IBM Plex Sans JP', 'Inter', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              line-height: 1.6;
+              margin: 0;
+              padding: 0;
+            }
+
+            .theme-container {
+              background: var(--container-bg);
+              border-radius: 24px;
+              box-shadow: var(--shadow-plate);
+              border: 1px solid rgba(255, 255, 255, 0.04);
+            }
+
+            .card {
+              background: var(--card-bg);
+              border-radius: 18px;
+              border: 1px solid var(--border-color);
+              box-shadow: var(--shadow-card);
+            }
+            
+            .modern-input {
+              background: #111111 !important;
+              color: var(--text-main) !important;
+              border: 1px solid #333 !important;
+              border-radius: 12px;
+              transition: all 0.2s ease;
+              padding: 12px 16px;
+              font-size: 14px;
+              width: 100%;
+            }
+            .modern-input:focus {
+              border-color: var(--accent-color) !important;
+              box-shadow: 0 0 0 2px var(--accent-glow) !important;
+              outline: none;
+              background: #000 !important;
+            }
+            .modern-input:disabled {
+              opacity: 0.5;
+              cursor: not-allowed;
+            }
+
+            .switch { position: relative; display: inline-block; width: 44px; height: 24px; flex-shrink: 0; cursor: pointer; }
+            .switch input { opacity: 0; width: 0; height: 0; }
+            .slider {
+              position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+              background-color: #333;
+              transition: .3s;
+              border-radius: 34px;
+            }
+            .slider:before {
+              position: absolute; content: "";
+              height: 18px; width: 18px;
+              left: 3px; bottom: 3px;
+              background-color: #fff;
+              transition: .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+              border-radius: 50%;
+            }
+            .switch input:checked + .slider {
+              background-color: var(--accent-color);
+            }
+            .switch input:checked + .slider:before {
+              transform: translateX(20px);
+            }
+
+            /* カスタムスクロールバー */
+            ::-webkit-scrollbar { width: 8px; height: 8px; }
+            ::-webkit-scrollbar-track { background: var(--container-bg); border-radius: 4px; }
+            ::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
+            ::-webkit-scrollbar-thumb:hover { background: #666; }
+          `}</style>
+          
+          <div className="min-h-screen p-4 sm:p-8 flex justify-center bg-[var(--bg-color)] text-[var(--text-main)] overflow-x-hidden">
+            <div className="w-full max-w-[1200px] mx-auto theme-container p-5 sm:p-8">
+              
+              <header className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 opacity-90 px-1">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                  <div className="flex items-center gap-2.5">
+                    <Clock className="w-5 h-5 text-[var(--accent-color)]" />
+                    <h1 className="text-[17px] font-bold tracking-widest text-white">OBS HTML Clock Generator</h1>
+                  </div>
+                  <span className="hidden sm:block w-1 h-1 rounded-full bg-gray-600"></span>
+                  <p className="text-[11px] text-gray-500 tracking-wide font-medium">配信・録画用の高品質な透過時計ソースジェネレーター</p>
+                </div>
+                
+                <div className="flex items-center gap-2 self-start sm:self-auto">
+                  <button 
+                    onClick={copyShareUrl}
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#222] text-gray-300 hover:text-white hover:bg-[#333] border border-[#333] hover:border-[#444] transition-all text-[11px] font-bold tracking-wider"
+                  >
+                    {shareCopied ? <Check className="w-3.5 h-3.5 text-green-400" /> : <LinkIcon className="w-3.5 h-3.5" />}
+                    <span>{shareCopied ? 'COPIED' : 'LINK'}</span>
+                  </button>
+                  <a 
+                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://neura-music.com/?tool=tool_20260527171110')}&text=${encodeURIComponent('配信用のおしゃれな時計が作れるツール「OBS HTML Clock Generator」')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#222] text-gray-300 hover:text-white hover:bg-[#1da1f2] hover:border-[#1da1f2] border border-[#333] transition-all text-[11px] font-bold tracking-wider group"
+                  >
+                    <Twitter className="w-3.5 h-3.5 group-hover:text-white transition-colors" />
+                    <span>POST</span>
+                  </a>
+                </div>
+              </header>
+
+              <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-stretch mb-8">
+                <div className="flex-1 card p-4 sm:p-6 shadow-2xl relative">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-5 gap-3">
+                    <h2 className="text-sm font-bold flex items-center gap-2 text-white uppercase tracking-widest">
+                      <Monitor className="w-4 h-4 text-[var(--accent-color)]" /> ライブプレビュー
+                    </h2>
+                    <select
+                      value={previewMode}
+                      onChange={(e) => setPreviewMode(e.target.value)}
+                      className="modern-input"
+                      style={{ width: 'auto', padding: '6px 12px', fontSize: '13px', borderRadius: '8px' }}
+                    >
+                      <option value="normal">等倍表示</option>
+                      <option value="fhd">FHD (1920x1080)</option>
+                      <option value="qhd">QHD (2560x1440)</option>
+                      <option value="4k">4K (3840x2160)</option>
+                    </select>
+                  </div>
+                  
+                  <div 
+                    ref={previewRef}
+                    className="w-full relative overflow-hidden flex flex-col items-center justify-center border rounded-xl transition-all h-[300px] sm:h-[340px]"
+                    style={{ ...checkerboardStyle, borderColor: 'var(--border-color)' }}
+                  >
+                    <div 
+                      className="absolute inset-0 w-full h-full transition-colors duration-200"
+                      style={{ backgroundColor: `rgba(${hexToRgb(bgColor)}, ${bgOpacity})` }}
+                    ></div>
+                    
+                    <style dangerouslySetInnerHTML={{ __html: getDecorationCSS() }} />
+                    
+                    {(() => {
+                      const isCanvasMode = previewMode !== 'normal';
+                      const canvasBaseWidth = isCanvasMode && RESOLUTIONS[previewMode] ? RESOLUTIONS[previewMode].width : 1920;
+                      const scaleRatio = isCanvasMode ? (previewWidth / canvasBaseWidth) : 1;
+
+                      return (
+                        <>
+                          {isCanvasMode && (
+                            <div className="absolute inset-0 border-[2px] border-dashed border-white/20 pointer-events-none m-3 rounded-lg flex items-end justify-end p-2 transition-opacity duration-300">
+                              <span className="text-[11px] text-white/50 font-mono font-bold bg-black/40 px-2 py-1 rounded">
+                                {RESOLUTIONS[previewMode].width}x{RESOLUTIONS[previewMode].height} Canvas
+                              </span>
+                            </div>
+                          )}
+
+                          <div className="relative z-10 flex items-center justify-center w-full h-full overflow-hidden">
+                            <div style={{ transform: `scale(${scaleRatio})`, transformOrigin: 'center' }}>
+                              <div 
+                                className={`clock-wrapper ${decFrame !== 'none' ? `frame-${decFrame}` : ''} z-10 transition-all duration-300`}
+                                style={{ 
+                                  fontSize: `${fontSize}px`,
+                                  padding: decFrame !== 'none' ? `${framePadding}em` : '0em'
+                                }}
+                              >
+                                {(decLive || showDate) && (
+                                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: `${rowGap}em`, gap: '1em' }}>
+                                    <div>
+                                      {decLive && (
+                                        <div className={`live-badge style-${decLiveType}`}>
+                                          <div className="live-dot"></div>LIVE
+                                        </div>
+                                      )}
+                                    </div>
+                                    <div>
+                                      {showDate && (
+                                        <div 
+                                          className="date-display relative z-10 transition-all duration-200"
+                                          style={{
+                                            fontFamily: useCustomFont ? "'OBSCustomFont', sans-serif" : selectedFont.value,
+                                            color: color,
+                                            fontWeight: bold ? 'bold' : 'normal',
+                                            WebkitTextStroke: `${strokeWidth * dateSize}px ${strokeColor}`,
+                                            textShadow: showShadow ? `${shadowX * dateSize}px ${shadowY * dateSize}px ${shadowBlur * dateSize}px ${shadowColor}` : 'none',
+                                            textAlign: 'right',
+                                            fontSize: `${dateSize}em`
+                                          }}
+                                        >
+                                          {currentDateStr}
+                                        </div>
+                                      )}
+                                    </div>
+                                  </div>
+                                )}
+                                  
+                                <div 
+                                  id="clock"
+                                  className="relative z-10 transition-all duration-200 flex items-center justify-center"
+                                  style={{
+                                    fontFamily: useCustomFont ? "'OBSCustomFont', sans-serif" : selectedFont.value,
+                                    fontSize: '1em',
+                                    lineHeight: '1',
+                                    color: color,
+                                    fontWeight: bold ? 'bold' : 'normal',
+                                    WebkitTextStroke: `${strokeWidth}px ${strokeColor}`,
+                                    textShadow: showShadow ? `${shadowX}px ${shadowY}px ${shadowBlur}px ${shadowColor}` : 'none',
+                                    whiteSpace: 'nowrap'
+                                  }}
+                                >
+                                  {currentTimeStr.split('').map((char, idx) => {
+                                    const isDigit = /[0-9]/.test(char);
+                                    return (
+                                      <span 
+                                        key={idx} 
+                                        style={{
+                                          display: 'inline-block',
+                                          textAlign: textAlign,
+                                          width: isDigit ? `${digitWidth}em` : 'auto'
+                                        }}
+                                      >
+                                        {char}
+                                      </span>
+                                    );
+                                  })}
+                                </div>
+
+                                {decLabel && (
+                                  <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', marginTop: `${rowGap}em` }}>
+                                    <div className="time-label">{decLabelText}</div>
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                        </>
+                      );
+                    })()}
+                  </div>
+                </div>
+
+                <div className="w-full lg:w-[320px] xl:w-[360px] shrink-0">
+                  <div className="card p-6 border-t-[4px] border-[#5D9CC4] h-full flex flex-col">
+                    <h3 className="flex items-center gap-2 text-[#5D9CC4] font-bold text-[17px] mb-4 border-b border-[#2e2e2e] pb-3">
+                      <Code className="w-5 h-5" /> 完成したHTMLを出力
+                    </h3>
+                    <div className="flex flex-col gap-4 mb-4">
+                      <button 
+                        onClick={downloadExport}
+                        className="bg-[#5D9CC4] hover:bg-[#82b7db] text-white w-full flex items-center justify-center gap-2 py-4 px-4 rounded-xl font-bold text-base shadow-[0_4px_15px_rgba(93,156,196,0.3)] transition-all transform hover:-translate-y-0.5"
+                      >
+                        {useCustomFont ? <FileArchive className="w-6 h-6" /> : <Download className="w-6 h-6" />}
+                        {useCustomFont ? 'ZIPで保存 (同梱)' : 'HTMLとして保存'}
+                      </button>
+                      <button 
+                        onClick={copyToClipboard}
+                        className="bg-[#252525] hover:bg-[#333] hover:border-[#444] text-[#eee] border border-[#3a3a3a] w-full flex items-center justify-center gap-2 py-4 px-4 rounded-xl font-bold text-base transition-all transform hover:-translate-y-0.5"
+                      >
+                        {copied ? <Check className="w-6 h-6 text-[#5D9CC4]" /> : <Copy className="w-6 h-6" />}
+                        {copied ? 'コピーしました！' : 'HTMLをコピー'}
+                      </button>
+                    </div>
+                    <div className="bg-[#151515] p-4 rounded-xl border border-[#333] mt-auto">
+                      <p className="text-[12px] leading-relaxed text-[#9ca3af]">
+                        <strong className="text-white block mb-1.5 flex items-center gap-1"><Monitor className="w-3.5 h-3.5"/> OBSへの導入方法</strong>
+                        保存したHTMLファイルをOBSのソース追加画面から「ブラウザ」を選び、「ローカルファイル」にチェックを入れて読み込んでください。
+                        {useCustomFont && <span className="text-[#5D9CC4] block mt-1.5">※ZIP形式で保存した場合、解凍したフォルダ内の obs_clock.html を読み込んでください。</span>}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card pt-2 px-4 sm:px-6 pb-8">
+                <div className="flex gap-2 sm:gap-3 mb-8 border-b border-[#333] pt-4 pb-4 overflow-x-auto">
+                  {TABS.map(tab => (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveTab(tab.id)}
+                      className={`flex items-center whitespace-nowrap gap-2 sm:gap-2.5 px-4 sm:px-6 py-3 sm:py-3.5 rounded-xl text-[13px] sm:text-[15px] font-bold transition-all ${
+                        activeTab === tab.id 
+                          ? 'bg-[var(--accent-color)] text-white shadow-[0_4px_15px_rgba(93,156,196,0.4)]' 
+                          : 'bg-[#222] text-gray-400 hover:bg-[#333] hover:text-gray-200'
+                      }`}
+                    >
+                      <tab.icon className="w-4 h-4 sm:w-5 sm:h-5" />
+                      {tab.label}
+                    </button>
+                  ))}
+                </div>
+
+                <div className={activeTab === 'text' ? 'block animate-[fadeIn_0.3s_ease-out]' : 'hidden'}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                    <div>
+                      <PanelHeading icon={Type} title="フォントとフォーマット" />
+                      <div className="mb-6">
+                        <label className="block text-sm font-medium mb-2 text-gray-400">フォントファミリー</label>
+                        <select 
+                          value={useCustomFont ? 'custom' : fontIndex} 
+                          onChange={(e) => {
+                            if (e.target.value === 'custom') {
+                              setUseCustomFont(true);
+                            } else {
+                              setUseCustomFont(false);
+                              setFontIndex(Number(e.target.value));
+                            }
+                          }}
+                          className="modern-input mb-3"
+                        >
+                          {FONTS.map((f, i) => (
+                            <option key={i} value={i}>{f.name}</option>
+                          ))}
+                          {customFontFile && <option value="custom">★ カスタム: {customFontFile.name}</option>}
+                        </select>
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-3 bg-[#111] p-3 rounded-xl border border-[#333]">
+                          <input type="file" accept=".ttf,.otf,.woff,.woff2" onChange={handleFontUpload} ref={fileInputRef} className="hidden" />
+                          <button onClick={() => fileInputRef.current?.click()} className="bg-[#222] hover:bg-[#333] text-white border border-[#444] transition-colors flex justify-center items-center gap-2 text-xs py-2 px-4 rounded-lg w-full sm:w-auto">
+                            <Upload className="w-4 h-4" /> PC内のフォントファイルを選択
+                          </button>
+                          <span className="text-xs text-gray-500 text-center sm:text-left">.ttf, .otf, .woff</span>
+                        </div>
+                      </div>
+                      <div className="mb-2">
+                        <label className="block text-sm font-medium mb-2 text-gray-400">表示フォーマット</label>
+                        <select value={timeFormat} onChange={(e) => setTimeFormat(e.target.value)} className="modern-input">
+                          {FORMATS.map((f, i) => (<option key={i} value={f.value}>{f.label}</option>))}
+                        </select>
+                      </div>
+                    </div>
+                    <div>
+                      <PanelHeading icon={Settings} title="サイズ・配置調整" />
+                      <div className="mb-8">
+                        <Slider label="基本サイズ" value={fontSize} min={20} max={200} onChange={setFontSize} />
+                      </div>
+                      <div className="bg-[#111] border border-[#333] p-5 rounded-2xl">
+                        <div className="mb-5">
+                          <Slider label="数字の固定幅 (レイアウトのガタつき防止)" value={digitWidth} min={0.3} max={1.5} step={0.05} onChange={setDigitWidth} />
+                          <p className="text-xs mt-3 text-gray-500 leading-relaxed">※「1」などの細い数字が表示された際に、時計全体の幅が伸び縮みしないよう丁度良い幅に調整してください。</p>
+                        </div>
+                        <div className="mb-5 pt-5 border-t border-[#222]">
+                          <Slider label="行間 (上下の表示要素との間隔)" value={rowGap} min={-0.5} max={1.5} step={0.05} onChange={setRowGap} />
+                        </div>
+                        <div className="pt-5 border-t border-[#222]">
+                          <label className="block text-sm font-medium mb-3 text-gray-400">枠内の文字配置</label>
+                          <div className="flex bg-[#0a0a0a] border border-[#222] rounded-lg p-1.5 gap-1">
+                            <button onClick={() => setTextAlign('left')} className={`flex-1 flex justify-center items-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${textAlign === 'left' ? 'bg-[#333] text-white shadow-md' : 'text-gray-500 hover:text-gray-300 hover:bg-[#1a1a1a]'}`}><AlignLeft className="w-3.5 h-3.5" /> 左</button>
+                            <button onClick={() => setTextAlign('center')} className={`flex-1 flex justify-center items-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${textAlign === 'center' ? 'bg-[#333] text-white shadow-md' : 'text-gray-500 hover:text-gray-300 hover:bg-[#1a1a1a]'}`}><AlignCenter className="w-3.5 h-3.5" /> 中央</button>
+                            <button onClick={() => setTextAlign('right')} className={`flex-1 flex justify-center items-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${textAlign === 'right' ? 'bg-[#333] text-white shadow-md' : 'text-gray-500 hover:text-gray-300 hover:bg-[#1a1a1a]'}`}><AlignRight className="w-3.5 h-3.5" /> 右</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className={activeTab === 'design' ? 'block animate-[fadeIn_0.3s_ease-out]' : 'hidden'}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                    <div>
+                      <PanelHeading icon={Palette} title="基本カラー" />
+                      <div className="mb-8 bg-[#111] border border-[#333] p-5 rounded-2xl">
+                        <ColorPicker label="テキストカラー" value={color} onChange={setColor} />
+                        <div className="flex items-center justify-between pt-2 border-t border-[#222]">
+                          <span className="text-sm font-medium text-gray-400">太字 (Bold)</span>
+                          <div className="switch" onClick={() => setBold(!bold)}>
+                            <input type="checkbox" checked={bold} readOnly />
+                            <span className="slider"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <PanelHeading icon={Hash} title="縁取り (Stroke)" />
+                      <div className="bg-[#111] border border-[#333] p-5 rounded-2xl">
+                        <Slider label="太さ" value={strokeWidth} min={0} max={20} onChange={setStrokeWidth} />
+                        <div className={`transition-all duration-300 mt-2 ${strokeWidth === 0 ? 'opacity-30 pointer-events-none grayscale h-0 overflow-hidden' : 'h-auto'}`}>
+                          <ColorPicker label="縁取りカラー" value={strokeColor} onChange={setStrokeColor} />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <PanelHeading icon={Layers} title="ドロップシャドウ" />
+                      <div className="bg-[#111] border border-[#333] p-5 rounded-2xl">
+                        <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#222]">
+                          <span className="text-sm font-bold text-gray-300 tracking-wide">シャドウを有効にする</span>
+                          <div className="switch" onClick={() => setShowShadow(!showShadow)}>
+                            <input type="checkbox" checked={showShadow} readOnly />
+                            <span className="slider"></span>
+                          </div>
+                        </div>
+                        <div className={`transition-all duration-300 ${!showShadow ? 'opacity-30 pointer-events-none grayscale' : ''}`}>
+                          <ColorPicker label="影のカラー" value={shadowColor} onChange={setShadowColor} />
+                          <Slider label="ぼかし (Blur)" value={shadowBlur} min={0} max={30} onChange={setShadowBlur} />
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2">
+                            <Slider label="横方向 (X)" value={shadowX} min={-20} max={20} onChange={setShadowX} />
+                            <Slider label="縦方向 (Y)" value={shadowY} min={-20} max={20} onChange={setShadowY} />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className={activeTab === 'custom' ? 'block animate-[fadeIn_0.3s_ease-out]' : 'hidden'}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                    <div>
+                      <PanelHeading icon={Sparkles} title="表示要素の追加" />
+                      <div className="flex flex-col gap-2">
+                        <QuickSettingItem icon={Radio} label="LIVEバッジ" description="配信中を示すインジケーターを時計上部に表示します" isActive={decLive} onToggle={setDecLive}>
+                          <div className="flex flex-col gap-4 py-2">
+                            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
+                              <span className="text-sm font-medium text-gray-400">バッジスタイル</span>
+                              <select value={decLiveType} onChange={(e) => setDecLiveType(e.target.value)} className="modern-input sm:max-w-[200px]">
+                                <option value="classic">クラシック (標準)</option>
+                                <option value="outline">アウトライン (透過)</option>
+                                <option value="neon">ネオン (発光)</option>
+                                <option value="minimal">ミニマル</option>
+                                <option value="tv">レトロTV</option>
+                              </select>
+                            </div>
+                            <div className="flex items-center justify-between gap-4">
+                              <span className="text-sm font-medium text-gray-400 w-24">サイズ</span>
+                              <div className="flex-1 flex items-center gap-3">
+                                <input type="range" min={0.1} max={1.0} step={0.01} value={liveSize} onChange={(e) => setLiveSize(Number(e.target.value))} className="w-full h-1.5 bg-[#111] rounded-lg appearance-none cursor-pointer outline-none" style={{ accentColor: 'var(--accent-color)' }} />
+                                <span className="text-xs font-mono w-8 text-right text-gray-400">{liveSize.toFixed(2)}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </QuickSettingItem>
+                        <QuickSettingItem icon={Tag} label="カスタムラベル" description="時計の下部に任意のテキストを表示します" isActive={decLabel} onToggle={setDecLabel}>
+                          <div className="flex flex-col gap-4 py-2">
+                            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
+                              <span className="text-sm font-medium text-gray-400">表示テキスト</span>
+                              <input type="text" value={decLabelText} onChange={(e) => setDecLabelText(e.target.value)} className="modern-input sm:max-w-[240px]" placeholder="例: #LiveStream" />
+                            </div>
+                            <div className="flex items-center justify-between gap-4">
+                              <span className="text-sm font-medium text-gray-400 w-24">サイズ</span>
+                              <div className="flex-1 flex items-center gap-3">
+                                <input type="range" min={0.1} max={1.0} step={0.01} value={labelSize} onChange={(e) => setLabelSize(Number(e.target.value))} className="w-full h-1.5 bg-[#111] rounded-lg appearance-none cursor-pointer outline-none" style={{ accentColor: 'var(--accent-color)' }} />
+                                <span className="text-xs font-mono w-8 text-right text-gray-400">{labelSize.toFixed(2)}</span>
+                              </div>
+                            </div>
+                            <ColorPicker label="文字カラー" value={labelColor} onChange={setLabelColor} className="mb-0" />
+                          </div>
+                        </QuickSettingItem>
+                        <QuickSettingItem icon={Calendar} label="日付表示" description="時計の右上に今日の日付を表示します" isActive={showDate} onToggle={setShowDate}>
+                          <div className="flex flex-col gap-4 py-2">
+                            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
+                              <span className="text-sm font-medium text-gray-400">日付フォーマット</span>
+                              <select value={dateFormat} onChange={(e) => setDateFormat(e.target.value)} className="modern-input sm:max-w-[240px]">
+                                {DATE_FORMATS.map((f, i) => (<option key={i} value={f.value}>{f.label}</option>))}
+                              </select>
+                            </div>
+                            <div className="flex items-center justify-between gap-4">
+                              <span className="text-sm font-medium text-gray-400 w-24">サイズ</span>
+                              <div className="flex-1 flex items-center gap-3">
+                                <input type="range" min={0.1} max={1.0} step={0.01} value={dateSize} onChange={(e) => setDateSize(Number(e.target.value))} className="w-full h-1.5 bg-[#111] rounded-lg appearance-none cursor-pointer outline-none" style={{ accentColor: 'var(--accent-color)' }} />
+                                <span className="text-xs font-mono w-8 text-right text-gray-400">{dateSize.toFixed(2)}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </QuickSettingItem>
+                      </div>
+                    </div>
+                    <div>
+                      <PanelHeading icon={Frame} title="背景・枠の追加" />
+                      <QuickSettingItem icon={Frame} label="外枠・バックグラウンド" description="時計全体を囲むパネルや枠を追加します" isActive={decFrame !== 'none'} onToggle={(active) => setDecFrame(active ? 'glass' : 'none')}>
+                        <div className="flex flex-col gap-5 py-3">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
+                            <span className="text-sm font-medium text-gray-400">枠のデザイン</span>
+                            <select value={decFrame} onChange={(e) => setDecFrame(e.target.value)} className="modern-input sm:max-w-[240px]">
+                              <option value="none">なし (無効化)</option>
+                              <option value="simple">シンプルボーダー</option>
+                              <option value="glass">すりガラス調 (おすすめ)</option>
+                              <option value="cyber">サイバーパンク風</option>
+                            </select>
+                          </div>
+                          {decFrame !== 'none' && (
+                            <>
+                              <div className="flex items-center justify-between gap-4">
+                                <span className="text-sm font-medium text-gray-400 w-24">内部の余白</span>
+                                <div className="flex-1 flex items-center gap-3">
+                                  <input type="range" min={0.1} max={1.5} step={0.1} value={framePadding} onChange={(e) => setFramePadding(Number(e.target.value))} className="w-full h-1.5 bg-[#111] rounded-lg appearance-none cursor-pointer outline-none" style={{ accentColor: 'var(--accent-color)' }} />
+                                  <span className="text-xs font-mono w-8 text-right text-gray-400">{framePadding.toFixed(1)}</span>
+                                </div>
+                              </div>
+                              <ColorPicker label="枠の背景カラー" value={frameBgColor} onChange={setFrameBgColor} className="mb-0" />
+                            </>
+                          )}
+                        </div>
+                      </QuickSettingItem>
+                      <div className="mt-6 bg-[#111] border border-[#333] p-5 rounded-2xl">
+                        <h5 className="text-sm font-bold text-gray-300 mb-4 flex items-center gap-2">
+                          <Settings className="w-4 h-4 text-gray-500"/> ベース背景設定
+                        </h5>
+                        <p className="text-[11px] mb-5 text-gray-500 leading-relaxed">
+                          ※ ブラウザソースは標準で背景が透過されます。<br/>
+                          あえて画面全体に背景色を付けたい場合（グリーンバック用等）のみ調整してください。
+                        </p>
+                        <Slider label="背景の不透明度" value={bgOpacity} min={0} max={1} step={0.1} onChange={setBgOpacity} />
+                        <div className={`transition-all duration-300 mt-2 ${bgOpacity === 0 ? 'opacity-30 pointer-events-none grayscale' : ''}`}>
+                          <ColorPicker label="背景カラー" value={bgColor} onChange={setBgColor} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className={activeTab === 'help' ? 'block animate-[fadeIn_0.3s_ease-out]' : 'hidden'}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                    <div>
+                      <PanelHeading icon={Monitor} title="OBSへの基本的な導入方法" />
+                      <div className="bg-[#111] border border-[#333] p-5 rounded-2xl text-[13px] text-gray-300 leading-relaxed mb-8">
+                        <ol className="list-decimal pl-5 space-y-3">
+                          <li>右上の<strong className="text-white">「HTMLとして保存」</strong>ボタンを押して <code>obs_clock.html</code> をPCに保存します。</li>
+                          <li>OBSを開き、ソースの「＋」ボタンから<strong className="text-white">「ブラウザ」</strong>を選択します。</li>
+                          <li><strong className="text-white">「ローカルファイル」</strong>にチェックを入れ、保存したHTMLファイルを参照して開きます。</li>
+                          <li>「幅」と「高さ」の数値を、時計のサイズに合わせて調整します（例: 幅800、高さ300など）。</li>
+                          <li>「カスタムCSS」の欄は空にするか、そのまま残しても問題ありません。</li>
+                        </ol>
+                      </div>
+
+                      <PanelHeading icon={Upload} title="ローカルフォントを使う場合" />
+                      <div className="bg-[#111] border border-[#333] p-5 rounded-2xl text-[13px] text-gray-300 leading-relaxed">
+                        <p className="mb-4">PC内にある好きなフォントファイル（.ttf, .otfなど）を使う場合の手順です。</p>
+                        <ol className="list-decimal pl-5 space-y-3">
+                          <li>基本タブの「PC内のフォントファイルを選択」から使いたいフォントを読み込みます。</li>
+                          <li>右上の<strong className="text-white">「ZIPで保存 (同梱)」</strong>ボタンを押して保存します。</li>
+                          <li>保存されたZIPファイルを<strong className="text-[#ef4444]">必ず解凍（展開）</strong>します。</li>
+                          <li>OBSのブラウザソースで、<strong>解凍したフォルダの中にある</strong> <code>obs_clock.html</code> を指定してください。</li>
+                        </ol>
+                        <p className="mt-4 text-orange-400 text-xs bg-orange-400/10 p-3 rounded-lg border border-orange-400/20">
+                          ※ZIPファイルを解凍せずに中身を直接指定すると、OBSでフォントが読み込まれず初期フォントになってしまいます。
+                        </p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <PanelHeading icon={HelpCircle} title="よくある質問 (Q&A)" />
+                      <div className="flex flex-col gap-4">
+                        
+                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
+                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[#5D9CC4] text-lg font-black">Q.</span> 背景を完全に透明にするには？</h5>
+                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
+                            <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
+                            <span>「カスタム要素」タブにある「背景の不透明度」を <code>0</code> にしてください。OBSのブラウザソースは標準で背景が透過される仕様なので、それだけで背景が透明な時計になります。</span>
+                          </p>
+                        </div>
+
+                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
+                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[#5D9CC4] text-lg font-black">Q.</span> 時計の端が切れて（はみ出して）しまう</h5>
+                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
+                            <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
+                            <span>OBS側のブラウザソースのプロパティで「幅」と「高さ」の数値を大きくしてみてください。HTML側は自動で左上に寄るように作られているため、OBSの枠を広げれば全体が表示されます。</span>
+                          </p>
+                        </div>
+
+                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
+                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[#5D9CC4] text-lg font-black">Q.</span> 時計の幅がガタガタと伸び縮みする</h5>
+                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
+                            <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
+                            <span>「1」のような細い数字と「0」などの太い数字が切り替わる際に起こります。「基本・テキスト」タブの「数字の固定幅」スライダーを調整して、1文字あたりのスペースを強制的に固定することで解決します。</span>
+                          </p>
+                        </div>
+
+                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
+                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[#5D9CC4] text-lg font-black">Q.</span> プレビューのFHDとか4Kって何？</h5>
+                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
+                            <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
+                            <span>実際の配信キャンバス（1920x1080など）にこの時計を置いたとき、どのくらいの大きさに見えるかを確認するための機能です。出力されるHTML自体の解像度が変わるわけではありません。</span>
+                          </p>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </>
+      );
+    }
+
+    const root = createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>

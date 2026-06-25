@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Best 10 Flipper Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com" nonce="NjgyMDQ2Mjk4LDEzNTkyMzM4MjY="></script>
+
+  <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js" nonce="NjgyMDQ2Mjk4LDEzNTkyMzM4MjY="></script>
+  <script type="importmap" nonce="NjgyMDQ2Mjk4LDEzNTkyMzM4MjY=">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@18.2.0",
+      "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+      "lucide-react": "https://esm.sh/lucide-react@0.292.0",
+      "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime"
+    }
+  }
+  </script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js" nonce="NjgyMDQ2Mjk4LDEzNTkyMzM4MjY="></script>
+</head>
+
+<body class="bg-[#0d0d0d] text-[#f3f4f6]">
+  <div id="root"></div>
+
+  <script data-type="module" type="text/babel" nonce="NjgyMDQ2Mjk4LDEzNTkyMzM4MjY=">
+    import React, { useState, useEffect } from 'react';
+    import { createRoot } from 'react-dom/client';
+    import { Download, Palette, Type, Settings, ListOrdered, Code, Monitor, HelpCircle, Check, Link as LinkIcon, Twitter } from 'lucide-react';
+
+    const PanelHeading = ({ icon: Icon, title }) => (
+      <h4 className="flex items-center gap-2 text-white font-bold mb-6 pb-3 border-b border-[#333] text-[15px] tracking-wide">
+        <Icon className="w-5 h-5 text-[var(--accent-color)]" />
+        {title}
+      </h4>
+    );
+
+    function useDebounce(value, delay) {
+      const [debouncedValue, setDebouncedValue] = useState(value);
+      useEffect(() => {
+        const handler = setTimeout(() => {
+          setDebouncedValue(value);
+        }, delay);
+        return () => {
+          clearTimeout(handler);
+        };
+      }, [value, delay]);
+      return debouncedValue;
+    }
+
+    const ColorPicker = ({ label, value, onChange, className = "mb-4" }) => (
+      <div className={`flex items-center justify-between ${className}`}>
+        <label className="text-sm font-medium text-[#9ca3af]">{label}</label>
+        <div className="flex items-center gap-3">
+          <span className="text-xs font-mono uppercase px-2 py-1 rounded-md bg-[#111] text-[#f3f4f6] border border-[#333]">{value}</span>
+          <div className="relative w-8 h-8 rounded-md overflow-hidden cursor-pointer border border-[#2e2e2e]">
+            <input type="color" value={value} onChange={(e) => onChange(e.target.value)} className="absolute -top-2 -left-2 w-12 h-12 cursor-pointer" />
+          </div>
+        </div>
+      </div>
+    );
+
+    function App() {
+      const [activeTab, setActiveTab] = useState('generator');
+      const [copied, setCopied] = useState(false);
+      const [shareCopied, setShareCopied] = useState(false);
+
+      const TABS = [
+        { id: 'generator', label: 'ジェネレーター設定', icon: Settings },
+        { id: 'help', label: '使い方 / Q&A', icon: HelpCircle },
+      ];
+
+      const copyShareUrl = () => {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          setShareCopied(true);
+          setTimeout(() => setShareCopied(false), 2000);
+        });
+      };
+
+      const [numRows, setNumRows] = useState(10);
+      const [boardTitle, setBoardTitle] = useState("MY BEST 10");
+      const [fontFamily, setFontFamily] = useState("'Arial Black', 'Impact', 'Yu Gothic', sans-serif");
+      const [roundness, setRoundness] = useState("normal");
+      
+      const [bgColor, setBgColor] = useState("#00ff00");
+      const [chassisColor, setChassisColor] = useState("#1a1a1a");
+      const [flapBase, setFlapBase] = useState("#222222");
+      const [textColor, setTextColor] = useState("#dcdcdc");
+      const [rankColor, setRankColor] = useState("#ffaa00");
+      const [indicatorOn, setIndicatorOn] = useState("#ff1a1a");
+
+      const previewConfig = useDebounce({
+        numRows, boardTitle, fontFamily, roundness,
+        bgColor, chassisColor, flapBase, textColor, rankColor, indicatorOn
+      }, 300);
+
+      const getFlipperJS = (cfg) => {
+        return `
+    const NUM_ROWS = ` + cfg.numRows + `;
+    const RANK_COLS = 2;
+    const TITLE_COLS = 16;
+    const CHARS = " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんー!?.【】・";
+    
+    let currentPlan = null;
+    let audioCtx = null;
+    let boardDOM = [];      
+    let revealQueue = [];   
+    let isRevealing = false;
+    let isDisplayMode = false;
+
+    function initAudio() { 
+        if (!audioCtx) { 
+            const AudioContext = window.AudioContext || window.webkitAudioContext; 
+            audioCtx = new AudioContext(); 
+        } 
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+    }
+    function playFlipSound() {
+        if (!audioCtx) return;
+        const t = audioCtx.currentTime;
+        const gain = audioCtx.createGain(); const filter = audioCtx.createBiquadFilter(); const noise = audioCtx.createBufferSource();
+        const bufferSize = audioCtx.sampleRate * 0.04; const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+        const data = buffer.getChannelData(0); for (let i = 0; i < bufferSize; i++) { data[i] = Math.random() * 2 - 1; }
+        noise.buffer = buffer; filter.type = "bandpass"; filter.frequency.value = 1000 + Math.random() * 500; filter.Q.value = 1.0;
+        gain.gain.setValueAtTime(0.4, t); gain.gain.exponentialRampToValueAtTime(0.001, t + 0.025); 
+        noise.connect(filter); filter.connect(gain); gain.connect(audioCtx.destination); noise.start(t); noise.stop(t + 0.04);
+    }
+
+    function playRevealSound() {
+        const seFile = currentPlan?.animation?.seFile;
+        if (seFile && seFile.trim() !== "") {
+            const customAudio = new Audio(seFile.trim());
+            customAudio.play().catch(e => {
+                console.warn("External SE failed", e);
+                playFallbackRevealSound();
+            });
+        } else {
+            playFallbackRevealSound();
+        }
+    }
+
+    function playFallbackRevealSound() {
+        if (!audioCtx) return;
+        const t = audioCtx.currentTime;
+        const frequencies = [261.63, 329.63, 392.00, 523.25];
+        frequencies.forEach(freq => {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            const filter = audioCtx.createBiquadFilter();
+            osc.type = 'sawtooth'; 
+            osc.frequency.value = freq;
+            gain.gain.setValueAtTime(0, t);
+            gain.gain.linearRampToValueAtTime(0.15, t + 0.05); 
+            gain.gain.exponentialRampToValueAtTime(0.001, t + 1.0); 
+            filter.type = 'lowpass';
+            filter.frequency.setValueAtTime(4000, t);
+            filter.frequency.exponentialRampToValueAtTime(400, t + 1.0);
+            osc.connect(filter); filter.connect(gain); gain.connect(audioCtx.destination);
+            osc.start(t); osc.stop(t + 1.0);
+        });
+    }
+
+    function createUnit() {
+        const unit = document.createElement('div');
+        unit.className = 'flap-unit';
+        unit.innerHTML = '<div class="part back-top"><span></span></div><div class="part back-bottom"><span></span></div><div class="flipper"><div class="part front-leaf"><span></span></div><div class="part back-leaf"><span></span></div></div>';
+        return unit;
+    }
+    
+    function mapUnit(unit) {
+        return { 
+            el: unit, bt: unit.querySelector('.back-top span'), bb: unit.querySelector('.back-bottom span'), 
+            fl: unit.querySelector('.front-leaf span'), bl: unit.querySelector('.back-leaf span'), current: " " 
+        };
+    }
+    
+    function setContentImmediate(unit, val) {
+        val = val || " ";
+        unit.bt.innerText = val; unit.bb.innerText = val; unit.fl.innerText = val; unit.bl.innerText = val;
+        unit.current = val;
+    }
+    
+    async function flipTo(unit, target, speed = 60) {
+        if (unit.current === target) return;
+        try { playFlipSound(); } catch(e) {}
+        unit.bt.innerText = target; unit.bl.innerText = target; 
+        const flipper = unit.el.querySelector('.flipper');
+        if (flipper) flipper.style.transition = 'transform ' + speed + 'ms ease-in';
+        unit.el.classList.add('flip'); 
+        await new Promise(r => setTimeout(r, speed)); 
+        unit.bb.innerText = target; unit.fl.innerText = target; 
+        if (flipper) flipper.style.transition = 'none'; 
+        unit.el.classList.remove('flip'); 
+        unit.current = target;
+        await new Promise(r => setTimeout(r, 20)); 
+    }
+
+    function getDefaultPlan() {
+        const items = [];
+        for(let i=1; i<=NUM_ROWS; i++) {
+            items.push({ rank: i, text: 'RANKING NO.' + i, enabled: true, order: (NUM_ROWS - i + 1) });
+        }
+        return { boardTitle: "` + cfg.boardTitle + `", items: items, animation: { baseSpins: 10, flipSpeed: 60, seFile: "" } };
+    }
+
+    function gatherPlanFromUI() {
+        const items = [];
+        for(let i=1; i<=NUM_ROWS; i++) {
+            items.push({
+                rank: i,
+                text: document.getElementById('cfg-text-' + i).value.trim(),
+                order: parseInt(document.getElementById('cfg-order-' + i).value, 10) || i,
+                enabled: document.getElementById('cfg-enabled-' + i).checked
+            });
+        }
+        return {
+            boardTitle: document.getElementById('cfg-board-title').value.trim(),
+            items: items,
+            animation: { 
+                baseSpins: parseInt(document.getElementById('cfg-base-spins').value, 10) || 10,
+                flipSpeed: parseInt(document.getElementById('cfg-flip-speed').value, 10) || 60,
+                seFile: document.getElementById('cfg-se-file').value.trim()
+            }
+        };
+    }
+
+    function buildConfigUI() {
+        const container = document.getElementById('config-items-container');
+        if (!container) return; 
+        container.innerHTML = '';
+        
+        let plan = currentPlan || getDefaultPlan();
+        
+        if (plan.items && plan.items.length !== NUM_ROWS) {
+            const defPlan = getDefaultPlan();
+            const adjustedItems = [];
+            for (let i = 1; i <= NUM_ROWS; i++) {
+                const existing = plan.items.find(item => item.rank === i);
+                adjustedItems.push(existing || defPlan.items.find(item => item.rank === i));
+            }
+            plan.items = adjustedItems;
+            currentPlan = plan;
+        }
+        
+        document.getElementById('cfg-board-title').value = plan.boardTitle || "";
+        const sortedItems = [...plan.items].sort((a,b) => a.rank - b.rank);
+
+        sortedItems.forEach(item => {
+            const row = document.createElement('div'); row.className = 'item-row';
+            row.innerHTML = '<div class="item-label">' + item.rank + '</div>' +
+                '<input type="text" id="cfg-text-' + item.rank + '" value="' + item.text + '" maxlength="' + TITLE_COLS + '" placeholder="表示テキスト">' +
+                '<input type="number" id="cfg-order-' + item.rank + '" value="' + item.order + '" min="1" max="99" title="発表順">' +
+                '<label class="checkbox-label"><input type="checkbox" id="cfg-enabled-' + item.rank + '" ' + (item.enabled ? 'checked' : '') + '> 有効</label>';
+            container.appendChild(row);
+        });
+
+        document.getElementById('cfg-base-spins').value = plan.animation?.baseSpins || 10;
+        document.getElementById('cfg-flip-speed').value = plan.animation?.flipSpeed || 60;
+        document.getElementById('cfg-se-file').value = plan.animation?.seFile || "";
+    }
+
+    function buildBoard() {
+        const boardEl = document.getElementById('main-board');
+        if(!boardEl) return;
+        boardEl.innerHTML = '';
+        boardDOM = [];
+
+        if (currentPlan && currentPlan.boardTitle) {
+            const titleRow = document.createElement('div');
+            titleRow.className = 'board-title-row';
+            titleRow.innerText = currentPlan.boardTitle;
+            boardEl.appendChild(titleRow);
+        }
+
+        const headerRow = document.createElement('div');
+        headerRow.className = 'board-header-row';
+        headerRow.innerHTML = '<div style="width: 12px; flex-shrink: 0;"></div>' +
+            '<div class="header-label" style="width: 12vh; min-width: 75px; text-align: center;">RANK</div>' +
+            '<div class="header-label" style="width: 82.2vh; min-width: 600px; text-align: center;">BEST RANKING</div>';
+        boardEl.appendChild(headerRow);
+
+        for (let r = 0; r < NUM_ROWS; r++) {
+            const rowDiv = document.createElement('div'); rowDiv.className = 'flap-row';
+            const iBox = document.createElement('div'); iBox.className = 'indicator-box';
+            const ind = document.createElement('div'); ind.className = 'row-indicator';
+            iBox.appendChild(ind); rowDiv.appendChild(iBox);
+
+            const rankC = document.createElement('div'); rankC.className = 'section-container section-rank';
+            const rankUnits = [];
+            for(let i=0; i<RANK_COLS; i++) { const u = createUnit(); rankC.appendChild(u); rankUnits.push(mapUnit(u)); }
+            rowDiv.appendChild(rankC);
+
+            const titleC = document.createElement('div'); titleC.className = 'section-container section-title';
+            const titleUnits = [];
+            for(let i=0; i<TITLE_COLS; i++) { const u = createUnit(); titleC.appendChild(u); titleUnits.push(mapUnit(u)); }
+            rowDiv.appendChild(titleC);
+            
+            boardEl.appendChild(rowDiv);
+            boardDOM.push({ indicator: ind, rankUnits, titleUnits, rowEl: rowDiv });
+        }
+    }
+
+    function initDisplayBoard(plan) {
+        initAudio();
+        currentPlan = plan;
+
+        buildBoard();
+
+        boardDOM.forEach(row => {
+            row.indicator.classList.remove('active');
+            row.rankUnits.forEach(u => setContentImmediate(u, " "));
+            row.titleUnits.forEach(u => setContentImmediate(u, " "));
+        });
+
+        revealQueue = [...plan.items]
+            .filter(item => item.enabled)
+            .sort((a, b) => a.order - b.order); 
+    }
+
+    async function revealNext() {
+        if(isRevealing || revealQueue.length === 0) return;
+        isRevealing = true;
+        initAudio();
+
+        const item = revealQueue.shift(); 
+        const rowIndex = item.rank - 1;   
+        
+        if (rowIndex < 0 || rowIndex >= NUM_ROWS) {
+            isRevealing = false; return;
+        }
+
+        const rowDOM = boardDOM[rowIndex];
+        const titleStr = item.text.padEnd(TITLE_COLS, ' ').substring(0, TITLE_COLS); 
+
+        rowDOM.indicator.classList.add('active');
+
+        const flipPromises = [];
+        const baseSpins = currentPlan.animation?.baseSpins || 10;
+        const flipSpeed = currentPlan.animation?.flipSpeed || 60;
+
+        const rankStr = item.rank.toString().padStart(RANK_COLS, ' ');
+        rowDOM.rankUnits.forEach((u, i) => {
+            flipPromises.push(spinUnit(u, rankStr[i] || " ", Math.max(2, baseSpins - 2), flipSpeed));
+        });
+
+        rowDOM.titleUnits.forEach((u, i) => {
+            const targetChar = titleStr[i] || " ";
+            const delay = i * (flipSpeed / 1.5);
+            const spinPromise = new Promise(async (resolve) => {
+                await new Promise(r => setTimeout(r, delay));
+                await spinUnit(u, targetChar, baseSpins + Math.floor(i/3), flipSpeed);
+                resolve();
+            });
+            flipPromises.push(spinPromise);
+        });
+
+        await Promise.all(flipPromises);
+        playRevealSound();
+        isRevealing = false;
+    }
+
+    async function spinUnit(unit, finalChar, numSpins, speed) {
+        for(let i=0; i<numSpins; i++) {
+            const rand = CHARS[Math.floor(Math.random() * CHARS.length)];
+            await flipTo(unit, rand, speed);
+        }
+        await flipTo(unit, finalChar, speed);
+    }
+
+    function setupStorageListener() {
+        window.addEventListener('storage', (e) => {
+            if (!isDisplayMode) return;
+            if (e.key === 'flipper-plan') {
+                try {
+                    const newPlan = JSON.parse(e.newValue);
+                    initDisplayBoard(newPlan);
+                } catch(err) {}
+            } else if (e.key === 'flipper-cmd') {
+                if (!e.newValue) return;
+                const cmd = e.newValue.split('|')[1];
+                if (cmd === 'NEXT') {
+                    revealNext();
+                } else if (cmd === 'RESET') {
+                    try {
+                        const savedPlan = localStorage.getItem('flipper-plan');
+                        if(savedPlan) initDisplayBoard(JSON.parse(savedPlan));
+                    } catch(err) {}
+                }
+            }
+        });
+    }
+
+    async function initApp() {
+        const urlParams = new URLSearchParams(window.location.search);
+        isDisplayMode = urlParams.get('mode') === 'display' || window.location.search.includes('preview=true') || window.frameElement !== null;
+
+        if (isDisplayMode) {
+            const obsView = document.getElementById('obs-view');
+            if(obsView) obsView.classList.add('active');
+            setupStorageListener();
+            
+            let savedPlan = null;
+            try { savedPlan = localStorage.getItem('flipper-plan'); } catch(e) {}
+
+            if(savedPlan && window.frameElement === null) {
+                initDisplayBoard(JSON.parse(savedPlan));
+            } else {
+                initDisplayBoard(getDefaultPlan());
+                if (window.frameElement !== null) {
+                    setTimeout(() => {
+                        boardDOM.forEach((row, i) => {
+                            if (i===0) row.indicator.classList.add('active');
+                            const rankStr = String(i+1).padStart(2, ' ');
+                            row.rankUnits.forEach((u, j) => setContentImmediate(u, rankStr[j]));
+                            const txt = (i===0 ? "SAMPLE TEXT" : "").padEnd(TITLE_COLS, ' ').substring(0, TITLE_COLS);
+                            row.titleUnits.forEach((u, j) => setContentImmediate(u, txt[j]));
+                        });
+                    }, 500);
+                }
+            }
+        } else {
+            const configView = document.getElementById('config-view');
+            if(configView) configView.classList.add('active');
+            
+            let savedPlan = null;
+            try { savedPlan = localStorage.getItem('flipper-plan'); } catch(e) {}
+            
+            currentPlan = savedPlan ? JSON.parse(savedPlan) : getDefaultPlan();
+            buildConfigUI();
+
+            document.getElementById('btn-show-help')?.addEventListener('click', () => {
+                document.getElementById('help-modal').classList.add('active');
+            });
+            document.getElementById('btn-close-help')?.addEventListener('click', () => {
+                document.getElementById('help-modal').classList.remove('active');
+            });
+            document.getElementById('help-modal')?.addEventListener('click', (e) => {
+                if (e.target.id === 'help-modal') e.target.classList.remove('active');
+            });
+
+            document.getElementById('btn-open-display')?.addEventListener('click', () => {
+                const plan = gatherPlanFromUI();
+                try { localStorage.setItem('flipper-plan', JSON.stringify(plan)); } catch(e) {}
+                const currentUrl = window.location.href.split('?')[0];
+                window.open(currentUrl + '?mode=display', 'FlipperDisplay', 'width=1280,height=720,menubar=no,toolbar=no');
+            });
+
+            document.getElementById('btn-remote-sync')?.addEventListener('click', () => {
+                const plan = gatherPlanFromUI();
+                try {
+                    localStorage.setItem('flipper-plan', JSON.stringify(plan));
+                    localStorage.setItem('flipper-cmd', Date.now() + '|RESET');
+                } catch(e) { alert("ローカル実行環境のため通信できません。サーバーにアップロードするか表示画面を開き直してください。"); }
+                
+                const btn = document.getElementById('btn-remote-sync');
+                const origText = btn.innerText;
+                btn.innerText = "送信完了！";
+                setTimeout(() => btn.innerText = origText, 1500);
+            });
+
+            document.getElementById('btn-remote-next')?.addEventListener('click', () => {
+                try { localStorage.setItem('flipper-cmd', Date.now() + '|NEXT'); } catch(e) {}
+            });
+            
+            document.getElementById('btn-import')?.addEventListener('click', () => {
+                document.getElementById('file-import').click();
+            });
+
+            document.getElementById('file-import')?.addEventListener('change', (e) => {
+                const file = e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    try {
+                        const importedPlan = JSON.parse(event.target.result);
+                        currentPlan = importedPlan;
+                        buildConfigUI();
+                        alert("設定を読み込みました。「設定を送信」を押すと画面に反映されます。");
+                    } catch (err) {
+                        alert("ファイルの読み込みに失敗しました。正しいJSONファイルか確認してください。");
+                    }
+                };
+                reader.readAsText(file);
+                e.target.value = '';
+            });
+
+            document.getElementById('btn-export')?.addEventListener('click', () => {
+                const plan = gatherPlanFromUI();
+                const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(plan, null, 2));
+                const dl = document.createElement('a');
+                dl.setAttribute("href", dataStr);
+                dl.setAttribute("download", "plan_backup.json");
+                dl.click();
+            });
+
+            document.getElementById('btn-ui-clear')?.addEventListener('click', () => {
+                if (!confirm("設定画面の入力内容（タイトルと全順位のテキスト）をすべて空にしますか？")) return;
+                const tb = document.getElementById('cfg-board-title'); if(tb) tb.value = "";
+                for (let i = 1; i <= NUM_ROWS; i++) {
+                    const txt = document.getElementById('cfg-text-' + i); if(txt) txt.value = "";
+                    const ord = document.getElementById('cfg-order-' + i); if(ord) ord.value = NUM_ROWS - i + 1;
+                    const en = document.getElementById('cfg-enabled-' + i); if(en) en.checked = true;
+                }
+            });
+        }
+    }
+
+    window.onload = initApp;
+        `;
+      };
+
+      const generateHTML = (isPreview = false, cfg) => {
+        const roundMap = {
+            sharp: { board: '0px', row: '0px', flap: '0px' },
+            slight: { board: '4px', row: '2px', flap: '1px' },
+            normal: { board: '8px', row: '4px', flap: '2px' },
+            round: { board: '16px', row: '8px', flap: '4px' }
+        };
+        const r = roundMap[cfg.roundness] || roundMap.normal;
+
+        const getPreviewScale = (rows) => {
+            if (rows <= 3) return 1.1;
+            if (rows <= 5) return 0.95;
+            if (rows <= 10) return 0.75;
+            if (rows <= 15) return 0.55;
+            return 0.45;
+        };
+        const pScale = getPreviewScale(cfg.numRows);
+        const transformScale = isPreview ? `scale(${pScale})` : 'scale(1)';
+
+        const rawHtml = `<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking Flipper Tool</title>
+    <style>
+        :root {
+            --bg-color: ${cfg.bgColor};
+            --chassis-color: ${cfg.chassisColor};
+            --module-frame-bg: #161616; 
+            --flap-base: ${cfg.flapBase};
+            --text-color: ${cfg.textColor};
+            --rank-text-color: ${cfg.rankColor};
+            --accent-color: #33ff33;
+            --font-family: ${cfg.fontFamily};
+            --indicator-off: #2a0000; 
+            --indicator-on: ${cfg.indicatorOn};
+            --board-radius: ${r.board};
+            --row-radius: ${r.row};
+            --flap-radius: ${r.flap};
+        }
+
+        body, html {
+            margin: 0; padding: 0; width: 100%; height: 100%;
+            background-color: var(--bg-color); color: #ccc;
+            font-family: var(--font-family); overflow: hidden;
+            display: flex; justify-content: center; align-items: center;
+        }
+
+        #config-view, #obs-view { position: absolute; inset: 0; display: none; flex-direction: column; width: 100%; height: 100%; }
+        #config-view.active, #obs-view.active { display: flex; }
+
+        #config-view { background: #111; padding: 20px; overflow-y: auto; box-sizing: border-box; align-items: center; }
+        .config-panel { width: 100%; max-width: 800px; background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; }
+        .config-header { border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px; }
+        .config-title { font-size: 1.5rem; color: var(--accent-color); font-weight: bold; margin: 0 0 10px 0; }
+        .instruction-box { background: #001a00; border: 1px solid #004400; padding: 10px; border-radius: 4px; font-size: 0.9rem; color: #ccffcc; line-height: 1.5; margin-bottom: 15px; }
+        .item-row { display: flex; gap: 10px; align-items: center; background: #080808; padding: 10px; margin-bottom: 8px; border: 1px solid #222; border-radius: 4px; }
+        .item-row input[type="text"] { flex: 1; background: #222; border: 1px solid #444; color: #fff; padding: 8px; font-family: monospace; font-size: 1rem; }
+        .item-row input[type="number"] { width: 60px; background: #222; border: 1px solid #444; color: #fff; padding: 8px; text-align: center; }
+        .item-row input:focus { outline: none; border-color: var(--accent-color); }
+        .item-label { font-weight: bold; width: 50px; text-align: center; font-size: 1.2rem; color: #888; }
+        .checkbox-label { display: flex; align-items: center; gap: 5px; cursor: pointer; font-size: 0.9rem; }
+        
+        .remote-controller { background: #222; padding: 15px; border-radius: 8px; margin-top: 20px; border: 1px solid #444; position: sticky; bottom: 0; z-index: 10; box-shadow: 0 -5px 20px rgba(0,0,0,0.8); display: flex; flex-direction: column; gap: 15px; }
+        .remote-row { display: flex; justify-content: space-between; align-items: center; }
+        .btn { background: #333; color: #fff; border: 1px solid #555; padding: 10px 20px; cursor: pointer; font-weight: bold; border-radius: 4px; transition: all 0.2s; }
+        .btn:hover { background: #444; border-color: #888; }
+        .btn.primary { background: #004400; border-color: #008800; color: #ccffcc; }
+        .btn.primary:hover { background: #006600; box-shadow: 0 0 10px #00ff00; }
+        .btn.action { background: #003366; border-color: #0055aa; color: #cceeff; }
+        .btn.action:hover { background: #004488; box-shadow: 0 0 10px #0088ff; }
+        .btn.huge { font-size: 1.2rem; padding: 12px 40px; }
+
+        #obs-view { justify-content: center; align-items: center; }
+        #obs-view.transparent-bg { background: transparent !important; }
+
+        #main-board { display: flex; flex-direction: column; gap: 8px; padding: 20px; background-color: var(--chassis-color); border-radius: var(--board-radius); border: 2px solid #0a0a0a; box-shadow: inset 2px 2px 5px rgba(255,255,255,0.05); transform: ${transformScale}; transform-origin: center; }
+        .flap-row { display: flex; gap: 15px; align-items: center; height: 6vh; min-height: 40px; background: var(--module-frame-bg); padding: 5px 10px; border-radius: var(--row-radius); border-top: 1px solid #000; border-left: 1px solid #000; border-bottom: 1px solid rgba(255,255,255,0.1); border-right: 1px solid rgba(255,255,255,0.05); box-shadow: inset 2px 2px 6px #000; }
+        .indicator-box { width: 12px; height: 100%; display: flex; justify-content: center; align-items: center; flex-shrink: 0; }
+        .row-indicator { width: 8px; height: 8px; border-radius: 50%; background: radial-gradient(circle at 30% 30%, #550000, var(--indicator-off)); box-shadow: inset 1px 1px 1px rgba(255,255,255,0.1), 0 0 1px #000; transition: all 0.2s; }
+        .row-indicator.active { animation: blink-lamp 1s infinite alternate; }
+        @keyframes blink-lamp { 0% { background: radial-gradient(circle at 30% 30%, #ffaaaa, var(--indicator-on)); box-shadow: 0 0 5px var(--indicator-on), 0 0 8px rgba(255,0,0,0.5); } 100% { background: radial-gradient(circle at 30% 30%, #ff4444, #990000); box-shadow: 0 0 2px var(--indicator-on); } }
+
+        .section-container { height: 100%; display: flex; align-items: center; background: #000; padding: 3px; border-radius: var(--flap-radius); box-shadow: inset 2px 2px 4px #000; gap: 2px; }
+        .section-rank { width: 12vh; min-width: 75px; }
+        .section-title { width: 82.2vh; min-width: 600px; }
+
+        .board-title-row { background: transparent; padding: 0; margin-bottom: 5px; color: #ffffff; font-size: 3.5rem; font-weight: 900; text-align: center; font-family: 'Arial Black', 'Impact', 'Yu Gothic', 'Meiryo', sans-serif; letter-spacing: 4px; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); line-height: 1; }
+        .board-header-row { display: flex; gap: 15px; align-items: center; padding: 0 10px; margin-bottom: 2px; }
+        .header-label { color: #888888; font-size: 0.85rem; font-weight: bold; font-family: 'Segoe UI', 'Yu Gothic', sans-serif; letter-spacing: 2px; text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
+
+        .flap-unit { flex: 1; height: 100%; position: relative; background: #000; perspective: 800px; overflow: hidden; border-radius: var(--flap-radius); box-shadow: inset 1px 1px 3px #000; border: 1px solid #050505; }
+        .part { position: absolute; left: 0; width: 100%; height: 50%; background-color: var(--flap-base); color: var(--text-color); font-weight: 700; font-size: 4.5vh; text-align: center; overflow: hidden; backface-visibility: hidden; border-radius: calc(var(--flap-radius) / 2); background-image: linear-gradient(135deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 25%), linear-gradient(to bottom, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%); border-top: none; }
+        .part span { display: flex; justify-content: center; align-items: center; position: absolute; width: 100%; height: 200%; left: 0; margin: 0; text-shadow: 0 2px 2px rgba(0,0,0,0.8); line-height: 1; white-space: nowrap; }
+        .section-rank .part { color: var(--rank-text-color); }
+        .back-top { top: 0; z-index: 1; border-bottom: 2px solid #000; } .back-top span { top: 0; }
+        .back-bottom { bottom: 0; z-index: 0; border-top: 1px solid rgba(255,255,255,0.03); } .back-bottom span { top: -100%; }
+        
+        .flipper { position: absolute; top: 0; left: 0; width: 100%; height: 50%; z-index: 10; transform-style: preserve-3d; transform-origin: bottom; }
+        .flap-unit.flip .flipper { transform: rotateX(-180deg); }
+        .front-leaf { top: 0; left: 0; width: 100%; height: 100%; z-index: 2; box-shadow: 0 2px 4px rgba(0,0,0,0.5); background-color: var(--flap-base); } .front-leaf span { top: 0; }
+        .back-leaf { top: 0; left: 0; width: 100%; height: 100%; z-index: 1; background-color: var(--flap-base); transform: rotateX(180deg); box-shadow: inset 0 0 20px rgba(0,0,0,0.4); } .back-leaf span { top: -100%; }
+
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); display: none; justify-content: center; align-items: center; z-index: 1000; }
+        .modal-overlay.active { display: flex; }
+        .modal-content { background: #1a1a1a; border: 1px solid #444; border-radius: 8px; padding: 25px; max-width: 600px; width: 90%; box-shadow: 0 10px 40px rgba(0,0,0,0.9); color: #ddd; line-height: 1.6; }
+        .modal-content h3 { margin-top: 0; color: var(--accent-color); border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .modal-content ol { padding-left: 20px; }
+        .modal-content li { margin-bottom: 10px; }
+        .modal-close-btn { background: #333; color: #fff; border: 1px solid #555; padding: 8px 20px; cursor: pointer; font-weight: bold; border-radius: 4px; float: right; margin-top: 15px; }
+        .modal-close-btn:hover { background: #444; }
+    </style>
+</head>
+<body>
+    <div id="config-view">
+        <div class="config-panel">
+            <div class="config-header" style="display: flex; justify-content: space-between; align-items: center;">
+                <h2 class="config-title" style="margin: 0;">PLAN EDITOR & REMOTE</h2>
+                <button class="btn" id="btn-show-help" style="padding: 5px 15px; font-size: 0.9rem;">❓ 運用フロー・使い方</button>
+            </div>
+            
+            <div class="item-row" style="margin-bottom: 20px; background: #080808; border: 1px solid #333;">
+                <label class="item-label" style="width: auto; font-size: 1rem; color: var(--accent-color);">ボードのタイトル</label>
+                <input type="text" id="cfg-board-title" value="" placeholder="例: MY BEST 10" style="flex: 1; background: #222; border: 1px solid #444; color: #fff; padding: 8px; font-size: 1.1rem;">
+            </div>
+            
+            <div style="display:flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.9rem; color:#aaa; padding: 0 10px;">
+                <span style="width:50px; text-align:center;">順位</span>
+                <span style="flex:1;">表示テキスト (最大16文字)</span>
+                <span style="width:60px; text-align:center;">発表順</span>
+                <span style="width:80px; text-align:center;">有効</span>
+            </div>
+
+            <div id="config-items-container"></div>
+
+            <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #333;">
+                <h3 style="color: #aaa; font-size: 1rem; margin-top: 0; margin-bottom: 10px;">アニメーション・音声設定</h3>
+                <div class="item-row" style="background: transparent; border: none; padding: 0; justify-content: flex-start; gap: 10px; margin-bottom: 10px;">
+                    <label class="item-label" style="width: auto; font-size: 0.9rem;">ベース回転数</label>
+                    <input type="number" id="cfg-base-spins" value="10" min="1" max="50">
+                    <span style="color: #888; font-size: 0.8rem; margin-right: 20px;">回 (パタパタの長さ)</span>
+                    <label class="item-label" style="width: auto; font-size: 0.9rem;">めくり速度</label>
+                    <input type="number" id="cfg-flip-speed" value="60" min="20" max="300" step="10">
+                    <span style="color: #888; font-size: 0.8rem;">ms (1枚の時間)</span>
+                </div>
+                <div class="item-row" style="background: transparent; border: none; padding: 0; justify-content: flex-start; gap: 10px;">
+                    <label class="item-label" style="width: auto; font-size: 0.9rem;">完了時効果音(SE)</label>
+                    <input type="text" id="cfg-se-file" value="" placeholder="例: se.wav または se.mp3" style="width: 200px; background: #222; border: 1px solid #444; color: #fff; padding: 8px; font-family: monospace;">
+                    <span style="color: #888; font-size: 0.8rem;">※空欄は電子音。鳴らす場合は同階層にファイルを配置</span>
+                </div>
+            </div>
+
+            <div class="remote-controller">
+                <div class="remote-row" style="border-bottom: 1px solid #444; padding-bottom: 15px;">
+                    <button class="btn action" id="btn-open-display">🖥️ 表示ウィンドウを開く</button>
+                    <div style="display:flex; align-items:center; gap: 5px;">
+                        <span style="font-size:0.8rem; color:#888;">データ管理:</span>
+                        <input type="file" id="file-import" accept=".json" style="display: none;">
+                        <button class="btn" id="btn-import" style="padding: 5px 10px; font-size:0.8rem; background: #334433; border-color: #446644; color: #ddffdd;">↑ 読込</button>
+                        <button class="btn" id="btn-export" style="padding: 5px 10px; font-size:0.8rem;">↓ JSON保存</button>
+                        <button class="btn" id="btn-ui-clear" style="padding: 5px 10px; font-size:0.8rem; background: #441111; border-color: #662222; color: #ffcccc;">❌ 入力クリア</button>
+                    </div>
+                </div>
+                <div class="remote-row">
+                    <button class="btn" id="btn-remote-sync">🔄 設定を送信 ＆ 初期化</button>
+                    <button class="btn primary huge" id="btn-remote-next">▶ 次の順位を発表</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="obs-view">
+        <div id="main-board">
+            <div class="board-title-row">${cfg.boardTitle}</div>
+            ${Array.from({ length: cfg.numRows }).map((_, i) => `
+            <div class="flap-row">
+                <div class="row-indicator ${isPreview && i === 0 ? 'active' : ''}"></div>
+                <div class="section-rank">
+                    <div class="flap-unit">${String(i+1).padStart(2, ' ')[0]}</div>
+                    <div class="flap-unit">${String(i+1).padStart(2, ' ')[1]}</div>
+                </div>
+                <div class="section-title">
+                    ${Array.from({ length: 16 }).map((_, j) => `<div class="flap-unit">${isPreview && i === 0 ? ("SAMPLE TEXT     "[j] || " ") : " "}</div>`).join('')}
+                </div>
+            </div>
+            `).join('')}
+        </div>
+    </div>
+
+    <div id="help-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>【運用方法：リモートコントロール方式】</h3>
+            <ol>
+                <li><b>ファイルの準備</b><br>このファイルと設定ファイル(plan.json等)は必ず同じフォルダ内に置いてください。</li>
+                <li><b>リモコン（この画面）を開く</b><br>配信で操作を行う手元のブラウザで、このファイルを開きます。これが「リモコン」になります。</li>
+                <li><b>OBS（表示画面）の準備</b><br>画面下部の <b>「🖥️ 表示ウィンドウを開く」</b> ボタンを押し、出てきた別窓をOBSの<b>ウィンドウキャプチャ</b>で取り込み、<span style="color: var(--rank-text-color);">ソースを右クリックして「フィルタ」から「クロマキー」を追加し、背景の緑色を透過させてください。</span></li>
+                <li><b>配信中の操作</b><br>この画面で順位やテキストを設定し、<b>「🔄 設定を送信 ＆ 初期化」</b> を押すと即座にOBS側の表示に反映されます。<br><b>「▶ 次の順位を発表」</b> を押すと、OBS側の画面がパタパタと動きます。</li>
+            </ol>
+            <button class="modal-close-btn" id="btn-close-help">閉じる</button>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <script>
+        ${getFlipperJS(cfg)}
+    <\/script>
+</body>
+</html>`;
+        return rawHtml;
+      };
+
+      const downloadHTML = () => {
+        const currentConfig = { numRows, boardTitle, fontFamily, roundness, bgColor, chassisColor, flapBase, textColor, rankColor, indicatorOn };
+        const html = generateHTML(false, currentConfig);
+        const blob = new Blob([html], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'obs_ranking_board.html';
+        a.click();
+        URL.revokeObjectURL(url);
+      };
+
+      const copyToClipboard = () => {
+        const currentConfig = { numRows, boardTitle, fontFamily, roundness, bgColor, chassisColor, flapBase, textColor, rankColor, indicatorOn };
+        const html = generateHTML(false, currentConfig);
+        navigator.clipboard.writeText(html).then(() => {
+          setCopied(true);
+          setTimeout(() => setCopied(false), 2000);
+        }).catch(() => alert("コピーに失敗しました"));
+      };
+
+      return (
+        <>
+          <style>{`
+            :root {
+              --bg-color: #0d0d0d;
+              --container-bg: #141414;
+              --card-bg: #1a1a1a;
+              --accent-color: #ffaa00;
+              --accent-hover: #ffbb33;
+              --accent-glow: rgba(255, 170, 0, 0.25);
+              --text-main: #f3f4f6;
+              --text-sub: #9ca3af;
+              --border-color: #2e2e2e;
+              --shadow-plate: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+              --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.25);
+            }
+            body { background-color: var(--bg-color); color: var(--text-main); font-family: 'IBM Plex Sans JP', sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+            .theme-container { background: var(--container-bg); border-radius: 24px; box-shadow: var(--shadow-plate); border: 1px solid rgba(255, 255, 255, 0.04); }
+            .card { background: var(--card-bg); border-radius: 18px; border: 1px solid var(--border-color); box-shadow: var(--shadow-card); }
+            .modern-input { background: #111111 !important; color: var(--text-main) !important; border: 1px solid #333 !important; border-radius: 12px; transition: all 0.2s ease; padding: 12px 16px; font-size: 14px; width: 100%; outline: none; }
+            .modern-input:focus { border-color: var(--accent-color) !important; box-shadow: 0 0 0 2px var(--accent-glow) !important; background: #000 !important; }
+            ::-webkit-scrollbar { width: 8px; height: 8px; }
+            ::-webkit-scrollbar-track { background: var(--container-bg); border-radius: 4px; }
+            ::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
+            ::-webkit-scrollbar-thumb:hover { background: #666; }
+          `}</style>
+
+          <div className="min-h-screen p-4 sm:p-8 flex justify-center bg-[var(--bg-color)] text-[var(--text-main)] overflow-x-hidden">
+            <div className="w-full max-w-[1300px] mx-auto theme-container p-5 sm:p-8">
+              
+              <header className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 opacity-90 px-1">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                  <div className="flex items-center gap-2.5">
+                    <ListOrdered className="w-5 h-5 text-[var(--accent-color)]" />
+                    <h1 className="text-[17px] font-bold tracking-widest text-white">OBS Ranking Board Generator</h1>
+                  </div>
+                  <span className="hidden sm:block w-1 h-1 rounded-full bg-gray-600"></span>
+                  <p className="text-[11px] text-gray-500 tracking-wide font-medium">配信・録画用の高品質なパタパタランキング生成ツール</p>
+                </div>
+                
+                <div className="flex items-center gap-2 self-start sm:self-auto">
+                  <button 
+                    onClick={copyShareUrl}
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#222] text-gray-300 hover:text-white hover:bg-[#333] border border-[#333] hover:border-[#444] transition-all text-[11px] font-bold tracking-wider"
+                  >
+                    {shareCopied ? <Check className="w-3.5 h-3.5 text-green-400" /> : <LinkIcon className="w-3.5 h-3.5" />}
+                    <span>{shareCopied ? 'COPIED' : 'LINK'}</span>
+                  </button>
+                  <a 
+                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent('配信用のおしゃれなランキングが作れるツール「OBS Ranking Board Generator」')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#222] text-gray-300 hover:text-white hover:bg-[#1da1f2] hover:border-[#1da1f2] border border-[#333] transition-all text-[11px] font-bold tracking-wider group"
+                  >
+                    <Twitter className="w-3.5 h-3.5 group-hover:text-white transition-colors" />
+                    <span>POST</span>
+                  </a>
+                </div>
+              </header>
+
+              <div className="card p-4 sm:p-6 mb-6 shadow-2xl relative">
+                <h2 className="text-sm font-bold flex items-center gap-2 text-white uppercase tracking-widest mb-4">
+                  <Monitor className="w-4 h-4 text-[var(--accent-color)]" /> ライブプレビュー
+                </h2>
+                <div className="w-full relative overflow-hidden flex flex-col items-center justify-center border rounded-xl transition-all h-[450px] sm:h-[600px] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZmZiIgLz4KPHBvbHlnb24gcG9pbnRzPSIwLDAgMTAsMCAxMCwxMCAwLDEwIiBmaWxsPSIjZTVlN2ViIiAvPgo8cG9seWdvbiBwb2ludHM9IjEwLDEwIDIwLDEwIDIwLDIwIDEwLDIwIiBmaWxsPSIjZTVlN2ViIiAvPgo8L3N2Zz4=')] border-[#333]">
+                  <iframe 
+                    srcDoc={generateHTML(true, previewConfig)} 
+                    className="absolute inset-0 w-full h-full border-0"
+                    title="preview"
+                    sandbox="allow-scripts allow-same-origin"
+                  />
+                </div>
+              </div>
+
+              <div className="flex gap-2 sm:gap-3 mb-6 border-b border-[#333] pb-4 overflow-x-auto px-1">
+                {TABS.map(tab => (
+                  <button
+                    key={tab.id}
+                    onClick={() => setActiveTab(tab.id)}
+                    className={`flex items-center whitespace-nowrap gap-2 sm:gap-2.5 px-4 sm:px-6 py-3 sm:py-3.5 rounded-xl text-[13px] sm:text-[15px] font-bold transition-all ${
+                      activeTab === tab.id 
+                        ? 'bg-[var(--accent-color)] text-black shadow-[0_4px_15px_rgba(255,170,0,0.4)]' 
+                        : 'bg-[#222] text-gray-400 hover:bg-[#333] hover:text-gray-200'
+                    }`}
+                  >
+                    <tab.icon className="w-4 h-4 sm:w-5 sm:h-5" />
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+
+              <div className="relative min-h-[400px]">
+                <div className={activeTab === 'generator' ? 'block animate-[fadeIn_0.3s_ease-out]' : 'hidden'}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <div className="card p-6">
+                      <PanelHeading icon={Settings} title="基本レイアウト設定" />
+                      <div className="mb-6">
+                        <label className="block text-sm font-medium mb-2 text-gray-400">ランキング行数</label>
+                        <select value={numRows} onChange={(e) => setNumRows(Number(e.target.value))} className="modern-input">
+                          <option value={3}>TOP 3 (3行)</option>
+                          <option value={5}>TOP 5 (5行)</option>
+                          <option value={10}>TOP 10 (10行)</option>
+                          <option value={15}>TOP 15 (15行)</option>
+                          <option value={20}>TOP 20 (20行)</option>
+                        </select>
+                      </div>
+                      <div className="mb-6">
+                        <label className="block text-sm font-medium mb-2 text-gray-400">角の丸み (Border Radius)</label>
+                        <select value={roundness} onChange={(e) => setRoundness(e.target.value)} className="modern-input">
+                          <option value="sharp">シャープ (角張ったデザイン)</option>
+                          <option value="slight">やや丸</option>
+                          <option value="normal">ノーマル (標準)</option>
+                          <option value="round">ラウンド (丸みを帯びたデザイン)</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium mb-2 text-gray-400">デフォルトのタイトル</label>
+                        <input type="text" value={boardTitle} onChange={(e) => setBoardTitle(e.target.value)} className="modern-input" placeholder="例: MY BEST 10" />
+                      </div>
+                    </div>
+
+                    <div className="card p-6">
+                      <PanelHeading icon={Palette} title="カラーカスタマイズ" />
+                      <ColorPicker label="配信画面の背景色 (クロマキー用)" value={bgColor} onChange={setBgColor} />
+                      <div className="my-4 border-b border-[#333]"></div>
+                      <ColorPicker label="ボード外枠 (Chassis)" value={chassisColor} onChange={setChassisColor} />
+                      <ColorPicker label="フラップ背景 (Flap Base)" value={flapBase} onChange={setFlapBase} />
+                      <ColorPicker label="メイン文字色 (Text)" value={textColor} onChange={setTextColor} />
+                      <ColorPicker label="順位の文字色 (Rank)" value={rankColor} onChange={setRankColor} />
+                      <ColorPicker label="発表中ランプ (Indicator)" value={indicatorOn} onChange={setIndicatorOn} className="mb-0" />
+                    </div>
+
+                    <div className="card p-6 border-t-[4px] border-[var(--accent-color)] flex flex-col">
+                      <h3 className="flex items-center gap-2 text-[var(--accent-color)] font-bold text-[17px] mb-6 border-b border-[#2e2e2e] pb-3">
+                        <Code className="w-5 h-5" /> 完成したHTMLを出力
+                      </h3>
+                      <div className="flex flex-col gap-4 mb-6">
+                        <button onClick={downloadHTML} className="bg-[var(--accent-color)] hover:bg-[var(--accent-hover)] text-black w-full flex items-center justify-center gap-2 py-4 px-4 rounded-xl font-bold text-base shadow-[0_4px_15px_rgba(255,170,0,0.3)] transition-all transform hover:-translate-y-0.5">
+                          <Download className="w-6 h-6" />
+                          専用ツールとして保存
+                        </button>
+                        <button onClick={copyToClipboard} className="bg-[#252525] hover:bg-[#333] hover:border-[#444] text-[#eee] border border-[#3a3a3a] w-full flex items-center justify-center gap-2 py-4 px-4 rounded-xl font-bold text-base transition-all transform hover:-translate-y-0.5">
+                          {copied ? <Check className="w-6 h-6 text-[var(--accent-color)]" /> : <Code className="w-6 h-6" />}
+                          {copied ? 'コピーしました！' : 'HTMLをコピー'}
+                        </button>
+                      </div>
+                      <div className="bg-[#151515] p-4 rounded-xl border border-[#333] mt-auto">
+                        <p className="text-[12px] leading-relaxed text-[#9ca3af]">
+                          <strong className="text-white block mb-1.5 flex items-center gap-1"><Monitor className="w-3.5 h-3.5"/> 運用フロー</strong>
+                          保存したHTMLを手元のPCで開き、画面下部の「表示ウィンドウを開く」からOBS取り込み用の別窓を出して連動させます。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className={activeTab === 'help' ? 'block animate-[fadeIn_0.3s_ease-out]' : 'hidden'}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                    <div className="card p-6">
+                      <PanelHeading icon={Monitor} title="OBSへの基本的な導入方法" />
+                      <div className="bg-[#111] border border-[#333] p-5 rounded-2xl text-[13px] text-gray-300 leading-relaxed">
+                        <ol className="list-decimal pl-5 space-y-3">
+                          <li>右上の<strong className="text-white">「専用ツールとして保存」</strong>ボタンを押して <code>obs_ranking_board.html</code> をPCに保存します。</li>
+                          <li>配信で操作を行うPCのブラウザ（Chromeなど）で、保存したファイルを直接開きます。これが<strong>「リモコン画面」</strong>になります。</li>
+                          <li>リモコン画面の下部にある「表示ウィンドウを開く」を押し、出てきた別窓をOBSの<strong>ウィンドウキャプチャ</strong>で取り込みます。</li>
+                          <li>OBSで取り込んだソースを右クリックし、<strong>「フィルタ」→「クロマキー」</strong>を追加して背景の色（デフォルトは緑）を透過させます。</li>
+                        </ol>
+                      </div>
+                    </div>
+
+                    <div className="card p-6">
+                      <PanelHeading icon={HelpCircle} title="よくある質問 (Q&A)" />
+                      <div className="flex flex-col gap-4">
+                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
+                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> HTML Clockのようにブラウザソースで直接透過できないの？</h5>
+                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
+                            <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
+                            <span>このツールは「手元の操作パネル」と「OBSの画面」を連動させるため、同じChrome等のブラウザで両方を開く必要があります。OBSのブラウザソースとして読み込むと通信が切断されてしまうため、ウィンドウキャプチャ＋クロマキーという方式を採用しています。</span>
+                          </p>
+                        </div>
+                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
+                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> 別のPCやスマホから遠隔で操作したい</h5>
+                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
+                            <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
+                            <span>ローカル環境（ファイルを開いただけの状態）ではセキュリティ上、別のPCとは通信できません。自身のWebサーバー等にHTMLをアップロードし、URL経由でアクセスすればスマホ等からの遠隔操作が可能です。</span>
+                          </p>
+                        </div>
+                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
+                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> 保存した設定(JSON)はどうやって読み込む？</h5>
+                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
+                            <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
+                            <span>出力した <code>obs_ranking_board.html</code> を開いたリモコン画面内に「データ管理：読込」というボタンがあります。そこから前回保存した <code>plan_backup.json</code> を選択すると一瞬でテキストが復元されます。</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </>
+      );
+    }
+
+    const root = createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
