@@ -296,44 +296,39 @@ window.openModal = (pageKey) => {
     modalTitle = "プライバシーポリシー";
     const privacySource = document.getElementById('raw-privacy-policy');
     modalContent = privacySource ? privacySource.innerHTML : "プライバシーポリシーの読み込みに失敗しました。";
-  } else {
-    const pages = state.data.pagesData?.pages;
-    if (!pages) return;
+  } else if (pageKey === 'about') {
+    modalTitle = "このサイトについて";
+    
+    const sections = [
+      { id: 'raw-terms', title: '利用規約' },
+      { id: 'raw-contact', title: 'お問い合わせ' },
+      { id: 'raw-ads', title: '広告の掲載について' }
+    ];
 
-    if (pageKey === 'about') {
-      modalTitle = "このサイトについて";
-      const keysToMerge = ['terms', 'contact', 'ads'];
-      let mergedHtml = "";
-      
-      keysToMerge.forEach(key => {
-        const page = pages[key];
-        if (page) {
-          mergedHtml += `
-            <div class="mb-10 last:mb-0">
-              <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-800 pb-2 mb-4">
-                ${page.title}
-              </h4>
-              <div class="space-y-4">
-                ${page.content}
-              </div>
+    let mergedHtml = "";
+    
+    sections.forEach(sec => {
+      const el = document.getElementById(sec.id);
+      if (el) {
+        mergedHtml += `
+          <div class="mb-10 last:mb-0">
+            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-800 pb-2 mb-4">
+              ${sec.title}
+            </h4>
+            <div class="space-y-4">
+              ${el.innerHTML}
             </div>
-          `;
-        }
-      });
+          </div>
+        `;
+      }
+    });
 
-      modalContent = mergedHtml ? mergedHtml : "<p class='text-gray-500'>データの読み込みに失敗しました。ブラウザのキャッシュをクリアして再度お試しください。</p>";
-    } else {
-      const pageData = pages[pageKey];
-      if (!pageData) return;
-      modalTitle = pageData.title;
-      modalContent = pageData.content;
-    }
+    modalContent = mergedHtml ? mergedHtml : "<p class='text-gray-500'>データの読み込みに失敗しました。</p>";
   }
 
   document.getElementById('modal-title').textContent = modalTitle;
   document.getElementById('modal-body').innerHTML = modalContent;
   
-  // 文章用にサイズと余白を「広め」に設定
   const modalContainer = document.querySelector('#modal-overlay > div');
   modalContainer.className = "bg-white dark:bg-[#1c1c1c] w-full max-w-2xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800";
   document.getElementById('modal-body').className = "p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed";
@@ -341,7 +336,7 @@ window.openModal = (pageKey) => {
   const overlay = document.getElementById('modal-overlay');
   overlay.classList.remove('hidden');
   overlay.classList.add('flex');
-  document.body.style.overflow = 'hidden'; // 背後のスクロール防止
+  document.body.style.overflow = 'hidden';
 };
 
 window.closeModal = () => {
