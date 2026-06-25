@@ -55,6 +55,13 @@
       "is_visible": true
     },
     {
+      "id": "tool_20260625130002",
+      "title": "TIMER GEN",
+      "content_url": "https://cdn.neura-music.com/tools/neura_timer_generator.html",
+      "date": "2026-06-25",
+      "is_visible": true
+    },
+    {
       "id": "tool_20260614162531",
       "title": "Youtube拡張ツール",
       "content_url": "contents/tools/neuratube/neuratube_introduction_user_manual.html",
@@ -89,14 +96,14 @@
       "title": "曲生成フロー",
       "content_url": "contents/articles/code_artifact.html",
       "date": "2026-06-14",
-      "is_visible": true
+      "is_visible": false
     },
     {
       "id": "article_20260615171158",
       "title": "SPAのSEO",
       "content_url": "contents/articles/seoblog-1.html",
       "date": "2026-06-15",
-      "is_visible": true
+      "is_visible": false
     },
     {
       "id": "article_20260616111456",
