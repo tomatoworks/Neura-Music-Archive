@@ -12,7 +12,9 @@ export const state = {
   currentMode: 'theme',
   currentContentId: null,
   isSelectMode: false,
-  selectedTracks: new Set()
+  selectedTracks: new Set(),
+  repeatMode: 'none',
+  isShuffle: false
 };
 
 window.state = state;

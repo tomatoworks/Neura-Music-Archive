@@ -122,37 +122,44 @@
     </main>
   </div>
 
-  <footer class="fixed bottom-0 left-0 right-0 z-50 bg-white/70 dark:bg-[#242424]/70 backdrop-blur-xl border-t border-gray-200/50 dark:border-gray-800/50 px-4 py-3 flex items-center justify-between h-20">
-    <div class="flex items-center space-x-3 w-1/4 min-w-[120px]">
-      <button id="btn-prev" class="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition">
+  <footer class="fixed bottom-0 left-0 right-0 z-50 bg-[#43657E]/80 border-t border-[#43657E]/50 px-4 py-1.5 flex items-center justify-between h-16 shadow-[0_-4px_10px_rgba(0,0,0,0.15)]">
+    <div class="flex items-center space-x-2 md:space-x-3 w-1/4 min-w-[160px] md:min-w-[180px]">
+      <button id="btn-shuffle" class="text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="シャッフル">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+      </button>
+      <button id="btn-prev" class="text-white/90 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
       </button>
-      <button id="main-play-btn" class="w-10 h-10 flex items-center justify-center bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full hover:bg-gray-700 dark:hover:bg-gray-200 transition shadow-sm">
+      <button id="main-play-btn" class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-white text-[#43657E] rounded-full hover:bg-gray-100 transition shadow-lg shadow-black/20 border border-white/50 transform hover:scale-105 active:scale-95">
         <svg id="icon-play" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
         <svg id="icon-pause" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
       </button>
-      <button id="btn-next" class="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition">
+      <button id="btn-next" class="text-white/90 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+      </button>
+      <button id="btn-repeat" class="relative text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="リピート">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+        <span id="repeat-badge" class="absolute -top-1.5 -right-1.5 text-[9px] font-bold hidden bg-white text-[#43657E] rounded-full w-3.5 h-3.5 text-center leading-[14px] shadow-sm">1</span>
       </button>
     </div>
 
     <div class="flex-1 flex items-center px-4 md:px-8">
-      <div class="w-10 h-10 md:w-11 md:h-11 bg-gray-50 dark:bg-gray-800 rounded flex-shrink-0 flex items-center justify-center overflow-hidden border border-gray-100 dark:border-gray-700 mr-3">
+      <div class="w-12 h-12 md:w-14 md:h-14 bg-black/10 rounded flex-shrink-0 flex items-center justify-center overflow-hidden border border-white/40 shadow-md mr-3">
         <img id="player-album-art" src="" class="w-full h-full object-cover hidden" alt="Album Art">
-        <svg id="player-album-placeholder" class="w-5 h-5 text-gray-300 dark:text-gray-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+        <svg id="player-album-placeholder" class="w-5 h-5 text-white/60" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
       </div>
       <div class="flex-1 flex flex-col justify-center min-w-0">
-        <div class="text-sm font-semibold text-gray-800 dark:text-gray-100 mb-1 truncate" id="player-track-name">未選択 - トラックを選択</div>
-        <div class="flex items-center space-x-2 text-xs text-gray-400">
+        <div class="text-sm font-semibold text-white drop-shadow-md mb-1 truncate" id="player-track-name">未選択 - 曲を選択してください</div>
+        <div class="flex items-center space-x-2 text-xs text-white/90 drop-shadow-sm">
           <span id="player-time-current">0:00</span>
-          <input type="range" min="0" max="100" value="0" class="flex-1 accent-gray-900 dark:accent-gray-100">
+          <input type="range" min="0" max="100" value="0" class="flex-1 accent-white shadow-sm cursor-pointer">
           <span id="player-time-total">0:00</span>
         </div>
       </div>
     </div>
 
     <div class="w-1/4 flex justify-end min-w-[80px]">
-      <button id="footer-dl-btn" class="flex items-center space-x-1 text-sm font-medium text-gray-400 dark:text-gray-600 bg-gray-50 dark:bg-gray-900 cursor-not-allowed px-3 py-1.5 rounded transition" disabled>
+      <button id="footer-dl-btn" class="flex items-center space-x-1 text-sm font-medium text-white/50 bg-black/10 cursor-not-allowed px-3 py-1.5 rounded transition shadow-inner border border-transparent" disabled>
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
         <span class="hidden md:inline">DL</span>
       </button>

@@ -305,6 +305,8 @@ function createAlbumCardHtml(themeId, album) {
     ? `onclick="event.preventDefault(); event.stopPropagation(); playTrack('${firstPlayableTrack.id}', '${firstPlayableTrack.title.replace(/'/g, "\\'")}', '${firstPlayableTrack.type}', ${firstPlayableTrack.duration}, '${album.art}')"` 
     : `style="cursor: not-allowed; opacity: 0.5;" title="音源がありません" disabled`;
 
+  const isThisAlbumPlaying = firstPlayableTrack && state.playingTrack === firstPlayableTrack.id && state.isPlaying;
+
   return `
     <div class="group border border-gray-100 dark:border-[#333333] rounded-xl overflow-hidden hover:shadow-lg hover:border-gray-200 dark:hover:border-gray-400 transition bg-white dark:bg-[#242424] flex flex-col">
       <a href="/theme/${themeId}/album/${album.id}" class="relative cursor-pointer block" onclick="event.preventDefault(); selectAlbum('${themeId}', '${album.id}')">
@@ -312,7 +314,10 @@ function createAlbumCardHtml(themeId, album) {
           <img src="${album.art}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Art" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
             <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 shadow-xl text-gray-900 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300" ${playAction}>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              ${isThisAlbumPlaying 
+                ? `<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`
+                : `<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>`
+              }
             </button>
           </div>
           <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[15px] font-medium px-3 py-1.5 rounded-md flex items-center gap-1.5 z-10 pointer-events-none">
