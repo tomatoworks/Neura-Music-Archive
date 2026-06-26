@@ -539,7 +539,7 @@
           </script>
         
   </main>
-    <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+  <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
     <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800 text-gray-800 dark:text-gray-100" onclick="event.stopPropagation()">
       <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
         <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
@@ -552,40 +552,111 @@
     </div>
   </div>
 
+  <div id="raw-privacy-policy" class="hidden">
+    <div class="space-y-4">
+      <p>当サイトは、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。</p>
+      <p>当サイトにおいて、氏名やメールアドレス等の個人情報を直接取得・保存することはありません。</p>
+      <p>なお、サイトの閲覧に伴い、セキュリティ対策や利便性向上のため、IPアドレス等の技術的情報が自動的に送受信されますが、これらを個人を特定する目的で利用したり、永続的に保存したりすることはありません。</p>
+      <p>当サイトで提供される楽曲は、利用規約の範囲内で安全にご利用いただけます。</p>
+    </div>
+  </div>
+
+  <div id="raw-terms" class="hidden">
+    <div class="space-y-4">
+      <p>1. 著作権と利用許諾：提供される楽曲の著作権は制作者に帰属します。ユーザーは、非商用・商用を問わず、本楽曲を無料で利用することができます。</p>
+      <p>2. 禁止事項：楽曲の二次配布、販売、および自作発言は固く禁じます。</p>
+      <p>3. AI生成物の明示と識別情報：当サイトで公開されるすべての音源は、生成AIにより作成されたコンテンツです。EU AI法を含む各地域の法令に基づき、AI生成物であることを明示しています。また、音源にはGoogle SynthID等の識別情報が埋め込まれており、AI生成であることを確認できる仕組みが含まれています。これらの識別情報は利用者の個人情報とは無関係であり、追跡や特定を目的とするものではありません。</p>
+    </div>
+  </div>
+
+  <div id="raw-contact" class="hidden">
+    <div class="space-y-4">
+      <p>サービスに関するご質問やお問い合わせは、以下の連絡先までお願いいたします。</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+        <a href="mailto:neura.jp.project@gmail.com" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">Email</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura.jp.project@gmail.com</span>
+        </a>
+        <a href="https://www.youtube.com/@Neura-music-Archive" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">YouTube</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@Neura-music-Archive</span>
+        </a>
+        <a href="https://x.com/neura_music" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">X</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@neura_music</span>
+        </a>
+        <a href="https://neura-music.booth.pm/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">BOOTH</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura-music.booth.pm</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="raw-ads" class="hidden">
+    <div class="space-y-4">
+      <p>当サイトでは、サービスの安定的かつ継続的な提供を目的として、一部のページに広告を掲載しております。ユーザーの皆様のご理解とご協力をお願い申し上げます。</p>
+    </div>
+  </div>
+
   <script>
     (function() {
-      let pagesData = null;
-      async function loadPagesData() {
-        try {
-          const res = await fetch('/data/pages.json');
-          if (res.ok) {
-            const data = await res.json();
-            pagesData = data.pages;
-          }
-        } catch (e) {
-          console.error("Failed to load pages.json", e);
+      function openModal(pageKey) {
+        let modalTitle = "";
+        let modalContent = "";
+
+        if (pageKey === 'privacy') {
+          modalTitle = "プライバシーポリシー";
+          const privacySource = document.getElementById('raw-privacy-policy');
+          modalContent = privacySource ? privacySource.innerHTML : "プライバシーポリシーの読み込みに失敗しました。";
+        } else if (pageKey === 'about') {
+          modalTitle = "このサイトについて";
+          
+          const sections = [
+            { id: 'raw-terms', title: '利用規約' },
+            { id: 'raw-contact', title: 'お問い合わせ' },
+            { id: 'raw-ads', title: '広告の掲載について' }
+          ];
+
+          let mergedHtml = "";
+          
+          sections.forEach(sec => {
+            const el = document.getElementById(sec.id);
+            if (el) {
+              mergedHtml += `
+                <div class="mb-10 last:mb-0">
+                  <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-800 pb-2 mb-4">
+                    ${sec.title}
+                  </h4>
+                  <div class="space-y-4">
+                    ${el.innerHTML}
+                  </div>
+                </div>
+              `;
+            }
+          });
+
+          modalContent = mergedHtml ? mergedHtml : "<p class='text-gray-500'>データの読み込みに失敗しました。</p>";
         }
-      }
-      async function openModal(pageKey) {
-        if (!pagesData) {
-          await loadPagesData();
-        }
+
         const modal = document.getElementById('modal-overlay');
         const titleEl = document.getElementById('modal-title');
         const bodyEl = document.getElementById('modal-body');
         
-        if (modal && pagesData && pagesData[pageKey]) {
-          titleEl.innerText = pagesData[pageKey].title;
-          bodyEl.innerHTML = pagesData[pageKey].content;
+        if (modal) {
+          titleEl.textContent = modalTitle;
+          bodyEl.innerHTML = modalContent;
           modal.style.display = 'flex';
         }
       }
+
       function closeModal() {
         const modal = document.getElementById('modal-overlay');
         if (modal) {
           modal.style.display = 'none';
         }
       }
+
       window.openModal = openModal;
       window.closeModal = closeModal;
 

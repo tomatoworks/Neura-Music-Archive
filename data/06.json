@@ -18,7 +18,8 @@
       "caption": "バトルシーンに仕様できるドラマチックでシネマチックな音楽",
       "albums": [
         "album_1782297107869",
-        "album_1782357377180"
+        "album_1782357377180",
+        "album_1782503096804"
       ]
     }
   ],
@@ -136,6 +137,27 @@
         "track_1782359247169_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Battle\\Modern Battle EDM",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1782503096804",
+      "title": "Orchestra Battle",
+      "art": "https://cdn.neura-music.com/06game/Battle/Orchestra%20Battle/cover_1782504950358.webp",
+      "caption": "ストリングスとブラスを中心にした、ファンタジーRPGの戦闘シーン向けオーケストラBGM集。 緊張感のあるリズムと重厚なハーモニーで、バトルの“動き”と“危機感”を短い楽曲に凝縮しています。",
+      "categoryId": "cat_1782297071446",
+      "tracks": [
+        "track_1782504769768_0",
+        "track_1782504769771_1",
+        "track_1782504769771_2",
+        "track_1782504769771_3",
+        "track_1782504769771_4",
+        "track_1782504769771_5",
+        "track_1782504769771_6",
+        "track_1782504769771_7",
+        "track_1782504769771_8",
+        "track_1782504769771_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Battle\\Orchestra Battle",
       "type": "instrumental"
     }
   ],
@@ -1119,6 +1141,166 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-06-25"
+    },
+    {
+      "id": "track_1782504769768_0",
+      "title": "Through The Narrow Pass",
+      "caption": "狭い隘路を駆ける疾走感。緊張とドラマが交差する、ダイナミックなサウンドスケープだ。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Orchestra%20Battle/Through_the_Narrow_Pass.mp3",
+      "tags": [
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-26"
+    },
+    {
+      "id": "track_1782504769771_1",
+      "title": "Siege At Daybreak",
+      "caption": "夜明け前の戦場の静寂から始まる物語。張り詰めた緊迫感と共に、壮大な序章を告げるリズム。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Orchestra%20Battle/Siege_at_Daybreak.mp3",
+      "tags": [
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-26"
+    },
+    {
+      "id": "track_1782504769771_2",
+      "title": "Seconds Before Impact",
+      "caption": "全てが動き出す直前、秒針の音と心拍が描く決定的瞬間。高まる予感を描き出すサウンドデザイン。",
+      "type": "instrumental",
+      "duration": 140,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Orchestra%20Battle/Seconds_Before_Impact.mp3",
+      "tags": [
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-26"
+    },
+    {
+      "id": "track_1782504769771_3",
+      "title": "The Final Gambit",
+      "caption": "運命を左右する最後の賭け。期待と危機感が交錯し、切迫したドラマを生み出すクライマックスのための音響。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Orchestra%20Battle/The_Final_Gambit.mp3",
+      "tags": [
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-26"
+    },
+    {
+      "id": "track_1782504769771_4",
+      "title": "Hard Turn Ahead",
+      "caption": "",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Orchestra%20Battle/Hard_Turn_Ahead.mp3",
+      "tags": [
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-26"
+    },
+    {
+      "id": "track_1782504769771_5",
+      "title": "Dawn At The Outer Gate",
+      "caption": "物語の舞台となる場所。夜明けの重厚な空気と、新たな挑戦へ向かう微かな期待感が漂う瞬間を描写する。",
+      "type": "instrumental",
+      "duration": 168,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Orchestra%20Battle/Dawn_at_the_Outer_Gate.mp3",
+      "tags": [
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-26"
+    },
+    {
+      "id": "track_1782504769771_6",
+      "title": "The Silent Charge",
+      "caption": "戦闘開始前の静寂に包まれる緊張感。クライマックスを目前にした高揚感を予感させる、重厚で壮大なサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 150,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Orchestra%20Battle/The_Silent_Charge.mp3",
+      "tags": [
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-26"
+    },
+    {
+      "id": "track_1782504769771_7",
+      "title": "Under The Iron Canopy",
+      "caption": "巨大な構造物の中を進む感覚。機械的なリズムと空間が、未知の世界への冒険を誘うシネマティックな音像。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Orchestra%20Battle/Under_the_Iron_Canopy.mp3",
+      "tags": [
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-26"
+    },
+    {
+      "id": "track_1782504769771_8",
+      "title": "The Heavy Tide",
+      "caption": "深い水面下のように漂う重圧感。「潮の満ち引き」に見立てた、期待と不安が複雑に絡み合う壮大な情景描写。",
+      "type": "instrumental",
+      "duration": 153,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Orchestra%20Battle/The_Heavy_Tide.mp3",
+      "tags": [
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-26"
+    },
+    {
+      "id": "track_1782504769771_9",
+      "title": "Steel Against Willow",
+      "caption": "対比的な要素（鋼と柳）が激しく衝突する様子を音で描く。ドラマティックな展開と、研ぎ澄まされた緊張感を放つサウンドトラック。",
+      "type": "instrumental",
+      "duration": 182,
+      "full_url": "https://cdn.neura-music.com/06game/Battle/Orchestra%20Battle/Steel_Against_Willow.mp3",
+      "tags": [
+        "疾走感",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-26"
     }
   ]
 }
