@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neura Music Archive - AI BGM Portal & Creator Tools</title>
-  <meta name="description" content="AIが生成した商用利用可能・クレジット表記不要の高品質なBGMを無料ダウンロードできる「Neura Music Archive」。動画や配信用BGMに加え、OBS等で使える便利なHTML時計などクリエイター向けツールも公開中。">
+  <title>Neura Music Archive - BGM de IA Gratis y Música Sin Copyright</title>
+  <meta name="description" content="Descarga BGM de IA de alta calidad y libre de derechos gratis. Ideal para vídeos, streams (OBS) y juegos. Uso comercial permitido, sin necesidad de dar créditos. También ofrecemos herramientas útiles para creadores como relojes HTML.">
   
-  <meta property="og:title" content="Neura Music Archive - AI BGM Portal & Creator Tools">
-  <meta property="og:description" content="商用利用可・クレジット表記不要のAI生成BGMが全曲無料DL！OBSで使えるクリエイター向け便利ツールも公開中。">
+  <meta property="og:title" content="Neura Music Archive - BGM de IA Gratis y Música Sin Copyright">
+  <meta property="og:description" content="¡Descarga gratuita de BGM de IA libre de derechos! Uso comercial permitido, sin necesidad de créditos. Perfecto para OBS y creación de vídeos.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://neura-music.com/">
+  <meta property="og:url" content="https://neura-music.com/lang/es/">
   <meta property="og:image" content="https://neura-music.com/assets/og-image.jpg">
   
   <meta name="twitter:card" content="summary_large_image">
@@ -30,35 +30,12 @@
   <link rel="alternate" hreflang="ja" href="https://neura-music.com/" />
   <link rel="alternate" hreflang="en" href="https://neura-music.com/lang/en/" />
   <link rel="alternate" hreflang="zh" href="https://neura-music.com/lang/zh/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://neura-music.com/lang/zh-hant/" />
   <link rel="alternate" hreflang="ko" href="https://neura-music.com/lang/ko/" />
   <link rel="alternate" hreflang="es" href="https://neura-music.com/lang/es/" />
   <link rel="alternate" hreflang="pt" href="https://neura-music.com/lang/pt/" />
   <link rel="alternate" hreflang="ru" href="https://neura-music.com/lang/ru/" />
   <link rel="alternate" hreflang="hi" href="https://neura-music.com/lang/hi/" />
   <link rel="alternate" hreflang="x-default" href="https://neura-music.com/lang/en/" />
-  <script>
-    (function() {
-      if (sessionStorage.getItem('lang_redirected')) return;
-
-      const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
-      let targetPath = '';
-
-      if (userLang.startsWith('en')) targetPath = '/lang/en/';
-      else if (userLang.startsWith('zh-tw') || userLang.startsWith('zh-hk') || userLang.startsWith('zh-mo') || userLang.includes('hant')) targetPath = '/lang/zh-hant/';
-      else if (userLang.startsWith('zh')) targetPath = '/lang/zh/';
-      else if (userLang.startsWith('ko')) targetPath = '/lang/ko/';
-      else if (userLang.startsWith('es')) targetPath = '/lang/es/';
-      else if (userLang.startsWith('pt')) targetPath = '/lang/pt/';
-      else if (userLang.startsWith('ru')) targetPath = '/lang/ru/';
-      else if (userLang.startsWith('hi')) targetPath = '/lang/hi/';
-
-      if (targetPath) {
-        sessionStorage.setItem('lang_redirected', 'true');
-        window.location.href = targetPath;
-      }
-    })();
-  </script>
 </head>
 <body class="h-screen flex flex-col overflow-hidden text-gray-800 dark:text-gray-100 bg-white dark:bg-[#1c1c1c] font-sans">
 
@@ -81,7 +58,7 @@
         <div class="hidden md:flex items-center space-x-7">
           <div class="relative inline-block">
             <select id="generator-selector" onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
-              <option value="">Generatorを選択</option>
+              <option value="">Seleccionar Generador</option>
               <option value="/tools/clock-generator.html">CLOCK GEN</option>
               <option value="/tools/ranking-generator.html">BEST10 GEN</option>
               <option value="/tools/overlay/">OVERLAY GEN</option>
@@ -93,8 +70,8 @@
           </div>
           
           <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
-            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
-            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">Política de Privacidad</a>
+            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">Sobre Nosotros</a>
           </div>
         </div>
 
@@ -106,29 +83,29 @@
     </div>
 
     <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
-      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+      <span class="font-semibold text-gray-800 dark:text-gray-200">Música Generada por IA</span> / Uso Comercial OK / Sin Necesidad de Créditos / Descarga 100% Gratis / Herramientas para Streamers y OBS
     </div>
   </header>
 
   <div class="flex-1 flex flex-col md:flex-row overflow-hidden">
     <aside class="w-[240px] bg-[#fafafa] dark:bg-[#1c1c1c] border-r dark:border-gray-800 overflow-y-auto hidden md:block flex-shrink-0 pb-24 flex flex-col">
       <div class="p-6 flex-1 flex flex-col">
-        <h2 class="text-sm font-bold text-gray-400 tracking-wider mb-4 uppercase">Themes</h2>
+        <h2 class="text-sm font-bold text-gray-400 tracking-wider mb-4 uppercase">Temas</h2>
         <ul class="space-y-1" id="theme-list">
         </ul>
         
         <div class="mt-5 mb-2">
-          <input type="text" id="search-input" placeholder="曲名やタグで検索..." class="w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 shadow-sm">
+          <input type="text" id="search-input" placeholder="Buscar pistas o etiquetas..." class="w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 shadow-sm">
         </div>
 
         <div class="mb-2">
-          <a href="https://forms.gle/DXzSJvVEo4sv98dr7" target="_blank" rel="noopener noreferrer" title="別タブで開きます" class="block w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm text-center shadow-sm hover:bg-gray-100 dark:hover:bg-gray-800 transition focus:outline-none focus:border-gray-500 dark:focus:border-gray-400">REQUEST</a>
+          <a href="https://forms.gle/DXzSJvVEo4sv98dr7" target="_blank" rel="noopener noreferrer" title="Se abre en una pestaña nueva" class="block w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm text-center shadow-sm hover:bg-gray-100 dark:hover:bg-gray-800 transition focus:outline-none focus:border-gray-500 dark:focus:border-gray-400">SOLICITAR</a>
         </div>
 
-        <h2 id="tools-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Tools</h2>
+        <h2 id="tools-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Herramientas</h2>
         <ul class="space-y-1" id="tool-list">
         </ul>
-        <h2 id="articles-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Articles</h2>
+        <h2 id="articles-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Artículos</h2>
         <ul class="space-y-1" id="article-list">
         </ul>
         
@@ -157,7 +134,7 @@
 
   <footer class="fixed bottom-0 left-0 right-0 z-50 bg-[#43657E]/80 border-t border-[#43657E]/50 px-4 py-1.5 flex items-center justify-between h-16 shadow-[0_-4px_10px_rgba(0,0,0,0.15)]">
     <div class="flex items-center space-x-2 md:space-x-3 w-1/4 min-w-[160px] md:min-w-[180px]">
-      <button id="btn-shuffle" class="text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="シャッフル">
+      <button id="btn-shuffle" class="text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="Aleatorio">
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
       </button>
       <button id="btn-prev" class="text-white/90 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0">
@@ -170,7 +147,7 @@
       <button id="btn-next" class="text-white/90 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
       </button>
-      <button id="btn-repeat" class="relative text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="リピート">
+      <button id="btn-repeat" class="relative text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="Repetir">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
         <span id="repeat-badge" class="absolute -top-1.5 -right-1.5 text-[9px] font-bold hidden bg-white text-[#43657E] rounded-full w-3.5 h-3.5 text-center leading-[14px] shadow-sm">1</span>
       </button>
@@ -182,7 +159,7 @@
         <svg id="player-album-placeholder" class="w-5 h-5 text-white/60" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
       </div>
       <div class="flex-1 flex flex-col justify-center min-w-0">
-        <div class="text-sm font-semibold text-white drop-shadow-md mb-1 truncate" id="player-track-name">未選択 - 曲を選択してください</div>
+        <div class="text-sm font-semibold text-white drop-shadow-md mb-1 truncate" id="player-track-name">Ninguna pista seleccionada - Por favor elige una pista</div>
         <div class="flex items-center space-x-2 text-xs text-white/90 drop-shadow-sm">
           <span id="player-time-current">0:00</span>
           <input type="range" min="0" max="100" value="0" class="flex-1 accent-white shadow-sm cursor-pointer">
@@ -216,24 +193,24 @@
 
   <div id="raw-privacy-policy" class="hidden">
     <div class="space-y-4">
-      <p>当サイトは、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。</p>
-      <p>当サイトにおいて、氏名やメールアドレス等の個人情報を直接取得・保存することはありません。</p>
-      <p>なお、サイトの閲覧に伴い、セキュリティ対策や利便性向上のため、IPアドレス等の技術的情報が自動的に送受信されますが、これらを個人を特定する目的で利用したり、永続的に保存したりすることはありません。</p>
-      <p>当サイトで提供される楽曲は、利用規約の範囲内で安全にご利用いただけます。</p>
+      <p>Valoramos enormemente su privacidad y nos comprometemos a proteger su información personal.</p>
+      <p>Este sitio no recopila ni almacena directamente ningún dato personal, como su nombre o dirección de correo electrónico.</p>
+      <p>Tenga en cuenta que, al navegar por este sitio, se transmiten automáticamente ciertos datos técnicos (como su dirección IP) para mantener la seguridad y mejorar la experiencia del usuario. Sin embargo, estos datos nunca se utilizan para identificar a las personas, ni se almacenan de forma permanente.</p>
+      <p>Toda la música proporcionada en esta plataforma se puede integrar de forma segura en su contenido de acuerdo con nuestros Términos de Servicio.</p>
     </div>
   </div>
 
   <div id="raw-terms" class="hidden">
     <div class="space-y-4">
-      <p>1. 著作権と利用許諾：提供される楽曲の著作権は制作者に帰属します。ユーザーは、非商用・商用を問わず、本楽曲を無料で利用することができます。</p>
-      <p>2. 禁止事項：楽曲の二次配布、販売、および自作発言は固く禁じます。</p>
-      <p>3. AI生成物の明示と識別情報：当サイトで公開されるすべての音源は、生成AIにより作成されたコンテンツです。EU AI法を含む各地域の法令に基づき、AI生成物であることを明示しています。また、音源にはGoogle SynthID等の識別情報が埋め込まれており、AI生成であることを確認できる仕組みが含まれています。これらの識別情報は利用者の個人情報とは無関係であり、追跡や特定を目的とするものではありません。</p>
+      <p>1. Derechos de autor y licencia de uso: Los derechos de autor de toda la música disponible en esta plataforma pertenecen al creador. Se concede a los usuarios una licencia no exclusiva para utilizar estas pistas de forma gratuita, tanto para fines comerciales como no comerciales.</p>
+      <p>2. Contenido prohibido: Queda terminantemente prohibida la distribución secundaria, la venta o la reclamación de propiedad (afirmar falsamente que ha creado la pista) de los archivos de audio.</p>
+      <p>3. Contenido generado por IA y cumplimiento (Ley de IA de la UE y SynthID): Todas las pistas de audio proporcionadas en este sitio son generadas por IA. En cumplimiento con las normativas regionales, incluida la Ley de IA de la UE, garantizamos la transparencia de nuestro contenido generado por IA. Además, nuestros archivos de audio contienen marcas de agua digitales (como Google SynthID) para identificarlos como generados por IA. Estos identificadores no contienen ninguna información personal y no se utilizan para rastrear a los usuarios.</p>
     </div>
   </div>
 
   <div id="raw-contact" class="hidden">
     <div class="space-y-4">
-      <p>サービスに関するご質問やお問い合わせは、以下の連絡先までお願いいたします。</p>
+      <p>Para consultas, preguntas u oportunidades de negocio relacionadas con nuestro servicio, póngase en contacto con nosotros a través de los siguientes enlaces:</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
         <a href="mailto:neura.jp.project@gmail.com" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
           <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">Email</span>
@@ -257,7 +234,7 @@
 
   <div id="raw-ads" class="hidden">
     <div class="space-y-4">
-      <p>当サイトでは、サービスの安定的かつ継続的な提供を目的として、一部のページに広告を掲載しております。ユーザーの皆様のご理解とご協力をお願い申し上げます。</p>
+      <p>Para mantener nuestros servicios estables y completamente gratuitos para los creadores, mostramos anuncios en ciertas secciones de nuestro sitio web. Agradecemos enormemente su comprensión y apoyo.</p>
     </div>
   </div>
 </body>

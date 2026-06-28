@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neura Music Archive - AI BGM Portal & Creator Tools</title>
-  <meta name="description" content="AIが生成した商用利用可能・クレジット表記不要の高品質なBGMを無料ダウンロードできる「Neura Music Archive」。動画や配信用BGMに加え、OBS等で使える便利なHTML時計などクリエイター向けツールも公開中。">
+  <title>Neura Music Archive - 免費AI BGM & 無版權音樂</title>
+  <meta name="description" content="免費下載高品質、免版稅的AI生成BGM。非常適合影片、直播（OBS）和遊戲使用。支援商用，無需署名。我們還為創作者提供HTML時鐘等實用工具。">
   
-  <meta property="og:title" content="Neura Music Archive - AI BGM Portal & Creator Tools">
-  <meta property="og:description" content="商用利用可・クレジット表記不要のAI生成BGMが全曲無料DL！OBSで使えるクリエイター向け便利ツールも公開中。">
+  <meta property="og:title" content="Neura Music Archive - 免費AI BGM & 無版權音樂">
+  <meta property="og:description" content="免費下載免版稅AI BGM！支援商用，無需署名。OBS及影片創作的完美選擇。">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://neura-music.com/">
+  <meta property="og:url" content="https://neura-music.com/lang/zh-hant/">
   <meta property="og:image" content="https://neura-music.com/assets/og-image.jpg">
   
   <meta name="twitter:card" content="summary_large_image">
@@ -37,28 +37,6 @@
   <link rel="alternate" hreflang="ru" href="https://neura-music.com/lang/ru/" />
   <link rel="alternate" hreflang="hi" href="https://neura-music.com/lang/hi/" />
   <link rel="alternate" hreflang="x-default" href="https://neura-music.com/lang/en/" />
-  <script>
-    (function() {
-      if (sessionStorage.getItem('lang_redirected')) return;
-
-      const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
-      let targetPath = '';
-
-      if (userLang.startsWith('en')) targetPath = '/lang/en/';
-      else if (userLang.startsWith('zh-tw') || userLang.startsWith('zh-hk') || userLang.startsWith('zh-mo') || userLang.includes('hant')) targetPath = '/lang/zh-hant/';
-      else if (userLang.startsWith('zh')) targetPath = '/lang/zh/';
-      else if (userLang.startsWith('ko')) targetPath = '/lang/ko/';
-      else if (userLang.startsWith('es')) targetPath = '/lang/es/';
-      else if (userLang.startsWith('pt')) targetPath = '/lang/pt/';
-      else if (userLang.startsWith('ru')) targetPath = '/lang/ru/';
-      else if (userLang.startsWith('hi')) targetPath = '/lang/hi/';
-
-      if (targetPath) {
-        sessionStorage.setItem('lang_redirected', 'true');
-        window.location.href = targetPath;
-      }
-    })();
-  </script>
 </head>
 <body class="h-screen flex flex-col overflow-hidden text-gray-800 dark:text-gray-100 bg-white dark:bg-[#1c1c1c] font-sans">
 
@@ -81,7 +59,7 @@
         <div class="hidden md:flex items-center space-x-7">
           <div class="relative inline-block">
             <select id="generator-selector" onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
-              <option value="">Generatorを選択</option>
+              <option value="">選擇生成器</option>
               <option value="/tools/clock-generator.html">CLOCK GEN</option>
               <option value="/tools/ranking-generator.html">BEST10 GEN</option>
               <option value="/tools/overlay/">OVERLAY GEN</option>
@@ -93,8 +71,8 @@
           </div>
           
           <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
-            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
-            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">隱私權政策</a>
+            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">關於我們</a>
           </div>
         </div>
 
@@ -106,29 +84,29 @@
     </div>
 
     <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
-      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成音樂</span> / 支援商用 / 無需署名 / 100%免費下載 / 專為實況主與OBS打造的工具
     </div>
   </header>
 
   <div class="flex-1 flex flex-col md:flex-row overflow-hidden">
     <aside class="w-[240px] bg-[#fafafa] dark:bg-[#1c1c1c] border-r dark:border-gray-800 overflow-y-auto hidden md:block flex-shrink-0 pb-24 flex flex-col">
       <div class="p-6 flex-1 flex flex-col">
-        <h2 class="text-sm font-bold text-gray-400 tracking-wider mb-4 uppercase">Themes</h2>
+        <h2 class="text-sm font-bold text-gray-400 tracking-wider mb-4 uppercase">主題</h2>
         <ul class="space-y-1" id="theme-list">
         </ul>
         
         <div class="mt-5 mb-2">
-          <input type="text" id="search-input" placeholder="曲名やタグで検索..." class="w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 shadow-sm">
+          <input type="text" id="search-input" placeholder="搜尋曲目或標籤..." class="w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 shadow-sm">
         </div>
 
         <div class="mb-2">
-          <a href="https://forms.gle/DXzSJvVEo4sv98dr7" target="_blank" rel="noopener noreferrer" title="別タブで開きます" class="block w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm text-center shadow-sm hover:bg-gray-100 dark:hover:bg-gray-800 transition focus:outline-none focus:border-gray-500 dark:focus:border-gray-400">REQUEST</a>
+          <a href="https://forms.gle/DXzSJvVEo4sv98dr7" target="_blank" rel="noopener noreferrer" title="在新分頁中開啟" class="block w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm text-center shadow-sm hover:bg-gray-100 dark:hover:bg-gray-800 transition focus:outline-none focus:border-gray-500 dark:focus:border-gray-400">提交需求</a>
         </div>
 
-        <h2 id="tools-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Tools</h2>
+        <h2 id="tools-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">工具</h2>
         <ul class="space-y-1" id="tool-list">
         </ul>
-        <h2 id="articles-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Articles</h2>
+        <h2 id="articles-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">文章</h2>
         <ul class="space-y-1" id="article-list">
         </ul>
         
@@ -157,7 +135,7 @@
 
   <footer class="fixed bottom-0 left-0 right-0 z-50 bg-[#43657E]/80 border-t border-[#43657E]/50 px-4 py-1.5 flex items-center justify-between h-16 shadow-[0_-4px_10px_rgba(0,0,0,0.15)]">
     <div class="flex items-center space-x-2 md:space-x-3 w-1/4 min-w-[160px] md:min-w-[180px]">
-      <button id="btn-shuffle" class="text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="シャッフル">
+      <button id="btn-shuffle" class="text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="隨機播放">
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
       </button>
       <button id="btn-prev" class="text-white/90 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0">
@@ -170,7 +148,7 @@
       <button id="btn-next" class="text-white/90 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
       </button>
-      <button id="btn-repeat" class="relative text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="リピート">
+      <button id="btn-repeat" class="relative text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="循環播放">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
         <span id="repeat-badge" class="absolute -top-1.5 -right-1.5 text-[9px] font-bold hidden bg-white text-[#43657E] rounded-full w-3.5 h-3.5 text-center leading-[14px] shadow-sm">1</span>
       </button>
@@ -182,7 +160,7 @@
         <svg id="player-album-placeholder" class="w-5 h-5 text-white/60" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
       </div>
       <div class="flex-1 flex flex-col justify-center min-w-0">
-        <div class="text-sm font-semibold text-white drop-shadow-md mb-1 truncate" id="player-track-name">未選択 - 曲を選択してください</div>
+        <div class="text-sm font-semibold text-white drop-shadow-md mb-1 truncate" id="player-track-name">未選擇曲目 - 請選擇一首曲目</div>
         <div class="flex items-center space-x-2 text-xs text-white/90 drop-shadow-sm">
           <span id="player-time-current">0:00</span>
           <input type="range" min="0" max="100" value="0" class="flex-1 accent-white shadow-sm cursor-pointer">
@@ -194,7 +172,7 @@
     <div class="w-1/4 flex justify-end min-w-[80px]">
       <button id="footer-dl-btn" class="flex items-center space-x-1 text-sm font-medium text-white/50 bg-black/10 cursor-not-allowed px-3 py-1.5 rounded transition shadow-inner border border-transparent" disabled>
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-        <span class="hidden md:inline">DL</span>
+        <span class="hidden md:inline">下載</span>
       </button>
     </div>
   </footer>
@@ -216,24 +194,24 @@
 
   <div id="raw-privacy-policy" class="hidden">
     <div class="space-y-4">
-      <p>当サイトは、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。</p>
-      <p>当サイトにおいて、氏名やメールアドレス等の個人情報を直接取得・保存することはありません。</p>
-      <p>なお、サイトの閲覧に伴い、セキュリティ対策や利便性向上のため、IPアドレス等の技術的情報が自動的に送受信されますが、これらを個人を特定する目的で利用したり、永続的に保存したりすることはありません。</p>
-      <p>当サイトで提供される楽曲は、利用規約の範囲内で安全にご利用いただけます。</p>
+      <p>我們非常重視您的隱私，並致力於保護您的個人資訊。</p>
+      <p>本網站不會直接收集或儲存您的任何個人資料（如姓名或電子郵件地址）。</p>
+      <p>請注意，當您瀏覽本網站時，系統會自動傳輸某些技術資料（如IP位址）以維護安全性並提升使用者體驗。但這些資料絕不會用於識別個人身分，也不會被永久儲存。</p>
+      <p>本平台提供的所有音樂均可根據我們的服務條款，安全地整合到您的內容中。</p>
     </div>
   </div>
 
   <div id="raw-terms" class="hidden">
     <div class="space-y-4">
-      <p>1. 著作権と利用許諾：提供される楽曲の著作権は制作者に帰属します。ユーザーは、非商用・商用を問わず、本楽曲を無料で利用することができます。</p>
-      <p>2. 禁止事項：楽曲の二次配布、販売、および自作発言は固く禁じます。</p>
-      <p>3. AI生成物の明示と識別情報：当サイトで公開されるすべての音源は、生成AIにより作成されたコンテンツです。EU AI法を含む各地域の法令に基づき、AI生成物であることを明示しています。また、音源にはGoogle SynthID等の識別情報が埋め込まれており、AI生成であることを確認できる仕組みが含まれています。これらの識別情報は利用者の個人情報とは無関係であり、追跡や特定を目的とするものではありません。</p>
+      <p>1. 版權與使用許可：本平台提供的所有音樂版權歸創作者所有。我們授予使用者免費使用這些曲目的非獨占許可，適用於非商業及商業用途。</p>
+      <p>2. 禁止事項：嚴禁對音訊檔案進行二次分發、出售或聲明所有權（如謊稱您是該曲目的創作者）。</p>
+      <p>3. AI生成內容及合規性（符合歐盟AI法案及SynthID規範）：本網站提供的所有音訊曲目均為AI生成。為了遵守包括歐盟AI法案在內的各地區法規，我們保證AI生成內容的透明度。此外，我們的音訊檔案包含數位浮水印（如Google SynthID），以標識其為AI生成。這些識別碼不包含任何個人資訊，也不會用於追蹤使用者。</p>
     </div>
   </div>
 
   <div id="raw-contact" class="hidden">
     <div class="space-y-4">
-      <p>サービスに関するご質問やお問い合わせは、以下の連絡先までお願いいたします。</p>
+      <p>如有關於我們服務的諮詢、疑問或商業合作意向，請透過以下方式與我們聯絡：</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
         <a href="mailto:neura.jp.project@gmail.com" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
           <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">Email</span>
@@ -257,7 +235,7 @@
 
   <div id="raw-ads" class="hidden">
     <div class="space-y-4">
-      <p>当サイトでは、サービスの安定的かつ継続的な提供を目的として、一部のページに広告を掲載しております。ユーザーの皆様のご理解とご協力をお願い申し上げます。</p>
+      <p>為了保持我們服務的穩定性，並為創作者提供完全免費的資源，我們在網站的某些區域投放了廣告。非常感謝您的理解與支持。</p>
     </div>
   </div>
 </body>
