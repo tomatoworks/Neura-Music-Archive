@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NEURA Timer Generator 取扱ガイド | OBS向け高品質タイマーHTML生成</title>
+  <meta name="description" content="安全なローカルサーバー同期方式を採用し、誤クリック事故を防ぐOBS向け高品質タイマーHTML生成ツール「NEURA Timer Generator」の使い方・導入ガイドです。">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'IBM Plex Sans JP', 'sans-serif'],
+            mono: ['Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-feature-settings: "palt";
+    }
+
+    /* スクロールバーのカスタマイズ */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    .dark ::-webkit-scrollbar-track {
+      background: #111111;
+    }
+    ::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background: #222222;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #e4e4e7;
+      border-radius: 3px;
+    }
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #333333;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d4d4d8;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-zinc-200 font-sans antialiased selection:bg-zinc-800 selection:text-white transition-colors duration-200">
+
+<!-- NMA-TIMELINE-START -->
+<nav class="fixed left-4 md:left-6 xl:left-8 top-1/2 -translate-y-1/2 flex flex-col items-center space-y-3 z-50 hidden lg:flex bg-white/80 dark:bg-[#1e1e1e]/80 backdrop-blur-md shadow-lg border border-slate-200 dark:border-zinc-800 rounded-full py-4 px-2">
+  <div class="flex items-center justify-center w-6 h-6">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-100 dark:bg-zinc-800/30"></div>
+  </div>
+  <div class="flex items-center justify-center w-6 h-6">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-100 dark:bg-zinc-800/30"></div>
+  </div>
+  <div class="flex items-center justify-center w-6 h-6">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-100 dark:bg-zinc-800/30"></div>
+  </div>
+  <div class="flex items-center justify-center w-6 h-6">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-100 dark:bg-zinc-800/30"></div>
+  </div>
+  <div class="group relative flex items-center justify-center w-6 h-6">
+    <div class="w-2 h-2 rounded-full bg-[#5D9CC4] ring-4 ring-[#5D9CC4]/20"></div>
+    <span class="absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none transition-opacity shadow-lg font-bold">
+      NEURA Timer Generator 取扱ガイド | OBS向け高品質タイマーHTML生成
+    </span>
+  </div>
+  <a href="./AdSenseotita.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
+    <span class="absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none transition-opacity shadow-lg">
+      【AdSense審査落ち】タブレットで宿題を出したら「紙に書いてこい」と怒られたので、専用CMSを作らされた話
+    </span>
+  </a>
+  <a href="./overlay-article.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
+    <span class="absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none transition-opacity shadow-lg">
+      OverlayGen 紹介＆取扱ガイド | 配信画面をブラウザで簡単デザイン
+    </span>
+  </a>
+  <a href="./spaとmpa.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
+    <span class="absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none transition-opacity shadow-lg">
+      【SPA×MPA】初回クロールの罠と、検索流入を最大化するためのハイブリッドSEO戦略
+    </span>
+  </a>
+  <a href="./seoblog-1.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
+    <span class="absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none transition-opacity shadow-lg">
+      SPA がインデックスされない問題と戦った話
+    </span>
+  </a>
+</nav>
+<!-- NMA-TIMELINE-END -->
+
+
+<!-- NMA-HEADER-START -->
+<header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+    <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      <div class="flex items-center">
+        <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+          <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+          <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+        </a>
+      </div>
+
+      <div class="flex items-center space-x-3 md:space-x-7">
+        
+        <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
+          <a href="/articles/" class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
+          <a href="/albums/" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-7">
+        <div class="relative inline-block">
+            <select id="generator-selector" onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+              <option value="">Generatorを選択</option>
+              <option value="/tools/clock-generator.html">CLOCK GEN</option>
+              <option value="/tools/ranking-generator.html">BEST10 GEN</option>
+              <option value="/tools/overlay/">OVERLAY GEN</option>
+              <option value="/tools/neura_timer_generator.html">TIMER GEN</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+          </div>
+          
+          <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+          </div>
+        </div>
+
+        <button class="md:hidden text-gray-500 dark:text-gray-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+    </div>
+  </header>
+<!-- NMA-HEADER-END -->
+
+
+  <div class="min-h-screen flex flex-col bg-[#050505]">
+
+    <header class="border-b border-[#1a1a1a] sticky top-0 bg-black/80 backdrop-blur-md z-40">
+      <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+        <span class="font-bold text-sm tracking-wide text-white flex items-center gap-2">
+          <span class="text-[#5D9CC4]">■</span> NEURA Timer Generator
+        </span>
+        <span class="text-[10px] font-mono text-zinc-600 tracking-wider">USER MANUAL</span>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-3xl mx-auto px-6 py-10 md:py-16 w-full space-y-12 md:space-y-16">
+
+      <article class="space-y-8">
+        <header class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800 text-[10px] font-bold text-zinc-400 tracking-wider uppercase">
+              STREAMING TOOL GUIDE
+            </span>
+            <span class="text-xs text-zinc-500 font-mono">Ver 1.0</span>
+          </div>
+          
+          <h1 class="text-2xl md:text-3.5xl font-extrabold text-white tracking-tight leading-snug">
+            OBSでの誤クリック事故を防ぐ同期システム。<br>ローカル連携型タイマー生成ツール「NEURA Timer Generator」
+          </h1>
+
+          <div class="flex items-center gap-4 text-xs text-zinc-400 pt-1">
+            <div class="flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-zinc-800 flex items-center justify-center text-[10px] font-bold text-white font-mono">N</span>
+              <span>NEURA Project Team</span>
+            </div>
+            <span>•</span>
+            <span>読了時間: 約4分</span>
+          </div>
+        </header>
+
+        <section class="text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+          <p>
+            配信中の雑談枠やカウントダウンでタイマーを使用する際、誤ってクリックして位置がズレてしまったり、タイマー自体の動作が不安定になったりした経験はありませんか？
+          </p>
+          <p>
+            <strong>「NEURA Timer Generator（ニューラ・タイマー・ジェネレーター）」</strong>は、OBS向けの高品質なタイマーHTMLを出力できる専用ツールです。安全なローカルサーバー同期方式（Node.jsベース）を採用することで、配信画面上での誤クリック事故を完全に防ぎ、安定した同期動作を実現します。ZIPファイルを解凍し、ブラウザで直感的にスタイルをカスタマイズするだけで、洗練されたタイマーを即座に導入可能です。
+          </p>
+        </section>
+
+        <!-- 画像プレースホルダー 1 -->
+        <div class="py-4">
+          <div class="w-full rounded-lg overflow-hidden border border-zinc-800 bg-zinc-950 shadow-sm">
+            <img src="timer01.png" alt="NEURA Timer Generator 操作画面" class="w-full h-auto object-cover opacity-95 hover:opacity-100 transition-opacity">
+            <div class="p-3 bg-black border-t border-zinc-900 text-[11px] text-zinc-400 text-center font-medium">
+              図1. NEURA Timer Generator の操作画面。リアルタイムにタイマーのプレビューを確認・構築できます。
+            </div>
+          </div>
+        </div>
+
+        <section class="p-5 rounded-xl bg-zinc-950 border border-zinc-900 space-y-4">
+          <h3 class="text-xs font-bold text-zinc-200 uppercase tracking-wider font-mono flex items-center gap-2">
+            <span>💡</span> NEURA Timer で解消される3つの配信課題
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
+            <div class="p-4 rounded-lg bg-black border border-zinc-900 space-y-2">
+              <div class="text-xs text-zinc-600 line-through">配信中の誤操作で位置がズレる</div>
+              <div class="font-semibold text-[#5D9CC4] flex items-center gap-1.5">
+                <span>✨</span> 誤クリック防止設計
+              </div>
+              <p class="text-[11px] md:text-xs text-zinc-400">操作は裏側のローカルコンソールから同期。OBS上で直接触れてしまう事故を構造から防ぎます。</p>
+            </div>
+            <div class="p-4 rounded-lg bg-black border border-zinc-900 space-y-2">
+              <div class="text-xs text-zinc-600 line-through">デザインが地味・崩れる</div>
+              <div class="font-semibold text-[#5D9CC4] flex items-center gap-1.5">
+                <span>✨</span> 高機能テーマ・カスタム
+              </div>
+              <p class="text-[11px] md:text-xs text-zinc-400">サイバー、モダン、ミニマル、レトロゲーム風など、配信に合わせたフォントやカラーを即座に適用。</p>
+            </div>
+            <div class="p-4 rounded-lg bg-black border border-zinc-900 space-y-2">
+              <div class="text-xs text-zinc-600 line-through">設定やファイルの管理が面倒</div>
+              <div class="font-semibold text-[#5D9CC4] flex items-center gap-1.5">
+                <span>✨</span> 1パッケージ完結
+              </div>
+              <p class="text-[11px] md:text-xs text-zinc-400">必要なHTML、CSS、JSをすべてローカルフォルダ内に内包。安定したアセット読み込みを実現。</p>
+            </div>
+          </div>
+        </section>
+
+        <hr class="border-zinc-900">
+
+        <div class="space-y-10 md:space-y-12">
+          
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-zinc-600">01.</span> 🚀 事前準備（Node.js の確認）
+            </h2>
+            <div class="text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-4">
+              <p>
+                NEURA Timer Generator は、ローカル環境で安全かつ軽量にシステムを同期駆動させるため、<strong>Node.js</strong>環境を利用します。
+              </p>
+              
+              <div class="p-4 border-l-2 border-[#5D9CC4] bg-zinc-900/50 mt-4">
+                <ul class="list-disc pl-5 space-y-2 text-sm text-zinc-400">
+                  <li>あらかじめ <a href="https://nodejs.org/ja/" target="_blank" rel="noopener noreferrer" class="text-[#5D9CC4] font-semibold underline hover:text-[#7bb5dc]">Node.js 公式サイト</a> からインストーラーをダウンロードし、PCへインストールしておいてください。</li>
+                  <li>インストールは、標準設定のまま「次へ」を進めていくだけで簡単に完了します。</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="space-y-6 md:space-y-8">
+            <h2 class="text-lg md:text-xl font-bold text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-zinc-600">02.</span> 🛠️ タイマーデザインと出力手順
+            </h2>
+            <div class="text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-3">
+              <p>
+                配布されたパッケージを展開し、ジェネレーター画面（ツール内UI）をブラウザで開いてカスタマイズを進めます。設定内容はリアルタイムで画面に反映されます。
+              </p>
+            </div>
+            
+            <!-- 画像プレースホルダー 2 -->
+            <div class="py-2">
+              <div class="w-full rounded-lg overflow-hidden border border-zinc-800 bg-zinc-950 shadow-sm">
+                <img src="timer02.png" alt="直感的なコントロールUI" class="w-full h-auto object-cover opacity-95 hover:opacity-100 transition-opacity">
+                <div class="p-3 bg-black border-t border-zinc-900 text-[11px] text-zinc-400 text-center font-medium">
+                  図2. 直感的なコントロールUI。フォントの種類やサイズ、カラー、配置位置を細かく指定可能です。
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 pt-2">
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-zinc-200 text-[15px]">1. テーマ＆フォントの選択</h3>
+                  <p class="text-sm text-zinc-400 leading-relaxed">
+                    プリセットからデザインの方向性を選択します。「IBM Plex Sans JP」をはじめとした高視認性のデジタルフォントが自動で組み込まれ、シャープな印象に仕上がります。
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-zinc-200 text-[15px]">2. カラー・不透明度の調整</h3>
+                  <p class="text-sm text-zinc-400 leading-relaxed">
+                    文字の色、背景のボックスカラー、境界線の色の輝度をカスタム。OBS上で背後のゲームや背景と被っても見やすくなるよう、半透明のシャドウや背景を敷くことができます。
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-zinc-200 text-[15px]">3. 時間・レイアウト構成</h3>
+                  <p class="text-sm text-zinc-400 leading-relaxed">
+                    カウントダウンの初期値（分・秒）や、タイマー終了時の表示テキストを設定します。レイアウト幅は自動で左上に最適化される構造で作られています。
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-zinc-200 text-[15px]">4. パッケージ書き出し</h3>
+                  <p class="text-sm text-zinc-400 leading-relaxed">
+                    設定が完了したら、生成ボタンをクリック。ローカル同期に必要なアセット一式が含まれたHTMLおよび構成ファイルをシステムへ適用・保存します。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="space-y-6 md:space-y-8">
+            <h2 class="text-lg md:text-xl font-bold text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-zinc-600">03.</span> 📺 OBS Studio への導入・設定手順
+            </h2>
+            <div class="text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-3">
+              <p>出力した配信キットを解凍し、ローカルサーバーを介してOBS Studioに同期・読み込ませる手順を解説します。<strong>「ローカルファイル」のチェックを外す点と、透過設定が非常に重要です。</strong></p>
+
+              <div class="space-y-4 mt-6">
+                <div class="p-4 border-l-2 border-[#5D9CC4] bg-zinc-900/50">
+                  <h4 class="font-bold text-zinc-200 text-base">ステップ 1：ダウンロードしたZIPの解凍とサーバー起動</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-zinc-400">
+                    <li>ダウンロードした <code>obs_timer_kit.zip</code> をお好みの場所に解凍（展開）します。</li>
+                    <li>フォルダ内にある <strong><code>start.bat</code></strong>（Mac環境の場合は <code>start.sh</code>）を実行します。</li>
+                    <li>黒い画面（ターミナル）が開き、サーバーが起動します。配信や動作確認を行っている間は、<strong>この画面を絶対に閉じないでください。</strong></li>
+                  </ul>
+                </div>
+
+                <div class="p-4 border-l-2 border-[#5D9CC4] bg-zinc-900/50">
+                  <h4 class="font-bold text-zinc-200 text-base">ステップ 2：OBSでのブラウザソース新規追加</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-zinc-400">
+                    <li>OBS Studioを起動し、タイマーを追加したい配信シーンの「ソース」エリア下部にある <strong>「＋」ボタン</strong> をクリックします。</li>
+                    <li>メニューから <strong>「ブラウザ」</strong> を選択し、識別しやすい名前（例: NEURA_Timer）を入力して「OK」を押します。</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 border-l-2 border-[#5D9CC4] bg-zinc-900/50">
+                  <h4 class="font-bold text-zinc-200 text-base">ステップ 3：同期URLの指定（ローカルファイルはオフ）</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-zinc-400">
+                    <li>ソースのプロパティ画面が開いたら、上部にある <strong>「ローカルファイル」のチェックボックスを必ずオフ（未チェック）</strong> にします。</li>
+                    <li>URL入力欄に <strong><code>http://localhost:8080/display</code></strong> と入力します。</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 border-l-2 border-[#5D9CC4] bg-zinc-900/50">
+                  <h4 class="font-bold text-zinc-200 text-base">ステップ 4：解像度（サイズ）のバッファ拡張</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-zinc-400">
+                    <li>プロパティの <strong>「幅」</strong> と <strong>「高さ」</strong> に、タイマーの想定サイズよりも一回り余裕を持たせた大きめの数値（例：幅「800」、高さ「400」など）を入力します。</li>
+                    <li>HTML側で自動的に左上に寄せて描画される構造のため、OBS側の割り当て枠（解像度バッファ）を十分に広げておくことで、タイマーの端が切れたり、はみ出したりする現象を防げます。</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 border-l-4 border-red-500 bg-red-950/20">
+                  <h4 class="font-bold text-red-400 text-base flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    ステップ 5：【重要】カスタムCSSの消去による透過処理
+                  </h4>
+                  <p class="mt-2 text-sm text-zinc-300 font-medium">
+                    プロパティ内を下へスクロールし、最初から「カスタムCSS」欄に記述されている既存のコード（bodyの背景色指定など）を <strong>すべて選択して完全に消去し、空欄にしてください。</strong><br>
+                    この記述を消去しないと、タイマーの周囲が不要な背景色で塗りつぶされてしまい、背後のゲーム画面や配信映像が綺麗に透過されなくなります。
+                  </p>
+                </div>
+                
+                <div class="p-4 border-l-2 border-[#5D9CC4] bg-zinc-900/50">
+                  <h4 class="font-bold text-zinc-200 text-base">ステップ 6：コントロールパネルからの操作・同期完了</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-zinc-400">
+                    <li>「OK」をクリックしてプロパティを閉じると、OBSのプレビュー上にタイマーが透過表示されます。</li>
+                    <li>普段お使いのWebブラウザ（Google Chrome等）で <strong><code>http://localhost:8080/</code></strong> を開きます。</li>
+                    <li>ブラウザ上の操作パネルから「Start」「Stop」「Reset」を実行すると、OBS側のタイマー表示がリアルタイムで安全に完全同期連動します。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="space-y-6 md:space-y-8">
+            <h2 class="text-lg md:text-xl font-bold text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-zinc-600">04.</span> 🟢 別の方法：初心者向けの簡易導入（ウィンドウキャプチャ方式）
+            </h2>
+            <div class="text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-4">
+              <p>
+                「Node.jsの準備やサーバーの起動手順が少し難しそう…」と感じる場合は、ジェネレーター画面を直接OBSに取り込む<strong>「ウィンドウキャプチャ」と「クロマキー機能」を組み合わせた簡易的な導入方法</strong>も利用可能です。
+              </p>
+
+              <div class="py-2">
+                <div class="w-full rounded-lg overflow-hidden border border-zinc-800 bg-zinc-950 shadow-sm">
+                  <img src="timer03.png" alt="ウィンドウキャプチャ方式の設定イメージ" class="w-full h-auto object-cover opacity-95 hover:opacity-100 transition-opacity">
+                  <div class="p-3 bg-black border-t border-zinc-900 text-[11px] text-zinc-400 text-center font-medium">
+                    図3. ウィンドウキャプチャ方式での設定イメージ。背景をクロマキー用にカラー変更して運用します。
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-4 mt-6">
+                <div class="p-4 border-l-2 border-emerald-500 bg-zinc-900/50">
+                  <h4 class="font-bold text-zinc-200 text-base">ステップ 1：ジェネレーター側で背景を「緑色」に設定する</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-zinc-400">
+                    <li>ジェネレーター画面の「背景・枠の追加」タブを開きます。</li>
+                    <li><strong>「背景の不透明度」を最大（1）</strong>にスライドさせます。</li>
+                    <li>「背景カラー」をクリックし、クロマキーで透過しやすい<strong>鮮やかな緑色（例：#00ff00）</strong>を選択します。プレビューの背景が全面緑色に変われば準備完了です。</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 border-l-2 border-emerald-500 bg-zinc-900/50">
+                  <h4 class="font-bold text-zinc-200 text-base">ステップ 2：OBSにウィンドウキャプチャを追加する</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-zinc-400">
+                    <li>OBSの「ソース」エリア左下の<strong>「＋」ボタン</strong>をクリックし、<strong>「ウィンドウキャプチャ」</strong>を選択します。</li>
+                    <li>キャプチャするウィンドウに対象のブラウザ（例：<code>[chrome.exe]: NEURA ...</code>）を指定し、ジェネレーターのプレビュー画面がOBS上に映るようにします。</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 border-l-2 border-emerald-500 bg-zinc-900/50">
+                  <h4 class="font-bold text-zinc-200 text-base">ステップ 3：不要な部分を切り抜く（クロップ）</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-zinc-400">
+                    <li>OBSのプレビュー画面上で、追加したウィンドウキャプチャのソースを、キーボードの <strong>Altキーを押しながら端の点をドラッグ</strong> します。</li>
+                    <li>ブラウザの余計なタブや設定パネルを削り、緑色背景のタイマー部分だけが見えるように四隅を切り抜きます。</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 border-l-2 border-emerald-500 bg-zinc-900/50">
+                  <h4 class="font-bold text-zinc-200 text-base">ステップ 4：クロマキーフィルタで背景を透明にする</h4>
+                  <ul class="list-disc pl-5 mt-2 space-y-1.5 text-sm text-zinc-400">
+                    <li>追加したウィンドウキャプチャのソースを右クリックし、<strong>「フィルタ」</strong>を選択します。</li>
+                    <li>エフェクトフィルタの左下にある「＋」ボタンから<strong>「クロマキー」</strong>を追加します。</li>
+                    <li>色キーの種類で「緑」を選択すると、タイマー周囲の緑色の背景が一瞬で綺麗に消え、背後のゲーム画面やカメラ映像が透過されます。</li>
+                  </ul>
+                </div>
+
+                <div class="p-4 border-l-2 border-emerald-500 bg-zinc-900/50">
+                  <h4 class="font-bold text-zinc-200 text-base">ステップ 5：操作・運用</h4>
+                  <p class="mt-2 text-sm text-zinc-400">
+                    あとは、ブラウザ（ジェネレーター画面）の下部にある「動作確認用パネル」の <strong>Start / Stop / Reset</strong> ボタンを直接クリックして動かすだけで、配信画面上のタイマーがリアルタイムに連動します。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="p-5 rounded-lg bg-zinc-900 border border-zinc-800 space-y-3 text-sm text-zinc-300">
+              <div class="font-bold text-white flex items-center gap-2 font-mono uppercase tracking-wider">
+                <span>💡</span> Q&A・よくある質問
+              </div>
+              <div class="space-y-4 pt-1">
+                <div>
+                  <h5 class="font-bold text-white mb-1 text-xs md:text-sm flex items-start gap-1"><span class="text-[#5D9CC4] font-mono">Q.</span> Node.jsって何？どうやって入れるの？</h5>
+                  <p class="text-xs md:text-sm text-zinc-400 pl-4 leading-relaxed">
+                    タイマーをバックグラウンドで安全かつ正確に同期駆動するための軽量な実行環境システムです。公式サイトから推奨版のインストーラーを入手し、基本設定のままインストールするだけで準備は完了します。
+                  </p>
+                </div>
+                <div class="border-t border-zinc-800/60 pt-3">
+                  <h5 class="font-bold text-white mb-1 text-xs md:text-sm flex items-start gap-1"><span class="text-[#5D9CC4] font-mono">Q.</span> タイマーの右端や下部が切れて表示されてしまう</h5>
+                  <p class="text-xs md:text-sm text-zinc-400 pl-4 leading-relaxed">
+                    OBSのブラウザソースのプロパティを開き、「幅」と「高さ」のピクセル数値を現在の設定よりも一回り大きめに変更してください。HTMLは自動的に左上を基準点として綺麗に描写されるため、OBS側の枠そのものを広げることで全体が正常に表示されるようになります。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+      </article>
+
+    </main>
+
+    
+<!-- NMA-LINKS-START -->
+<nav class="mt-12 pt-6 border-t border-slate-200 dark:border-zinc-800 flex justify-between items-stretch gap-4">
+  <a href="./AdSenseotita.html" class="flex-1 p-4 border border-slate-200 dark:border-zinc-800 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-800/50 transition text-left block"><div class="text-xs text-slate-500 mb-1">← 古い記事</div><div class="text-sm font-bold text-slate-800 dark:text-slate-200 line-clamp-2">【AdSense審査落ち】タブレットで宿題を出したら「紙に書いてこい」と怒られたので、専用CMSを作らされた話</div></a>
+  <div class="flex-1 p-4 border border-transparent"></div>
+</nav>
+<!-- NMA-LINKS-END -->
+
+<footer class="bg-black border-t border-[#1a1a1a] py-8 text-center text-xs text-zinc-600 space-y-1.5 relative z-10">
+      <p>NEURA Timer Generator — Local Synced OBS Timer Companion</p>
+      <p class="font-mono">&copy; 2026 NEURA Project Team</p>
+    </footer>
+  </div>
+
+
+<!-- NMA-FOOTER-START -->
+<div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800 text-gray-800 dark:text-gray-100" onclick="event.stopPropagation()">
+      <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+        <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
+        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div id="modal-body" class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+      </div>
+    </div>
+  </div>
+
+  <div id="raw-privacy-policy" class="hidden">
+    <div class="space-y-4">
+      <p>当サイトは、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。</p>
+      <p>当サイトにおいて、氏名やメールアドレス等の個人情報を直接取得・保存することはありません。</p>
+      <p>なお、サイトの閲覧に伴い、セキュリティ対策や利便性向上のため、IPアドレス等の技術的情報が自動的に送受信されますが、これらを個人を特定する目的で利用したり、永続的に保存したりすることはありません。</p>
+      <p>当サイトで提供される楽曲は、利用規約の範囲内で安全にご利用いただけます。</p>
+    </div>
+  </div>
+
+  <div id="raw-terms" class="hidden">
+    <div class="space-y-4">
+      <p>1. 著作権と利用許諾：提供される楽曲の著作権は制作者に帰属します。ユーザーは、非商用・商用を問わず、本楽曲を無料で利用することができます。</p>
+      <p>2. 禁止事項：楽曲の二次配布、販売、および自作発言は固く禁じます。</p>
+      <p>3. AI生成物の明示と識別情報：当サイトで公開されるすべての音源は、生成AIにより作成されたコンテンツです。EU AI法を含む各地域の法令に基づき、AI生成物であることを明示しています。また、音源にはGoogle SynthID等の識別情報が埋め込まれており、AI生成であることを確認できる仕組みが含まれています。これらの識別情報は利用者の個人情報とは無関係であり、追跡や特定を目的とするものではありません。</p>
+    </div>
+  </div>
+
+  <div id="raw-contact" class="hidden">
+    <div class="space-y-4">
+      <p>サービスに関するご質問やお問い合わせは、以下の連絡先までお願いいたします。</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+        <a href="mailto:neura.jp.project@gmail.com" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">Email</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura.jp.project@gmail.com</span>
+        </a>
+        <a href="https://www.youtube.com/@Neura-music-Archive" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">YouTube</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@Neura-music-Archive</span>
+        </a>
+        <a href="https://x.com/neura_music" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">X</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@neura_music</span>
+        </a>
+        <a href="https://neura-music.booth.pm/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">BOOTH</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura-music.booth.pm</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="raw-ads" class="hidden">
+    <div class="space-y-4">
+      <p>当サイトでは、サービスの安定的かつ継続的な提供を目的として、一部のページに広告を掲載しております。ユーザーの皆様のご理解とご協力をお願い申し上げます。</p>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      function openModal(pageKey) {
+        let modalTitle = "";
+        let modalContent = "";
+
+        if (pageKey === 'privacy') {
+          modalTitle = "プライバシーポリシー";
+          const privacySource = document.getElementById('raw-privacy-policy');
+          modalContent = privacySource ? privacySource.innerHTML : "プライバシーポリシーの読み込みに失敗しました。";
+        } else if (pageKey === 'about') {
+          modalTitle = "このサイトについて";
+          
+          const sections = [
+            { id: 'raw-terms', title: '利用規約' },
+            { id: 'raw-contact', title: 'お問い合わせ' },
+            { id: 'raw-ads', title: '広告の掲載について' }
+          ];
+
+          let mergedHtml = "";
+          
+          sections.forEach(sec => {
+            const el = document.getElementById(sec.id);
+            if (el) {
+              mergedHtml += `
+                <div class="mb-10 last:mb-0">
+                  <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-800 pb-2 mb-4">
+                    ${sec.title}
+                  </h4>
+                  <div class="space-y-4">
+                    ${el.innerHTML}
+                  </div>
+                </div>
+              `;
+            }
+          });
+
+          modalContent = mergedHtml ? mergedHtml : "<p class='text-gray-500'>データの読み込みに失敗しました。</p>";
+        }
+
+        const modal = document.getElementById('modal-overlay');
+        const titleEl = document.getElementById('modal-title');
+        const bodyEl = document.getElementById('modal-body');
+        
+        if (modal) {
+          titleEl.textContent = modalTitle;
+          bodyEl.innerHTML = modalContent;
+          modal.style.display = 'flex';
+        }
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('modal-overlay');
+        if (modal) {
+          modal.style.display = 'none';
+        }
+      }
+
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = document.getElementById('generator-selector');
+        if (selector) {
+          const currentPath = window.location.pathname;
+          const options = Array.from(selector.options);
+          const matchedOption = options.find(opt => opt.value && currentPath.includes(opt.value));
+          if (matchedOption) {
+            selector.value = matchedOption.value;
+          } else {
+            selector.value = "";
+          }
+        }
+      });
+    })();
+  </script>
+<!-- NMA-FOOTER-END -->
+
+</body>
+</html>

@@ -117,7 +117,7 @@
       "title": "SPA×MPA",
       "content_url": "contents/articles/spaとmpa.html",
       "date": "2026-06-22",
-      "is_visible": true
+      "is_visible": false
     },
     {
       "id": "article_20260623130048",
@@ -131,6 +131,13 @@
       "title": "AdSense落ちるｗ",
       "content_url": "contents/articles/AdSenseotita.html",
       "date": "2026-06-24",
+      "is_visible": true
+    },
+    {
+      "id": "article_20260628024844",
+      "title": "タイマーの作り方",
+      "content_url": "contents/tools/timer/neura_timer_manual.html",
+      "date": "2026-06-28",
       "is_visible": true
     }
   ]

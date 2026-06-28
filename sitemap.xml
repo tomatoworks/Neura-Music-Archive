@@ -821,11 +821,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://neura-music.com/article/article_20260622154744</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://neura-music.com/article/article_20260623130048</loc>
     <lastmod>2026-06-28</lastmod>
     <priority>0.8</priority>
@@ -836,7 +831,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://neura-music.com/articles/mpaとseo.html</loc>
+    <loc>https://neura-music.com/article/article_20260628024844</loc>
+    <lastmod>2026-06-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neura-music.com/articles/neura_timer_manual.html</loc>
     <lastmod>2026-06-28</lastmod>
     <priority>0.8</priority>
   </url>
