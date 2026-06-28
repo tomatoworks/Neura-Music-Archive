@@ -27,7 +27,8 @@
       "name": "Field",
       "caption": "探索や移動の場面に使える、軽めでループしやすいフィールドBGM集。",
       "albums": [
-        "album_1782606396380"
+        "album_1782606396380",
+        "album_1782683268939"
       ]
     }
   ],
@@ -192,6 +193,27 @@
         "track_1782608193625_14"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Field\\Light 8bit Field",
+      "type": ""
+    },
+    {
+      "id": "album_1782683268939",
+      "title": "Electro Field Journey",
+      "art": "https://cdn.neura-music.com/06game/Field/Electro%20Field%20Journey/cover_1782684168514.webp",
+      "caption": "シンセと軽快なEDMを中心に構成された、探索や移動シーン向けのフィールドBGMセット。",
+      "categoryId": "cat_1782606280622",
+      "tracks": [
+        "track_1782684048025_0",
+        "track_1782684048030_1",
+        "track_1782684048030_2",
+        "track_1782684048030_3",
+        "track_1782684048030_4",
+        "track_1782684048030_5",
+        "track_1782684048030_6",
+        "track_1782684048030_7",
+        "track_1782684048030_8",
+        "track_1782684048031_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Field\\Electro Field Journey",
       "type": ""
     }
   ],
@@ -1570,6 +1592,156 @@
       "full_url": "https://cdn.neura-music.com/06game/Field/Light%208bit%20Field/Crossing_the_Sunny_Meadow.mp3",
       "tags": [
         "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-28"
+    },
+    {
+      "id": "track_1782684048025_0",
+      "title": "Neon Horizon",
+      "caption": "ネオンが描く未来都市の夜。サイバーパンクな熱気が漂い、退廃的で洗練された美しさを表現したサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Electro%20Field%20Journey/Neon%20Horizon.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-28"
+    },
+    {
+      "id": "track_1782684048030_1",
+      "title": "Hidden Echoes",
+      "caption": "静寂から響き渡る記憶のようなエコー。未知の領域へと誘う、深く神秘的な音色の広がりを感じさせるサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Electro%20Field%20Journey/Hidden%20Echoes.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-28"
+    },
+    {
+      "id": "track_1782684048030_2",
+      "title": "Refined Pulse",
+      "caption": "ゲーム内の世界観に溶け込む、研ぎ澄まされた高揚感。洗練されたビートが奏でる、躍動的で力強いリズムの体験。",
+      "type": "instrumental",
+      "duration": 149,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Electro%20Field%20Journey/Refined%20Pulse.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-28"
+    },
+    {
+      "id": "track_1782684048030_3",
+      "title": "Neo Circuit Horizon",
+      "caption": "ネオンに彩られた未来都市を駆け抜ける感覚。回路と鼓動が織りなす、スピード感あふれるエネルギッシュなサウンドトラック。",
+      "type": "instrumental",
+      "duration": 160,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Electro%20Field%20Journey/Neo-Circuit%20Horizon.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-28"
+    },
+    {
+      "id": "track_1782684048030_4",
+      "title": "Overgrown Exploration",
+      "caption": "苔むした遺跡と生命の再生が交錯する場所。新しい発見を予感させ、心が深呼吸するような探検的な空気感を演出。",
+      "type": "instrumental",
+      "duration": 115,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Electro%20Field%20Journey/Overgrown%20Exploration.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-28"
+    },
+    {
+      "id": "track_1782684048030_5",
+      "title": "Confined Movement",
+      "caption": "閉ざされた空間で響き合う音。切なさと強い緊張感が混じり合い、内なる感情の機微を描き出すサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Electro%20Field%20Journey/Confined%20Movement.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-28"
+    },
+    {
+      "id": "track_1782684048030_6",
+      "title": "Contemplative Pulse",
+      "caption": "静寂の中で思考が巡る鼓動。ただ立ち止まり、ゲーム体験を通して自分自身と対話するような内省的な時間を提供。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Electro%20Field%20Journey/Contemplative%20Pulse.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-28"
+    },
+    {
+      "id": "track_1782684048030_7",
+      "title": "Neon Canopy Drift",
+      "caption": "サイバーな大空を漂うネオンの光。未来的なスピード感と、人工的で幻想的な色彩が広がる映像美のような情景。",
+      "type": "instrumental",
+      "duration": 149,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Electro%20Field%20Journey/Neon%20Canopy%20Drift.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-28"
+    },
+    {
+      "id": "track_1782684048030_8",
+      "title": "Daybreak Ascent",
+      "caption": "夜明けと共に訪れる新たなステージ。力強い上昇感とエモーショナルな旋律が織りなし、成長と達成のドラマを描き出す。",
+      "type": "instrumental",
+      "duration": 146,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Electro%20Field%20Journey/Daybreak%20Ascent.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-28"
+    },
+    {
+      "id": "track_1782684048031_9",
+      "title": "Continuous Passage",
+      "caption": "",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Electro%20Field%20Journey/Continuous%20Passage.mp3",
+      "tags": [
         "モダン / クリア",
         "インスト（ボーカルなし）"
       ],
