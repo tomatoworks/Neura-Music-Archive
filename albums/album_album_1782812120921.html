@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fieldscape Overture - Neura Music Archive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="h-screen flex flex-col overflow-hidden text-gray-800 dark:text-gray-100 bg-white dark:bg-[#1c1c1c] font-sans">
+  <header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+    <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      <div class="flex items-center">
+        <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+          <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+          <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+        </a>
+      </div>
+
+      <div class="flex items-center space-x-3 md:space-x-7">
+        
+        <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
+          <a href="/articles/" class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
+          <a href="/albums/" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-7">
+        <div class="relative inline-block">
+            <select id="generator-selector" onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+              <option value="">Generatorを選択</option>
+              <option value="/tools/clock-generator.html">CLOCK GEN</option>
+              <option value="/tools/ranking-generator.html">BEST10 GEN</option>
+              <option value="/tools/overlay/">OVERLAY GEN</option>
+              <option value="/tools/neura_timer_generator.html">TIMER GEN</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+          </div>
+          
+          <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+          </div>
+        </div>
+
+        <button class="md:hidden text-gray-500 dark:text-gray-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+    </div>
+  </header>
+  <main class="flex-1 overflow-y-auto bg-gray-100 dark:bg-[#0a0a0a]">
+    
+          <div class="container mx-auto px-4 py-10 max-w-5xl">
+            <button onclick="window.history.back()" class="inline-flex items-center text-sm font-bold text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition mb-8 gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+              Back
+            </button>
+            
+            <section class="flex flex-col md:flex-row gap-8 mb-10 items-start">
+              <div class="w-48 h-48 md:w-64 md:h-64 bg-gray-100 dark:bg-[#111] rounded-2xl overflow-hidden shadow-lg border border-gray-200 dark:border-[#2e2e2e] shrink-0">
+                <img src="https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/cover_1782813762882.webp" alt="Fieldscape Overture" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex-1 min-w-0 pt-2">
+                <span class="inline-block text-xs font-bold uppercase tracking-widest text-[#5D9CC4] bg-[#5D9CC4]/10 px-2.5 py-1 rounded-md mb-3">instrumental</span>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-3">Fieldscape Overture</h1>
+                <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400 font-medium mb-4">
+                  
+                  <span>10 Tracks</span>
+                  <span>•</span>
+                  <span>Total Time: 26 min</span>
+                </div>
+                <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl mb-8">ファンタジーRPGのフィールド探索向けのオーケストラBGM集。 ストリングス主体の軽い推進力と、木管の柔らかい彩りで“歩く・進む・旅する”感を表現した短尺インストです。</p>
+                
+                <div class="bg-gray-50 dark:bg-[#1a1a1a] rounded-xl border border-gray-200 dark:border-[#2e2e2e] p-4 flex items-center gap-4 shadow-sm max-w-xl">
+                  <button id="btn-prev" class="p-2 text-gray-400 hover:text-[#5D9CC4] transition disabled:opacity-30 disabled:hover:text-gray-400" disabled>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z"/></svg>
+                  </button>
+                  <button id="btn-play-main" class="p-3 bg-[#5D9CC4] text-white dark:text-black rounded-full hover:scale-105 transition shadow-lg flex items-center justify-center">
+                    <svg id="icon-play-main" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                  </button>
+                  <button id="btn-next" class="p-2 text-gray-400 hover:text-[#5D9CC4] transition disabled:opacity-30 disabled:hover:text-gray-400" disabled>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M11.555 5.168A1 1 0 0010 6v2.798l-5.445-3.63A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4z"/></svg>
+                  </button>
+                  
+                  <div class="flex-1 min-w-0 px-2">
+                    <div id="player-title" class="text-sm font-bold text-gray-900 dark:text-gray-200 truncate">Select a track</div>
+                    <div class="w-full mt-2">
+                      <input type="range" id="player-progress" value="0" min="0" max="100" class="w-full h-1.5 bg-gray-300 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#5D9CC4]" disabled>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+            <div class="space-y-1">
+              <h2 class="text-xl font-bold mb-4 border-b border-gray-200 dark:border-[#2e2e2e] pb-2">Tracklist</h2>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">1</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Across The Ancient Canopy</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">古代の森を彷徨い、光と影の中を辿るような荘厳な音響。神秘的な発見や物語の始まりを感じさせるサウンドスケープです。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:33
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="0" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Across_the_Ancient_Canopy.mp3" data-track-title="Across The Ancient Canopy" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">2</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Beyond The Green Ridge</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">緑豊かな丘陵地帯を越えて、未知の世界への期待と高揚感を抱かせる冒険的なサウンドトラック。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:56
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="1" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Beyond_the_Green_Ridge.mp3" data-track-title="Beyond The Green Ridge" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">3</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Footsteps On The High Grass</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">静かで心惹かれる足音から始まる物語の幕開け。重要な発見や、新しい場所へたどり着く直前の期待感に満ちています。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:26
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="2" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Footsteps_On_The_High_Grass.mp3" data-track-title="Footsteps On The High Grass" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">4</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Through The Highland Gate</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">霧深いハイランドの門を潜るような体験。壮大で神秘的でありながら、決意を持って次なる冒険へ踏み出す情景を描き出します。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:54
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="3" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Through_the_Highland_Gate.mp3" data-track-title="Through The Highland Gate" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">5</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Under A Copper Moon</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">銅色の月が降り注ぐ夜の幻想的な空気感。広がる可能性と、夢のような浮遊感を誘うサウンドスケープです。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:00
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="4" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Under_a_Copper_Moon.mp3" data-track-title="Under A Copper Moon" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">6</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Ascent To The High Meadow</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">果てしなく続く広大な野原を望む、清々しい高揚感。心身ともに解放され、自由な旅路へと歩み出す感覚を描きます。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    3:01
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="5" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Ascent_to_the_High_Meadow.mp3" data-track-title="Ascent To The High Meadow" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">7</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">View From The Plateau</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">高原から眼下に広がる壮大な景観を俯瞰するような爽快感と達成感。物語の重要な転換点やクライマックスにふさわしい力強い音響です。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:41
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="6" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/View_from_the_Plateau.mp3" data-track-title="View From The Plateau" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">8</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">The Unmarked Trail</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">手掛かりのない未知の道を進む緊張感あふれる情景。漂う期待と、物語の世界へ没入させるような浮遊感を誘うインストゥルメンタルです。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:54
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="7" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/The_Unmarked_Trail.mp3" data-track-title="The Unmarked Trail" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">9</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Beneath The Silver Boughs</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">銀色の枝葉が舞い散る魔法のような森の情景。未知なる領域への旅立ちを彩る、壮大さと繊細さを併せ持った音楽です。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:24
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="8" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Beneath_the_Silver_Boughs.mp3" data-track-title="Beneath The Silver Boughs" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                  <div class="w-8 text-center text-gray-400 text-sm font-mono">10</div>
+                  
+                  <div class="flex-1 min-w-0 px-4">
+                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Beyond The Treeline</div>
+                    <div class="text-[13px] text-gray-500 truncate mt-0.5">自然と人工物が混在する境界線（ツリーライン）。文明の殻を破り、全く別の世界へ足を踏み出す際の切迫感と希望を描きます。</div>
+                  </div>
+                  
+                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                    2:57
+                  </div>
+                  
+                  <div class="w-20 flex justify-center">
+                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                  </div>
+
+                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="9" aria-label="Play">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                    <a href="https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Beyond_the_Treeline.mp3" data-track-title="Beyond The Treeline" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              
+            </div>
+          </main>
+        
+          
+          <script>
+            // 歌詞モーダル
+            function openLyricsModal(trackId) {
+              const modal = document.getElementById('modal-lyrics-' + trackId);
+              if (modal) modal.style.display = 'flex';
+            }
+            function closeLyricsModal(trackId) {
+              const modal = document.getElementById('modal-lyrics-' + trackId);
+              if (modal) modal.style.display = 'none';
+            }
+
+            // オーディオ・プレイリスト再生処理
+            document.addEventListener('DOMContentLoaded', () => {
+              const playlist = [{"url":"https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Across_the_Ancient_Canopy.mp3","title":"Across The Ancient Canopy"},{"url":"https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Beyond_the_Green_Ridge.mp3","title":"Beyond The Green Ridge"},{"url":"https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Footsteps_On_The_High_Grass.mp3","title":"Footsteps On The High Grass"},{"url":"https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Through_the_Highland_Gate.mp3","title":"Through The Highland Gate"},{"url":"https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Under_a_Copper_Moon.mp3","title":"Under A Copper Moon"},{"url":"https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Ascent_to_the_High_Meadow.mp3","title":"Ascent To The High Meadow"},{"url":"https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/View_from_the_Plateau.mp3","title":"View From The Plateau"},{"url":"https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/The_Unmarked_Trail.mp3","title":"The Unmarked Trail"},{"url":"https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Beneath_the_Silver_Boughs.mp3","title":"Beneath The Silver Boughs"},{"url":"https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Beyond_the_Treeline.mp3","title":"Beyond The Treeline"}];
+              let currentIndex = -1;
+              const audio = new Audio();
+              
+              const btnPrev = document.getElementById('btn-prev');
+              const btnNext = document.getElementById('btn-next');
+              const btnPlayMain = document.getElementById('btn-play-main');
+              const playerTitle = document.getElementById('player-title');
+              const playerProgress = document.getElementById('player-progress');
+              const listBtns = document.querySelectorAll('.play-btn');
+
+              const playSvg = '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>';
+              const pauseSvg = '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>';
+              
+              const mainPlaySvg = '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>';
+              const mainPauseSvg = '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>';
+
+              function updateUI() {
+                if (currentIndex !== -1) {
+                  playerTitle.textContent = playlist[currentIndex].title;
+                  btnPrev.disabled = currentIndex === 0;
+                  btnNext.disabled = currentIndex === playlist.length - 1;
+                  playerProgress.disabled = false;
+                  btnPlayMain.innerHTML = audio.paused ? mainPlaySvg : mainPauseSvg;
+                }
+
+                listBtns.forEach((btn) => {
+                  const idx = parseInt(btn.getAttribute('data-index'), 10);
+                  if (idx === currentIndex && !audio.paused) {
+                    btn.innerHTML = pauseSvg;
+                    btn.classList.add('text-[#5D9CC4]');
+                  } else {
+                    btn.innerHTML = playSvg;
+                    btn.classList.remove('text-[#5D9CC4]');
+                  }
+                });
+              }
+
+              function playTrack(index) {
+                if (index < 0 || index >= playlist.length) return;
+                if (currentIndex !== index) {
+                  currentIndex = index;
+                  audio.src = playlist[index].url;
+                }
+                audio.play().catch(e => console.error("Play error:", e));
+                updateUI();
+              }
+
+              btnPlayMain.addEventListener('click', () => {
+                if (currentIndex === -1) {
+                  playTrack(0);
+                } else if (audio.paused) {
+                  audio.play();
+                  updateUI();
+                } else {
+                  audio.pause();
+                  updateUI();
+                }
+              });
+
+              btnPrev.addEventListener('click', () => playTrack(currentIndex - 1));
+              btnNext.addEventListener('click', () => playTrack(currentIndex + 1));
+
+              audio.addEventListener('ended', () => {
+                if (currentIndex < playlist.length - 1) {
+                  playTrack(currentIndex + 1);
+                } else {
+                  updateUI();
+                }
+              });
+
+              audio.addEventListener('timeupdate', () => {
+                if (audio.duration) {
+                  playerProgress.value = (audio.currentTime / audio.duration) * 100;
+                }
+              });
+
+              playerProgress.addEventListener('input', (e) => {
+                if (audio.duration) {
+                  audio.currentTime = (e.target.value / 100) * audio.duration;
+                }
+              });
+
+              listBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  const idx = parseInt(btn.getAttribute('data-index'), 10);
+                  if (currentIndex === idx) {
+                    audio.paused ? audio.play() : audio.pause();
+                    updateUI();
+                  } else {
+                    playTrack(idx);
+                  }
+                });
+              });
+
+              // ダウンロードボタン
+              const loadingSvg = '<svg class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>';
+              document.querySelectorAll('.dl-btn').forEach(btn => {
+                btn.addEventListener('click', async function(e) {
+                  e.preventDefault();
+                  const url = this.getAttribute('href');
+                  let title = this.getAttribute('data-track-title') || 'track';
+                  if(!title.toLowerCase().endsWith('.mp3')) title += '.mp3';
+
+                  const originalContent = this.innerHTML;
+                  this.innerHTML = loadingSvg;
+                  this.style.pointerEvents = 'none';
+
+                  try {
+                    const response = await fetch(url);
+                    if (!response.ok) throw new Error('Network error');
+                    const blob = await response.blob();
+                    const blobUrl = window.URL.createObjectURL(blob);
+                    
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = blobUrl;
+                    a.download = title;
+                    document.body.appendChild(a);
+                    a.click();
+                    
+                    window.URL.revokeObjectURL(blobUrl);
+                    a.remove();
+                  } catch (err) {
+                    console.error("DL error:", err);
+                    alert("ダウンロードに失敗しました。CORS設定等を確認してください。");
+                  } finally {
+                    this.innerHTML = originalContent;
+                    this.style.pointerEvents = 'auto';
+                  }
+                });
+              });
+            });
+          </script>
+        
+  </main>
+  <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800 text-gray-800 dark:text-gray-100" onclick="event.stopPropagation()">
+      <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+        <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
+        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div id="modal-body" class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+      </div>
+    </div>
+  </div>
+
+  <div id="raw-privacy-policy" class="hidden">
+    <div class="space-y-4">
+      <p>当サイトは、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。</p>
+      <p>当サイトにおいて、氏名やメールアドレス等の個人情報を直接取得・保存することはありません。</p>
+      <p>なお、サイトの閲覧に伴い、セキュリティ対策や利便性向上のため、IPアドレス等の技術的情報が自動的に送受信されますが、これらを個人を特定する目的で利用したり、永続的に保存したりすることはありません。</p>
+      <p>当サイトで提供される楽曲は、利用規約の範囲内で安全にご利用いただけます。</p>
+    </div>
+  </div>
+
+  <div id="raw-terms" class="hidden">
+    <div class="space-y-4">
+      <p>1. 著作権と利用許諾：提供される楽曲の著作権は制作者に帰属します。ユーザーは、非商用・商用を問わず、本楽曲を無料で利用することができます。</p>
+      <p>2. 禁止事項：楽曲の二次配布、販売、および自作発言は固く禁じます。</p>
+      <p>3. AI生成物の明示と識別情報：当サイトで公開されるすべての音源は、生成AIにより作成されたコンテンツです。EU AI法を含む各地域の法令に基づき、AI生成物であることを明示しています。また、音源にはGoogle SynthID等の識別情報が埋め込まれており、AI生成であることを確認できる仕組みが含まれています。これらの識別情報は利用者の個人情報とは無関係であり、追跡や特定を目的とするものではありません。</p>
+    </div>
+  </div>
+
+  <div id="raw-contact" class="hidden">
+    <div class="space-y-4">
+      <p>サービスに関するご質問やお問い合わせは、以下の連絡先までお願いいたします。</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+        <a href="mailto:neura.jp.project@gmail.com" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">Email</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura.jp.project@gmail.com</span>
+        </a>
+        <a href="https://www.youtube.com/@Neura-music-Archive" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">YouTube</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@Neura-music-Archive</span>
+        </a>
+        <a href="https://x.com/neura_music" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">X</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@neura_music</span>
+        </a>
+        <a href="https://neura-music.booth.pm/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">BOOTH</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura-music.booth.pm</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="raw-ads" class="hidden">
+    <div class="space-y-4">
+      <p>当サイトでは、サービスの安定的かつ継続的な提供を目的として、一部のページに広告を掲載しております。ユーザーの皆様のご理解とご協力をお願い申し上げます。</p>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      function openModal(pageKey) {
+        let modalTitle = "";
+        let modalContent = "";
+
+        if (pageKey === 'privacy') {
+          modalTitle = "プライバシーポリシー";
+          const privacySource = document.getElementById('raw-privacy-policy');
+          modalContent = privacySource ? privacySource.innerHTML : "プライバシーポリシーの読み込みに失敗しました。";
+        } else if (pageKey === 'about') {
+          modalTitle = "このサイトについて";
+          
+          const sections = [
+            { id: 'raw-terms', title: '利用規約' },
+            { id: 'raw-contact', title: 'お問い合わせ' },
+            { id: 'raw-ads', title: '広告の掲載について' }
+          ];
+
+          let mergedHtml = "";
+          
+          sections.forEach(sec => {
+            const el = document.getElementById(sec.id);
+            if (el) {
+              mergedHtml += `
+                <div class="mb-10 last:mb-0">
+                  <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-800 pb-2 mb-4">
+                    ${sec.title}
+                  </h4>
+                  <div class="space-y-4">
+                    ${el.innerHTML}
+                  </div>
+                </div>
+              `;
+            }
+          });
+
+          modalContent = mergedHtml ? mergedHtml : "<p class='text-gray-500'>データの読み込みに失敗しました。</p>";
+        }
+
+        const modal = document.getElementById('modal-overlay');
+        const titleEl = document.getElementById('modal-title');
+        const bodyEl = document.getElementById('modal-body');
+        
+        if (modal) {
+          titleEl.textContent = modalTitle;
+          bodyEl.innerHTML = modalContent;
+          modal.style.display = 'flex';
+        }
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('modal-overlay');
+        if (modal) {
+          modal.style.display = 'none';
+        }
+      }
+
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = document.getElementById('generator-selector');
+        if (selector) {
+          const currentPath = window.location.pathname;
+          const options = Array.from(selector.options);
+          const matchedOption = options.find(opt => opt.value && currentPath.includes(opt.value));
+          if (matchedOption) {
+            selector.value = matchedOption.value;
+          } else {
+            selector.value = "";
+          }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

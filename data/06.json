@@ -28,7 +28,8 @@
       "caption": "探索や移動の場面に使える、軽めでループしやすいフィールドBGM集。",
       "albums": [
         "album_1782606396380",
-        "album_1782683268939"
+        "album_1782683268939",
+        "album_1782812120921"
       ]
     }
   ],
@@ -215,6 +216,27 @@
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Field\\Electro Field Journey",
       "type": ""
+    },
+    {
+      "id": "album_1782812120921",
+      "title": "Fieldscape Overture",
+      "art": "https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/cover_1782813762882.webp",
+      "caption": "ファンタジーRPGのフィールド探索向けのオーケストラBGM集。 ストリングス主体の軽い推進力と、木管の柔らかい彩りで“歩く・進む・旅する”感を表現した短尺インストです。",
+      "categoryId": "cat_1782606280622",
+      "tracks": [
+        "track_1782813422314_0",
+        "track_1782813422316_1",
+        "track_1782813422317_2",
+        "track_1782813422317_3",
+        "track_1782813422317_4",
+        "track_1782813422317_5",
+        "track_1782813422317_6",
+        "track_1782813422317_7",
+        "track_1782813422317_8",
+        "track_1782813422317_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Field\\Fieldscape Overture",
+      "type": "instrumental"
     }
   ],
   "tracks": [
@@ -1748,6 +1770,156 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-06-28"
+    },
+    {
+      "id": "track_1782813422314_0",
+      "title": "Across The Ancient Canopy",
+      "caption": "古代の森を彷徨い、光と影の中を辿るような荘厳な音響。神秘的な発見や物語の始まりを感じさせるサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 153,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Across_the_Ancient_Canopy.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-30"
+    },
+    {
+      "id": "track_1782813422316_1",
+      "title": "Beyond The Green Ridge",
+      "caption": "緑豊かな丘陵地帯を越えて、未知の世界への期待と高揚感を抱かせる冒険的なサウンドトラック。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Beyond_the_Green_Ridge.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-30"
+    },
+    {
+      "id": "track_1782813422317_2",
+      "title": "Footsteps On The High Grass",
+      "caption": "静かで心惹かれる足音から始まる物語の幕開け。重要な発見や、新しい場所へたどり着く直前の期待感に満ちています。",
+      "type": "instrumental",
+      "duration": 146,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Footsteps_On_The_High_Grass.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-30"
+    },
+    {
+      "id": "track_1782813422317_3",
+      "title": "Through The Highland Gate",
+      "caption": "霧深いハイランドの門を潜るような体験。壮大で神秘的でありながら、決意を持って次なる冒険へ踏み出す情景を描き出します。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Through_the_Highland_Gate.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-30"
+    },
+    {
+      "id": "track_1782813422317_4",
+      "title": "Under A Copper Moon",
+      "caption": "銅色の月が降り注ぐ夜の幻想的な空気感。広がる可能性と、夢のような浮遊感を誘うサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 120,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Under_a_Copper_Moon.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-30"
+    },
+    {
+      "id": "track_1782813422317_5",
+      "title": "Ascent To The High Meadow",
+      "caption": "果てしなく続く広大な野原を望む、清々しい高揚感。心身ともに解放され、自由な旅路へと歩み出す感覚を描きます。",
+      "type": "instrumental",
+      "duration": 181,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Ascent_to_the_High_Meadow.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-30"
+    },
+    {
+      "id": "track_1782813422317_6",
+      "title": "View From The Plateau",
+      "caption": "高原から眼下に広がる壮大な景観を俯瞰するような爽快感と達成感。物語の重要な転換点やクライマックスにふさわしい力強い音響です。",
+      "type": "instrumental",
+      "duration": 161,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/View_from_the_Plateau.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-30"
+    },
+    {
+      "id": "track_1782813422317_7",
+      "title": "The Unmarked Trail",
+      "caption": "手掛かりのない未知の道を進む緊張感あふれる情景。漂う期待と、物語の世界へ没入させるような浮遊感を誘うインストゥルメンタルです。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/The_Unmarked_Trail.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-30"
+    },
+    {
+      "id": "track_1782813422317_8",
+      "title": "Beneath The Silver Boughs",
+      "caption": "銀色の枝葉が舞い散る魔法のような森の情景。未知なる領域への旅立ちを彩る、壮大さと繊細さを併せ持った音楽です。",
+      "type": "instrumental",
+      "duration": 144,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Beneath_the_Silver_Boughs.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-30"
+    },
+    {
+      "id": "track_1782813422317_9",
+      "title": "Beyond The Treeline",
+      "caption": "自然と人工物が混在する境界線（ツリーライン）。文明の殻を破り、全く別の世界へ足を踏み出す際の切迫感と希望を描きます。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/06game/Field/Fieldscape%20Overture/Beyond_the_Treeline.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-06-30"
     }
   ]
 }
