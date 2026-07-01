@@ -31,6 +31,14 @@
         "album_1782683268939",
         "album_1782812120921"
       ]
+    },
+    {
+      "id": "cat_1782909083294",
+      "name": "Dungeon",
+      "caption": "**「閉ざされた空間での探索や謎解きを彩る、静かで緊張感のあるBGMセット",
+      "albums": [
+        "album_1782910987835"
+      ]
     }
   ],
   "albums": [
@@ -236,6 +244,27 @@
         "track_1782813422317_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Field\\Fieldscape Overture",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1782910987835",
+      "title": "8bit Dungeon",
+      "art": "https://cdn.neura-music.com/06game/Dungeon/8bit%20Dungeon/cover_1782911453343.webp",
+      "caption": "洞窟・遺跡・地下迷宮など、閉ざされた空間の探索に合わせた8bitダンジョンBGM。",
+      "categoryId": "cat_1782909083294",
+      "tracks": [
+        "track_1782911039281_0",
+        "track_1782911039282_1",
+        "track_1782911039282_2",
+        "track_1782911039282_3",
+        "track_1782911039282_4",
+        "track_1782911039282_5",
+        "track_1782911039282_6",
+        "track_1782911039282_7",
+        "track_1782911039282_8",
+        "track_1782911039282_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Dungeon\\8bit Dungeon",
       "type": "instrumental"
     }
   ],
@@ -1920,6 +1949,162 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-06-30"
+    },
+    {
+      "id": "track_1782911039281_0",
+      "title": "Stone Gate Closing",
+      "caption": "重い扉の閉鎖。決意と静寂に包まれ、新たな物語が始まる転換点を描く荘厳なサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 98,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/8bit%20Dungeon/Stone_Gate_Closing.mp3",
+      "tags": [
+        "暗い",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-01"
+    },
+    {
+      "id": "track_1782911039282_1",
+      "title": "Gears Of The Lower Level",
+      "caption": "深層地下を照らす機械の脈動。未踏の階層へ進む意志を感じさせる、重厚なサスペンスサウンドトラック。",
+      "type": "instrumental",
+      "duration": 99,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/8bit%20Dungeon/Gears_of_the_Lower_Level.mp3",
+      "tags": [
+        "暗い",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-01"
+    },
+    {
+      "id": "track_1782911039282_2",
+      "title": "Under The Broken Lamp",
+      "caption": "壊れた光源の下で交錯する光と影。切なくもドラマチックにゲームの世界へ誘うような音楽風景。",
+      "type": "instrumental",
+      "duration": 113,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/8bit%20Dungeon/Under_the_Broken_Lamp.mp3",
+      "tags": [
+        "暗い",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-01"
+    },
+    {
+      "id": "track_1782911039282_3",
+      "title": "Moss On The Hallway Floor",
+      "caption": "時間の経過を物語る湿った緑の気配。忘れ去られた空間が発する、静かで生命的な音響表現。",
+      "type": "instrumental",
+      "duration": 104,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/8bit%20Dungeon/Moss_on_the_Hallway_Floor.mp3",
+      "tags": [
+        "暗い",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-01"
+    },
+    {
+      "id": "track_1782911039282_4",
+      "title": "Beneath The Basalt",
+      "caption": "古代遺跡の下を流れる神秘的なエネルギー。謎めいた探求心と壮大な冒険の幕開けを描くサウンド。",
+      "type": "instrumental",
+      "duration": 124,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/8bit%20Dungeon/Beneath_the_Basalt.mp3",
+      "tags": [
+        "暗い",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-01"
+    },
+    {
+      "id": "track_1782911039282_5",
+      "title": "Before The Lights Go Out",
+      "caption": "照明が消えかかる瞬間、高まる静謐な期待感。これから始まるドラマへの導入を告げる、洗練されたスケール感。",
+      "type": "instrumental",
+      "duration": 99,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/8bit%20Dungeon/Before_the_Lights_Go_Out.mp3",
+      "tags": [
+        "暗い",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-01"
+    },
+    {
+      "id": "track_1782911039282_6",
+      "title": "Sunken Cartridge",
+      "caption": "深海に沈んだ記憶の記録媒体。過去と現在が交錯する、ノスタルジックで物憂げな残響を追う旅路。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/8bit%20Dungeon/Sunken_Cartridge.mp3",
+      "tags": [
+        "暗い",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-01"
+    },
+    {
+      "id": "track_1782911039282_7",
+      "title": "Low Light Descent",
+      "caption": "闇の中を彷徨い、深淵へと降りていく感覚。微細な音の下降がもたらす、張り詰めたミステリアスな空気感。",
+      "type": "instrumental",
+      "duration": 98,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/8bit%20Dungeon/Low_Light_Descent.mp3",
+      "tags": [
+        "暗い",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-01"
+    },
+    {
+      "id": "track_1782911039282_8",
+      "title": "The Last Save Point",
+      "caption": "危機的な状況下で訪れる一時停止。残された情報と次なる突破口への焦燥感を表現する、静寂に満ちたサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/8bit%20Dungeon/The_Last_Save_Point.mp3",
+      "tags": [
+        "暗い",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-01"
+    },
+    {
+      "id": "track_1782911039282_9",
+      "title": "The Sunken Relic Hall",
+      "caption": "水没した古代文明が秘める荘厳な物語。時を超えて漂う神秘性を持つ、深遠な水中空間の音響体験。",
+      "type": "instrumental",
+      "duration": 104,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/8bit%20Dungeon/The_Sunken_Relic_Hall.mp3",
+      "tags": [],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-01"
     }
   ]
 }
