@@ -2101,7 +2101,11 @@
       "type": "instrumental",
       "duration": 104,
       "full_url": "https://cdn.neura-music.com/06game/Dungeon/8bit%20Dungeon/The_Sunken_Relic_Hall.mp3",
-      "tags": [],
+      "tags": [
+        "暗い",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-07-01"
