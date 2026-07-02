@@ -39,7 +39,15 @@ function updateMetaTags(url) {
     canonical.rel = 'canonical';
     document.head.appendChild(canonical);
   }
-  canonical.href = url.toString();
+
+  let canonicalHref = url.toString();
+  if (state.currentMode === 'article' && state.currentContentId) {
+    canonicalHref = `https://neura-music.com/articles/${state.currentContentId}.html`;
+  } else if (state.currentMode === 'theme' && state.currentAlbum) {
+    canonicalHref = `https://neura-music.com/albums/album_${state.currentAlbum.id}.html`;
+  }
+  
+  canonical.href = canonicalHref;
 }
 
 function updateURL() {
