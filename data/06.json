@@ -37,7 +37,9 @@
       "name": "Dungeon",
       "caption": "**「閉ざされた空間での探索や謎解きを彩る、静かで緊張感のあるBGMセット",
       "albums": [
-        "album_1782910987835"
+        "album_1782910987835",
+        "album_1783036254626",
+        "album_1783037586175"
       ]
     }
   ],
@@ -265,6 +267,48 @@
         "track_1782911039282_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Dungeon\\8bit Dungeon",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1783036254626",
+      "title": "Dungeon Modern EDM",
+      "art": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Modern%20EDM/cover_1783038999976.webp",
+      "caption": "現代的なEDMサウンドで構成したダンジョン探索向けBGM。",
+      "categoryId": "cat_1782909083294",
+      "tracks": [
+        "track_1783037114828_0",
+        "track_1783037114832_1",
+        "track_1783037114832_2",
+        "track_1783037114832_3",
+        "track_1783037114832_4",
+        "track_1783037114832_5",
+        "track_1783037114832_6",
+        "track_1783037114833_7",
+        "track_1783037114833_8",
+        "track_1783037114833_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Dungeon\\Dungeon Modern EDM",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1783037586175",
+      "title": "Dungeon Orchestra",
+      "art": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Orchestra/cover_1783038971539.webp",
+      "caption": "地下遺跡や古代神殿の静けさを背景に、 低音弦の反復と薄いコーラスが響くオーケストラ系ダンジョンBGM。",
+      "categoryId": "cat_1782909083294",
+      "tracks": [
+        "track_1783038694739_0",
+        "track_1783038694739_1",
+        "track_1783038694739_2",
+        "track_1783038694740_3",
+        "track_1783038694740_4",
+        "track_1783038694740_5",
+        "track_1783038694740_6",
+        "track_1783038694740_7",
+        "track_1783038694740_8",
+        "track_1783038694740_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Dungeon\\Dungeon Orchestra",
       "type": "instrumental"
     }
   ],
@@ -2109,6 +2153,316 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-07-01"
+    },
+    {
+      "id": "track_1783037114828_0",
+      "title": "Subterranean Navigator",
+      "caption": "深い地下迷宮を巡る旅路。光と音で辿る、神秘的かつ探求心を掻き立てるサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Modern%20EDM/Subterranean%20Navigator.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783037114832_1",
+      "title": "Artificial Tension",
+      "caption": "張り詰めた空気の中、未知の世界へ深く没入する高揚感。緊張と期待が織りなすドラマティックな情景を音で描き出します。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Modern%20EDM/Artificial%20Tension.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783037114832_2",
+      "title": "Forgotten Facility",
+      "caption": "忘れ去られた施設の残響に耳を澄ませば、過去の記憶と機械の静寂が響き渡る。ミステリアスなSF世界観の音像です。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Modern%20EDM/Forgotten%20Facility.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783037114832_3",
+      "title": "Institutional Glitch",
+      "caption": "システムのエラーやノイズが混ざり合う異空間。日常的な論理が崩壊していく、予期せぬ展開を表現した楽曲です。",
+      "type": "instrumental",
+      "duration": 151,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Modern%20EDM/Institutional%20Glitch.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783037114832_4",
+      "title": "Mechanical Hope",
+      "caption": "機械的なビートが織りなす、新たな希望の鼓動。デジタルと人間性の交差点から生まれる温かいサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Modern%20EDM/Mechanical%20Hope.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783037114832_5",
+      "title": "Warehouse Urgency",
+      "caption": "無機質な空間に満ちる、焦燥感と高揚を煽る電子音の奔流。緊迫した状況へ引きずり込まれるような疾走感を表現しています。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Modern%20EDM/Warehouse%20Urgency.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783037114832_6",
+      "title": "Ancient Tech Pulse",
+      "caption": "太古のテクノロジーが脈打つ荘厳な響き。未知なる文明の力を感じさせる、神秘的なアンビエントトラックです。",
+      "type": "instrumental",
+      "duration": 149,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Modern%20EDM/Ancient%20Tech%20Pulse.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783037114833_7",
+      "title": "Impossible Angles",
+      "caption": "深遠な技術と未踏の空間が交差する、没入感あふれる音響体験。物語の世界を拡張させるシネマティックサウンドです。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Modern%20EDM/Impossible%20Angles.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783037114833_8",
+      "title": "Subterranean Pressure",
+      "caption": "地底深くから迫る、抑えきれない重圧。巨大な未知の領域へと飲み込まれていくような壮大で緊張感あふれるサウンドです。",
+      "type": "instrumental",
+      "duration": 99,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Modern%20EDM/Subterranean%20Pressure.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783037114833_9",
+      "title": "Perpetual Motion",
+      "caption": "限りなく続く躍動的なリズムが導く、終わりのない探求心。まるで万能の装置が回り続けるような魔法のような調べを奏でます。",
+      "type": "instrumental",
+      "duration": 149,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Modern%20EDM/Perpetual%20Motion.mp3",
+      "tags": [
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783038694739_0",
+      "title": "Ancient Stillness",
+      "caption": "失われた文明の神秘を象徴する、張り詰めた静寂と荘厳な響き。遺跡に満ちる圧倒的な存在感を表現。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Orchestra/Ancient%20Stillness.mp3",
+      "tags": [
+        "暗い",
+        "シネマティック",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783038694739_1",
+      "title": "Underground Echoes",
+      "caption": "地下深く反響する未知のエネルギー。都会の夜を彷徨う、脈動的でミステリアスなサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Orchestra/Underground%20Echoes.mp3",
+      "tags": [
+        "暗い",
+        "シネマティック",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783038694739_2",
+      "title": "Phantom Echoes Of The Stone Architecture",
+      "caption": "巨大な石造建築物に残る過去と現在の残響。時を超えた空間的な広がりを感じさせる、荘厳で神秘的な雰囲気。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Orchestra/Phantom%20Echoes%20of%20the%20Stone%20Architecture.mp3",
+      "tags": [
+        "暗い",
+        "シネマティック",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783038694740_3",
+      "title": "Echoes From The Ruins",
+      "caption": "廃墟に響き渡る忘れ去られた記憶。静寂とノイズが交錯する、物語性を帯びたサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Orchestra/Echoes%20from%20the%20Ruins.mp3",
+      "tags": [
+        "暗い",
+        "シネマティック",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783038694740_4",
+      "title": "The Ancient Threshold",
+      "caption": "古代の門を越える瞬間の壮大な広がり。未踏の領域へと誘う、畏敬と期待が入り混じる情景音。",
+      "type": "instrumental",
+      "duration": 102,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Orchestra/The%20Ancient%20Threshold.mp3",
+      "tags": [
+        "暗い",
+        "シネマティック",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783038694740_5",
+      "title": "Perpetual Shadow",
+      "caption": "無限に広がる影が描き出す、高度に緊張した戦場。静かな闘争心と漂う危機感を表現するサウンドトラック。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Orchestra/Perpetual%20Shadow.mp3",
+      "tags": [
+        "暗い",
+        "シネマティック",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783038694740_6",
+      "title": "Encroaching Darkness",
+      "caption": "深淵から忍び寄る闇の予兆。張り詰めた静寂を破り、物語が動き出す直前の緊迫した幕開け。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Orchestra/Encroaching%20Darkness.mp3",
+      "tags": [
+        "暗い",
+        "シネマティック",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783038694740_7",
+      "title": "Subterranean Fog",
+      "caption": "深い地下に立ち込める霧の描写。深遠で謎めいた未知への探求心を刺激する、幻想的な音響空間。",
+      "type": "instrumental",
+      "duration": 170,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Orchestra/Subterranean%20Fog.mp3",
+      "tags": [
+        "暗い",
+        "シネマティック",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783038694740_8",
+      "title": "Iron Dominion",
+      "caption": "鋼鉄が支配的な、覇権を賭けた戦いの情景。力強い決意と圧倒的な存在感を放つサウンドトラック。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Orchestra/Iron%20Dominion.mp3",
+      "tags": [
+        "暗い",
+        "シネマティック",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783038694740_9",
+      "title": "Echoes Of The Ruins",
+      "caption": "廃墟にこだまする壮大な残響。かつての輝かしい時代と、現在の静寂が織りなす哀愁漂う情景描写。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Orchestra/Echoes%20of%20the%20Ruins.mp3",
+      "tags": [
+        "暗い",
+        "シネマティック",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-03"
     }
   ]
 }
