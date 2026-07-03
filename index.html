@@ -37,9 +37,11 @@
   <link rel="alternate" hreflang="ru" href="https://neura-music.com/lang/ru/" />
   <link rel="alternate" hreflang="hi" href="https://neura-music.com/lang/hi/" />
   <link rel="alternate" hreflang="x-default" href="https://neura-music.com/lang/en/" />
+  <link rel="canonical" href="https://neura-music.com/" />
   <script>
     (function() {
       if (sessionStorage.getItem('lang_redirected')) return;
+      if (/bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent)) return;
 
       const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
       let targetPath = '';
