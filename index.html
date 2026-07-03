@@ -41,7 +41,7 @@
   <script>
     (function() {
       if (sessionStorage.getItem('lang_redirected')) return;
-      if (/bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent)) return;
+      if (/bot|googlebot|google-inspectiontool|crawler|spider|robot|crawling|lighthouse/i.test(navigator.userAgent)) return;
 
       const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
       let targetPath = '';
