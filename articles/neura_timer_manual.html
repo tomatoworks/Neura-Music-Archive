@@ -57,6 +57,35 @@
       background: #d4d4d8;
     }
   </style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://neura-music.com/articles/neura_timer_manual.html"
+  },
+  "headline": "NEURA Timer Generator 取扱ガイド | OBS向け高品質タイマーHTML生成",
+  "description": "安全なローカルサーバー同期方式を採用し、誤クリック事故を防ぐOBS向け高品質タイマーHTML生成ツール「NEURA Timer Generator」の使い方・導入ガイドです。",
+  "image": "https://neura-music.com/assets/og-image-seo.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Neura Music Archive",
+    "url": "https://neura-music.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Neura Music Archive",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://neura-music.com/assets/logo.png"
+    }
+  },
+  "datePublished": "2026-07-01T07:53:17.981Z",
+  "dateModified": "2026-07-01T07:53:17.981Z"
+}
+  </script>
 </head>
 
 <body class="bg-black text-zinc-200 font-sans antialiased selection:bg-zinc-800 selection:text-white transition-colors duration-200">
@@ -114,8 +143,9 @@
 
 
 <!-- NMA-HEADER-START -->
-<header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
     <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      
       <div class="flex items-center">
         <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
           <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
@@ -131,7 +161,7 @@
         </div>
         
         <div class="hidden md:flex items-center space-x-7">
-        <div class="relative inline-block">
+          <div class="relative inline-block">
             <select id="generator-selector" onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
               <option value="">Generatorを選択</option>
               <option value="/tools/clock-generator.html">CLOCK GEN</option>
@@ -160,7 +190,7 @@
     <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
       <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
     </div>
-  </header>
+</header>
 <!-- NMA-HEADER-END -->
 
 

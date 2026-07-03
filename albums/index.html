@@ -21,8 +21,9 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="h-screen flex flex-col overflow-hidden text-gray-800 dark:text-gray-100 bg-white dark:bg-[#1c1c1c] font-sans">
-  <header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
     <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      
       <div class="flex items-center">
         <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
           <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
@@ -38,7 +39,7 @@
         </div>
         
         <div class="hidden md:flex items-center space-x-7">
-        <div class="relative inline-block">
+          <div class="relative inline-block">
             <select id="generator-selector" onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
               <option value="">Generatorを選択</option>
               <option value="/tools/clock-generator.html">CLOCK GEN</option>
@@ -67,16 +68,16 @@
     <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
       <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
     </div>
-  </header>
+</header>
   <main class="flex-1 overflow-y-auto bg-gray-100 dark:bg-[#0a0a0a]">
     
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto pt-28 pb-12 px-4 sm:px-6 lg:px-8">
           <div class="mb-8 flex items-center justify-between border-b border-gray-200 dark:border-[#2e2e2e] pb-4">
-            <h2 class="text-lg font-bold text-gray-500 dark:text-gray-400 font-['IBM_Plex_Sans_JP',_sans-serif] tracking-wider uppercase">Albums Archive</h2>
+            <h1 class="text-lg font-bold text-gray-500 dark:text-gray-400 font-['IBM_Plex_Sans_JP',_sans-serif] tracking-wider uppercase">Albums Archive</h1>
             <div class="flex items-center gap-2">
               <span class="text-xs text-gray-400 dark:text-gray-500 font-mono">COUNT:</span>
               <span class="bg-[#5D9CC4]/10 text-[#5D9CC4] text-sm font-mono font-bold px-3 py-0.5 rounded-md border border-[#5D9CC4]/20 shadow-[0_0_10px_rgba(93,156,196,0.05)]">
-                78
+                80
               </span>
             </div>
           </div>
@@ -91,7 +92,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Chapter Thirteen</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Chapter Thirteen</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">ゲーム的な語彙で構成された、 静かで人間的な歌のアルバム。 表題曲 “Chapter Thirteen” がその締めです。</p>
                   </div>
                 </div>
@@ -106,7 +107,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Anime pop</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Anime pop</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">No description available.</p>
                   </div>
                 </div>
@@ -121,7 +122,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Chill Chill Pop</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Chill Chill Pop</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">軽やかでかわいらしい雰囲気のボーカル曲を集めたアルバム。 透明感のあるサウンドと穏やかなテンポで、日常のVLOGや雑談配信にも使いやすい柔らかいChill系ポップスを収録しています。</p>
                   </div>
                 </div>
@@ -136,7 +137,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">フレンチ・シティポップ</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">フレンチ・シティポップ</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">フランス語ボーカルで構成したシティポップ系アルバム。 都会的な軽さと柔らかい湿度をあわせ持つ、夜景・街歩き・静かな作業に向いたポップスをまとめています</p>
                   </div>
                 </div>
@@ -151,7 +152,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Hip Pop</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Hip Pop</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">軽いビートと喋り寄りのボーカルを組み合わせた、NMA 独自のポップ系ヒップホップ。 都会的でゆるいテンションを保ちながら、明るく聴きやすいボーカルテーマです。</p>
                   </div>
                 </div>
@@ -166,7 +167,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Bit tune POP</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Bit tune POP</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">ゆっくりめのビートに、柔らかい8bit質感を重ねた Bit TUNE POP。 レトロとポップの中間にある、落ち着いた電子ボーカル曲。</p>
                   </div>
                 </div>
@@ -181,7 +182,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Night Scenes – Vocal R&B</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Night Scenes – Vocal R&B</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">夜間の映像や落ち着いたシーン向けのVOCAL R&B素材をまとめたアルバム。 人物中心のカットや静かな場面で扱いやすいボーカルトラックを収録しています。</p>
                   </div>
                 </div>
@@ -196,7 +197,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Quiet Shades – Vocal R&B</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Quiet Shades – Vocal R&B</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">淡いトーンの女性ボーカルを使った静かな R&B 曲集。 夜間の映像や控えめなシーンに馴染む、密度の低い落ち着いたトラックを収録しています。</p>
                   </div>
                 </div>
@@ -211,7 +212,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Afterglow – Ending R&B</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Afterglow – Ending R&B</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">映像の締めや夜の終わりに向いた、静かな余韻を残す R&B トラック集。 低めのテンションと柔らかいボーカルで、シーンを穏やかにフェードアウトさせます。</p>
                   </div>
                 </div>
@@ -226,7 +227,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Daylight Vocal Jazz</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Daylight Vocal Jazz</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">明るい時間帯に使いやすい、軽やかなボーカルジャズを集めたアルバムです。</p>
                   </div>
                 </div>
@@ -241,7 +242,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Blue Hour</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Blue Hour</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">夕方から夜に移る時間帯に合う、落ち着いた男性ボーカルジャズをまとめたアルバムです。静かな作業や夜のVLOGに使いやすい、柔らかなトーンのボーカルと控えめな伴奏が中心です。</p>
                   </div>
                 </div>
@@ -256,7 +257,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Light Vocal Piano Jazz</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Light Vocal Piano Jazz</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">ピアノと柔らかなパッドを中心にした、軽やかなボーカルジャズのアルバムです。</p>
                   </div>
                 </div>
@@ -271,7 +272,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">配信みてくれてありがとうSONGS</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">配信みてくれてありがとうSONGS</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">配信の最後にかけるべき曲を集めたボーカルアルバム</p>
                   </div>
                 </div>
@@ -286,7 +287,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">イントロのためのピアノ曲</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">イントロのためのピアノ曲</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">静かでやわらかなピアノを中心に構成された、配信や動画の冒頭に使いやすいイントロ向けインスト集。</p>
                   </div>
                 </div>
@@ -301,7 +302,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">番組のための主題歌</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">番組のための主題歌</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">番組や配信の冒頭を彩るための、主題歌風オープニング曲集。</p>
                   </div>
                 </div>
@@ -316,7 +317,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">ラストに流すピアノ曲</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">ラストに流すピアノ曲</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">配信や動画の締めに使える、短いアウトロ曲。静かに終わっていく余韻を大切にしたエンディング用BGMです。</p>
                   </div>
                 </div>
@@ -331,7 +332,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">エンディングのためのJAZZ</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">エンディングのためのJAZZ</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">配信や動画の締めに使える、静かなジャズのアウトロ曲を集めたインストアルバムです。</p>
                   </div>
                 </div>
@@ -346,7 +347,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Outro Slow Pop</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Outro Slow Pop</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">「配信や動画の締めに使える、ゆったりしたポップ系アウトロ曲を集めたアルバムです。 軽いビートと柔らかいシンセで、静かにフェードアウトしていく終わり方を演出します。</p>
                   </div>
                 </div>
@@ -361,7 +362,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Lo-fi Beat Outro</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Lo-fi Beat Outro</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">配信や動画の終わりに使える、ゆるいLo-fiビートのアウトロ曲を集めたアルバムです。 テープノイズと柔らかいビートで、静かにフェードアウトしていく締めの雰囲気を作ります。</p>
                   </div>
                 </div>
@@ -376,7 +377,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Guitar Clean Intro</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Guitar Clean Intro</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">配信や動画の冒頭に使うための短尺イントロ素材。 音数を抑えたクリーン系のギターサウンドを中心にまとめている。</p>
                   </div>
                 </div>
@@ -391,7 +392,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Intro Jazz – Soft Opening</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Intro Jazz – Soft Opening</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">配信や動画の冒頭に使える、静かなジャズ調のイントロ素材。 軽いスウィング感と控えめな編成で、入りの空気だけをそっと整えるように仕上げている。</p>
                   </div>
                 </div>
@@ -406,7 +407,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Digital Ambient Intro</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Digital Ambient Intro</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">静かな未来感をテーマにした、短尺のデジタル系イントロ素材集。</p>
                   </div>
                 </div>
@@ -421,7 +422,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Wood Bass Intro</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Wood Bass Intro</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">ウッドベースの柔らかい低音を中心にした、静かなイントロ素材集。 ジャズ寄りの質感を残しつつ、動画の入りを邪魔しないように、 シンプルで落ち着いたフレーズで構成している。</p>
                   </div>
                 </div>
@@ -436,7 +437,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Bossa Nova Spring</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Bossa Nova Spring</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">春の柔らかな光と軽い風をイメージした、静かなボサノヴァBGM。フランス語ボーカル。</p>
                   </div>
                 </div>
@@ -451,7 +452,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Bossa Nova Summer</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Bossa Nova Summer</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">夏の明るい光とゆるい風をイメージした、軽やかなボサノヴァBGM。 カフェや作業用に向いた、涼しさと透明感のある英語ボーカル曲をまとめています。</p>
                   </div>
                 </div>
@@ -466,7 +467,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Bossa Nova Autumn</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Bossa Nova Autumn</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">乾いた風と午後の光に溶ける、静かな秋のボーカル・ボサノヴァ。ポルトガル語ボーカル。</p>
                   </div>
                 </div>
@@ -481,7 +482,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Bossa Nova Winter</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Bossa Nova Winter</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">冬の静けさと柔らかな灯りをイメージした、落ち着いたボサノヴァBGM。 穏やかな空気に寄り添うスペイン語ボーカル曲をまとめています。</p>
                   </div>
                 </div>
@@ -496,7 +497,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">朝のボサノヴァ</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">朝のボサノヴァ</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">朝のカフェ時間に合う、静かで柔らかなアンビエント系ボサノヴァを集めたインストアルバムです。</p>
                   </div>
                 </div>
@@ -511,7 +512,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">昼のボサノヴァ</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">昼のボサノヴァ</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">昼のカフェ時間に合う、明るく軽やかなボサノヴァ・インストを集めたBGMアルバムです。」</p>
                   </div>
                 </div>
@@ -526,7 +527,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">夜のボサノヴァ</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">夜のボサノヴァ</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">夜の静かなカフェに合う、落ち着いたジャズ寄りのボサノヴァ・インストをまとめたBGMアルバムです。</p>
                   </div>
                 </div>
@@ -541,7 +542,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">喫茶店のシティポップ</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">喫茶店のシティポップ</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">喫茶店で薄くかかっていてほしいシティポップを収録してある英語ボーカルアルバム</p>
                   </div>
                 </div>
@@ -556,7 +557,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">純喫茶のブルース</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">純喫茶のブルース</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">純喫茶でかかっていてほしいブルースをあつめたブルースボーカルアルバム。英語ボーカル。</p>
                   </div>
                 </div>
@@ -571,7 +572,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">ジャズ喫茶のジャズ</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">ジャズ喫茶のジャズ</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">昼下がりの喫茶店に流れるような、落ち着いたボーカルジャズを集めたアルバムです。</p>
                   </div>
                 </div>
@@ -586,7 +587,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">カフェのオーケストラ</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">カフェのオーケストラ</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">カフェの空気にそっと溶ける、小さなオーケストラのための静かなクラシック。</p>
                   </div>
                 </div>
@@ -601,7 +602,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">カフェのオーケストラ 2</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">カフェのオーケストラ 2</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">静かなカフェの雰囲気にぴったりのBGM。静かなオーケストラサウンドを集めたアルバム</p>
                   </div>
                 </div>
@@ -616,7 +617,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">誰も頼んでないのに優しいピアノ</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">誰も頼んでないのに優しいピアノ</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">静かで控えめなアンビエント・ピアノを中心に構成された、カフェ向けのインストゥルメンタル・アルバム。生録音風のノイズ。</p>
                   </div>
                 </div>
@@ -631,7 +632,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">雨の日のカフェ</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">雨の日のカフェ</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">雨の日のカフェをテーマにした、静かで集中しやすいピアノBGM。外の雨音を邪魔せず、店内の空気を柔らかく整えるような落ち着いた曲調で統一しています。</p>
                   </div>
                 </div>
@@ -646,7 +647,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">閉店前にかけるピアノBGM</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">閉店前にかけるピアノBGM</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">閉店前の静かなカフェをイメージした、落ち着いたピアノBGM。 照明が少し落ちて、一日の終わりに向かう店内の空気をそのまま音にしています。</p>
                   </div>
                 </div>
@@ -661,7 +662,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">朝のルーティン・春</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">朝のルーティン・春</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">春の朝のルーティン向けに、軽めで静かなBGMをまとめたアルバムです。日常のVLOGに使いやすい曲が中心です。</p>
                   </div>
                 </div>
@@ -676,7 +677,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">春のお散歩BGM</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">春のお散歩BGM</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">春の散歩シーン向けの静かなBGM集。 軽く流せるトラックをまとめたアルバム。</p>
                   </div>
                 </div>
@@ -691,7 +692,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">SPRING JAZZ</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">SPRING JAZZ</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">春の雰囲気に合わせジャズアルバム。</p>
                   </div>
                 </div>
@@ -706,7 +707,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Lunch Chill Loop</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Lunch Chill Loop</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">ランチタイムのVLOGやカフェシーンに使える、日常の映像に自然に溶け込むループ仕様。</p>
                   </div>
                 </div>
@@ -721,7 +722,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">春夜のおでかけBGM</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">春夜のおでかけBGM</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">春の夜に外へ出かけるシーン向けの落ち着いたVLOG用BGM。</p>
                   </div>
                 </div>
@@ -736,7 +737,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Animal VLOG Lo-Fi Hip Hop – Spring</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Animal VLOG Lo-Fi Hip Hop – Spring</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">室内で過ごすペットVLOG向けに、柔らかいLo‑Fiヒップホップのインストをまとめたアルバムです。生活音に馴染む軽いビートと春らしい明るさを意識した構成。</p>
                   </div>
                 </div>
@@ -751,7 +752,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">気持ちいい夏の朝</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">気持ちいい夏の朝</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">夏の朝に使いやすい軽めのBGMをまとめたアルバムです。爽やかな時間帯に合わせやすい曲が中心です。</p>
                   </div>
                 </div>
@@ -766,7 +767,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Summer Activity Vibes</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Summer Activity Vibes</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">夏のレジャーシーンに合わせた、軽やかでアクティブな VLOG 用BGM。</p>
                   </div>
                 </div>
@@ -781,7 +782,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Calm Summer Afternoon</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Calm Summer Afternoon</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">室内VLOGや作業風景、旅行中の休憩シーンなど、静かな時間帯に合わせやすい曲が中心です。</p>
                   </div>
                 </div>
@@ -796,7 +797,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">徒然なるままに夏</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">徒然なるままに夏</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">夏の夜のVLOG向けに、古典音楽の要素を取り入れ、日常の記録に自然に馴染む落ち着いたトーンで構成しています。</p>
                   </div>
                 </div>
@@ -811,7 +812,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Horror Ambient Collection</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Horror Ambient Collection</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">静かなホラー演出に使えるアンビエントBGMをまとめたアルバム。不穏さだけを残す控えめな構成で、朗読・実況・VLOGなど幅広い用途に対応。</p>
                   </div>
                 </div>
@@ -826,7 +827,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">静かな秋の朝</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">静かな秋の朝</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">冷たい空気と柔らかい日差しを感じる秋の朝向けBGM。落ち着いたピアノや控えめなアコースティック要素を中心に、静かで穏やかな時間を演出する構成。</p>
                   </div>
                 </div>
@@ -841,7 +842,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Autumn Daytime Chill</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Autumn Daytime Chill</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">秋の昼間に合う落ち着いたチル系BGMをまとめたアルバムです。日常VLOGや作業用、静かな午後のシーンに使いやすい穏やかな雰囲気です。</p>
                   </div>
                 </div>
@@ -856,7 +857,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">秋の夜長の音楽と、ゆっくり溶けていく日常</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">秋の夜長の音楽と、ゆっくり溶けていく日常</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">秋の夜にゆっくり過ごすための静かなLo‑Fiアンビエント集。夜のシーンに自然に馴染む穏やかな音をまとめたアルバムです。</p>
                   </div>
                 </div>
@@ -871,7 +872,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">木の葉が舞うころの、日々をそっと彩る音たち</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">木の葉が舞うころの、日々をそっと彩る音たち</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">静かな日常シーンに寄り添う、落ち着いたVLOG向けBGM集。ゆったりと過ごす時間を自然に支える穏やかな音をまとめています。</p>
                   </div>
                 </div>
@@ -886,7 +887,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">ゆっくり始まる冬の朝</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">ゆっくり始まる冬の朝</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">冬の朝の静かな時間に合う、落ち着いたVLOG向けBGMをまとめたアルバム。</p>
                   </div>
                 </div>
@@ -901,7 +902,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">冬の昼の音楽</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">冬の昼の音楽</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">冬の昼間のVLOG向けに使える、落ち着いたBGMをまとめたアルバム。</p>
                   </div>
                 </div>
@@ -916,7 +917,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Xmas Songs</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Xmas Songs</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">クリスマス向けの穏やかなBGM集。</p>
                   </div>
                 </div>
@@ -931,7 +932,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Winter Night Moments</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Winter Night Moments</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">冬の夜の静かな時間に合う、落ち着いたVLOG向けBGM集。冷たい空気や夜景の雰囲気を邪魔しない、穏やかなアンビエント／チル系の楽曲で構成。</p>
                   </div>
                 </div>
@@ -946,7 +947,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">WINTER BLUES</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">WINTER BLUES</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">ギターのブルーノートと軽いドライブ感を中心にしたブルース系インスト集。</p>
                   </div>
                 </div>
@@ -961,7 +962,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">春の訪れを告げる音楽</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">春の訪れを告げる音楽</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">春の気配が少しずつ広がり始める時期をイメージしたインスト集。</p>
                   </div>
                 </div>
@@ -976,7 +977,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Chill Talk EDM</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Chill Talk EDM</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">軽いビートと柔らかいシンセで構成された、声を邪魔しないチル系EDM。</p>
                   </div>
                 </div>
@@ -991,7 +992,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">トークのためのピコピコBGM</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">トークのためのピコピコBGM</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">軽いピコピコ音と短いリフで構成された、話し声を邪魔しないチル系ビットチューン。</p>
                   </div>
                 </div>
@@ -1006,7 +1007,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">トークのためのピコピコBGM 2</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">トークのためのピコピコBGM 2</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">軽いピコピコ音と短いリフで構成された、話し声を邪魔しないチル系ビットチューンのセカンドアルバム。</p>
                   </div>
                 </div>
@@ -1021,7 +1022,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">ゆるいJAZZ</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">ゆるいJAZZ</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">ゆったり話したい時間のための、軽めのJAZZ BGMを収録したアルバムです。</p>
                   </div>
                 </div>
@@ -1036,7 +1037,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">EDM POP</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">EDM POP</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">トークを明るく彩る、軽快なEDMポップBGM。 電子的で爽やかなテンポが、会話のリズムを心地よく支える明るい背景音楽です。</p>
                   </div>
                 </div>
@@ -1051,7 +1052,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Light HOUSE</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Light HOUSE</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">軽やかな4つ打ちを中心にした、明るいハウス系BGMのアルバムです。</p>
                   </div>
                 </div>
@@ -1066,7 +1067,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">ゆるTECHNO</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">ゆるTECHNO</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">No description available.</p>
                   </div>
                 </div>
@@ -1081,7 +1082,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">トークのためのピコピコBGM 3</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">トークのためのピコピコBGM 3</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">軽いピコピコ音と短いリフで構成された、話し声を邪魔しないチル系ビットチューンの3rdアルバム。</p>
                   </div>
                 </div>
@@ -1096,7 +1097,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">まじめな話をする時のためのEDM</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">まじめな話をする時のためのEDM</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">落ち着いたトーンで話したい時に使える、無機質で控えめなEDM。</p>
                   </div>
                 </div>
@@ -1111,7 +1112,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Bit Opening Set</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Bit Opening Set</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">タイトル画面や開始演出にそのまま置ける、明るくてシンプルなイントロBGMを集めています。</p>
                   </div>
                 </div>
@@ -1126,7 +1127,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Modern Synth Opening</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Modern Synth Opening</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">柔らかいシンセと薄いアルペジオで組まれた、 現代ゲームのタイトル画面のための短い導入曲集。</p>
                   </div>
                 </div>
@@ -1141,7 +1142,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Fantasy Orchestra Opening</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Fantasy Orchestra Opening</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">ストリングスとブラスを中心にした、ファンタジーRPGのタイトル画面向けの短いオーケストラBGM集。</p>
                   </div>
                 </div>
@@ -1156,7 +1157,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Pixel Battle</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Pixel Battle</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">8bit / 16bit のレトロゲーム風バトルBGM。 軽快なチップチューンと緊張感のあるメロディで、 クラシックな戦闘シーンを彩る短尺インスト集。</p>
                   </div>
                 </div>
@@ -1171,7 +1172,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Modern Battle EDM</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Modern Battle EDM</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">現代アクションの戦闘シーン向けに作られた、攻撃的でスピード感のあるEDM。</p>
                   </div>
                 </div>
@@ -1186,7 +1187,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Orchestra Battle</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Orchestra Battle</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">ストリングスとブラスを中心にした、ファンタジーRPGの戦闘シーン向けオーケストラBGM集。 緊張感のあるリズムと重厚なハーモニーで、バトルの“動き”と“危機感”を短い楽曲に凝縮しています。</p>
                   </div>
                 </div>
@@ -1201,7 +1202,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Light 8bit Field</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Light 8bit Field</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">シンプルな波形と明るいメロディで構成され、レトロゲーム風の探索パートにそのまま置けるループ向けBGMです。</p>
                   </div>
                 </div>
@@ -1216,7 +1217,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Electro Field Journey</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Electro Field Journey</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">シンセと軽快なEDMを中心に構成された、探索や移動シーン向けのフィールドBGMセット。</p>
                   </div>
                 </div>
@@ -1231,7 +1232,7 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Fieldscape Overture</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Fieldscape Overture</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">ファンタジーRPGのフィールド探索向けのオーケストラBGM集。 ストリングス主体の軽い推進力と、木管の柔らかい彩りで“歩く・進む・旅する”感を表現した短尺インストです。</p>
                   </div>
                 </div>
@@ -1246,8 +1247,38 @@
                     </div>
                   </div>
                   <div class="p-4">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">8bit Dungeon</h3>
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">8bit Dungeon</h2>
                     <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">洞窟・遺跡・地下迷宮など、閉ざされた空間の探索に合わせた8bitダンジョンBGM。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1783036254626.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Modern%20EDM/cover_1783038999976.webp" alt="Dungeon Modern EDM" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow font-mono">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Dungeon Modern EDM</h2>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">現代的なEDMサウンドで構成したダンジョン探索向けBGM。</p>
+                  </div>
+                </div>
+              </a>
+            
+              <a href="/albums/album_album_1783037586175.html" class="block group">
+                <div class="bg-white dark:bg-[#1a1a1a] rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-[#2e2e2e] transition-transform hover:-translate-y-1 hover:shadow-xl">
+                  <div class="aspect-square bg-gray-100 dark:bg-[#111] relative">
+                    <img src="https://cdn.neura-music.com/06game/Dungeon/Dungeon%20Orchestra/cover_1783038971539.webp" alt="Dungeon Orchestra" class="w-full h-full object-cover" loading="lazy" />
+                    <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded shadow font-mono">
+                      10 Tracks
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h2 class="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 group-hover:text-[#5D9CC4] transition-colors tracking-wide font-['IBM_Plex_Sans_JP',_sans-serif]">Dungeon Orchestra</h2>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-2 line-clamp-2 leading-relaxed">地下遺跡や古代神殿の静けさを背景に、 低音弦の反復と薄いコーラスが響くオーケストラ系ダンジョンBGM。</p>
                   </div>
                 </div>
               </a>

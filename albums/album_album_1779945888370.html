@@ -24,8 +24,9 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="h-screen flex flex-col overflow-hidden text-gray-800 dark:text-gray-100 bg-white dark:bg-[#1c1c1c] font-sans">
-  <header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
     <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      
       <div class="flex items-center">
         <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
           <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
@@ -41,7 +42,7 @@
         </div>
         
         <div class="hidden md:flex items-center space-x-7">
-        <div class="relative inline-block">
+          <div class="relative inline-block">
             <select id="generator-selector" onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
               <option value="">Generatorを選択</option>
               <option value="/tools/clock-generator.html">CLOCK GEN</option>
@@ -70,446 +71,647 @@
     <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
       <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
     </div>
-  </header>
+</header>
   <main class="flex-1 overflow-y-auto bg-gray-100 dark:bg-[#0a0a0a]">
     
-          <div class="container mx-auto px-4 py-10 max-w-5xl">
-            <button onclick="window.history.back()" class="inline-flex items-center text-sm font-bold text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition mb-8 gap-1">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-              Back
-            </button>
-            
-            <section class="flex flex-col md:flex-row gap-8 mb-10 items-start">
-              <div class="w-48 h-48 md:w-64 md:h-64 bg-gray-100 dark:bg-[#111] rounded-2xl overflow-hidden shadow-lg border border-gray-200 dark:border-[#2e2e2e] shrink-0">
-                <img src="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/cover_1779948577966.webp" alt="カフェのオーケストラ 2" class="w-full h-full object-cover" />
+          <style>
+            .nma-tooltip { opacity: 0; pointer-events: none; transition: opacity 0.2s; }
+            .group:hover .nma-tooltip { opacity: 1; pointer-events: auto; }
+            .custom-scrollbar::-webkit-scrollbar { width: 0px; height: 0px; display: none; }
+          </style>
+          
+          <div class="relative w-full">
+            <aside class="hidden xl:flex flex-col w-20 fixed left-4 top-1/2 -translate-y-1/2 bg-white/40 dark:bg-[#1a1a1a]/40 backdrop-blur-md border border-white/20 dark:border-gray-800/50 shadow-2xl z-40 rounded-full py-5 items-center gap-4">
+              
+            <a href="https://neura-music.com/theme/ambient/album/album_1778830866392" title="Chapter Thirteen" class="group relative block w-14 h-14 shrink-0 border-2 border-transparent hover:border-[#5D9CC4] hover:scale-110 transition-all duration-300 shadow-sm hover:shadow-xl hover:z-50 rounded-full cursor-pointer">
+              <div class="w-full h-full rounded-full overflow-hidden bg-[#111]">
+                <img src="https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/cover_1778843216819.webp" alt="Chapter Thirteen" class="w-full h-full object-cover" loading="lazy" />
               </div>
-              <div class="flex-1 min-w-0 pt-2">
-                <span class="inline-block text-xs font-bold uppercase tracking-widest text-[#5D9CC4] bg-[#5D9CC4]/10 px-2.5 py-1 rounded-md mb-3">instrumental</span>
-                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-3">カフェのオーケストラ 2</h1>
-                <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400 font-medium mb-4">
-                  
-                  <span>15 Tracks</span>
-                  <span>•</span>
-                  <span>Total Time: 39 min</span>
+              <span class="nma-tooltip absolute left-16 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs rounded-md whitespace-nowrap shadow-xl font-bold tracking-wide z-50 border border-gray-700 dark:border-gray-300">
+                Chapter Thirteen
+              </span>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1778851387085" title="Anime pop" class="group relative block w-14 h-14 shrink-0 border-2 border-transparent hover:border-[#5D9CC4] hover:scale-110 transition-all duration-300 shadow-sm hover:shadow-xl hover:z-50 rounded-full cursor-pointer">
+              <div class="w-full h-full rounded-full overflow-hidden bg-[#111]">
+                <img src="https://cdn.neura-music.com/01vocal/pops/Anime%20pop/cover_1781193991332.webp" alt="Anime pop" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <span class="nma-tooltip absolute left-16 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs rounded-md whitespace-nowrap shadow-xl font-bold tracking-wide z-50 border border-gray-700 dark:border-gray-300">
+                Anime pop
+              </span>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781238122010" title="Chill Chill Pop" class="group relative block w-14 h-14 shrink-0 border-2 border-transparent hover:border-[#5D9CC4] hover:scale-110 transition-all duration-300 shadow-sm hover:shadow-xl hover:z-50 rounded-full cursor-pointer">
+              <div class="w-full h-full rounded-full overflow-hidden bg-[#111]">
+                <img src="https://cdn.neura-music.com/01vocal/pops/Chill%20Chill%20Pop/cover_1781374267184.webp" alt="Chill Chill Pop" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <span class="nma-tooltip absolute left-16 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs rounded-md whitespace-nowrap shadow-xl font-bold tracking-wide z-50 border border-gray-700 dark:border-gray-300">
+                Chill Chill Pop
+              </span>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781241981402" title="フレンチ・シティポップ" class="group relative block w-14 h-14 shrink-0 border-2 border-transparent hover:border-[#5D9CC4] hover:scale-110 transition-all duration-300 shadow-sm hover:shadow-xl hover:z-50 rounded-full cursor-pointer">
+              <div class="w-full h-full rounded-full overflow-hidden bg-[#111]">
+                <img src="https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/cover_1781257981088.webp" alt="フレンチ・シティポップ" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <span class="nma-tooltip absolute left-16 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs rounded-md whitespace-nowrap shadow-xl font-bold tracking-wide z-50 border border-gray-700 dark:border-gray-300">
+                フレンチ・シティポップ
+              </span>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781359854941" title="Hip Pop" class="group relative block w-14 h-14 shrink-0 border-2 border-transparent hover:border-[#5D9CC4] hover:scale-110 transition-all duration-300 shadow-sm hover:shadow-xl hover:z-50 rounded-full cursor-pointer">
+              <div class="w-full h-full rounded-full overflow-hidden bg-[#111]">
+                <img src="https://cdn.neura-music.com/01vocal/pops/Hip%20Pop/cover_1781362459066.webp" alt="Hip Pop" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <span class="nma-tooltip absolute left-16 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs rounded-md whitespace-nowrap shadow-xl font-bold tracking-wide z-50 border border-gray-700 dark:border-gray-300">
+                Hip Pop
+              </span>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781412072566" title="Bit tune POP" class="group relative block w-14 h-14 shrink-0 border-2 border-transparent hover:border-[#5D9CC4] hover:scale-110 transition-all duration-300 shadow-sm hover:shadow-xl hover:z-50 rounded-full cursor-pointer">
+              <div class="w-full h-full rounded-full overflow-hidden bg-[#111]">
+                <img src="https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/cover_1781414723310.webp" alt="Bit tune POP" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <span class="nma-tooltip absolute left-16 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs rounded-md whitespace-nowrap shadow-xl font-bold tracking-wide z-50 border border-gray-700 dark:border-gray-300">
+                Bit tune POP
+              </span>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781457777586" title="Night Scenes – Vocal R&B" class="group relative block w-14 h-14 shrink-0 border-2 border-transparent hover:border-[#5D9CC4] hover:scale-110 transition-all duration-300 shadow-sm hover:shadow-xl hover:z-50 rounded-full cursor-pointer">
+              <div class="w-full h-full rounded-full overflow-hidden bg-[#111]">
+                <img src="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/cover_1781459417689.webp" alt="Night Scenes – Vocal R&B" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <span class="nma-tooltip absolute left-16 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs rounded-md whitespace-nowrap shadow-xl font-bold tracking-wide z-50 border border-gray-700 dark:border-gray-300">
+                Night Scenes – Vocal R&B
+              </span>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781516916663" title="Quiet Shades – Vocal R&B" class="group relative block w-14 h-14 shrink-0 border-2 border-transparent hover:border-[#5D9CC4] hover:scale-110 transition-all duration-300 shadow-sm hover:shadow-xl hover:z-50 rounded-full cursor-pointer">
+              <div class="w-full h-full rounded-full overflow-hidden bg-[#111]">
+                <img src="https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/cover_1781517279305.webp" alt="Quiet Shades – Vocal R&B" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <span class="nma-tooltip absolute left-16 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs rounded-md whitespace-nowrap shadow-xl font-bold tracking-wide z-50 border border-gray-700 dark:border-gray-300">
+                Quiet Shades – Vocal R&B
+              </span>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781595273791" title="Afterglow – Ending R&B" class="group relative block w-14 h-14 shrink-0 border-2 border-transparent hover:border-[#5D9CC4] hover:scale-110 transition-all duration-300 shadow-sm hover:shadow-xl hover:z-50 rounded-full cursor-pointer">
+              <div class="w-full h-full rounded-full overflow-hidden bg-[#111]">
+                <img src="https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/cover_1781603624060.webp" alt="Afterglow – Ending R&B" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <span class="nma-tooltip absolute left-16 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs rounded-md whitespace-nowrap shadow-xl font-bold tracking-wide z-50 border border-gray-700 dark:border-gray-300">
+                Afterglow – Ending R&B
+              </span>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781775942038" title="Daylight Vocal Jazz" class="group relative block w-14 h-14 shrink-0 border-2 border-transparent hover:border-[#5D9CC4] hover:scale-110 transition-all duration-300 shadow-sm hover:shadow-xl hover:z-50 rounded-full cursor-pointer">
+              <div class="w-full h-full rounded-full overflow-hidden bg-[#111]">
+                <img src="https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/cover_1781777478561.webp" alt="Daylight Vocal Jazz" class="w-full h-full object-cover" loading="lazy" />
+              </div>
+              <span class="nma-tooltip absolute left-16 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs rounded-md whitespace-nowrap shadow-xl font-bold tracking-wide z-50 border border-gray-700 dark:border-gray-300">
+                Daylight Vocal Jazz
+              </span>
+            </a>
+          
+            </aside>
+            
+            <div class="container mx-auto px-4 pt-28 pb-12 max-w-4xl xl:pl-28">
+              <nav class="flex items-center text-sm font-medium text-gray-500 dark:text-gray-400 mb-8 whitespace-nowrap overflow-x-auto custom-scrollbar" style="scrollbar-width: none;">
+                <a href="https://neura-music.com/" class="hover:text-[#5D9CC4] transition-colors flex items-center gap-1">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                  Home
+                </a>
+                <span class="mx-2 opacity-50">/</span>
+                <a href="https://neura-music.com/albums/" class="hover:text-[#5D9CC4] transition-colors tracking-wider text-xs font-bold">
+                  Album一覧
+                </a>
+                <span class="mx-2 opacity-50">/</span>
+                <span class="text-gray-900 dark:text-gray-100 font-bold truncate">
+                  カフェのオーケストラ 2
+                </span>
+              </nav>
+              
+              <section class="flex flex-col md:flex-row gap-8 mb-10 items-start">
+                <div class="w-48 h-48 md:w-64 md:h-64 bg-gray-100 dark:bg-[#111] rounded-2xl overflow-hidden shadow-lg border border-gray-200 dark:border-[#2e2e2e] shrink-0">
+                  <img src="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/cover_1779948577966.webp" alt="カフェのオーケストラ 2" class="w-full h-full object-cover" />
                 </div>
-                <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl mb-8">静かなカフェの雰囲気にぴったりのBGM。静かなオーケストラサウンドを集めたアルバム</p>
-                
-                <div class="bg-gray-50 dark:bg-[#1a1a1a] rounded-xl border border-gray-200 dark:border-[#2e2e2e] p-4 flex items-center gap-4 shadow-sm max-w-xl">
-                  <button id="btn-prev" class="p-2 text-gray-400 hover:text-[#5D9CC4] transition disabled:opacity-30 disabled:hover:text-gray-400" disabled>
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z"/></svg>
-                  </button>
-                  <button id="btn-play-main" class="p-3 bg-[#5D9CC4] text-white dark:text-black rounded-full hover:scale-105 transition shadow-lg flex items-center justify-center">
-                    <svg id="icon-play-main" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                  </button>
-                  <button id="btn-next" class="p-2 text-gray-400 hover:text-[#5D9CC4] transition disabled:opacity-30 disabled:hover:text-gray-400" disabled>
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M11.555 5.168A1 1 0 0010 6v2.798l-5.445-3.63A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4z"/></svg>
-                  </button>
+                <div class="flex-1 min-w-0 pt-2">
+                  <span class="inline-block text-xs font-bold uppercase tracking-widest text-[#5D9CC4] bg-[#5D9CC4]/10 px-2.5 py-1 rounded-md mb-3">instrumental</span>
+                  <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-3">カフェのオーケストラ 2</h1>
+                  <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400 font-medium mb-4">
+                    
+                    <span>15 Tracks</span>
+                    <span>•</span>
+                    <span>Total Time: 39 min</span>
+                  </div>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl mb-8">静かなカフェの雰囲気にぴったりのBGM。静かなオーケストラサウンドを集めたアルバム</p>
                   
-                  <div class="flex-1 min-w-0 px-2">
-                    <div id="player-title" class="text-sm font-bold text-gray-900 dark:text-gray-200 truncate">Select a track</div>
-                    <div class="w-full mt-2">
-                      <input type="range" id="player-progress" value="0" min="0" max="100" class="w-full h-1.5 bg-gray-300 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#5D9CC4]" disabled>
+                  <div class="bg-gray-50 dark:bg-[#1a1a1a] rounded-xl border border-gray-200 dark:border-[#2e2e2e] shadow-sm max-w-xl overflow-hidden">
+                    <div class="p-4 flex items-center gap-4">
+                      <button id="btn-prev" class="p-2 text-gray-400 hover:text-[#5D9CC4] transition disabled:opacity-30 disabled:hover:text-gray-400" disabled>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z"/></svg>
+                      </button>
+                      <button id="btn-play-main" class="p-3 bg-[#5D9CC4] text-white dark:text-black rounded-full hover:scale-105 transition shadow-lg flex items-center justify-center">
+                        <svg id="icon-play-main" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <button id="btn-next" class="p-2 text-gray-400 hover:text-[#5D9CC4] transition disabled:opacity-30 disabled:hover:text-gray-400" disabled>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M11.555 5.168A1 1 0 0010 6v2.798l-5.445-3.63A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4z"/></svg>
+                      </button>
+                      
+                      <div class="flex-1 min-w-0 px-2">
+                        <div id="player-title" class="text-sm font-bold text-gray-900 dark:text-gray-200 truncate">Select a track</div>
+                        <div class="w-full mt-2">
+                          <input type="range" id="player-progress" value="0" min="0" max="100" class="w-full h-1.5 bg-gray-300 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-[#5D9CC4]" disabled>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="bg-gray-100 dark:bg-[#111] border-t border-gray-200 dark:border-[#2e2e2e] px-4 py-2.5 flex justify-between items-center">
+                      <span class="text-[11px] text-gray-500 font-medium">※全曲の連続再生に対応</span>
+                      <a href="https://neura-music.com/theme/theme_1778135210741/album/album_1779945888370" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gray-200 dark:bg-[#222] hover:bg-[#5D9CC4] hover:text-white dark:text-gray-300 text-gray-700 text-[11px] font-bold rounded transition-colors group">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path></svg>
+                        メインプレイヤーで開く
+                      </a>
                     </div>
                   </div>
+
+                </div>
+              </section>
+              
+              <div class="space-y-1">
+                <h2 class="text-xl font-bold mb-4 border-b border-gray-200 dark:border-[#2e2e2e] pb-2 text-gray-900 dark:text-gray-100">Tracklist</h2>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">1</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Glass And Willow</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">都会の喧騒を忘れさせる、透明感あふれる午後のカフェ。グラス越しに差し込む光と、優雅に揺れる柳の葉が織りなす、心地よい調べ。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      1:57
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="0" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Glass_and_Willow.mp3" data-track-title="Glass And Willow" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">2</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Late August Afternoon</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">過ぎゆく夏の日差しの輝きを追いかけるように。カフェの片隅で過ごす、優雅でノスタルジックな午後の時間。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:28
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="1" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Late_August_Afternoon.mp3" data-track-title="Late August Afternoon" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">3</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Softly Rhythmic Nostalgia</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">窓から射し込む柔らかい日差しと、心地よいリズムが流れるカフェの午後。懐かしい記憶をそっと辿る、温かい午後のサウンドスケープ。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      1:46
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="2" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Softly%20Rhythmic%20Nostalgia.mp3" data-track-title="Softly Rhythmic Nostalgia" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">4</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Candle At First Light</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">朝日が差し込む静かな空間。キャンドルの温かい光とともに始まる、穏やかで新しい一日の幕開けを彩る調べ。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:51
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="3" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Candle_at_First_Light.mp3" data-track-title="Candle At First Light" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">5</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Where The Barley Bends</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">陽光が降り注ぐカフェ。アコースティックギターの優しい調べが、日常に安らぎをもたらすひとときを彩る。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:55
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="4" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Where_the_Barley_Bends.mp3" data-track-title="Where The Barley Bends" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">6</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Unfinished Sentences</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">温かい午後に流れる、心に語りかけるような時間。言葉にならない感情を寄り添う、静謐なピアノとストリングスが心地よい調べ。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:25
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="5" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Unfinished_Sentences.mp3" data-track-title="Unfinished Sentences" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">7</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Tracing The Horizon</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">窓から差し込む光を浴びて、時間がゆったりと流れる感覚。希望に満ちたカフェの午後に響く、優しいインストゥルメンタル。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:54
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="6" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Tracing_the_Horizon.mp3" data-track-title="Tracing The Horizon" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">8</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Sunlight On Porcelain</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">午後の日差しが、陶器の質感や食器を優しく照らす。心地よい静けさと、軽やかで洗練されたカフェタイムを感じるBGM。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:56
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="7" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Sunlight_on_Porcelain.mp3" data-track-title="Sunlight On Porcelain" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">9</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Afternoon In The Atrium</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">午後の光が満ちるアトリウム。ジャズピアノが溶け込み、日常に洗練された心地よい余白を生み出すサウンド。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:53
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="8" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Afternoon_in_the_Atrium.mp3" data-track-title="Afternoon In The Atrium" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">10</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Window At Dawn</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">窓辺に差し込む柔らかな朝の光と、生き生きとしたカフェのざわめき。心落ち着く、静寂の中の穏やかな時間をお届けします。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:54
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="9" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Window_at_Dawn.mp3" data-track-title="Window At Dawn" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">11</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Morning Pendulums</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">優しい朝の光が満ちる、静寂のカフェ空間。時間そのものがゆらりと揺れるような、温かく心地よい目覚めの調べ。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:54
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="10" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Morning_Pendulums.mp3" data-track-title="Morning Pendulums" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">12</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Before The First Customer</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">静寂と期待が漂う、開店前のカフェ。これから始まる日常を温かく包み込む、穏やかで心地よいサウンド。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:37
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="11" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Before_the_First_Customer.mp3" data-track-title="Before The First Customer" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">13</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Sunlight On The Floorboards</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">差し込む午後の光が、空間の床板を優しく照らし出す。心ゆくまでゆったりとした時間の流れを感じる、没入感のあるインストゥルメンタル。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:53
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="12" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Sunlight_on_the_Floorboards.mp3" data-track-title="Sunlight On The Floorboards" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">14</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Before The Valley Wakes</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">静かな朝のカフェ。日常の風景に、心安らぐ安らぎと優しいムードをそっと添える、美しいサウンドスケープ。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:28
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="13" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Before_the_Valley_Wakes.mp3" data-track-title="Before The Valley Wakes" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
+                    <div class="w-8 text-center text-gray-400 text-sm font-mono">15</div>
+                    
+                    <div class="flex-1 min-w-0 px-4">
+                      <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Sunlight_on_the_Floorboards (1)</div>
+                      <div class="text-[13px] text-gray-500 truncate mt-0.5">窓から降り注ぐ午後の光が、古びた床板を温かく彩る。懐かしくも穏やかな、カフェで過ごす優しい午後の時間。</div>
+                    </div>
+                    
+                    <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
+                      2:33
+                    </div>
+                    
+                    <div class="w-20 flex justify-center">
+                      <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
+                    </div>
+
+                    <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
+                      <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="14" aria-label="Play">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                      </button>
+                      <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Sunlight_on_the_Floorboards%20(1).mp3" data-track-title="Sunlight_on_the_Floorboards (1)" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                
+              </div>
+              
+              <div class="mt-16 xl:hidden">
+                <h2 class="text-lg font-bold mb-4 border-b border-gray-200 dark:border-[#2e2e2e] pb-2 text-gray-900 dark:text-gray-100">More Albums</h2>
+                <div class="flex overflow-x-auto gap-4 pb-4 custom-scrollbar" style="scrollbar-width: thin;">
+                  
+            <a href="https://neura-music.com/theme/ambient/album/album_1778830866392" class="group block w-32 h-32 rounded-xl overflow-hidden shrink-0 border border-gray-200 dark:border-[#333] hover:border-[#5D9CC4] transition-all shadow-md hover:shadow-xl relative bg-[#111]">
+              <img src="https://cdn.neura-music.com/01vocal/pops/Pop%E2%80%99n%20musica/cover_1778843216819.webp" alt="Chapter Thirteen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-8 pb-2 px-3 text-white text-[11px] font-bold truncate opacity-80 group-hover:opacity-100 transition-opacity">
+                Chapter Thirteen
+              </div>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1778851387085" class="group block w-32 h-32 rounded-xl overflow-hidden shrink-0 border border-gray-200 dark:border-[#333] hover:border-[#5D9CC4] transition-all shadow-md hover:shadow-xl relative bg-[#111]">
+              <img src="https://cdn.neura-music.com/01vocal/pops/Anime%20pop/cover_1781193991332.webp" alt="Anime pop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-8 pb-2 px-3 text-white text-[11px] font-bold truncate opacity-80 group-hover:opacity-100 transition-opacity">
+                Anime pop
+              </div>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781238122010" class="group block w-32 h-32 rounded-xl overflow-hidden shrink-0 border border-gray-200 dark:border-[#333] hover:border-[#5D9CC4] transition-all shadow-md hover:shadow-xl relative bg-[#111]">
+              <img src="https://cdn.neura-music.com/01vocal/pops/Chill%20Chill%20Pop/cover_1781374267184.webp" alt="Chill Chill Pop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-8 pb-2 px-3 text-white text-[11px] font-bold truncate opacity-80 group-hover:opacity-100 transition-opacity">
+                Chill Chill Pop
+              </div>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781241981402" class="group block w-32 h-32 rounded-xl overflow-hidden shrink-0 border border-gray-200 dark:border-[#333] hover:border-[#5D9CC4] transition-all shadow-md hover:shadow-xl relative bg-[#111]">
+              <img src="https://cdn.neura-music.com/01vocal/pops/%E3%83%95%E3%83%AC%E3%83%B3%E3%83%81%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97/cover_1781257981088.webp" alt="フレンチ・シティポップ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-8 pb-2 px-3 text-white text-[11px] font-bold truncate opacity-80 group-hover:opacity-100 transition-opacity">
+                フレンチ・シティポップ
+              </div>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781359854941" class="group block w-32 h-32 rounded-xl overflow-hidden shrink-0 border border-gray-200 dark:border-[#333] hover:border-[#5D9CC4] transition-all shadow-md hover:shadow-xl relative bg-[#111]">
+              <img src="https://cdn.neura-music.com/01vocal/pops/Hip%20Pop/cover_1781362459066.webp" alt="Hip Pop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-8 pb-2 px-3 text-white text-[11px] font-bold truncate opacity-80 group-hover:opacity-100 transition-opacity">
+                Hip Pop
+              </div>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781412072566" class="group block w-32 h-32 rounded-xl overflow-hidden shrink-0 border border-gray-200 dark:border-[#333] hover:border-[#5D9CC4] transition-all shadow-md hover:shadow-xl relative bg-[#111]">
+              <img src="https://cdn.neura-music.com/01vocal/pops/Bit%20tune%20POP/cover_1781414723310.webp" alt="Bit tune POP" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-8 pb-2 px-3 text-white text-[11px] font-bold truncate opacity-80 group-hover:opacity-100 transition-opacity">
+                Bit tune POP
+              </div>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781457777586" class="group block w-32 h-32 rounded-xl overflow-hidden shrink-0 border border-gray-200 dark:border-[#333] hover:border-[#5D9CC4] transition-all shadow-md hover:shadow-xl relative bg-[#111]">
+              <img src="https://cdn.neura-music.com/01vocal/R%26B/Night%20Scenes%20%E2%80%93%20Vocal%20R%26B/cover_1781459417689.webp" alt="Night Scenes – Vocal R&B" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-8 pb-2 px-3 text-white text-[11px] font-bold truncate opacity-80 group-hover:opacity-100 transition-opacity">
+                Night Scenes – Vocal R&B
+              </div>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781516916663" class="group block w-32 h-32 rounded-xl overflow-hidden shrink-0 border border-gray-200 dark:border-[#333] hover:border-[#5D9CC4] transition-all shadow-md hover:shadow-xl relative bg-[#111]">
+              <img src="https://cdn.neura-music.com/01vocal/R%26B/Quiet%20Shades%20%E2%80%93%20Vocal%20R%26B/cover_1781517279305.webp" alt="Quiet Shades – Vocal R&B" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-8 pb-2 px-3 text-white text-[11px] font-bold truncate opacity-80 group-hover:opacity-100 transition-opacity">
+                Quiet Shades – Vocal R&B
+              </div>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781595273791" class="group block w-32 h-32 rounded-xl overflow-hidden shrink-0 border border-gray-200 dark:border-[#333] hover:border-[#5D9CC4] transition-all shadow-md hover:shadow-xl relative bg-[#111]">
+              <img src="https://cdn.neura-music.com/01vocal/R%26B/Afterglow%20%E2%80%93%20Ending%20R%26B/cover_1781603624060.webp" alt="Afterglow – Ending R&B" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-8 pb-2 px-3 text-white text-[11px] font-bold truncate opacity-80 group-hover:opacity-100 transition-opacity">
+                Afterglow – Ending R&B
+              </div>
+            </a>
+          
+            <a href="https://neura-music.com/theme/ambient/album/album_1781775942038" class="group block w-32 h-32 rounded-xl overflow-hidden shrink-0 border border-gray-200 dark:border-[#333] hover:border-[#5D9CC4] transition-all shadow-md hover:shadow-xl relative bg-[#111]">
+              <img src="https://cdn.neura-music.com/01vocal/jazz/Daylight%20Vocal%20Jazz/cover_1781777478561.webp" alt="Daylight Vocal Jazz" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-8 pb-2 px-3 text-white text-[11px] font-bold truncate opacity-80 group-hover:opacity-100 transition-opacity">
+                Daylight Vocal Jazz
+              </div>
+            </a>
+          
                 </div>
               </div>
-            </section>
-            
-            <div class="space-y-1">
-              <h2 class="text-xl font-bold mb-4 border-b border-gray-200 dark:border-[#2e2e2e] pb-2">Tracklist</h2>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">1</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Glass And Willow</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">都会の喧騒を忘れさせる、透明感あふれる午後のカフェ。グラス越しに差し込む光と、優雅に揺れる柳の葉が織りなす、心地よい調べ。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    1:57
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
 
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="0" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Glass_and_Willow.mp3" data-track-title="Glass And Willow" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">2</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Late August Afternoon</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">過ぎゆく夏の日差しの輝きを追いかけるように。カフェの片隅で過ごす、優雅でノスタルジックな午後の時間。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:28
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="1" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Late_August_Afternoon.mp3" data-track-title="Late August Afternoon" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">3</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Softly Rhythmic Nostalgia</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">窓から射し込む柔らかい日差しと、心地よいリズムが流れるカフェの午後。懐かしい記憶をそっと辿る、温かい午後のサウンドスケープ。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    1:46
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="2" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Softly%20Rhythmic%20Nostalgia.mp3" data-track-title="Softly Rhythmic Nostalgia" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">4</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Candle At First Light</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">朝日が差し込む静かな空間。キャンドルの温かい光とともに始まる、穏やかで新しい一日の幕開けを彩る調べ。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:51
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="3" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Candle_at_First_Light.mp3" data-track-title="Candle At First Light" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">5</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Where The Barley Bends</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">陽光が降り注ぐカフェ。アコースティックギターの優しい調べが、日常に安らぎをもたらすひとときを彩る。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:55
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="4" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Where_the_Barley_Bends.mp3" data-track-title="Where The Barley Bends" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">6</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Unfinished Sentences</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">温かい午後に流れる、心に語りかけるような時間。言葉にならない感情を寄り添う、静謐なピアノとストリングスが心地よい調べ。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:25
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="5" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Unfinished_Sentences.mp3" data-track-title="Unfinished Sentences" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">7</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Tracing The Horizon</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">窓から差し込む光を浴びて、時間がゆったりと流れる感覚。希望に満ちたカフェの午後に響く、優しいインストゥルメンタル。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:54
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="6" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Tracing_the_Horizon.mp3" data-track-title="Tracing The Horizon" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">8</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Sunlight On Porcelain</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">午後の日差しが、陶器の質感や食器を優しく照らす。心地よい静けさと、軽やかで洗練されたカフェタイムを感じるBGM。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:56
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="7" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Sunlight_on_Porcelain.mp3" data-track-title="Sunlight On Porcelain" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">9</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Afternoon In The Atrium</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">午後の光が満ちるアトリウム。ジャズピアノが溶け込み、日常に洗練された心地よい余白を生み出すサウンド。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:53
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="8" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Afternoon_in_the_Atrium.mp3" data-track-title="Afternoon In The Atrium" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">10</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Window At Dawn</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">窓辺に差し込む柔らかな朝の光と、生き生きとしたカフェのざわめき。心落ち着く、静寂の中の穏やかな時間をお届けします。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:54
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="9" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Window_at_Dawn.mp3" data-track-title="Window At Dawn" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">11</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Morning Pendulums</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">優しい朝の光が満ちる、静寂のカフェ空間。時間そのものがゆらりと揺れるような、温かく心地よい目覚めの調べ。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:54
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="10" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Morning_Pendulums.mp3" data-track-title="Morning Pendulums" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">12</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Before The First Customer</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">静寂と期待が漂う、開店前のカフェ。これから始まる日常を温かく包み込む、穏やかで心地よいサウンド。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:37
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="11" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Before_the_First_Customer.mp3" data-track-title="Before The First Customer" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">13</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Sunlight On The Floorboards</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">差し込む午後の光が、空間の床板を優しく照らし出す。心ゆくまでゆったりとした時間の流れを感じる、没入感のあるインストゥルメンタル。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:53
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="12" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Sunlight_on_the_Floorboards.mp3" data-track-title="Sunlight On The Floorboards" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">14</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Before The Valley Wakes</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">静かな朝のカフェ。日常の風景に、心安らぐ安らぎと優しいムードをそっと添える、美しいサウンドスケープ。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:28
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="13" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Before_the_Valley_Wakes.mp3" data-track-title="Before The Valley Wakes" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
-                <div class="flex items-center py-3 px-4 hover:bg-gray-50 dark:hover:bg-[#1a1a1a] rounded-xl group transition-colors border border-transparent hover:border-gray-200 dark:hover:border-[#333]">
-                  <div class="w-8 text-center text-gray-400 text-sm font-mono">15</div>
-                  
-                  <div class="flex-1 min-w-0 px-4">
-                    <div class="font-bold text-gray-900 dark:text-gray-100 truncate text-[15px]">Sunlight_on_the_Floorboards (1)</div>
-                    <div class="text-[13px] text-gray-500 truncate mt-0.5">窓から降り注ぐ午後の光が、古びた床板を温かく彩る。懐かしくも穏やかな、カフェで過ごす優しい午後の時間。</div>
-                  </div>
-                  
-                  <div class="w-24 text-right text-gray-400 text-sm font-mono hidden sm:block">
-                    2:33
-                  </div>
-                  
-                  <div class="w-20 flex justify-center">
-                    <span class="text-[11px] text-gray-600 opacity-50 uppercase">None</span>
-                  </div>
-
-                  <div class="w-16 flex items-center justify-end gap-1 opacity-100 transition-opacity">
-                    <button class="play-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" data-index="14" aria-label="Play">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
-                    </button>
-                    <a href="https://cdn.neura-music.com/03cafe/Instrumental/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E3%82%AA%E3%83%BC%E3%82%B1%E3%82%B9%E3%83%88%E3%83%A9%202/Sunlight_on_the_Floorboards%20(1).mp3" data-track-title="Sunlight_on_the_Floorboards (1)" class="dl-btn p-2 rounded-full text-gray-400 hover:text-[#5D9CC4] hover:bg-blue-50 dark:hover:bg-[#5D9CC4]/10 transition-colors" aria-label="Download">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    </a>
-                  </div>
-                </div>
-              
             </div>
-          </main>
+          </div>
         
           
           <script>
