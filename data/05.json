@@ -15,7 +15,8 @@
         "album_1780371903076",
         "album_1780455320523",
         "album_1780554248919",
-        "album_1780556322526"
+        "album_1780556322526",
+        "album_1783150366828"
       ]
     }
   ],
@@ -227,6 +228,27 @@
         "track_1780558241875_14"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\まじめな話をする時のためのEDM",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1783150366828",
+      "title": "Midnight Talk EDM",
+      "art": "https://cdn.neura-music.com/05talk/Chill/Midnight%20Talk%20EDM/cover_1783151490309.webp",
+      "caption": "深夜の落ち着いたトーク向けの静かなEDM。深夜ラジオやゆっくり話したい場面の背景に使いやすい静音系の電子音楽。",
+      "categoryId": "cat_1780196207758",
+      "tracks": [
+        "track_1783151276633_0",
+        "track_1783151276636_1",
+        "track_1783151276636_2",
+        "track_1783151276636_3",
+        "track_1783151276637_4",
+        "track_1783151276637_5",
+        "track_1783151276637_6",
+        "track_1783151276637_7",
+        "track_1783151276637_8",
+        "track_1783151276637_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\Midnight Talk EDM",
       "type": "instrumental"
     }
   ],
@@ -2085,6 +2107,176 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-06-04"
+    },
+    {
+      "id": "track_1783151276633_0",
+      "title": "Intimate Conversation Loop",
+      "caption": "静けさが優しく包み込むビート。夜の深まりとともに、自己との対話を促す親密なグルーヴを体験してください。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Midnight%20Talk%20EDM/Intimate%20Conversation%20Loop.mp3",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783151276636_1",
+      "title": "Quiet Reflection",
+      "caption": "メロディが静謐に響くような空間へ。心の内面と音楽が溶け合う、瞑想的で洗練されたダンスの瞬間を彩ります。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Midnight%20Talk%20EDM/Quiet%20Reflection.mp3",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783151276636_2",
+      "title": "Late Night Contemplation",
+      "caption": "深夜の街角を彷徨うような感情の機微を音に込めたグルーヴ。静寂と解放感の間で揺れ動く、ドラマティックなEDMトラックです。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Midnight%20Talk%20EDM/Late%20Night%20Contemplation.mp3",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783151276636_3",
+      "title": "Restrained Energy",
+      "caption": "爆発寸前のような熱量を内包するサウンドスケープ。夜明けに向けて加速する高揚感が、まるで鼓動のように全身を駆け巡ります。",
+      "type": "instrumental",
+      "duration": 170,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Midnight%20Talk%20EDM/Restrained%20Energy.mp3",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783151276637_4",
+      "title": "Midnight Reflections",
+      "caption": "深いビートが都会の喧騒を穏やかに包み込む。高揚感と静寂が交差する、洗練された夜景のようなクラブサウンドです。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Midnight%20Talk%20EDM/Midnight%20Reflections.mp3",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783151276637_5",
+      "title": "Auditory Blanket",
+      "caption": "ノイズとメロディの融合が作り出す夢幻的な世界観。聴く者を日常から切り離し、別次元へと誘う壮大なサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 164,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Midnight%20Talk%20EDM/Auditory%20Blanket.mp3",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783151276637_6",
+      "title": "Blooming Depths",
+      "caption": "夜明けの光を纏った深遠なエモーショナルビート。魂を揺さぶるダンスミュージックが、深い自己探求へと誘います。",
+      "type": "instrumental",
+      "duration": 165,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Midnight%20Talk%20EDM/Blooming%20Depths.mp3",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783151276637_7",
+      "title": "Serene Introspection Loop",
+      "caption": "静寂に包まれた思索の時間へ。優しく流れるメロディとビートが、心を穏やかに照らし出すエレクトロニックなアンビエンスです。",
+      "type": "instrumental",
+      "duration": 174,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Midnight%20Talk%20EDM/Serene%20Introspection%20Loop.mp3",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783151276637_8",
+      "title": "Tranquil Connection",
+      "caption": "漂う電子音の広がりが心を満たす。安らぎと高揚感が織り交ざる、移ろいゆく感情の瞬間を奏でます。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Midnight%20Talk%20EDM/Tranquil%20Connection.mp3",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783151276637_9",
+      "title": "Gentle Understanding",
+      "caption": "優しいメロディラインが心に染み渡るグルーヴ。夜明け前のような穏やかな光が、心の隙間を満たすようです。",
+      "type": "instrumental",
+      "duration": 169,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Midnight%20Talk%20EDM/Gentle%20Understanding.mp3",
+      "tags": [
+        "Ambient",
+        "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
     }
   ]
 }
