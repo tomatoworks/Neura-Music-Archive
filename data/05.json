@@ -16,7 +16,8 @@
         "album_1780455320523",
         "album_1780554248919",
         "album_1780556322526",
-        "album_1783150366828"
+        "album_1783150366828",
+        "album_1783151622034"
       ]
     }
   ],
@@ -249,6 +250,27 @@
         "track_1783151276637_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\Midnight Talk EDM",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1783151622034",
+      "title": "Hype Talk EDM",
+      "art": "https://cdn.neura-music.com/05talk/Chill/Hype%20Talk%20EDM/cover_1783152446261.webp",
+      "caption": "テンション高めの雑談やゲーム実況向けに作られた、明るいEDMの。",
+      "categoryId": "cat_1780196207758",
+      "tracks": [
+        "track_1783152304568_0",
+        "track_1783152304568_1",
+        "track_1783152304568_2",
+        "track_1783152304568_3",
+        "track_1783152304568_4",
+        "track_1783152304569_5",
+        "track_1783152304569_6",
+        "track_1783152304569_7",
+        "track_1783152304569_8",
+        "track_1783152304569_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\Hype Talk EDM",
       "type": "instrumental"
     }
   ],
@@ -2271,6 +2293,166 @@
       "tags": [
         "Ambient",
         "静か",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783152304568_0",
+      "title": "Neon Conversation",
+      "caption": "ネオンサインが輝く都会の夜。電子音とビートが紡ぐ、無限に続くデジタルな高揚感と会話の風景。",
+      "type": "instrumental",
+      "duration": 146,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Hype%20Talk%20EDM/Neon%20Conversation.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783152304568_1",
+      "title": "Stream High",
+      "caption": "限界を超える疾走感を秘めたEDM。心臓の高鳴りに同期する、熱狂的なビートが全身を包み込む瞬間。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Hype%20Talk%20EDM/Stream%20High.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783152304568_2",
+      "title": "Group Chat Energy",
+      "caption": "賑わうチャットルームのようなエネルギー。高揚感と衝動に満ちたダンスミュージックが、心からの解放を誘う。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Hype%20Talk%20EDM/Group%20Chat%20Energy.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783152304568_3",
+      "title": "Peak Moments",
+      "caption": "クライマックスへと導くエネルギー。ビートが空間を切り裂き、高揚感の頂点へ到達する瞬間を描写。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Hype%20Talk%20EDM/Peak%20Moments.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783152304568_4",
+      "title": "Neon Overdrive",
+      "caption": "爆ぜるネオンのような疾走感。夜の摩天楼を舞台に、強烈なエレクトロニック・ドライブと都会的な熱狂を感じさせる。",
+      "type": "instrumental",
+      "duration": 148,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Hype%20Talk%20EDM/Neon%20Overdrive.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783152304569_5",
+      "title": "Chatting Bgm Loop",
+      "caption": "夜のカフェに溶け込むような軽快なグルーヴ。さりげないビートが、心地よい会話の流れに寄り添う洗練されたエレクトロニクス。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Hype%20Talk%20EDM/Chatting%20BGM%20Loop.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783152304569_6",
+      "title": "Airy Pulse",
+      "caption": "空中に浮遊するようなシンセサイザーの調べ。都会の夜を彩る、軽やかで人工的なパルスが響きわたる。",
+      "type": "instrumental",
+      "duration": 180,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Hype%20Talk%20EDM/Airy%20Pulse.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783152304569_7",
+      "title": "Glittering Pulse",
+      "caption": "煌めく光の粒のようなビート。心拍数と共鳴し、ダンスフロアに鮮烈な輝きをもたらすエネルギッシュなサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 153,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Hype%20Talk%20EDM/Glittering%20Pulse.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783152304569_8",
+      "title": "Stream Glow Loop",
+      "caption": "ストリームの光を捉えたEDMループ。シンセとビートが織りなす躍動的なエナジーで、夜のフロアを彩る。」",
+      "type": "instrumental",
+      "duration": 165,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Hype%20Talk%20EDM/Stream%20Glow%20Loop.mp3",
+      "tags": [
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1783152304569_9",
+      "title": "Virtual Achievement",
+      "caption": "仮想空間での達成感を体現したサウンド。未来的なシンセと躍動感あふれるビートが、新たな体験へと誘う。",
+      "type": "instrumental",
+      "duration": 148,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Hype%20Talk%20EDM/Virtual%20Achievement.mp3",
+      "tags": [
+        "明るい",
         "モダン / クリア",
         "インスト（ボーカルなし）"
       ],
