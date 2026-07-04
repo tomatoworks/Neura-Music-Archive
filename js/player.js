@@ -31,7 +31,23 @@ export function initPlayer() {
   const mainPlayBtn = document.getElementById('main-play-btn');
   if (mainPlayBtn) {
     mainPlayBtn.addEventListener('click', () => {
-      if (!state.playingTrack) return;
+      if (!state.playingTrack) {
+        const currentTheme = state.data?.themes?.find(t => t.id === state.currentThemeId);
+        if (currentTheme && currentTheme.tracks && currentTheme.tracks.length > 0) {
+          const validTracks = currentTheme.tracks.filter(t => t.full_url);
+          if (validTracks.length > 0) {
+            const randomTrack = validTracks[Math.floor(Math.random() * validTracks.length)];
+            let albumArt = '';
+            if (currentTheme.albums) {
+              const album = currentTheme.albums.find(a => a.tracks && a.tracks.includes(randomTrack.id));
+              if (album) albumArt = album.art;
+            }
+            playTrack(randomTrack.id, randomTrack.title, randomTrack.type, randomTrack.duration, albumArt);
+            return;
+          }
+        }
+        return;
+      }
       
       if (state.isPlaying) {
         if (currentAudio) currentAudio.pause();
