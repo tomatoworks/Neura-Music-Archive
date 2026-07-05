@@ -28,7 +28,8 @@
         "album_1779945888370",
         "album_1779948759558",
         "album_1780018213600",
-        "album_1780020846976"
+        "album_1780020846976",
+        "album_1783222673713"
       ]
     }
   ],
@@ -371,6 +372,27 @@
         "track_1780023169089_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\閉店前にかけるピアノBGM",
+      "type": "instrumental"
+    },
+    {
+      "id": "album_1783222673713",
+      "title": "モーニングジャズ",
+      "art": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%82%BA/cover_1783223754613.webp",
+      "caption": "静かな朝の時間をゆっくり整えるためのカフェ向けBGM。",
+      "categoryId": "cat_1779349953911",
+      "tracks": [
+        "track_1783223374719_0",
+        "track_1783223374723_1",
+        "track_1783223374723_2",
+        "track_1783223374723_3",
+        "track_1783223374723_4",
+        "track_1783223374724_5",
+        "track_1783223374724_6",
+        "track_1783223374724_7",
+        "track_1783223374724_8",
+        "track_1783223374724_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\モーニングジャズ",
       "type": "instrumental"
     }
   ],
@@ -3329,6 +3351,176 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-05-29"
+    },
+    {
+      "id": "track_1783223374719_0",
+      "title": "Quiet Optimism",
+      "caption": "午後の日差しが射し込む、静穏なカフェのひととき。優しいピアノとメロディが織りなし、心に深い安らぎを提供する空間を演出します。(ジャズ・アコースティックBGM)",
+      "type": "instrumental",
+      "duration": 148,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%82%BA/Quiet%20Optimism.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-05"
+    },
+    {
+      "id": "track_1783223374723_1",
+      "title": "Daily Momentum",
+      "caption": "日常の小さなリズムを優しくサポートするグルーヴ。午後の光が照らすカフェで、穏やかさと活力を感じられるサウンドです。",
+      "type": "instrumental",
+      "duration": 149,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%82%BA/Daily%20Momentum.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-05"
+    },
+    {
+      "id": "track_1783223374723_2",
+      "title": "Morning Sun Filtering",
+      "caption": "窓から差し込む柔らかな朝の輝きに包まれて。心と体を優しく目覚めさせるような、心地よいモーニングBGMです。",
+      "type": "instrumental",
+      "duration": 172,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%82%BA/Morning%20Sun%20Filtering.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-05"
+    },
+    {
+      "id": "track_1783223374723_3",
+      "title": "Weekend Morning Joy",
+      "caption": "週末の穏やかな目覚めを祝福する音楽。柔らかな光とピアノ、ジャズの響きが重なり、日常にささやかな喜びを満たします。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%82%BA/Weekend%20Morning%20Joy.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-05"
+    },
+    {
+      "id": "track_1783223374723_4",
+      "title": "Quiet Hope",
+      "caption": "午後の光が創り出す静寂なカフェの情景。流れる音楽とともに、心の中で見つけるささやかな希望をそっと聴き届ける時間。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%82%BA/Quiet%20Hope.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-05"
+    },
+    {
+      "id": "track_1783223374724_5",
+      "title": "Purpose At Dawn",
+      "caption": "朝の柔らかな光と静謐な調べが織りなす、目覚めのためのカフェ情景。心穏やかに新たな一日を始めるのに最適なサウンドトラックです。",
+      "type": "instrumental",
+      "duration": 181,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%82%BA/Purpose%20at%20Dawn.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-05"
+    },
+    {
+      "id": "track_1783223374724_6",
+      "title": "Morning Promise",
+      "caption": "静かで落ち着いた午前のひととき。窓越しの光と、仄かに響く優しいメロディが、心地よい空間を演出します。",
+      "type": "instrumental",
+      "duration": 152,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%82%BA/Morning%20Promise.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-05"
+    },
+    {
+      "id": "track_1783223374724_7",
+      "title": "Morning Recollection",
+      "caption": "朝の輝きと共に。アコースティックギターとピアノの温かい響きが、リスナーの心を優しく目覚めさせるようなカフェミュージックです。",
+      "type": "instrumental",
+      "duration": 166,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%82%BA/Morning%20Recollection.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-05"
+    },
+    {
+      "id": "track_1783223374724_8",
+      "title": "Early Hour Echoes",
+      "caption": "静寂な時間帯のカフェに漂う空気感。ジャズの調べが、目覚めの穏やかさと日々の流れを溶かし合う瞬間を彩ります。",
+      "type": "instrumental",
+      "duration": 100,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%82%BA/Early%20Hour%20Echoes.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-05"
+    },
+    {
+      "id": "track_1783223374724_9",
+      "title": "Effortless Day",
+      "caption": "特別な気遣いをせず流れる、日常のサウンドトラック。心地よいビートと温かいメロディが、リラックスできる午後の空間を彩ります。",
+      "type": "instrumental",
+      "duration": 113,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%82%BA/Effortless%20Day.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-05"
     }
   ]
 }
