@@ -2,24 +2,13 @@
 <html lang="ja" class="scroll-smooth">
 
 <head>
-  <head>
-  <link rel="canonical" href="https://neura-music.com/articles/AdSenseotita.html">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>【AdSense審査落ち】タブレットで宿題を出したら「紙に書いてこい」と怒られたので、専用CMSを作らされた話 | Neura Music Archive</title>
-  <meta name="description" content="個人で運営しているAI生成BGM配布サイト「Neura Music Archive」にGoogle AdSenseから審査落ちの通知が届いたことをきっかけに、SPAのデータを静的HTML（MPA）に一括変換する専用ローカルCMSを急遽自作した経緯の備忘録。">
+  <title>【個人開発】年間1,600円の音楽サイトが「SPAのSEO泥沼」から生還し、AdSense再申請に至るまでの全記録 | Neura Music Archive</title>
 
-  <meta property="og:title" content="【AdSense審査落ち】タブレットで宿題を出したら「紙に書いてこい」と怒られたので、専用CMSを作らされた話">
-  <meta property="og:description" content="個人で運営しているAI生成BGM配布サイト「Neura Music Archive」にGoogle AdSenseから審査落ちの通知が届いたことをきっかけに、SPAのデータを静的HTML（MPA）に一括変換する専用ローカルCMSを急遽自作した経緯の備忘録。">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://neura-music.com/articles/AdSenseotita.html">
-  <meta property="og:image" content="https://neura-music.com/assets/og-image-adsense.jpg">
+  <link rel="canonical" href="https://neura-music.com/articles/spaとmpafinal.html">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="【AdSense審査落ち】タブレットで宿題を出したら「紙に書いてこい」と怒られたので、専用CMSを作らされた話">
-  <meta name="twitter:description" content="個人で運営しているAI生成BGM配布サイト「Neura Music Archive」にGoogle AdSenseから審査落ちの通知が届いたことをきっかけに、SPAのデータを静的HTML（MPA）に一括変換する専用ローカルCMSを急遽自作した経緯の備忘録。">
-  <meta name="twitter:image" content="https://neura-music.com/assets/og-image-adsense.jpg">
   <script src="https://cdn.tailwindcss.com" nonce="MTc3MTMzODM4OCwxNDQ4ODMwNDMx"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,6 +35,7 @@
       font-feature-settings: "palt";
     }
 
+    /* スクロールバーのカスタマイズ（モノトーン調） */
     ::-webkit-scrollbar {
       width: 6px;
     }
@@ -82,9 +72,9 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://neura-music.com/articles/AdSenseotita.html"
+    "@id": "https://neura-music.com/articles/spaとmpafinal.html"
   },
-  "headline": "【AdSense審査落ち】いかにして挽回するか",
+  "headline": "【個人開発】年間1,600円の音楽サイトが「SPAのSEO泥沼」から生還し、AdSense再申請に至るまでの全記録",
   "description": "Neura Music Archiveの記事です。",
   "image": "https://neura-music.com/assets/og-image-seo.jpg",
   "author": {
@@ -100,8 +90,8 @@
       "url": "https://neura-music.com/assets/logo.png"
     }
   },
-  "datePublished": "2026-07-01T07:53:17.873Z",
-  "dateModified": "2026-07-01T07:53:17.873Z"
+  "datePublished": "2026-07-06T00:58:45.346Z",
+  "dateModified": "2026-07-06T00:58:45.346Z"
 }
   </script>
 </head>
@@ -115,12 +105,24 @@
   .group:hover .nma-tooltip { opacity: 1; }
 </style>
 <nav class="fixed left-4 md:left-6 xl:left-8 top-1/2 -translate-y-1/2 flex flex-col items-center space-y-3 z-50 hidden lg:flex bg-white/80 dark:bg-[#1e1e1e]/80 backdrop-blur-md shadow-lg border border-slate-200 dark:border-zinc-800 rounded-full py-4 px-2">
-  <a href="./spaとmpafinal.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
-    <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
-    <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg">
+  <div class="flex items-center justify-center w-6 h-6">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-100 dark:bg-zinc-800/30"></div>
+  </div>
+  <div class="flex items-center justify-center w-6 h-6">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-100 dark:bg-zinc-800/30"></div>
+  </div>
+  <div class="flex items-center justify-center w-6 h-6">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-100 dark:bg-zinc-800/30"></div>
+  </div>
+  <div class="flex items-center justify-center w-6 h-6">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-100 dark:bg-zinc-800/30"></div>
+  </div>
+  <div class="group relative flex items-center justify-center w-6 h-6">
+    <div class="w-2 h-2 rounded-full bg-[#5D9CC4] ring-4 ring-[#5D9CC4]/20"></div>
+    <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg font-bold">
       年間1,600円の音楽サイトがSEO泥沼から生還した話
     </span>
-  </a>
+  </div>
   <a href="./spaとmpa3.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
     <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
     <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg">
@@ -139,34 +141,10 @@
       NEURA Timer Generator 取扱ガイド | OBS向け高品質タイマーHTML生成
     </span>
   </a>
-  <div class="group relative flex items-center justify-center w-6 h-6">
-    <div class="w-2 h-2 rounded-full bg-[#5D9CC4] ring-4 ring-[#5D9CC4]/20"></div>
-    <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg font-bold">
+  <a href="./AdSenseotita.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+    <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
+    <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg">
       【AdSense審査落ち】タブレットで宿題を出したら「紙に書いてこい」と怒られたので、専用CMSを作らされた話
-    </span>
-  </div>
-  <a href="./overlay-article.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
-    <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
-    <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg">
-      OverlayGen 紹介＆取扱ガイド | 配信画面をブラウザで簡単デザイン
-    </span>
-  </a>
-  <a href="./spaとmpa.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
-    <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
-    <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg">
-      【SPA×MPA】初回クロールの罠と、検索流入を最大化するためのハイブリッドSEO戦略
-    </span>
-  </a>
-  <a href="./seoblog-1.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
-    <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
-    <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg">
-      SPA がインデックスされない問題と戦った話
-    </span>
-  </a>
-  <a href="./1600yen.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
-    <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
-    <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg">
-      音楽配布サイトを年間1,600円で運用する方法
     </span>
   </a>
 </nav>
@@ -225,12 +203,14 @@
 <!-- NMA-HEADER-END -->
 
 
+  <div class="fixed top-4 right-4 z-50"></div>
+
   <div class="min-h-screen flex flex-col">
 
     <header class="border-b border-slate-100 dark:border-zinc-900 sticky top-0 bg-white/80 dark:bg-black/80 backdrop-blur-md z-40">
       <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
         <a href="/" class="text-sm font-bold tracking-tight text-slate-900 dark:text-white hover:opacity-80 transition-opacity">
-          【AdSense審査落ち】タブレットで宿題を出したら「紙に書いてこい」と怒られたので、専用CMSを作らされた話
+          年間1,600円の音楽サイトがSEO泥沼から生還した話
         </a>
         <span class="text-[10px] font-mono text-slate-400 dark:text-zinc-600 tracking-wider">DEVELOPER BLOG</span>
       </div>
@@ -242,13 +222,13 @@
         <header class="space-y-4">
           <div class="flex items-center gap-2">
             <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-[10px] font-bold text-slate-600 dark:text-zinc-400 tracking-wider uppercase">
-              ADSENSE & DEV
+              DIARY & DEV
             </span>
-            <span class="text-xs text-slate-400 dark:text-zinc-500 font-mono">2026.06.24</span>
+            <span class="text-xs text-slate-400 dark:text-zinc-500 font-mono">2026.07.06</span>
           </div>
           
           <h1 class="text-2xl md:text-3.5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-snug">
-            【AdSense審査落ち】タブレットで宿題を出したら「紙に書いてこい」と怒られたので、専用CMSを作らされた話
+            【個人開発】年間1,600円の音楽サイトが「SPAのSEO泥沼」から生還し、AdSense再申請に至るまでの全記録
           </h1>
 
           <div class="flex items-center gap-4 text-xs text-slate-500 dark:text-zinc-400 pt-1">
@@ -257,34 +237,19 @@
               <span>NMA Dev Team</span>
             </div>
             <span>•</span>
-            <span>読了時間: 約3分</span>
+            <span>読了時間: 約6分</span>
           </div>
         </header>
 
         <section class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
           <p>
-            今日の朝、個人で運営している AI 生成 BGM 配布サイト「Neura Music Archive」に、Google AdSense から審査落ちの通知が届きました。
+            個人でAI生成BGMの配布サイト（Neura Music Archive）を開発・運営しています。
           </p>
           <p>
-            ……と書いても、「AdSense って何？」という方もいるかもしれません。簡単に言うと、Web サイトに広告を掲載して収益を得る Google の広告配信サービスのことです。個人でコツコツとサイトを開発・運営している身としては、毎年かかるドメイン代くらいは回収して、できれば次の機材代の足しにもしたいという、ささやかな夢を託した「お小遣い稼ぎ」の手段でもあります。
+            最新のモダンな技術を組み合わせて、「サクサク動く最高のUX」と「極限まで安い維持費」を両立させたサイトを作ったつもりが、検索エンジンやAdSense審査の仕様と激しく衝突し、深い泥沼にハマることになりました。
           </p>
           <p>
-            しかし、今回届いた通知は「有用性の低いコンテンツ」や「ナビゲーションの問題」といった、血の通っていないいつもの定型文。原因は火を見るより明らかでした。
-          </p>
-          <p>
-            前回の記事でも触れた通り、当サイトは SPA（シングルページアプリケーション）で作っているため、Google のクローラーが中身をうまく読めず、Search Console のインデックス数は長らく「1（トップページのみ）」で止まっていました。
-          </p>
-          <p>
-            一生懸命モダンな技術で、画面がサクサク切り替わる快適なサイトを作ったのに、クローラーからは「中身が空っぽのサイト」と判定されて不合格。
-          </p>
-          <p>
-            これはもう、「先生にタブレットで綺麗にまとめた宿題を提出したら、『これじゃ採点できないから紙に書いてこい』と怒られた」ような理不尽さです。
-          </p>
-          <p>
-            「Google は JavaScript も評価する」という建前を信じた私が甘かった。
-          </p>
-          <p>
-            どうやら審査を通すには、彼ら（クローラー）の古い仕様に合わせて、純粋な静的 HTML（MPA）という名の“紙の束”を用意してやる必要があるようです。
+            本記事は、サイトの低コストな裏側から始まり、SPA（シングルページアプリケーション）特有のSEOの壁、理不尽なAdSense審査落ち、そして独自の「SPA×MPAハイブリッド構成」に辿り着くまでの全記録です。
           </p>
         </section>
 
@@ -294,75 +259,135 @@
           
           <section class="space-y-4">
             <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
-              一部だけ「紙」にしても許されず、結局 CMS を自作することに
+              1. 唯一の固定費「年間1,600円」。維持費ほぼゼロの仕組み
             </h2>
             <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
               <p>
-                実は前回の対策の時点で、少しでもクローラーの機嫌を取るために、内蔵している「Generatorツール類」だけは先行してMPA化（静的HTML化）を済ませていました。
+                インターネット上で大量の音楽ファイルを配布するサイトとなれば、高額なサーバー代やデータ転送料がかかると思われがちですが、当サイトの純粋な固定費は<strong>年間約1,600円（月換算約130円）</strong>しかかかっていません。
               </p>
               <p>
-                しかし、今回のAdSense審査落ちで「ツールの一部だけじゃダメだ。記事も全ページ漏れなく紙（MPA）にして提出しろ」と突きつけられたわけです。
+                この費用の正体は、「neura-music.com」という独自のカスタムドメインの維持費です。
               </p>
               <p>
-                とはいえ、残りの全ページを手作業で HTML に書き直し、ヘッダーやフッターを一つ一つコピペして管理していくなんて絶対にやりたくありません。
+                サイト自体は「Cloudflare Pages」という静的ホスティングを利用してサーバー代を0円に抑え、楽曲ファイルは「Cloudflare R2」というクラウドストレージに保管しています。R2は<strong>「データのダウンロードに伴う転送の手数料（Egress料金）が完全無料」</strong>という破格の仕様のため、どれだけダウンロードされても追加課金に怯える必要がありません。
               </p>
               <p>
-                「全部紙に書けと言うなら、自動で紙を大量印刷する機械を作ってやる」
+                ただし、R2のファイルを外部公開するにはカスタムドメインの紐付けが必須条件となるため、この1,600円だけはシステム上どうしても削れない「唯一の必要経費」となっています。
               </p>
               <p>
-                そんな逆ギレに近いテンションで、SPA のデータを静的 HTML に一括変換するだけの“専用ローカル CMS”を今日急遽作ることにしました。
-              </p>
-              <p>
-                AdSense の審査に通すためだけに、本来必要なかった変換アプリを丸1日かけて作るという、本末転倒な展開です。
+                この「圧倒的な維持の軽さ」は、個人開発を長く続けるための最高のライフハックです。しかし、このモダンで軽量な構成（SPA）を選択したことが、のちの悲劇を生むことになります。
               </p>
             </div>
           </section>
 
           <section class="space-y-4">
             <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
-              渋々作った「紙の束」量産システムの仕組み
+              2. 検索エンジンには見えない。SPAが招いた「インデックス未登録」の悲劇
             </h2>
             <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
               <p>
-                <strong>1. 共通パーツの自動ガッチャンコ</strong><br>
-                ヘッダーやフッターを登録しておけば、記事ファイルを読み込んで上下に自動でくっつけてくれます。
+                サイトは画面遷移なしでサクサクと音楽が切り替わるSPAとして構築しました。しかし、自信満々でSearch Console（サチコ）にサイトマップを送信しても、インデックス数が「1（トップページのみ）」からピクリとも動きません。
               </p>
               <p>
-                <strong>2. クローラーを迷子にさせないナビゲーション</strong><br>
-                記事の並び順から「前の記事」「次の記事」を計算して差し込み。ついでに CSS だけで動くタイムライン風ナビも自動生成。
+                SPAはJavaScriptで動的に画面を描画するため、Googleのクローラーから見れば<strong>「どのURLを開いても中身が空っぽ（または全部同じ）」</strong>に見えてしまうのです。
               </p>
               <p>
-                <strong>3. サイトマップの全自動化</strong><br>
-                ビルドボタンを押すだけで、トップページの最新記事リンクを更新し、SPA 側のデータと生成した HTML をまとめた sitemap.xml を一括出力します。
+                慌てて各ページにクリーンなURL（パス形式）を振り、R2に置いていたツール類をサイト内に統合するなど泥臭い対策を打ちましたが、一度「中身が薄いサイト」と判定されたクローラーの機嫌はなかなか直りませんでした。
               </p>
-              <div class="pt-4">
-                <img src="./AdSense01.png" alt="NMA Article CMS" class="w-full rounded-lg border border-slate-100 dark:border-zinc-900 shadow-sm">
+            </div>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              3. AdSenseの理不尽な審査落ちと「自作CMS」の誕生
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                インデックスに苦戦する中、追い打ちをかけるようにGoogle AdSenseから審査落ちの通知が届きました。理由はお決まりの「有用性の低いコンテンツ」。クローラーがSPAの中身を正しく読めていない以上、当然の結果です。
+              </p>
+              <p>
+                「GoogleはJSも評価する」という建前を信じた私が甘かった。「タブレットで綺麗にまとめた宿題を出したら、採点できないから紙に書いてこいと怒られた」ような理不尽さです。
+              </p>
+              <p>
+                彼らの仕様に合わせるには、純粋な静的HTML（MPA）という名の“紙の束”を用意してやるしかありません。とはいえ、全ページを手作業で書き直すのは絶対に嫌だったので、私は<strong>「SPAのデータを読み込んで、静的HTML（MPA）を一括生成する専用のローカルCMS」</strong>を急遽、丸1日かけて自作しました。
+              </p>
+              <p>
+                AdSenseの審査を通すためだけに、本来必要なかった変換マシンを作らされた本末転倒な展開です。
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              4. 辿り着いた真理。検索エンジンには“外観”を、ユーザーには“店内”を
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                自作CMSでMPAを量産する中で、ようやくSPAとSEOの関係性の本質に辿り着きました。これまでは「SPAをサイトの本体」として検索エンジンに扱わせようとしていましたが、これが間違いだったのです。
+              </p>
+              <p>
+                結論はきわめてシンプルです。
+              </p>
+              <p class="font-bold border-l-4 border-slate-950 dark:border-white pl-3 my-4 text-slate-900 dark:text-white">
+                「検索エンジンには“MPAを本体”だと思わせて、実際のユーザーには“SPAを本体”として使ってもらう。」
+              </p>
+              <ul class="list-disc list-inside space-y-1.5 pl-2 text-slate-700 dark:text-zinc-300">
+                <li><strong>MPAのCanonical（正規URL）</strong>は自分自身（<code>articles/〜.html</code>）を指す。</li>
+                <li><strong>SPAのCanonical</strong>は、対応する静的なMPAのURLを指す。</li>
+                <li><strong>サイトマップ（<code>sitemap.xml</code>）</strong>にはMPAのURLだけを記載する。</li>
+              </ul>
+              <p>
+                クローラーにはCMSで作った中身の詰まった「外観（MPA）」を見せて評価させ、検索から訪れた人間は、裏側で違和感なく「店内（SPA）」のリッチな体験へと誘導する。
+              </p>
+              <p>
+                この明確な役割分担による二重構造を作って初めて、SPA構成における正常なSEOサイクルが機能し始めます。
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              5. 完璧なMPAに潜む罠。無言のサチコと世話焼きなBing先生
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                しかし、泥沼はまだ終わりません。<br>
+                CMSで完璧なMPAを出力したつもりでしたが、サチコでは「クロール済み - インデックス未登録」が連発。しかもサチコは「URL は Google に登録できます」と緑のチェックマークを出して微笑むだけで、エラーや原因を一切教えてくれません。登録リクエストは通るのに、メタタグが抜けているためSEO的には無価値、という最悪のエアポケットに陥っていました。
+              </p>
+              <p>
+                そんなある日、「検索エンジンってGoogle一つじゃないよな」とふと思い出し、Bing版サチコである「Bing Webmaster Tools」に登録してみたのです。すると、サイトスキャン機能を開いた瞬間、画面が真っ赤なエラーで埋め尽くされました。
+              </p>
+              <div class="p-4 rounded-lg bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900 space-y-1 text-red-600 dark:text-red-400 font-medium text-sm">
+                <div>・説明文（description）がありません</div>
+                <div>・ページの正規URL（canonical）がありません</div>
+                <div>・タイトルが複数ページで重複しています</div>
               </div>
+              <p>
+                CMSのテンプレートを設計する際、一番大事な <code>&lt;head&gt;</code> 内の基本タグを一式入れ忘れるという初歩的な大ポカでした。
+              </p>
+              <p>
+                サチコが笑顔でスルーした致命的な欠陥を、Bing先生は手取り足取り、具体的に赤ペンを入れて教えてくれたのです。慌ててテンプレートを修正し、ページを再生成してアップロードし直しました。
+              </p>
             </div>
           </section>
 
           <section class="space-y-4">
             <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
-              まとめ
+              まとめ：インデックスの進行と、AdSenseへの再挑戦
             </h2>
             <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
               <p>
-                朝に理不尽な審査落ちを食らってから半日。
+                Bing先生のおかげで基本タグの抜けを修正し、正しい「SPA×MPAのハイブリッド構成」をデプロイしてから数日。<br>
+                長らく沈黙していたサチコでも、ようやく「インデックス登録済み」のグラフが目に見えて右肩上がりに動き始めました。検索エンジンが正しくサイトの価値を認識し始めた証拠です。
               </p>
               <p>
-                これで、クローラー先生が大好きな「静的リンクで数珠つなぎになった HTML の束」が、ボタン1つで一瞬にして生成できるようになりました。
+                維持費ほぼゼロを目指した気軽なスタートから始まり、モダン技術の落とし穴にハマり、自作CMSを叩き台から作り、Bingに救われるという長い長い回り道をしました。しかし、これでようやくスタートラインです。
               </p>
               <p>
-                ユーザーにとっての使いやすさと、検索エンジン（や AdSense 審査）からの評価は、現状ではまったく別のルールです。
+                インデックスの順調な進行を見届けた本日、因縁のGoogle AdSenseへ再申請のボタンを押しました。
               </p>
               <p>
-                理不尽な審査落ちで休日を丸ごと溶かす羽目になりましたが、結果として今後の運用を楽にする“変換マシン”が手に入ったので、よしとします。
-              </p>
-              <p>
-                これでクローラーが迷子になることは物理的にあり得ません。
-              </p>
-              <p>
-                次こそは、クローラー先生に文句を言わせない「完璧な紙の宿題」を叩きつけてやろうと思います。
+                結果はまだ出ていませんが、次こそはクローラー先生に文句を言わせない「完璧な紙の宿題」になっているはずです。吉報（あるいは新たな泥沼）があれば、またこのブログで報告したいと思います。
               </p>
             </div>
           </section>
@@ -379,8 +404,8 @@
     
 <!-- NMA-LINKS-START -->
 <nav class="mt-12 pt-6 border-t border-slate-200 dark:border-zinc-800 flex justify-between items-stretch gap-4">
-  <a href="./overlay-article.html" class="flex-1 p-4 border border-slate-200 dark:border-zinc-800 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-800/50 transition text-left block"><div class="text-xs text-slate-500 mb-1">← 古い記事</div><div class="text-sm font-bold text-slate-800 dark:text-slate-200 line-clamp-2">OverlayGen 紹介＆取扱ガイド | 配信画面をブラウザで簡単デザイン</div></a>
-  <a href="./neura_timer_manual.html" class="flex-1 p-4 border border-slate-200 dark:border-zinc-800 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-800/50 transition text-right block"><div class="text-xs text-slate-500 mb-1">新しい記事 →</div><div class="text-sm font-bold text-slate-800 dark:text-slate-200 line-clamp-2">NEURA Timer Generator 取扱ガイド | OBS向け高品質タイマーHTML生成</div></a>
+  <a href="./spaとmpa3.html" class="flex-1 p-4 border border-slate-200 dark:border-zinc-800 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-800/50 transition text-left block"><div class="text-xs text-slate-500 mb-1">← 古い記事</div><div class="text-sm font-bold text-slate-800 dark:text-slate-200 line-clamp-2">【SPA×MPA】完璧だと思ったMPAに、まさかの「基本タグ抜け」。無言のサチコと、世話焼きなBing先生</div></a>
+  <div class="flex-1 p-4 border border-transparent"></div>
 </nav>
 <!-- NMA-LINKS-END -->
 
