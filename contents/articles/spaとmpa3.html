@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>【SPA×MPA】完璧だと思ったMPAに、まさかの「基本タグ抜け」。無言のサチコと、世話焼きなBing先生 | Neura Music Archive</title>
+
+  <link rel="canonical" href="https://neura-music.com/articles/spaとmpa3.html">
+
+  <script src="https://cdn.tailwindcss.com" nonce="MTc3MTMzODM4OCwxNDQ4ODMwNDMx"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <script nonce="MTc3MTMzODM4OCwxNDQ4ODMwNDMx">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Noto Sans JP', 'sans-serif'],
+            mono: ['Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-feature-settings: "palt";
+    }
+
+    /* スクロールバーのカスタマイズ（モノトーン調） */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .dark ::-webkit-scrollbar-track {
+      background: #181818;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background: #27272a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #e4e4e7;
+      border-radius: 3px;
+    }
+
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d4d4d8;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-white dark:bg-[#181818] text-slate-800 dark:text-zinc-200 font-sans antialiased selection:bg-slate-900 selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-200">
+
+  <div class="fixed top-4 right-4 z-50"></div>
+
+  <div class="min-h-screen flex flex-col">
+
+    <header class="border-b border-slate-100 dark:border-zinc-900 sticky top-0 bg-white/80 dark:bg-black/80 backdrop-blur-md z-40">
+      <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+        <a href="/" class="text-sm font-bold tracking-tight text-slate-900 dark:text-white hover:opacity-80 transition-opacity">
+          【SPA×MPA】完璧だと思ったMPAに、まさかの「基本タグ抜け」。無言のサチコと、世話焼きなBing先生
+        </a>
+        <span class="text-[10px] font-mono text-slate-400 dark:text-zinc-600 tracking-wider">DEVELOPER BLOG</span>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-3xl mx-auto px-6 py-10 md:py-16 w-full space-y-12 md:space-y-16">
+
+      <article class="space-y-8">
+        <header class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-[10px] font-bold text-slate-600 dark:text-zinc-400 tracking-wider uppercase">
+              SEO & DEV
+            </span>
+            <span class="text-xs text-slate-400 dark:text-zinc-500 font-mono">2026.07.03</span>
+          </div>
+          
+          <h1 class="text-2xl md:text-3.5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-snug">
+            【SPA×MPA】完璧だと思ったMPAに、まさかの「基本タグ抜け」。無言のサチコと、世話焼きなBing先生
+          </h1>
+
+          <div class="flex items-center gap-4 text-xs text-slate-500 dark:text-zinc-400 pt-1">
+            <div class="flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-slate-900 dark:bg-zinc-800 flex items-center justify-center text-[10px] font-bold text-white font-mono">N</span>
+              <span>NMA Dev Team</span>
+            </div>
+            <span>•</span>
+            <span>読了時間: 約3分</span>
+          </div>
+        </header>
+
+        <section class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+          <p>
+            SPAだと検索エンジンが中身を読んでくれない問題を解決するため、前回の記事で「サイトをMPA（静的ページ）として出力する自作CMS」を導入しました。
+          </p>
+          <p>
+            ページを手作業で書くのではなく、CMSが元データをもとにHTMLを自動で組み立てて出力する仕組みです。これで検索エンジンも喜んでページを巡回してくれるはず──そう意気込んでいたのですが、まさかの落とし穴が待っていました。
+          </p>
+          <p>
+            今回は、完璧だと思っていたMPAに潜んでいた「初歩的すぎるミス」と、冷徹すぎるGoogle Search Console（サチコ）、そして意外な救世主となったBing Webmaster Toolsのお話です。
+          </p>
+        </section>
+
+        <hr class="border-slate-100 dark:border-zinc-900">
+
+        <div class="space-y-10 md:space-y-12">
+          
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              1. 仏造って魂入れず。中身がスカスカのMPA
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                私の作ったCMSは、元のSPAのデータを読み取り、そこから新しい静的ページ（MPA版）をロジックで組み立てて一括出力します。<br>
+                しかしそれは裏を返せば、ベースとなる「テンプレート」に記述していない情報は、生成されたすべてのページからごっそり抜け落ちるということです。
+              </p>
+              <p>
+                意気揚々と出力されたページの <code>&lt;head&gt;</code> を見て固まりました。<br>
+                タイトル（<code>&lt;title&gt;</code>）はある。見た目のためのCSSもある。でも……。
+              </p>
+              <ul class="list-disc list-inside space-y-1.5 pl-2 text-slate-700 dark:text-zinc-300">
+                <li><strong>肝心の <code>meta description</code>（説明文）がない。</strong></li>
+                <li><strong>ページの主役を示す <code>canonical</code>（正規URL）タグがない。</strong></li>
+                <li><strong>OGP（SNSでシェアされたときの画像設定）もない。</strong></li>
+              </ul>
+              <p>
+                見た目は立派なHTMLなのに、SEOの観点からは中身が空っぽ。まさに「仏造って魂入れず」状態です。<br>
+                「CMSが自動で作ってくれるから安心」と油断し、“CMSのテンプレートに何を入れるべきか”という一番大事な初期設定を、私が丸ごと忘れていたのです。
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              2. 微笑みながら突き放す「サチコ先生の罠」
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                そしてここからが、この話の一番恐ろしいところです。<br>
+                このスッカラカンのページをURL検査にかけても、エラーや警告は一切出ません。それどころか、緑色のチェックマークと共にこう表示されるのです。
+              </p>
+              <p class="font-bold border-l-4 border-emerald-500 pl-3 my-4 text-slate-900 dark:text-white">
+                「URL は Google に登録できます」
+              </p>
+              <p>
+                もちろん、そのままインデックス登録をリクエストすることも普通にできてしまいます。これが最大の罠でした。
+              </p>
+              <p>
+                サチコ先生は「ここが間違っているよ」なんて一言も教えてくれません。「登録リクエストは受け付けますよ（ただし評価するかどうかは別問題だし、メタタグが抜けてるからインデックスされてもSEO的な意味は皆無だけどね）」と、優しく微笑んでいるだけなのです。
+              </p>
+              <p>
+                当然、私は致命的なミスに1ミリも気づかないまま、「よしよし、ちゃんと緑色になったぞ」と安心しきっていました。この“根本的な欠陥を完全にスルーさせる”冷徹な放任主義こそが、サチコの一番怖いところです。
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              3. エアポケットからの脱出。救世主となった「Bing先生」
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                「リクエストは通るのに、なぜか一向にパフォーマンスが上がらない……」<br>
+                サチコ先生が何も教えてくれないせいで、完全に思考のエアポケットに落ちていました。
+              </p>
+              <p>
+                そんなある日、ふと思ったのです。<br>
+                「そういえば、検索エンジンってGoogle一つじゃないよな……？」
+              </p>
+              <p>
+                普段自分でもEdgeを使ったりしているのに、開発時になるとなぜかGoogleのことしか見えなくなる。そんな当たり前の盲点にハッと気づき、藁にもすがる思いでBing版のサチコこと「Bing Webmaster Tools」にサイトを登録してみました。
+              </p>
+              <p>
+                すると、登録して「サイトスキャン」という機能を開いた瞬間、画面が真っ赤なエラーで埋め尽くされたのです。
+              </p>
+              <div class="p-4 rounded-lg bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900 space-y-2">
+                <ul class="list-disc list-inside space-y-1.5 text-red-600 dark:text-red-400 font-medium text-sm md:text-base">
+                  <li>説明文（description）がありません</li>
+                  <li>ページの正規URL（canonical）がありません</li>
+                  <li>タイトルが複数ページで重複しています</li>
+                </ul>
+              </div>
+              <p>
+                「えっ……Bing先生、めちゃくちゃ親切じゃないか！」
+              </p>
+              <p>
+                サチコが笑顔でスルーしていた“基本タグの抜け”を、Bing先生は一つ残らず、具体的に手取り足取り指摘してくれたのです。ここでようやく「うわ、CMSのテンプレートの段階でタグが全部抜けてるじゃん！」と大ハタキを食らったように気づくことができました。<br>
+                言われた通りに慌ててテンプレートを修正し、全ページを再ビルドしてアップロードし直しました。
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              まとめ：MPAは「作って終わり」じゃない。Bing先生を使え。
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                修正したページを公開し直して数日後、サチコでも無事に「意味のあるインデックス登録」の数字が動き始めました。<br>
+                ようやく、サイトが検索エンジンに正しく評価され始めた瞬間です。
+              </p>
+              <p>
+                今回の教訓はとてもシンプルです。
+              </p>
+              <ul class="list-none space-y-2 pl-1">
+                <li class="flex items-start gap-2">
+                  <span class="text-slate-400 dark:text-zinc-600 font-mono">1.</span>
+                  <span class="font-bold text-slate-800 dark:text-zinc-200">自作CMSで出力したページの「中身（headタグ）」を必ず目視確認すること。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-slate-400 dark:text-zinc-600 font-mono">2.</span>
+                  <span class="font-bold text-slate-800 dark:text-zinc-200">サチコだけでなく、Bing先生のサイトスキャンにも見てもらうこと。</span>
+                </li>
+              </ul>
+              <p>
+                Google Search Consoleは、結果を見るためのツールとしては最強ですが、ページの“作り”の甘さを教えてくれるタイプではありません。エラーが出ないからといって完璧とは限らないのです。<br>
+                その点、Bingのサイトスキャンは「ここが足りないよ」と具体的に赤ペンを入れてくれる、最高に世話焼きな先生です。
+              </p>
+              <p>
+                もし今、サチコから「登録できますよ」と微笑まれているのに一向に検索パフォーマンスが上がらず、思考のエアポケットにハマっている人がいたら、一度 Bing先生 にサイトを見てもらってください。<br>
+                意外なほどあっさりと、致命的な原因を教えてくれるはずです。
+              </p>
+            </div>
+          </section>
+
+        </div>
+
+      </article>
+
+      <div id="share-container"></div>
+      <script src="/js/article-share.js"></script>
+
+    </main>
+
+    <footer
+      class="bg-slate-50 dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-900 py-8 text-center text-xs text-slate-500 dark:text-zinc-500 space-y-1.5 relative z-10">
+      <p>Neura Music Archive (NMA) — ロイヤリティフリー音楽アーカイブ</p>
+      <p class="font-mono">&copy; 2026 Neura Music Archive</p>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
