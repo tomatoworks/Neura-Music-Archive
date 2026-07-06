@@ -29,7 +29,8 @@
         "album_1779948759558",
         "album_1780018213600",
         "album_1780020846976",
-        "album_1783222673713"
+        "album_1783222673713",
+        "album_1783314182225"
       ]
     }
   ],
@@ -394,6 +395,27 @@
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\モーニングジャズ",
       "type": "instrumental"
+    },
+    {
+      "id": "album_1783314182225",
+      "title": "ランチタイムジャズ",
+      "art": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A9%E3%83%B3%E3%83%81%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/cover_1783315071299.webp",
+      "caption": "昼下がりの喫茶店に合う、軽やかで明るいジャズのインスト集です。",
+      "categoryId": "cat_1779349953911",
+      "tracks": [
+        "track_1783314915541_0",
+        "track_1783314915545_1",
+        "track_1783314915545_2",
+        "track_1783314915545_3",
+        "track_1783314915545_4",
+        "track_1783314915546_5",
+        "track_1783314915546_6",
+        "track_1783314915546_7",
+        "track_1783314915546_8",
+        "track_1783314915546_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\ランチタイムジャズ",
+      "type": ""
     }
   ],
   "tracks": [
@@ -3521,6 +3543,176 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-07-05"
+    },
+    {
+      "id": "track_1783314915541_0",
+      "title": "Morning Light Loop",
+      "caption": "朝焼けを感じさせる柔らかなサウンドスケープ。目覚めの瞬間に寄り添い、穏やかな気分を誘う空間演出BGMです。",
+      "type": "instrumental",
+      "duration": 162,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A9%E3%83%B3%E3%83%81%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Morning%20Light%20Loop.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-06"
+    },
+    {
+      "id": "track_1783314915545_1",
+      "title": "Youthful Optimism",
+      "caption": "希望に満ちた光と音楽が融合する午後のカフェタイム。軽やかでポジティブなエネルギーを感じられるサウンドを提供します。",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A9%E3%83%B3%E3%83%81%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Youthful%20Optimism.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-06"
+    },
+    {
+      "id": "track_1783314915545_2",
+      "title": "Reflective Memories",
+      "caption": "穏やかな光源のもと、物思いにふけるような時間。心地よい余韻とともに、過ぎ去った記憶を優しく辿るBGMです。",
+      "type": "instrumental",
+      "duration": 167,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A9%E3%83%B3%E3%83%81%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Reflective%20Memories.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-06"
+    },
+    {
+      "id": "track_1783314915545_3",
+      "title": "Sunlit Afternoons",
+      "caption": "窓から射し込む午後の一筋の光と、洗練されたカフェミュージックが織りなす、落ち着いた情景描写音楽。",
+      "type": "instrumental",
+      "duration": 149,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A9%E3%83%B3%E3%83%81%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Sunlit%20Afternoons.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-06"
+    },
+    {
+      "id": "track_1783314915545_4",
+      "title": "Ivory Ascent",
+      "caption": "ピュアなピアノの音色を主役に据えた、静謐で上質な空間のためのBGM。洗練された午後のひとときをお届けします。",
+      "type": "instrumental",
+      "duration": 161,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A9%E3%83%B3%E3%83%81%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Ivory%20Ascent.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-06"
+    },
+    {
+      "id": "track_1783314915546_5",
+      "title": "Texture Of Thought",
+      "caption": "思考や感情の揺らぎが漂うメロウなサウンドスケープ。日常にそっと溶け込む、グルーヴィで心地よいムード音楽です。",
+      "type": "instrumental",
+      "duration": 148,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A9%E3%83%B3%E3%83%81%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Texture%20of%20Thought.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-06"
+    },
+    {
+      "id": "track_1783314915546_6",
+      "title": "Spirited Swing Groove",
+      "caption": "午後の賑やかな光景を彩るスウィングビート。軽快なリズムが心躍らせ、時間を忘れさせるエンターテイメント性の高いBGMです。",
+      "type": "instrumental",
+      "duration": 181,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A9%E3%83%B3%E3%83%81%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Spirited%20Swing%20Groove.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-06"
+    },
+    {
+      "id": "track_1783314915546_7",
+      "title": "Comforting Windows",
+      "caption": "窓辺に響く、暖かく包み込むような旋律。都会の喧騒から離れ、心が安らぐ午後の休憩時間のための音楽です。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A9%E3%83%B3%E3%83%81%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Comforting%20Windows.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-06"
+    },
+    {
+      "id": "track_1783314915546_8",
+      "title": "Emergent Potential",
+      "caption": "リラックスしたジャズとローファイなグルーヴが交錯する、落ち着いたカフェ空間向けサウンドトラック。内省的な時間を深めます。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A9%E3%83%B3%E3%83%81%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Emergent%20Potential.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-06"
+    },
+    {
+      "id": "track_1783314915546_9",
+      "title": "Falling Softly",
+      "caption": "夕暮れ時を思わせる優しい光と、ピアノ・アコースティックギターのハーモニー。静かでロマンチックな時間をお届けします。",
+      "type": "instrumental",
+      "duration": 163,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%A9%E3%83%B3%E3%83%81%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Falling%20Softly.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-06"
     }
   ]
 }
