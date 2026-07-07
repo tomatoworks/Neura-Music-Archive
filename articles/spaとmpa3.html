@@ -80,6 +80,10 @@
 
   
 
+  
+
+  
+
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -186,10 +190,10 @@
           <a href="/albums/" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
         </div>
         
-        <div class="hidden md:flex items-center space-x-7">
-          <div class="relative inline-block">
+        <div class="relative inline-block">
             <select id="generator-selector" onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
-              <option value="">Generatorを選択</option>
+              <option value="" disabled selected hidden>Generatorを選択</option>
+              <option value="/tools/">ツール一覧</option>
               <option value="/tools/clock-generator">CLOCK GEN</option>
               <option value="/tools/ranking-generator">BEST10 GEN</option>
               <option value="/tools/overlay/">OVERLAY GEN</option>
