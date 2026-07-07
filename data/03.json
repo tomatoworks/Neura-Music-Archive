@@ -30,7 +30,8 @@
         "album_1780018213600",
         "album_1780020846976",
         "album_1783222673713",
-        "album_1783314182225"
+        "album_1783314182225",
+        "album_1783384221178"
       ]
     }
   ],
@@ -415,6 +416,27 @@
         "track_1783314915546_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\ランチタイムジャズ",
+      "type": ""
+    },
+    {
+      "id": "album_1783384221178",
+      "title": "ディナータイムジャズ",
+      "art": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/cover_1783385478143.webp",
+      "caption": "カフェやレストランのディナー時間帯で使うための店内BGM。",
+      "categoryId": "cat_1779349953911",
+      "tracks": [
+        "track_1783385105450_0",
+        "track_1783385105454_1",
+        "track_1783385105454_2",
+        "track_1783385105454_3",
+        "track_1783385105454_4",
+        "track_1783385105455_5",
+        "track_1783385105455_6",
+        "track_1783385105455_7",
+        "track_1783385105455_8",
+        "track_1783385105455_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\03cafe\\Instrumental\\ディナータイムジャズ",
       "type": ""
     }
   ],
@@ -3713,6 +3735,176 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-07-06"
+    },
+    {
+      "id": "track_1783385105450_0",
+      "title": "Evening Conversation",
+      "caption": "温かい照明と語らいが交錯する夜のカフェ。大切な人と分かち合う、心安らぐサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 144,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Evening%20Conversation.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-07"
+    },
+    {
+      "id": "track_1783385105454_1",
+      "title": "Lyrical Morning Jazz",
+      "caption": "窓からの午前中の柔らかな光とジャズの音色が溶け合い、穏やかなカフェタイムを演出します。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Lyrical%20Morning%20Jazz.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-07"
+    },
+    {
+      "id": "track_1783385105454_2",
+      "title": "Sunset Rhodes Glow",
+      "caption": "夕暮れの温かい光が差し込む空間。ローズピアノの響きが、心落ち着く午後のムードを包み込みます。",
+      "type": "instrumental",
+      "duration": 168,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Sunset%20Rhodes%20Glow.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-07"
+    },
+    {
+      "id": "track_1783385105454_3",
+      "title": "Paradoxical Jazz",
+      "caption": "穏やかな午後、カフェの隅に広がるジャズの調べ。時間のリズムと共に流れる心地よい旋律を聴いてください。",
+      "type": "instrumental",
+      "duration": 148,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Paradoxical%20Jazz.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-07"
+    },
+    {
+      "id": "track_1783385105454_4",
+      "title": "Hopeful Nocturne Loop",
+      "caption": "静寂な夜に寄り添うよう、優しく希望の光を灯すカフェミュージック。心ゆくまでリラックスできるBGMです。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Hopeful%20Nocturne%20Loop.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-07"
+    },
+    {
+      "id": "track_1783385105455_5",
+      "title": "Shared Memories",
+      "caption": "暖かな陽射しが差し込む、思い出に浸る午後のひととき。ピアノとアコースティックギターが描く優しい調べが彩ります。",
+      "type": "instrumental",
+      "duration": 166,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Shared%20Memories.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-07"
+    },
+    {
+      "id": "track_1783385105455_6",
+      "title": "Hopeful Sophistication",
+      "caption": "優雅な空間で過ごす、洗練された午後のひととき。心地よいメロディーが日常に穏やかな安らぎと希望をもたらします。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Hopeful%20Sophistication.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-07"
+    },
+    {
+      "id": "track_1783385105455_7",
+      "title": "Vibraphone Conversations",
+      "caption": "ビブラフォンのきらめく調べが流れるカフェ。午後の静かな時間に溶け込む、軽やかで心地よい背景音楽です。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Vibraphone%20Conversations.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-07"
+    },
+    {
+      "id": "track_1783385105455_8",
+      "title": "Optimistic Jazz Loop",
+      "caption": "陽光あふれるカフェを彩る、軽快でポジティブなジャズ。心を満たすリラックスサウンドトラックです。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Optimistic%20Jazz%20Loop.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-07"
+    },
+    {
+      "id": "track_1783385105455_9",
+      "title": "Morning Glow",
+      "caption": "窓から差し込む朝の柔らかな光が、日常に優しい彩りを与えるカフェブレイクのような時間。",
+      "type": "instrumental",
+      "duration": 166,
+      "full_url": "https://cdn.neura-music.com/03cafe/Instrumental/%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B8%E3%83%A3%E3%82%BA/Morning%20Glow.mp3",
+      "tags": [
+        "Jazz",
+        "明るい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-07"
     }
   ]
 }
