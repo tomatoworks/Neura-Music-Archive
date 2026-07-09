@@ -23,6 +23,16 @@
       ]
     },
     {
+      "id": "cat_1783559746251",
+      "name": "BOSS Battle",
+      "albums": [
+        "album_1783559999467",
+        "album_1783560022960",
+        "album_1783560041754"
+      ],
+      "caption": "敵との決戦を描くボス戦向けBGM。 重厚な音圧と緊張感を中心に、通常戦よりも深いドラマ性と迫力を持たせたインストセット。"
+    },
+    {
       "id": "cat_1782606280622",
       "name": "Field",
       "caption": "探索や移動の場面に使える、軽めでループしやすいフィールドBGM集。",
@@ -310,6 +320,69 @@
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\Dungeon\\Dungeon Orchestra",
       "type": "instrumental"
+    },
+    {
+      "id": "album_1783559999467",
+      "title": "Retro Boss Encounter",
+      "art": "https://cdn.neura-music.com/06game/BOSSBattle/Retro%20Boss%20Encounter/cover_1783562461216.webp",
+      "caption": "緊張感のあるチップサウンドと高速リズムで、クラシックな最終局面を彩るインスト集。",
+      "categoryId": "cat_1783559746251",
+      "tracks": [
+        "track_1783561471917_0",
+        "track_1783561471919_1",
+        "track_1783561471920_2",
+        "track_1783561471920_3",
+        "track_1783561471920_4",
+        "track_1783561471920_5",
+        "track_1783561471920_6",
+        "track_1783561471920_7",
+        "track_1783561471920_8",
+        "track_1783561471921_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\BOSSBattle\\Retro Boss Encounter",
+      "type": ""
+    },
+    {
+      "id": "album_1783560022960",
+      "title": "Cyber Boss Strike",
+      "art": "https://cdn.neura-music.com/06game/BOSSBattle/Cyber%20Boss%20Strike/cover_1783562891352.webp",
+      "caption": "近未来シンセ × ハードEDMのボス戦向けBGM。",
+      "categoryId": "cat_1783559746251",
+      "tracks": [
+        "track_1783562402070_0",
+        "track_1783562402071_1",
+        "track_1783562402071_2",
+        "track_1783562402071_3",
+        "track_1783562402071_4",
+        "track_1783562402071_5",
+        "track_1783562402071_6",
+        "track_1783562402071_7",
+        "track_1783562402072_8",
+        "track_1783562402072_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\BOSSBattle\\Cyber Boss Strike",
+      "type": ""
+    },
+    {
+      "id": "album_1783560041754",
+      "title": "Symphonic Last Stand",
+      "art": "https://cdn.neura-music.com/06game/BOSSBattle/Symphonic%20Last%20Stand/cover_1783564240719.webp",
+      "caption": "フルオーケストラによる壮大系ボス戦BGM。",
+      "categoryId": "cat_1783559746251",
+      "tracks": [
+        "track_1783564067710_0",
+        "track_1783564067710_1",
+        "track_1783564067710_2",
+        "track_1783564067710_3",
+        "track_1783564067710_4",
+        "track_1783564067710_5",
+        "track_1783564067710_6",
+        "track_1783564067711_7",
+        "track_1783564067711_8",
+        "track_1783564067711_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\06game\\BOSSBattle\\Symphonic Last Stand",
+      "type": ""
     }
   ],
   "tracks": [
@@ -2463,6 +2536,476 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-07-03"
+    },
+    {
+      "id": "track_1783561471917_0",
+      "title": "Hydraulic Panic",
+      "caption": "高圧の水圧が急激に襲いかかる、制御不能な緊急事態。金属と液体の軋みが織りなす、圧倒的なパニックの音響風景。",
+      "type": "instrumental",
+      "duration": 102,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Retro%20Boss%20Encounter/Hydraulic_Panic.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783561471919_1",
+      "title": "One Life Remaining",
+      "caption": "絶望的な状況を生き抜く、緊張感あふれるエレクトロニクス・サウンドスケープ。ラストチャンスを感じさせる、ドラマティックなアンビエントとシンセの響きが展開する。",
+      "type": "instrumental",
+      "duration": 160,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Retro%20Boss%20Encounter/One_Life_Remaining.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783561471920_2",
+      "title": "Locked In The Stage",
+      "caption": "スポットライトに包まれ、ステージという箱庭に閉じ込められた熱狂と孤立感が交錯する瞬間。すべてを音楽とパフォーマンスのエネルギーで満たしている。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Retro%20Boss%20Encounter/Locked_in_the_Stage.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783561471920_3",
+      "title": "Button Masher S Fever",
+      "caption": "電子音と疾走感溢れるビートが、戦場や仮想空間を加速度的に動かす。デジタルな高揚感と、確実な勝利へ向けた熱狂的なサウンドトラック。",
+      "type": "instrumental",
+      "duration": 159,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Retro%20Boss%20Encounter/Button_Masher_s_Fever.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783561471920_4",
+      "title": "Terminal Overdrive",
+      "caption": "高速で脈打つ電子音が、ゲームの世界に深々とダイブする感覚を表現。探求心と高揚感、未開の領域を進む刺激的な空気感を伝える。",
+      "type": "instrumental",
+      "duration": 157,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Retro%20Boss%20Encounter/Terminal_Overdrive.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783561471920_5",
+      "title": "The Final Jump",
+      "caption": "全ての力を注ぎ込む最後の瞬間。掴み取る勝利が、音の流れとなって聴く者の胸に響き渡る壮大なクライマックス。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Retro%20Boss%20Encounter/The_Final_Jump.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783561471920_6",
+      "title": "Final Level Onslaught",
+      "caption": "最終関門を突破するための、圧倒的な推進力と激しい戦いの熱気が渦巻く。クライマックスに向けて高まる、スケール感のある疾走感を表現するサウンドトラック。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Retro%20Boss%20Encounter/Final_Level_Onslaught.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783561471920_7",
+      "title": "Seven Seconds Left",
+      "caption": "カウントダウンが始まった瞬間の描写。極度の緊張と、これから起こる展開への静かな期待を音で彩るサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Retro%20Boss%20Encounter/Seven_Seconds_Left.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783561471920_8",
+      "title": "Running In The Red",
+      "caption": "焦燥感と切迫したエネルギーが最高潮に達する、ゲームの終盤戦。勝利へ向けた最後の一歩を踏み出すような強烈な躍動感を表現している。",
+      "type": "instrumental",
+      "duration": 154,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Retro%20Boss%20Encounter/Running_in_the_Red.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783561471921_9",
+      "title": "Before The Second Wind",
+      "caption": "再び立ち上がる直前の、研ぎ澄まされた集中と静かな熱を帯びた時間。勝利への強い意志がドラマティックに鳴り響く情景を描き出す。",
+      "type": "instrumental",
+      "duration": 159,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Retro%20Boss%20Encounter/Before_The_Second_Wind.mp3",
+      "tags": [
+        "疾走感",
+        "Lo-Fi / カセット",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783562402070_0",
+      "title": "Industrial Overload",
+      "caption": "機械の熱気と無数の信号が交錯する産業空間の鼓動。圧倒的な力強さとともに、未来への変貌を感じさせる重厚なサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 172,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Cyber%20Boss%20Strike/Industrial%20Overload.mp3",
+      "tags": [
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783562402071_1",
+      "title": "Rhythmic Aggression",
+      "caption": "激しいビートが心臓を打つような戦場の熱量。リズムに乗って感情のすべてを爆発させる、没入感あふれるアンセムタラック。",
+      "type": "instrumental",
+      "duration": 145,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Cyber%20Boss%20Strike/Rhythmic%20Aggression.mp3",
+      "tags": [
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783562402071_2",
+      "title": "Neon Onslaught",
+      "caption": "ネオンが照らすサイバーな戦場を疾走するエナジー。未来的な加速感と戦闘の熱量が詰まった、高揚感あふれるサウンドトラック。",
+      "type": "instrumental",
+      "duration": 148,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Cyber%20Boss%20Strike/Neon%20Onslaught.mp3",
+      "tags": [
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783562402071_3",
+      "title": "Overwhelming Pressure",
+      "caption": "激しい緊張と闘争心が高まる重厚なサウンドスケープ。限界を突破しようとする魂の咆哮のような、ドラマティックな楽曲。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Cyber%20Boss%20Strike/Overwhelming%20Pressure.mp3",
+      "tags": [
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783562402071_4",
+      "title": "Mechanical Confrontation",
+      "caption": "金属の軋みと電子的なリズムが交錯する、機械文明の壮大な対決を予感させる音響体験。",
+      "type": "instrumental",
+      "duration": 156,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Cyber%20Boss%20Strike/Mechanical%20Confrontation.mp3",
+      "tags": [
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783562402071_5",
+      "title": "Escalation Protocol",
+      "caption": "高まる緊張感と疾走感を伴う、危機へのダイブ。絶えず進化し続ける世界での躍動的な展開を描くサウンドトラック。",
+      "type": "instrumental",
+      "duration": 159,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Cyber%20Boss%20Strike/Escalation%20Protocol.mp3",
+      "tags": [
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783562402071_6",
+      "title": "Combat Module  High Tech Action",
+      "caption": "未来の戦場を駆ける超高精細なアクションサунд。テクノロジーと鼓動が同期するような、極限の緊迫感を伴うサウンドデザイン。",
+      "type": "instrumental",
+      "duration": 139,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Cyber%20Boss%20Strike/Combat%20Module_%20High-Tech%20Action.mp3",
+      "tags": [
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783562402071_7",
+      "title": "Neural Siege",
+      "caption": "サイバーパンクな戦場に響き渡るデジタルなシンセサウンド。次世代シミュレーションゲームの世界観を深く彩る劇的なBGM。",
+      "type": "instrumental",
+      "duration": 158,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Cyber%20Boss%20Strike/Neural%20Siege.mp3",
+      "tags": [
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783562402072_8",
+      "title": "Conflict Cycle",
+      "caption": "激しい戦闘の最中に翻弄される感情の波。勝利、敗北、希望、絶望といった対極の要素が描く、壮大な心の軌跡を描き出す楽曲。",
+      "type": "instrumental",
+      "duration": 144,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Cyber%20Boss%20Strike/Conflict%20Cycle.mp3",
+      "tags": [
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783562402072_9",
+      "title": "Electronic Combat Sequence",
+      "caption": "デジタルな戦場を爆走するエレクトロニック・コンバット。迫力あるビートとシンセが織りなす、勝利への衝動的なエネルギーを感じさせるサウンド。",
+      "type": "instrumental",
+      "duration": 159,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Cyber%20Boss%20Strike/Electronic%20Combat%20Sequence.mp3",
+      "tags": [
+        "クール",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783564067710_0",
+      "title": "Edge Of The Breach",
+      "caption": "崩壊寸前の緊張感。すべての要素が衝突し、クライマックスを迎える壮大なシネマティックなサウンドトラック。",
+      "type": "instrumental",
+      "duration": 179,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Symphonic%20Last%20Stand/Edge_of_the_Breach.mp3",
+      "tags": [
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783564067710_1",
+      "title": "Before The Silence Falls",
+      "caption": "沈黙と次の行動の狭間。運命的な決断を迫られる直前の心理描写を描く、張り詰めた音の空間。",
+      "type": "instrumental",
+      "duration": 153,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Symphonic%20Last%20Stand/Before_the_Silence_Falls.mp3",
+      "tags": [
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783564067710_2",
+      "title": "The Unbroken Line",
+      "caption": "目標に向かって進む、揺るぎない意志の表出。極限状況での集中力と決意を表現したオーケストレーション。",
+      "type": "instrumental",
+      "duration": 175,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Symphonic%20Last%20Stand/The_Unbroken_Line.mp3",
+      "tags": [
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783564067710_3",
+      "title": "Under The Iron Weight",
+      "caption": "途方もない重圧がかかった世界観へ。新たな戦いや挑戦が待つ、高揚感あふれるゲーム体験の入り口。",
+      "type": "instrumental",
+      "duration": 146,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Symphonic%20Last%20Stand/Under_the_Iron_Weight.mp3",
+      "tags": [
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783564067710_4",
+      "title": "Before The Pendulum Swings",
+      "caption": "時間は止まり、運命の流れが動き出す予兆。期待と張り詰めた静寂に満ちた、ドラマチックなオープニングテーマ。",
+      "type": "instrumental",
+      "duration": 172,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Symphonic%20Last%20Stand/Before_the_Pendulum_Swings.mp3",
+      "tags": [
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783564067710_5",
+      "title": "Momentum S Edge",
+      "caption": "前進し続けるエネルギーを体現する疾走感あふれるリズム。物語を次のフェーズへと導く、勢いのあるサウンドトラック。",
+      "type": "instrumental",
+      "duration": 152,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Symphonic%20Last%20Stand/Momentum_s_Edge.mp3",
+      "tags": [
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783564067710_6",
+      "title": "The Ascending Hall",
+      "caption": "謎めいた空間を上昇していくような感覚。期待感を煽りながら、壮大なスケールで未知の領域へ誘う音の風景。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Symphonic%20Last%20Stand/The_Ascending_Hall.mp3",
+      "tags": [
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783564067711_7",
+      "title": "Before The Iron Falls",
+      "caption": "廃墟に残る響きと共に、新たな章が幕を開ける静かな力強さ。物語のリスタートを予感させるシネマティックなサウンドスケープ。",
+      "type": "instrumental",
+      "duration": 161,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Symphonic%20Last%20Stand/Before_the_Iron_Falls.mp3",
+      "tags": [
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783564067711_8",
+      "title": "Orders At Daybreak",
+      "caption": "夜明けとともに発動する指令。決意と使命感が交錯する、旅立ちや新たなミッションの始まりを告げる壮大な音景。",
+      "type": "instrumental",
+      "duration": 178,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Symphonic%20Last%20Stand/Orders_at_Daybreak.mp3",
+      "tags": [
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
+    },
+    {
+      "id": "track_1783564067711_9",
+      "title": "The Architecture Of Panic",
+      "caption": "極限状況下で理性を保とうとする心理戦。複雑に絡み合う危機感と緊張感を、緻密なサウンドデザインで構築した体験。",
+      "type": "instrumental",
+      "duration": 167,
+      "full_url": "https://cdn.neura-music.com/06game/BOSSBattle/Symphonic%20Last%20Stand/The_Architecture_of_Panic.mp3",
+      "tags": [
+        "生録音風",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-09"
     }
   ]
 }
