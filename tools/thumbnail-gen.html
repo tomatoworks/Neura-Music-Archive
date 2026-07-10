@@ -17,7 +17,6 @@
 
   <meta name="twitter:card" content="summary_large_image">
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Dela+Gothic+One&family=DotGothic16&family=IBM+Plex+Sans+JP:wght@400;500;700&family=Kaisei+Tokumin:wght@700;800&family=M+PLUS+Rounded+1c:wght@700;800;900&family=Montserrat:wght@800;900&family=Noto+Sans+JP:wght@700;900&family=Noto+Serif+JP:wght@700;900&family=Oswald:wght@700&family=Permanent+Marker&family=RocknRoll+One&family=Yusei+Magic&display=swap" rel="stylesheet">
@@ -174,7 +173,7 @@
         <div class="flex items-center gap-3">
           <div class="hidden sm:flex flex-col text-right mr-1">
             <span id="outputInfo" class="text-[11px] font-bold text-gray-300">1280 × 720</span>
-            <span class="text-[9px] text-[var(--accent-color)]">2MB自動最適化</span>
+            <span class="text-[9px] text-[var(--accent-color)]">フォーマット・画質指定</span>
           </div>
           <button id="exportBtn" class="bg-[var(--accent-color)] hover:bg-[var(--accent-hover)] text-white px-4 py-2 rounded-lg font-bold text-[13px] shadow-[0_4px_15px_rgba(93,156,196,0.3)] transition-all transform hover:-translate-y-0.5 flex items-center gap-1.5 w-full sm:w-auto justify-center">
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
@@ -225,68 +224,124 @@
 
         <div class="flex-1 overflow-y-auto pr-2 pb-2 custom-scrollbar">
           <div id="tab-base" class="block animate-[fadeIn_0.3s_ease-out]">
-            <div class="max-w-xl">
-              <h4 class="flex items-center gap-2 text-white font-bold mb-4 pb-2 border-b border-[#333] text-[14px] tracking-wide">
-                <svg class="w-4 h-4 text-[var(--accent-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
-                出力サイズ（クロップ比率）
-              </h4>
-              <div class="mb-8">
-                <label class="block text-[11px] font-medium mb-2 text-gray-400">用途に合わせて選択すると、上のトリミング枠の比率が変わります。</label>
-                <select id="presetSelect" class="modern-input">
-                  <optgroup label="動画サムネイル">
-                    <option value="youtube">YouTube 動画サムネ (1280×720)</option>
-                    <option value="twitch">Twitch 配信サムネ (1920×1080)</option>
-                  </optgroup>
-                  <optgroup label="縦長動画・ショート">
-                    <option value="shorts">YouTube Shorts カバー (1080×1920)</option>
-                    <option value="tiktok">TikTok カバー (1080×1920)</option>
-                    <option value="reels">Instagram Reels カバー (1080×1920)</option>
-                  </optgroup>
-                  <optgroup label="SNS・フィード投稿">
-                    <option value="x">X (Twitter) 投稿 / OGP (1200×630)</option>
-                    <option value="ig_square">Instagram フィード (1080×1080)</option>
-                    <option value="ig_portrait">Instagram フィード縦長 (1080×1350)</option>
-                  </optgroup>
-                  <optgroup label="ブログ・記事 OGP">
-                    <option value="note">note アイキャッチ (1280×670)</option>
-                    <option value="blog_ogp">WordPress / ブログ OGP (1200×630)</option>
-                    <option value="fb_line">Facebook / LINE OGP (1200×630)</option>
-                  </optgroup>
-                </select>
-              </div>
-
-              <h4 class="flex items-center gap-2 text-white font-bold mb-4 pb-2 border-b border-[#333] text-[14px] tracking-wide">
-                <svg class="w-4 h-4 text-[var(--accent-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/></svg>
-                サムネ縁取り（フレーム）
-              </h4>
-              <div class="bg-[#0a0a0a] rounded-lg border border-[#222] p-4 flex flex-col gap-4">
-                <label class="flex items-center gap-2 cursor-pointer w-fit">
-                  <input type="checkbox" id="frameEnable" class="w-4 h-4 accent-[var(--accent-color)]">
-                  <span class="text-[13px] font-bold text-gray-300">内側にフレームを合成する</span>
-                </label>
-                
-                <div id="frameSettings" class="grid grid-cols-2 sm:grid-cols-4 gap-4 opacity-50 pointer-events-none transition-opacity items-end">
-                  <div class="flex flex-col gap-2">
-                    <span class="text-[10px] font-bold text-gray-500">種類</span>
-                    <select id="frameStyle" class="modern-input" style="padding: 8px 10px;">
-                      <option value="solid">実線</option>
-                      <option value="dashed">点線</option>
-                      <option value="rounded">角丸（実線）</option>
-                      <option value="double">二重線</option>
-                      <option value="corners">カギ括弧（四隅）</option>
-                      <option value="cinema">シネマ帯（上下黒枠）</option>
-                    </select>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
+              
+              <div class="flex flex-col">
+                <h4 class="flex items-center justify-between text-white font-bold mb-4 pb-2 border-b border-[#333] text-[14px] tracking-wide">
+                  <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-[var(--accent-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                    出力サイズ（クロップ比率）
                   </div>
-                  <div class="flex flex-col gap-2 shrink-0">
-                    <span class="text-[10px] font-bold text-gray-500">色</span>
-                    <div class="relative w-[34px] h-[34px] rounded overflow-hidden cursor-pointer shadow-sm" style="border: 1px solid #444;">
-                      <input type="color" id="frameColor" class="absolute -top-2 -left-2 w-16 h-16 cursor-pointer" value="#ff0000">
+                  <label class="flex items-center gap-2 cursor-pointer w-fit">
+                    <input type="checkbox" id="cropEnable" checked class="w-4 h-4 accent-[var(--accent-color)]">
+                    <span class="text-[12px] font-bold text-gray-300">クロップを有効</span>
+                  </label>
+                </h4>
+                <div id="cropSettingsWrapper" class="mb-8 transition-opacity">
+                  <label class="block text-[11px] font-medium mb-2 text-gray-400">用途に合わせて選択すると、上のトリミング枠の比率が変わります。</label>
+                  <select id="presetSelect" class="modern-input">
+                    <optgroup label="動画サムネイル">
+                      <option value="youtube">YouTube 動画サムネ (1280×720)</option>
+                      <option value="twitch">Twitch 配信サムネ (1920×1080)</option>
+                    </optgroup>
+                    <optgroup label="縦長動画・ショート">
+                      <option value="shorts">YouTube Shorts カバー (1080×1920)</option>
+                      <option value="tiktok">TikTok カバー (1080×1920)</option>
+                      <option value="reels">Instagram Reels カバー (1080×1920)</option>
+                    </optgroup>
+                    <optgroup label="SNS・フィード投稿">
+                      <option value="x">X (Twitter) 投稿 / OGP (1200×630)</option>
+                      <option value="ig_square">Instagram フィード (1080×1080)</option>
+                      <option value="ig_portrait">Instagram フィード縦長 (1080×1350)</option>
+                    </optgroup>
+                    <optgroup label="ブログ・記事 OGP">
+                      <option value="note">note アイキャッチ (1280×670)</option>
+                      <option value="blog_ogp">WordPress / ブログ OGP (1200×630)</option>
+                      <option value="fb_line">Facebook / LINE OGP (1200×630)</option>
+                    </optgroup>
+                  </select>
+                </div>
+
+                <h4 class="flex items-center gap-2 text-white font-bold mb-4 pb-2 border-b border-[#333] text-[14px] tracking-wide">
+                  <svg class="w-4 h-4 text-[var(--accent-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  出力フォーマット・画質
+                </h4>
+                <div class="bg-[#0a0a0a] rounded-lg border border-[#222] p-4 flex flex-col gap-4 mb-8">
+                  <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="flex flex-col gap-2 sm:w-1/3">
+                      <span class="text-[10px] font-bold text-gray-500">形式</span>
+                      <select id="exportFormat" class="modern-input" style="padding: 8px 10px;">
+                        <option value="image/jpeg">JPG</option>
+                        <option value="image/png">PNG</option>
+                        <option value="image/webp">WebP</option>
+                      </select>
+                    </div>
+                    <div id="qualitySettings" class="flex flex-col gap-2 sm:w-2/3 transition-opacity">
+                      <span class="text-[10px] font-bold text-gray-500">画質 (<span id="qualityVal">90</span>%)</span>
+                      <div class="flex items-center gap-3">
+                        <input type="range" id="qualitySlider" class="w-full h-1.5 bg-[#222] rounded-lg appearance-none cursor-pointer outline-none" style="accent-color: var(--accent-color)" min="1" max="100" value="90">
+                        <input type="number" id="qualityInput" class="modern-input w-[70px] text-center" style="padding: 6px;" min="1" max="100" value="90">
+                      </div>
                     </div>
                   </div>
-                  <div class="flex flex-col gap-2 col-span-2">
-                    <span class="text-[10px] font-bold text-gray-500">幅/太さ (<span id="frameWidthVal">20</span>px)</span>
-                    <input type="range" id="frameWidth" class="w-full h-1.5 bg-[#222] rounded-lg appearance-none cursor-pointer outline-none mb-2" style="accent-color: var(--accent-color)" min="1" max="100" value="20">
+                </div>
+
+                <h4 class="flex items-center gap-2 text-white font-bold mb-4 pb-2 border-b border-[#333] text-[14px] tracking-wide">
+                  <svg class="w-4 h-4 text-[var(--accent-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/></svg>
+                  サムネ縁取り（フレーム）
+                </h4>
+                <div class="bg-[#0a0a0a] rounded-lg border border-[#222] p-4 flex flex-col gap-4">
+                  <label class="flex items-center gap-2 cursor-pointer w-fit">
+                    <input type="checkbox" id="frameEnable" class="w-4 h-4 accent-[var(--accent-color)]">
+                    <span class="text-[13px] font-bold text-gray-300">内側にフレームを合成する</span>
+                  </label>
+                  
+                  <div id="frameSettings" class="grid grid-cols-2 sm:grid-cols-4 gap-4 opacity-50 pointer-events-none transition-opacity items-end">
+                    <div class="flex flex-col gap-2">
+                      <span class="text-[10px] font-bold text-gray-500">種類</span>
+                      <select id="frameStyle" class="modern-input" style="padding: 8px 10px;">
+                        <option value="solid">実線</option>
+                        <option value="dashed">点線</option>
+                        <option value="rounded">角丸（実線）</option>
+                        <option value="double">二重線</option>
+                        <option value="corners">カギ括弧（四隅）</option>
+                        <option value="cinema">シネマ帯（上下黒枠）</option>
+                      </select>
+                    </div>
+                    <div class="flex flex-col gap-2 shrink-0">
+                      <span class="text-[10px] font-bold text-gray-500">色</span>
+                      <div class="relative w-[34px] h-[34px] rounded overflow-hidden cursor-pointer shadow-sm" style="border: 1px solid #444;">
+                        <input type="color" id="frameColor" class="absolute -top-2 -left-2 w-16 h-16 cursor-pointer" value="#ff0000">
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-2 col-span-2">
+                      <span class="text-[10px] font-bold text-gray-500">幅/太さ (<span id="frameWidthVal">20</span>px)</span>
+                      <input type="range" id="frameWidth" class="w-full h-1.5 bg-[#222] rounded-lg appearance-none cursor-pointer outline-none mb-2" style="accent-color: var(--accent-color)" min="1" max="100" value="20">
+                    </div>
                   </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col">
+                <h4 class="flex items-center gap-2 text-white font-bold mb-4 pb-2 border-b border-[#333] text-[14px] tracking-wide">
+                  <svg class="w-4 h-4 text-[var(--accent-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+                  画像フィルター
+                </h4>
+                <div class="bg-[#0a0a0a] rounded-lg border border-[#222] p-4 flex flex-col gap-4">
+                  <label class="block text-[11px] font-medium text-gray-400">画像全体に適用するフィルターを選択します。</label>
+                  <select id="imageFilter" class="modern-input">
+                    <option value="none">なし (Normal)</option>
+                    <option value="grayscale(100%)">モノクロ (Grayscale)</option>
+                    <option value="sepia(100%)">セピア (Sepia)</option>
+                    <option value="blur(4px)">ぼかし (Blur)</option>
+                    <option value="contrast(150%)">コントラスト強</option>
+                    <option value="contrast(70%)">コントラスト弱</option>
+                    <option value="brightness(130%)">明るめ (Brightness)</option>
+                    <option value="brightness(70%)">暗め (Darken)</option>
+                    <option value="saturate(200%)">鮮やか (Saturate)</option>
+                    <option value="hue-rotate(90deg)">色相変更 (Hue Rotate)</option>
+                    <option value="invert(100%)">反転 (Invert)</option>
+                  </select>
                 </div>
               </div>
 
@@ -335,6 +390,7 @@
 
     let cropper = null;
     let layerIdCounter = 0;
+    let originalImgData = { w: 0, h: 0 };
     
     const PRESETS = {
       youtube: { w: 1280, h: 720, label: '1280 × 720 px' },
@@ -375,6 +431,95 @@
     const outputInfo = document.getElementById('outputInfo');
     const textLayersContainer = document.getElementById('textLayersContainer');
     const presetSelect = document.getElementById('presetSelect');
+    const cropEnable = document.getElementById('cropEnable');
+    const cropSettingsWrapper = document.getElementById('cropSettingsWrapper');
+    const exportFormat = document.getElementById('exportFormat');
+    const qualitySettings = document.getElementById('qualitySettings');
+    const qualitySlider = document.getElementById('qualitySlider');
+    const qualityInput = document.getElementById('qualityInput');
+    const qualityVal = document.getElementById('qualityVal');
+    const imageFilter = document.getElementById('imageFilter');
+
+    imageFilter.addEventListener('change', (e) => {
+      applyPreviewFilter(e.target.value);
+    });
+
+    function applyPreviewFilter(filterVal) {
+      const imgs = document.querySelectorAll('.cropper-container img');
+      imgs.forEach(img => {
+        img.style.filter = filterVal !== 'none' ? filterVal : '';
+      });
+    }
+
+    exportFormat.addEventListener('change', (e) => {
+      if (e.target.value === 'image/png') {
+        qualitySettings.classList.add('opacity-50', 'pointer-events-none');
+      } else {
+        qualitySettings.classList.remove('opacity-50', 'pointer-events-none');
+      }
+    });
+
+    qualitySlider.addEventListener('input', (e) => {
+      qualityInput.value = e.target.value;
+      qualityVal.innerText = e.target.value;
+    });
+
+    qualityInput.addEventListener('input', (e) => {
+      let val = parseInt(e.target.value, 10);
+      if (isNaN(val)) val = 90;
+      if (val < 1) val = 1;
+      if (val > 100) val = 100;
+      qualitySlider.value = val;
+      qualityVal.innerText = val;
+    });
+
+    function updateOutputInfo() {
+      if (cropEnable.checked) {
+        const preset = PRESETS[presetSelect.value];
+        outputInfo.innerText = `${preset.w} × ${preset.h}`;
+      } else {
+        outputInfo.innerText = `${originalImgData.w} × ${originalImgData.h}`;
+      }
+    }
+
+    function initCropper() {
+      if (cropper) cropper.destroy();
+      const isCrop = cropEnable.checked;
+      const preset = PRESETS[presetSelect.value];
+      const aspect = isCrop ? (preset.w / preset.h) : (originalImgData.w / originalImgData.h);
+      
+      cropper = new Cropper(cropperImage, {
+        aspectRatio: aspect,
+        viewMode: 1, 
+        dragMode: isCrop ? 'move' : 'none',
+        autoCropArea: isCrop ? 0.98 : 1, 
+        background: false,
+        guides: isCrop,
+        highlight: false,
+        cropBoxResizable: isCrop,
+        cropBoxMovable: isCrop,
+        ready: function () {
+          if (!isCrop) this.cropper.disable();
+          updateOverlays();
+          updateOutputInfo();
+          applyPreviewFilter(imageFilter.value);
+        },
+        crop: function () {
+          updateOverlays();
+        }
+      });
+    }
+
+    cropEnable.addEventListener('change', (e) => {
+      if (e.target.checked) {
+        cropSettingsWrapper.classList.remove('opacity-50', 'pointer-events-none');
+      } else {
+        cropSettingsWrapper.classList.add('opacity-50', 'pointer-events-none');
+      }
+      if (cropperImage.src && cropperImage.src !== window.location.href) {
+        initCropper();
+      }
+    });
 
     function updateOverlays() {
       updateFrameOverlayDOM();
@@ -510,10 +655,10 @@
     document.getElementById('addTextBtn').addEventListener('click', addTextLayer);
 
     presetSelect.addEventListener('change', (e) => {
-      const preset = PRESETS[e.target.value];
-      outputInfo.innerText = `${preset.w} × ${preset.h}`;
-      if (cropper) {
+      if (cropper && cropEnable.checked) {
+        const preset = PRESETS[e.target.value];
         cropper.setAspectRatio(preset.w / preset.h);
+        updateOutputInfo();
       }
     });
 
@@ -555,30 +700,14 @@
       cropperImage.src = url;
       
       cropperImage.onload = () => {
+        originalImgData.w = cropperImage.naturalWidth;
+        originalImgData.h = cropperImage.naturalHeight;
+
         dropZone.classList.add('hidden');
         previewContainer.classList.remove('hidden');
         changeImgBtn.classList.remove('hidden');
         
-        if (cropper) {
-          cropper.destroy();
-        }
-        
-        const preset = PRESETS[presetSelect.value];
-        cropper = new Cropper(cropperImage, {
-          aspectRatio: preset.w / preset.h,
-          viewMode: 1, 
-          dragMode: 'move', 
-          autoCropArea: 0.98, 
-          background: false,
-          guides: true,
-          highlight: false,
-          ready: function () {
-            updateOverlays();
-          },
-          crop: function () {
-            updateOverlays();
-          }
-        });
+        initCropper();
       };
     }
 
@@ -598,6 +727,12 @@
 
       return {
         preset: PRESETS[presetSelect.value],
+        isCrop: document.getElementById('cropEnable').checked,
+        export: {
+          format: document.getElementById('exportFormat').value,
+          quality: parseInt(document.getElementById('qualitySlider').value, 10),
+          filter: document.getElementById('imageFilter').value
+        },
         textLayers: layers,
         frame: {
           enabled: document.getElementById('frameEnable').checked,
@@ -632,7 +767,8 @@
       
       frameOverlay.style.display = 'block';
       
-      const scale = cropBox.getBoundingClientRect().width / s.preset.w;
+      const expW = s.isCrop ? s.preset.w : originalImgData.w;
+      const scale = cropBox.getBoundingClientRect().width / expW;
       const previewBorderWidth = s.frame.width * scale;
 
       frameOverlay.style.inset = '0';
@@ -855,22 +991,34 @@
 
       setTimeout(async () => {
         try {
-          const exportCanvas = cropper.getCroppedCanvas({
-            width: s.preset.w,
-            height: s.preset.h,
+          const expWidth = s.isCrop ? s.preset.w : originalImgData.w;
+          const expHeight = s.isCrop ? s.preset.h : originalImgData.h;
+
+          const rawCanvas = cropper.getCroppedCanvas({
+            width: expWidth,
+            height: expHeight,
             imageSmoothingEnabled: true,
             imageSmoothingQuality: 'high',
           });
 
+          const exportCanvas = document.createElement('canvas');
+          exportCanvas.width = expWidth;
+          exportCanvas.height = expHeight;
           const ctx = exportCanvas.getContext('2d');
+
+          if (s.export.filter !== 'none') {
+            ctx.filter = s.export.filter;
+          }
+          ctx.drawImage(rawCanvas, 0, 0);
+          ctx.filter = 'none';
           
           if (s.frame.enabled) {
             ctx.save();
             ctx.strokeStyle = s.frame.color;
             ctx.fillStyle = s.frame.color;
             const fw = s.frame.width;
-            const pw = s.preset.w;
-            const ph = s.preset.h;
+            const pw = expWidth;
+            const ph = expHeight;
             
             if (s.frame.style === 'solid') {
               ctx.lineWidth = fw;
@@ -915,40 +1063,33 @@
             ctx.restore();
           }
 
-          drawTextLayers(ctx, s.textLayers, {x: 0, y: 0, w: s.preset.w, h: s.preset.h});
+          drawTextLayers(ctx, s.textLayers, {x: 0, y: 0, w: expWidth, h: expHeight});
 
-          const MAX_BYTES = 2 * 1024 * 1024;
-          let quality = 0.95;
-          let resultBlob = null;
+          const format = s.export.format;
+          let quality = s.export.quality / 100;
+          if (format === 'image/png') quality = undefined;
+          
+          const ext = format === 'image/png' ? 'png' : (format === 'image/webp' ? 'webp' : 'jpg');
 
-          const getBlob = (q) => {
-            return new Promise(resolve => {
-              exportCanvas.toBlob(blob => resolve(blob), 'image/jpeg', q);
-            });
-          };
-
-          while (quality > 0.1) {
-            resultBlob = await getBlob(quality);
-            if (resultBlob.size <= MAX_BYTES) {
-              break;
-            }
-            quality -= 0.05;
-          }
-
-          const url = URL.createObjectURL(resultBlob);
-          const a = document.createElement('a');
-          a.href = url;
-          const presetKey = presetSelect.value;
-          a.download = `thumbnail_${presetKey}_${Date.now()}.jpg`;
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-          URL.revokeObjectURL(url);
+          exportCanvas.toBlob(blob => {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            const prefix = s.isCrop ? presetSelect.value : 'converted';
+            a.download = `thumbnail_${prefix}_${Date.now()}.${ext}`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            exportBtn.disabled = false;
+            exportBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+            exportBtn.innerHTML = originalHtml;
+          }, format, quality);
           
         } catch (e) {
           console.error(e);
           alert('画像の書き出しに失敗しました。');
-        } finally {
           exportBtn.disabled = false;
           exportBtn.classList.remove('opacity-75', 'cursor-not-allowed');
           exportBtn.innerHTML = originalHtml;
