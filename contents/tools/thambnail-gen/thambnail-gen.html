@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>サムネジェネレーター 紹介＆取扱ガイド | 動画・記事サムネをブラウザで簡単作成</title>
+
+  <meta name="description" content="画像編集ソフト不要。ブラウザ上で画像のトリミング、テキスト合成、フレーム装飾を行い、2MB以下に自動最適化して出力できる次世代サムネイルジェネレーター。">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Noto Sans JP', 'sans-serif'],
+            mono: ['Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-feature-settings: "palt";
+    }
+
+    /* スクロールバーのカスタマイズ（モノトーン調） */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    .dark ::-webkit-scrollbar-track {
+      background: #181818;
+    }
+    ::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background: #27272a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #e4e4e7;
+      border-radius: 3px;
+    }
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d4d4d8;
+    }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-[#181818] text-slate-800 dark:text-zinc-200 font-sans antialiased selection:bg-slate-900 selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-200">
+
+  <div class="min-h-screen flex flex-col">
+
+    <header class="border-b border-slate-100 dark:border-zinc-900 sticky top-0 bg-white/80 dark:bg-black/80 backdrop-blur-md z-40">
+      <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+        <span class="font-bold text-sm tracking-wide text-slate-800 dark:text-white">ThumbnailGen</span>
+        <span class="text-[10px] font-mono text-slate-400 dark:text-zinc-600 tracking-wider">USER MANUAL</span>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-3xl mx-auto px-6 py-10 md:py-16 w-full space-y-12 md:space-y-16">
+
+      <article class="space-y-8">
+        <header class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-[10px] font-bold text-slate-600 dark:text-zinc-400 tracking-wider uppercase">
+              WEB TOOL GUIDE
+            </span>
+            <span class="text-xs text-slate-400 dark:text-zinc-500 font-mono">Ver 1.0</span>
+          </div>
+          
+          <h1 class="text-2xl md:text-3.5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-snug">
+            画像編集ソフトはもう不要。<br>ブラウザ上で完結する高機能サムネジェネレーター「ThumbnailGen」
+          </h1>
+
+          <div class="flex items-center gap-4 text-xs text-slate-500 dark:text-zinc-400 pt-1">
+            <div class="flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-slate-900 dark:bg-zinc-800 flex items-center justify-center text-[10px] font-bold text-white font-mono">T</span>
+              <span>ThumbnailGen Team</span>
+            </div>
+            <span>•</span>
+            <span>読了時間: 約3分</span>
+          </div>
+        </header>
+
+        <section class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+          <p>
+            動画や記事を公開するたびに、重い画像編集ソフトを立ち上げていませんか？アップロード時に「ファイルサイズが2MBを超えています」とエラーが出て、圧縮ソフトでリサイズし直す手間にウンザリしていませんか？
+          </p>
+          <p>
+            <strong>「ThumbnailGen（サムネジェネレーター）」</strong>は、そんなクリエイターの「面倒くさい」をすべて解消するユーティリティツールです。<br>
+            ブラウザの画面に画像をドラッグ＆ドロップするだけ。最適なサイズでのトリミング、本格的なテキスト合成から、2MB以下への容量自動最適化まで、すべてが一瞬で完結します。
+          </p>
+        </section>
+
+        <div class="py-4">
+          <div class="w-full rounded-lg overflow-hidden border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 shadow-sm">
+            <img src="thumb-gen1.png" alt="ThumbnailGen 作業画面プレビュー" class="w-full h-auto object-cover opacity-95 hover:opacity-100 transition-opacity">
+            <div class="p-3 bg-white dark:bg-black border-t border-slate-100 dark:border-zinc-900 text-[11px] text-slate-500 dark:text-zinc-400 text-center font-medium">
+              図1. ThumbnailGenの操作画面。ダークモード基調のUIで、プレビューを見ながら直感的に編集可能。
+            </div>
+          </div>
+        </div>
+
+        <section class="p-5 rounded-xl bg-slate-50 dark:bg-zinc-950 border border-slate-200/60 dark:border-zinc-900 space-y-4">
+          <h3 class="text-xs font-bold text-slate-800 dark:text-zinc-200 uppercase tracking-wider font-mono flex items-center gap-2">
+            <span>💡</span> ThumbnailGenがもたらす3つの革新
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
+            <div class="p-4 rounded-lg bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-2">
+              <div class="text-xs text-slate-400 dark:text-zinc-500 line-through">重いソフトの起動時間</div>
+              <div class="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                <span>✨</span> ドラッグ＆ドロップで即編集
+              </div>
+              <p class="text-[11px] md:text-xs text-slate-500 dark:text-zinc-400">ブラウザのタブに置いておき、使いたい時に画像をドロップするだけで即座に作業開始。</p>
+            </div>
+            <div class="p-4 rounded-lg bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-2">
+              <div class="text-xs text-slate-400 dark:text-zinc-500 line-through">毎回サイズや比率を調べる手間</div>
+              <div class="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                <span>✨</span> 用途別プリセット完備
+              </div>
+              <p class="text-[11px] md:text-xs text-slate-500 dark:text-zinc-400">YouTube、TikTok、X (Twitter)、ブログOGPなど、最適な解像度と比率を自動適用。</p>
+            </div>
+            <div class="p-4 rounded-lg bg-white dark:bg-black border border-slate-100 dark:border-zinc-900 space-y-2">
+              <div class="text-xs text-slate-400 dark:text-zinc-500 line-through">容量オーバーによる書き出し直し</div>
+              <div class="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                <span>✨</span> 2MB自動最適化エクスポート
+              </div>
+              <p class="text-[11px] md:text-xs text-slate-500 dark:text-zinc-400">書き出し時にファイル容量を自動計算し、2MB以下に収まるよう画質を自動で最適化。</p>
+            </div>
+          </div>
+        </section>
+
+        <hr class="border-slate-100 dark:border-zinc-900">
+
+        <div class="space-y-10 md:space-y-12">
+          
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-slate-400 dark:text-zinc-600">01.</span> 🚀 完全クライアントサイド動作（サーバー通信ゼロ）
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-4">
+              <p>
+                ThumbnailGenの最大の特徴は、<strong>すべての処理がユーザーのブラウザ（ローカルメモリ上）で完結する</strong>ことです。
+              </p>
+              
+              <div class="p-4 border-l-2 border-indigo-400 dark:border-indigo-600 bg-slate-50 dark:bg-zinc-900/50 mt-4">
+                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-600 dark:text-zinc-400">
+                  <li><strong>爆速な処理スピード：</strong> 画像の読み込みからトリミング、テキスト合成、JPEG書き出しまで、サーバーを介さないため通信ラグが一切ありません。</li>
+                  <li><strong>完全なプライバシー保護：</strong> 画像データが外部サーバーにアップロードされることはありません。公開前の機密画像やプライベートな写真でも安心して作業できます。</li>
+                  <li><strong>アカウント登録・インストール不要：</strong> ブラウザでURLを開くだけで、誰でもすぐにフル機能を利用可能です。</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="space-y-6 md:space-y-8">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              <span class="font-mono text-slate-400 dark:text-zinc-600">02.</span> 🛠️ サムネイル制作に特化した高度な編集機能
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-[15px] leading-relaxed space-y-3">
+              <p>
+                シンプルながらも、実戦で使える本格的な機能を過不足なく搭載しています。画面下部のタブで直感的にパラメーターを調整できます。
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 pt-2">
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-slate-800 dark:text-zinc-200 text-[15px]">1. 解像度プリセット＆直感トリミング</h3>
+                  <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                    用途を選ぶだけで、クロップ（切り抜き）枠の比率が自動ロック。マウスドラッグによる移動や、ホイールによる元画像のズームイン・アウトで、見せたい部分を完璧に切り抜けます。
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-slate-800 dark:text-zinc-200 text-[15px]">2. ワンタッチ・フレーム合成機能</h3>
+                  <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                    画像の内側に「実線」「点線」「シネマ帯」「四隅カギ括弧」などのデザイン枠を合成。カラーピッカーとスライダーで太さも自由自在に調整できます。
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-slate-800 dark:text-zinc-200 text-[15px]">3. 複数管理できる高機能テキストレイヤー</h3>
+                  <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                    テキストを複数追加し、横長カード型のUIで個別に管理可能。文字サイズ、XY軸の位置、フチ幅（アウトライン）、文字間隔までスライダーで微調整できます。
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <h3 class="font-bold text-slate-800 dark:text-zinc-200 text-[15px]">4. サムネ特化のWebフォント搭載</h3>
+                  <p class="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+                    インパクト抜群の「極太ゴシック・明朝」「デラゴシック」、個性派の「油性マジック」「ドットゴシック」、欧文専用の「Anton」「Bangers」など、厳選された13種のフォントを標準搭載。縦書きにも対応しています。
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-6 p-4 bg-indigo-50/50 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/50 rounded-xl text-center">
+              <p class="text-sm font-bold text-slate-800 dark:text-zinc-200 mb-2">もう「2MBの壁」に悩まない</p>
+              <p class="text-xs text-slate-600 dark:text-zinc-400">
+                デザインが完成したら、右上の<span class="inline-flex items-center gap-1 bg-[#5D9CC4] text-white px-2 py-0.5 rounded font-bold mx-1"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>画像を保存</span>をクリック。<br>内部で自動的に容量を計算し、品質を調整しながら確実に<strong>2MB以下のJPEGファイル</strong>として書き出します。
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div class="p-5 rounded-lg bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 space-y-3 text-sm text-slate-700 dark:text-zinc-300">
+              <div class="font-bold text-slate-800 dark:text-zinc-200 flex items-center gap-2 font-mono uppercase tracking-wider">
+                <span>💡</span> よくある質問と注意点
+              </div>
+              <ul class="list-disc pl-5 space-y-2 leading-relaxed">
+                <li><strong>フォントが正しく表示されない：</strong>当ツールはGoogle Fontsを動的に読み込んでテキストを描画します。デバイスがインターネットに接続されていることを確認してください。</li>
+                <li><strong>画像がうまく読み込めない：</strong>対応フォーマットは一般的な画像形式（JPEG, PNG, WebP等）です。HEIC等の一部の独自フォーマットは、お使いのブラウザによって非対応の場合があります。</li>
+                <li><strong>文字の改行について：</strong>テキスト入力欄でEnterキーを押して改行すると、合成されるテキストもそのまま改行されて描画されます。</li>
+              </ul>
+            </div>
+          </section>
+
+        </div>
+
+      </article>
+
+    </main>
+
+    <footer class="bg-slate-50 dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-900 py-8 text-center text-xs text-slate-500 dark:text-zinc-500 space-y-1.5 relative z-10">
+      <p>ThumbnailGen — Client-Side Thumbnail Generator Tool</p>
+      <p class="font-mono">&copy; 2026 ThumbnailGen Team</p>
+    </footer>
+  </div>
+
+</body>
+</html>

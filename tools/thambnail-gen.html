@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+  <title>Thumbnail Generator - Neura Music Archive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="ブラウザで高品質なサムネイル画像を生成できるツール。トリミング、レイヤー編集、フォント変更など高度な編集機能を搭載。YouTubeや配信向けのアイキャッチ作成に最適。">
+
+  <link rel="canonical" href="https://neura-music.com/tools/thumbnail-generator">
+
+  <meta property="og:title" content="Thumbnail Generator - Neura Music Archive">
+  <meta property="og:description" content="ブラウザで高品質なサムネイル画像を生成できるツール。トリミング、レイヤー編集、フォント変更など高度な編集機能を搭載。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://neura-music.com/tools/thumbnail-generator">
+  <meta property="og:image" content="https://neura-music.com/assets/og-image-thumbnail.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Dela+Gothic+One&family=DotGothic16&family=IBM+Plex+Sans+JP:wght@400;500;700&family=Kaisei+Tokumin:wght@700;800&family=M+PLUS+Rounded+1c:wght@700;800;900&family=Montserrat:wght@800;900&family=Noto+Sans+JP:wght@700;900&family=Noto+Serif+JP:wght@700;900&family=Oswald:wght@700&family=Permanent+Marker&family=RocknRoll+One&family=Yusei+Magic&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+
+  <style>
+    :root {
+      --bg-color: #0d0d0d;
+      --container-bg: #141414;
+      --card-bg: #1a1a1a;
+      --accent-color: #5D9CC4;
+      --accent-hover: #82b7db;
+      --accent-glow: rgba(93, 156, 196, 0.25);
+      --text-main: #f3f4f6;
+      --text-sub: #9ca3af;
+      --border-color: #2e2e2e;
+      --shadow-plate: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.25);
+    }
+    
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: 'IBM Plex Sans JP', 'Noto Sans JP', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .font-sans-jp { font-family: 'Noto Sans JP', sans-serif; }
+    .font-pop { font-family: 'M PLUS Rounded 1c', sans-serif; }
+    .font-serif-jp { font-family: 'Noto Serif JP', serif; }
+
+    .theme-container {
+      background: var(--container-bg);
+      border-radius: 16px;
+      box-shadow: var(--shadow-plate);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-card);
+    }
+    
+    .modern-input {
+      background: #111111 !important;
+      color: var(--text-main) !important;
+      border: 1px solid #333 !important;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      padding: 10px 14px;
+      font-size: 13px;
+      width: 100%;
+    }
+    .modern-input:focus {
+      border-color: var(--accent-color) !important;
+      box-shadow: 0 0 0 2px var(--accent-glow) !important;
+      outline: none;
+      background: #000 !important;
+    }
+
+    .bg-checker {
+      background-color: #111;
+      background-image: 
+        linear-gradient(45deg, #181818 25%, transparent 25%, transparent 75%, #181818 75%, #181818),
+        linear-gradient(45deg, #181818 25%, transparent 25%, transparent 75%, #181818 75%, #181818);
+      background-size: 20px 20px;
+      background-position: 0 0, 10px 10px;
+    }
+
+    .cropper-container { width: 100% !important; height: 100% !important; }
+    .cropper-view-box { outline: 2px solid var(--accent-color); outline-color: rgba(93, 156, 196, 0.9); }
+    .cropper-line, .cropper-point { background-color: var(--accent-color); }
+    .cropper-modal { background-color: rgba(0, 0, 0, 0.75); }
+    .cropper-center::before, .cropper-center::after { background-color: transparent; }
+
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: var(--container-bg); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #666; }
+  </style>
+</head>
+<body>
+
+  <header class="w-full flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm sticky top-0">
+    <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      <div class="flex items-center">
+        <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+          <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+          <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+        </a>
+      </div>
+
+      <div class="flex items-center space-x-3 md:space-x-7">
+        
+        <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
+          <a href="/articles/" class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
+          <a href="/albums/" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+        </div>
+        
+        <div class="relative inline-block">
+            <select id="generator-selector" onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+              <option value="" disabled selected hidden>Generatorを選択</option>
+              <option value="/tools/">ツール一覧</option>
+              <option value="/tools/clock-generator">CLOCK GEN</option>
+              <option value="/tools/ranking-generator">BEST10 GEN</option>
+              <option value="/tools/overlay/">OVERLAY GEN</option>
+              <option value="/tools/neura_timer_generator">TIMER GEN</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+          </div>
+          
+          <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+          </div>
+        </div>
+
+        <button class="md:hidden text-gray-500 dark:text-gray-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+    </div>
+  </header>
+
+  <div class="min-h-screen p-2 sm:p-4 flex justify-center bg-[var(--bg-color)] text-[var(--text-main)] overflow-x-hidden">
+    <div class="w-full max-w-[1600px] mx-auto theme-container p-3 sm:p-5 flex flex-col flex-1">
+      
+      <header class="mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 opacity-95 px-1">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-[var(--accent-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+            <h1 class="text-[16px] font-bold tracking-widest text-white">THUMBNAIL GENERATOR</h1>
+          </div>
+          <span class="hidden sm:block w-1 h-1 rounded-full bg-gray-600"></span>
+          <p class="text-[11px] text-gray-500 tracking-wide font-medium">完全ブラウザ完結</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="hidden sm:flex flex-col text-right mr-1">
+            <span id="outputInfo" class="text-[11px] font-bold text-gray-300">1280 × 720</span>
+            <span class="text-[9px] text-[var(--accent-color)]">2MB自動最適化</span>
+          </div>
+          <button id="exportBtn" class="bg-[var(--accent-color)] hover:bg-[var(--accent-hover)] text-white px-4 py-2 rounded-lg font-bold text-[13px] shadow-[0_4px_15px_rgba(93,156,196,0.3)] transition-all transform hover:-translate-y-0.5 flex items-center gap-1.5 w-full sm:w-auto justify-center">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            画像を保存
+          </button>
+        </div>
+      </header>
+
+      <div class="mb-6 card shadow-2xl w-full mx-auto max-w-5xl overflow-hidden flex-none" style="border-color: var(--border-color)">
+        
+        <div class="bg-[#0a0a0a] border-b border-[#222] px-3 py-1 flex items-center justify-between z-10 transition-opacity opacity-40 hover:opacity-100">
+          <div class="flex items-center gap-2">
+            <span class="text-[9px] font-bold text-gray-500 uppercase tracking-widest">Workspace</span>
+            <span class="hidden sm:inline text-[9px] text-gray-600">| 明るい枠内が保存されます・マウスホイールでズーム</span>
+          </div>
+          <button id="changeImgBtn" class="hidden text-[9px] font-medium text-gray-400 hover:text-white bg-transparent hover:bg-[#222] border border-transparent hover:border-[#444] px-2 py-0.5 rounded transition-all">
+            画像を変更
+          </button>
+        </div>
+        
+        <div class="w-full relative flex flex-col items-center justify-center transition-all bg-checker" style="aspect-ratio: 16 / 9; min-height: 200px;">
+          <input type="file" id="fileInput" accept="image/*" class="hidden">
+          
+          <div id="dropZone" class="absolute inset-4 flex flex-col items-center justify-center bg-[#111111]/70 backdrop-blur-sm border border-dashed border-[#444] hover:border-[var(--accent-color)] hover:bg-[#1a1a1a]/80 rounded-xl cursor-pointer transition-all z-20">
+            <svg class="w-12 h-12 text-[var(--accent-color)] mb-3 opacity-60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+            <p class="text-gray-400 font-bold tracking-wide text-sm">ここに画像をドロップ</p>
+            <p class="text-[11px] text-gray-500 mt-1">またはクリックしてファイルを選択</p>
+          </div>
+
+          <div id="previewContainer" class="hidden absolute inset-0 w-full h-full">
+            <img id="cropperImage" class="max-w-full block">
+          </div>
+        </div>
+      </div>
+
+      <div class="card pt-2 px-4 sm:px-6 pb-4 flex-1 flex flex-col min-h-[250px]">
+        
+        <div class="flex gap-2 sm:gap-3 mb-4 border-b border-[#333] pt-3 pb-3 overflow-x-auto shrink-0">
+          <button id="btn-tab-base" onclick="switchTab('tab-base')" class="flex items-center whitespace-nowrap gap-2 px-4 sm:px-5 py-2.5 rounded-lg text-[12px] sm:text-[13px] font-bold transition-all bg-[var(--accent-color)] text-white shadow-[0_4px_15px_rgba(93,156,196,0.4)]">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+            出力サイズ＆フレーム
+          </button>
+          <button id="btn-tab-text" onclick="switchTab('tab-text')" class="flex items-center whitespace-nowrap gap-2 px-4 sm:px-5 py-2.5 rounded-lg text-[12px] sm:text-[13px] font-bold transition-all bg-[#222] text-gray-400 hover:bg-[#333] hover:text-gray-200">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" x2="15" y1="20" y2="20"/><line x1="12" x2="12" y1="4" y2="20"/></svg>
+            テキストレイヤー
+          </button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto pr-2 pb-2 custom-scrollbar">
+          <div id="tab-base" class="block animate-[fadeIn_0.3s_ease-out]">
+            <div class="max-w-xl">
+              <h4 class="flex items-center gap-2 text-white font-bold mb-4 pb-2 border-b border-[#333] text-[14px] tracking-wide">
+                <svg class="w-4 h-4 text-[var(--accent-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                出力サイズ（クロップ比率）
+              </h4>
+              <div class="mb-8">
+                <label class="block text-[11px] font-medium mb-2 text-gray-400">用途に合わせて選択すると、上のトリミング枠の比率が変わります。</label>
+                <select id="presetSelect" class="modern-input">
+                  <optgroup label="動画サムネイル">
+                    <option value="youtube">YouTube 動画サムネ (1280×720)</option>
+                    <option value="twitch">Twitch 配信サムネ (1920×1080)</option>
+                  </optgroup>
+                  <optgroup label="縦長動画・ショート">
+                    <option value="shorts">YouTube Shorts カバー (1080×1920)</option>
+                    <option value="tiktok">TikTok カバー (1080×1920)</option>
+                    <option value="reels">Instagram Reels カバー (1080×1920)</option>
+                  </optgroup>
+                  <optgroup label="SNS・フィード投稿">
+                    <option value="x">X (Twitter) 投稿 / OGP (1200×630)</option>
+                    <option value="ig_square">Instagram フィード (1080×1080)</option>
+                    <option value="ig_portrait">Instagram フィード縦長 (1080×1350)</option>
+                  </optgroup>
+                  <optgroup label="ブログ・記事 OGP">
+                    <option value="note">note アイキャッチ (1280×670)</option>
+                    <option value="blog_ogp">WordPress / ブログ OGP (1200×630)</option>
+                    <option value="fb_line">Facebook / LINE OGP (1200×630)</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <h4 class="flex items-center gap-2 text-white font-bold mb-4 pb-2 border-b border-[#333] text-[14px] tracking-wide">
+                <svg class="w-4 h-4 text-[var(--accent-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/></svg>
+                サムネ縁取り（フレーム）
+              </h4>
+              <div class="bg-[#0a0a0a] rounded-lg border border-[#222] p-4 flex flex-col gap-4">
+                <label class="flex items-center gap-2 cursor-pointer w-fit">
+                  <input type="checkbox" id="frameEnable" class="w-4 h-4 accent-[var(--accent-color)]">
+                  <span class="text-[13px] font-bold text-gray-300">内側にフレームを合成する</span>
+                </label>
+                
+                <div id="frameSettings" class="grid grid-cols-2 sm:grid-cols-4 gap-4 opacity-50 pointer-events-none transition-opacity items-end">
+                  <div class="flex flex-col gap-2">
+                    <span class="text-[10px] font-bold text-gray-500">種類</span>
+                    <select id="frameStyle" class="modern-input" style="padding: 8px 10px;">
+                      <option value="solid">実線</option>
+                      <option value="dashed">点線</option>
+                      <option value="rounded">角丸（実線）</option>
+                      <option value="double">二重線</option>
+                      <option value="corners">カギ括弧（四隅）</option>
+                      <option value="cinema">シネマ帯（上下黒枠）</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col gap-2 shrink-0">
+                    <span class="text-[10px] font-bold text-gray-500">色</span>
+                    <div class="relative w-[34px] h-[34px] rounded overflow-hidden cursor-pointer shadow-sm" style="border: 1px solid #444;">
+                      <input type="color" id="frameColor" class="absolute -top-2 -left-2 w-16 h-16 cursor-pointer" value="#ff0000">
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-2 col-span-2">
+                    <span class="text-[10px] font-bold text-gray-500">幅/太さ (<span id="frameWidthVal">20</span>px)</span>
+                    <input type="range" id="frameWidth" class="w-full h-1.5 bg-[#222] rounded-lg appearance-none cursor-pointer outline-none mb-2" style="accent-color: var(--accent-color)" min="1" max="100" value="20">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div id="tab-text" class="hidden animate-[fadeIn_0.3s_ease-out]">
+            <div class="flex justify-between items-center mb-4 pb-2 border-b border-[#333]">
+              <h4 class="flex items-center gap-2 text-white font-bold text-[14px] tracking-wide">
+                <svg class="w-4 h-4 text-[var(--accent-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" x2="15" y1="20" y2="20"/><line x1="12" x2="12" y1="4" y2="20"/></svg>
+                レイヤー管理
+              </h4>
+              <button id="addTextBtn" class="bg-[#222] hover:bg-[#333] text-[var(--accent-color)] border border-[#333] hover:border-[var(--accent-color)] px-3 py-1.5 rounded-lg text-[11px] font-bold transition-all flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                テキストを追加
+              </button>
+            </div>
+            
+            <div id="textLayersContainer" class="flex flex-col gap-4">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tabs = ['tab-base', 'tab-text'];
+    function switchTab(activeId) {
+      tabs.forEach(id => {
+        const content = document.getElementById(id);
+        const btn = document.getElementById('btn-' + id);
+        
+        if (id === activeId) {
+          content.classList.remove('hidden');
+          content.classList.add('block');
+          btn.className = "flex items-center whitespace-nowrap gap-2 px-4 sm:px-5 py-2.5 rounded-lg text-[12px] sm:text-[13px] font-bold transition-all bg-[var(--accent-color)] text-white shadow-[0_4px_15px_rgba(93,156,196,0.4)]";
+        } else {
+          content.classList.add('hidden');
+          content.classList.remove('block');
+          btn.className = "flex items-center whitespace-nowrap gap-2 px-4 sm:px-5 py-2.5 rounded-lg text-[12px] sm:text-[13px] font-bold transition-all bg-[#222] text-gray-400 hover:bg-[#333] hover:text-gray-200";
+        }
+      });
+    }
+
+    let cropper = null;
+    let layerIdCounter = 0;
+    
+    const PRESETS = {
+      youtube: { w: 1280, h: 720, label: '1280 × 720 px' },
+      twitch: { w: 1920, h: 1080, label: '1920 × 1080 px' },
+      shorts: { w: 1080, h: 1920, label: '1080 × 1920 px' },
+      tiktok: { w: 1080, h: 1920, label: '1080 × 1920 px' },
+      reels: { w: 1080, h: 1920, label: '1080 × 1920 px' },
+      x: { w: 1200, h: 630, label: '1200 × 630 px' },
+      ig_square: { w: 1080, h: 1080, label: '1080 × 1080 px' },
+      ig_portrait: { w: 1080, h: 1350, label: '1080 × 1350 px' },
+      note: { w: 1280, h: 670, label: '1280 × 670 px' },
+      blog_ogp: { w: 1200, h: 630, label: '1200 × 630 px' },
+      fb_line: { w: 1200, h: 630, label: '1200 × 630 px' }
+    };
+
+    const FONTS = {
+      gothic: { family: "'Noto Sans JP', sans-serif", weight: 900 },
+      pop: { family: "'M PLUS Rounded 1c', sans-serif", weight: 900 },
+      mincho: { family: "'Noto Serif JP', serif", weight: 900 },
+      dela: { family: "'Dela Gothic One', sans-serif", weight: 400 },
+      rocknroll: { family: "'RocknRoll One', sans-serif", weight: 400 },
+      dot: { family: "'DotGothic16', sans-serif", weight: 400 },
+      yusei: { family: "'Yusei Magic', sans-serif", weight: 400 },
+      kaisei: { family: "'Kaisei Tokumin', serif", weight: 800 },
+      anton: { family: "'Anton', sans-serif", weight: 400 },
+      oswald: { family: "'Oswald', sans-serif", weight: 700 },
+      bangers: { family: "'Bangers', cursive", weight: 400 },
+      marker: { family: "'Permanent Marker', cursive", weight: 400 },
+      montserrat: { family: "'Montserrat', sans-serif", weight: 900 }
+    };
+
+    const dropZone = document.getElementById('dropZone');
+    const fileInput = document.getElementById('fileInput');
+    const previewContainer = document.getElementById('previewContainer');
+    const cropperImage = document.getElementById('cropperImage');
+    const changeImgBtn = document.getElementById('changeImgBtn');
+    const exportBtn = document.getElementById('exportBtn');
+    const outputInfo = document.getElementById('outputInfo');
+    const textLayersContainer = document.getElementById('textLayersContainer');
+    const presetSelect = document.getElementById('presetSelect');
+
+    function updateOverlays() {
+      updateFrameOverlayDOM();
+      updateTextOverlayDOM();
+    }
+
+    const frameInputs = ['frameEnable', 'frameStyle', 'frameColor', 'frameWidth'];
+    frameInputs.forEach(id => {
+      const el = document.getElementById(id);
+      el.addEventListener('input', (e) => {
+        if (id === 'frameEnable') {
+          const settings = document.getElementById('frameSettings');
+          if (e.target.checked) {
+            settings.classList.remove('opacity-50', 'pointer-events-none');
+          } else {
+            settings.classList.add('opacity-50', 'pointer-events-none');
+          }
+        }
+        if (id === 'frameWidth') {
+          document.getElementById('frameWidthVal').innerText = e.target.value;
+        }
+        updateOverlays();
+      });
+      el.addEventListener('change', updateOverlays);
+    });
+
+    function addTextLayer() {
+      const id = layerIdCounter++;
+      const layerHtml = `
+        <div id="layer-${id}" class="bg-[#111] border border-[#333] rounded-xl p-4 relative shadow-sm w-full">
+          
+          <button type="button" onclick="removeTextLayer(${id})" class="absolute top-3 right-3 text-gray-500 hover:text-red-500 transition-colors p-1.5 bg-[#222] hover:bg-[#333] rounded-md border border-[#333] z-10" title="レイヤーを削除">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+
+          <div class="flex flex-col lg:flex-row gap-5">
+            
+            <div class="w-full lg:w-5/12 flex flex-col gap-3 pr-6 lg:pr-0">
+              <textarea class="layer-input-text modern-input w-full resize-none h-[72px]" placeholder="テキストを入力"></textarea>
+              
+              <div class="flex flex-wrap items-center gap-2">
+                <select class="layer-input-font modern-input flex-1 min-w-[140px]" style="padding: 7px 10px;">
+                  <optgroup label="日本語 - 定番">
+                    <option value="gothic">Noto ゴシック (極太)</option>
+                    <option value="pop">丸ゴシック (極太)</option>
+                    <option value="mincho">Noto 明朝 (極太)</option>
+                  </optgroup>
+                  <optgroup label="日本語 - 個性的">
+                    <option value="dela">デラゴシック (超極太)</option>
+                    <option value="rocknroll">ロックンロール (ポップ)</option>
+                    <option value="yusei">油性マジック</option>
+                    <option value="dot">ドットゴシック</option>
+                    <option value="kaisei">デザイン明朝</option>
+                  </optgroup>
+                  <optgroup label="欧文 (英数字専用)">
+                    <option value="anton">Anton (極太縦長)</option>
+                    <option value="montserrat">Montserrat (モダン極太)</option>
+                    <option value="oswald">Oswald (スマート極太)</option>
+                    <option value="bangers">Bangers (アメコミ風)</option>
+                    <option value="marker">Marker (手書き風)</option>
+                  </optgroup>
+                </select>
+                
+                <select class="layer-input-direction modern-input w-[72px]" style="padding: 7px 10px;">
+                  <option value="horizontal">横書</option>
+                  <option value="vertical">縦書</option>
+                </select>
+                
+                <div class="flex items-center gap-1.5 ml-auto">
+                  <div class="relative w-[32px] h-[32px] rounded overflow-hidden cursor-pointer shadow-sm" style="border: 1px solid #444;" title="文字色">
+                    <input type="color" class="layer-input-color absolute -top-2 -left-2 w-16 h-16 cursor-pointer" value="#ffffff">
+                  </div>
+                  <div class="relative w-[32px] h-[32px] rounded overflow-hidden cursor-pointer shadow-sm" style="border: 1px solid #444;" title="フチ色">
+                    <input type="color" class="layer-input-outline absolute -top-2 -left-2 w-16 h-16 cursor-pointer" value="#000000">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full lg:w-7/12 bg-[#0a0a0a] rounded-lg border border-[#222] p-4 flex flex-col justify-center">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+                
+                <div class="flex items-center gap-3">
+                  <span class="text-[11px] font-bold text-gray-400 w-12 shrink-0 text-right">サイズ</span>
+                  <input type="range" class="layer-input-size w-full h-1.5 bg-[#222] rounded-lg appearance-none cursor-pointer outline-none" style="accent-color: var(--accent-color)" min="5" max="50" value="15">
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="text-[11px] font-bold text-gray-400 w-12 shrink-0 text-right">フチ幅</span>
+                  <input type="range" class="layer-input-outlinewidth w-full h-1.5 bg-[#222] rounded-lg appearance-none cursor-pointer outline-none" style="accent-color: var(--accent-color)" min="0" max="40" value="20">
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="text-[11px] font-bold text-gray-400 w-12 shrink-0 text-right">文字間</span>
+                  <input type="range" class="layer-input-letterspacing w-full h-1.5 bg-[#222] rounded-lg appearance-none cursor-pointer outline-none" style="accent-color: var(--accent-color)" min="-20" max="50" value="0">
+                </div>
+                
+                <div class="hidden md:block"></div>
+
+                <div class="col-span-1 md:col-span-2 border-t border-[#222] my-0.5"></div>
+
+                <div class="flex items-center gap-3">
+                  <span class="text-[11px] font-bold text-gray-400 w-12 shrink-0 text-right">左右位置</span>
+                  <input type="range" class="layer-input-x w-full h-1.5 bg-[#222] rounded-lg appearance-none cursor-pointer outline-none" style="accent-color: var(--accent-color)" min="0" max="100" value="50">
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="text-[11px] font-bold text-gray-400 w-12 shrink-0 text-right">上下位置</span>
+                  <input type="range" class="layer-input-y w-full h-1.5 bg-[#222] rounded-lg appearance-none cursor-pointer outline-none" style="accent-color: var(--accent-color)" min="0" max="100" value="50">
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      `;
+      textLayersContainer.insertAdjacentHTML('beforeend', layerHtml);
+      
+      const newLayer = document.getElementById(`layer-${id}`);
+      newLayer.querySelectorAll('input, select, textarea').forEach(el => {
+        el.addEventListener('input', updateOverlays);
+        el.addEventListener('change', updateOverlays);
+      });
+      updateOverlays();
+    }
+
+    function removeTextLayer(id) {
+      const layer = document.getElementById(`layer-${id}`);
+      if (layer) {
+        layer.remove();
+        updateOverlays();
+      }
+    }
+
+    document.getElementById('addTextBtn').addEventListener('click', addTextLayer);
+
+    presetSelect.addEventListener('change', (e) => {
+      const preset = PRESETS[e.target.value];
+      outputInfo.innerText = `${preset.w} × ${preset.h}`;
+      if (cropper) {
+        cropper.setAspectRatio(preset.w / preset.h);
+      }
+    });
+
+    document.fonts.ready.then(() => {
+      if (cropper) updateOverlays();
+    });
+
+    dropZone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropZone.classList.add('border-[var(--accent-color)]', 'bg-[#1a1a1a]/90');
+    });
+    dropZone.addEventListener('dragleave', () => {
+      dropZone.classList.remove('border-[var(--accent-color)]', 'bg-[#1a1a1a]/90');
+    });
+    dropZone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropZone.classList.remove('border-[var(--accent-color)]', 'bg-[#1a1a1a]/90');
+      if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+        loadFile(e.dataTransfer.files[0]);
+      }
+    });
+    dropZone.addEventListener('click', () => {
+      if (!cropper) fileInput.click();
+    });
+    changeImgBtn.addEventListener('click', () => fileInput.click());
+    
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files && e.target.files[0]) {
+        loadFile(e.target.files[0]);
+      }
+    });
+
+    function loadFile(file) {
+      if (!file.type.startsWith('image/')) {
+        alert('画像ファイルを選択してください。');
+        return;
+      }
+      const url = URL.createObjectURL(file);
+      cropperImage.src = url;
+      
+      cropperImage.onload = () => {
+        dropZone.classList.add('hidden');
+        previewContainer.classList.remove('hidden');
+        changeImgBtn.classList.remove('hidden');
+        
+        if (cropper) {
+          cropper.destroy();
+        }
+        
+        const preset = PRESETS[presetSelect.value];
+        cropper = new Cropper(cropperImage, {
+          aspectRatio: preset.w / preset.h,
+          viewMode: 1, 
+          dragMode: 'move', 
+          autoCropArea: 0.98, 
+          background: false,
+          guides: true,
+          highlight: false,
+          ready: function () {
+            updateOverlays();
+          },
+          crop: function () {
+            updateOverlays();
+          }
+        });
+      };
+    }
+
+    function getSettings() {
+      const layers = Array.from(textLayersContainer.children).map(layer => ({
+        text: layer.querySelector('.layer-input-text').value,
+        font: FONTS[layer.querySelector('.layer-input-font').value],
+        direction: layer.querySelector('.layer-input-direction').value,
+        textColor: layer.querySelector('.layer-input-color').value,
+        outlineColor: layer.querySelector('.layer-input-outline').value,
+        x: parseInt(layer.querySelector('.layer-input-x').value, 10),
+        y: parseInt(layer.querySelector('.layer-input-y').value, 10),
+        size: parseInt(layer.querySelector('.layer-input-size').value, 10),
+        outlineWidth: parseInt(layer.querySelector('.layer-input-outlinewidth').value, 10),
+        letterSpacing: parseInt(layer.querySelector('.layer-input-letterspacing').value, 10)
+      })).filter(l => l.text.trim() !== '');
+
+      return {
+        preset: PRESETS[presetSelect.value],
+        textLayers: layers,
+        frame: {
+          enabled: document.getElementById('frameEnable').checked,
+          style: document.getElementById('frameStyle').value,
+          color: document.getElementById('frameColor').value,
+          width: parseInt(document.getElementById('frameWidth').value, 10)
+        }
+      };
+    }
+
+    function updateFrameOverlayDOM() {
+      if (!cropper) return;
+      const cropBox = document.querySelector('.cropper-crop-box');
+      if (!cropBox) return;
+
+      let frameOverlay = document.getElementById('frameOverlayDOM');
+      if (!frameOverlay) {
+        frameOverlay = document.createElement('div');
+        frameOverlay.id = 'frameOverlayDOM';
+        frameOverlay.style.position = 'absolute';
+        frameOverlay.style.pointerEvents = 'none'; 
+        frameOverlay.style.zIndex = '5'; 
+        
+        cropBox.appendChild(frameOverlay);
+      }
+
+      const s = getSettings();
+      if (!s.frame.enabled) {
+        frameOverlay.style.display = 'none';
+        return;
+      }
+      
+      frameOverlay.style.display = 'block';
+      
+      const scale = cropBox.getBoundingClientRect().width / s.preset.w;
+      const previewBorderWidth = s.frame.width * scale;
+
+      frameOverlay.style.inset = '0';
+      frameOverlay.style.width = '100%';
+      frameOverlay.style.height = '100%';
+      frameOverlay.style.boxSizing = 'border-box';
+      
+      frameOverlay.style.border = 'none';
+      frameOverlay.style.borderRadius = '0';
+      frameOverlay.style.background = 'none';
+
+      if (s.frame.style === 'solid') {
+        frameOverlay.style.border = `${previewBorderWidth}px solid ${s.frame.color}`;
+      } else if (s.frame.style === 'dashed') {
+        frameOverlay.style.border = `${previewBorderWidth}px dashed ${s.frame.color}`;
+      } else if (s.frame.style === 'rounded') {
+        frameOverlay.style.border = `${previewBorderWidth}px solid ${s.frame.color}`;
+        frameOverlay.style.borderRadius = `${Math.max(10, s.frame.width * 2) * scale}px`;
+      } else if (s.frame.style === 'double') {
+        frameOverlay.style.border = `${Math.max(3, previewBorderWidth)}px double ${s.frame.color}`;
+      } else if (s.frame.style === 'cinema') {
+        frameOverlay.style.borderTop = `${previewBorderWidth * 3}px solid ${s.frame.color}`;
+        frameOverlay.style.borderBottom = `${previewBorderWidth * 3}px solid ${s.frame.color}`;
+      } else if (s.frame.style === 'corners') {
+        const c = s.frame.color;
+        const t = previewBorderWidth; 
+        const l = previewBorderWidth * 4; 
+        frameOverlay.style.background = `
+          linear-gradient(${c}, ${c}) top left / ${l}px ${t}px no-repeat,
+          linear-gradient(${c}, ${c}) top left / ${t}px ${l}px no-repeat,
+          linear-gradient(${c}, ${c}) top right / ${l}px ${t}px no-repeat,
+          linear-gradient(${c}, ${c}) top right / ${t}px ${l}px no-repeat,
+          linear-gradient(${c}, ${c}) bottom left / ${l}px ${t}px no-repeat,
+          linear-gradient(${c}, ${c}) bottom left / ${t}px ${l}px no-repeat,
+          linear-gradient(${c}, ${c}) bottom right / ${l}px ${t}px no-repeat,
+          linear-gradient(${c}, ${c}) bottom right / ${t}px ${l}px no-repeat
+        `;
+      }
+    }
+
+    function updateTextOverlayDOM() {
+      if (!cropper) return;
+      
+      const cropBox = document.querySelector('.cropper-crop-box');
+      if (!cropBox) return;
+
+      let overlay = document.getElementById('textOverlayDOM');
+      if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'textOverlayDOM';
+        overlay.style.position = 'absolute';
+        overlay.style.inset = '0';
+        overlay.style.pointerEvents = 'none'; 
+        overlay.style.overflow = 'hidden';
+        overlay.style.zIndex = '10'; 
+        cropBox.appendChild(overlay);
+      }
+
+      overlay.innerHTML = '';
+      const s = getSettings();
+      const cropBoxHeight = cropBox.getBoundingClientRect().height;
+      
+      s.textLayers.forEach(layer => {
+        if (!layer.text) return;
+
+        const fontSizePx = cropBoxHeight * (layer.size / 100);
+        const outlinePx = fontSizePx * (layer.outlineWidth / 100);
+
+        const container = document.createElement('div');
+        container.style.position = 'absolute';
+        container.style.left = `${layer.x}%`;
+        container.style.top = `${layer.y}%`;
+        container.style.transform = 'translate(-50%, -50%)';
+        container.style.display = 'flex';
+        container.style.justifyContent = 'center';
+        container.style.alignItems = 'center';
+
+        const el = document.createElement('div');
+        el.style.position = 'relative'; 
+        el.style.fontFamily = layer.font.family;
+        el.style.fontSize = `${fontSizePx}px`;
+        el.style.fontWeight = layer.font.weight;
+        el.style.whiteSpace = 'pre'; 
+        el.style.textAlign = 'center';
+        el.style.lineHeight = '1.3';
+        el.style.letterSpacing = `${layer.letterSpacing}px`; 
+
+        if (layer.direction === 'vertical') {
+          el.style.writingMode = 'vertical-rl';
+          el.style.textOrientation = 'upright';
+        } else {
+          el.style.writingMode = 'horizontal-tb';
+          el.style.textOrientation = 'mixed';
+        }
+
+        const textBack = document.createElement('div');
+        textBack.innerText = layer.text;
+        textBack.style.color = layer.outlineColor;
+        textBack.style.webkitTextStroke = `${outlinePx}px ${layer.outlineColor}`;
+        textBack.style.zIndex = '1';
+
+        const textFront = document.createElement('div');
+        textFront.innerText = layer.text;
+        textFront.style.position = 'absolute';
+        textFront.style.left = '0';
+        textFront.style.top = '0';
+        textFront.style.width = '100%';
+        textFront.style.height = '100%';
+        textFront.style.color = layer.textColor;
+        textFront.style.webkitTextStroke = '0';
+        textFront.style.zIndex = '2';
+
+        el.appendChild(textBack);
+        el.appendChild(textFront);
+        container.appendChild(el);
+        overlay.appendChild(container);
+      });
+    }
+
+    function drawTextLayers(ctx, layers, bounds) {
+      layers.forEach(layer => {
+        if (!layer.text) return;
+        
+        const fontSize = bounds.h * (layer.size / 100); 
+        ctx.font = `${layer.font.weight} ${fontSize}px ${layer.font.family}`;
+        ctx.fillStyle = layer.textColor;
+        ctx.strokeStyle = layer.outlineColor;
+        ctx.lineWidth = fontSize * (layer.outlineWidth / 100);
+        ctx.lineJoin = 'round';
+        ctx.miterLimit = 2;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        const lines = layer.text.split('\n');
+        const lineHeight = fontSize * 1.3;
+        const totalHeight = lines.length * lineHeight;
+        
+        const baseX = bounds.x + bounds.w * (layer.x / 100);
+        const centerY = bounds.y + bounds.h * (layer.y / 100);
+        
+        if (layer.direction === 'vertical') {
+          const totalWidth = lines.length * lineHeight;
+          let startX = baseX + (totalWidth / 2) - (lineHeight / 2);
+
+          lines.forEach((line, lineIndex) => {
+            const currentX = startX - lineIndex * lineHeight;
+            let lineTotalHeight = line.length * fontSize;
+            let startY = centerY - (lineTotalHeight / 2) + (fontSize / 2);
+            let currentY = startY;
+
+            for(let i=0; i<line.length; i++){
+              const char = line[i];
+              let charOffsetX = 0;
+              let charOffsetY = 0;
+
+              if (/[、。]/.test(char)) {
+                charOffsetX = fontSize * 0.4;
+                charOffsetY = -fontSize * 0.4;
+              } else if (/[ぁぃぅぇぉっゃゅょァィゥェォッャュョ]/.test(char)) {
+                charOffsetX = fontSize * 0.05;
+                charOffsetY = -fontSize * 0.05;
+              } else if (/[ー\-~～()（）\[\]「」『』【】<>＜＞]/.test(char)) {
+                ctx.save();
+                ctx.translate(currentX, currentY);
+                ctx.rotate(Math.PI / 2);
+                if (layer.outlineWidth > 0) ctx.strokeText(char, 0, 0);
+                ctx.fillText(char, 0, 0);
+                ctx.restore();
+                currentY += fontSize + layer.letterSpacing; 
+                continue;
+              }
+
+              if (layer.outlineWidth > 0) {
+                ctx.strokeText(char, currentX + charOffsetX, currentY + charOffsetY);
+              }
+              ctx.fillText(char, currentX + charOffsetX, currentY + charOffsetY);
+              
+              currentY += fontSize + layer.letterSpacing; 
+            }
+          });
+        } else {
+          if ('letterSpacing' in ctx) {
+            ctx.letterSpacing = `${layer.letterSpacing}px`; 
+          }
+          let startY = centerY - (totalHeight / 2) + (lineHeight / 2);
+
+          lines.forEach((line, index) => {
+            const currentY = startY + index * lineHeight;
+            if (layer.outlineWidth > 0) {
+              ctx.strokeText(line, baseX, currentY);
+            }
+            ctx.fillText(line, baseX, currentY);
+          });
+          
+          if ('letterSpacing' in ctx) {
+            ctx.letterSpacing = '0px'; 
+          }
+        }
+      });
+    }
+
+    exportBtn.addEventListener('click', async () => {
+      if (!cropper) {
+        alert('まずは画像を選択してください。');
+        return;
+      }
+
+      const s = getSettings();
+      const originalHtml = exportBtn.innerHTML;
+      
+      exportBtn.disabled = true;
+      exportBtn.classList.add('opacity-75', 'cursor-not-allowed');
+      exportBtn.innerHTML = `
+        <svg class="animate-spin w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        処理中...
+      `;
+
+      setTimeout(async () => {
+        try {
+          const exportCanvas = cropper.getCroppedCanvas({
+            width: s.preset.w,
+            height: s.preset.h,
+            imageSmoothingEnabled: true,
+            imageSmoothingQuality: 'high',
+          });
+
+          const ctx = exportCanvas.getContext('2d');
+          
+          if (s.frame.enabled) {
+            ctx.save();
+            ctx.strokeStyle = s.frame.color;
+            ctx.fillStyle = s.frame.color;
+            const fw = s.frame.width;
+            const pw = s.preset.w;
+            const ph = s.preset.h;
+            
+            if (s.frame.style === 'solid') {
+              ctx.lineWidth = fw;
+              ctx.strokeRect(fw/2, fw/2, pw - fw, ph - fw);
+            } else if (s.frame.style === 'dashed') {
+              ctx.lineWidth = fw;
+              ctx.setLineDash([fw * 2, fw * 2]);
+              ctx.strokeRect(fw/2, fw/2, pw - fw, ph - fw);
+            } else if (s.frame.style === 'rounded') {
+              ctx.lineWidth = fw;
+              const radius = Math.max(10, fw * 2);
+              ctx.beginPath();
+              if (typeof ctx.roundRect === 'function') {
+                 ctx.roundRect(fw/2, fw/2, pw - fw, ph - fw, radius);
+              } else {
+                 ctx.rect(fw/2, fw/2, pw - fw, ph - fw);
+              }
+              ctx.stroke();
+            } else if (s.frame.style === 'double') {
+               const inner = fw / 3;
+               ctx.lineWidth = inner;
+               ctx.strokeRect(inner/2, inner/2, pw - inner, ph - inner);
+               const inset = inner * 2 + inner/2;
+               ctx.strokeRect(inset, inset, pw - inset*2, ph - inset*2);
+            } else if (s.frame.style === 'cinema') {
+               const barH = fw * 3;
+               ctx.fillRect(0, 0, pw, barH); 
+               ctx.fillRect(0, ph - barH, pw, barH); 
+            } else if (s.frame.style === 'corners') {
+               const l = fw * 4; 
+               ctx.beginPath();
+               ctx.rect(0, 0, l, fw);
+               ctx.rect(0, 0, fw, l);
+               ctx.rect(pw - l, 0, l, fw);
+               ctx.rect(pw - fw, 0, fw, l);
+               ctx.rect(0, ph - fw, l, fw);
+               ctx.rect(0, ph - l, fw, l);
+               ctx.rect(pw - l, ph - fw, l, fw);
+               ctx.rect(pw - fw, ph - l, fw, l);
+               ctx.fill();
+            }
+            ctx.restore();
+          }
+
+          drawTextLayers(ctx, s.textLayers, {x: 0, y: 0, w: s.preset.w, h: s.preset.h});
+
+          const MAX_BYTES = 2 * 1024 * 1024;
+          let quality = 0.95;
+          let resultBlob = null;
+
+          const getBlob = (q) => {
+            return new Promise(resolve => {
+              exportCanvas.toBlob(blob => resolve(blob), 'image/jpeg', q);
+            });
+          };
+
+          while (quality > 0.1) {
+            resultBlob = await getBlob(quality);
+            if (resultBlob.size <= MAX_BYTES) {
+              break;
+            }
+            quality -= 0.05;
+          }
+
+          const url = URL.createObjectURL(resultBlob);
+          const a = document.createElement('a');
+          a.href = url;
+          const presetKey = presetSelect.value;
+          a.download = `thumbnail_${presetKey}_${Date.now()}.jpg`;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+          
+        } catch (e) {
+          console.error(e);
+          alert('画像の書き出しに失敗しました。');
+        } finally {
+          exportBtn.disabled = false;
+          exportBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+          exportBtn.innerHTML = originalHtml;
+        }
+      }, 50);
+    });
+    
+    addTextLayer();
+  </script>
+
+  <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800 text-gray-800 dark:text-gray-100" onclick="event.stopPropagation()">
+      <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+        <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
+        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div id="modal-body" class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+      </div>
+    </div>
+  </div>
+
+  <div id="raw-privacy-policy" class="hidden">
+    <div class="space-y-4">
+      <p>当サイトは、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。</p>
+      <p>当サイトにおいて、氏名やメールアドレス等の個人情報を直接取得・保存することはありません。</p>
+      <p>なお、サイトの閲覧に伴い、セキュリティ対策や利便性向上のため、IPアドレス等の技術的情報が自動的に送受信されますが、これらを個人を特定する目的で利用したり、永続的に保存したりすることはありません。</p>
+      <p>当サイトで提供される楽曲は、利用規約の範囲内で安全にご利用いただけます。</p>
+    </div>
+  </div>
+
+  <div id="raw-terms" class="hidden">
+    <div class="space-y-4">
+      <p>1. 著作権と利用許諾：提供される楽曲の著作権は制作者に帰属します。ユーザーは、非商用・商用を問わず、本楽曲を無料で利用することができます。</p>
+      <p>2. 禁止事項：楽曲の二次配布、販売、および自作発言は固く禁じます。</p>
+      <p>3. AI生成物の明示と識別情報：当サイトで公開されるすべての音源は、生成AIにより作成されたコンテンツです。EU AI法を含む各地域の法令に基づき、AI生成物であることを明示しています。また、音源にはGoogle SynthID等の識別情報が埋め込まれており、AI生成であることを確認できる仕組みが含まれています。これらの識別情報は利用者の個人情報とは無関係であり、追跡や特定を目的とするものではありません。</p>
+    </div>
+  </div>
+
+  <div id="raw-contact" class="hidden">
+    <div class="space-y-4">
+      <p>サービスに関するご質問やお問い合わせは、以下の連絡先までお願いいたします。</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+        <a href="mailto:neura.jp.project@gmail.com" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">Email</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura.jp.project@gmail.com</span>
+        </a>
+        <a href="https://www.youtube.com/@Neura-music-Archive" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">YouTube</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@Neura-music-Archive</span>
+        </a>
+        <a href="https://x.com/neura_music" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">X</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@neura_music</span>
+        </a>
+        <a href="https://neura-music.booth.pm/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+          <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">BOOTH</span>
+          <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura-music.booth.pm</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="raw-ads" class="hidden">
+    <div class="space-y-4">
+      <p>当サイトでは、サービスの安定的かつ継続的な提供を目的として、一部のページに広告を掲載しております。ユーザーの皆様のご理解とご協力をお願い申し上げます。</p>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      function openModal(pageKey) {
+        let modalTitle = "";
+        let modalContent = "";
+
+        if (pageKey === 'privacy') {
+          modalTitle = "プライバシーポリシー";
+          const privacySource = document.getElementById('raw-privacy-policy');
+          modalContent = privacySource ? privacySource.innerHTML : "プライバシーポリシーの読み込みに失敗しました。";
+        } else if (pageKey === 'about') {
+          modalTitle = "このサイトについて";
+          
+          const sections = [
+            { id: 'raw-terms', title: '利用規約' },
+            { id: 'raw-contact', title: 'お問い合わせ' },
+            { id: 'raw-ads', title: '広告の掲載について' }
+          ];
+
+          let mergedHtml = "";
+          
+          sections.forEach(sec => {
+            const el = document.getElementById(sec.id);
+            if (el) {
+              mergedHtml += `
+                <div class="mb-10 last:mb-0">
+                  <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-800 pb-2 mb-4">
+                    ${sec.title}
+                  </h4>
+                  <div class="space-y-4">
+                    ${el.innerHTML}
+                  </div>
+                </div>
+              `;
+            }
+          });
+
+          modalContent = mergedHtml ? mergedHtml : "<p class='text-gray-500'>データの読み込みに失敗しました。</p>";
+        }
+
+        const modal = document.getElementById('modal-overlay');
+        const titleEl = document.getElementById('modal-title');
+        const bodyEl = document.getElementById('modal-body');
+        
+        if (modal) {
+          titleEl.textContent = modalTitle;
+          bodyEl.innerHTML = modalContent;
+          modal.style.display = 'flex';
+        }
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('modal-overlay');
+        if (modal) {
+          modal.style.display = 'none';
+        }
+      }
+
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = document.getElementById('generator-selector');
+        if (selector) {
+          const currentPath = window.location.pathname;
+          const options = Array.from(selector.options);
+          const matchedOption = options.find(opt => opt.value && currentPath.includes(opt.value));
+          if (matchedOption) {
+            selector.value = matchedOption.value;
+          } else {
+            selector.value = "";
+          }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
