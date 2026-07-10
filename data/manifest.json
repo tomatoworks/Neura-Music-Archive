@@ -62,6 +62,13 @@
       "is_visible": true
     },
     {
+      "id": "tool_20260710003749",
+      "title": "THUMBNAIL GEN",
+      "content_url": "https://cdn.neura-music.com/tools/THUMBNAIL%20GENERATOR.html",
+      "date": "2026-07-10",
+      "is_visible": true
+    },
+    {
       "id": "tool_20260614162531",
       "title": "Youtube拡張ツール",
       "content_url": "contents/tools/neuratube/neuratube_introduction_user_manual.html",
@@ -131,7 +138,7 @@
       "title": "オーバーレイとは",
       "content_url": "contents/tools/Overlay Article/overlay-article.html",
       "date": "2026-06-23",
-      "is_visible": true
+      "is_visible": false
     },
     {
       "id": "article_20260628024844",
