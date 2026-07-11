@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Neura Music Archive - AI BGM Portal & Creator Tools</title>
-  <meta name="description" content="商用利用可能・クレジット表記不要のAI生成BGMを無料ダウンロード。動画制作や配信、ゲームに最適な高品質BGMに加え、OBSで使える便利なクリエイター向けツールも公開中。">
-  
+  <meta name="description"
+    content="商用利用可能・クレジット表記不要のAI生成BGMを無料ダウンロード。動画制作や配信、ゲームに最適な高品質BGMに加え、OBSで使える便利なクリエイター向けツールも公開中。">
+
   <meta property="og:title" content="Neura Music Archive - AI BGM Portal & Creator Tools">
   <meta property="og:description" content="商用利用可・クレジット表記不要のAI生成BGMが全曲無料DL！OBSで使えるクリエイター向け便利ツールも公開中。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://neura-music.com/">
   <meta property="og:image" content="https://neura-music.com/assets/og-image.jpg">
-  
+
   <meta name="twitter:card" content="summary_large_image">
-  
+
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BYRYVYKPDP"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-BYRYVYKPDP');
@@ -26,7 +28,8 @@
   <script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
   <link rel="stylesheet" href="/css/style.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2117398261086059" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2117398261086059"
+    crossorigin="anonymous"></script>
   <link rel="alternate" hreflang="ja" href="https://neura-music.com/" />
   <link rel="alternate" hreflang="en" href="https://neura-music.com/lang/en/" />
   <link rel="alternate" hreflang="zh" href="https://neura-music.com/lang/zh/" />
@@ -39,7 +42,7 @@
   <link rel="alternate" hreflang="x-default" href="https://neura-music.com/lang/en/" />
   <link rel="canonical" href="https://neura-music.com/" />
   <script>
-    (function() {
+    (function () {
       if (sessionStorage.getItem('lang_redirected')) return;
       if (/bot|googlebot|google-inspectiontool|crawler|spider|robot|crawling|lighthouse/i.test(navigator.userAgent)) return;
 
@@ -62,133 +65,184 @@
     })();
   </script>
 </head>
-<body class="h-screen flex flex-col overflow-hidden text-gray-800 dark:text-gray-100 bg-white dark:bg-[#1c1c1c] font-sans">
+
+<body
+  class="h-screen flex flex-col overflow-hidden text-gray-800 dark:text-gray-100 bg-white dark:bg-[#1c1c1c] font-sans">
 
   <header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
     <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
       <div class="flex items-center">
-  <h1 class="flex items-center">
-    <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
-      <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
-      <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
-    </a>
-  </h1>
-</div>
+        <h1 class="flex items-center">
+          <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+            <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+            <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+          </a>
+        </h1>
+      </div>
 
       <div class="flex items-center space-x-3 md:space-x-7">
-        
+
         <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
-          <a href="/articles/" class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
-          <a href="/albums/" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+          <a href="/articles/"
+            class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
+          <a href="/albums/"
+            class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
         </div>
-        
+
         <div class="relative inline-block">
-            <select id="generator-selector" onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
-              <option value="" disabled selected hidden>Generatorを選択</option>
-              <option value="/tools/">ツール一覧</option>
-              <option value="/tools/clock-generator">CLOCK GEN</option>
-              <option value="/tools/ranking-generator">BEST10 GEN</option>
-              <option value="/tools/overlay/">OVERLAY GEN</option>
-              <option value="/tools/neura_timer_generator">TIMER GEN</option>
-              <option value="/tools/thumbnail-gen">THUMBNAIL GEN</option>
-            </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-            </div>
-          </div>
-          
-          <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
-            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
-            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+          <select id="generator-selector" onchange="if(this.value) window.location.href=this.value"
+            class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+            <option value="" disabled selected>Generatorを選択</option>
+            <option value="/tools/">ツール一覧</option>
+            <option value="/tools/clock-generator">CLOCK GEN</option>
+            <option value="/tools/ranking-generator">BEST10 GEN</option>
+            <option value="/tools/overlay/">OVERLAY GEN</option>
+            <option value="/tools/neura_timer_generator">TIMER GEN</option>
+            <option value="/tools/thumbnail-gen">THUMBNAIL GEN</option>
+          </select>
+          <div
+            class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
           </div>
         </div>
 
-        <button class="md:hidden text-gray-500 dark:text-gray-400">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-        </button>
-
+        <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+          <a href="javascript:void(0)" onclick="openModal('privacy')"
+            class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+          <a href="javascript:void(0)" onclick="openModal('about')"
+            class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+        </div>
       </div>
+
+      <button class="md:hidden text-gray-500 dark:text-gray-400">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+    </div>
     </div>
 
-    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
-      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+    <div
+      class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 /
+      OBS・配信向けツール
     </div>
   </header>
 
   <div class="flex-1 flex flex-col md:flex-row overflow-hidden">
-    <aside class="w-[240px] bg-[#fafafa] dark:bg-[#1c1c1c] border-r dark:border-gray-800 overflow-y-auto hidden md:block flex-shrink-0 pb-24 flex flex-col">
+    <aside
+      class="w-[240px] bg-[#fafafa] dark:bg-[#1c1c1c] border-r dark:border-gray-800 overflow-y-auto hidden md:block flex-shrink-0 pb-24 flex flex-col">
       <div class="p-6 flex-1 flex flex-col">
         <h2 class="text-sm font-bold text-gray-400 tracking-wider mb-4 uppercase">Themes</h2>
         <ul class="space-y-1" id="theme-list">
         </ul>
-        
+
         <div class="mt-5 mb-2">
-          <input type="text" id="search-input" placeholder="曲名やタグで検索..." class="w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 shadow-sm">
+          <input type="text" id="search-input" placeholder="曲名やタグで検索..."
+            class="w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 shadow-sm">
         </div>
 
         <div class="mb-2">
-          <a href="https://forms.gle/DXzSJvVEo4sv98dr7" target="_blank" rel="noopener noreferrer" title="別タブで開きます" class="block w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm text-center shadow-sm hover:bg-gray-100 dark:hover:bg-gray-800 transition focus:outline-none focus:border-gray-500 dark:focus:border-gray-400">REQUEST</a>
+          <a href="https://forms.gle/DXzSJvVEo4sv98dr7" target="_blank" rel="noopener noreferrer" title="別タブで開きます"
+            class="block w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm text-center shadow-sm hover:bg-gray-100 dark:hover:bg-gray-800 transition focus:outline-none focus:border-gray-500 dark:focus:border-gray-400">REQUEST</a>
         </div>
 
-        <h2 id="tools-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Tools</h2>
+        <h2 id="tools-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Tools
+        </h2>
         <ul class="space-y-1" id="tool-list">
         </ul>
-        <h2 id="articles-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Articles</h2>
+        <h2 id="articles-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">
+          Articles</h2>
         <ul class="space-y-1" id="article-list">
         </ul>
-        
+
         <div id="sidebar-ad-container" class="mt-auto pt-10 flex justify-center w-full">
-          <ins class="adsbygoogle"
-               style="display:inline-block;width:192px;height:450px"
-               data-ad-client="ca-pub-2117398261086059"
-               data-ad-slot="1623642236"></ins>
+          <ins class="adsbygoogle" style="display:inline-block;width:192px;height:450px"
+            data-ad-client="ca-pub-2117398261086059" data-ad-slot="1623642236"></ins>
           <script>
-               (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
         </div>
       </div>
     </aside>
 
-    <div class="md:hidden bg-[#fafafa] dark:bg-[#353535] border-b dark:border-gray-800 whitespace-nowrap overflow-x-auto px-4 py-3 flex-shrink-0 flex space-x-4" id="theme-list-mobile">
+    <div
+      class="md:hidden bg-[#fafafa] dark:bg-[#353535] border-b dark:border-gray-800 whitespace-nowrap overflow-x-auto px-4 py-3 flex-shrink-0 flex space-x-4"
+      id="theme-list-mobile">
     </div>
 
     <main class="flex-1 overflow-y-auto bg-white dark:bg-[#181818] flex flex-col @container pb-24" id="scroll-area">
-      <div id="info-area" class="border-b border-gray-100 dark:border-gray-800 px-4 py-1.5 flex items-center bg-gray-50 dark:bg-[#202020] min-h-[32px]">
-        </div>
+      <div id="info-area"
+        class="border-b border-gray-100 dark:border-gray-800 px-4 py-1.5 flex items-center bg-gray-50 dark:bg-[#202020] min-h-[32px]">
+      </div>
       <div class="p-4 md:p-8 flex-1" id="main-content">
       </div>
     </main>
   </div>
 
-  <footer class="fixed bottom-0 left-0 right-0 z-50 bg-[#43657E]/80 border-t border-[#43657E]/50 px-4 py-1.5 flex items-center justify-between h-16 shadow-[0_-4px_10px_rgba(0,0,0,0.15)]">
+  <footer
+    class="fixed bottom-0 left-0 right-0 z-50 bg-[#43657E]/80 border-t border-[#43657E]/50 px-4 py-1.5 flex items-center justify-between h-16 shadow-[0_-4px_10px_rgba(0,0,0,0.15)]">
     <div class="flex items-center space-x-1.5 md:space-x-3 w-auto md:w-1/4 md:min-w-[180px] flex-shrink-0">
-      <button id="btn-shuffle" class="hidden md:block text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="シャッフル">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+      <button id="btn-shuffle"
+        class="hidden md:block text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0"
+        title="シャッフル">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z" />
+        </svg>
       </button>
-      <button id="btn-prev" class="text-white/90 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+      <button id="btn-prev"
+        class="text-white/90 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
+        </svg>
       </button>
-      <button id="main-play-btn" class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-white text-[#43657E] rounded-full hover:bg-gray-100 transition shadow-lg shadow-black/20 border border-white/50 transform hover:scale-105 active:scale-95">
-        <svg id="icon-play" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-        <svg id="icon-pause" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+      <button id="main-play-btn"
+        class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-white text-[#43657E] rounded-full hover:bg-gray-100 transition shadow-lg shadow-black/20 border border-white/50 transform hover:scale-105 active:scale-95">
+        <svg id="icon-play" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+        <svg id="icon-pause" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+        </svg>
       </button>
-      <button id="btn-next" class="text-white/90 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+      <button id="btn-next"
+        class="text-white/90 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
+        </svg>
       </button>
-      <button id="btn-repeat" class="hidden md:block relative text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="リピート">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
-        <span id="repeat-badge" class="absolute -top-1.5 -right-1.5 text-[9px] font-bold hidden bg-white text-[#43657E] rounded-full w-3.5 h-3.5 text-center leading-[14px] shadow-sm">1</span>
+      <button id="btn-repeat"
+        class="hidden md:block relative text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0"
+        title="リピート">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" viewBox="0 0 24 24">
+          <polyline points="17 1 21 5 17 9"></polyline>
+          <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+          <polyline points="7 23 3 19 7 15"></polyline>
+          <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+        </svg>
+        <span id="repeat-badge"
+          class="absolute -top-1.5 -right-1.5 text-[9px] font-bold hidden bg-white text-[#43657E] rounded-full w-3.5 h-3.5 text-center leading-[14px] shadow-sm">1</span>
       </button>
     </div>
 
     <div class="flex-1 min-w-0 flex items-center px-2 md:px-8">
-      <div class="w-10 h-10 md:w-14 md:h-14 bg-black/10 rounded flex-shrink-0 flex items-center justify-center overflow-hidden border border-white/40 shadow-md mr-2 md:mr-3">
+      <div
+        class="w-10 h-10 md:w-14 md:h-14 bg-black/10 rounded flex-shrink-0 flex items-center justify-center overflow-hidden border border-white/40 shadow-md mr-2 md:mr-3">
         <img id="player-album-art" src="" class="w-full h-full object-cover hidden" alt="Album Art">
-        <svg id="player-album-placeholder" class="w-5 h-5 text-white/60" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+        <svg id="player-album-placeholder" class="w-5 h-5 text-white/60" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+        </svg>
       </div>
       <div class="flex-1 min-w-0 flex flex-col justify-center">
-        <div class="text-xs md:text-sm font-semibold text-white drop-shadow-md mb-0.5 md:mb-1 truncate" id="player-track-name">未選択 - 曲を選択してください</div>
-        <div class="flex items-center space-x-1.5 md:space-x-2 text-[10px] md:text-xs text-white/90 drop-shadow-sm font-mono">
+        <div class="text-xs md:text-sm font-semibold text-white drop-shadow-md mb-0.5 md:mb-1 truncate"
+          id="player-track-name">未選択 - 曲を選択してください</div>
+        <div
+          class="flex items-center space-x-1.5 md:space-x-2 text-[10px] md:text-xs text-white/90 drop-shadow-sm font-mono">
           <span id="player-time-current">0:00</span>
           <input type="range" min="0" max="100" value="0" class="flex-1 accent-white shadow-sm cursor-pointer">
           <span id="player-time-total">0:00</span>
@@ -197,23 +251,34 @@
     </div>
 
     <div class="w-auto md:w-1/4 flex justify-end md:min-w-[80px] flex-shrink-0">
-      <button id="footer-dl-btn" class="flex items-center justify-center text-sm font-medium text-white/50 bg-black/10 cursor-not-allowed p-2 md:px-3 md:py-1.5 rounded transition shadow-inner border border-transparent flex-shrink-0" disabled>
-        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      <button id="footer-dl-btn"
+        class="flex items-center justify-center text-sm font-medium text-white/50 bg-black/10 cursor-not-allowed p-2 md:px-3 md:py-1.5 rounded transition shadow-inner border border-transparent flex-shrink-0"
+        disabled>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+        </svg>
         <span class="hidden md:inline">DL</span>
       </button>
     </div>
   </footer>
 
-  <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
-    <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800" onclick="event.stopPropagation()">
+  <div id="modal-overlay"
+    class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm"
+    onclick="closeModal()">
+    <div
+      class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800"
+      onclick="event.stopPropagation()">
       <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
         <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
-        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        <button onclick="closeModal()"
+          class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
         </button>
       </div>
       <div id="modal-body" class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed">
-        </div>
+      </div>
     </div>
   </div>
 
@@ -232,7 +297,8 @@
     <div class="space-y-4">
       <p>1. 著作権と利用許諾：提供される楽曲の著作権は制作者に帰属します。ユーザーは、非商用・商用を問わず、本楽曲を無料で利用することができます。</p>
       <p>2. 禁止事項：楽曲の二次配布、販売、および自作発言は固く禁じます。</p>
-      <p>3. AI生成物の明示と識別情報：当サイトで公開されるすべての音源は、生成AIにより作成されたコンテンツです。EU AI法を含む各地域の法令に基づき、AI生成物であることを明示しています。また、音源にはGoogle SynthID等の識別情報が埋め込まれており、AI生成であることを確認できる仕組みが含まれています。これらの識別情報は利用者の個人情報とは無関係であり、追跡や特定を目的とするものではありません。</p>
+      <p>3. AI生成物の明示と識別情報：当サイトで公開されるすべての音源は、生成AIにより作成されたコンテンツです。EU AI法を含む各地域の法令に基づき、AI生成物であることを明示しています。また、音源にはGoogle
+        SynthID等の識別情報が埋め込まれており、AI生成であることを確認できる仕組みが含まれています。これらの識別情報は利用者の個人情報とは無関係であり、追跡や特定を目的とするものではありません。</p>
     </div>
   </div>
 
@@ -240,19 +306,23 @@
     <div class="space-y-4">
       <p>サービスに関するご質問やお問い合わせは、以下の連絡先までお願いいたします。</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-        <a href="mailto:neura.jp.project@gmail.com" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+        <a href="mailto:neura.jp.project@gmail.com"
+          class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
           <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">Email</span>
           <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura.jp.project@gmail.com</span>
         </a>
-        <a href="https://www.youtube.com/@Neura-music-Archive" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+        <a href="https://www.youtube.com/@Neura-music-Archive" target="_blank" rel="noopener noreferrer"
+          class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
           <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">YouTube</span>
           <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@Neura-music-Archive</span>
         </a>
-        <a href="https://x.com/neura_music" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+        <a href="https://x.com/neura_music" target="_blank" rel="noopener noreferrer"
+          class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
           <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">X</span>
           <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@neura_music</span>
         </a>
-        <a href="https://neura-music.booth.pm/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
+        <a href="https://neura-music.booth.pm/" target="_blank" rel="noopener noreferrer"
+          class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
           <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">BOOTH</span>
           <span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura-music.booth.pm</span>
         </a>
@@ -266,4 +336,5 @@
     </div>
   </div>
 </body>
+
 </html>
