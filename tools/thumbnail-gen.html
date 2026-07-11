@@ -28,17 +28,33 @@
 
   <style>
     :root {
-      --bg-color: #0d0d0d;
-      --container-bg: #141414;
-      --card-bg: #1a1a1a;
+      --bg-color: #f3f4f6;
+      --container-bg: #ffffff;
+      --card-bg: #f9fafb;
       --accent-color: #5D9CC4;
       --accent-hover: #82b7db;
       --accent-glow: rgba(93, 156, 196, 0.25);
-      --text-main: #f3f4f6;
-      --text-sub: #9ca3af;
-      --border-color: #2e2e2e;
-      --shadow-plate: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
-      --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.25);
+      --text-main: #1f2937;
+      --text-sub: #4b5563;
+      --border-color: #e5e7eb;
+      --shadow-plate: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+      --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.02);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0d0d0d;
+        --container-bg: #141414;
+        --card-bg: #1a1a1a;
+        --accent-color: #5D9CC4;
+        --accent-hover: #82b7db;
+        --accent-glow: rgba(93, 156, 196, 0.25);
+        --text-main: #f3f4f6;
+        --text-sub: #9ca3af;
+        --border-color: #2e2e2e;
+        --shadow-plate: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.25);
+      }
     }
     
     body {
@@ -48,7 +64,28 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
+      transition: background-color 0.2s, color 0.2s;
     }
+
+    .bg-\[\#141414\] { background-color: var(--container-bg) !important; }
+    .bg-\[\#1a1a1a\] { background-color: var(--card-bg) !important; }
+    .bg-\[\#222\] { background-color: var(--bg-color) !important; }
+    .bg-\[\#111\] { background-color: var(--bg-color) !important; }
+    .bg-\[\#111111\] { background-color: var(--bg-color) !important; }
+    .bg-\[\#151515\] { background-color: var(--bg-color) !important; }
+    .bg-\[\#252525\] { background-color: var(--card-bg) !important; }
+    .bg-\[\#0a0a0a\] { background-color: var(--bg-color) !important; }
+    
+    .border-\[\#333\] { border-color: var(--border-color) !important; }
+    .border-\[\#444\] { border-color: var(--border-color) !important; }
+    .border-\[\#2e2e2e\] { border-color: var(--border-color) !important; }
+    .border-\[\#3a3a3a\] { border-color: var(--border-color) !important; }
+    .border-\[\#222\] { border-color: var(--border-color) !important; }
+    
+    .text-white { color: var(--text-main) !important; }
+    .text-gray-300 { color: var(--text-main) !important; }
+    .text-gray-400 { color: var(--text-sub) !important; }
+    .text-gray-500 { color: var(--text-sub) !important; }
 
     .font-sans-jp { font-family: 'Noto Sans JP', sans-serif; }
     .font-pop { font-family: 'M PLUS Rounded 1c', sans-serif; }
@@ -58,7 +95,7 @@
       background: var(--container-bg);
       border-radius: 16px;
       box-shadow: var(--shadow-plate);
-      border: 1px solid rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
     }
 
     .card {
@@ -69,9 +106,9 @@
     }
     
     .modern-input {
-      background: #111111 !important;
+      background: var(--bg-color) !important;
       color: var(--text-main) !important;
-      border: 1px solid #333 !important;
+      border: 1px solid var(--border-color) !important;
       border-radius: 8px;
       transition: all 0.2s ease;
       padding: 10px 14px;
@@ -82,14 +119,14 @@
       border-color: var(--accent-color) !important;
       box-shadow: 0 0 0 2px var(--accent-glow) !important;
       outline: none;
-      background: #000 !important;
+      background: var(--container-bg) !important;
     }
 
     .bg-checker {
-      background-color: #111;
+      background-color: var(--container-bg);
       background-image: 
-        linear-gradient(45deg, #181818 25%, transparent 25%, transparent 75%, #181818 75%, #181818),
-        linear-gradient(45deg, #181818 25%, transparent 25%, transparent 75%, #181818 75%, #181818);
+        linear-gradient(45deg, var(--bg-color) 25%, transparent 25%, transparent 75%, var(--bg-color) 75%, var(--bg-color)),
+        linear-gradient(45deg, var(--bg-color) 25%, transparent 25%, transparent 75%, var(--bg-color) 75%, var(--bg-color));
       background-size: 20px 20px;
       background-position: 0 0, 10px 10px;
     }

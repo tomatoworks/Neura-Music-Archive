@@ -904,8 +904,8 @@ server.listen(PORT, () => {
             .text-\\[\\#eee\\] { color: var(--text-main) !important; }
             .text-\\[\\#9ca3af\\] { color: var(--text-sub) !important; }
 
-            .modern-input { background: #111111 !important; color: var(--text-main) !important; border: 1px solid #333 !important; border-radius: 12px; transition: all 0.2s ease; padding: 12px 16px; font-size: 14px; width: 100%; }
-            .modern-input:focus { border-color: var(--accent-color) !important; box-shadow: 0 0 0 2px var(--accent-glow) !important; outline: none; background: #000 !important; }
+            .modern-input { background: var(--bg-color) !important; color: var(--text-main) !important; border: 1px solid var(--border-color) !important; border-radius: 12px; transition: all 0.2s ease; padding: 12px 16px; font-size: 14px; width: 100%; }
+            .modern-input:focus { border-color: var(--accent-color) !important; box-shadow: 0 0 0 2px var(--accent-glow) !important; outline: none; background: var(--container-bg) !important; }
             .modern-input:disabled { opacity: 0.5; cursor: not-allowed; }
             .switch { position: relative; display: inline-block; width: 44px; height: 24px; flex-shrink: 0; cursor: pointer; }
             .switch input { opacity: 0; width: 0; height: 0; }
