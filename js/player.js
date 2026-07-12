@@ -4,6 +4,29 @@ import { filterTracksBySearch } from './api.js';
 
 let currentAudio = null;
 let isSeeking = false;
+let currentVolume = 1;
+let isMuted = false;
+
+function updateSliderBackground(slider) {
+  if (!slider) return;
+  const min = parseFloat(slider.min) || 0;
+  const max = parseFloat(slider.max) || 100;
+  const val = parseFloat(slider.value) || 0;
+  const percentage = ((val - min) / (max - min)) * 100;
+  slider.style.background = `linear-gradient(to right, #ffffff ${percentage}%, rgba(255, 255, 255, 0.2) ${percentage}%)`;
+}
+
+function updateVolumeUI() {
+  const iconVolumeOn = document.getElementById('icon-volume-on');
+  const iconVolumeOff = document.getElementById('icon-volume-off');
+  if (isMuted || currentVolume === 0) {
+    if (iconVolumeOn) iconVolumeOn.classList.add('hidden');
+    if (iconVolumeOff) iconVolumeOff.classList.remove('hidden');
+  } else {
+    if (iconVolumeOn) iconVolumeOn.classList.remove('hidden');
+    if (iconVolumeOff) iconVolumeOff.classList.add('hidden');
+  }
+}
 
 export function initPlayer() {
   const btnShuffle = document.getElementById('btn-shuffle');
@@ -63,7 +86,7 @@ export function initPlayer() {
     });
   }
 
-  const progressBar = document.querySelector('footer input[type="range"]');
+  const progressBar = document.getElementById('seek-slider');
   if (progressBar) {
     progressBar.addEventListener('mousedown', () => { isSeeking = true; });
     progressBar.addEventListener('touchstart', () => { isSeeking = true; }, { passive: true });
@@ -89,6 +112,7 @@ export function initPlayer() {
         const timeCurrentEl = document.getElementById('player-time-current');
         if (timeCurrentEl) timeCurrentEl.textContent = `${m}:${s}`;
       }
+      updateSliderBackground(e.target);
     });
   }
 
@@ -122,6 +146,47 @@ export function initPlayer() {
       playPrevTrack();
     });
   }
+
+  const volumeSlider = document.getElementById('volume-slider');
+  const btnMute = document.getElementById('btn-mute');
+
+  if (volumeSlider) {
+    updateSliderBackground(volumeSlider);
+    volumeSlider.addEventListener('input', (e) => {
+      currentVolume = parseFloat(e.target.value);
+      if (currentVolume > 0) {
+        isMuted = false;
+      } else {
+        isMuted = true;
+      }
+      updateVolumeUI();
+      if (currentAudio) {
+        currentAudio.volume = currentVolume;
+      }
+      updateSliderBackground(e.target);
+    });
+  }
+
+  if (btnMute) {
+    btnMute.addEventListener('click', () => {
+      isMuted = !isMuted;
+      if (isMuted) {
+        if (currentAudio) currentAudio.volume = 0;
+        if (volumeSlider) {
+          volumeSlider.value = 0;
+          updateSliderBackground(volumeSlider);
+        }
+      } else {
+        if (currentVolume === 0) currentVolume = 1;
+        if (currentAudio) currentAudio.volume = currentVolume;
+        if (volumeSlider) {
+          volumeSlider.value = currentVolume;
+          updateSliderBackground(volumeSlider);
+        }
+      }
+      updateVolumeUI();
+    });
+  }
 }
 
 export function playTrack(trackId, title, type, duration, artUrl) {
@@ -147,6 +212,7 @@ export function playTrack(trackId, title, type, duration, artUrl) {
       }
       if (fullUrl) {
         currentAudio = new Audio(fullUrl);
+        currentAudio.volume = isMuted ? 0 : currentVolume;
         
         currentAudio.addEventListener('ended', () => {
           playNextTrack();
@@ -161,15 +227,19 @@ export function playTrack(trackId, title, type, duration, artUrl) {
             timeCurrentEl.textContent = `${m}:${s}`;
           }
           
-          const progressBar = document.querySelector('footer input[type="range"]');
+          const progressBar = document.getElementById('seek-slider');
           if (progressBar && currentAudio.duration && !isSeeking) {
             progressBar.value = (currentAudio.currentTime / currentAudio.duration) * 100;
+            updateSliderBackground(progressBar);
           }
         });
       } else {
         currentAudio = null;
-        const progressBar = document.querySelector('footer input[type="range"]');
-        if (progressBar) progressBar.value = 0;
+        const progressBar = document.getElementById('seek-slider');
+        if (progressBar) {
+          progressBar.value = 0;
+          updateSliderBackground(progressBar);
+        }
         const timeCurrentEl = document.getElementById('player-time-current');
         if (timeCurrentEl) timeCurrentEl.textContent = "0:00";
 
