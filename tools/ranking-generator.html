@@ -93,7 +93,7 @@
     import { Download, Palette, Type, Settings, ListOrdered, Code, Monitor, HelpCircle, Check, Link as LinkIcon, Twitter } from 'lucide-react';
 
     const PanelHeading = ({ icon: Icon, title }) => (
-      <h4 className="flex items-center gap-2 text-white font-bold mb-6 pb-3 border-b border-[#333] text-[15px] tracking-wide">
+      <h4 className="flex items-center gap-2 text-[var(--text-main)] font-bold mb-6 pb-3 border-b border-[var(--border-color)] text-[15px] tracking-wide">
         <Icon className="w-5 h-5 text-[var(--accent-color)]" />
         {title}
       </h4>
@@ -114,10 +114,10 @@
 
     const ColorPicker = ({ label, value, onChange, className = "mb-4" }) => (
       <div className={`flex items-center justify-between ${className}`}>
-        <label className="text-sm font-medium text-[#9ca3af]">{label}</label>
+        <label className="text-sm font-medium text-[var(--text-sub)]">{label}</label>
         <div className="flex items-center gap-3">
-          <span className="text-xs font-mono uppercase px-2 py-1 rounded-md bg-[#111] text-[#f3f4f6] border border-[#333]">{value}</span>
-          <div className="relative w-8 h-8 rounded-md overflow-hidden cursor-pointer border border-[#2e2e2e]">
+          <span className="text-xs font-mono uppercase px-2 py-1 rounded-md bg-[var(--bg-color)] text-[var(--text-main)] border border-[var(--border-color)]">{value}</span>
+          <div className="relative w-8 h-8 rounded-md overflow-hidden cursor-pointer border border-[var(--border-color)]">
             <input type="color" value={value} onChange={(e) => onChange(e.target.value)} className="absolute -top-2 -left-2 w-12 h-12 cursor-pointer" />
           </div>
         </div>
@@ -863,28 +863,6 @@
               box-shadow: var(--shadow-card);
             }
 
-            .bg-\[\#141414\] { background-color: var(--container-bg) !important; }
-            .bg-\[\#1a1a1a\] { background-color: var(--card-bg) !important; }
-            .bg-\[\#222\] { background-color: var(--bg-color) !important; }
-            .bg-\[\#111\] { background-color: var(--bg-color) !important; }
-            .bg-\[\#111111\] { background-color: var(--bg-color) !important; }
-            .bg-\[\#151515\] { background-color: var(--bg-color) !important; }
-            .bg-\[\#252525\] { background-color: var(--card-bg) !important; }
-            .bg-\[\#0a0a0a\] { background-color: var(--bg-color) !important; }
-            .bg-\[\#333\] { background-color: var(--accent-color) !important; }
-            
-            .border-\[\#333\] { border-color: var(--border-color) !important; }
-            .border-\[\#444\] { border-color: var(--border-color) !important; }
-            .border-\[\#2e2e2e\] { border-color: var(--border-color) !important; }
-            .border-\[\#3a3a3a\] { border-color: var(--border-color) !important; }
-            
-            .text-white { color: var(--text-main) !important; }
-            .text-gray-300 { color: var(--text-main) !important; }
-            .text-gray-400 { color: var(--text-sub) !important; }
-            .text-gray-500 { color: var(--text-sub) !important; }
-            .text-\[\#eee\] { color: var(--text-main) !important; }
-            .text-\[\#9ca3af\] { color: var(--text-sub) !important; }
-
             .modern-input {
               background: var(--bg-color) !important;
               color: var(--text-main) !important;
@@ -921,16 +899,16 @@
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
                   <div className="flex items-center gap-2.5">
                     <ListOrdered className="w-5 h-5 text-[var(--accent-color)]" />
-                    <h1 className="text-[17px] font-bold tracking-widest text-white">OBS Ranking Board Generator</h1>
+                    <h1 className="text-[17px] font-bold tracking-widest text-[var(--text-main)]">OBS Ranking Board Generator</h1>
                   </div>
-                  <span className="hidden sm:block w-1 h-1 rounded-full bg-gray-600"></span>
-                  <p className="text-[11px] text-gray-500 tracking-wide font-medium">配信・録画用の高品質なパタパタランキング生成ツール</p>
+                  <span className="hidden sm:block w-1 h-1 rounded-full bg-[var(--text-sub)]"></span>
+                  <p className="text-[11px] text-[var(--text-sub)] tracking-wide font-medium">配信・録画用の高品質なパタパタランキング生成ツール</p>
                 </div>
                 
                 <div className="flex items-center gap-2 self-start sm:self-auto">
                   <button 
                     onClick={copyShareUrl}
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#222] text-gray-300 hover:text-white hover:bg-[#333] border border-[#333] hover:border-[#444] transition-all text-[11px] font-bold tracking-wider"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--bg-color)] text-[var(--text-main)] hover:bg-[var(--card-bg)] border border-[var(--border-color)] transition-all text-[11px] font-bold tracking-wider"
                   >
                     {shareCopied ? <Check className="w-3.5 h-3.5 text-green-400" /> : <LinkIcon className="w-3.5 h-3.5" />}
                     <span>{shareCopied ? 'COPIED' : 'LINK'}</span>
@@ -939,7 +917,7 @@
                     href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent('配信用のおしゃれなランキングが作れるツール「OBS Ranking Board Generator」')}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#222] text-gray-300 hover:text-white hover:bg-[#1da1f2] hover:border-[#1da1f2] border border-[#333] transition-all text-[11px] font-bold tracking-wider group"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--bg-color)] text-[var(--text-main)] hover:text-white hover:bg-[#1da1f2] hover:border-[#1da1f2] border border-[var(--border-color)] transition-all text-[11px] font-bold tracking-wider group"
                   >
                     <Twitter className="w-3.5 h-3.5 group-hover:text-white transition-colors" />
                     <span>POST</span>
@@ -948,10 +926,10 @@
               </header>
 
               <div className="card p-4 sm:p-6 mb-6 shadow-2xl relative">
-                <h2 className="text-sm font-bold flex items-center gap-2 text-white uppercase tracking-widest mb-4">
+                <h2 className="text-sm font-bold flex items-center gap-2 text-[var(--text-main)] uppercase tracking-widest mb-4">
                   <Monitor className="w-4 h-4 text-[var(--accent-color)]" /> ライブプレビュー
                 </h2>
-                <div className="w-full relative overflow-hidden flex flex-col items-center justify-center border rounded-xl transition-all h-[450px] sm:h-[600px] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZmZiIgLz4KPHBvbHlnb24gcG9pbnRzPSIwLDAgMTAsMCAxMCwxMCAwLDEwIiBmaWxsPSIjZTVlN2ViIiAvPgo8cG9seWdvbiBwb2ludHM9IjEwLDEwIDIwLDEwIDIwLDIwIDEwLDIwIiBmaWxsPSIjZTVlN2ViIiAvPgo8L3N2Zz4=')] border-[#333]">
+                <div className="w-full relative overflow-hidden flex flex-col items-center justify-center border rounded-xl transition-all h-[450px] sm:h-[600px] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZmZiIgLz4KPHBvbHlnb24gcG9pbnRzPSIwLDAgMTAsMCAxMCwxMCAwLDEwIiBmaWxsPSIjZTVlN2ViIiAvPgo8cG9seWdvbiBwb2ludHM9IjEwLDEwIDIwLDEwIDIwLDIwIDEwLDIwIiBmaWxsPSIjZTVlN2ViIiAvPgo8L3N2Zz4=')] border-[var(--border-color)]">
                   <iframe 
                     srcDoc={generateHTML(true, previewConfig)} 
                     className="absolute inset-0 w-full h-full border-0"
@@ -961,15 +939,15 @@
                 </div>
               </div>
 
-              <div className="flex gap-2 sm:gap-3 mb-6 border-b border-[#333] pb-4 overflow-x-auto px-1">
+              <div className="flex gap-2 sm:gap-3 mb-6 border-b border-[var(--border-color)] pb-4 overflow-x-auto px-1">
                 {TABS.map(tab => (
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
                     className={`flex items-center whitespace-nowrap gap-2 sm:gap-2.5 px-4 sm:px-6 py-3 sm:py-3.5 rounded-xl text-[13px] sm:text-[15px] font-bold transition-all ${
                       activeTab === tab.id 
-                        ? 'bg-[var(--accent-color)] text-black shadow-[0_4px_15px_rgba(255,170,0,0.4)]' 
-                        : 'bg-[#222] text-gray-400 hover:bg-[#333] hover:text-gray-200'
+                        ? 'bg-[var(--accent-color)] text-black shadow-[0_4px_15px_var(--accent-glow)]' 
+                        : 'bg-[var(--bg-color)] text-[var(--text-sub)] hover:bg-[var(--card-bg)] hover:text-[var(--text-main)]'
                     }`}
                   >
                     <tab.icon className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -984,7 +962,7 @@
                     <div className="card p-6">
                       <PanelHeading icon={Settings} title="基本レイアウト設定" />
                       <div className="mb-6">
-                        <label className="block text-sm font-medium mb-2 text-gray-400">ランキング行数</label>
+                        <label className="block text-sm font-medium mb-2 text-[var(--text-sub)]">ランキング行数</label>
                         <select value={numRows} onChange={(e) => setNumRows(Number(e.target.value))} className="modern-input">
                           <option value={3}>TOP 3 (3行)</option>
                           <option value={5}>TOP 5 (5行)</option>
@@ -994,7 +972,7 @@
                         </select>
                       </div>
                       <div className="mb-6">
-                        <label className="block text-sm font-medium mb-2 text-gray-400">角の丸み (Border Radius)</label>
+                        <label className="block text-sm font-medium mb-2 text-[var(--text-sub)]">角の丸み (Border Radius)</label>
                         <select value={roundness} onChange={(e) => setRoundness(e.target.value)} className="modern-input">
                           <option value="sharp">シャープ (角張ったデザイン)</option>
                           <option value="slight">やや丸</option>
@@ -1003,7 +981,7 @@
                         </select>
                       </div>
                       <div>
-                        <label className="block text-sm font-medium mb-2 text-gray-400">デフォルトのタイトル</label>
+                        <label className="block text-sm font-medium mb-2 text-[var(--text-sub)]">デフォルトのタイトル</label>
                         <input type="text" value={boardTitle} onChange={(e) => setBoardTitle(e.target.value)} className="modern-input" placeholder="例: MY BEST 10" />
                       </div>
                     </div>
@@ -1011,7 +989,7 @@
                     <div className="card p-6">
                       <PanelHeading icon={Palette} title="カラーカスタマイズ" />
                       <ColorPicker label="配信画面の背景色 (クロマキー用)" value={bgColor} onChange={setBgColor} />
-                      <div className="my-4 border-b border-[#333]"></div>
+                      <div className="my-4 border-b border-[var(--border-color)]"></div>
                       <ColorPicker label="ボード外枠 (Chassis)" value={chassisColor} onChange={setChassisColor} />
                       <ColorPicker label="フラップ背景 (Flap Base)" value={flapBase} onChange={setFlapBase} />
                       <ColorPicker label="メイン文字色 (Text)" value={textColor} onChange={setTextColor} />
@@ -1020,22 +998,22 @@
                     </div>
 
                     <div className="card p-6 border-t-[4px] border-[var(--accent-color)] flex flex-col">
-                      <h3 className="flex items-center gap-2 text-[var(--accent-color)] font-bold text-[17px] mb-6 border-b border-[#2e2e2e] pb-3">
+                      <h3 className="flex items-center gap-2 text-[var(--accent-color)] font-bold text-[17px] mb-6 border-b border-[var(--border-color)] pb-3">
                         <Code className="w-5 h-5" /> 完成したHTMLを出力
                       </h3>
                       <div className="flex flex-col gap-4 mb-6">
-                        <button onClick={downloadHTML} className="bg-[var(--accent-color)] hover:bg-[var(--accent-hover)] text-black w-full flex items-center justify-center gap-2 py-4 px-4 rounded-xl font-bold text-base shadow-[0_4px_15px_rgba(255,170,0,0.3)] transition-all transform hover:-translate-y-0.5">
+                        <button onClick={downloadHTML} className="bg-[var(--accent-color)] hover:bg-[var(--accent-hover)] text-black w-full flex items-center justify-center gap-2 py-4 px-4 rounded-xl font-bold text-base shadow-[0_4px_15px_var(--accent-glow)] transition-all transform hover:-translate-y-0.5">
                           <Download className="w-6 h-6" />
                           専用ツールとして保存
                         </button>
-                        <button onClick={copyToClipboard} className="bg-[#252525] hover:bg-[#333] hover:border-[#444] text-[#eee] border border-[#3a3a3a] w-full flex items-center justify-center gap-2 py-4 px-4 rounded-xl font-bold text-base transition-all transform hover:-translate-y-0.5">
+                        <button onClick={copyToClipboard} className="bg-[var(--bg-color)] hover:bg-[var(--card-bg)] text-[var(--text-main)] border border-[var(--border-color)] w-full flex items-center justify-center gap-2 py-4 px-4 rounded-xl font-bold text-base transition-all transform hover:-translate-y-0.5">
                           {copied ? <Check className="w-6 h-6 text-[var(--accent-color)]" /> : <Code className="w-6 h-6" />}
                           {copied ? 'コピーしました！' : 'HTMLをコピー'}
                         </button>
                       </div>
-                      <div className="bg-[#151515] p-4 rounded-xl border border-[#333] mt-auto">
-                        <p className="text-[12px] leading-relaxed text-[#9ca3af]">
-                          <strong className="text-white block mb-1.5 flex items-center gap-1"><Monitor className="w-3.5 h-3.5"/> 運用フロー</strong>
+                      <div className="bg-[var(--bg-color)] p-4 rounded-xl border border-[var(--border-color)] mt-auto">
+                        <p className="text-[12px] leading-relaxed text-[var(--text-sub)]">
+                          <strong className="text-[var(--text-main)] block mb-1.5 flex items-center gap-1"><Monitor className="w-3.5 h-3.5"/> 運用フロー</strong>
                           保存したHTMLを手元のPCで開き、画面下部の「表示ウィンドウを開く」からOBS取り込み用の別窓を出して連動させます。
                         </p>
                       </div>
@@ -1047,9 +1025,9 @@
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                     <div className="card p-6">
                       <PanelHeading icon={Monitor} title="OBSへの基本的な導入方法" />
-                      <div className="bg-[#111] border border-[#333] p-5 rounded-2xl text-[13px] text-gray-300 leading-relaxed">
+                      <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-2xl text-[13px] text-[var(--text-main)] leading-relaxed">
                         <ol className="list-decimal pl-5 space-y-3">
-                          <li>右上の<strong className="text-white">「専用ツールとして保存」</strong>ボタンを押して <code>obs_ranking_board.html</code> をPCに保存します。</li>
+                          <li>右上の<strong className="text-[var(--text-main)]">「専用ツールとして保存」</strong>ボタンを押して <code>obs_ranking_board.html</code> をPCに保存します。</li>
                           <li>配信で操作を行うPCのブラウザ（Chromeなど）で、保存したファイルを直接開きます。これが<strong>「リモコン画面」</strong>になります。</li>
                           <li>リモコン画面の下部にある「表示ウィンドウを開く」を押し、出てきた別窓をOBSの<strong>ウィンドウキャプチャ</strong>で取り込みます。</li>
                           <li>OBSで取り込んだソースを右クリックし、<strong>「フィルタ」→「クロマキー」</strong>を追加して背景の色（デフォルトは緑）を透過させます。</li>
@@ -1060,24 +1038,24 @@
                     <div className="card p-6">
                       <PanelHeading icon={HelpCircle} title="よくある質問 (Q&A)" />
                       <div className="flex flex-col gap-4">
-                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
-                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> HTML Clockのようにブラウザソースで直接透過できないの？</h5>
-                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
-                            <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
+                        <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-xl">
+                          <h5 className="font-bold text-[var(--text-main)] mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> HTML Clockのようにブラウザソースで直接透過できないの？</h5>
+                          <p className="text-[13px] text-[var(--text-sub)] leading-relaxed flex items-start gap-2">
+                            <span className="font-black text-[var(--text-sub)] text-lg mt-[-2px]">A.</span> 
                             <span>このツールは「手元の操作パネル」と「OBSの画面」を連動させるため、同じChrome等のブラウザで両方を開く必要があります。OBSのブラウザソースとして読み込むと通信が切断されてしまうため、ウィンドウキャプチャ＋クロマキーという方式を採用しています。</span>
                           </p>
                         </div>
-                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
-                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> 別のPCやスマホから遠隔で操作したい</h5>
-                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
-                            <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
+                        <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-xl">
+                          <h5 className="font-bold text-[var(--text-main)] mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> 別のPCやスマホから遠隔で操作したい</h5>
+                          <p className="text-[13px] text-[var(--text-sub)] leading-relaxed flex items-start gap-2">
+                            <span className="font-black text-[var(--text-sub)] text-lg mt-[-2px]">A.</span> 
                             <span>ローカル環境（ファイルを開いただけの状態）ではセキュリティ上、別のPCとは通信できません。自身のWebサーバー等にHTMLをアップロードし、URL経由でアクセスすればスマホ等からの遠隔操作が可能です。</span>
                           </p>
                         </div>
-                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
-                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> 保存した設定(JSON)はどうやって読み込む？</h5>
-                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
-                            <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
+                        <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-xl">
+                          <h5 className="font-bold text-[var(--text-main)] mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> 保存した設定(JSON)はどうやって読み込む？</h5>
+                          <p className="text-[13px] text-[var(--text-sub)] leading-relaxed flex items-start gap-2">
+                            <span className="font-black text-[var(--text-sub)] text-lg mt-[-2px]">A.</span> 
                             <span>出力した <code>obs_ranking_board.html</code> を開いたリモコン画面内に「データ管理：読込」というボタンがあります。そこから前回保存した <code>plan_backup.json</code> を選択すると一瞬でテキストが復元されます。</span>
                           </p>
                         </div>

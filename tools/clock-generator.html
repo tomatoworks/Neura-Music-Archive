@@ -145,25 +145,25 @@
     const Slider = ({ label, value, min, max, step = 1, onChange, disabled = false }) => (
       <div className={`flex flex-col gap-1.5 mb-5 transition-opacity ${disabled ? 'opacity-40 pointer-events-none' : ''}`}>
         <div className="flex justify-between items-center">
-          <label className="text-sm font-medium" style={{ color: '#9ca3af' }}>{label}</label>
-          <span className="text-xs font-mono px-2 py-0.5 rounded-md" style={{ backgroundColor: '#111', color: '#f3f4f6', border: '1px solid #333' }}>{value}</span>
+          <label className="text-sm font-medium text-[var(--text-sub)]">{label}</label>
+          <span className="text-xs font-mono px-2 py-0.5 rounded-md bg-[var(--bg-color)] text-[var(--text-main)] border border-[var(--border-color)]">{value}</span>
         </div>
         <input 
           type="range" min={min} max={max} step={step} value={value} 
           onChange={(e) => onChange(Number(e.target.value))}
           disabled={disabled}
-          className="w-full h-1.5 rounded-lg appearance-none cursor-pointer mt-1"
-          style={{ background: '#151515', accentColor: '#5D9CC4', outline: 'none' }}
+          className="w-full h-1.5 rounded-lg appearance-none cursor-pointer mt-1 bg-[var(--border-color)] outline-none"
+          style={{ accentColor: 'var(--accent-color)' }}
         />
       </div>
     );
 
     const ColorPicker = ({ label, value, onChange, className = "mb-5" }) => (
       <div className={`flex items-center justify-between ${className}`}>
-        <label className="text-sm font-medium" style={{ color: '#9ca3af' }}>{label}</label>
+        <label className="text-sm font-medium text-[var(--text-sub)]">{label}</label>
         <div className="flex items-center gap-3">
-          <span className="text-xs font-mono uppercase px-2 py-1 rounded-md" style={{ backgroundColor: '#111', color: '#f3f4f6', border: '1px solid #333' }}>{value}</span>
-          <div className="relative w-8 h-8 rounded-md overflow-hidden cursor-pointer hover:scale-105 transition-transform" style={{ border: '1px solid #2e2e2e', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
+          <span className="text-xs font-mono uppercase px-2 py-1 rounded-md bg-[var(--bg-color)] text-[var(--text-main)] border border-[var(--border-color)]">{value}</span>
+          <div className="relative w-8 h-8 rounded-md overflow-hidden cursor-pointer hover:scale-105 transition-transform border border-[var(--border-color)] shadow-sm">
             <input 
               type="color" value={value} 
               onChange={(e) => onChange(e.target.value)}
@@ -175,25 +175,25 @@
     );
 
     const PanelHeading = ({ icon: Icon, title }) => (
-      <h4 className="flex items-center gap-2 text-white font-bold mb-6 pb-3 border-b border-[#333] text-[15px] tracking-wide">
-        <Icon className="w-5 h-5 text-[#5D9CC4]" />
+      <h4 className="flex items-center gap-2 text-[var(--text-main)] font-bold mb-6 pb-3 border-b border-[var(--border-color)] text-[15px] tracking-wide">
+        <Icon className="w-5 h-5 text-[var(--accent-color)]" />
         {title}
       </h4>
     );
 
     const QuickSettingItem = ({ icon: Icon, label, description, isActive, onToggle, children }) => (
-      <div className={`rounded-xl border transition-all duration-300 overflow-hidden mb-4 ${isActive ? 'bg-[#222] border-[#444] shadow-[0_4px_12px_rgba(0,0,0,0.2)]' : 'bg-[#1a1a1a] border-[#333] hover:border-[#444]'}`}>
+      <div className={`rounded-xl border transition-all duration-300 overflow-hidden mb-4 ${isActive ? 'bg-[var(--bg-color)] border-[var(--accent-color)] shadow-md' : 'bg-[var(--card-bg)] border-[var(--border-color)] hover:border-[var(--text-sub)]'}`}>
         <div 
           className="p-4 flex items-center justify-between cursor-pointer"
           onClick={() => onToggle(!isActive)}
         >
           <div className="flex items-center gap-3.5">
-            <div className={`w-9 h-9 rounded-lg flex items-center justify-center transition-colors ${isActive ? 'bg-[#5D9CC4]/10 text-[#5D9CC4]' : 'bg-[#252525] text-[#777]'}`}>
+            <div className={`w-9 h-9 rounded-lg flex items-center justify-center transition-colors ${isActive ? 'bg-[var(--accent-glow)] text-[var(--accent-color)]' : 'bg-[var(--bg-color)] text-[var(--text-sub)]'}`}>
               <Icon className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-semibold text-white tracking-wide">{label}</h4>
-              <p className="text-[11px] text-[#888] mt-0.5">{description}</p>
+              <h4 className="text-sm font-semibold text-[var(--text-main)] tracking-wide">{label}</h4>
+              <p className="text-[11px] text-[var(--text-sub)] mt-0.5">{description}</p>
             </div>
           </div>
           <div className="switch" onClick={(e) => { e.stopPropagation(); onToggle(!isActive); }}>
@@ -202,7 +202,7 @@
           </div>
         </div>
         <div className={`transition-all duration-300 ease-in-out ${isActive ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
-          <div className="px-4 pb-4 pt-1 border-t border-[#333] mx-4 mt-1">
+          <div className="px-4 pb-4 pt-1 border-t border-[var(--border-color)] mx-4 mt-1">
             {children}
           </div>
         </div>
@@ -725,7 +725,6 @@ const getDecorationCSS = () => {
       const downloadExport = async () => {
         if (useCustomFont && customFontFile) {
           try {
-            // グローバルにロードした JSZip を使用して ZIP 生成
             const zip = new window.JSZip();
             const html = generateHTML();
             
@@ -820,29 +819,6 @@ const getDecorationCSS = () => {
               border: 1px solid var(--border-color) !important;
               box-shadow: var(--shadow-card);
             }
-
-            /* React内の固定カラークラスをライト/ダーク可変変数へマッピング */
-            .bg-\[\#141414\] { background-color: var(--container-bg) !important; }
-            .bg-\[\#1a1a1a\] { background-color: var(--card-bg) !important; }
-            .bg-\[\#222\] { background-color: var(--bg-color) !important; }
-            .bg-\[\#111\] { background-color: var(--bg-color) !important; }
-            .bg-\[\#111111\] { background-color: var(--bg-color) !important; }
-            .bg-\[\#151515\] { background-color: var(--bg-color) !important; }
-            .bg-\[\#252525\] { background-color: var(--card-bg) !important; }
-            .bg-\[\#0a0a0a\] { background-color: var(--bg-color) !important; }
-            .bg-\[\#333\] { background-color: var(--accent-color) !important; }
-            
-            .border-\[\#333\] { border-color: var(--border-color) !important; }
-            .border-\[\#444\] { border-color: var(--border-color) !important; }
-            .border-\[\#2e2e2e\] { border-color: var(--border-color) !important; }
-            .border-\[\#3a3a3a\] { border-color: var(--border-color) !important; }
-            
-            .text-white { color: var(--text-main) !important; }
-            .text-gray-300 { color: var(--text-main) !important; }
-            .text-gray-400 { color: var(--text-sub) !important; }
-            .text-gray-500 { color: var(--text-sub) !important; }
-            .text-\[\#eee\] { color: var(--text-main) !important; }
-            .text-\[\#9ca3af\] { color: var(--text-sub) !important; }
             
             .modern-input {
               background: var(--bg-color) !important;
@@ -869,7 +845,7 @@ const getDecorationCSS = () => {
             .switch input { opacity: 0; width: 0; height: 0; }
             .slider {
               position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-              background-color: #333;
+              background-color: var(--text-sub);
               transition: .3s;
               border-radius: 34px;
             }
@@ -902,16 +878,16 @@ const getDecorationCSS = () => {
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
                   <div className="flex items-center gap-2.5">
                     <Clock className="w-5 h-5 text-[var(--accent-color)]" />
-                    <h1 className="text-[17px] font-bold tracking-widest text-white">OBS HTML Clock Generator</h1>
+                    <h1 className="text-[17px] font-bold tracking-widest text-[var(--text-main)]">OBS HTML Clock Generator</h1>
                   </div>
                   <span className="hidden sm:block w-1 h-1 rounded-full bg-gray-600"></span>
-                  <p className="text-[11px] text-gray-500 tracking-wide font-medium">配信・録画用の高品質な透過時計ソースジェネレーター</p>
+                  <p className="text-[11px] text-[var(--text-sub)] tracking-wide font-medium">配信・録画用の高品質な透過時計ソースジェネレーター</p>
                 </div>
                 
                 <div className="flex items-center gap-2 self-start sm:self-auto">
                   <button 
                     onClick={copyShareUrl}
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#222] text-gray-300 hover:text-white hover:bg-[#333] border border-[#333] hover:border-[#444] transition-all text-[11px] font-bold tracking-wider"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--bg-color)] text-[var(--text-main)] hover:bg-[var(--card-bg)] border border-[var(--border-color)] transition-all text-[11px] font-bold tracking-wider"
                   >
                     {shareCopied ? <Check className="w-3.5 h-3.5 text-green-400" /> : <LinkIcon className="w-3.5 h-3.5" />}
                     <span>{shareCopied ? 'COPIED' : 'LINK'}</span>
@@ -920,7 +896,7 @@ const getDecorationCSS = () => {
                     href={`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://neura-music.com/?tool=tool_20260527171110')}&text=${encodeURIComponent('配信用のおしゃれな時計が作れるツール「OBS HTML Clock Generator」')}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#222] text-gray-300 hover:text-white hover:bg-[#1da1f2] hover:border-[#1da1f2] border border-[#333] transition-all text-[11px] font-bold tracking-wider group"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--bg-color)] text-[var(--text-main)] hover:text-white hover:bg-[#1da1f2] hover:border-[#1da1f2] border border-[var(--border-color)] transition-all text-[11px] font-bold tracking-wider group"
                   >
                     <Twitter className="w-3.5 h-3.5 group-hover:text-white transition-colors" />
                     <span>POST</span>
@@ -931,7 +907,7 @@ const getDecorationCSS = () => {
               <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-stretch mb-8">
                 <div className="flex-1 card p-4 sm:p-6 shadow-2xl relative">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-5 gap-3">
-                    <h2 className="text-sm font-bold flex items-center gap-2 text-white uppercase tracking-widest">
+                    <h2 className="text-sm font-bold flex items-center gap-2 text-[var(--text-main)] uppercase tracking-widest">
                       <Monitor className="w-4 h-4 text-[var(--accent-color)]" /> ライブプレビュー
                     </h2>
                     <select
@@ -1060,31 +1036,31 @@ const getDecorationCSS = () => {
                 </div>
 
                 <div className="w-full lg:w-[320px] xl:w-[360px] shrink-0">
-                  <div className="card p-6 border-t-[4px] border-[#5D9CC4] h-full flex flex-col">
-                    <h3 className="flex items-center gap-2 text-[#5D9CC4] font-bold text-[17px] mb-4 border-b border-[#2e2e2e] pb-3">
+                  <div className="card p-6 border-t-[4px] border-[var(--accent-color)] h-full flex flex-col">
+                    <h3 className="flex items-center gap-2 text-[var(--accent-color)] font-bold text-[17px] mb-4 border-b border-[var(--border-color)] pb-3">
                       <Code className="w-5 h-5" /> 完成したHTMLを出力
                     </h3>
                     <div className="flex flex-col gap-4 mb-4">
                       <button 
                         onClick={downloadExport}
-                        className="bg-[#5D9CC4] hover:bg-[#82b7db] text-white w-full flex items-center justify-center gap-2 py-4 px-4 rounded-xl font-bold text-base shadow-[0_4px_15px_rgba(93,156,196,0.3)] transition-all transform hover:-translate-y-0.5"
+                        className="bg-[var(--accent-color)] hover:bg-[var(--accent-hover)] text-white w-full flex items-center justify-center gap-2 py-4 px-4 rounded-xl font-bold text-base shadow-[0_4px_15px_var(--accent-glow)] transition-all transform hover:-translate-y-0.5"
                       >
                         {useCustomFont ? <FileArchive className="w-6 h-6" /> : <Download className="w-6 h-6" />}
                         {useCustomFont ? 'ZIPで保存 (同梱)' : 'HTMLとして保存'}
                       </button>
                       <button 
                         onClick={copyToClipboard}
-                        className="bg-[#252525] hover:bg-[#333] hover:border-[#444] text-[#eee] border border-[#3a3a3a] w-full flex items-center justify-center gap-2 py-4 px-4 rounded-xl font-bold text-base transition-all transform hover:-translate-y-0.5"
+                        className="bg-[var(--bg-color)] hover:bg-[var(--card-bg)] text-[var(--text-main)] border border-[var(--border-color)] w-full flex items-center justify-center gap-2 py-4 px-4 rounded-xl font-bold text-base transition-all transform hover:-translate-y-0.5"
                       >
-                        {copied ? <Check className="w-6 h-6 text-[#5D9CC4]" /> : <Copy className="w-6 h-6" />}
+                        {copied ? <Check className="w-6 h-6 text-[var(--accent-color)]" /> : <Copy className="w-6 h-6" />}
                         {copied ? 'コピーしました！' : 'HTMLをコピー'}
                       </button>
                     </div>
-                    <div className="bg-[#151515] p-4 rounded-xl border border-[#333] mt-auto">
-                      <p className="text-[12px] leading-relaxed text-[#9ca3af]">
-                        <strong className="text-white block mb-1.5 flex items-center gap-1"><Monitor className="w-3.5 h-3.5"/> OBSへの導入方法</strong>
-                        保存したHTMLファイルをOBSのソース追加画面から「ブラウザ」を選び、「ローカルファイル」にチェックを入れて読み込んでください。
-                        {useCustomFont && <span className="text-[#5D9CC4] block mt-1.5">※ZIP形式で保存した場合、解凍したフォルダ内の obs_clock.html を読み込んでください。</span>}
+                    <div className="bg-[var(--bg-color)] p-4 rounded-xl border border-[var(--border-color)] mt-auto">
+                      <p className="text-[12px] leading-relaxed text-[var(--text-sub)]">
+                        <strong className="text-[var(--text-main)] block mb-1.5 flex items-center gap-1"><Monitor className="w-3.5 h-3.5"/> OBSへの導入方法</strong>
+                        保存したHTMLファイルをOBSのソース追加画面から「ブラウザ」を選び、「ローローカルファイル」にチェックを入れて読み込んでください。
+                        {useCustomFont && <span className="text-[var(--accent-color)] block mt-1.5">※ZIP形式で保存した場合、解凍したフォルダ内の obs_clock.html を読み込んでください。</span>}
                       </p>
                     </div>
                   </div>
@@ -1092,15 +1068,15 @@ const getDecorationCSS = () => {
               </div>
 
               <div className="card pt-2 px-4 sm:px-6 pb-8">
-                <div className="flex gap-2 sm:gap-3 mb-8 border-b border-[#333] pt-4 pb-4 overflow-x-auto">
+                <div className="flex gap-2 sm:gap-3 mb-8 border-b border-[var(--border-color)] pt-4 pb-4 overflow-x-auto">
                   {TABS.map(tab => (
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
                       className={`flex items-center whitespace-nowrap gap-2 sm:gap-2.5 px-4 sm:px-6 py-3 sm:py-3.5 rounded-xl text-[13px] sm:text-[15px] font-bold transition-all ${
                         activeTab === tab.id 
-                          ? 'bg-[var(--accent-color)] text-white shadow-[0_4px_15px_rgba(93,156,196,0.4)]' 
-                          : 'bg-[#222] text-gray-400 hover:bg-[#333] hover:text-gray-200'
+                          ? 'bg-[var(--accent-color)] text-white shadow-[0_4px_15px_var(--accent-glow)]' 
+                          : 'bg-[var(--bg-color)] text-[var(--text-sub)] hover:bg-[var(--card-bg)] hover:text-[var(--text-main)]'
                       }`}
                     >
                       <tab.icon className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -1114,7 +1090,7 @@ const getDecorationCSS = () => {
                     <div>
                       <PanelHeading icon={Type} title="フォントとフォーマット" />
                       <div className="mb-6">
-                        <label className="block text-sm font-medium mb-2 text-gray-400">フォントファミリー</label>
+                        <label className="block text-sm font-medium mb-2 text-[var(--text-sub)]">フォントファミリー</label>
                         <select 
                           value={useCustomFont ? 'custom' : fontIndex} 
                           onChange={(e) => {
@@ -1132,16 +1108,16 @@ const getDecorationCSS = () => {
                           ))}
                           {customFontFile && <option value="custom">★ カスタム: {customFontFile.name}</option>}
                         </select>
-                        <div className="flex flex-col sm:flex-row sm:items-center gap-3 bg-[#111] p-3 rounded-xl border border-[#333]">
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-3 bg-[var(--bg-color)] p-3 rounded-xl border border-[var(--border-color)]">
                           <input type="file" accept=".ttf,.otf,.woff,.woff2" onChange={handleFontUpload} ref={fileInputRef} className="hidden" />
-                          <button onClick={() => fileInputRef.current?.click()} className="bg-[#222] hover:bg-[#333] text-white border border-[#444] transition-colors flex justify-center items-center gap-2 text-xs py-2 px-4 rounded-lg w-full sm:w-auto">
+                          <button onClick={() => fileInputRef.current?.click()} className="bg-[var(--card-bg)] hover:bg-[var(--bg-color)] text-[var(--text-main)] border border-[var(--border-color)] transition-colors flex justify-center items-center gap-2 text-xs py-2 px-4 rounded-lg w-full sm:w-auto">
                             <Upload className="w-4 h-4" /> PC内のフォントファイルを選択
                           </button>
-                          <span className="text-xs text-gray-500 text-center sm:text-left">.ttf, .otf, .woff</span>
+                          <span className="text-xs text-[var(--text-sub)] text-center sm:text-left">.ttf, .otf, .woff</span>
                         </div>
                       </div>
                       <div className="mb-2">
-                        <label className="block text-sm font-medium mb-2 text-gray-400">表示フォーマット</label>
+                        <label className="block text-sm font-medium mb-2 text-[var(--text-sub)]">表示フォーマット</label>
                         <select value={timeFormat} onChange={(e) => setTimeFormat(e.target.value)} className="modern-input">
                           {FORMATS.map((f, i) => (<option key={i} value={f.value}>{f.label}</option>))}
                         </select>
@@ -1152,20 +1128,20 @@ const getDecorationCSS = () => {
                       <div className="mb-8">
                         <Slider label="基本サイズ" value={fontSize} min={20} max={200} onChange={setFontSize} />
                       </div>
-                      <div className="bg-[#111] border border-[#333] p-5 rounded-2xl">
+                      <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-2xl">
                         <div className="mb-5">
                           <Slider label="数字の固定幅 (レイアウトのガタつき防止)" value={digitWidth} min={0.3} max={1.5} step={0.05} onChange={setDigitWidth} />
-                          <p className="text-xs mt-3 text-gray-500 leading-relaxed">※「1」などの細い数字が表示された際に、時計全体の幅が伸び縮みしないよう丁度良い幅に調整してください。</p>
+                          <p className="text-xs mt-3 text-[var(--text-sub)] leading-relaxed">※「1」などの細い数字が表示された際に、時計全体の幅が伸び縮みしないよう丁度良い幅に調整してください。</p>
                         </div>
-                        <div className="mb-5 pt-5 border-t border-[#222]">
+                        <div className="mb-5 pt-5 border-t border-[var(--border-color)]">
                           <Slider label="行間 (上下の表示要素との間隔)" value={rowGap} min={-0.5} max={1.5} step={0.05} onChange={setRowGap} />
                         </div>
-                        <div className="pt-5 border-t border-[#222]">
-                          <label className="block text-sm font-medium mb-3 text-gray-400">枠内の文字配置</label>
-                          <div className="flex bg-[#0a0a0a] border border-[#222] rounded-lg p-1.5 gap-1">
-                            <button onClick={() => setTextAlign('left')} className={`flex-1 flex justify-center items-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${textAlign === 'left' ? 'bg-[#333] text-white shadow-md' : 'text-gray-500 hover:text-gray-300 hover:bg-[#1a1a1a]'}`}><AlignLeft className="w-3.5 h-3.5" /> 左</button>
-                            <button onClick={() => setTextAlign('center')} className={`flex-1 flex justify-center items-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${textAlign === 'center' ? 'bg-[#333] text-white shadow-md' : 'text-gray-500 hover:text-gray-300 hover:bg-[#1a1a1a]'}`}><AlignCenter className="w-3.5 h-3.5" /> 中央</button>
-                            <button onClick={() => setTextAlign('right')} className={`flex-1 flex justify-center items-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${textAlign === 'right' ? 'bg-[#333] text-white shadow-md' : 'text-gray-500 hover:text-gray-300 hover:bg-[#1a1a1a]'}`}><AlignRight className="w-3.5 h-3.5" /> 右</button>
+                        <div className="pt-5 border-t border-[var(--border-color)]">
+                          <label className="block text-sm font-medium mb-3 text-[var(--text-sub)]">枠内の文字配置</label>
+                          <div className="flex bg-[var(--card-bg)] border border-[var(--border-color)] rounded-lg p-1.5 gap-1">
+                            <button onClick={() => setTextAlign('left')} className={`flex-1 flex justify-center items-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${textAlign === 'left' ? 'bg-[var(--accent-color)] text-white shadow-md' : 'text-[var(--text-sub)] hover:text-[var(--text-main)] hover:bg-[var(--bg-color)]'}`}><AlignLeft className="w-3.5 h-3.5" /> 左</button>
+                            <button onClick={() => setTextAlign('center')} className={`flex-1 flex justify-center items-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${textAlign === 'center' ? 'bg-[var(--accent-color)] text-white shadow-md' : 'text-[var(--text-sub)] hover:text-[var(--text-main)] hover:bg-[var(--bg-color)]'}`}><AlignCenter className="w-3.5 h-3.5" /> 中央</button>
+                            <button onClick={() => setTextAlign('right')} className={`flex-1 flex justify-center items-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${textAlign === 'right' ? 'bg-[var(--accent-color)] text-white shadow-md' : 'text-[var(--text-sub)] hover:text-[var(--text-main)] hover:bg-[var(--bg-color)]'}`}><AlignRight className="w-3.5 h-3.5" /> 右</button>
                           </div>
                         </div>
                       </div>
@@ -1177,10 +1153,10 @@ const getDecorationCSS = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                     <div>
                       <PanelHeading icon={Palette} title="基本カラー" />
-                      <div className="mb-8 bg-[#111] border border-[#333] p-5 rounded-2xl">
+                      <div className="mb-8 bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-2xl">
                         <ColorPicker label="テキストカラー" value={color} onChange={setColor} />
-                        <div className="flex items-center justify-between pt-2 border-t border-[#222]">
-                          <span className="text-sm font-medium text-gray-400">太字 (Bold)</span>
+                        <div className="flex items-center justify-between pt-2 border-t border-[var(--border-color)]">
+                          <span className="text-sm font-medium text-[var(--text-sub)]">太字 (Bold)</span>
                           <div className="switch" onClick={() => setBold(!bold)}>
                             <input type="checkbox" checked={bold} readOnly />
                             <span className="slider"></span>
@@ -1188,7 +1164,7 @@ const getDecorationCSS = () => {
                         </div>
                       </div>
                       <PanelHeading icon={Hash} title="縁取り (Stroke)" />
-                      <div className="bg-[#111] border border-[#333] p-5 rounded-2xl">
+                      <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-2xl">
                         <Slider label="太さ" value={strokeWidth} min={0} max={20} onChange={setStrokeWidth} />
                         <div className={`transition-all duration-300 mt-2 ${strokeWidth === 0 ? 'opacity-30 pointer-events-none grayscale h-0 overflow-hidden' : 'h-auto'}`}>
                           <ColorPicker label="縁取りカラー" value={strokeColor} onChange={setStrokeColor} />
@@ -1197,9 +1173,9 @@ const getDecorationCSS = () => {
                     </div>
                     <div>
                       <PanelHeading icon={Layers} title="ドロップシャドウ" />
-                      <div className="bg-[#111] border border-[#333] p-5 rounded-2xl">
-                        <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#222]">
-                          <span className="text-sm font-bold text-gray-300 tracking-wide">シャドウを有効にする</span>
+                      <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-2xl">
+                        <div className="flex items-center justify-between mb-6 pb-4 border-b border-[var(--border-color)]">
+                          <span className="text-sm font-bold text-[var(--text-main)] tracking-wide">シャドウを有効にする</span>
                           <div className="switch" onClick={() => setShowShadow(!showShadow)}>
                             <input type="checkbox" checked={showShadow} readOnly />
                             <span className="slider"></span>
@@ -1226,7 +1202,7 @@ const getDecorationCSS = () => {
                         <QuickSettingItem icon={Radio} label="LIVEバッジ" description="配信中を示すインジケーターを時計上部に表示します" isActive={decLive} onToggle={setDecLive}>
                           <div className="flex flex-col gap-4 py-2">
                             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
-                              <span className="text-sm font-medium text-gray-400">バッジスタイル</span>
+                              <span className="text-sm font-medium text-[var(--text-sub)]">バッジスタイル</span>
                               <select value={decLiveType} onChange={(e) => setDecLiveType(e.target.value)} className="modern-input sm:max-w-[200px]">
                                 <option value="classic">クラシック (標準)</option>
                                 <option value="outline">アウトライン (透過)</option>
@@ -1239,10 +1215,10 @@ const getDecorationCSS = () => {
                               </select>
                             </div>
                             <div className="flex items-center justify-between gap-4">
-                              <span className="text-sm font-medium text-gray-400 w-24">サイズ</span>
+                              <span className="text-sm font-medium text-[var(--text-sub)] w-24">サイズ</span>
                               <div className="flex-1 flex items-center gap-3">
-                                <input type="range" min={0.1} max={1.0} step={0.01} value={liveSize} onChange={(e) => setLiveSize(Number(e.target.value))} className="w-full h-1.5 bg-[#111] rounded-lg appearance-none cursor-pointer outline-none" style={{ accentColor: 'var(--accent-color)' }} />
-                                <span className="text-xs font-mono w-8 text-right text-gray-400">{liveSize.toFixed(2)}</span>
+                                <input type="range" min={0.1} max={1.0} step={0.01} value={liveSize} onChange={(e) => setLiveSize(Number(e.target.value))} className="w-full h-1.5 bg-[var(--border-color)] rounded-lg appearance-none cursor-pointer outline-none" style={{ accentColor: 'var(--accent-color)' }} />
+                                <span className="text-xs font-mono w-8 text-right text-[var(--text-sub)]">{liveSize.toFixed(2)}</span>
                               </div>
                             </div>
                           </div>
@@ -1250,14 +1226,14 @@ const getDecorationCSS = () => {
                         <QuickSettingItem icon={Tag} label="カスタムラベル" description="時計の下部に任意のテキストを表示します" isActive={decLabel} onToggle={setDecLabel}>
                           <div className="flex flex-col gap-4 py-2">
                             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
-                              <span className="text-sm font-medium text-gray-400">表示テキスト</span>
+                              <span className="text-sm font-medium text-[var(--text-sub)]">表示テキスト</span>
                               <input type="text" value={decLabelText} onChange={(e) => setDecLabelText(e.target.value)} className="modern-input sm:max-w-[240px]" placeholder="例: #LiveStream" />
                             </div>
                             <div className="flex items-center justify-between gap-4">
-                              <span className="text-sm font-medium text-gray-400 w-24">サイズ</span>
+                              <span className="text-sm font-medium text-[var(--text-sub)] w-24">サイズ</span>
                               <div className="flex-1 flex items-center gap-3">
-                                <input type="range" min={0.1} max={1.0} step={0.01} value={labelSize} onChange={(e) => setLabelSize(Number(e.target.value))} className="w-full h-1.5 bg-[#111] rounded-lg appearance-none cursor-pointer outline-none" style={{ accentColor: 'var(--accent-color)' }} />
-                                <span className="text-xs font-mono w-8 text-right text-gray-400">{labelSize.toFixed(2)}</span>
+                                <input type="range" min={0.1} max={1.0} step={0.01} value={labelSize} onChange={(e) => setLabelSize(Number(e.target.value))} className="w-full h-1.5 bg-[var(--border-color)] rounded-lg appearance-none cursor-pointer outline-none" style={{ accentColor: 'var(--accent-color)' }} />
+                                <span className="text-xs font-mono w-8 text-right text-[var(--text-sub)]">{labelSize.toFixed(2)}</span>
                               </div>
                             </div>
                             <ColorPicker label="文字カラー" value={labelColor} onChange={setLabelColor} className="mb-0" />
@@ -1266,16 +1242,16 @@ const getDecorationCSS = () => {
                         <QuickSettingItem icon={Calendar} label="日付表示" description="時計の右上に今日の日付を表示します" isActive={showDate} onToggle={setShowDate}>
                           <div className="flex flex-col gap-4 py-2">
                             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
-                              <span className="text-sm font-medium text-gray-400">日付フォーマット</span>
+                              <span className="text-sm font-medium text-[var(--text-sub)]">日付フォーマット</span>
                               <select value={dateFormat} onChange={(e) => setDateFormat(e.target.value)} className="modern-input sm:max-w-[240px]">
                                 {DATE_FORMATS.map((f, i) => (<option key={i} value={f.value}>{f.label}</option>))}
                               </select>
                             </div>
                             <div className="flex items-center justify-between gap-4">
-                              <span className="text-sm font-medium text-gray-400 w-24">サイズ</span>
+                              <span className="text-sm font-medium text-[var(--text-sub)] w-24">サイズ</span>
                               <div className="flex-1 flex items-center gap-3">
-                                <input type="range" min={0.1} max={1.0} step={0.01} value={dateSize} onChange={(e) => setDateSize(Number(e.target.value))} className="w-full h-1.5 bg-[#111] rounded-lg appearance-none cursor-pointer outline-none" style={{ accentColor: 'var(--accent-color)' }} />
-                                <span className="text-xs font-mono w-8 text-right text-gray-400">{dateSize.toFixed(2)}</span>
+                                <input type="range" min={0.1} max={1.0} step={0.01} value={dateSize} onChange={(e) => setDateSize(Number(e.target.value))} className="w-full h-1.5 bg-[var(--border-color)] rounded-lg appearance-none cursor-pointer outline-none" style={{ accentColor: 'var(--accent-color)' }} />
+                                <span className="text-xs font-mono w-8 text-right text-[var(--text-sub)]">{dateSize.toFixed(2)}</span>
                               </div>
                             </div>
                           </div>
@@ -1287,7 +1263,7 @@ const getDecorationCSS = () => {
                       <QuickSettingItem icon={Frame} label="外枠・バックグラウンド" description="時計全体を囲むパネルや枠を追加します" isActive={decFrame !== 'none'} onToggle={(active) => setDecFrame(active ? 'glass' : 'none')}>
                         <div className="flex flex-col gap-5 py-3">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
-                            <span className="text-sm font-medium text-gray-400">枠のデザイン</span>
+                            <span className="text-sm font-medium text-[var(--text-sub)]">枠のデザイン</span>
                             <select value={decFrame} onChange={(e) => setDecFrame(e.target.value)} className="modern-input sm:max-w-[240px]">
                               <option value="none">なし (無効化)</option>
                               <option value="simple">シンプルボーダー</option>
@@ -1302,10 +1278,10 @@ const getDecorationCSS = () => {
                           {decFrame !== 'none' && (
                             <>
                               <div className="flex items-center justify-between gap-4">
-                                <span className="text-sm font-medium text-gray-400 w-24">内部の余白</span>
+                                <span className="text-sm font-medium text-[var(--text-sub)] w-24">内部の余白</span>
                                 <div className="flex-1 flex items-center gap-3">
-                                  <input type="range" min={0.1} max={1.5} step={0.1} value={framePadding} onChange={(e) => setFramePadding(Number(e.target.value))} className="w-full h-1.5 bg-[#111] rounded-lg appearance-none cursor-pointer outline-none" style={{ accentColor: 'var(--accent-color)' }} />
-                                  <span className="text-xs font-mono w-8 text-right text-gray-400">{framePadding.toFixed(1)}</span>
+                                  <input type="range" min={0.1} max={1.5} step={0.1} value={framePadding} onChange={(e) => setFramePadding(Number(e.target.value))} className="w-full h-1.5 bg-[var(--border-color)] rounded-lg appearance-none cursor-pointer outline-none" style={{ accentColor: 'var(--accent-color)' }} />
+                                  <span className="text-xs font-mono w-8 text-right text-[var(--text-sub)]">{framePadding.toFixed(1)}</span>
                                 </div>
                               </div>
                               <ColorPicker label="枠の背景カラー" value={frameBgColor} onChange={setFrameBgColor} className="mb-0" />
@@ -1313,11 +1289,11 @@ const getDecorationCSS = () => {
                           )}
                         </div>
                       </QuickSettingItem>
-                      <div className="mt-6 bg-[#111] border border-[#333] p-5 rounded-2xl">
-                        <h5 className="text-sm font-bold text-gray-300 mb-4 flex items-center gap-2">
-                          <Settings className="w-4 h-4 text-gray-500"/> ベース背景設定
+                      <div className="mt-6 bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-2xl">
+                        <h5 className="text-sm font-bold text-[var(--text-main)] mb-4 flex items-center gap-2">
+                          <Settings className="w-4 h-4 text-[var(--text-sub)]"/> ベース背景設定
                         </h5>
-                        <p className="text-[11px] mb-5 text-gray-500 leading-relaxed">
+                        <p className="text-[11px] mb-5 text-[var(--text-sub)] leading-relaxed">
                           ※ ブラウザソースは標準で背景が透過されます。<br/>
                           あえて画面全体に背景色を付けたい場合（グリーンバック用等）のみ調整してください。
                         </p>
@@ -1334,22 +1310,22 @@ const getDecorationCSS = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                     <div>
                       <PanelHeading icon={Monitor} title="OBSへの基本的な導入方法" />
-                      <div className="bg-[#111] border border-[#333] p-5 rounded-2xl text-[13px] text-gray-300 leading-relaxed mb-8">
+                      <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-2xl text-[13px] text-[var(--text-main)] leading-relaxed mb-8">
                         <ol className="list-decimal pl-5 space-y-3">
-                          <li>右上の<strong className="text-white">「HTMLとして保存」</strong>ボタンを押して <code>obs_clock.html</code> をPCに保存します。</li>
-                          <li>OBSを開き、ソースの「＋」ボタンから<strong className="text-white">「ブラウザ」</strong>を選択します。</li>
-                          <li><strong className="text-white">「ローカルファイル」</strong>にチェックを入れ、保存したHTMLファイルを参照して開きます。</li>
+                          <li>右上の<strong className="text-[var(--text-main)]">「HTMLとして保存」</strong>ボタンを押して <code>obs_clock.html</code> をPCに保存します。</li>
+                          <li>OBSを開き、ソースの「＋」ボタンから<strong className="text-[var(--text-main)]">「ブラウザ」</strong>を選択します。</li>
+                          <li><strong className="text-[var(--text-main)]">「ローカルファイル」</strong>にチェックを入れ、保存したHTMLファイルを参照して開きます。</li>
                           <li>「幅」と「高さ」の数値を、時計のサイズに合わせて調整します（例: 幅800、高さ300など）。</li>
                           <li>「カスタムCSS」の欄は空にするか、そのまま残しても問題ありません。</li>
                         </ol>
                       </div>
 
                       <PanelHeading icon={Upload} title="ローカルフォントを使う場合" />
-                      <div className="bg-[#111] border border-[#333] p-5 rounded-2xl text-[13px] text-gray-300 leading-relaxed">
+                      <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-2xl text-[13px] text-[var(--text-main)] leading-relaxed">
                         <p className="mb-4">PC内にある好きなフォントファイル（.ttf, .otfなど）を使う場合の手順です。</p>
                         <ol className="list-decimal pl-5 space-y-3">
                           <li>基本タブの「PC内のフォントファイルを選択」から使いたいフォントを読み込みます。</li>
-                          <li>右上の<strong className="text-white">「ZIPで保存 (同梱)」</strong>ボタンを押して保存します。</li>
+                          <li>右上の<strong className="text-[var(--text-main)]">「ZIPで保存 (同梱)」</strong>ボタンを押して保存します。</li>
                           <li>保存されたZIPファイルを<strong className="text-[#ef4444]">必ず解凍（展開）</strong>します。</li>
                           <li>OBSのブラウザソースで、<strong>解凍したフォルダの中にある</strong> <code>obs_clock.html</code> を指定してください。</li>
                         </ol>
@@ -1363,33 +1339,33 @@ const getDecorationCSS = () => {
                       <PanelHeading icon={HelpCircle} title="よくある質問 (Q&A)" />
                       <div className="flex flex-col gap-4">
                         
-                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
-                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[#5D9CC4] text-lg font-black">Q.</span> 背景を完全に透明にするには？</h5>
-                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
+                        <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-xl">
+                          <h5 className="font-bold text-[var(--text-main)] mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> 背景を完全に透明にするには？</h5>
+                          <p className="text-[13px] text-[var(--text-sub)] leading-relaxed flex items-start gap-2">
                             <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
                             <span>「カスタム要素」タブにある「背景の不透明度」を <code>0</code> にしてください。OBSのブラウザソースは標準で背景が透過される仕様なので、それだけで背景が透明な時計になります。</span>
                           </p>
                         </div>
 
-                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
-                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[#5D9CC4] text-lg font-black">Q.</span> 時計の端が切れて（はみ出して）しまう</h5>
-                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
+                        <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-xl">
+                          <h5 className="font-bold text-[var(--text-main)] mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> 時計の端が切れて（はみ出して）しまう</h5>
+                          <p className="text-[13px] text-[var(--text-sub)] leading-relaxed flex items-start gap-2">
                             <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
                             <span>OBS側のブラウザソースのプロパティで「幅」と「高さ」の数値を大きくしてみてください。HTML側は自動で左上に寄るように作られているため、OBSの枠を広げれば全体が表示されます。</span>
                           </p>
                         </div>
 
-                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
-                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[#5D9CC4] text-lg font-black">Q.</span> 時計の幅がガタガタと伸び縮みする</h5>
-                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
+                        <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-xl">
+                          <h5 className="font-bold text-[var(--text-main)] mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> 時計の幅がガタガタと伸び縮みする</h5>
+                          <p className="text-[13px] text-[var(--text-sub)] leading-relaxed flex items-start gap-2">
                             <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
                             <span>「1」のような細い数字と「0」などの太い数字が切り替わる際に起こります。「基本・テキスト」タブの「数字の固定幅」スライダーを調整して、1文字あたりのスペースを強制的に固定することで解決します。</span>
                           </p>
                         </div>
 
-                        <div className="bg-[#111] border border-[#333] p-5 rounded-xl">
-                          <h5 className="font-bold text-white mb-2 flex items-center gap-2 text-sm"><span className="text-[#5D9CC4] text-lg font-black">Q.</span> プレビューのFHDとか4Kって何？</h5>
-                          <p className="text-[13px] text-gray-400 leading-relaxed flex items-start gap-2">
+                        <div className="bg-[var(--bg-color)] border border-[var(--border-color)] p-5 rounded-xl">
+                          <h5 className="font-bold text-[var(--text-main)] mb-2 flex items-center gap-2 text-sm"><span className="text-[var(--accent-color)] text-lg font-black">Q.</span> プレビューのFHDとか4Kって何？</h5>
+                          <p className="text-[13px] text-[var(--text-sub)] leading-relaxed flex items-start gap-2">
                             <span className="font-black text-gray-500 text-lg mt-[-2px]">A.</span> 
                             <span>実際の配信キャンバス（1920x1080など）にこの時計を置いたとき、どのくらいの大きさに見えるかを確認するための機能です。出力されるHTML自体の解像度が変わるわけではありません。</span>
                           </p>
