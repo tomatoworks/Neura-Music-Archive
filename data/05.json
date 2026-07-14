@@ -17,7 +17,8 @@
         "album_1780554248919",
         "album_1780556322526",
         "album_1783150366828",
-        "album_1783151622034"
+        "album_1783151622034",
+        "album_1783999678321"
       ]
     }
   ],
@@ -272,6 +273,27 @@
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\Hype Talk EDM",
       "type": "instrumental"
+    },
+    {
+      "id": "album_1783999678321",
+      "title": "Calm Piano Talk  ",
+      "art": "https://cdn.neura-music.com/05talk/Chill/Calm%20Piano%20Talk/cover_1784002566466.webp",
+      "caption": "静かなピアノと淡いEDMを組み合わせた、落ち着いたトーク向けのBGM。",
+      "categoryId": "cat_1780196207758",
+      "tracks": [
+        "track_1784001217565_0",
+        "track_1784001217567_1",
+        "track_1784001217567_2",
+        "track_1784001217567_3",
+        "track_1784001217568_4",
+        "track_1784001217568_5",
+        "track_1784001217568_6",
+        "track_1784001217568_7",
+        "track_1784001217568_8",
+        "track_1784001217568_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\05talk\\Chill\\Calm Piano Talk",
+      "type": ""
     }
   ],
   "tracks": [
@@ -2459,6 +2481,176 @@
       "bpm": "",
       "lyrics": "",
       "added_at": "2026-07-04"
+    },
+    {
+      "id": "track_1784001217565_0",
+      "title": "Midnight Talk Background",
+      "caption": "深夜の帳の下、心の内なる対話を彩る穏やかなサウンドスケープ。都会の喧騒を忘れさせるような、漂う浮遊感を纏っています。",
+      "type": "instrumental",
+      "duration": 173,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Calm%20Piano%20Talk/Midnight%20Talk%20Background.mp3",
+      "tags": [
+        "EDM",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-14"
+    },
+    {
+      "id": "track_1784001217567_1",
+      "title": "Submerged Reflection",
+      "caption": "深く沈む静寂の中、内なる感情を目覚めさせる没入体験。電子音の層が織りなす、夢幻的で深淵なサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 161,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Calm%20Piano%20Talk/Submerged%20Reflection.mp3",
+      "tags": [
+        "EDM",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-14"
+    },
+    {
+      "id": "track_1784001217567_2",
+      "title": "Subconscious Guide",
+      "caption": "夜のバイブスを呼び起こす、魂深いエレクトロニック・ジャーニー。心の内奥へと導くメロディが、リスナーの意識を揺さぶります。",
+      "type": "instrumental",
+      "duration": 147,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Calm%20Piano%20Talk/Subconscious%20Guide.mp3",
+      "tags": [
+        "EDM",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-14"
+    },
+    {
+      "id": "track_1784001217567_3",
+      "title": "Thoughtful Momentum",
+      "caption": "心の底から湧き上がる推進力をサウンドに乗せた、壮大で情熱的なEDM。未来へ向かう静かな衝動を描いています。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Calm%20Piano%20Talk/Thoughtful%20Momentum.mp3",
+      "tags": [
+        "EDM",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-14"
+    },
+    {
+      "id": "track_1784001217568_4",
+      "title": "Textural Warmth",
+      "caption": "デジタルな質感と温かい響きの融合が生み出す深遠なるグルーヴ。夜の空間を満たす、感情豊かなエレクトロニカ・サウンドスケープです。",
+      "type": "instrumental",
+      "duration": 166,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Calm%20Piano%20Talk/Textural%20Warmth.mp3",
+      "tags": [
+        "EDM",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-14"
+    },
+    {
+      "id": "track_1784001217568_5",
+      "title": "Morning Light Drift",
+      "caption": "夜明け直前の微光のような高揚感。目覚めの解放感を伴いながら、心に優しく囁きかけるような夢幻的なビートが心地良いサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 172,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Calm%20Piano%20Talk/Morning%20Light%20Drift.mp3",
+      "tags": [
+        "EDM",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-14"
+    },
+    {
+      "id": "track_1784001217568_6",
+      "title": "Midnight Dialogue",
+      "caption": "クラブの熱気そのものを音にしたような高揚感。重低音とシンセサイザーが渦巻き、思考を一時停止させる没入型のEDMトラックです。",
+      "type": "instrumental",
+      "duration": 166,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Calm%20Piano%20Talk/Midnight%20Dialogue.mp3",
+      "tags": [
+        "EDM",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-14"
+    },
+    {
+      "id": "track_1784001217568_7",
+      "title": "Etheric Flow",
+      "caption": "電子の波が空間全体を流れていくような神秘的なフロー。夜明け前のエネルギーと高揚感を纏った、躍動感あふれるサウンドスケープです。",
+      "type": "instrumental",
+      "duration": 146,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Calm%20Piano%20Talk/Etheric%20Flow.mp3",
+      "tags": [
+        "EDM",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-14"
+    },
+    {
+      "id": "track_1784001217568_8",
+      "title": "Evolving Cushions",
+      "caption": "深いビートの脈動に乗せて、内面的な進化を感じさせる浮遊感のあるトラック。自分自身と向き合う時間を与えてくれるサウンドコンポジションです。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Calm%20Piano%20Talk/Evolving%20Cushions.mp3",
+      "tags": [
+        "EDM",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-14"
+    },
+    {
+      "id": "track_1784001217568_9",
+      "title": "Midnight Seminar",
+      "caption": "夜都市のエネルギーを背景に描く、躍動的なグルーヴ。心惹かれるビートとシンセサイザーが一体となり、リスナーを深い没入状態へと誘います。",
+      "type": "instrumental",
+      "duration": 126,
+      "full_url": "https://cdn.neura-music.com/05talk/Chill/Calm%20Piano%20Talk/Midnight%20Seminar.mp3",
+      "tags": [
+        "EDM",
+        "温かい",
+        "モダン / クリア",
+        "インスト（ボーカルなし）"
+      ],
+      "bpm": "",
+      "lyrics": "",
+      "added_at": "2026-07-14"
     }
   ]
 }
