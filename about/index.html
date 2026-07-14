@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>このサイトについて - Neura Music Archive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/tailwind.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 pt-[calc(3rem+40px)]"> <header class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+    <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      <div class="flex items-center">
+        <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+          <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+          <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+        </a>
+      </div>
+
+      <div class="flex items-center space-x-3 md:space-x-7">
+        <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
+          <a href="/articles/" class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
+          <a href="/albums/" class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+        </div>
+
+        <div class="relative inline-block">
+          <select id="generator-selector" onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+            <option value="" disabled selected>Generatorを選択</option>
+            <option value="/tools/">ツール一覧</option>
+            <option value="/tools/clock-generator">CLOCK GEN</option>
+            <option value="/tools/ranking-generator">BEST10 GEN</option>
+            <option value="/tools/overlay/">OVERLAY GEN</option>
+            <option value="/tools/neura_timer_generator">TIMER GEN</option>
+            <option value="/tools/thumbnail-gen">THUMBNAIL GEN</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+        </div>
+
+        <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+          <a href="/about/" onclick="openModal('privacy'); return false;" class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+          <a href="/about/" onclick="openModal('about'); return false;" class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
+        </div>
+      </div>
+
+      <button class="md:hidden text-gray-500 dark:text-gray-400">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
+      <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 / OBS・配信向けツール
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+    <section>
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">Neura Music Archiveについて</h1>
+      <p class="leading-relaxed">
+        当サイトは、動画クリエイターやライブ配信者のために開発された、完全無料で商用利用可能な「オリジナルAI生成BGM」と「ブラウザ完結型OBS配信ツール」の総合ポータルサイトです。全800曲以上の楽曲は、すべて当プロジェクト独自の生成AIパイプラインを用いて作成されたオリジナル音源であり、クレジット表記や利用報告なしで安全にご利用いただけます。また、配信画面を彩るOBSツール群は、セキュリティと低負荷を最優先に設計。すべての処理がブラウザ（ユーザーのローカル環境）で完結するため、機密情報を含む素材を扱う際も安心です。クリエイターの皆様が、煩雑な準備作業から解放され、本来の「制作」と「配信」に集中できる環境をサポートします。
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">利用規約</h2>
+      <div class="space-y-4 leading-relaxed">
+        <p>1. 著作権と利用許諾：提供される楽曲の著作権は制作者に帰属します。ユーザーは、非商用・商用を問わず、本楽曲を無料で利用することができます。</p>
+        <p>2. 禁止事項：楽曲の二次配布、販売、および自作発言は固く禁じます。</p>
+        <p>3. AI生成物の明示と識別情報：当サイトで公開されるすべての音源は、生成AIにより作成されたコンテンツです。EU AI法を含む各地域の法令に基づき、AI生成物であることを明示しています。また、音源にはGoogle SynthID等の識別情報が埋め込まれており、AI生成であることを確認できる仕組みが含まれています。これらの識別情報は利用者の個人情報とは無関係であり、追跡や特定を目的とするものではありません。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">プライバシーポリシー</h2>
+      <div class="space-y-4 leading-relaxed">
+        <p>当サイトは、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。</p>
+        <p>当サイトにおいて、氏名やメールアドレス等の個人情報を直接取得・保存することはありません。</p>
+        <p>なお、サイトの閲覧に伴い、セキュリティ対策や利便性向上のため、IPアドレス等の技術的情報が自動的に送受信されますが、これらを個人を特定する目的で利用したり、永続的に保存したりすることはありません。</p>
+        <p>当サイトで提供される楽曲は、利用規約の範囲内で安全にご利用いただけます。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">お問い合わせ</h2>
+      <p class="leading-relaxed mb-4">サービスに関するご質問やお問い合わせは、以下の連絡先までお願いいたします。</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <a href="mailto:neura.jp.project@gmail.com" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm"><span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">Email</span><span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura.jp.project@gmail.com</span></a>
+        <a href="https://www.youtube.com/@Neura-music-Archive" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm"><span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">YouTube</span><span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@Neura-music-Archive</span></a>
+        <a href="https://x.com/neura_music" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm"><span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">X</span><span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@neura_music</span></a>
+        <a href="https://neura-music.booth.pm/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm"><span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">BOOTH</span><span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura-music.booth.pm</span></a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3">広告について</h2>
+      <p class="leading-relaxed">当サイトでは、サービスの安定的かつ継続的な提供を目的として、一部のページに広告を掲載しております。ユーザーの皆様のご理解とご協力をお願い申し上げます。</p>
+    </section>
+  </main>
+
+  <div id="modal-overlay" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white dark:bg-[#1c1c1c] w-full max-w-xl max-h-[85vh] rounded-2xl overflow-hidden flex flex-col shadow-2xl border border-transparent dark:border-gray-800 text-gray-800 dark:text-gray-100" onclick="event.stopPropagation()">
+      <div class="p-5 border-b dark:border-gray-800 flex justify-between items-center bg-gray-50 dark:bg-[#242424]">
+        <h3 id="modal-title" class="font-bold text-lg text-gray-900 dark:text-gray-100"></h3>
+        <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+      </div>
+      <div id="modal-body" class="p-6 md:p-8 overflow-y-auto text-gray-700 dark:text-gray-300 leading-relaxed space-y-4"></div>
+    </div>
+  </div>
+
+  <div id="raw-privacy-policy" class="hidden">
+    <div class="space-y-4"><p>当サイトは、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。</p><p>当サイトにおいて、氏名やメールアドレス等の個人情報を直接取得・保存することはありません。</p><p>なお、サイトの閲覧に伴い、セキュリティ対策や利便性向上のため、IPアドレス等の技術的情報が自動的に送受信されますが、これらを個人を特定する目的で利用したり、永続的に保存したりすることはありません。</p><p>当サイトで提供される楽曲は、利用規約の範囲内で安全にご利用いただけます。</p></div>
+  </div>
+  <div id="raw-terms" class="hidden">
+    <div class="space-y-4"><p>1. 著作権と利用許諾：提供される楽曲の著作権は制作者に帰属します。ユーザーは、非商用・商用を問わず、本楽曲を無料で利用することができます。</p><p>2. 禁止事項：楽曲の二次配布、販売、および自作発言は固く禁じます。</p><p>3. AI生成物の明示と識別情報：当サイトで公開されるすべての音源は、生成AIにより作成されたコンテンツです。EU AI法を含む各地域の法令に基づき、AI生成物であることを明示しています。また、音源にはGoogle SynthID等の識別情報が埋め込まれており、AI生成であることを確認できる仕組みが含まれています。これらの識別情報は利用者の個人情報とは無関係であり、追跡や特定を目的とするものではありません。</p></div>
+  </div>
+  <div id="raw-contact" class="hidden">
+    <div class="space-y-4"><p>サービスに関するご質問やお問い合わせは、以下の連絡先までお願いいたします。</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+        <a href="mailto:neura.jp.project@gmail.com" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm"><span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">Email</span><span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura.jp.project@gmail.com</span></a>
+        <a href="https://www.youtube.com/@Neura-music-Archive" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm"><span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">YouTube</span><span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@Neura-music-Archive</span></a>
+        <a href="https://x.com/neura_music" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm"><span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">X</span><span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">@neura_music</span></a>
+        <a href="https://neura-music.booth.pm/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm"><span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">BOOTH</span><span class="text-sm text-gray-700 dark:text-gray-300 truncate font-medium">neura-music.booth.pm</span></a>
+      </div>
+    </div>
+  </div>
+  <div id="raw-ads" class="hidden">
+    <div class="space-y-4"><p>当サイトでは、サービスの安定的かつ継続的な提供を目的として、一部のページに広告を掲載しております。ユーザーの皆様のご理解とご協力をお願い申し上げます。</p></div>
+  </div>
+
+  <script>
+    (function() {
+      function openModal(pageKey) {
+        let modalTitle = "";
+        let modalContent = "";
+        if (pageKey === 'privacy') {
+          modalTitle = "プライバシーポリシー";
+          const privacySource = document.getElementById('raw-privacy-policy');
+          modalContent = privacySource ? privacySource.innerHTML : "";
+        } else if (pageKey === 'about') {
+          modalTitle = "このサイトについて";
+          const sections = [{ id: 'raw-terms', title: '利用規約' }, { id: 'raw-contact', title: 'お問い合わせ' }, { id: 'raw-ads', title: '広告の掲載について' }];
+          let mergedHtml = "";
+          sections.forEach(sec => {
+            const el = document.getElementById(sec.id);
+            if (el) {
+              mergedHtml += `<div class="mb-10 last:mb-0"><h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 border-b border-gray-200 dark:border-gray-800 pb-2 mb-4">${sec.title}</h4><div class="space-y-4">${el.innerHTML}</div></div>`;
+            }
+          });
+          modalContent = mergedHtml;
+        }
+        const modal = document.getElementById('modal-overlay');
+        const titleEl = document.getElementById('modal-title');
+        const bodyEl = document.getElementById('modal-body');
+        if (modal) {
+          titleEl.textContent = modalTitle;
+          bodyEl.innerHTML = modalContent;
+          modal.style.display = 'flex';
+        }
+      }
+      function closeModal() {
+        const modal = document.getElementById('modal-overlay');
+        if (modal) { modal.style.display = 'none'; }
+      }
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = document.getElementById('generator-selector');
+        if (selector) {
+          const currentPath = window.location.pathname;
+          const options = Array.from(selector.options);
+          const matchedOption = options.find(opt => opt.value && currentPath.includes(opt.value));
+          selector.value = matchedOption ? matchedOption.value : "";
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

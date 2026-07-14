@@ -183,66 +183,76 @@
 
 
 <!-- NMA-HEADER-START -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
-  <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
-
-    <div class="flex items-center">
-      <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
-        <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
-        <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
-      </a>
-    </div>
-
-    <div class="flex items-center space-x-3 md:space-x-7">
-
-      <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
-        <a href="/articles/"
-          class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
-        <a href="/albums/"
-          class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+<header class="flex-shrink-0 z-50 bg-white dark:bg-[#242424] flex flex-col shadow-sm">
+    <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
+      <div class="flex items-center">
+        <h1 class="flex items-center">
+          <a href="/" class="hover:opacity-80 transition-opacity flex items-center">
+            <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
+            <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
+          </a>
+        </h1>
       </div>
 
-      <div class="relative inline-block">
-        <select id="generator-selector" onchange="if(this.value) window.location.href=this.value"
-          class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
-          <option value="" disabled selected>Generatorを選択</option>
-          <option value="/tools/">ツール一覧</option>
-          <option value="/tools/clock-generator">CLOCK GEN</option>
-          <option value="/tools/ranking-generator">BEST10 GEN</option>
-          <option value="/tools/overlay/">OVERLAY GEN</option>
-          <option value="/tools/neura_timer_generator">TIMER GEN</option>
-          <option value="/tools/thumbnail-gen">THUMBNAIL GEN</option>
-        </select>
-        <div
-          class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
-          </svg>
+      <div class="flex items-center space-x-3 md:space-x-7">
+        <div class="flex items-center space-x-3 text-xs font-bold tracking-wider">
+          <a href="/articles/"
+            class="bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">BLOG</a>
+          <a href="/albums/"
+            class="hidden md:block bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-1 shadow-sm hover:bg-gray-100 dark:hover:bg-[#2a2a2a] hover:text-gray-900 dark:hover:text-gray-100 transition-colors">ALBUM</a>
+        </div>
+
+        <div class="relative inline-block">
+          <select id="generator-selector" onchange="if(this.value) window.location.href=this.value"
+            class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
+            <option value="" disabled selected>Generatorを選択</option>
+            <option value="/tools/">ツール一覧</option>
+            <option value="/tools/clock-generator">CLOCK GEN</option>
+            <option value="/tools/ranking-generator">BEST10 GEN</option>
+            <option value="/tools/overlay/">OVERLAY GEN</option>
+            <option value="/tools/neura_timer_generator">TIMER GEN</option>
+            <option value="/tools/thumbnail-gen">THUMBNAIL GEN</option>
+          </select>
+          <div
+            class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2.5 text-gray-400 dark:text-gray-500">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
+          <a href="/about/" onclick="openModal('privacy'); return false;"
+            class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
+          <a href="/about/" onclick="openModal('about'); return false;"
+            class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
         </div>
       </div>
 
-      <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
-        <a href="javascript:void(0)" onclick="openModal('privacy')"
-          class="hover:text-gray-900 dark:hover:text-gray-100 transition">プライバシーポリシー</a>
-        <a href="javascript:void(0)" onclick="openModal('about')"
-          class="hover:text-gray-900 dark:hover:text-gray-100 transition">このサイトについて</a>
-      </div>
+      <button class="md:hidden text-gray-500 dark:text-gray-400">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
 
-    <button class="md:hidden text-gray-500 dark:text-gray-400">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
+    <details class="group bg-gray-50 dark:bg-[#1e1e1e] border-b dark:border-gray-800">
+      <summary
+        class="list-none flex items-center justify-center cursor-pointer py-1.5 text-center text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest hover:bg-gray-100 dark:hover:bg-[#252525] transition-colors focus:outline-none">
+        <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 /
+        OBS・配信向けツール
+        <span class="text-[10px] opacity-50 ml-1">▼</span>
+      </summary>
+      <div
+        class="px-4 py-4 text-left max-w-4xl mx-auto border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-[#1c1c1c] text-gray-700 dark:text-gray-300 cursor-default">
+        <h3 class="font-bold text-gray-900 dark:text-gray-100 mb-2">Neura Music Archiveについて</h3>
+        <p class="leading-relaxed text-sm">
+          当サイトは、動画クリエイターやライブ配信者のために開発された、完全無料で商用利用可能な「オリジナルAI生成BGM」と「ブラウザ完結型OBS配信ツール」の総合ポータルサイトです。全800曲以上の楽曲は、すべて当プロジェクト独自の生成AIパイプラインを用いて作成されたオリジナル音源であり、クレジット表記や利用報告なしで安全にご利用いただけます。また、配信画面を彩るOBSツール群は、セキュリティと低負荷を最優先に設計。すべての処理がブラウザ（ユーザーのローカル環境）で完結するため、機密情報を含む素材を扱う際も安心です。クリエイターの皆様が、煩雑な準備作業から解放され、本来の「制作」と「配信」に集中できる環境をサポートします。
+        </p>
+      </div>
+    </details>
 
-  </div>
-
-  <div
-    class="bg-gray-50 dark:bg-[#1e1e1e] text-center py-1.5 text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest border-b dark:border-gray-800">
-    <span class="font-semibold text-gray-800 dark:text-gray-200">AI生成BGM</span> / 商用利用可 / クレジット表記不要 / 全曲無料DL可 /
-    OBS・配信向けツール
-  </div>
-</header>
+  </header>
 <!-- NMA-HEADER-END -->
 
 
