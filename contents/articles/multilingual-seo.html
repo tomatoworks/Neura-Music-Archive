@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>【多言語化×SEO】トップページだけ翻訳して世界を狙ったら、サチコ（米国人）にサイトを乗っ取られた話 | Neura Music Archive</title>
+
+  <link rel="canonical" href="https://neura-music.com/articles/multilingual-seo.html">
+
+  <script src="https://cdn.tailwindcss.com" nonce="MTc3MTMzODM4OCwxNDQ4ODMwNDMx"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <script nonce="MTc3MTMzODM4OCwxNDQ4ODMwNDMx">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Noto Sans JP', 'sans-serif'],
+            mono: ['Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-feature-settings: "palt";
+    }
+
+    /* スクロールバーのカスタマイズ（モノトーン調） */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .dark ::-webkit-scrollbar-track {
+      background: #181818;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background: #27272a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #e4e4e7;
+      border-radius: 3px;
+    }
+
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d4d4d8;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-white dark:bg-[#181818] text-slate-800 dark:text-zinc-200 font-sans antialiased selection:bg-slate-900 selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-200">
+
+  <div class="fixed top-4 right-4 z-50"></div>
+
+  <div class="min-h-screen flex flex-col">
+
+    <header class="border-b border-slate-100 dark:border-zinc-900 sticky top-0 bg-white/80 dark:bg-black/80 backdrop-blur-md z-40">
+      <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+        <a href="/" class="text-sm font-bold tracking-tight text-slate-900 dark:text-white hover:opacity-80 transition-opacity">
+          トップページだけ翻訳してサチコにサイトを乗っ取られた話
+        </a>
+        <span class="text-[10px] font-mono text-slate-400 dark:text-zinc-600 tracking-wider">DEVELOPER BLOG</span>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-3xl mx-auto px-6 py-10 md:py-16 w-full space-y-12 md:space-y-16">
+
+      <article class="space-y-8">
+        <header class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-[10px] font-bold text-slate-600 dark:text-zinc-400 tracking-wider uppercase">
+              DIARY & DEV
+            </span>
+            <span class="text-xs text-slate-400 dark:text-zinc-500 font-mono">2026.07.15</span>
+          </div>
+          
+          <h1 class="text-2xl md:text-3.5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-snug">
+            【多言語化×SEO】トップページだけ翻訳して世界を狙ったら、サチコ（米国人）にサイトを乗っ取られた話
+          </h1>
+
+          <div class="flex items-center gap-4 text-xs text-slate-500 dark:text-zinc-400 pt-1">
+            <div class="flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-slate-900 dark:bg-zinc-800 flex items-center justify-center text-[10px] font-bold text-white font-mono">N</span>
+              <span>NMA Dev Team</span>
+            </div>
+            <span>•</span>
+            <span>読了時間: 約4分</span>
+          </div>
+        </header>
+
+        <section class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+          <p>
+            個人でAI生成BGMの配布サイト（Neura Music Archive）を運営しているのですが、サイトの検索エンジン登録（インデックス）が一向に進まず、Googleの機嫌を取るために頭を抱えていた頃のことです。
+          </p>
+          <p>
+            ふと、ある「姑息かつ画期的な作戦」を思いつきました。 当サイトは操作画面がほぼ英語なので、「BGMを聴いてダウンロードする」という使い方に言語の壁はほとんどありません。 「だったら、検索エンジンの入り口になる『トップページ』の看板だけを多言語化してしまえば、世界中からアクセスが来るのでは？」
+          </p>
+          <p>
+            全800曲以上のページを真面目に翻訳するのは、個人運営（しかも年間維持費1,600円）では到底不可能です。しかし、各言語の「トップページ」だけを用意して、中に入ったら世界共通の仕組みを使ってもらうというハリボテ構造なら、なんとか管理できます。
+          </p>
+          <p>
+            私はさっそく、英語、中国語、スペイン語などのトップページを作成し、ある親切な仕組みを仕込みました。 「お客さんの使っているブラウザの言語を自動で読み取り、英語圏の人なら自動的に英語版のページへ飛ばす（転送する）」というプログラムです。
+          </p>
+          <p>
+            完璧な「おもてなし」です。これで海外からのアクセスも爆増するはず──そう信じて疑わなかった私を待っていたのは、Google Search Console（通称：サチコ）からの無慈悲な宣告でした。
+          </p>
+        </section>
+
+        <hr class="border-slate-100 dark:border-zinc-900">
+
+        <div class="space-y-10 md:space-y-12">
+          
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              1. 消滅した日本語トップページと、残酷な「URL検査」
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                多言語トップページを公開して数日後。いざサチコの管理画面を開くと、信じられない現象が起きていました。 サイトの大本命であり、最もアクセスを集めるべき日本語のトップページが、検索エンジンの登録からスッと消え去っていたのです。
+              </p>
+              <p>
+                慌てて状況を検査ツールで調べると、そこにはこんな残酷な事実が記載されていました。
+              </p>
+              <div class="p-4 rounded-lg bg-slate-50 dark:bg-zinc-800/50 border border-slate-200 dark:border-zinc-700 space-y-2 font-mono text-sm text-slate-700 dark:text-zinc-300">
+                <div>ユーザーが指定したURL： https://neura-music.com/ （日本語のトップ）</div>
+                <div>Google が選択した代表URL： https://neura-music.com/lang/en/ （英語版のトップ）</div>
+              </div>
+              <p>
+                「は？ なんで勝手に英語版をメインのページにしてるの？」
+              </p>
+              <p>
+                意味がわかりません。私は日本に向けてサイトを作ったし、日本語版が本拠地です。それなのに、Googleは勝手に「このサイトの本当の姿は英語版である」と決めつけ、大元の日本語ページを「これは偽物（重複ページ）だから検索には載せません」とゴミ箱に捨ててしまったのです。
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              2. サチコ先生の正体は「アメリカ人」だった
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                なぜこんな理不尽なすれ違いが起きたのか。原因は、私が仕込んだ「至れり尽くせりの自動転送」と、サチコ先生の“国籍”にありました。
+              </p>
+              <p>
+                私たちは普段、Googleの巡回ロボットのことを親しみを込めて「サチコ」と日本語っぽい名前で呼んでいますが、よく考えたら彼女は、米国カリフォルニア州のサーバーからやってくる生粋のアメリカ人です。
+              </p>
+              <p>
+                アメリカからやってきたサチコがトップページにアクセスした瞬間、私の仕込んだ親切なプログラムが発動します。 「おっ、英語圏からのお客さんですね！ こちらの英語版へどうぞ！」と、有無を言わさず自動転送してしまったのです。
+              </p>
+              <p>
+                サチコからすれば、「トップページを見に行ったら、強制的に英語版に飛ばされたぞ。なるほど、このサイトの本物は英語版なんだな」と解釈するのは当然の流れでした。 良かれと思って実装した「おもてなし」が、ロボットの目には「日本語トップの存在意義の否定」として映ってしまったわけです。
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              3. ロボットだけを“騙す”ための1行のコード
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                原因が分かれば、対策は一つしかありません。 「人間の外国人には親切に自動転送してあげる。でも、サチコが来たら絶対に転送させず、黙って日本語ページを読ませる」という、相手によって態度を変える二枚舌の処理です。
+              </p>
+              <p>
+                具体的には、アクセスしてきた相手の「身分証（ユーザーエージェント）」を確認し、そこに Googlebot や crawler といったロボットの肩書きが含まれていたら、おもてなしの自動転送を強制キャンセルするプログラムを1行書き加えました。
+              </p>
+              <div class="p-4 rounded-lg bg-slate-900 dark:bg-black border border-slate-800 space-y-1 text-slate-300 font-mono text-xs md:text-sm overflow-x-auto">
+                <code>if (/bot|googlebot|google-inspectiontool|crawler|spider|robot|crawling|lighthouse/i.test(navigator.userAgent)) return;</code>
+              </div>
+              <p>
+                加えて、ページの裏側に「このサイトには英語バージョンや中国語バージョンも並列で存在しますよ」と検索エンジンにだけ教える案内板（hreflangタグ）を立てておきました。
+              </p>
+              <p>
+                この「身分証チェック」と「案内板」のコンボにより、ようやくサチコは「なるほど、転送はされないし、ここは日本語のページなんだな。あ、他の言語も平等に存在してるのね」と正しく理解してくれるようになりました。
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-4">
+            <h2 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+              まとめ：親切心がSEOを殺すこともある
+            </h2>
+            <div class="text-slate-600 dark:text-zinc-300 text-sm md:text-base leading-relaxed space-y-4">
+              <p>
+                「トップページの看板だけを多言語化する」という戦略自体は、時間も予算も限られた個人開発において非常に有効な生存戦略です。
+              </p>
+              <p>
+                しかし、技術的な「おもてなし（自動転送）」は、時に検索エンジンのロボットに対して致命的な誤解を与えます。Googleのロボットは決して万能ではなく、物理的なアクセス元（米国）という偏りを持った単なるプログラムに過ぎません。
+              </p>
+              <p>
+                これから世界に向けてサービスを発信しようとしている個人開発者の方は、ぜひ「サチコはアメリカからやってくる」という当たり前の事実を胸に刻んでおいてください。相手の国籍と仕様を理解して初めて、本当のWebサイト運営が始まるのです。
+              </p>
+            </div>
+          </section>
+
+        </div>
+
+      </article>
+
+      <div id="share-container"></div>
+      <script src="/js/article-share.js"></script>
+
+    </main>
+
+    <footer
+      class="bg-slate-50 dark:bg-zinc-950 border-t border-slate-200 dark:border-zinc-900 py-8 text-center text-xs text-slate-500 dark:text-zinc-500 space-y-1.5 relative z-10">
+      <p>Neura Music Archive (NMA) — ロイヤリティフリー音楽アーカイブ</p>
+      <p class="font-mono">&copy; 2026 Neura Music Archive</p>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
