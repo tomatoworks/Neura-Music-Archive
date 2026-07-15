@@ -5,29 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ▼ 追加：SEO / OGP / Twitter / Canonical -->
   <title>NMAの開発自動化ワークフロー | Neura Music Archive</title>
   <meta name="description" content="Neura Music Archive（NMA）の楽曲生成から公開までを支える自動化ワークフローを解説。ローカルLLMによるプロンプト生成、Rustによる高速インジェスト、LLMによるRefine、Cloudflare R2へのワンクリックデプロイまでの技術構成を紹介。">
 
-  <link rel="canonical" href="https://neura-music.com/articles/code_artifact.html">
+  <link rel="canonical" href="https://neura-music.com/articles/code_artifact">
 
   <meta property="og:title" content="NMAの開発自動化ワークフロー | Neura Music Archive">
   <meta property="og:description" content="NMAの楽曲生成・管理・公開を支えるフルオートメーション構成を解説。LLM、Rust、Tauri、Cloudflare R2、Gitを組み合わせた効率的な制作パイプラインを紹介。">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://neura-music.com/articles/code_artifact.html">
+  <meta property="og:url" content="https://neura-music.com/articles/code_artifact">
   <meta property="og:image" content="https://neura-music.com/assets/og-image.jpg">
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="NMAの開発自動化ワークフロー | Neura Music Archive">
   <meta name="twitter:description" content="NMAの楽曲生成・管理・公開を支えるフルオートメーション構成を解説。LLM、Rust、Tauri、Cloudflare R2、Gitを組み合わせた効率的な制作パイプラインを紹介。">
   <meta name="twitter:image" content="https://neura-music.com/assets/og-image.jpg">
-  <!-- ▲ 追加ここまで -->
-
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com" nonce="MTc3MTMzODM4OCwxNDQ4ODMwNDMx"></script>
 
-  <!-- Google Fonts: Plus Jakarta Sans & Noto Sans JP -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -53,7 +47,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://neura-music.com/articles/code_artifact.html"
+    "@id": "https://neura-music.com/articles/code_artifact"
   },
   "headline": "NMAの開発自動化ワークフロー",
   "description": "Neura Music Archive（NMA）の楽曲生成から公開までを支える自動化ワークフローを解説。ローカルLLMによるプロンプト生成、Rustによる高速インジェスト、LLMによるRefine、Cloudflare R2へのワンクリックデプロイまでの技術構成を紹介。",
@@ -123,25 +117,25 @@
   .group:hover .nma-tooltip { opacity: 1; }
 </style>
 <nav class="fixed left-4 md:left-6 xl:left-8 top-1/2 -translate-y-1/2 flex flex-col items-center space-y-3 z-50 hidden lg:flex bg-white/80 dark:bg-[#1e1e1e]/80 backdrop-blur-md shadow-lg border border-slate-200 dark:border-zinc-800 rounded-full py-4 px-2">
-  <a href="./1600yen.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+  <a href="./1600yen" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
     <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
     <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg">
       音楽配布サイトを年間1,600円で運用する方法
     </span>
   </a>
-  <a href="./neuratube_introduction_user_manual.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+  <a href="./neuratube_introduction_user_manual" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
     <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
     <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg">
       NeuraTube 紹介＆取扱ガイド | ノイズを排した視聴環境
     </span>
   </a>
-  <a href="./best_10_flipper.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+  <a href="./best_10_flipper" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
     <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
     <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg">
       Best 10 Flipper - 取扱説明書 & デモ
     </span>
   </a>
-  <a href="./obs_clock_article.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+  <a href="./obs_clock_article" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
     <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
     <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg">
       OBS HTML Clock Generator
@@ -153,7 +147,7 @@
       楽曲生成・配信を支える自動化ワークフロー
     </span>
   </div>
-  <a href="./articles_index.html" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+  <a href="./articles_index" class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
     <div class="w-1.5 h-1.5 rounded-full bg-slate-300 dark:bg-zinc-700 transition-all group-hover:bg-slate-400 dark:group-hover:bg-zinc-500 group-hover:scale-150"></div>
     <span class="nma-tooltip absolute left-8 px-2.5 py-1.5 bg-slate-800 dark:bg-zinc-100 text-white dark:text-slate-900 text-xs rounded whitespace-nowrap shadow-lg">
       Neura Music Archive
@@ -458,8 +452,8 @@
 <div class="mt-12 mb-8 pt-8 border-t border-slate-200 dark:border-zinc-800">
   <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4 tracking-tight">関連記事</h3>
   <div class="space-y-3">
-    <a href="./1600yen.html" class="block p-4 rounded-lg bg-white dark:bg-[#1e1e1e] border border-slate-200 dark:border-zinc-800 hover:border-[#5D9CC4] dark:hover:border-[#5D9CC4] hover:shadow-md transition-all group"><div class="text-sm font-bold text-slate-800 dark:text-slate-200 group-hover:text-[#5D9CC4] transition-colors line-clamp-2">年間1,600円の正体。維持費ほぼゼロで音楽配布サイトを運用する仕組み</div><div class="mt-2 flex flex-wrap gap-1"><span class="text-[10px] px-2 py-0.5 rounded-full bg-slate-100 dark:bg-zinc-800 text-slate-500 dark:text-zinc-400 border border-slate-200 dark:border-zinc-700">blog</span></div></a>
-<a href="./articles_index.html" class="block p-4 rounded-lg bg-white dark:bg-[#1e1e1e] border border-slate-200 dark:border-zinc-800 hover:border-[#5D9CC4] dark:hover:border-[#5D9CC4] hover:shadow-md transition-all group"><div class="text-sm font-bold text-slate-800 dark:text-slate-200 group-hover:text-[#5D9CC4] transition-colors line-clamp-2">Neura Music Archive (NMA) | サイト案内・利用規約</div><div class="mt-2 flex flex-wrap gap-1"><span class="text-[10px] px-2 py-0.5 rounded-full bg-slate-100 dark:bg-zinc-800 text-slate-500 dark:text-zinc-400 border border-slate-200 dark:border-zinc-700">blog</span></div></a>
+    <a href="./1600yen" class="block p-4 rounded-lg bg-white dark:bg-[#1e1e1e] border border-slate-200 dark:border-zinc-800 hover:border-[#5D9CC4] dark:hover:border-[#5D9CC4] hover:shadow-md transition-all group"><div class="text-sm font-bold text-slate-800 dark:text-slate-200 group-hover:text-[#5D9CC4] transition-colors line-clamp-2">年間1,600円の正体。維持費ほぼゼロで音楽配布サイトを運用する仕組み</div><div class="mt-2 flex flex-wrap gap-1"><span class="text-[10px] px-2 py-0.5 rounded-full bg-slate-100 dark:bg-zinc-800 text-slate-500 dark:text-zinc-400 border border-slate-200 dark:border-zinc-700">blog</span></div></a>
+<a href="./articles_index" class="block p-4 rounded-lg bg-white dark:bg-[#1e1e1e] border border-slate-200 dark:border-zinc-800 hover:border-[#5D9CC4] dark:hover:border-[#5D9CC4] hover:shadow-md transition-all group"><div class="text-sm font-bold text-slate-800 dark:text-slate-200 group-hover:text-[#5D9CC4] transition-colors line-clamp-2">Neura Music Archive (NMA) | サイト案内・利用規約</div><div class="mt-2 flex flex-wrap gap-1"><span class="text-[10px] px-2 py-0.5 rounded-full bg-slate-100 dark:bg-zinc-800 text-slate-500 dark:text-zinc-400 border border-slate-200 dark:border-zinc-700">blog</span></div></a>
   </div>
 </div>
 <!-- NMA-RELATED_ARTICLES-END -->
@@ -473,8 +467,8 @@
     
 <!-- NMA-LINKS-START -->
 <nav class="mt-12 pt-6 border-t border-slate-200 dark:border-zinc-800 flex justify-between items-stretch gap-4">
-  <a href="./articles_index.html" class="flex-1 p-4 border border-slate-200 dark:border-zinc-800 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-800/50 transition text-left block"><div class="text-xs text-slate-500 mb-1">← 古い記事</div><div class="text-sm font-bold text-slate-800 dark:text-slate-200 line-clamp-2">Neura Music Archive</div></a>
-  <a href="./obs_clock_article.html" class="flex-1 p-4 border border-slate-200 dark:border-zinc-800 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-800/50 transition text-right block"><div class="text-xs text-slate-500 mb-1">新しい記事 →</div><div class="text-sm font-bold text-slate-800 dark:text-slate-200 line-clamp-2">OBS HTML Clock Generator</div></a>
+  <a href="./articles_index" class="flex-1 p-4 border border-slate-200 dark:border-zinc-800 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-800/50 transition text-left block"><div class="text-xs text-slate-500 mb-1">← 古い記事</div><div class="text-sm font-bold text-slate-800 dark:text-slate-200 line-clamp-2">Neura Music Archive</div></a>
+  <a href="./obs_clock_article" class="flex-1 p-4 border border-slate-200 dark:border-zinc-800 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-800/50 transition text-right block"><div class="text-xs text-slate-500 mb-1">新しい記事 →</div><div class="text-sm font-bold text-slate-800 dark:text-slate-200 line-clamp-2">OBS HTML Clock Generator</div></a>
 </nav>
 <!-- NMA-LINKS-END -->
 <footer
