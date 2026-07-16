@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neura Music Archive - Бесплатная ИИ-музыка и BGM без авторских прав</title>
-  <meta name="description" content="Скачайте качественную фоновую ИИ-музыку бесплатно. Коммерческое использование без указания авторства. Идеально для видео, стримов (OBS) и игр.">
+  <title>Neura Music Archive - Kostenlose KI-Hintergrundmusik & lizenzfreie Musik</title>
+  <meta name="description" content="Laden Sie hochwertige, lizenzfreie KI-Hintergrundmusik kostenlos herunter. Kommerzielle Nutzung erlaubt, keine Namensnennung erforderlich. Perfekt für Videos, Streams (OBS) und Spiele.">
   
-  <meta property="og:title" content="Neura Music Archive - Бесплатная ИИ-музыка и BGM без авторских прав">
-  <meta property="og:description" content="Бесплатное скачивание ИИ-музыки без роялти! Коммерческое использование разрешено, кредит не требуется. Идеально для OBS и создания видео.">
+  <meta property="og:title" content="Neura Music Archive - Kostenlose KI-Hintergrundmusik & lizenzfreie Musik">
+  <meta property="og:description" content="Kostenloser Download von lizenzfreier KI-Hintergrundmusik! Kommerzielle Nutzung erlaubt, keine Namensnennung erforderlich. Perfekt für OBS und Videoproduktionen.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://neura-music.com/lang/ru/">
+  <meta property="og:url" content="https://neura-music.com/lang/de/">
   <meta property="og:image" content="https://neura-music.com/assets/og-image.jpg">
   
   <meta name="twitter:card" content="summary_large_image">
@@ -40,7 +40,7 @@
   <link rel="alternate" hreflang="de" href="https://neura-music.com/lang/de/" />
   <link rel="alternate" hreflang="it" href="https://neura-music.com/lang/it/" />
   <link rel="alternate" hreflang="x-default" href="https://neura-music.com/lang/en/" />
-  <link rel="canonical" href="https://neura-music.com/lang/ru/" />
+  <link rel="canonical" href="https://neura-music.com/lang/de/" />
 </head>
 <body class="h-screen flex flex-col overflow-hidden text-gray-800 dark:text-gray-100 bg-white dark:bg-[#1c1c1c] font-sans">
 
@@ -48,7 +48,7 @@
     <div class="border-b dark:border-gray-800 px-4 py-2 flex justify-between items-center text-sm h-10">
       <div class="flex items-center">
         <h1 class="flex items-center">
-          <a href="/lang/zh/" class="hover:opacity-80 transition-opacity flex items-center">
+          <a href="/lang/de/" class="hover:opacity-80 transition-opacity flex items-center">
             <img src="/assets/logo.png" alt="Neura Music Archive" class="h-6 w-auto dark:hidden">
             <img src="/assets/logowhite.png" alt="Neura Music Archive" class="h-6 w-auto hidden dark:block">
           </a>
@@ -65,8 +65,8 @@
         <div class="hidden md:flex items-center space-x-7">
           <div class="relative inline-block">
             <select id="generator-selector" onchange="if(this.value) window.location.href=this.value" class="text-xs bg-gray-50 dark:bg-[#1e1e1e] text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-full pl-3 pr-8 py-1 appearance-none cursor-pointer focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 font-medium tracking-wider shadow-sm transition-colors">
-              <option value="" disabled selected>Выбрать генератор</option>
-              <option value="/tools/">Список инструментов</option>
+              <option value="" disabled selected>Generator auswählen</option>
+              <option value="/tools/">Alle Tools</option>
               <option value="/tools/clock-generator">CLOCK GEN</option>
               <option value="/tools/ranking-generator">BEST10 GEN</option>
               <option value="/tools/overlay/">OVERLAY GEN</option>
@@ -79,8 +79,8 @@
           </div>
           
           <div class="space-x-4 text-gray-500 dark:text-gray-400 text-sm">
-            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">Политика конфиденциальности</a>
-            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">О нас</a>
+            <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">Datenschutzrichtlinie</a>
+            <a href="javascript:void(0)" onclick="openModal('about')" class="hover:text-gray-900 dark:hover:text-gray-100 transition">Über uns</a>
           </div>
         </div>
 
@@ -94,14 +94,14 @@
     <details class="group bg-gray-50 dark:bg-[#1e1e1e] border-b dark:border-gray-800">
   <summary
     class="list-none flex items-center justify-center cursor-pointer py-1.5 text-center text-xs md:text-sm text-gray-600 dark:text-gray-400 tracking-widest hover:bg-gray-100 dark:hover:bg-[#252525] transition-colors focus:outline-none">
-    <span class="font-semibold text-gray-800 dark:text-gray-200">ИИ-Музыка</span> / Для коммерции / Без кредитов / Бесплатно / OBS-инструменты
+    <span class="font-semibold text-gray-800 dark:text-gray-200">KI-generierte Musik</span> / Kommerzielle Nutzung OK / Keine Namensnennung erforderlich / Kostenloser Download / Tools für Streamer & OBS
     <span class="text-[10px] opacity-50 ml-1">▼</span>
   </summary>
   <div
     class="px-4 py-4 text-left max-w-4xl mx-auto border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-[#1c1c1c] text-gray-700 dark:text-gray-300 cursor-default">
-    <h3 class="font-bold text-gray-900 dark:text-gray-100 mb-2">О проекте Neura Music Archive</h3>
+    <h3 class="font-bold text-gray-900 dark:text-gray-100 mb-2">Über das Neura Music Archive</h3>
     <p class="leading-relaxed text-sm">
-      Данный сайт представляет собой комплексный портал, разработанный для создателей видео и стримеров. Он предлагает полностью бесплатную оригинальную фоновую музыку, сгенерированную ИИ и доступную для коммерческого использования, а также браузерные инструменты для OBS. Все 800+ треков являются оригинальными аудиозаписями, созданными с использованием собственной системы генеративного ИИ нашего проекта, и их можно безопасно использовать без указания авторства или отчетов об использовании. Кроме того, инструменты OBS, предназначенные для оформления экрана трансляции, отдают приоритет безопасности и низкой нагрузке на систему. Поскольку вся обработка выполняется в браузере (в локальной среде пользователя), вы можете быть спокойны даже при работе с материалами, содержащими конфиденциальную информацию. Мы поддерживаем среду, в которой авторы могут освободиться от утомительной подготовки и сосредоточиться на главном: «создании контента» и «трансляции».
+      Diese Website ist ein umfassendes Portal, das völlig kostenlose, für kommerzielle Zwecke nutzbare, originelle KI-generierte Hintergrundmusik und browserbasierte OBS-Streaming-Tools anbietet, die für Videokünstler und Live-Streamer entwickelt wurden. Alle über 800 Titel sind originale Audiodateien, die mit der proprietären generativen KI-Pipeline unseres Projekts erstellt wurden und sicher ohne Namensnennung oder Nutzungsberichte verwendet werden können. Darüber hinaus priorisieren die OBS-Tools, die zur Verbesserung Ihres Streams entwickelt wurden, Sicherheit und geringe Auslastung. Da die gesamte Verarbeitung innerhalb des Browsers (der lokalen Umgebung des Benutzers) abgeschlossen wird, können Sie sich auch beim Umgang mit Materialien, die vertrauliche Informationen enthalten, sicher fühlen. Wir unterstützen eine Umgebung, in der Schöpfer von lästigen Vorbereitungen befreit werden und sich auf ihre eigentliche Arbeit konzentrieren können: das Erstellen und Streamen.
     </p>
   </div>
 </details>
@@ -110,22 +110,22 @@
   <div class="flex-1 flex flex-col md:flex-row overflow-hidden">
     <aside class="w-[240px] bg-[#fafafa] dark:bg-[#1c1c1c] border-r dark:border-gray-800 overflow-y-auto hidden md:block flex-shrink-0 pb-24 flex flex-col">
       <div class="p-6 flex-1 flex flex-col">
-        <h2 class="text-sm font-bold text-gray-400 tracking-wider mb-4 uppercase">Темы</h2>
+        <h2 class="text-sm font-bold text-gray-400 tracking-wider mb-4 uppercase">Themen</h2>
         <ul class="space-y-1" id="theme-list">
         </ul>
         
         <div class="mt-5 mb-2">
-          <input type="text" id="search-input" placeholder="Поиск треков или тегов..." class="w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 shadow-sm">
+          <input type="text" id="search-input" placeholder="Titel oder Tags suchen..." class="w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm focus:outline-none focus:border-gray-500 dark:focus:border-gray-400 shadow-sm">
         </div>
 
         <div class="mb-2">
-          <a href="https://forms.gle/DXzSJvVEo4sv98dr7" target="_blank" rel="noopener noreferrer" title="Открывается в новой вкладке" class="block w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm text-center shadow-sm hover:bg-gray-100 dark:hover:bg-gray-800 transition focus:outline-none focus:border-gray-500 dark:focus:border-gray-400">ЗАПРОСИТЬ</a>
+          <a href="https://forms.gle/DXzSJvVEo4sv98dr7" target="_blank" rel="noopener noreferrer" title="Wird in einem neuen Tab geöffnet" class="block w-full border border-gray-300 dark:border-gray-700 bg-transparent dark:text-white rounded-full px-3 py-1.5 text-sm text-center shadow-sm hover:bg-gray-100 dark:hover:bg-gray-800 transition focus:outline-none focus:border-gray-500 dark:focus:border-gray-400">ANFRAGE</a>
         </div>
 
-        <h2 id="tools-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Инструменты</h2>
+        <h2 id="tools-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Tools</h2>
         <ul class="space-y-1" id="tool-list">
         </ul>
-        <h2 id="articles-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Статьи</h2>
+        <h2 id="articles-heading" class="text-sm font-bold text-gray-400 tracking-wider mt-8 mb-4 uppercase hidden">Artikel</h2>
         <ul class="space-y-1" id="article-list">
         </ul>
         
@@ -154,7 +154,7 @@
 
   <footer class="fixed bottom-0 left-0 right-0 z-50 bg-[#43657E]/80 border-t border-[#43657E]/50 px-4 py-1.5 flex items-center justify-between h-16 shadow-[0_-4px_10px_rgba(0,0,0,0.15)]">
     <div class="flex items-center space-x-1.5 md:space-x-3 w-auto md:w-1/4 md:min-w-[180px] flex-shrink-0">
-      <button id="btn-shuffle" class="hidden md:block text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="Перемешать">
+      <button id="btn-shuffle" class="hidden md:block text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="Zufällige Wiedergabe">
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
       </button>
       <button id="btn-prev" class="text-white/90 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0">
@@ -167,7 +167,7 @@
       <button id="btn-next" class="text-white/90 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
       </button>
-      <button id="btn-repeat" class="hidden md:block relative text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="Повтор">
+      <button id="btn-repeat" class="hidden md:block relative text-white/50 hover:text-white drop-shadow-md transition transform hover:scale-110 active:scale-95 flex-shrink-0" title="Wiederholen">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
         <span id="repeat-badge" class="absolute -top-1.5 -right-1.5 text-[9px] font-bold hidden bg-white text-[#43657E] rounded-full w-3.5 h-3.5 text-center leading-[14px] shadow-sm">1</span>
       </button>
@@ -179,7 +179,7 @@
         <svg id="player-album-placeholder" class="w-5 h-5 text-white/60" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
       </div>
       <div class="flex-1 min-w-0 flex flex-col justify-center">
-        <div class="text-xs md:text-sm font-semibold text-white drop-shadow-md mb-0.5 md:mb-1 truncate" id="player-track-name">Трек не выбран</div>
+        <div class="text-xs md:text-sm font-semibold text-white drop-shadow-md mb-0.5 md:mb-1 truncate" id="player-track-name">Kein Titel ausgewählt</div>
         <div class="flex items-center space-x-1.5 md:space-x-2 text-[10px] md:text-xs text-white/90 drop-shadow-sm font-mono">
           <span id="player-time-current">0:00</span>
           <input type="range" id="seek-slider" min="0" max="100" value="0" class="flex-1 accent-white shadow-sm cursor-pointer h-1.5 rounded-full" style="background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0.2) 0%);">
@@ -190,7 +190,7 @@
 
     <div class="w-auto md:w-1/4 flex justify-end items-center md:min-w-[80px] flex-shrink-0 space-x-2 md:space-x-4">
       <div class="hidden md:flex items-center space-x-2 text-white/90">
-        <button id="btn-mute" class="hover:text-white transition focus:outline-none" title="Mute">
+        <button id="btn-mute" class="hover:text-white transition focus:outline-none" title="Stumm">
           <svg id="icon-volume-on" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
           </svg>
@@ -224,27 +224,27 @@
 
   <div id="raw-privacy-policy" class="hidden">
     <div class="space-y-4">
-      <p>Мы высоко ценим вашу конфиденциальность и обязуемся защищать вашу личную информацию.</p>
-      <p>Этот сайт напрямую не собирает и не хранит какие-либо личные данные, такие как ваше имя или адрес электронной почты.</p>
-      <p>Пожалуйста, обратите внимание, что при просмотре этого сайта технические данные (например, ваш IP-адрес) могут автоматически передаваться с использованием файлов cookie и аналогичных технологий для обеспечения безопасности, улучшения пользовательского опыта, проведения аналитики доступа и показа релевантной рекламы. Эти данные анонимизированы и никогда не используются для идентификации личности.</p>
-      <p>Всю музыку, представленную на этой платформе, можно безопасно интегрировать в ваш контент в соответствии с нашими Условиями предоставления услуг.</p>
+      <p>Wir legen großen Wert auf Ihre Privatsphäre und verpflichten uns, Ihre persönlichen Daten zu schützen.</p>
+      <p>Diese Website erfasst oder speichert keine persönlichen Daten wie Ihren Namen oder Ihre E-Mail-Adresse direkt.</p>
+      <p>Bitte beachten Sie, dass beim Surfen auf dieser Website technische Daten (wie Ihre IP-Adresse) mithilfe von Cookies und ähnlichen Technologien automatisch übertragen werden können, um die Sicherheit aufrechtzuerhalten, die Benutzererfahrung zu verbessern, Zugriffsanalysen durchzuführen und relevante Werbung bereitzustellen. Diese Daten sind anonymisiert und werden niemals zur Identifizierung von Personen verwendet.</p>
+      <p>Die gesamte auf dieser Plattform bereitgestellte Musik kann gemäß unseren Nutzungsbedingungen sicher in Ihre Inhalte integriert werden.</p>
     </div>
   </div>
 
   <div id="raw-terms" class="hidden">
     <div class="space-y-4">
-      <p>1. Авторские права и лицензия на использование: Авторские права на всю музыку, доступную на этой платформе, принадлежат ее создателю. Пользователям предоставляется неисключительная лицензия на бесплатное использование этих треков как в некоммерческих, так и в коммерческих целях.</p>
-      <p>2. Запрещенный контент: Вторичное распространение, продажа или присвоение авторства (ложное утверждение, что вы создали трек) аудиофайлов строго запрещены.</p>
-      <p>3. Запрет на регистрацию авторских прав: Регистрация нашей музыки в автоматизированных системах управления авторскими правами (таких как Content ID от YouTube) или в организациях по коллективному управлению авторскими правами строго запрещена при любых обстоятельствах, в том числе для производных произведений.</p>
-      <p>4. Контент, созданный ИИ, и соответствие требованиям (Закон ЕС об ИИ и SynthID): Все аудиозаписи, представленные на этом сайте, созданы с помощью ИИ. В соответствии с региональными нормами, включая Закон ЕС об ИИ, мы гарантируем прозрачность нашего контента, созданного ИИ. Кроме того, наши аудиофайлы содержат цифровые водяные знаки (например, Google SynthID) для их идентификации как созданных ИИ. Эти идентификаторы не содержат никакой личной информации и не используются для отслеживания пользователей.</p>
-      <p>5. Отказ от ответственности: Администраторы сайта не несут ответственности за любые прямые или косвенные проблемы, убытки или ущерб, возникшие в результате использования фоновой музыки (BGM), инструментов или информации, представленных на этом сайте. Вы соглашаетесь использовать их исключительно на свой страх и риск.</p>
-      <p>6. Изменения условий: Данные условия могут быть изменены без предварительного уведомления. Изменения вступают в силу немедленно после их публикации на этом сайте.</p>
+      <p>1. Urheberrecht & Nutzungslizenz: Das Urheberrecht aller auf dieser Plattform verfügbaren Musiktitel liegt beim Ersteller. Benutzern wird eine nicht-exklusive Lizenz zur kostenlosen Nutzung dieser Titel sowohl für nicht-kommerzielle als auch für kommerzielle Zwecke gewährt.</p>
+      <p>2. Verbotene Inhalte: Die sekundäre Verbreitung, der Verkauf oder die Inanspruchnahme des Eigentums (fälschliche Behauptung, Sie hätten den Titel erstellt) an den Audiodateien ist strengstens untersagt.</p>
+      <p>3. Verbot der Urheberrechtsregistrierung: Die Registrierung unserer Musik bei automatisierten Urheberrechtsverwaltungssystemen (wie Content ID von YouTube) oder Verwertungsgesellschaften ist unter allen Umständen strengstens untersagt, einschließlich für abgeleitete Werke.</p>
+      <p>4. KI-generierte Inhalte & Compliance (EU AI Act & SynthID): Alle auf dieser Website bereitgestellten Audiotitel werden von KI generiert. In Übereinstimmung mit regionalen Vorschriften, einschließlich des EU AI Act, garantieren wir die Transparenz unserer KI-generierten Inhalte. Darüber hinaus enthalten unsere Audiodateien digitale Wasserzeichen (wie Google SynthID), um sie als KI-generiert zu identifizieren. Diese Kennungen enthalten keine persönlichen Daten und werden nicht zur Verfolgung von Benutzern verwendet.</p>
+      <p>5. Haftungsausschluss: Die Website-Betreiber übernehmen keine Verantwortung oder Haftung für direkte oder indirekte Probleme, Verluste oder Schäden, die sich aus der Nutzung der auf dieser Website bereitgestellten Hintergrundmusik, Tools oder Informationen ergeben. Sie stimmen zu, diese auf eigenes Risiko zu nutzen.</p>
+      <p>6. Änderung der Bedingungen: Diese Bedingungen können ohne vorherige Ankündigung geändert werden. Änderungen treten sofort nach Veröffentlichung auf dieser Website in Kraft.</p>
     </div>
   </div>
 
   <div id="raw-contact" class="hidden">
     <div class="space-y-4">
-      <p>По вопросам, предложениям или возможностям делового сотрудничества, пожалуйста, свяжитесь с нами по следующим ссылкам:</p>
+      <p>Für Anfragen, Fragen oder Geschäftsmöglichkeiten bezüglich unseres Dienstes kontaktieren Sie uns bitte über die folgenden Links:</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
         <a href="mailto:neura.jp.project@gmail.com" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-gray-50 dark:bg-[#242424] border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-[#2e2e2e] transition shadow-sm">
           <span class="text-xs font-bold text-gray-400 dark:text-gray-500 w-16 tracking-wider">Email</span>
@@ -268,7 +268,7 @@
 
   <div id="raw-ads" class="hidden">
     <div class="space-y-4">
-      <p>Чтобы наши сервисы оставались стабильными и полностью бесплатными для авторов, мы показываем рекламу в некоторых разделах нашего веб-сайта. Мы очень признательны вам за понимание и поддержку.</p>
+      <p>Um unsere Dienste stabil und für Ersteller völlig kostenlos zu halten, zeigen wir in bestimmten Bereichen unserer Website Werbung an. Wir wissen Ihr Verständnis und Ihre Unterstützung sehr zu schätzen.</p>
     </div>
   </div>
 </body>
