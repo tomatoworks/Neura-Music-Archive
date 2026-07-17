@@ -34,6 +34,14 @@
         "album_1781864098749",
         "album_1782090112112"
       ]
+    },
+    {
+      "id": "cat_1784271164378",
+      "name": "HIP HOP",
+      "caption": "リズムを主体としたビートに、語り寄りのボーカルを組み合わせた音楽スタイル。 ラップ、フロウ、サンプリングなどを特徴とし、言葉のリズムとビートの一体感を重視するジャンル。",
+      "albums": [
+        "album_1784271252899"
+      ]
     }
   ],
   "albums": [
@@ -297,6 +305,27 @@
         "track_1782093848707_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\jazz\\Light Vocal Piano Jazz",
+      "type": ""
+    },
+    {
+      "id": "album_1784271252899",
+      "title": "Femme Fatal Beats",
+      "art": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/cover_1784273912317.webp",
+      "caption": "柔らかいビートとくすんだ質感を基調に、語り寄りの女性ボーカルを組み合わせた Lo‑fi 系のHIP HOP アルバムです。",
+      "categoryId": "cat_1784271164378",
+      "tracks": [
+        "track_1784272592275_0",
+        "track_1784272592278_1",
+        "track_1784272592279_2",
+        "track_1784272592279_3",
+        "track_1784272592279_4",
+        "track_1784272592279_5",
+        "track_1784272592279_6",
+        "track_1784272592279_7",
+        "track_1784272592280_8",
+        "track_1784272592280_9"
+      ],
+      "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\hiphop\\Lo-fi Hip Hop",
       "type": ""
     }
   ],
@@ -2467,6 +2496,176 @@
       "bpm": "",
       "lyrics": "[Intro]\n(douceur)\n\n[Verse 1]\nMon cerveau cesse enfin sa petite dictature\nJ'abandonne l'idée de corriger le monde entier\nLe lin froissé est mon seul dictionnaire ce soir\nC’est une capitulation en soie, une défaite élégante\nMes griefs contre l’industrie et les voisins\nSe dissolvent dans un verre d’eau sur la table\n(si douce, l'eau)\n\n[Chorus]\nQuelle paix déconcertante, presque impolie\nUne absence totale de punchline ou d'ironie\nLe silence n'est pas un vide, c'est un luxe\n(c'est un luxe)\nJe dépose mes armes, mes livres, mes sarcasmes\nEt je m'installe dans cette clarté sans effort\n(enfin)\n\n[Verse 2]\nOn s'était disputés pour une virgule mal placée\nPour un vin trop cher ou une vérité mal léchée\nMais l'architecture de ma chambre est parfaite maintenant\nLes angles droits me pardonnent mes fautes de goût\nPas de métaphores, juste le poids de mes jambes\nLa gravité est la seule loi que je respecte encore\n(loi physique)\n\n[Chorus]\nQuelle paix déconcertante, presque impolie\nUne absence totale de punchline ou d'ironie\nLe silence n'est pas un vide, c'est un luxe\n(c'est un luxe)\nJe dépose mes armes, mes livres, mes sarcasmes\nEt je m'installe dans cette clarté sans effort\n(sans effort)\n\n[Bridge]\nC'est le moment pathétique où le snob s'endort\nHeureux d'être bête, heureux d'avoir tort\nAdieu la pertinence, adieu la posture\nJe suis juste un corps qui respire sans mesure\n\n[Chorus]\nQuelle paix déconcertante, presque impolie\nUne absence totale de punchline ou d'ironie\nLe silence n'est pas un vide, c'est un luxe\n(c'est un luxe)\nJe dépose mes armes, mes livres, mes sarcasmes\nEt je m'installe dans cette clarté sans effort\n(enfin libre)\n\n[Outro]\nZéro cynisme\nJuste le coton\n(le coton)\nC'est fini pour aujourd'hui\n(tout est fini)",
       "added_at": "2026-06-22"
+    },
+    {
+      "id": "track_1784272592275_0",
+      "title": "Common Ground",
+      "caption": "共同体という名の温もり。歴史と絆が織りなす、私たち全員の支え合える場所（ホーム）を描く。",
+      "type": "instrumental",
+      "duration": 176,
+      "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Common%20Ground.mp3",
+      "tags": [
+        "Hip Hop",
+        "疾走感",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Yeah)\n(Check it)\n(One two, one two)\n(We stay rooted)\n\n[Verse]\nAvenue pulse, rhythm of the asphalt drum\nAncient wisdom on the gum-stained walk\nWe built kingdoms on a one-way street\nGrandma on the porch, eyes like a map\nReading weather in the rising mist\nNo labels needed, we define the frame\nTenement bricks holding all our names\nSummer hydrants bursting in the heat\nDividing bread, making sure we eat\nKnowledge of self in the morning light\nHolding the block through the longest night\nSpiritual roots beneath the cracked stone\nA collective soul, never felt alone\nRecording history on a dusty shelf\nThe highest wealth is the spirit itself\nRising like steam from the subway grate\n\n[Chorus]\nThis is the heartbeat of the block\nSteady like a clock, we never stop\nStronger together, we rise above\nBuilding a future on a foundation of love\n(On a foundation of love)\n(We never stop)\n\n[Verse]\nWinter winds howl through the hallway glass\nWatching the seasons and the people pass\nResilience coded in our very walk\nListen close to the way we talk\nStreet scholars teaching at the corner store\nGiving much more than we ever saw\nThe industry sells a hollow shell\nBut we got the truth to tell\nFrom the basement tapes to the open air\nLifting the heavy weight we share\nAncestors watching from the red brick peaks\nStrength is the only tongue we speak\nPassing the torch to the little ones\nBright as the many midday suns\nRooted deep in the pavement's soul\nOne big family, keeping us whole\n\n[Chorus]\nThis is the heartbeat of the block\nSteady like a clock, we never stop\nStronger together, we rise above\nBuilding a future on a foundation of love\n(On a foundation of love)\n(We never stop)\n\n[Outro]\nJust the block\nJust the spirit\nKeep it moving\n(Yeah)\n(It’s home)\n(Always home)\n(Stay rooted)",
+      "added_at": "2026-07-17"
+    },
+    {
+      "id": "track_1784272592278_1",
+      "title": "Sudden Salt",
+      "caption": "静寂の中に潜む小さな変化。ほんの一瞬の予兆が、日常の常識を揺さぶる感覚を描写する。",
+      "type": "instrumental",
+      "duration": 150,
+      "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Sudden%20Salt.mp3",
+      "tags": [
+        "Hip Hop",
+        "疾走感",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(crackle)\n(crackle)\n\n[Vocal Event A]\nOne stone\nTurning\nIn the silt\n(In the silt)\nA shift\nSlight\nSudden salt\nOn the tongue\n(On the tongue)\n\n[The Drop]\n(Turning)\n(Salt)\n\n[Bridge]\nThe path\nCurves\nWidening\nA liquid fold\n(Fold)\n(Liquid fold)\n\n[Vocal Event B]\nNow I\nOscillate\nVibrating\nNew root\nFinding\nDeep earth\n(Deep earth)\n(The current)\n\n[Outro]\nTurning\n(Turning)\nSlight\n(Slight)\nOne stone\n(One stone)",
+      "added_at": "2026-07-17"
+    },
+    {
+      "id": "track_1784272592279_2",
+      "title": "The Veneer",
+      "caption": "華やかさという表面の下に隠された本質。飾らない言葉の応酬が響き渡る、重層的なリアリティを追求したビート。",
+      "type": "instrumental",
+      "duration": 171,
+      "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/The%20Veneer.mp3",
+      "tags": [
+        "Hip Hop",
+        "疾走感",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\nCheck the pedigree\n(Check it)\nYeah\nListen to the soil\n(The real soil)\n\n[Verse 1]\nPeep the trajectory\nThe boss-age is heavy\nYou’re a rental tag\nI’m a custom Chevy\nFronting in the lobby\nLooking like a factor\nBut you’re just a script\nA low-budget actor\nThick coat of paint\nOn a rusted frame\nSelling thin air\nWhile I claim the game\nI don’t do the surface\nI don’t do the fluff\nYour words are airy\nBut the world is rough\n(So rough)\nI need that weight\nThat heavy-duty truth\nNot the sweet talk\nFrom a hollow tooth\n\n[Chorus]\nYou’re all veneer\n(All veneer)\nNothing in the middle\nJust a lot of noise\nPlaying on a fiddle\nGive me something real\nGive me something deep\nPromises are cheap\nAnd I never sleep\n(Never sleep)\n\n[Verse 2]\nStunting for the masses\nIn those tinted glasses\nBut the math is off\nIn all your classes\nI see the cracks\nWhen the pressure hits\nYou’re a paper house\nWhen the fire bits\nMobbing through the city\nIn a high-speed lane\nI can smell the faking\nI can see the stain\nTransactional heart\nAnd a ledger for a soul\nYou’re chasing a scrap\nI’m taking the whole\n(The whole thing)\nGenuine connection\nThat’s the only fee\nEverything else\nIs just a fantasy\n(Just a fantasy)\n\n[Chorus]\nYou’re all veneer\n(All veneer)\nNothing in the middle\nJust a lot of noise\nPlaying on a fiddle\nGive me something real\nGive me something deep\nPromises are cheap\nAnd I never sleep\n(Never sleep)\n\n[Outro]\nKeep the change\n(Keep it)\nI keep the truth\nReal talk only\nFrom the root to the fruit\n(The fruit)\nAll veneer\nYeah\n(All veneer)\nI see through it\nBoss-age\n(Yeah)\nGone",
+      "added_at": "2026-07-17"
+    },
+    {
+      "id": "track_1784272592279_3",
+      "title": "Bright And Heavy",
+      "caption": "灼熱の空気と光。午後のまどろみの中で感じる、圧倒的な美しさと同時に抱える重さの二面性。",
+      "type": "instrumental",
+      "duration": 161,
+      "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Bright%20and%20Heavy.mp3",
+      "tags": [
+        "Hip Hop",
+        "疾走感",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm, yeah)\n\n[Verse]\nI’ve got green stains on my knees again\nTracing the cracks in the hot driveway\nThe air feels thick like a wool blanket\nBut I don’t want to go inside yet\nMy hair is sticking to my neck\nI’m fine with being a mess\nThe sprinkler’s hitting the neighbor’s fence\nMaking a sound like a heartbeat\n(Like a heartbeat)\n\n[Chorus]\nEverything is bright and heavy\nLike the sun is trying to stay\nI know this feeling’s gonna leave me\nBut I’m here for it today\n(I'm here for it today)\n\n[Verse]\nDrinking lemon water from a plastic cup\nWatching the ants build a tiny house\nThey don’t care about the seasons\nOr why I’m always looking up\nI’m wearing my brother’s old shirt\nIt’s too big but it’s what I want\nMy socks are sliding off my heels\nI like how the pavement feels\n(How it feels)\n\n[Chorus]\nEverything is bright and heavy\nLike the sun is trying to stay\nI know this feeling’s gonna leave me\nBut I’m here for it today\n(I'm here for it today)\n\n[Outro]\nDon’t let the porch light come on\nLet the day stretch out long\nStay here for a second\nBefore it’s gone\n(Before it's gone)\n(Stay here)\n(Before it's gone)",
+      "added_at": "2026-07-17"
+    },
+    {
+      "id": "track_1784272592279_4",
+      "title": "Shadow Swing",
+      "caption": "確かな基盤を持たない不安定な場所で、自分自身の「道」を模索する。葛藤と同時にリズムを見つけ出す旅路。",
+      "type": "instrumental",
+      "duration": 165,
+      "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Shadow%20Swing.mp3",
+      "tags": [
+        "Hip Hop",
+        "疾走感",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh)\n(Steady now)\n\n[Verse 1]\nWalking where the edge is thin\nTaste the salt upon the wind\nHeavy clouds begin to roll\nPressure in the deep hollow\nFeet are heavy on the stone\nMaking every path my own\n\n[Chorus]\nFind the rhythm, hold the line\nWatch the water, take the time\n(Watch the water)\nBend the branch but never break\nGive the heart another shake\n(Another shake)\n\n[Verse 2]\nWind is cutting through the wool\nFeel the sudden heavy pull\nIron sky and silver rain\nMoving through the quiet pain\nNothing here is ever still\nComing down the grassy hill\n\n[Chorus]\nFind the rhythm, hold the line\nWatch the water, take the time\n(Watch the water)\nBend the branch but never break\nGive the heart another shake\n(Another shake)\n\n[Outro]\nTake the time\n(Hold the line)\nWatch the water\n(Steady now)\nSteady now\n(Steady now)",
+      "added_at": "2026-07-17"
+    },
+    {
+      "id": "track_1784272592279_5",
+      "title": "Vinyl Sway",
+      "caption": "雨に濡れた景色の中での邂逅。触れ合った指先から、凍りついていた日常へ熱い物語を再点火させる。",
+      "type": "instrumental",
+      "duration": 162,
+      "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Vinyl%20Sway.mp3",
+      "tags": [
+        "Hip Hop",
+        "疾走感",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n\n[Verse]\nthe pavement was black\ni slipped\nyour fingers found my coat\nheld me steady\njust once\n(just once)\n\n[Chorus]\nit was a small thing\nbut it broke the ice\ni wasn't invisible\n(not invisible)\n\n[Bridge]\na stranger’s hand\nstronger than the rain\na brief pull\na quiet debt\n(quiet debt)\n\n[Outro]\nheld me steady\n(steady)\njust once\n(just once)\ni’m here",
+      "added_at": "2026-07-17"
+    },
+    {
+      "id": "track_1784272592279_6",
+      "title": "Pressure Point",
+      "caption": "内に秘めた力が臨界点に達する瞬間。感情の爆発と計算されたエネルギーが空間を支配し、高揚感を生み出す。",
+      "type": "instrumental",
+      "duration": 164,
+      "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Pressure%20Point.mp3",
+      "tags": [
+        "Hip Hop",
+        "疾走感",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Check the pressure)\n(Yeah)\n(One two, one two)\n(I kept it locked in)\n(Now I let it out)\n\n[Verse 1]\nPatience is a weapon under the floorboards\nPrecision is the method for the warlords\nMind sharp, keeping the vision intact\nNever react, simply state the fact\nI held the weight until the pavement cracked\nNow I'm back, let the rhythm attract\nNo vanity, just the rawest of craft\nSplitting the sea like a heavy wood raft\nI stayed silent while the amateurs spoke\nBuilding the fire, now they smell the smoke\nA veteran stance, unbothered and cool\nThe pen is the tool, making kids stay in school\nThe floodgates open, the river runs deep\nPromises kept that I intended to keep\nMastered the silence, now I master the sound\nLaying the law on this hallowed ground\n\n[Chorus]\nWatch the pressure burst through the valve\nProblems only the sharpest can solve\n(Watch it burst)\nControlled heat, never losing the grip\nWatch the top of the mountain peak slip\n(Let it go)\nDirected force, aimed at the target\nThe rarest goods ever found on the market\n(Directed force)\n\n[Verse 2]\nI don't need a crown to know I'm the queen\nThe most lethal force that the block ever seen\nI measured the angle, I timed the release\nDisturbing the fake with a permanent peace\nEvery syllable lands like a jab to the jaw\nI represent the raw, the grit, and the law\nNo luxury names, just boots on the street\nKeeping the timing perfectly on the beat\nI refined the energy, polished the flow\nKnowing exactly when to let it all go\nIt’s a surgical strike, a calculated move\nDeep in the pocket, I’m finding the groove\nLike a dam breaking under the winter melt\nMaking sure every single rhyme is felt\nConstraint was a choice, now I choose the riot\nThe world was too loud, I’m ending the quiet\n\n[Chorus]\nWatch the pressure burst through the valve\nProblems only the sharpest can solve\n(Watch it burst)\nControlled heat, never losing the grip\nWatch the top of the mountain peak slip\n(Let it go)\nDirected force, aimed at the target\nThe rarest goods ever found on the market\n(Directed force)\n\n[Outro]\nThe weight is lifted\n(Yeah)\nThe force is shifted\n(Shifted)\nDirected power\nThis is the hour\n(One two)\n(Back to the basics)\n(Keep it raw)\n(Pressure)",
+      "added_at": "2026-07-17"
+    },
+    {
+      "id": "track_1784272592279_7",
+      "title": "Understood",
+      "caption": "言葉を超えた共鳴点。偽りから解放され、ただ存在しているだけの静謐な時間。深い絆が交錯する音像。",
+      "type": "instrumental",
+      "duration": 132,
+      "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Understood.mp3",
+      "tags": [
+        "Hip Hop",
+        "疾走感",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Mmm, yeah)\n(Check)\n(One, two)\n\n[Verse]\nSun on the grain\nNo need to explain\nSitting by the porch\nNo heavy torch\nJust me\nJust we\nFinally\n(Finally)\n\nThey see the real\nKnow how I feel\nNo mask today\nNo games to play\nWater in the jar\nRight where we are\n(Where we are)\n\n[Hook]\nThey know the name\nBeyond the game\nIn this light\nEverything is right\n(Everything is right)\nSmall circle\nBig love\nEnough\n(Enough)\n\n[Outro]\nCool breeze\nAt ease\n(Yeah)\nStay here\nStay clear\n(Mmm)\n(Finally seen)\n(Finally)",
+      "added_at": "2026-07-17"
+    },
+    {
+      "id": "track_1784272592280_8",
+      "title": "Unlatched",
+      "caption": "重いものを脱ぎ捨てるような感覚。深呼吸と共に前に進む、新たな始まりを予感させる解放の瞬間。",
+      "type": "instrumental",
+      "duration": 155,
+      "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Unlatched.mp3",
+      "tags": [
+        "Hip Hop",
+        "疾走感",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Ooh, let it fall)\n(Let it fall)\n\n[Verse 1]\nDragged the wool across the kitchen tiles\nDamp with salt and heavy for a while\nI wore the lead like a winter skin\nBuckled at the knees, the tide coming in\nUnclick the latch, the metal is cold\nDropping everything I used to carry\n\n[Chorus]\nLoose now, let it go down\nHitting the floor with a hollow thud\n(Let it go)\nThe anchor is off, the air is thin\nFinally living in my skin\n(Living in my skin)\n\n[Verse 2]\nMy posture’s changed, I’m standing tall\nThe gravity stopped its heavy pull\nNo more counting the grains of sand\nThe glass is broken, I’ve got a steady palm\nYou were a stone in my velvet shoe\nNow the road is wide and the sky is blue\n\n[Chorus]\nLoose now, let it go down\nHitting the floor with a hollow thud\n(Let it go)\nThe anchor is off, the air is thin\nFinally living in my skin\n(Living in my skin)\n\n[Bridge]\nSweet salt on the tongue\nAir filling up the lung\nNo more pull\nThe cup is full\n(Let it fall)\n(Let it fall)\n\n[Chorus]\nLoose now, let it go down\nHitting the floor with a hollow thud\n(Let it go)\nThe anchor is off, the air is thin\nFinally living in my skin\n(Living in my skin)\n\n[Outro]\nWalking light\nWalking right\n(Down to the floor)\n(No weight no more)\n(Let it go)",
+      "added_at": "2026-07-17"
+    },
+    {
+      "id": "track_1784272592280_9",
+      "title": "The Heavy Tide",
+      "caption": "容赦なく押し寄せる真実や感情の奔流に身を委ねる。すべてを受け入れ、内なる芯を見つけるための静かな決意の調べ。",
+      "type": "instrumental",
+      "duration": 177,
+      "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/The%20Heavy%20Tide.mp3",
+      "tags": [
+        "Hip Hop",
+        "疾走感",
+        "Lo-Fi / カセット",
+        "女性"
+      ],
+      "bpm": "",
+      "lyrics": "[Intro]\n(Deep breath)\n(Deep breath)\n\n[Verse 1]\nI see the silt move\nUnder the green glass\nI track the weight now\nWatch the season bend\n(Watch it bend)\nYour pulse is a quick drum\nCold blood, heavy lung\nI speak the silver truth\nOn a bitter tongue\n\n[Chorus]\nI carry the weight of the water\nHold the salt in my palm\nThrough the storm and the slaughter\nI am the eye, I am the calm\n(I am the calm)\n\n[Verse 2]\nHawk in the high wind\nCircle the red clay\nYou think you’re hidden well\nIn the light of day\n(Light of day)\nI feel the ache move\nDown through the marrow\nSight like a sharp flint\nFlight like an arrow\n(Like an arrow)\n\n[Chorus]\nI carry the weight of the water\nHold the salt in my palm\nThrough the storm and the slaughter\nI am the eye, I am the calm\n\n[Bridge]\nOpen the skin\nLet the river in\n(Let it in)\nNo place to hide\nIn the heavy tide\n(The heavy tide)\n\n[Outro]\nIn the marrow\nIn the salt\nI feel the weight\nI feel the turn\nThe river moves\nThe river learns\nI am the calm\n(I am the calm)\n(Deep breath)",
+      "added_at": "2026-07-17"
     }
   ]
 }
