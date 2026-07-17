@@ -326,7 +326,7 @@
         "track_1784272592280_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\hiphop\\Lo-fi Hip Hop",
-      "type": ""
+      "type": "vocal"
     }
   ],
   "tracks": [
@@ -2501,7 +2501,7 @@
       "id": "track_1784272592275_0",
       "title": "Common Ground",
       "caption": "共同体という名の温もり。歴史と絆が織りなす、私たち全員の支え合える場所（ホーム）を描く。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 176,
       "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Common%20Ground.mp3",
       "tags": [
@@ -2518,7 +2518,7 @@
       "id": "track_1784272592278_1",
       "title": "Sudden Salt",
       "caption": "静寂の中に潜む小さな変化。ほんの一瞬の予兆が、日常の常識を揺さぶる感覚を描写する。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 150,
       "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Sudden%20Salt.mp3",
       "tags": [
@@ -2535,7 +2535,7 @@
       "id": "track_1784272592279_2",
       "title": "The Veneer",
       "caption": "華やかさという表面の下に隠された本質。飾らない言葉の応酬が響き渡る、重層的なリアリティを追求したビート。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 171,
       "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/The%20Veneer.mp3",
       "tags": [
@@ -2552,7 +2552,7 @@
       "id": "track_1784272592279_3",
       "title": "Bright And Heavy",
       "caption": "灼熱の空気と光。午後のまどろみの中で感じる、圧倒的な美しさと同時に抱える重さの二面性。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 161,
       "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Bright%20and%20Heavy.mp3",
       "tags": [
@@ -2569,7 +2569,7 @@
       "id": "track_1784272592279_4",
       "title": "Shadow Swing",
       "caption": "確かな基盤を持たない不安定な場所で、自分自身の「道」を模索する。葛藤と同時にリズムを見つけ出す旅路。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 165,
       "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Shadow%20Swing.mp3",
       "tags": [
@@ -2586,7 +2586,7 @@
       "id": "track_1784272592279_5",
       "title": "Vinyl Sway",
       "caption": "雨に濡れた景色の中での邂逅。触れ合った指先から、凍りついていた日常へ熱い物語を再点火させる。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 162,
       "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Vinyl%20Sway.mp3",
       "tags": [
@@ -2603,7 +2603,7 @@
       "id": "track_1784272592279_6",
       "title": "Pressure Point",
       "caption": "内に秘めた力が臨界点に達する瞬間。感情の爆発と計算されたエネルギーが空間を支配し、高揚感を生み出す。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 164,
       "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Pressure%20Point.mp3",
       "tags": [
@@ -2620,7 +2620,7 @@
       "id": "track_1784272592279_7",
       "title": "Understood",
       "caption": "言葉を超えた共鳴点。偽りから解放され、ただ存在しているだけの静謐な時間。深い絆が交錯する音像。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 132,
       "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Understood.mp3",
       "tags": [
@@ -2637,7 +2637,7 @@
       "id": "track_1784272592280_8",
       "title": "Unlatched",
       "caption": "重いものを脱ぎ捨てるような感覚。深呼吸と共に前に進む、新たな始まりを予感させる解放の瞬間。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 155,
       "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/Unlatched.mp3",
       "tags": [
@@ -2654,7 +2654,7 @@
       "id": "track_1784272592280_9",
       "title": "The Heavy Tide",
       "caption": "容赦なく押し寄せる真実や感情の奔流に身を委ねる。すべてを受け入れ、内なる芯を見つけるための静かな決意の調べ。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 177,
       "full_url": "https://cdn.neura-music.com/01vocal/hiphop/Lo-fi%20Hip%20Hop/The%20Heavy%20Tide.mp3",
       "tags": [
