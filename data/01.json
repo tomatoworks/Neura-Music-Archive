@@ -306,7 +306,7 @@
         "track_1782093848707_9"
       ],
       "local_path": "D:\\app-storage\\Googleドライブミラーリングフォルダ\\公開用ルートフォルダ\\Neuro Music Archive\\NMA Album\\01vocal\\jazz\\Light Vocal Piano Jazz",
-      "type": ""
+      "type": "vocal"
     },
     {
       "id": "album_1784271252899",
@@ -2363,7 +2363,7 @@
       "id": "track_1782093848703_0",
       "title": "Le Rideau De Lin",
       "caption": "レースのカーテンが優しく揺れる音。窓から差し込む光と、過ぎゆく夏の日差しを、ただ静かに感じる時間。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 156,
       "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Le%20Rideau%20de%20Lin.mp3",
       "tags": [
@@ -2379,7 +2379,7 @@
       "id": "track_1782093848706_1",
       "title": "Par La Vitre",
       "caption": "窓ガラス越しに見つめる、無数の人々の営み。日常の喧騒の中にこそ宿る、穏やかな美しさと静謐な時間の流れを綴った一瞬の詩情。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 176,
       "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Par%20la%20Vitre.mp3",
       "tags": [
@@ -2395,7 +2395,7 @@
       "id": "track_1782093848706_2",
       "title": "Un Instant à Moi",
       "caption": "日常の喧騒から離れ、自分だけの静かで甘いひとときを慈しむ、内省的で優雅な時間を描いた歌。\n太陽の光が窓を通り抜け、時間さえも止まるような「私だけの瞬間」を綴っています。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 156,
       "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Un%20Instant%20%C3%A0%20Moi.mp3",
       "tags": [
@@ -2411,7 +2411,7 @@
       "id": "track_1782093848706_3",
       "title": "Une Petite Trêve (Variation 1)",
       "caption": "完璧な「大きな愛」ではない、ただの静寂。喧騒の中でのささやかな休息時間のような、疲れた都会を歩く日常の描写。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 181,
       "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Une%20Petite%20Tr%C3%AAve%20(Variation%201).mp3",
       "tags": [
@@ -2427,7 +2427,7 @@
       "id": "track_1782093848706_4",
       "title": "L'Ancre Douce",
       "caption": "過ぎゆく時間の中で、ただあなただけが心の錨（いかり）となり、揺るぎない存在を支える。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 167,
       "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/L'Ancre%20Douce.mp3",
       "tags": [
@@ -2443,7 +2443,7 @@
       "id": "track_1782093848706_5",
       "title": "Ma Pluie De Paix",
       "caption": "雨のカーテン越しに見る、心の平穏な瞬間。過ぎ去った後悔や重荷を洗い流し、再び立ち上がるためのささやかな勝利を謳う歌。\n\n「C'est ma pluie de paix (これは私の平和の雨)」というフレーズが示すように、静寂の中での自己発見と再生の物語です。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 175,
       "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Ma%20Pluie%20de%20Paix.mp3",
       "tags": [
@@ -2459,7 +2459,7 @@
       "id": "track_1782093848706_6",
       "title": "Le Soir Sage",
       "caption": "静けさの中で、日中の喧騒が薄れゆく。時間というものへの確信と、夜の深い安らぎが訪れる瞬間を描いた歌。\nLa lampe est très basse. Le silence est un manteau.",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 173,
       "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Le%20Soir%20Sage.mp3",
       "tags": [
@@ -2475,7 +2475,7 @@
       "id": "track_1782093848707_7",
       "title": "Papier Mat",
       "caption": "新しい一日が始まる静かな目覚め。過ぎ去った美しい思い出を胸に、優しく未来へと歩みを進めていくような情景を描きます。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 168,
       "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Papier%20Mat.mp3",
       "tags": [
@@ -2491,7 +2491,7 @@
       "id": "track_1782093848707_8",
       "title": "Toile de Pluie (Take 1)",
       "caption": "雨上がりの街並み、濡れた路面が描く光と影の抽象的な風景。時間が止まったかのような静寂の中に、微かなリズムだけが残る瞬間を捉えた一枚。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 155,
       "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Toile%20de%20Pluie%20(Take%201).mp3",
       "tags": [
@@ -2507,7 +2507,7 @@
       "id": "track_1782093848707_9",
       "title": "Capitulation De Soie",
       "caption": "抗いがたい優雅さの中での自己降伏。知的な防御を解き放ち、最も贅沢な「何もしない」瞬間に身を委ねる歌。\n\nあらゆる皮肉や鋭利な言葉を脇に置き、ただ静かな光の中で安堵する感覚を描写。",
-      "type": "instrumental",
+      "type": "vocal",
       "duration": 177,
       "full_url": "https://cdn.neura-music.com/01vocal/jazz/Light%20Vocal%20Piano%20Jazz/Capitulation%20de%20Soie.mp3",
       "tags": [
